@@ -43,7 +43,7 @@ setup(
     packages=find_packages(include=['nlon_py', 'nlon_py.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/Jianwen-Xu/nlon_py',
-    version='0.1.0',
+    url='https://github.com/Jianwen-Xu/nlon-py',
+    version='0.1.1',
     zip_safe=False,
 )
