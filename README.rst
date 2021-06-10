@@ -4,10 +4,10 @@ nlon-py
 
 
 .. image:: https://img.shields.io/pypi/v/nlon_py.svg
-        :target: https://pypi.python.org/pypi/nlon_py
+        :target: https://pypi.python.org/pypi/nlon-py
 
 .. image:: https://img.shields.io/travis/Jianwen-Xu/nlon_py.svg
-        :target: https://travis-ci.com/Jianwen-Xu/nlon_py
+        :target: https://travis-ci.com/Jianwen-Xu/nlon-py
 
 .. image:: https://readthedocs.org/projects/nlon-py/badge/?version=latest
         :target: https://nlon-py.readthedocs.io/en/latest/?version=latest
