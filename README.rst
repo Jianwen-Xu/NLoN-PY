@@ -3,10 +3,10 @@ nlon-py
 =======
 
 
-.. image:: https://img.shields.io/pypi/v/nlon_py.svg
+.. image:: https://img.shields.io/pypi/v/nlon-py.svg
         :target: https://pypi.python.org/pypi/nlon-py
 
-.. image:: https://img.shields.io/travis/Jianwen-Xu/nlon_py.svg
+.. image:: https://travis-ci.com/Jianwen-Xu/NLoN-PY.svg
         :target: https://travis-ci.com/Jianwen-Xu/nlon-py
 
 .. image:: https://readthedocs.org/projects/nlon-py/badge/?version=latest
