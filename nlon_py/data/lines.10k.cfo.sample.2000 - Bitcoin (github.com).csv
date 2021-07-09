@@ -1,0 +1,2321 @@
+ID,Class,Text
+1,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+2,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+3,1,"Distributed under the MIT software license, see the accompanying"
+4,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+5,1,"Write and commit header, data"
+6,1,Generate random temporary filename
+7,1,"open temp output file, and associate with CAutoFile"
+8,1,Serialize
+9,1,"replace existing file, if any, with new file"
+10,1,de-serialize file header (network specific magic number) and ..
+11,1,... verify the network matches ours
+12,1,de-serialize data
+13,1,verify checksum
+14,1,"open input file, and associate with CAutoFile"
+15,1,namespace
+16,1,Ensure addrman is left in a clean state
+17,1,Copyright (c) 2012 Pieter Wuille
+18,1,Copyright (c) 2012-2020 The Bitcoin Core developers
+19,1,"Distributed under the MIT software license, see the accompanying"
+20,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+21,1,never remove things tried in the last minute
+22,1,came in a flying DeLorean
+23,1,not seen in recent history
+24,1,tried N times and never a success
+25,1,N successive failures in the last week
+26,1,deprioritize very recent attempts away
+27,1,"deprioritize 66% after each failed attempt, but at most 1/28th to avoid the search taking forever or overly penalizing outages."
+28,1,"if there is an entry in the specified bucket, delete it."
+29,1,remove the entry from all new buckets
+30,1,which tried bucket to move the entry to
+31,1,"first make space to add it (the existing tried entry there is moved to new, deleting whatever is there)."
+32,1,find an item to evict
+33,1,Remove the to-be-evicted item from the tried set.
+34,1,find which new bucket it belongs to
+35,1,Enter it into the new set again.
+36,1,"if not found, bail out"
+37,1,check whether we are talking about the exact same CService (including same port)
+38,1,update info
+39,1,"nTime is not updated here, to avoid leaking information about"
+40,1,currently-connected peers.
+41,1,"if it is already in the tried set, don't do anything else"
+42,1,find a bucket it is in now
+43,1,"if no bucket is found, something bad happened;"
+44,1,"TODO: maybe re-add the node, but for now, just bail out"
+45,1,which tried bucket to move the entry to
+46,1,Will moving this address into tried evict another entry?
+47,1,"Output the entry we'd be colliding with, for debugging purposes"
+48,1,move nId to the tried tables
+49,1,Do not set a penalty for a source's self-announcement
+50,1,periodically update nTime
+51,1,add services
+52,1,do not update if no new information is present
+53,1,"do not update if the entry was already in the ""tried"" table"
+54,1,do not update if the max reference count is reached
+55,1,stochastic test: previous nRefCount == N: 2^N times harder to increase it
+56,1,Overwrite the existing new table entry.
+57,1,"if not found, bail out"
+58,1,check whether we are talking about the exact same CService (including same port)
+59,1,update info
+60,1,Use a 50% chance for choosing between tried and new table entries.
+61,1,use a tried node
+62,1,use a new node
+63,1,"gather a list of random nodes, skipping those of low quality"
+64,1,Filter by network (optional)
+65,1,Filter for quality
+66,1,"if not found, bail out"
+67,1,check whether we are talking about the exact same CService (including same port)
+68,1,update info
+69,1,"if not found, bail out"
+70,1,check whether we are talking about the exact same CService (including same port)
+71,1,update info
+72,1,If id_new not found in mapInfo remove it from m_tried_collisions
+73,1,Which tried bucket to move the entry to.
+74,1,id_new may no longer map to a valid address
+75,1,The position in the tried bucket is not empty
+76,1,Get the to-be-evicted address that is being tested
+77,1,Has successfully connected in last X hours
+78,1,attempted to connect and failed in last X hours
+79,1,Give address at least 60 seconds to successfully connect
+80,1,Replaces an existing address already in the tried table with the new address
+81,1,"If the collision hasn't resolved in some reasonable amount of time,"
+82,1,just evict the old entry -- we must not be able to
+83,1,connect to it for some reason.
+84,1,Collision is not actually a collision anymore
+85,1,Selects a random element from m_tried_collisions
+86,1,If id_new not found in mapInfo remove it from m_tried_collisions
+87,1,which tried bucket to move the entry to
+88,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+89,1,Copyright (c) 2009-2019 The Bitcoin Core developers
+90,1,"Distributed under the MIT software license, see the accompanying"
+91,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+92,1,"make a copy, so we can shift."
+93,1,"make a copy, so we can subtract."
+94,1,the quotient.
+95,1,the result is certainly 0.
+96,1,shift so that div and num align.
+97,1,set a bit of the result.
+98,1,shift back.
+99,1,num now contains the remainder of the division.
+100,1,Explicit instantiations for base_uint<256>
+101,1,This implementation directly uses shifts instead of going
+102,1,through an intermediate MPI representation.
+103,1,The 0x00800000 bit denotes the sign.
+104,1,"Thus, if it is already set, divide the mantissa by 256 and increase the exponent."
+105,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+106,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+107,1,"Distributed under the MIT software license, see the accompanying"
+108,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+109,1,thread save setter
+110,1,"no need to write down, just read data"
+111,1,sweep out unused entries
+112,1,force write
+113,1,clean unused entries (if bantime has expired)
+114,1,store banlist to disk
+115,1,store banlist to disk immediately
+116,1,store banlist to disk immediately
+117,1,Sweep the banlist so expired bans are not returned
+118,1,create a thread safe copy
+119,1,update UI
+120,1,reuse m_banned lock for the m_is_dirty flag
+121,1,Copyright (c) 2014-2020 The Bitcoin Core developers
+122,1,"Distributed under the MIT software license, see the accompanying"
+123,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+124,1,"All alphanumeric characters except for ""0"", ""I"", ""O"", and ""l"""
+125,1,Skip leading spaces.
+126,1,Skip and count leading '1's.
+127,1,Allocate enough space in big-endian base256 representation.
+128,2,"log(58) / log(256), rounded up."
+129,1,Process the characters.
+130,1,guarantee not out of range
+131,1,Decode base58 character
+132,1,Invalid b58 character
+133,1,Skip trailing spaces.
+134,1,Skip leading zeroes in b256.
+135,1,Copy result into output vector.
+136,1,Skip & count leading zeroes.
+137,1,Allocate enough space in big-endian base58 representation.
+138,2,"log(256) / log(58), rounded up."
+139,1,Process the bytes.
+140,2,"Apply ""b58 = b58256 + ch""."
+141,1,Skip leading zeroes in base58 result.
+142,1,Translate the result into a string.
+143,1,add 4-byte hash check to the end
+144,1,"re-calculate the checksum, ensure it matches the included 4-byte checksum"
+145,1,"Copyright (c) 2017, 2021 Pieter Wuille"
+146,1,"Distributed under the MIT software license, see the accompanying"
+147,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+148,1,The Bech32 and Bech32m character set for encoding.
+149,1,The Bech32 and Bech32m character set for decoding.
+150,1,Determine the final constant to use for the specified encoding.
+151,1,"This function will compute what 6 5-bit values to XOR into the last 6 input values, in order to
+  make the checksum 0. These 6 values are packed together in a single 30-bit integer. The higher
+  bits correspond to earlier values."
+152,1,"The input is interpreted as a list of coefficients of a polynomial over F = GF(32), with an"
+153,2,"implicit 1 in front. If the input is [v0,v1,v2,v3,v4], that polynomial is v(x) ="
+154,2,1*x^5 + v0*x^4 + v1*x^3 + v2*x^2 + v3*x + v4. The implicit 1 guarantees that
+155,2,"[v0,v1,v2,...] has a distinct checksum from [0,v0,v1,v2,...]."
+156,1,The output is a 30-bit integer whose 5-bit groups are the coefficients of the remainder of
+157,2,"v(x) mod g(x), where g(x) is the Bech32 generator,"
+158,2,x^6 + {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18}. g(x) is chosen in such a way
+159,1,"that the resulting code is a BCH code, guaranteeing detection of up to 3 errors within a"
+160,1,"window of 1023 characters. Among the various possible BCH codes, one was selected to in"
+161,1,fact guarantee detection of up to 4 errors within a window of 89 characters.
+162,1,"Note that the coefficients are elements of GF(32), here represented as decimal numbers"
+163,1,"between {}. In this finite field, addition is just XOR of the corresponding numbers. For"
+164,1,"example, {27} + {13} = {27 ^ 13} = {22}. Multiplication is more complicated, and requires"
+165,1,"treating the bits of values themselves as coefficients of a polynomial over a smaller field,"
+166,1,"GF(2), and multiplying those polynomials mod a^5 + a^3 + 1. For example, {5}{26} ="
+167,2,(a^2 + 1)(a^4 + a^3 + a) = (a^4 + a^3 + a)a^2 + (a^4 + a^3 + a) = a^6 + a^5 + a^4 + a
+168,2,= a^3 + 1 (mod a^5 + a^3 + 1) = {9}.
+169,1,"During the course of the loop below, `c` contains the bitpacked coefficients of the"
+170,1,"polynomial constructed from just the values of v that were processed so far, mod g(x). In"
+171,1,"the above example, `c` initially corresponds to 1 mod g(x), and after processing 2 inputs of"
+172,1,"v, it corresponds to x^2 + v0*x + v1 mod g(x). As 1 mod g(x) = 1, that is the starting value"
+173,1,for `c`.
+174,1,We want to update `c` to correspond to a polynomial with one extra term. If the initial
+175,1,"value of `c` consists of the coefficients of c(x) = f(x) mod g(x), we modify it to"
+176,1,"correspond to c'(x) = (f(x)x + v_i) mod g(x), where v_i is the next input to"
+177,1,process. Simplifying:
+178,2,c'(x) = (f(x)x + v_i) mod g(x)
+179,2,((f(x) mod g(x))x + v_i) mod g(x)
+180,2,(c(x)x + v_i) mod g(x)
+181,2,"If c(x) = c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5, we want to compute"
+182,2,c'(x) = (c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5)x + v_i mod g(x)
+183,1,#NAME?
+184,2,= c0*(x^6 mod g(x)) + c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i
+185,1,"If we call (x^6 mod g(x)) = k(x), this can be written as"
+186,2,c'(x) = (c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i) + c0*k(x)
+187,1,"First, determine the value of c0:"
+188,2,Then compute c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i:
+189,1,"Finally, for each set bit n in c0, conditionally add {2^n}k(x):"
+190,2,k(x) = {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18}
+191,2,{2}k(x) = {19}x^5 +  {5}x^4 +     x^3 +  {3}x^2 + {19}x + {13}
+192,2,{4}k(x) = {15}x^5 + {10}x^4 +  {2}x^3 +  {6}x^2 + {15}x + {26}
+193,2,{8}k(x) = {30}x^5 + {20}x^4 +  {4}x^3 + {12}x^2 + {30}x + {29}
+194,2,{16}k(x) = {21}x^5 +     x^4 +  {8}x^3 + {24}x^2 + {21}x + {19}
+195,1,Convert to lower case.
+196,1,Expand a HRP for use in checksum computation.
+197,1,Verify a checksum.
+198,1,"PolyMod computes what value to xor into the final values to make the checksum 0. However,"
+199,1,"if we required that the checksum was 0, it would be the case that appending a 0 to a valid"
+200,1,"list of values would result in a new valid list. For that reason, Bech32 requires the"
+201,1,"resulting checksum to be 1 instead. In Bech32m, this constant was amended."
+202,1,Create a checksum.
+203,1,Append 6 zeroes
+204,1,Determine what to XOR into those 6 zeroes.
+205,1,Convert the 5-bit groups in mod to checksum values.
+206,1,namespace
+207,1,Encode a Bech32 or Bech32m string.
+208,1,First ensure that the HRP is all lowercase. BIP-173 and BIP350 require an encoder
+209,1,"to return a lowercase Bech32/Bech32m string, but if given an uppercase HRP, the"
+210,1,result will always be invalid.
+211,1,Decode a Bech32 or Bech32m string.
+212,1,namespace bech32
+213,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+214,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+215,1,"Distributed under the MIT software license, see the accompanying"
+216,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+217,1,Default number of blocks to generate for RPC generatetoaddress.
+218,1,libevent event log callback
+219,1,EVENT_LOG_ERR was added in 2.0.19; but before then _EVENT_LOG_ERR existed.
+220,1,Ignore everything other than errors
+221,1,Exception thrown on connection error.  This error is used to determine
+222,1,when to wait if -rpcwait is given.
+223,1,This function returns either one of EXIT_ codes when it's expected to stop the process or
+224,1,CONTINUE_EXECUTION when it's expected to continue further.
+225,1,Check for chain settings (BaseParams() calls are only valid after this clause)
+226,1,Reply structure for request_done to fill in
+227,1,"If req is nullptr, it means an error occurred while connecting: the
+        error code will have been passed to http_error_cb."
+228,1,"Class that handles the conversion from a command-line to a JSON-RPC request,
+ as well as converting back to a JSON object that can be shown as result."
+229,1,Process addrinfo requests
+230,1,"Count the number of peers we know by network, including torv2 versus torv3."
+231,1,Prepare result to return to user.
+232,1,Total address count
+233,1,Process getinfo requests
+234,1,Create a simulated `getinfo` request.
+235,1,Collect values from the batch and form a simulated `getinfo` reply.
+236,2,"Errors in getnetworkinfo() and getblockchaininfo() are fatal, pass them on;"
+237,2,getwalletinfo() and getbalances() are allowed to fail if there is no wallet.
+238,1,Process netinfo requests
+239,2,"!< Peer counts by (in/out/total, networks/total)"
+240,1,!< Optional user-supplied arg to set dashboard details level
+241,1,"Count peer connection totals, and if DetailsRequested(), store peer data in a vector of structs."
+242,2,in/out by network
+243,2,in/out overall
+244,1,total by network
+245,1,total overall
+246,1,Push data for this peer to the peers vector.
+247,1,Generate report header.
+248,1,Report detailed peer connections list sorted by direction and minimum ping time.
+249,1,variable spacing
+250,1,variable spacing
+251,1,variable spacing
+252,1,variable spacing
+253,1,Report peer connection totals by type.
+254,1,"false if total i2p peers count is 0, otherwise true"
+255,1,ipv4/ipv6/onion peers counts
+256,1,i2p peers count
+257,1,total peers count
+258,1,the outbound row has two extra columns for block relay and manual peer counts
+259,1,"Report local addresses, ports, and scores."
+260,1,Process RPC generatetoaddress request.
+261,1,Process default single requests
+262,1,"In preference order, we choose the following for the port:"
+263,2,1. -rpcport
+264,1,2. port in -rpcconnect (ie following : in ipv4 or ]: in ipv6)
+265,1,3. default port for chain
+266,1,Obtain event base
+267,1,Synchronously look up hostname
+268,1,Set connection timeout
+269,1,"Indefinite request timeouts are not possible in libevent-http, so we"
+270,1,set the timeout to a very long time period instead.
+271,1,Average length of year in Gregorian calendar
+272,1,Get credentials
+273,1,Try fall back to cookie-based authentication if no password is provided
+274,1,Attach request data
+275,1,check if we should use a special wallet endpoint
+276,1,ownership moved to evcon in above call
+277,1,Parse reply
+278,1,"ConnectAndCallRPC wraps CallRPC with -rpcwait and an exception handler.
+
+ @param[in] rh         Pointer to RequestHandler.
+ @param[in] strMethod  Reference to const string method to forward to CallRPC.
+ @param[in] rpcwallet  Reference to const optional string wallet name to forward to CallRPC.
+ @returns the RPC response as a UniValue object.
+ @throws a CConnectionFailed std::runtime_error if connection failed or RPC server still in warmup."
+279,1,Execute and handle connection failures with -rpcwait.
+280,1,"Connection succeeded, no need to retry."
+281,1,Parse UniValue result to update the message to print to std::cout.
+282,1,Parse UniValue error to update the message to print to std::cerr and the code to return.
+283,2,"GetWalletBalances calls listwallets; if more than one wallet is loaded, it then
+ fetches mine.trusted balances for each loaded wallet and pushes them to `result`.
+
+ @param result  Reference to UniValue object the wallet names and balances are pushed to."
+284,2,args=
+285,2,args=
+286,2,"Call RPC getnewaddress.
+ @returns getnewaddress response as a UniValue object."
+287,2,args=
+288,1,"Check bounds and set up args for RPC generatetoaddress params: nblocks, address, maxtries.
+ @param[in] address  Reference to const string address to insert into the args.
+ @param     args     Reference to vector of string args to modify."
+289,1,Skip switches
+290,1,Read one arg per line from stdin and append
+291,1,Remove trailing method name from arguments vector
+292,1,Perform RPC call
+293,1,Parse reply
+294,1,fetch multiwallet balances and append to result
+295,1,Export main() and ensure working ASLR on Windows.
+296,1,Exporting a symbol will prevent the linker from stripping
+297,1,"the .reloc section from the binary, which is a requirement"
+298,1,for ASLR. This is a temporary workaround until a fixed
+299,1,version of binutils is used for releases.
+300,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+301,1,"Distributed under the MIT software license, see the accompanying"
+302,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+303,1,This function returns either one of EXIT_ codes when it's expected to stop the process or
+304,1,CONTINUE_EXECUTION when it's expected to continue further.
+305,1,Check for chain settings (Params() calls are only valid after this clause)
+306,1,First part of help message is specific to this utility
+307,2,separate NAME:VALUE in string
+308,2,separate NAME:FILENAME in string
+309,1,load file chunks into one big buffer
+310,1,evaluate as JSON buffer register
+311,1,parse requested index
+312,2,set the nSequence to MAX_INT - 2 (= RBF opt in flag)
+313,2,separate TXID:VOUT in string
+314,1,extract and validate TXID
+315,1,extract and validate vout
+316,1,extract the optional sequence number
+317,1,append to transaction input list
+318,1,Separate into VALUE:ADDRESS
+319,1,Extract and validate VALUE
+320,1,extract and validate ADDRESS
+321,1,"construct TxOut, append to transaction output list"
+322,1,Separate into VALUE:PUBKEY[:FLAGS]
+323,1,Extract and validate VALUE
+324,1,Extract and validate PUBKEY
+325,1,Extract and validate FLAGS
+326,1,Build a P2WPKH script
+327,1,"Get the ID for the script, and then construct a P2SH destination for it."
+328,1,"construct TxOut, append to transaction output list"
+329,1,Separate into VALUE:REQUIRED:NUMKEYS:PUBKEY1:PUBKEY2:....[:FLAGS]
+330,1,Check that there are enough parameters
+331,1,Extract and validate VALUE
+332,1,Extract REQUIRED
+333,1,Extract NUMKEYS
+334,1,Validate there are the correct number of pubkeys
+335,1,extract and validate PUBKEYs
+336,1,Extract FLAGS
+337,1,Validate that there were no more parameters passed
+338,1,Build a P2WSH with the multisig script
+339,1,"Get the ID for the script, and then construct a P2SH destination for it."
+340,1,"construct TxOut, append to transaction output list"
+341,1,separate [VALUE:]DATA in string
+342,1,Extract and validate VALUE
+343,1,extract and validate DATA
+344,1,separate VALUE:SCRIPT[:FLAGS]
+345,1,Extract and validate VALUE
+346,1,extract and validate script
+347,1,Extract FLAGS
+348,1,"construct TxOut, append to transaction output list"
+349,1,parse requested deletion index
+350,1,delete input from transaction
+351,1,parse requested deletion index
+352,1,delete output from transaction
+353,1,mergedTx will end up with all the signatures; it
+354,1,starts as a clone of the raw tx:
+355,1,Add previous txouts given in the RPC call:
+356,1,"if redeemScript given and private keys given,"
+357,1,add redeemScript to the tempKeystore so it can be signed:
+358,1,Sign what we can:
+359,1,Only sign SIGHASH_SINGLE if there's a corresponding output:
+360,1,include_addresses
+361,1,the hex-encoded transaction hash (aka the transaction id)
+362,1,"Skip switches; Permit common stdin convention ""-"""
+363,1,require at least one param
+364,1,param: hex-encoded bitcoin transaction
+365,1,"""-"" implies standard input"
+366,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+367,1,"Distributed under the MIT software license, see the accompanying"
+368,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+369,1,This function returns either one of EXIT_ codes when it's expected to stop the process or
+370,1,CONTINUE_EXECUTION when it's expected to continue further.
+371,2,Check for chain settings (Params() calls are only valid after this clause)
+372,1,First part of help message is specific to this utility
+373,1,working copy
+374,2,Export main() and ensure working ASLR on Windows.
+375,1,Exporting a symbol will prevent the linker from stripping
+376,1,"the .reloc section from the binary, which is a requirement"
+377,1,for ASLR. This is a temporary workaround until a fixed
+378,1,version of binutils is used for releases.
+379,1,Copyright (c) 2016-2020 The Bitcoin Core developers
+380,1,"Distributed under the MIT software license, see the accompanying"
+381,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+382,1,"check for printtoconsole, allow -debug"
+383,1,Check for chain settings (Params() calls are only valid after this clause)
+384,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+385,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+386,1,"Distributed under the MIT software license, see the accompanying"
+387,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+388,1,"Custom implementation of daemon(). This implements the same order of operations as glibc.
+ Opens a pipe to the child process to be able to wait for an event to occur.
+
+ @returns 0 if successful, and in child process.
+          >0 if successful, and in parent process.
+          -1 in case of error (in parent process).
+
+          In case of success, endpoint will be one end of a pipe from the child to parent process,
+          which can be used with TokenWrite (in the child) or TokenRead (in the parent)."
+389,1,communication pipe with child process
+390,1,pipe or pipe2 failed.
+391,1,fork failed.
+392,1,"Parent process gets read end, closes write end."
+393,1,Something went wrong while setting up child process.
+394,1,"Child process gets write end, closes read end."
+395,1,setsid failed.
+396,1,chdir failed.
+397,1,"Open /dev/null, and clone it into STDIN, STDOUT and STDERR to detach"
+398,1,from terminal.
+399,2,Don't close if fd<=2 to try to handle the case where the program was invoked without any file descriptors open.
+400,1,dup2 failed.
+401,2,open /dev/null failed.
+402,1,Success
+403,2,"If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()"
+404,1,Process help and version before taking care about datadir
+405,1,Communication with parent after daemonizing. This is used for signalling in the following ways:
+406,2,- a boolean token is sent when the initialization process (all the Init* functions) have finished to indicate
+407,1,"that the parent process can quit, and whether it was successful/unsuccessful."
+408,1,#NAME?
+409,1,"end, which is interpreted as failure to start."
+410,1,Check for chain settings (Params() calls are only valid after this clause)
+411,1,Error out when loose non-argument tokens are encountered on command line
+412,1,-server defaults to true for bitcoind but not for the GUI so do this here
+413,1,Set this early so that parameter interactions go to console
+414,1,"InitError will have been called with detailed error, which ends up on console"
+415,1,"InitError will have been called with detailed error, which ends up on console"
+416,1,"InitError will have been called with detailed error, which ends up on console"
+417,1,Daemonize
+418,2,"don't chdir (1), do close FDs (0)"
+419,2,Child: continue.
+420,1,"If -daemonwait is not enabled, immediately send a success token the parent."
+421,1,Error happened.
+422,2,Parent: wait and exit.
+423,1,Success
+424,2,fRet = false or token read error (premature exit).
+425,2,HAVE_DECL_FORK
+426,1,Lock data directory after daemonization
+427,1,"If locking the data directory failed, exit immediately"
+428,1,"Signal initialization status to parent, then close pipe."
+429,1,Connect bitcoind signal handlers
+430,1,Copyright (c) 2016-2020 The Bitcoin Core developers
+431,1,"Distributed under the MIT software license, see the accompanying"
+432,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+433,1,TODO: Use our mempool prior to block acceptance to predictively fill more than just the coinbase
+434,1,"index is a uint16_t, so can't overflow here"
+435,1,If we are inserting a tx at an index greater than our full list of shorttxids
+436,1,"plus the number of prefilled txn we've inserted, then we have txn for which we"
+437,1,have neither a prefilled txn or a shorttxid!
+438,1,Calculate map of txids -> positions and check mempool to see what we have (or don't)
+439,1,Because well-formed cmpctblock messages will have a (relatively) uniform distribution
+440,1,"of short IDs, any highly-uneven distribution of elements can be safely treated as a"
+441,2,READ_STATUS_FAILED.
+442,1,"To determine the chance that the number of entries in a bucket exceeds N,"
+443,1,we use the fact that the number of elements in a single bucket is
+444,1,"binomially distributed (with n = the number of shorttxids S, and p ="
+445,1,"1 / the number of buckets), that in the worst case the number of buckets is"
+446,2,"equal to S (due to std::unordered_map having a default load factor of 1.0),"
+447,1,and that the chance for any bucket to exceed N elements is at most
+448,1,buckets(the chance that any given bucket is above N elements).
+449,2,"Thus: P(max_elements_per_bucket > N) <= S(1 - cdf(binomial(n=S,p=1/S), N))."
+450,1,"If we assume blocks of up to 16000, allowing 12 elements per bucket should"
+451,1,only fail once per ~1 million block transfers (per peer and connection).
+452,1,"TODO: in the shortid-collision case, we should instead request both transactions"
+453,1,which collided. Falling back to full-block-request here is overkill.
+454,1,Short ID collision
+455,1,"If we find two mempool txn that match the short id, just request it."
+456,1,"This should be rare enough that the extra bandwidth doesn't matter,"
+457,1,but eating a round-trip due to FillBlock failure would be annoying
+458,1,"Though ideally we'd continue scanning for the two-txn-match-shortid case,"
+459,1,the performance win of an early exit here is too good to pass up and worth
+460,1,the extra risk.
+461,1,"If we find two mempool/extra txn that match the short id, just"
+462,1,request it.
+463,1,"This should be rare enough that the extra bandwidth doesn't matter,"
+464,1,but eating a round-trip due to FillBlock failure would be annoying
+465,1,Note that we don't want duplication between extra_txn and mempool to
+466,1,"trigger this case, so we compare witness hashes first"
+467,1,"Though ideally we'd continue scanning for the two-txn-match-shortid case,"
+468,1,the performance win of an early exit here is too good to pass up and worth
+469,1,the extra risk.
+470,1,Make sure we can't call FillBlock again.
+471,1,"TODO: We really want to just check merkle tree manually here,"
+472,1,"but that is expensive, and CheckBlock caches a block's"
+473,1,"""checked-status"" (in the CBlock?). CBlock should be able to"
+474,1,check its own merkle root and cache that check.
+475,1,Possible Short ID collision
+476,1,Copyright (c) 2018-2020 The Bitcoin Core developers
+477,1,"Distributed under the MIT software license, see the accompanying"
+478,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+479,1,/ SerType used to serialize parameters in GCS filter encoding.
+480,1,/ Protocol version used to serialize parameters in GCS filter encoding.
+481,1,"Map a value x that is uniformly distributed in the range [0, 2^64) to a"
+482,1,"value uniformly distributed in [0, n) by returning the upper 64 bits of"
+483,1,xn.
+484,2,See: https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/
+485,1,To perform the calculation on 64-bit numbers without losing the
+486,1,"result to overflow, split the numbers into the most significant and"
+487,1,least significant 32 bits and perform multiplication piece-wise.
+488,2,See: https://stackoverflow.com/a/26855440
+489,1,Verify that the encoded filter contains exactly N elements. If it has too much or too little
+490,2,"data, a std::ios_base::failure exception will be raised."
+491,1,Seek forward by size of N
+492,1,Copyright (c) 2012-2020 The Bitcoin Core developers
+493,1,"Distributed under the MIT software license, see the accompanying"
+494,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+495,1,"The ideal size for a bloom filter with a given number of elements and false positive rate is:
+     - nElements log(fp rate) / ln(2)^2
+     We ignore filter parameters which will create a bloom filter larger than the protocol limits"
+496,1,"The ideal number of hash functions is filter size ln(2) / number of elements
+     Again, we ignore filter parameters which will create a bloom filter with more hash functions than the protocol limits
+     See https://en.wikipedia.org/wiki/Bloom_filter for an explanation of these formulas"
+497,1,0xFBA4C795 chosen as it guarantees a reasonable bit difference between nHashNum values.
+498,1,Avoid divide-by-zero (CVE-2013-5700)
+499,1,Sets bit nIndex of vData
+500,1,Avoid divide-by-zero (CVE-2013-5700)
+501,1,Checks bit nIndex of vData
+502,1,Match if the filter contains the hash of tx
+503,1,for finding tx when they appear in a block
+504,2,"zero-size = ""match-all"" filter"
+505,1,Match if the filter contains any arbitrary script data element in any scriptPubKey in tx
+506,1,"If this matches, also add the specific output that was matched."
+507,1,This means clients don't have to update the filter themselves when a new relevant tx
+508,1,"is discovered in order to find spending transactions, which avoids round-tripping and race conditions."
+509,1,Match if the filter contains an outpoint tx spends
+510,1,Match if the filter contains any arbitrary script data element in any scriptSig in tx
+511,1,"The optimal number of hash functions is log(fpRate) / log(0.5), but
+    restrict it to the range 1-50."
+512,1,"In this rolling bloom filter, we'll store between 2 and 3 generations of nElements / 2 entries."
+513,1,"The maximum fpRate = pow(1.0 - exp(-nHashFuncsnMaxElements / nFilterBits), nHashFuncs)
+    =>          pow(fpRate, 1.0 / nHashFuncs) = 1.0 - exp(-nHashFuncsnMaxElements / nFilterBits)
+    =>          1.0 - pow(fpRate, 1.0 / nHashFuncs) = exp(-nHashFuncsnMaxElements / nFilterBits)
+    =>          log(1.0 - pow(fpRate, 1.0 / nHashFuncs)) = -nHashFuncsnMaxElements / nFilterBits
+    =>          nFilterBits = -nHashFuncsnMaxElements / log(1.0 - pow(fpRate, 1.0 / nHashFuncs))
+    =>          nFilterBits = -nHashFuncsnMaxElements / log(1.0 - exp(logFpRate / nHashFuncs))"
+514,1,"For each data element we need to store 2 bits. If both bits are 0, the
+    bit is treated as unset. If the bits are (01), (10), or (11), the bit is
+    treated as set in generation 1, 2, or 3 respectively.
+    These bits are stored in separate integers: position P corresponds to bit
+    (P & 63) of the integers data[(P >> 6)2] and data[(P >> 6)2 + 1]."
+515,1,Similar to CBloomFilter::Hash
+516,1,"A replacement for x % n. This assumes that x and n are 32bit integers, and x is a uniformly random distributed 32bit value"
+517,1,which should be the case for a good hash.
+518,2,See https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/
+519,1,Wipe old entries that used this generation number.
+520,1,"FastMod works with the upper bits of h, so it is safe to ignore that the lower bits of h are already used for bit."
+521,1,"The lowest bit of pos is ignored, and set to zero for the first bit, and to one for the second."
+522,1,"If the relevant bit is not set in either data[pos & ~1] or data[pos | 1], the filter does not contain vKey"
+523,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+524,1,Copyright (c) 2009-2019 The Bitcoin Core developers
+525,1,"Distributed under the MIT software license, see the accompanying"
+526,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+527,1,CChain implementation
+528,1,Stop when we have added the genesis block.
+529,1,"Exponentially larger steps back, plus the genesis block."
+530,1,Use O(1) CChain index if possible.
+531,2,"Otherwise, use O(log n) skiplist."
+532,1,Turn the lowest '1' bit in the binary representation of a number into a '0'.
+533,1,Compute what height to jump back to with the CBlockIndex::pskip pointer.
+534,1,"Determine which height to jump back to. Any number strictly lower than height is acceptable,"
+535,1,but the following expression seems to perform well in simulations (max 110 steps to go back
+536,2,up to 2**18 blocks).
+537,1,Only follow pskip if pprev->pskip isn't better than pskip->pprev.
+538,1,"We need to compute 2**256 / (bnTarget+1), but we can't represent 2**256"
+539,1,"as it's too large for an arith_uint256. However, as 2**256 is at least as large"
+540,2,"as bnTarget+1, it is equal to ((2**256 - bnTarget - 1) / (bnTarget+1)) + 1,"
+541,2,or ~bnTarget / (bnTarget+1) + 1.
+542,1,"Find the last common ancestor two blocks have.
+  Both pa and pb must be non-nullptr."
+543,1,Eventually all chain branches meet at the genesis block.
+544,1,Copyright (c) 2010 Satoshi Nakamoto
+545,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+546,1,"Distributed under the MIT software license, see the accompanying"
+547,1,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+548,1,for signet block challenge hash
+549,1,"Build the genesis block. Note that the output of its generation
+ transaction cannot be spent since it did not originally exist in the
+ database.
+
+ CBlock(hash=000000000019d6, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=4a5e1e, nTime=1231006505, nBits=1d00ffff, nNonce=2083236893, vtx=1)
+   CTransaction(hash=4a5e1e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
+     CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
+   vMerkleTree: 4a5e1e"
+550,1,Main network on which people trade goods and services.
+551,2,000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+552,2,00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+553,2,000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5
+554,2,0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893
+555,2,segwit activation height + miner confirmation window
+556,1,two weeks
+557,1,90% of 2016
+558,2,nPowTargetTimespan / nPowTargetSpacing
+559,1,No activation delay
+560,1,Deployment of Taproot (BIPs 340-342)
+561,1,"April 24th, 2021"
+562,1,"August 11th, 2021"
+563,1,"Approximately November 12th, 2021"
+564,1,654683
+565,1,"The message start string is designed to be unlikely to occur in normal data.
+         The characters are rarely used upper ASCII, not valid as UTF-8, and produce
+         a large 32-bit integer with any alignment."
+566,1,"Note that of those which support the service bits prefix, most only support a subset of"
+567,1,possible options.
+568,1,This is fine at runtime as we'll fall back to using them as an addrfetch if they don't support the
+569,1,"service bits we want, but we should get them updated to support all service bits wanted by any"
+570,1,release ASAP to avoid it where possible.
+571,1,"Pieter Wuille, only supports x1, x5, x9, and xd"
+572,1,"Matt Corallo, only supports x9"
+573,1,Luke Dashjr
+574,1,"Christian Decker, supports x1 - xf"
+575,1,"Jonas Schnelli, only supports x1, x5, x9, and xd"
+576,1,"Peter Todd, only supports x1, x5, x9, and xd"
+577,1,Sjors Provoost
+578,1,Stephan Oeste
+579,1,Jason Maurice
+580,1,TODO to be specified in a future patch.
+581,2,Data from RPC: getchaintxstats 4096 0000000000000000000b9d2ec5a352ecba0592946514a92f14319dc2b367fc72
+582,2,nTime
+583,2,nTxCount
+584,2,dTxRate
+585,2,Testnet (v3): public test network which is reset from time to time.
+586,2,00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
+587,2,000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
+588,2,00000000025e930139bac5c6c31a403776da130831ab85be56578f3fa75369bb
+589,2,00000000002b980fcd729daaa248fd9316a5200e9b367f4ff2c42453e84201ca
+590,1,segwit activation height + miner confirmation window
+591,1,two weeks
+592,1,75% for testchains
+593,2,nPowTargetTimespan / nPowTargetSpacing
+594,1,No activation delay
+595,1,Deployment of Taproot (BIPs 340-342)
+596,1,"April 24th, 2021"
+597,1,"August 11th, 2021"
+598,1,No activation delay
+599,1,1864000
+600,1,nodes with support for servicebits filtering should be at the top
+601,1,"Just a static list of stable node(s), only supports x9"
+602,1,TODO to be specified in a future patch.
+603,1,Data from RPC: getchaintxstats 4096 000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0
+604,2,nTime
+605,2,nTxCount
+606,2,dTxRate
+607,2,Signet: test network with an additional consensus parameter (see BIP325).
+608,1,9434
+609,2,Data from RPC: getchaintxstats 4096 0000002a1de0f46379358c1fd09906f7ac59adf3712323ed90eb59e4c183c020
+610,2,nTime
+611,2,nTxCount
+612,2,dTxRate
+613,1,two weeks
+614,1,90% of 2016
+615,2,nPowTargetTimespan / nPowTargetSpacing
+616,1,No activation delay
+617,1,Activation of Taproot (BIPs 340-342)
+618,1,No activation delay
+619,1,message start is defined as the first 4 bytes of the sha256d of the block script
+620,1,"Regression test: intended for private networks only. Has minimal difficulty to ensure that
+ blocks can be found instantly."
+621,1,BIP34 activated on regtest (Used in functional tests)
+622,1,BIP65 activated on regtest (Used in functional tests)
+623,1,BIP66 activated on regtest (Used in functional tests)
+624,1,CSV activated on regtest (Used in rpc activation tests)
+625,1,SEGWIT is always activated on regtest unless overridden
+626,1,two weeks
+627,1,75% for testchains
+628,1,Faster than normal for regtest (144 instead of 2016)
+629,1,No activation delay
+630,1,No activation delay
+631,1,!< Regtest mode doesn't have any fixed seeds.
+632,1,!< Regtest mode doesn't have any DNS seeds.
+633,1,Allows modifying the Version Bits regtest parameters.
+634,1,Copyright (c) 2010 Satoshi Nakamoto
+635,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+636,1,"Distributed under the MIT software license, see the accompanying"
+637,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+638,1,"Port numbers for incoming Tor connections (8334, 18334, 38334, 18445) have
+ been chosen arbitrarily to keep ranges of used ports tight."
+639,1,Copyright (c) 2012-2020 The Bitcoin Core developers
+640,1,"Distributed under the MIT software license, see the accompanying"
+641,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+642,1,"Name of client reported in the 'version' message. Report the same name
+ for both bitcoind and bitcoin-qt, to make it harder for attackers to
+ target servers or GUI users specifically."
+643,1,"The <obj/build.h>, which is generated by the build environment (share/genbuild.sh),"
+644,1,could contain only one line of the following:
+645,2,"- ""#define BUILD_GIT_TAG ..."", if the top commit is tagged"
+646,2,"- ""#define BUILD_GIT_COMMIT ..."", if the top commit is not tagged"
+647,2,"- ""// No build information available"", if proper git information is not available"
+648,1,"! git will put ""#define GIT_COMMIT_ID ..."" on the next line inside archives."
+649,2,Format the subversion field according to BIP 14 spec (https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki)
+650,1,Copyright (c) 2012-2020 The Bitcoin Core developers
+651,1,"Distributed under the MIT software license, see the accompanying"
+652,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+653,1,The parent only has an empty entry for this outpoint; we can consider our
+654,1,version as fresh.
+655,1,"If the coin exists in this cache as a spent coin and is DIRTY, then"
+656,1,its spentness hasn't been flushed to the parent cache. We're
+657,1,re-adding the coin to this cache now but we can't mark it as FRESH.
+658,1,If we mark it FRESH and then spend it before the cache is flushed
+659,1,we would remove it from this cache and would never flush spentness
+660,1,to the parent cache.
+661,1,Re-adding a spent coin can happen in the case of a re-org (the coin
+662,1,is 'spent' when the block adding it is disconnected and then
+663,1,re-added when it is also added in a newly connected block).
+664,1,"If the coin doesn't exist in the current cache, or is spent but not"
+665,1,"DIRTY, then it can be marked FRESH."
+666,1,"Coinbase transactions can always be overwritten, in order to correctly"
+667,1,deal with the pre-BIP30 occurrences of duplicate coinbase transactions.
+668,1,Ignore non-dirty entries (optimization).
+669,1,"The parent cache does not have an entry, while the child cache does."
+670,1,We can ignore it if it's both spent and FRESH in the child
+671,1,"Create the coin in the parent cache, move the data up"
+672,1,and mark it as dirty.
+673,1,We can mark it FRESH in the parent if it was FRESH in the child
+674,1,Otherwise it might have just been flushed from the parent's cache
+675,1,and already exist in the grandparent
+676,1,Found the entry in the parent cache
+677,1,"The coin was marked FRESH in the child cache, but the coin"
+678,1,"exists in the parent cache. If this ever happens, it means"
+679,1,the FRESH flag was misapplied and there is a logic error in
+680,1,the calling code.
+681,1,"The grandparent cache does not have an entry, and the coin"
+682,1,has been spent. We can just delete it from the parent cache.
+683,1,A normal modification.
+684,1,NOTE: It isn't safe to mark the coin as FRESH in the parent
+685,1,cache. If it already existed and was spent in the parent
+686,1,cache then marking it FRESH would prevent that spentness
+687,1,from being flushed to the grandparent.
+688,1,Cache should be empty when we're calling this.
+689,1,Starting the shutdown sequence and returning false to the caller would be
+690,1,"interpreted as 'entry not found' (as opposed to unable to read data), and"
+691,1,"could lead to invalid interpretation. Just exit immediately, as we can't"
+692,1,"continue anyway, and all writes should be atomic."
+693,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+694,1,Copyright (c) 2009-2019 The Bitcoin Core developers
+695,1,"Distributed under the MIT software license, see the accompanying"
+696,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+697,1,"These check for scripts for which a special case with a shorter encoding is defined.
+They are implemented separately from the CScript test, as these test for exact byte
+sequence correspondences, and are more strict. For example, IsToPubKey also verifies
+whether the public key is valid (as invalid ones cannot be represented in compressed
+form)."
+698,1,"if not fully valid, a case that would not be compressible"
+699,1,Amount compression:
+700,1,"If the amount is 0, output 0"
+701,1,"first, divide the amount (in base units) by the largest power of 10 possible; call the exponent e (e is max 9)"
+702,1,"if e<9, the last digit of the resulting number cannot be 0; store it as d, and drop it (divide by 10)"
+703,1,call the result n
+704,2,output 1 + 10*(9*n + d - 1) + e
+705,2,"if e==9, we only know the resulting number is not zero, so output 1 + 10*(n - 1) + 9"
+706,2,"(this is decodable, as d is in [1-9] and e is in [0-9])"
+707,2,x = 0  OR  x = 1+10*(9*n + d - 1) + e  OR  x = 1+10*(n - 1) + 9
+708,2,x = 10*(9*n + d - 1) + e
+709,2,x = 9*n + d - 1
+710,2,x = n
+711,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+712,1,"Distributed under the MIT software license, see the accompanying"
+713,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+714,1,Allow OP_RESERVED to get into mapOpNames
+715,1,Convenience: OP_ADD and just ADD are both recognized:
+716,2,"strName starts with ""OP_"""
+717,1,namespace
+718,2,"Empty string, ignore. (boost::split given '' will return one word)"
+719,1,Number
+720,1,limit the range of numbers ParseScript accepts in decimal
+721,2,since numbers outside -0xFFFFFFFF...0xFFFFFFFF are illegal in scripts
+722,1,"Raw hex data, inserted NOT pushed onto stack:"
+723,1,"Single-quoted string, pushed as data. NOTE: this is poor-man's"
+724,1,"parsing, spaces/tabs/newlines in single-quoted strings won't work."
+725,1,"opcode, e.g. OP_ADD or ADD:"
+726,1,Check that all of the input and output scripts of a transaction contains valid opcodes
+727,1,Check input scripts for non-coinbase txs
+728,1,Check output scripts
+729,1,General strategy:
+730,1,- Decode both with extended serialization (which interprets the 0x0001 tag as a marker for
+731,1,the presence of witnesses) and with legacy serialization (which interprets the tag as a
+732,1,0-input 1-output incomplete transaction).
+733,1,- Restricted by try_no_witness (which disables legacy if false) and try_witness (which
+734,1,disables extended if false).
+735,1,#NAME?
+736,1,#NAME?
+737,1,#NAME?
+738,1,- If both decode attempts succeed:
+739,1,#NAME?
+740,1,#NAME?
+741,1,"Try decoding with extended serialization support, and remember if the result successfully"
+742,1,consumes the entire input.
+743,1,Fall through.
+744,1,"Optimization: if extended decoding succeeded and the result passes CheckTxScriptsSanity,"
+745,1,don't bother decoding the other way.
+746,1,"Try decoding with legacy serialization, and remember if the result successfully consumes the entire input."
+747,1,Fall through.
+748,1,"If legacy decoding succeeded and passes CheckTxScriptsSanity, that's our answer, as we know"
+749,1,at this point that extended decoding either failed or doesn't pass the sanity check.
+750,1,"If extended decoding succeeded, and neither decoding passes sanity, return the extended one."
+751,1,"If legacy decoding succeeded and extended didn't, return the legacy one."
+752,1,"If none succeeded, we failed."
+753,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+754,1,"Distributed under the MIT software license, see the accompanying"
+755,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+756,1,"Create the assembly string representation of a CScript object.
+ @param[in] script    CScript object to convert into the asm string representation.
+ @param[in] fAttemptSighashDecode    Whether to attempt to decode sighash types on data within the script that matches the format
+                                     of a signature. Only pass true for scripts you believe could contain signatures. For example,
+                                     pass false, or omit the this argument (defaults to false), for scriptPubKeys."
+757,1,the IsUnspendable check makes sure not to try to decode OP_RETURN data that may match the format of a signature
+758,1,goal: only attempt to decode a defined sighash type from data that looks like a signature within a scriptSig.
+759,1,this won't decode correctly formatted public keys in Pubkey or Multisig scripts due to
+760,1,the restrictions on the pubkey formats (see IsCompressedOrUncompressedPubKey) being incongruous with the
+761,1,checks in CheckSignatureEncoding.
+762,1,remove the sighash type byte. it will be replaced by the decode.
+763,1,"TODO: from v23 (""addresses"" and ""reqSigs"" deprecated) this method should be refactored to remove the `include_addresses` option"
+764,1,this method can also be combined with `ScriptToUniv` as they will overlap
+765,1,"Transaction version is actually unsigned in consensus checks, just signed in memory,"
+766,1,so cast to unsigned before giving it to the user.
+767,1,"If available, use Undo data to calculate the fee. Note that txundo == nullptr"
+768,1,for coinbase transactions and for transactions where undo data is unavailable.
+769,1,"The hex-encoded transaction. Used the name ""hex"" to be consistent with the verbose output of ""getrawtransaction""."
+770,1,Copyright (c) 2012-2019 The Bitcoin Core developers
+771,1,"Distributed under the MIT software license, see the accompanying"
+772,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+773,1,"This code is adapted from posix_logger.h, which is why it is using vsprintf."
+774,1,Please do not do this in normal code
+775,1,Print the message
+776,1,"Do not use vsnprintf elsewhere in bitcoin source code, see above."
+777,1,Truncate to available space if necessary
+778,1,Try again with larger buffer
+779,1,Add newline if necessary
+780,1,Continued
+781,1,On most platforms the default setting of max_open_files (which is 1000)
+782,1,is optimal. On Windows using a large file count is OK because the handles
+783,2,do not interfere with select() loops. On 64-bit Unix hosts this value is
+784,1,"also OK, because up to that amount LevelDB will use an mmap"
+785,1,implementation that does not use extra file descriptors (the fds are
+786,1,closed after being mmap'ed).
+787,1,Increasing the value beyond the default is dangerous because LevelDB will
+788,1,fall back to a non-mmap implementation when the file count is too large.
+789,1,On 32-bit Unix host we should decrease the value because the handles use
+790,1,"up real fds, and we want to avoid fd exhaustion issues."
+791,1,See PR #12495 for further discussion.
+792,1,up to two write buffers may be held in memory simultaneously
+793,1,LevelDB versions before 1.16 consider short writes to be corruption. Only trigger error
+794,1,on corruption in later versions.
+795,1,"The base-case obfuscation key, which is a noop."
+796,1,Initialize non-degenerate obfuscation if it won't upset
+797,1,"existing, non-obfuscated data."
+798,1,Write `new_key` so we don't obfuscate the key with itself
+799,1,Prefixed with null character to avoid collisions with other keys
+800,1,We must use a string constructor which specifies length so that we copy
+801,1,past the null-terminator.
+802,1,"Returns a string (consisting of 8 random bytes) suitable for use as an
+ obfuscating XOR key."
+803,1,namespace dbwrapper_private
+804,1,Copyright (c) 2018-2020 The Bitcoin Core developers
+805,1,"Distributed under the MIT software license, see the accompanying"
+806,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+807,1,namespace interfaces
+808,1,Copyright (c) 2018-2021 The Bitcoin Core developers
+809,1,"Distributed under the MIT software license, see the accompanying"
+810,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+811,2,Call <command> enumerate
+812,1,Check for error
+813,1,Check if fingerprint is present
+814,1,Skip duplicate signer
+815,1,Serialize the PSBT
+816,1,Check if signer fingerprint matches any input master key fingerprint
+817,2,ENABLE_EXTERNAL_SIGNER
+818,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+819,1,Copyright (c) 2009-2019 The Bitcoin Core developers
+820,1,"Distributed under the MIT software license, see the accompanying"
+821,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+822,1,Avoid fseek to nPos
+823,1,Copyright (c) 2017-2020 The Bitcoin Core developers
+824,1,"Distributed under the MIT software license, see the accompanying"
+825,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+826,1,Exclusive file locking is broken on WSL using fcntl (issue #18622)
+827,1,This workaround can be removed once the bug on WSL is fixed
+828,1,Convert from Multi Byte to utf-16
+829,1,Convert from utf-16 to utf-8
+830,2,reference: https://github.com/gcc-mirror/gcc/blob/gcc-7_3_0-release/libstdc%2B%2B-v3/include/std/fstream#L270
+831,2,__GLIBCXX__
+832,2,__GLIBCXX__
+833,1,WIN32
+834,1,fsbridge
+835,1,Copyright (c) 2013-2020 The Bitcoin Core developers
+836,1,"Distributed under the MIT software license, see the accompanying"
+837,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+838,2,"The following is MurmurHash3 (x86_32), see https://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp"
+839,2,----------
+840,1,body
+841,2,----------
+842,1,tail
+843,2,----------
+844,1,finalization
+845,1,Copyright (c) 2015-2020 The Bitcoin Core developers
+846,1,"Distributed under the MIT software license, see the accompanying"
+847,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+848,2,boost::trim
+849,1,WWW-Authenticate to present with 401 Unauthorized response
+850,1,"Simple one-shot callback timer to be used by the RPC mechanism to e.g.
+ re-lock the wallet."
+851,1,Pre-base64-encoded authentication token
+852,1,Stored RPC timer interface (for unregistration)
+853,1,List of -rpcauth values
+854,1,RPC Auth Whitelist
+855,1,Send error reply from json-rpc error object
+856,1,This function checks username and password against -rpcauth
+857,1,entries from config file.
+858,1,Belt-and-suspenders measure if InitRPCAuthentication was not called
+859,1,Check if authorized under single-user field
+860,1,JSONRPC handles only POST
+861,1,Check authorization
+862,1,"Deter brute-forcing
+           If this results in a DoS the user really
+           shouldn't have their RPC port exposed."
+863,1,Parse request
+864,1,Set the URI
+865,1,singleton request
+866,1,Send reply
+867,1,array of requests
+868,1,Parse method
+869,1,Copyright (c) 2015-2020 The Bitcoin Core developers
+870,1,"Distributed under the MIT software license, see the accompanying"
+871,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+872,1,For HTTP status codes
+873,1,Maximum size of http request (request line + headers)
+874,1,HTTP request work item
+875,1,"Simple work queue for distributing work over multiple threads.
+ Work items are simply callable objects."
+876,1,Precondition: worker threads have all stopped (they have been joined).
+877,1,Enqueue a work item
+878,1,Thread function
+879,1,Interrupt and exit loops
+880,1,HTTP module state
+881,1,! libevent event loop
+882,1,! HTTP server
+883,1,! List of subnets to allow RPC connections from
+884,1,! Work queue for handling longer requests off the event loop thread
+885,1,! Handlers for (sub)paths
+886,1,! Bound listening sockets
+887,1,Check if a network address is allowed to access the HTTP server
+888,1,Initialize ACL list for HTTP server
+889,1,always allow IPv4 local subnet
+890,1,always allow IPv6 localhost
+891,1,HTTP request method as string - use for logging only
+892,1,HTTP request callback
+893,1,"Disable reading to work around a libevent bug, fixed in 2.2.0."
+894,1,Early address-based allow check
+895,1,Early reject unknown HTTP methods
+896,1,Find registered handler for prefix
+897,1,Dispatch to worker thread
+898,1,"if true, queue took ownership"
+899,1,Callback to reject HTTP requests after shutdown.
+900,1,Event dispatcher thread
+901,1,Event loop will be interrupted by InterruptHTTPServer()
+902,1,Bind HTTP server to specified addresses
+903,1,Determine what addresses to bind to
+904,1,Default to loopback if not allowing external IPs
+905,1,Specific bind address
+906,1,Bind addresses
+907,1,Simple wrapper to set thread name and run work queue
+908,1,libevent event log callback
+909,2,EVENT_LOG_WARN was added in 2.0.19; but before then _EVENT_LOG_WARN existed.
+910,1,Log warn messages and higher without debug category
+911,1,Redirect libevent's logging to our own log
+912,1,Update libevent's log handling. Returns false if our version of
+913,1,"libevent doesn't support debug logging, in which case we should"
+914,2,clear the BCLog::LIBEVENT flag.
+915,1,Create a new evhttp object to handle requests.
+916,2,transfer ownership to eventBase/HTTP via .release()
+917,1,Can't update libevent logging if version < 02010100
+918,1,Reject requests on current connections
+919,1,"Unlisten sockets, these are what make the event loop running, which means"
+920,1,that after this and all connections are closed the event loop will quit.
+921,1,Static handler: simply call inner handler
+922,1,immediately trigger event in main thread
+923,1,trigger after timeval passed
+924,1,Keep track of whether reply was sent to avoid request leaks
+925,1,"evhttpd cleans up the request, as long as a reply was sent."
+926,1,"Trivial implementation: if this is ever a performance bottleneck,
+     internal copying can be avoided in multi-segment buffers by using
+     evbuffer_peek and an awkward loop. Though in that case, it'd be even
+     better to not copy into an intermediate string but use a stream
+     abstraction to consume the evbuffer on the fly in the parsing algorithm."
+927,1,returns nullptr in case of empty buffer
+928,1,"Closure sent to main thread to request a reply to be sent to
+ a HTTP request.
+ Replies must be sent in the main loop in the main http thread,
+ this cannot be done from worker threads."
+929,1,Send event to main http thread to send reply message
+930,1,Re-enable reading from the socket. This is the second part of the libevent
+931,1,workaround above.
+932,1,transferred back to main thread
+933,1,evhttp retains ownership over returned address string
+934,1,Copyright (c) 2020-2020 The Bitcoin Core developers
+935,1,"Distributed under the MIT software license, see the accompanying"
+936,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+937,1,"Swap Standard Base64 <-> I2P Base64.
+ Standard Base64 uses `+` and `/` as last two characters of its alphabet.
+ I2P Base64 uses `-` and `~` respectively.
+ So it is easy to detect in which one is the input and convert to the other.
+ @param[in] from Input to convert.
+ @return converted `from`"
+938,1,"Decode an I2P-style Base64 string.
+ @param[in] i2p_b64 I2P-style Base64 string.
+ @return decoded `i2p_b64`
+ @throw std::runtime_error if decoding fails"
+939,1,"Derive the .b32.i2p address of an I2P destination (binary).
+ @param[in] dest I2P destination.
+ @return the address that corresponds to `dest`
+ @throw std::runtime_error if conversion fails"
+940,1,"Derive the .b32.i2p address of an I2P destination (I2P-style Base64).
+ @param[in] dest I2P destination.
+ @return the address that corresponds to `dest`
+ @throw std::runtime_error if conversion fails"
+941,1,"Timeout, no incoming connections within MAX_WAIT_FOR_IO."
+942,1,Private methods
+943,2,"Don't log the full ""SESSION CREATE ..."" because it contains our private key."
+944,1,It could take a few minutes for the I2P router to reply as it is querying the I2P network
+945,2,"(when doing name lookup, for example). Notice: `RecvUntilTerminator()` is checking"
+946,2,"`m_interrupt` more often, so we would not be stuck here for long if `m_interrupt` is"
+947,1,signaled.
+948,2,https://geti2p.net/spec/common-structures#key-certificates
+949,2,"""7"" or ""EdDSA_SHA512_Ed25519"" - ""Recent Router Identities and Destinations""."
+950,1,"Use ""7"" because i2pd <2.24.0 does not recognize the textual form."
+951,2,"umask is set to 077 in init.cpp, which is ok (unless -sysperms is given)"
+952,2,From https://geti2p.net/spec/common-structures#destination:
+953,1,"""They are 387 bytes plus the certificate length specified at bytes 385-386, which may be"
+954,1,"non-zero"""
+955,1,"full is an overkill, too verbose in the logs"
+956,1,"If our session id is invalid, then force session re-creation on next usage."
+957,2,namespace sam
+958,2,namespace i2p
+959,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+960,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+961,1,"Distributed under the MIT software license, see the accompanying"
+962,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+963,1,"Win32 LevelDB doesn't use filedescriptors, and the ones used for"
+964,1,accessing block files don't count towards the fd_set size limit
+965,1,anyway.
+966,1,The PID file facilities.
+967,1,////////////////////////////////////////////////////////////////////////////
+968,1,Shutdown
+969,1,Thread management and startup/shutdown:
+970,1,The network-processing threads are all part of a thread group
+971,2,created by AppInit() or the Qt main() function.
+972,2,A clean exit happens when StartShutdown() or the SIGTERM
+973,2,"signal handler sets ShutdownRequested(), which makes main thread's"
+974,2,WaitForShutdown() interrupts the thread group.
+975,2,"And then, WaitForShutdown() makes all other on-going threads"
+976,1,in the thread group join the main thread.
+977,2,"Shutdown() is then called to clean up database connections, and stop other"
+978,1,threads that should only be stopped after the main network-processing
+979,1,threads have exited.
+980,1,"Shutdown for Qt is very similar, only it uses a QTimer to detect"
+981,2,"ShutdownRequested() getting set, and then does the normal Qt"
+982,1,shutdown thing.
+983,2,"/ Note: Shutdown() must be able to handle cases in which initialization failed part of the way,"
+984,1,/ for example if the data directory was found to be locked.
+985,1,/ Be sure that anything that writes files or flushes caches only does this if the respective
+986,1,/ module was initialized.
+987,1,"Because these depend on each-other, we make sure that neither can be"
+988,1,using the other before destroying them.
+989,1,"After everything has been shut down, but before things get flushed, stop the"
+990,1,"CScheduler/checkqueue, scheduler and load block thread."
+991,1,"After the threads that potentially access these pointers have been stopped,"
+992,1,destruct and reset all to nullptr.
+993,1,"Drop transactions we were still watching, and record fee estimations."
+994,1,"FlushStateToDisk generates a ChainStateFlushed callback, which we should avoid missing"
+995,1,After there are no more peers/RPC left to give us new data which may generate
+996,1,"CValidationInterface callbacks, flush them..."
+997,1,Stop and delete all indexes only after flushing background callbacks.
+998,1,Any future callbacks will be dropped. This should absolutely be safe - if
+999,1,"missing a callback results in an unrecoverable situation, unclean shutdown"
+1000,1,would too. The only reason to do the above flushes is to let the wallet catch
+1001,1,up with our current chain to avoid any strange pruning edge cases and make
+1002,1,next startup faster by avoiding rescan.
+1003,1,"Signal handlers are very limited in what they are allowed to do.
+ The execution context the handler is invoked in is not guaranteed,
+ so we restrict handler operations to just touching variables:"
+1004,1,server-only for now
+1005,1,Hidden Options
+1006,1,GUI args. These will be overwritten by SetupUIArgs for the GUI
+1007,2,USE_NATPMP
+1008,1,Add the hidden options
+1009,1,thread runs free
+1010,1,Parameter interaction based on rules
+1011,1,"when specifying an explicit binding address, you want to listen on it"
+1012,1,even when -connect or -proxy is specified
+1013,1,"when only connecting to trusted nodes, do not seed via DNS, or listen by default"
+1014,1,"to protect privacy, do not listen by default if a default proxy server is specified"
+1015,1,"to protect privacy, do not map ports when a proxy is set. The user may still specify -listen=1"
+1016,1,"to listen locally, so don't rely on this happening through -listen below."
+1017,1,"to protect privacy, do not discover addresses by default"
+1018,1,do not map ports or try to retrieve public IP when not listening (pointless)
+1019,1,"if an explicit public IP is specified, do not try to find others"
+1020,1,disable whitelistrelay in blocksonly mode
+1021,1,Forcing relay from whitelisted hosts implies we will accept relays from them in the first place.
+1022,1,"Initialize global loggers.
+
+ Note that this is called very early in the process lifetime, so you should be
+ careful about what global state you rely on here."
+1023,1,Variables internal to initialization process only
+1024,1,namespace
+1025,1,"Rather than throwing std::bad-alloc if allocation fails, terminate"
+1026,1,immediately to (try to) avoid chain corruption.
+1027,1,"Since LogPrintf may itself allocate memory, set the handler directly"
+1028,1,to terminate first.
+1029,1,"The log was successful, terminate now."
+1030,1,********************************************************* Step 1: setup
+1031,1,Turn off Microsoft heap dump noise
+1032,1,"Disable confusing ""helpful"" text message on abort, Ctrl-C"
+1033,1,Enable heap terminate-on-corruption
+1034,1,Clean shutdown on SIGTERM
+1035,1,Reopen debug.log on SIGHUP
+1036,1,"Ignore SIGPIPE, otherwise it will bring the daemon down if the client closes unexpectedly"
+1037,1,********************************************************* Step 2: parameter interactions
+1038,2,also see: InitParameterInteraction()
+1039,2,"Error if network-specific options (-addnode, -connect, etc) are"
+1040,1,"specified in default section of config file, but not overridden"
+1041,1,on the command line or in this network's section of the config file.
+1042,1,Warn if unrecognized section name are present in the config file.
+1043,1,parse and validate enabled filter types
+1044,2,Signal NODE_COMPACT_FILTERS if peerblockfilters and basic filters index are both enabled.
+1045,1,"if using block pruning, then disallow txindex and coinstatsindex"
+1046,1,-bind and -whitebind can't be set when not listening
+1047,1,Make sure enough file descriptors are available
+1048,1,"Trim requested connection counts, to fit into system limitations"
+1049,2,<int> in std::min<int>(...) to work around FreeBSD compilation issue described in #2695
+1050,1,********************************************************* Step 3: parameter-to-internal-flags
+1051,1,mempool limits
+1052,1,incremental relay fee sets the minimum feerate increase necessary for BIP 125 replacement in the mempool
+1053,1,and the amount the mempool min fee increases above the feerate of txs evicted due to mempool limiting.
+1054,1,block pruning; get the amount of disk space (in MiB) to allot for block & undo files
+1055,2,manual pruning: -prune=1
+1056,1,High fee check is done afterward in CWallet::Create()
+1057,1,Allow only setting incrementalRelayFee to control both
+1058,1,Sanity check argument for min fee for including tx in block
+1059,1,TODO: Harmonize which arguments need sanity checking and where that happens
+1060,1,Feerate used to define dust.  Shouldn't be changed lightly as old
+1061,1,implementations may inadvertently create non-standard transactions
+1062,1,Option to startup with mocktime set (used for regression testing):
+1063,2,SetMockTime(0) is a no-op
+1064,1,Make sure only a single Bitcoin process is using the data directory.
+1065,1,********************************************************* Step 4: sanity checks
+1066,1,"Probe the data directory lock to give an early error message, if possible"
+1067,2,"We cannot hold the data directory lock here, as the forking for daemon() hasn't yet happened,"
+1068,1,and a fork will cause weird behavior to it.
+1069,1,After daemonization get the data directory lock again and hold on to it until exit
+1070,1,"This creates a slight window for a race condition to happen, however this condition is harmless: it"
+1071,1,will at most make us exit without printing a message to console.
+1072,1,Detailed error printed inside LockDataDirectory
+1073,1,Create client interfaces for wallets that are supposed to be loaded
+1074,1,according to -wallet and -disablewallet options. This only constructs
+1075,1,"the interfaces, it doesn't load wallet data. Wallets actually get loaded"
+1076,2,when load() and start() interface methods are called below.
+1077,1,********************************************************* Step 4a: application initialization
+1078,2,Detailed error printed inside CreatePidFile().
+1079,2,Detailed error printed inside StartLogging().
+1080,1,Warn about relative -datadir path.
+1081,2,Continued
+1082,2,-par=0 means autodetect (number of cores - 1 script threads)
+1083,2,"-par=-n means ""leave n cores free"" (number of cores - n - 1 script threads)"
+1084,1,Subtract 1 because the main thread counts towards the par threads
+1085,2,Number of script-checking threads <= MAX_SCRIPTCHECK_THREADS
+1086,1,Start the lightweight task scheduler thread
+1087,1,Gather some entropy once per minute.
+1088,1,"Register RPC commands regardless of -server setting so they will be
+    available in the GUI RPC console even if external calls are disabled."
+1089,1,"Start the RPC server already.  It will be started in ""warmup"" mode
+    and not really process calls already (but it will signify connections
+    that the server is there and will be ready later).  Warmup mode will
+    be disabled when initialisation is finished."
+1090,1,********************************************************* Step 5: verify wallet database integrity
+1091,1,********************************************************* Step 6: network initialization
+1092,1,Note that we absolutely cannot open any actual connections
+1093,1,"until the very end (""start node"") as the UTXO/block state"
+1094,1,is not yet setup and may end up being set up twice if we
+1095,1,need to reindex later.
+1096,1,"Don't initialize fee estimation with old data if we don't relay transactions,"
+1097,1,as they would never get updated.
+1098,1,"sanitize comments per BIP-0014, format user agent and check total size"
+1099,1,Check for host lookup allowed before parsing any network related parameters
+1100,1,#NAME?
+1101,2,"-noproxy (or -proxy=0) as well as the empty string can be used to not set a proxy, this is the default"
+1102,1,"by default, -proxy sets onion as reachable, unless -noonion later"
+1103,1,"-onion can be used to set only a proxy for .onion, or override normal proxy for .onion addresses"
+1104,2,-noonion (or -onion=0) disables connecting to .onion entirely
+1105,1,"An empty string is used to not override the onion proxy (in which case it defaults to -proxy set above, or none)"
+1106,2,Handle -noonion/-onion=0
+1107,1,Read asmap file if configured
+1108,1,********************************************************* Step 7: load block chain
+1109,1,cache size calculations
+1110,1,total cache cannot be less than nMinDbCache
+1111,1,total cache cannot be greater than nMaxDbcache
+1112,1,use 25%-50% of the remainder for disk cache
+1113,1,cap total coins db cache
+1114,1,the rest goes to in-memory cache
+1115,1,"new CBlockTreeDB tries to delete the existing file, which"
+1116,1,fails if it's still open from the previous loop. Close it first:
+1117,1,"If we're reindexing in prune mode, wipe away unusable block files and all undo data files"
+1118,1,LoadBlockIndex will load fHavePruned if we've ever removed a
+1119,1,block file from disk.
+1120,1,Note that it also sets fReindex based on the disk flag!
+1121,1,From here on out fReindex and fReset mean something different!
+1122,1,"If the loaded chain has a wrong genesis, bail out immediately"
+1123,1,"(we're likely using a testnet datadir, or the other way around)."
+1124,1,Check for changed -prune state.  What we are concerned about is a user who has pruned blocks
+1125,1,"in the past, but is now trying to run unpruned."
+1126,1,At this point blocktree args are consistent with what's on disk.
+1127,1,"If we're not mid-reindex (based on disk + args), add a genesis block on disk"
+1128,1,(otherwise we use the one already on disk).
+1129,1,This is called again in ThreadImport after the reindex completes.
+1130,1,At this point we're either in reindex or we've loaded a useful
+1131,1,block tree into BlockIndex()!
+1132,1,cache_size_bytes
+1133,1,in_memory
+1134,1,should_wipe
+1135,1,"If necessary, upgrade from older database format."
+1136,1,This is a no-op if we cleared the coinsviewdb with -reindex or -reindex-chainstate
+1137,1,ReplayBlocks is a no-op if we cleared the coinsviewdb with -reindex or -reindex-chainstate
+1138,1,"The on-disk coinsdb is now in a good state, create the cache"
+1139,2,LoadChainTip initializes the chain based on CoinsTip()'s best block
+1140,1,out of the per-chainstate loop
+1141,1,out of the chainstate activation do-while
+1142,1,first suggest a reindex
+1143,1,"As LoadBlockIndex can take several minutes, it's possible the user"
+1144,1,"requested to kill the GUI during the last operation. If so, exit."
+1145,2,"As the program has not fully started yet, Shutdown() is possibly overkill."
+1146,1,********************************************************* Step 8: start indexers
+1147,1,cache size
+1148,1,********************************************************* Step 9: load wallet
+1149,1,********************************************************* Step 10: data directory maintenance
+1150,1,"if pruning, unset the service bit and perform the initial blockstore prune"
+1151,1,after any wallet rescanning has taken place.
+1152,1,Advertise witness capabilities.
+1153,2,The option to not set NODE_WITNESS is only used in the tests and should be removed.
+1154,1,********************************************************* Step 11: import blocks
+1155,1,"Either install a handler to notify us when genesis activates, or set fHaveGenesis directly."
+1156,1,"No locking, as this happens before any background thread is started."
+1157,1,thread runs free
+1158,1,Wait for genesis block to be processed
+1159,2,We previously could hang here if StartShutdown() is called prior to
+1160,1,"ThreadImport getting started, so instead we just wait on a timer to"
+1161,2,check ShutdownRequested() regularly.
+1162,1,********************************************************* Step 12: start node
+1163,1,// debug print
+1164,1,Map ports with UPnP or NAT-PMP.
+1165,1,Initiate outbound connections unless connect=0
+1166,1,********************************************************* Step 13: finished
+1167,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1168,1,Copyright (c) 2017 The Zcash developers
+1169,1,"Distributed under the MIT software license, see the accompanying"
+1170,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1171,1,These functions are taken from the libsecp256k1 distribution and are very ugly.
+1172,1,"This parses a format loosely based on a DER encoding of the ECPrivateKey type from
+ section C.4 of SEC 1 <https://www.secg.org/sec1-v2.pdf>, with the following caveats:
+
+ The octet-length of the SEQUENCE must be encoded as 1 or 2 octets. It is not
+   required to be encoded as one octet if it is less than 256, as DER would require.
+ The octet-length of the SEQUENCE must not be greater than the remaining
+   length of the key encoding, but need not match it (i.e. the encoding may contain
+   junk after the encoded SEQUENCE).
+ The privateKey OCTET STRING is zero-filled on the left to 32 octets.
+ Anything after the encoding of the privateKey OCTET STRING is ignored, whether
+   or not it is validly encoded DER.
+
+ out32 must point to an output buffer of length at least 32 bytes."
+1173,1,sequence header
+1174,1,sequence length constructor
+1175,1,sequence length
+1176,2,sequence element 0: version number (=1)
+1177,2,"sequence element 1: octet string, up to 32 bytes"
+1178,1,"This serializes to a DER encoding of the ECPrivateKey type from section C.4 of SEC 1
+ <https://www.secg.org/sec1-v2.pdf>. The optional parameters and publicKey fields are
+ included.
+
+ seckey must point to an output buffer of length at least CKey::SIZE bytes.
+ seckeylen must initially be set to the size of the seckey buffer. Upon return it
+ will be set to the number of bytes used in the buffer.
+ key32 must point to a 32-byte raw private key."
+1179,1,Check that the sig has a low R value and will be less than 71 bytes
+1180,1,"In DER serialization, all values are interpreted as big-endian, signed integers. The highest bit in the integer indicates"
+1181,1,"its signed-ness; 0 is positive, 1 is negative. When the value is interpreted as a negative integer, it must be converted"
+1182,1,to a positive value by prepending a 0x00 byte so that the highest bit is 0. We can avoid this prepending by ensuring that
+1183,1,"our highest bit is always 0, and thus we must check that the first byte is less than 0x80."
+1184,1,Grind for low R
+1185,1,Pass in a random blinding seed to the secp256k1 context.
+1186,1,Copyright (c) 2014-2019 The Bitcoin Core developers
+1187,1,"Distributed under the MIT software license, see the accompanying"
+1188,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1189,1,/ Maximum witness length for Bech32 addresses.
+1190,1,base58-encoded Bitcoin addresses.
+1191,1,Public-key-hash-addresses have version 0 (or 111 testnet).
+1192,2,"The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key."
+1193,1,Script-hash-addresses have version 5 (or 196 testnet).
+1194,2,"The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script."
+1195,1,Set potential error message.
+1196,1,This message may be changed if the address can also be interpreted as a Bech32 address.
+1197,1,Bech32 decoding
+1198,1,The first 5 bit symbol is the witness version (0-16)
+1199,1,The rest of the symbols are converted witness program bytes.
+1200,1,Set error message if address can't be interpreted as Base58 or Bech32.
+1201,1,namespace
+1202,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+1203,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1204,1,"Distributed under the MIT software license, see the accompanying"
+1205,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1206,1,"NOTE: the logger instances is leaked on exit. This is ugly, but will be
+ cleaned up by the OS/libc. Defining a logger as a global object doesn't work
+ since the order of destruction of static/global objects is undefined.
+ Consider if the logger gets destroyed, and then some later destructor calls
+ LogPrintf, maybe indirectly, and you get a core dump at shutdown trying to
+ access the logger. When the shutdown sequence is fully audited and tested,
+ explicit destruction of these objects can be implemented by changing this
+ from a raw pointer to a std::unique_ptr.
+ Since the ~Logger() destructor is never called, the Logger class and all
+ its subclasses must have implicitly-defined destructors.
+
+ This method of initialization was originally introduced in
+ ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c."
+1207,1,unbuffered
+1208,1,Add newlines to the logfile to distinguish this execution from the
+1209,1,last one.
+1210,1,dump buffered messages from before we opened the log
+1211,1,Omit the special cases.
+1212,1,"Belts and suspenders: make sure outgoing log messages don't contain
+     potentially suspicious characters, such as terminal control codes.
+    
+     This escapes control characters except newline ('\n') in C syntax.
+     It escapes instead of removes them to still allow for troubleshooting
+     issues where they accidentally end up in strings."
+1213,1,buffer if we haven't started logging yet
+1214,1,print to console
+1215,1,"reopen the log file, if requested"
+1216,1,unbuffered
+1217,1,Amount of debug.log to save at end when shrinking (must fit in memory)
+1218,1,Scroll debug.log if it's getting too big
+1219,1,Special files (e.g. device nodes) may not have a size.
+1220,1,If debug.log file is more than 10% bigger the RECENT_DEBUG_HISTORY_SIZE
+1221,1,trim it down by saving only the last RECENT_DEBUG_HISTORY_SIZE bytes
+1222,1,Restart the file with some of the end
+1223,1,Copyright (c) 2011-2020 The Bitcoin Core developers
+1224,1,"Distributed under the MIT software license, see the accompanying"
+1225,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1226,1,USE_NATPMP
+1227,1,The minimum supported miniUPnPc API version is set to 10. This keeps compatibility
+1228,1,with Ubuntu 16.04 LTS and Debian 8 libminiupnpc-dev packages.
+1229,1,USE_UPNP
+1230,1,detect gateway automatically
+1231,1,forced gateway - NOT APPLIED
+1232,1,OK
+1233,1,seconds
+1234,1,OK
+1235,1,remove a port mapping
+1236,1,OK
+1237,1,USE_NATPMP
+1238,1,USE_UPNP
+1239,1,High priority protocol.
+1240,1,USE_UPNP
+1241,1,Low priority protocol.
+1242,1,USE_NATPMP
+1243,1,Enabling another protocol does not cause switching from the currently used one.
+1244,1,Interrupt a protocol-specific loop in the ThreadUpnp() or in the ThreadNatpmp()
+1245,1,to force trying the next protocol in the ThreadMapPort() loop.
+1246,2,#if defined(USE_NATPMP) || defined(USE_UPNP)
+1247,1,Intentionally left blank.
+1248,1,Intentionally left blank.
+1249,1,Intentionally left blank.
+1250,2,#if defined(USE_NATPMP) || defined(USE_UPNP)
+1251,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+1252,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1253,1,"Distributed under the MIT software license, see the accompanying"
+1254,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1255,1,"we can never have zero txs in a merkle block, we always need the coinbase tx"
+1256,1,"if we do not have this assert, we can hit a memory access violation when indexing into vTxid"
+1257,1,hash at height 0 is the txids themselves
+1258,1,calculate left hash
+1259,1,calculate right hash if not beyond the end of the array - copy left hash otherwise
+1260,1,combine subhashes
+1261,1,determine whether this node is the parent of at least one matched txid
+1262,1,store as flag bit
+1263,1,"if at height 0, or nothing interesting below, store hash and stop"
+1264,1,"otherwise, don't store any hash, but descend into the subtrees"
+1265,1,overflowed the bits array - failure
+1266,1,"if at height 0, or nothing interesting below, use stored hash and do not descend"
+1267,1,overflowed the hash array - failure
+1268,1,"in case of height 0, we have a matched txid"
+1269,1,"otherwise, descend into the subtrees to extract matched txids and hashes"
+1270,1,"The left and right branches should never be identical, as the transaction"
+1271,1,hashes covered by them must each be unique.
+1272,1,and combine them before returning
+1273,1,reset state
+1274,1,calculate height of tree
+1275,1,traverse the partial tree
+1276,1,An empty set will not work
+1277,1,check for excessively high numbers of transactions
+1278,1,there can never be more hashes provided than one for every txid
+1279,1,"there must be at least one bit per node in the partial tree, and at least one node per hash"
+1280,1,calculate height of tree
+1281,1,traverse the partial tree
+1282,1,verify that no problems occurred during the tree traversal
+1283,1,verify that all bits were consumed (except for the padding caused by serializing it as a byte sequence)
+1284,1,verify that all hashes were consumed
+1285,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+1286,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1287,1,"Distributed under the MIT software license, see the accompanying"
+1288,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1289,1,Updating time can change work required on testnet:
+1290,1,Limit weight to between 4K and MAX_BLOCK_WEIGHT-4K for sanity:
+1291,1,Block resource limits
+1292,2,"If -blockmaxweight is not given, limit to DEFAULT_BLOCK_MAX_WEIGHT"
+1293,1,Reserve space for coinbase tx
+1294,1,These counters do not include coinbase tx
+1295,1,pointer for convenience
+1296,1,Add dummy coinbase tx as first transaction
+1297,1,updated at end
+1298,1,updated at end
+1299,1,#NAME?
+1300,1,#NAME?
+1301,1,Decide whether to include witness transactions
+1302,1,This is only needed in case the witness softfork activation is reverted
+1303,1,(which would require a very deep reorganization).
+1304,1,Note that the mempool would accept transactions with witness data before
+1305,1,"IsWitnessEnabled, but we would only ever mine blocks after IsWitnessEnabled"
+1306,1,unless there is a massive block reorganization with the witness softfork
+1307,1,not activated.
+1308,1,TODO: replace this with a call to main to assess validity of a mempool
+1309,1,transaction (which in most cases can be a no-op).
+1310,1,Create coinbase transaction.
+1311,1,Fill in header
+1312,1,Only test txs not already in the block
+1313,1,TODO: switch to weight-based accounting for packages instead of vsize-based accounting.
+1314,1,Perform transaction-level checks before adding to block:
+1315,1,#NAME?
+1316,1,- premature witness (in case segwit transactions are added to mempool before
+1317,1,segwit activation)
+1318,1,Insert all descendants (not yet in block) into the modified set
+1319,1,Skip entries in mapTx that are already in a block or are present
+1320,1,in mapModifiedTx (which implies that the mapTx ancestor state is
+1321,1,stale due to ancestor inclusion in the block)
+1322,1,Also skip transactions that we've already failed to add. This can happen if
+1323,1,we consider a transaction in mapModifiedTx and it fails: we can then
+1324,1,potentially consider it again while walking mapTx.  It's currently
+1325,1,"guaranteed to fail again, but as a belt-and-suspenders check we put it in"
+1326,1,"failedTx and avoid re-evaluation, since the re-evaluation would be using"
+1327,1,cached size/sigops/fee values that are not actually correct.
+1328,1,Sort package by ancestor count
+1329,1,"If a transaction A depends on transaction B, then A's ancestor count"
+1330,1,must be greater than B's.  So this is sufficient to validly order the
+1331,1,transactions for block inclusion.
+1332,1,This transaction selection algorithm orders the mempool based
+1333,1,on feerate of a transaction including all unconfirmed ancestors.
+1334,1,Since we don't remove transactions from the mempool as we select them
+1335,1,"for block inclusion, we need an alternate method of updating the feerate"
+1336,1,of a transaction with its not-yet-selected ancestors as we go.
+1337,1,This is accomplished by walking the in-mempool descendants of selected
+1338,1,transactions and storing a temporary modified state in mapModifiedTxs.
+1339,1,"Each time through the loop, we compare the best transaction in"
+1340,1,mapModifiedTxs with the next transaction in the mempool to decide what
+1341,1,transaction package to work on next.
+1342,1,mapModifiedTx will store sorted packages after they are modified
+1343,1,because some of their txs are already in the block
+1344,1,"Keep track of entries that failed inclusion, to avoid duplicate work"
+1345,1,Start by adding all descendants of previously added txs to mapModifiedTx
+1346,1,and modifying them for their already included ancestors
+1347,1,Limit the number of attempts to add transactions to the block when it is
+1348,1,close to full; this is just a simple heuristic to finish quickly if the
+1349,1,mempool has a lot of entries.
+1350,1,First try to find a new transaction in mapTx to evaluate.
+1351,1,"Now that mi is not stale, determine which transaction to evaluate:"
+1352,1,"the next entry from mapTx, or the best from mapModifiedTx?"
+1353,1,We're out of entries in mapTx; use the entry from mapModifiedTx
+1354,1,Try to compare the mapTx entry to the mapModifiedTx entry
+1355,1,The best entry in mapModifiedTx has higher score
+1356,1,than the one from mapTx.
+1357,1,Switch which transaction (package) to consider
+1358,1,"Either no entry in mapModifiedTx, or it's worse than mapTx."
+1359,1,Increment mi for the next loop iteration.
+1360,1,"We skip mapTx entries that are inBlock, and mapModifiedTx shouldn't"
+1361,1,contain anything that is inBlock.
+1362,1,Everything else we might consider has a lower fee rate
+1363,1,"Since we always look at the best entry in mapModifiedTx,"
+1364,1,we must erase failed entries so that we can consider the
+1365,1,next best entry on the next loop iteration
+1366,1,Give up if we're close to full and haven't succeeded in a while
+1367,1,Test if all tx's are Final
+1368,1,This transaction will make it in; reset the failed counter.
+1369,1,Package can be added. Sort the entries in a valid order.
+1370,1,"Erase from the modified set, if present"
+1371,1,Update transactions that depend on each of these
+1372,1,Update nExtraNonce
+1373,2,Height first in coinbase required for block.version=2
+1374,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+1375,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1376,1,"Distributed under the MIT software license, see the accompanying"
+1377,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1378,1,Maximum number of block-relay-only anchor connections
+1379,1,Anchor IP address database file name
+1380,1,How often to dump addresses to peers.dat
+1381,1,Number of DNS seeds to query when the number of connections is low.
+1382,1,"How long to delay before querying DNS seeds
+
+ If we have more than THRESHOLD entries in addrman, then it's likely
+ that we got those addresses from having previously connected to the P2P
+ network, and that we'll be able to successfully reconnect to the P2P
+ network via contacting one of them. So if that's the case, spend a
+ little longer trying to connect to known peers before querying the
+ DNS seeds."
+1383,1,"""many"" vs ""few"" peers"
+1384,1,The default timeframe for -maxuploadtarget. 1 day.
+1385,1,We add a random period time (0 to 1 seconds) to feeler connections to prevent synchronization.
+1386,2,Used to pass flags to the Bind() function
+1387,1,"Do not call AddLocal() for our special addresses, e.g., for incoming
+     Tor connections, to prevent gossiping them over the network."
+1388,1,The set of sockets cannot be modified while waiting
+1389,1,The sleep time needs to be small to avoid new sockets stalling
+1390,2,"SHA256(""netgroup"")[0:8]"
+1391,2,"SHA256(""localhostnonce"")[0:8]"
+1392,2,"SHA256(""addrcache"")[0:8]"
+1393,1,Global state variables
+1394,1,find 'best' local address for a particular peer
+1395,1,! Convert the serialized seeds into usable address objects.
+1396,1,"It'll only connect to one or two seed nodes because once it connects,"
+1397,1,it'll get a pile of addresses with newer timestamps.
+1398,1,Seed nodes are given a random 'last seen time' of between one and two
+1399,1,weeks ago.
+1400,1,get best local address for a particular peer as a CAddress
+1401,1,"Otherwise, return the unroutable 0.0.0.0 but filled in with"
+1402,1,"the normal parameters, since the IP may be changed to a useful"
+1403,1,one by discovery.
+1404,1,Is our peer's addrLocal potentially useful as an external IP source?
+1405,1,use IPv4 loopback during addrmantest
+1406,1,"If discovery is enabled, sometimes give our peer the address it"
+1407,1,tells us that it sees us as in case it has a better idea of our
+1408,1,address than we do.
+1409,1,Address is unroutable. Don't advertise.
+1410,1,learn a new local address
+1411,1,vote for a local address
+1412,1,check whether a given address is potentially local
+1413,1,Get the bind address for a socket as CAddress
+1414,1,Look for an existing connection
+1415,2,/ debug print
+1416,1,Resolve
+1417,1,It is possible that we already have a connection to the IP/port pszDest resolved to.
+1418,1,"In that case, drop the connection that was just created, and return the existing CNode instead."
+1419,1,"Also store the name we used to connect in that CNode, so that future FindNode() calls to that"
+1420,1,name catch this early.
+1421,1,Connect
+1422,1,no proxy needed (none set for target network)
+1423,1,"If a connection to the node was attempted, and failure (if any) is not caused by a problem connecting to"
+1424,1,"the proxy, mark this as an attempt."
+1425,1,Add node
+1426,1,inbound_onion
+1427,1,"We're making a new connection, harvest entropy from the time (and our peer count)"
+1428,1,"no default case, so the compiler can warn about missing cases"
+1429,1,Leave string empty if addrLocal invalid (not filled in yet)
+1430,1,absorb network data
+1431,1,"Serious header problem, disconnect from the peer."
+1432,1,decompose a transport agnostic CNetMessage from the deserializer
+1433,1,Message deserialization failed.  Drop the message but don't disconnect the peer.
+1434,1,store the size of the corrupt message
+1435,1,store received bytes per message command
+1436,1,"to prevent a memory DOS, only allow valid commands"
+1437,1,"push the message to the process queue,"
+1438,1,copy data to temporary parsing buffer
+1439,1,"if header incomplete, exit"
+1440,1,deserialize to CMessageHeader
+1441,1,"Check start string, network magic"
+1442,2,reject messages larger than MAX_SIZE or MAX_PROTOCOL_MESSAGE_LENGTH
+1443,1,switch state to reading message data
+1444,1,"Allocate up to 256 KiB ahead, but never more than the total message size."
+1445,1,decompose a single CNetMessage from the TransportDeserializer
+1446,1,"store command string, time, and sizes"
+1447,1,"We just received a message off the wire, harvest entropy from the time (and the message checksum)"
+1448,1,Check checksum and header command string
+1449,1,Always reset the network deserializer (prepare for the next message)
+1450,1,create dbl-sha256 checksum
+1451,1,create header
+1452,1,serialize header
+1453,1,could not send full message; stop sending more
+1454,1,error
+1455,1,couldn't send anything at all
+1456,1,There is a fall-through here because it is common for a node to have many peers which have not yet relayed a block.
+1457,1,There is a fall-through here because it is common for a node to have more than a few peers that have not yet relayed txn.
+1458,1,"Pick out the potential block-relay only peers, and sort them by last block time."
+1459,1,"! Sort an array by the specified comparator, then erase the last K elements where predicate is true."
+1460,1,Protect the half of the remaining nodes which have been connected the longest.
+1461,1,"This replicates the non-eviction implicit behavior, and precludes attacks that start later."
+1462,1,"To favorise the diversity of our peer connections, reserve up to (half + 2) of"
+1463,1,"these protected spots for onion and localhost peers, if any, even if they're not"
+1464,1,"longest uptime overall. This helps protect tor peers, which tend to be otherwise"
+1465,1,disadvantaged under our eviction criteria.
+1466,1,"Pick out up to 1/4 peers connected via our onion service, sorted by longest uptime."
+1467,1,"Allocate any remaining slots of the 1/4, or minimum 2 additional slots,"
+1468,1,"to localhost peers, sorted by longest uptime, as manually configured"
+1469,1,hidden services not using `-bind=addr[:port]=onion` will not be detected
+1470,1,as inbound onion connections.
+1471,1,"Calculate how many we removed, and update our total number of peers that"
+1472,1,we want to protect based on uptime accordingly.
+1473,1,Protect connections with certain characteristics
+1474,1,Deterministically select 4 peers to protect by netgroup.
+1475,1,An attacker cannot predict which netgroups will be protected
+1476,1,Protect the 8 nodes with the lowest minimum ping time.
+1477,1,An attacker cannot manipulate this metric without physically moving nodes closer to the target.
+1478,1,Protect 4 nodes that most recently sent us novel transactions accepted into our mempool.
+1479,1,An attacker cannot manipulate this metric without performing useful work.
+1480,1,Protect up to 8 non-tx-relay peers that have sent us novel blocks.
+1481,1,Protect 4 nodes that most recently sent us novel blocks.
+1482,1,An attacker cannot manipulate this metric without performing useful work.
+1483,1,Protect some of the remaining eviction candidates by ratios of desirable
+1484,1,or disadvantaged characteristics.
+1485,1,If any remaining peers are preferred for eviction consider only them.
+1486,1,This happens after the other preferences since if a peer is really the best by other criteria (esp relaying blocks)
+1487,1,then we probably don't want to evict it no matter what.
+1488,1,Identify the network group with the most connections and youngest member.
+1489,1,(vEvictionCandidates is already sorted by reverse connect time)
+1490,1,Reduce to the network group with the most connections
+1491,1,Disconnect from the network group with the most connections
+1492,1,"Try to find a connection to evict when the node is full.
+  Extreme care must be taken to avoid opening the node to attacker
+   triggered network partitioning.
+  The strategy used here is to protect a small number of peers
+   for each of several distinct characteristics which are difficult
+   to forge.  In order to partition a node the attacker must be
+   simultaneously better at all of them than honest peers."
+1493,2,According to the internet TCP_NODELAY is not carried into accepted sockets
+1494,1,on all platforms.  Set it again here just to be sure.
+1495,1,Don't accept connections from banned peers.
+1496,1,Only accept connections from discouraged peers if our inbound slots aren't (almost) full.
+1497,1,"No connection to evict, disconnect the new connection"
+1498,1,"We received a new connection, harvest entropy from the time (and our peer count)"
+1499,1,Count existing connections
+1500,1,Max connections of specified type already exist
+1501,1,Max total outbound connections already exist
+1502,1,Disconnect any connected nodes
+1503,1,Disconnect unused nodes
+1504,1,remove from vNodes
+1505,1,release outbound grant (if any)
+1506,1,close socket and cleanup
+1507,1,hold in disconnected pool until all refs are released
+1508,1,Delete disconnected nodes
+1509,1,Destroy the object only after other threads have stopped using it.
+1510,1,Use non-mockable system time (otherwise these timers will pop when we
+1511,1,use setmocktime in the tests).
+1512,1,Implement the following logic:
+1513,1,"If there is data to send, select() for sending data. As this only"
+1514,1,"happens when optimistic write failed, we choose to first drain the"
+1515,1,write buffer in this case before receiving more. This avoids
+1516,1,"needlessly queueing received data, if the remote peer is not themselves"
+1517,1,receiving data. This means properly utilizing TCP flow control signalling.
+1518,1,"Otherwise, if there is space left in the receive buffer, select() for"
+1519,1,receiving data.
+1520,1,"Hand off all complete messages to the processor, to be handled without"
+1521,1,blocking here.
+1522,1,"These flags are ignored, but we set them for clarity"
+1523,1,Find which sockets have data to receive
+1524,1,frequency to poll pnode->vSend
+1525,1,Accept new connections
+1526,1,Service each socket
+1527,1,Receive
+1528,1,typical socket buffer is 8K-64K
+1529,1,vRecvMsg contains only completed CNetMessage
+1530,1,the single possible partially deserialized message are held by TransportDeserializer
+1531,1,socket closed gracefully
+1532,1,error
+1533,1,Send data
+1534,1,Number of seeds left before testing if we have enough connections
+1535,1,"When -forcednsseed is provided, query all."
+1536,1,"If we have no known peers, query all."
+1537,1,"This will occur on the first run, or if peers.dat has been"
+1538,1,deleted.
+1539,1,goal: only query DNS seed if address need is acute
+1540,1,"If we have a reasonable number of peers in addrman, spend"
+1541,1,some time trying them first. This improves user privacy by
+1542,1,"creating fewer identifying DNS requests, reduces trust by"
+1543,1,"giving seeds less influence on the network topology, and"
+1544,1,reduces traffic to the seeds.
+1545,1,"When querying DNS seeds query a few at once, this ensures"
+1546,1,that we don't give DNS seeds the ability to eclipse nodes
+1547,1,that query them.
+1548,1,"If we continue having problems, eventually query all the"
+1549,1,"DNS seeds, and if that fails too, also try the fixed seeds."
+1550,1,(done in ThreadOpenConnections)
+1551,1,"if sleeping for the MANY_PEERS interval, wake up"
+1552,1,early to see if we have enough peers and can stop
+1553,1,this thread entirely freeing up its resources
+1554,1,hold off on querying seeds if P2P network deactivated
+1555,1,Limits number of IPs learned from a DNS seed
+1556,1,use a random age between 3 and 7 days old
+1557,1,"We now avoid directly using results from DNS Seeds which do not support service bit filtering,"
+1558,1,instead using them as a addrfetch to get nodes with our desired service bits.
+1559,1,Return the number of peers we have over our outbound connection limit
+1560,1,"Exclude peers that are marked for disconnect, or are going to be"
+1561,2,disconnected soon (eg ADDR_FETCH and FEELER)
+1562,1,Also exclude peers that haven't finished initial connection handshake yet
+1563,1,"(so that we don't decide we're over our desired connection limit, and then"
+1564,1,evict some peer that has finished the handshake)
+1565,1,Connect to specific addresses
+1566,1,Initiate network connections
+1567,1,Minimum time before next feeler connection (in microseconds).
+1568,1,"When the node starts with an empty peers.dat, there are a few other sources of peers before"
+1569,1,"we fallback on to fixed seeds: -dnsseed, -seednode, -addnode"
+1570,1,"If none of those are available, we fallback on to fixed seeds immediately, else we allow"
+1571,1,60 seconds for any of those sources to populate addrman.
+1572,1,It is cheapest to check if enough time has passed first.
+1573,1,Checking !dnsseed is cheaper before locking 2 mutexes.
+1574,1,Choose an address to connect to based on most recently seen
+1575,1,Only connect out to one peer per network group (/16 for IPv4).
+1576,1,Netgroups for inbound and manual peers are not excluded because our goal here
+1577,1,is to not use multiple of our limited outbound slots on a single netgroup
+1578,1,but inbound and manual peers do not use our outbound slots. Inbound peers
+1579,1,also have the added issue that they could be attacker controlled and used
+1580,1,to prevent us from connecting to particular hosts if we used them here.
+1581,1,"no default case, so the compiler can warn about missing cases"
+1582,1,Determine what type of connection to open. Opening
+1583,2,BLOCK_RELAY connections to addresses from anchors.dat gets the highest
+1584,2,priority. Then we open OUTBOUND_FULL_RELAY priority until we
+1585,2,meet our full-relay capacity. Then we open BLOCK_RELAY connection
+1586,1,until we hit our block-relay-only peer limit.
+1587,2,"GetTryNewOutboundPeer() gets set when a stale tip is detected, so we"
+1588,2,try opening an additional OUTBOUND_FULL_RELAY connection. If none of
+1589,1,"these conditions are met, check to see if it's time to try an extra"
+1590,1,"block-relay-only peer (to confirm our tip is current, see below) or the next_feeler"
+1591,2,timer to decide if we should open a FEELER.
+1592,2,OUTBOUND_FULL_RELAY
+1593,2,OUTBOUND_FULL_RELAY
+1594,1,Periodically connect to a peer (using regular outbound selection
+1595,1,methodology from addrman) and stay connected long enough to sync
+1596,1,"headers, but not much else."
+1597,1,"Then disconnect the peer, if we haven't learned anything new."
+1598,1,"The idea is to make eclipse attacks very difficult to pull off,"
+1599,1,because every few minutes we're finding a new peer to learn headers
+1600,1,from.
+1601,1,This is similar to the logic for trying extra outbound (full-relay)
+1602,1,"peers, except:"
+1603,1,#NAME?
+1604,1,our tip is stale
+1605,1,#NAME?
+1606,1,newest block-relay-only peer delivers a block more recently.
+1607,2,See the eviction logic in net_processing.cpp.
+1608,1,Because we can promote these connections to block-relay-only
+1609,1,"connections, they do not get their own ConnectionType enum"
+1610,1,(similar to how we deal with extra outbound peers).
+1611,1,skip to next iteration of while loop
+1612,1,"If we didn't find an appropriate destination after trying 100 addresses fetched from addrman,"
+1613,1,"stop this loop, and let the outer loop run again (which sleeps, adds seed nodes, recalculates"
+1614,1,"already-connected network ranges, ...) before trying new addrman addresses."
+1615,1,"First, try to get a tried table collision address. This returns"
+1616,1,an empty (invalid) address if there are no collisions to try.
+1617,1,No tried table collisions. Select a new table address
+1618,1,for our feeler.
+1619,1,If test-before-evict logic would have us connect to a
+1620,1,"peer that we're already connected to, just mark that"
+1621,2,address as Good(). We won't be able to initiate the
+1622,1,"connection anyway, so this avoids inadvertently evicting"
+1623,1,a currently-connected peer.
+1624,1,Select a new table address for our feeler instead.
+1625,1,Not a feeler
+1626,1,"Require outbound connections, other than feelers, to be to distinct network groups"
+1627,1,"if we selected an invalid or local address, restart"
+1628,1,only consider very recently tried nodes after 30 failed attempts
+1629,1,"for non-feelers, require all the services we'll want,"
+1630,1,"for feelers, only require they be a full node (only because most"
+1631,1,SPV clients don't have a good address DB available)
+1632,1,"Do not allow non-default ports, unless after 50 invalid"
+1633,1,addresses selected already. This is to prevent malicious peers
+1634,1,from advertising themselves as a service on another host and
+1635,1,"port, causing a DoS attack as nodes around the network attempt"
+1636,1,to connect to it fruitlessly.
+1637,1,Add small amount of random noise before connection to avoid synchronization.
+1638,2,Build a map of all already connected addresses (by IP:port and by name) to inbound/outbound and resolved CService
+1639,1,strAddNode is an IP:port
+1640,1,strAddNode is a name
+1641,1,"If we've used up our semaphore and need a new one, let's not wait here since while we are waiting"
+1642,1,the addednodeinfo state might change.
+1643,1,"Retry every 60 seconds if a connection was attempted, otherwise two seconds"
+1644,1,"if successful, this moves the passed grant to the constructed node"
+1645,1,Initiate outbound network connection
+1646,1,Receive messages
+1647,1,Send messages
+1648,1,Create socket for listening for incoming connections
+1649,1,Allow binding if the port is still in TIME_WAIT state after
+1650,1,the program was closed and restarted.
+1651,1,some systems don't have IPV6_V6ONLY but are always v6only; others do have the option
+1652,1,"and enable it by default or not. Try to enable it, if possible."
+1653,1,Listen for incoming connections
+1654,1,Get local host IP
+1655,1,Get local host ip
+1656,1,Load addresses from peers.dat
+1657,1,"Addrman can be in an inconsistent state after failure, reset it"
+1658,1,Load addresses from anchors.dat
+1659,1,initialize semaphore
+1660,1,initialize semaphore
+1661,1,Start threads
+1662,1,"Send and receive from sockets, accept connections"
+1663,1,Initiate manual connections
+1664,1,Process messages
+1665,1,Dump network addresses
+1666,1,Shutdown Windows Sockets
+1667,1,Anchor connections are only dumped during clean shutdown.
+1668,1,Delete peer connections.
+1669,1,Close listening sockets.
+1670,1,If emplace() added new one it has expiration 0.
+1671,1,network
+1672,1,Choosing a proper cache lifetime is a trade-off between the privacy leak minimization
+1673,1,and the usefulness of ADDR responses to honest users.
+1674,1,Longer cache lifetime makes it more difficult for an attacker to scrape
+1675,1,enough AddrMan data to maliciously infer something useful.
+1676,1,"By the time an attacker scraped enough AddrMan records, most of"
+1677,1,the records should be old enough to not leak topology info by
+1678,1,e.g. analyzing real-time changes in timestamps.
+1679,1,"It takes only several hundred requests to scrape everything from an AddrMan containing 100,000 nodes,"
+1680,1,so ~24 hours of cache lifetime indeed makes the data less inferable by the time
+1681,1,most of it could be scraped (considering that timestamps are updated via
+1682,1,ADDR self-announcements and when nodes communicate).
+1683,1,We also should be robust to those attacks which may not require scraping *full* victim's AddrMan
+1684,1,(because even several timestamps of the same handful of nodes may leak privacy).
+1685,1,"On the other hand, longer cache lifetime makes ADDR responses"
+1686,1,"outdated and less useful for an honest requestor, e.g. if most nodes"
+1687,1,in the ADDR response are no longer active.
+1688,1,"However, the churn in the network is known to be rather low. Since we consider"
+1689,1,"nodes to be ""terrible"" (see IsTerrible()) if the timestamps are older than 30 days,"
+1690,1,"max. 24 hours of ""penalty"" due to cache shouldn't make any meaningful difference"
+1691,1,in terms of the freshness of the response.
+1692,1,Shortcut if we want total
+1693,1,"timeframe expired, reset cycle"
+1694,1,"TODO, exclude peers with download permission"
+1695,1,keep a large enough buffer to at least relay each block once
+1696,1,incoming
+1697,1,make sure we use the appropriate network transport format
+1698,1,log total amount of bytes per message type
+1699,1,"If write queue empty, attempt ""optimistic write"""
+1700,1,If this function were called from multiple threads simultaneously
+1701,1,"it would possible that both update the next send variable, and return a different result to their caller."
+1702,1,This is not possible in practice as only the net processing thread invokes this function.
+1703,1,-3.55E-15
+1704,1,"Note: This function captures the message at the time of processing,"
+1705,1,not at socket receive/send time.
+1706,1,This ensures that the messages are always in order from an application
+1707,1,layer (processing) perspective.
+1708,1,Windows folder names can not include a colon
+1709,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1710,1,"Distributed under the MIT software license, see the accompanying"
+1711,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1712,1,"Parse the following format: ""perm1,perm2@xxxxxx"""
+1713,2,"if '@' is not found (ie, ""xxxxx""), the caller should apply implicit permissions"
+1714,2,"else (ie, ""perm1,perm2@xxxxx""), let's enumerate the permissions by splitting by ',' and calculate the flags"
+1715,2,"permissions == perm1,perm2"
+1716,2,permission == perm1
+1717,1,"We read ""perm1"""
+1718,1,"We read "","""
+1719,1,Allow empty entries
+1720,1,Copyright (c) 2009-2010 Satoshi Nakamoto
+1721,1,Copyright (c) 2009-2020 The Bitcoin Core developers
+1722,1,"Distributed under the MIT software license, see the accompanying"
+1723,2,file COPYING or http://www.opensource.org/licenses/mit-license.php.
+1724,2,For NDEBUG compile time check
+1725,1,How long to cache transactions in mapRelay for normal relay
+1726,1,How long a transaction has to be in the mempool before it can unconditionally be relayed (even when not in mapRelay).
+1727,1,"Headers download timeout.
+  Timeout = base + per_header (expected number of headers)"
+1728,1,"Protect at least this many outbound peers from disconnection due to slow/
+ behind headers chain."
+1729,1,"Timeout for (unprotected) outbound peers to sync to our chainwork, in seconds"
+1730,1,20 minutes
+1731,1,"How frequently to check for stale tips, in seconds"
+1732,1,10 minutes
+1733,1,"How frequently to check for extra outbound peers and disconnect, in seconds"
+1734,1,"Minimum time an outbound-peer-eviction candidate must be connected for, in order to evict, in seconds"
+1735,2,"SHA256(""main address relay"")[0:8]"
+1736,1,/ Age after which a stale block will no longer be served if requested as
+1737,1,"/ protection against fingerprinting. Set to one month, denominated in seconds."
+1738,1,/ Age after which a block is considered historical for purposes of rate
+1739,1,"/ limiting block relay. Set to one week, denominated in seconds."
+1740,1,Time between pings automatically sent out for latency probing and keepalive
+1741,1,The maximum number of entries in a locator
+1742,1,The maximum number of entries in an 'inv' protocol message
+1743,1,"Maximum number of in-flight transaction requests from a peer. It is not a hard limit, but the threshold at which
+  point the OVERLOADED_PEER_TX_DELAY kicks in."
+1744,1,"Maximum number of transactions to consider for requesting, per peer. It provides a reasonable DoS limit to
+  per-peer memory usage spent on announcements, while covering peers continuously sending INVs at the maximum
+  rate (by our own policy, see INVENTORY_BROADCAST_PER_SECOND) for several minutes, while not receiving
+  the actual transaction (from any peer) in response to requests for them."
+1745,1,"How long to delay requesting transactions via txids, if we have wtxid-relaying peers"
+1746,1,How long to delay requesting transactions from non-preferred peers
+1747,2,How long to delay requesting transactions from overloaded peers (see MAX_PEER_TX_REQUEST_IN_FLIGHT).
+1748,1,How long to wait (in microseconds) before downloading a transaction from an additional peer
+1749,2,Limit to avoid sending big packets. Not used in processing incoming GETDATA for compatibility
+1750,1,Number of blocks that can be requested at any given time from a single peer.
+1751,1,Time during which a peer must stall block download progress before being disconnected.
+1752,1,"Number of headers sent in one getheaders result. We rely on the assumption that if a peer sends
+  less than this number, we reached its tip. Changing this value is a protocol upgrade."
+1753,1,"Maximum depth of blocks we're willing to serve as compact blocks to peers
+  when requested. For older blocks, a regular BLOCK response will be sent."
+1754,2,Maximum depth of blocks we're willing to respond to GETBLOCKTXN requests for.
+1755,1,"Size of the ""block download window"": how far ahead of our current height do we fetch?
+  Larger windows tolerate larger download speed differences between peer, but increase the potential
+  degree of disordering of blocks on disk (which make reindexing and pruning harder). We'll probably
+  want to make this a per-peer adaptive value at some point."
+1756,1,"Block download timeout base, expressed in multiples of the block interval (i.e. 10 min)"
+1757,1,Additional block download timeout per parallel downloading peer (i.e. 5 min)
+1758,1,Maximum number of headers to announce when relaying blocks with headers message.*/
+1759,1,Maximum number of unconnecting headers announcements before DoS score
+1760,1,Minimum blocks required to signal NODE_NETWORK_LIMITED
+1761,1,Average delay between local address broadcasts
+1762,1,Average delay between peer address broadcasts
+1763,1,"Average delay between trickled inventory transmissions for inbound peers.
+  Blocks and peers with NetPermissionFlags::NoBan permission bypass this."
+1764,1,"Average delay between trickled inventory transmissions for outbound peers.
+  Use a smaller delay as there is less privacy concern for them.
+  Blocks and peers with NetPermissionFlags::NoBan permission bypass this."
+1765,1,"Maximum rate of inventory items to send per second.
+  Limits the impact of low-fee transaction floods."
+1766,1,Maximum number of inventory items to send per transmission.
+1767,1,The number of most recently announced transactions a peer can request.
+1768,1,"Verify that INVENTORY_MAX_RECENT_RELAY is enough to cache everything typically
+  relayed before unconditional relay from the mempool kicks in. This is only a
+  lower bound, and it should be larger to account for higher inv rate to outbound
+  peers, and random variations in the broadcast mechanism."
+1769,1,Average delay between feefilter broadcasts in seconds.
+1770,1,Maximum feefilter broadcast delay after significant change.
+1771,1,Maximum number of compact filters that may be requested with one getcfilters. See BIP 157.
+1772,1,Maximum number of cf hashes that may be requested with one getcfheaders. See BIP 157.
+1773,1,the maximum percentage of addresses from our addrman to return in response to a getaddr message.
+1774,1,The maximum number of address records permitted in an ADDR message.
+1775,1,Internal stuff
+1776,1,"Blocks that are in flight, and that are in the queue to be downloaded."
+1777,1,!< Optional.
+1778,1,!< Whether this block has validated headers at the time of request.
+1779,2,"!< Optional, used for CMPCTBLOCK downloads"
+1780,1,"Data structure for an individual peer. This struct is not protected by
+ cs_main since it does not contain validation-critical data.
+
+ Memory is owned by shared pointers and this object is destructed when
+ the refcount drops to zero.
+
+ Mutexes inside this struct must not be held when locking m_peer_mutex.
+
+ TODO: move most members from CNodeState to this structure.
+ TODO: move remaining application-layer data members from CNode to this structure."
+1781,1,Same id as the CNode object for this peer
+1782,1,Protects misbehavior data members
+1783,1,Accumulated misbehavior score for this peer
+1784,1,Whether this peer should be disconnected and marked as discouraged (unless it has NetPermissionFlags::NoBan permission).
+1785,1,Protects block inventory data members
+1786,1,"List of blocks that we'll announce via an `inv` message.
+     There is no final sorting before sending, as they are always sent
+     immediately and in the order requested."
+1787,1,"Unfiltered list of blocks that we'd like to announce via a `headers`
+     message. If we can't announce via a `headers` message, we'll fall back to
+     announcing via `inv`."
+1788,1,"The final block hash that we sent in an `inv` message to this peer.
+     When the peer requests this block, we send an `inv` message to trigger
+     the peer to request the next sequence of block hashes.
+     Most peers use headers-first syncing, which doesn't use this mechanism"
+1789,1,This peer's reported block height when we connected
+1790,1,"The pong reply we're expecting, or 0 if no pong expected."
+1791,1,"When the last ping was sent, or 0 if no ping was ever sent"
+1792,1,Whether a ping has been requested by the user
+1793,2,"A vector of addresses to send to the peer, limited to MAX_ADDR_TO_SEND."
+1794,1,"Probabilistic filter of addresses that this peer already knows.
+      Used to avoid relaying addresses to this peer more than once."
+1795,1,Whether a getaddr request to this peer is outstanding.
+1796,1,Guards address sending timers.
+1797,1,Time point to send the next ADDR message to this peer.
+1798,1,Time point to possibly re-announce our local address to this peer.
+1799,1,"Whether the peer has signaled support for receiving ADDRv2 (BIP155)
+      messages, indicating a preference to receive ADDRv2 instead of ADDR ones."
+1800,1,Whether this peer has already sent us a getaddr message.
+1801,1,Set of txids to reconsider once their parent transactions have been accepted*/
+1802,1,Protects m_getdata_requests*/
+1803,1,Work queue of items requested by this peer*/
+1804,1,Overridden from CValidationInterface.
+1805,1,Implement NetEventsInterface
+1806,1,Implement PeerManager
+1807,1,Consider evicting an outbound peer based on the amount of time they've been behind our tip
+1808,1,"If we have extra outbound peers, try to disconnect the one with the oldest block announcement"
+1809,1,Retrieve unbroadcast transactions from the mempool and reattempt sending to peers
+1810,1,"Get a shared pointer to the Peer object.
+      May return an empty shared_ptr if the Peer object can't be found."
+1811,1,"Get a shared pointer to the Peer object and remove it from m_peer_map.
+      May return an empty shared_ptr if the Peer object can't be found."
+1812,1,"Potentially mark a node discouraged based on the contents of a BlockValidationState object
+    
+     @param[in] via_compact_block this bool is passed in because net_processing should
+     punish peers differently depending on whether the data was provided in a compact
+     block message or not. If the compact block had a valid header, but contained invalid
+     txs, the peer should not be punished. See BIP 152.
+    
+     @return Returns true if the peer was punished (probably disconnected)"
+1813,1,"Potentially disconnect and discourage a node based on the contents of a TxValidationState object
+    
+     @return Returns true if the peer was punished (probably disconnected)"
+1814,1,"Maybe disconnect a peer and discourage future connections from its address.
+    
+     @param[in]   pnode     The node to check.
+     @param[in]   peer      The peer object to check.
+     @return                True if the peer was marked for disconnection in this function"
+1815,1,Process a single headers message from a peer.
+1816,1,"Register with TxRequestTracker that an INV has been received from a
+      peer. The announcement parameters are decided in PeerManager and then
+      passed to TxRequestTracker."
+1817,1,Send a version message to a peer
+1818,1,"Send a ping message every PING_INTERVAL or if requested via RPC. May
+      mark the peer to be disconnected if a ping has timed out.
+      We use mockable time for ping timeouts, so setmocktime may cause pings
+      to time out."
+1819,1,Send `addr` messages on a regular schedule.
+1820,1,"Relay (gossip) an address to a few randomly chosen nodes.
+    
+     @param[in] originator   The id of the peer that sent us the address. We don't want to relay it back.
+     @param[in] addr         Address to relay.
+     @param[in] fReachable   Whether the address' network is reachable. We relay unreachable
+                             addresses less."
+1821,1,Send `feefilter` message.
+1822,1,Pointer to this node's banman. May be nullptr - check existence before dereferencing.
+1823,1,The height of the best chain
+1824,1,!< Next time to check for stale tip
+1825,1,Whether this node is running in blocks only mode
+1826,1,"Whether we've completed initial sync yet, for determining when to turn
+      on extra block-relay-only peers."
+1827,1,"Protects m_peer_map. This mutex must not be locked while holding a lock
+      on any of the mutexes inside a Peer object."
+1828,1,"Map of all Peer objects, keyed by peer id. This map is protected
+     by the m_peer_mutex. Once a shared pointer reference is
+     taken, the lock may be released. Individual fields are protected by
+     their own locks."
+1829,2,Number of nodes with fSyncStarted.
+1830,1,"Sources of received blocks, saved to be able punish them when processing
+     happens afterwards.
+     Set mapBlockSource[hash].second to false if the node should not be
+     punished if the block is invalid."
+1831,1,Number of peers with wtxid relay.
+1832,2,Number of outbound peers with m_chain_sync.m_protect.
+1833,1,"Filter for transactions that were recently rejected by
+     AcceptToMemoryPool. These are not rerequested until the chain tip
+     changes, at which point the entire filter is reset.
+    
+     Without this filter we'd be re-requesting txs from each of our peers,
+     increasing bandwidth consumption considerably. For instance, with 100
+     peers, half of which relay a tx we don't accept, that might be a 50x
+     bandwidth increase. A flooding attacker attempting to roll-over the
+     filter using minimum-sized, 60byte, transactions might manage to send
+     1000/sec if we have fast peers, so we pick 120,000 to give our peers a
+     two minute window to send invs to us.
+    
+     Decreasing the false positive rate is fairly cheap, so we pick one in a
+     million to make it highly unlikely for users to have issues with this
+     filter.
+    
+     We typically only add wtxids to this filter. For non-segwit
+     transactions, the txid == wtxid, so this only prevents us from
+     re-downloading non-segwit transactions when communicating with
+     non-wtxidrelay peers -- which is important for avoiding malleation
+     attacks that could otherwise interfere with transaction relay from
+     non-wtxidrelay peers. For communicating with wtxidrelay peers, having
+     the reject filter store wtxids is exactly what we want to avoid
+     redownload of a rejected transaction.
+    
+     In cases where we can tell that a segwit transaction will fail
+     validation no matter the witness, we may add the txid of such
+     transaction to the filter as well. This can be helpful when
+     communicating with txid-relay peers or if we were to otherwise fetch a
+     transaction via txid (eg in our orphan handling).
+    
+     Memory used: 1.3 MB"
+1834,1,"Filter for transactions that have been recently confirmed.
+    We use this to avoid requesting transactions that have already been
+    confirnmed."
+1835,1,"Returns a bool indicating whether we requested this block.
+    Also used if a block was /not/ received and timed out or started with another peer"
+1836,1,"Mark a block as in flight
+    Returns false, still setting pit, if the block was already in flight from the same peer
+    pit will only be valid as long as the same cs_main lock is being held"
+1837,1,"Update pindexLastCommonBlock and add not-in-flight missing successors to vBlocks, until it has
+      at most count entries."
+1838,1,When our tip was last updated.
+1839,1,"Determine whether or not a peer can request a transaction, and return it (or nullptr if not found or not allowed)."
+1840,2,Relay map (txid or wtxid -> CTransactionRef)
+1841,1,"Expiration-time ordered list of (expire time, relay map entry) pairs."
+1842,1,"When a peer sends us a valid block, instruct it to announce blocks to us
+     using CMPCTBLOCK if possible by adding its nodeid to the end of
+     lNodesAnnouncingHeaderAndIDs, and keeping that list under a certain size by
+     removing the first element if necessary."
+1843,1,Stack of nodes which we have set to announce using compact blocks
+1844,1,Number of peers from which we're downloading blocks.
+1845,1,Storage for orphan information
+1846,1,"Orphan/conflicted/etc transactions that are kept for compact block reconstruction.
+      The last -blockreconstructionextratxn/DEFAULT_BLOCK_RECONSTRUCTION_EXTRA_TXN of
+      these are kept in a ring buffer"
+1847,1,Offset into vExtraTxnForCompact to insert the next tx
+1848,1,Check whether the last unknown block a peer advertised is not yet known.
+1849,1,Update tracking information about which blocks a peer is assumed to have.
+1850,1,"To prevent fingerprinting attacks, only send blocks/headers outside of
+     the active chain if they are no more than a month older (both in time,
+     and in best equivalent proof of work) than the best header chain we know
+     about and we fully-validated them at some point."
+1851,1,"Validation logic for compact filters request handling.
+    
+     May disconnect from the peer in the case of a bad request.
+    
+     @param[in]   peer            The peer that we received the request from
+     @param[in]   filter_type     The filter type the request is for. Must be basic filters.
+     @param[in]   start_height    The start height for the request
+     @param[in]   stop_hash       The stop_hash for the request
+     @param[in]   max_height_diff The maximum number of items permitted to request, as specified in BIP 157
+     @param[out]  stop_index      The CBlockIndex for the stop_hash block, if the request can be serviced.
+     @param[out]  filter_index    The filter index, if the request can be serviced.
+     @return                      True if the request can be serviced."
+1852,1,"Handle a cfilters request.
+    
+     May disconnect from the peer in the case of a bad request.
+    
+     @param[in]   peer            The peer that we received the request from
+     @param[in]   vRecv           The raw message received"
+1853,1,"Handle a cfheaders request.
+    
+     May disconnect from the peer in the case of a bad request.
+    
+     @param[in]   peer            The peer that we received the request from
+     @param[in]   vRecv           The raw message received"
+1854,1,"Handle a getcfcheckpt request.
+    
+     May disconnect from the peer in the case of a bad request.
+    
+     @param[in]   peer            The peer that we received the request from
+     @param[in]   vRecv           The raw message received"
+1855,1,namespace
+1856,1,Number of preferable block download peers.
+1857,1,namespace
+1858,1,"Maintain validation-specific state about nodes, protected by cs_main, instead
+ by CNode's own locks. This simplifies asynchronous operation, where
+ processing of incoming data is done after the ProcessMessage call returns,
+ and we're no longer holding the node's locks."
+1859,1,! The best known block we know this peer has announced.
+1860,1,! The hash of the last unknown block this peer has announced.
+1861,1,! The last full block we both have.
+1862,1,! The best header we have sent our peer.
+1863,1,! Length of current-streak of unconnecting headers announcements
+1864,1,! Whether we've started headers synchronization with this peer.
+1865,1,! When to potentially disconnect peer for stalling headers download
+1866,1,"! Since when we're stalling block download progress (in microseconds), or 0."
+1867,1,! When the first entry in vBlocksInFlight started downloading. Don't care when vBlocksInFlight is empty.
+1868,1,! Whether we consider this a preferred download peer.
+1869,1,! Whether this peer wants invs or headers (when possible) for block announcements.
+1870,1,! Whether this peer wants invs or cmpctblocks (when possible) for block announcements.
+1871,1,"Whether this peer will send us cmpctblocks if we request them.
+      This is not used to gate request logic, as we really only care about fSupportsDesiredCmpctVersion,
+      but is used as a flag to ""lock in"" the version of compact blocks (fWantsCmpctWitness) we send."
+1872,1,! Whether this peer can give us witnesses
+1873,1,! Whether this peer wants witnesses in cmpctblocks/blocktxns
+1874,1,"If we've announced NODE_WITNESS to this peer: whether the peer sends witnesses in cmpctblocks/blocktxns,
+     otherwise: whether this peer sends non-witnesses in cmpctblocks/blocktxns."
+1875,1,"State used to enforce CHAIN_SYNC_TIMEOUT and EXTRA_PEER_CHECK_INTERVAL logic.
+     
+      Both are only in effect for outbound, non-manual, non-protected connections.
+      Any peer protected (m_protect = true) is not chosen for eviction. A peer is
+      marked as protected if all of these are true:
+        - its connection type is IsBlockOnlyConn() == false
+        - it gave us a valid connecting header
+        - we haven't reached MAX_OUTBOUND_PEERS_TO_PROTECT_FROM_DISCONNECT yet
+        - its chain tip has at least as much work as ours
+     
+      CHAIN_SYNC_TIMEOUT: if a peer's best known block has less work than our tip,
+      set a timeout CHAIN_SYNC_TIMEOUT seconds in the future:
+        - If at timeout their best known block now has more work than our tip
+          when the timeout was set, then either reset the timeout or clear it
+          (after comparing against our current tip's work)
+        - If at timeout their best known block still has less work than our
+          tip did when the timeout was set, then send a getheaders message,
+          and set a shorter timeout, HEADERS_RESPONSE_TIME seconds in future.
+          If their best known block is still behind when that new timeout is
+          reached, disconnect.
+     
+      EXTRA_PEER_CHECK_INTERVAL: after each interval, if we have too many outbound peers,
+      drop the outbound one that least recently announced us a new block."
+1876,1,! A timeout used for checking whether our peer has sufficiently synced
+1877,1,! A header with the work we require on our peer's chain
+1878,1,"! After timeout is reached, set to true after sending getheaders"
+1879,1,! Whether this peer is protected from disconnection due to a bad/slow chain
+1880,1,! Time of last new block announcement
+1881,1,! Whether this peer is an inbound connection
+1882,1,! A rolling bloom filter of all announced tx CInvs to this peer.
+1883,1,! Whether this peer relays txs via wtxid
+1884,1,Map maintaining per-node state.
+1885,1,"Whether the peer supports the address. For example, a peer that does not
+ implement BIP155 cannot receive Tor v3 addresses because it requires
+ ADDRv2 (BIP155) encoding."
+1886,1,Known checking here is only to save space from duplicates.
+1887,1,"Before sending, we'll filter it again for known addresses that were"
+1888,1,added after addresses were pushed.
+1889,1,Whether this node should be marked as a preferred download node.
+1890,1,Last validated block on the queue was received.
+1891,1,"First block on the queue was received, update the start download time for the next one"
+1892,1,Short-circuit most stuff in case it is from the same node
+1893,1,Make sure it's not listed somewhere already.
+1894,1,We're starting a block download (batch) from this peer.
+1895,1,Never ask from peers who can't provide witnesses.
+1896,1,"As per BIP152, we only get 3 of our peers to announce"
+1897,1,blocks using compact encodings.
+1898,1,fAnnounceUsingCMPCTBLOCK=
+1899,1,save BIP152 bandwidth state: we select peer to be low-bandwidth
+1900,1,fAnnounceUsingCMPCTBLOCK=
+1901,1,save BIP152 bandwidth state: we select peer to be high-bandwidth
+1902,1,An actually better block was announced.
+1903,1,An unknown block was announced; just assume that the latest one is the best one.
+1904,1,"Make sure pindexBestKnownBlock is up to date, we'll need it."
+1905,1,This peer has nothing interesting.
+1906,1,Bootstrap quickly by guessing a parent of our best tip is the forking point.
+1907,1,Guessing wrong in either direction is not a problem.
+1908,1,"If the peer reorganized, our previous pindexLastCommonBlock may not be an ancestor"
+1909,1,of its current tip anymore. Go back enough to fix that.
+1910,2,"Never fetch further than the best block we know the peer has, or more than BLOCK_DOWNLOAD_WINDOW + 1 beyond the last"
+1911,1,"linked block we have in common with this peer. The +1 is so we can detect stalling, namely if we would be able to"
+1912,1,download that next block if the window were 1 larger.
+1913,1,"Read up to 128 (or more, if more blocks than that are needed) successors of pindexWalk (towards"
+1914,2,"pindexBestKnownBlock) into vToFetch. We fetch 128, because CBlockIndex::GetAncestor may be as expensive"
+1915,1,as iterating over ~100 CBlockIndex* entries anyway.
+1916,1,"Iterate over those blocks in vToFetch (in forward direction), adding the ones that"
+1917,1,"are not yet downloaded and not in flight to vBlocks. In the meantime, update"
+1918,1,"pindexLastCommonBlock as long as all ancestors are already downloaded, or if it's"
+1919,1,already part of our chain (and therefore don't need it even if pruned).
+1920,1,We consider the chain that this peer is on invalid.
+1921,1,We wouldn't download this block or its descendants from this peer.
+1922,1,"The block is not already downloaded, and not yet in flight."
+1923,1,We reached the end of the window.
+1924,1,"We aren't able to fetch anything, but we would be if the download window was one larger."
+1925,1,This is the first already-in-flight block.
+1926,1,namespace
+1927,2,Note that pnode->GetLocalServices() is a reflection of the local
+1928,1,services we were offering when the CNode object was created for this
+1929,1,peer.
+1930,1,For m_txrequest
+1931,1,Too many queued announcements from this peer
+1932,1,Decide the TxRequestTracker parameters for this announcement:
+1933,2,"- ""preferred"": if fPreferredDownload is set (= outbound, or NetPermissionFlags::NoBan permission)"
+1934,1,"- ""reqtime"": current time plus delays for:"
+1935,1,#NAME?
+1936,1,#NAME?
+1937,1,#NAME?
+1938,2,MAX_PEER_TX_REQUEST_IN_FLIGHT requests in flight (and don't have NetPermissionFlags::Relay).
+1939,1,"This function is used for testing the stale tip eviction logic, see"
+1940,2,denialofservice_tests.cpp
+1941,1,Addr relay is disabled for outbound block-relay-only peers to
+1942,1,prevent adversaries from inferring these links from addr traffic.
+1943,2,addr_relay =
+1944,1,Schedule next run for 10-15 minutes in the future.
+1945,1,We add randomness on every cycle to avoid the possibility of P2P fingerprinting.
+1946,1,"We remove the PeerRef from g_peer_map here, but we don't always"
+1947,1,destruct the Peer. Sometimes another thread is still holding a
+1948,2,"PeerRef, so the refcount is >= 1. Be careful not to do any"
+1949,1,processing here that assumes Peer won't be changed before it's
+1950,1,destructed.
+1951,1,Do a consistency check after the last peer is removed.
+1952,1,cs_main
+1953,1,Only change visible addrman state for full outbound peers.  We don't
+1954,2,call Connected() for feeler connections since they don't have
+1955,1,fSuccessfullyConnected set.
+1956,1,"It is common for nodes with good ping times to suddenly become lagged,"
+1957,1,due to a new block arriving or other large transfer.
+1958,1,"Merely reporting pingtime might fool the caller into thinking the node was still responsive,"
+1959,1,"since pingtime does not update until the ping is complete, which might take a while."
+1960,1,"So, if a ping is taking an unusually long time in flight,"
+1961,1,the caller can immediately detect that this is happening.
+1962,1,The node is providing invalid data:
+1963,1,Discourage outbound (but not inbound) peers if on an invalid chain.
+1964,1,Exempt HB compact block peers. Manual connections are always protected from discouragement.
+1965,1,Conflicting (but not necessarily invalid) data or different policy:
+1966,1,TODO: Handle this much more gracefully (10 DoS points is super arbitrary)
+1967,1,The node is providing invalid data:
+1968,1,Conflicting (but not necessarily invalid) data or different policy:
+1969,1,Initialize global variables that cannot be constructed at startup.
+1970,1,"Blocks don't typically have more than 4000 transactions, so this should"
+1971,1,"be at least six blocks (~1 hr) worth of transactions that we can store,"
+1972,1,inserting both a txid and wtxid for every observed transaction.
+1973,1,"If the number of transactions appearing in a block goes up, or if we are"
+1974,1,"seeing getdata requests more than an hour after initial announcement, we"
+1975,1,can increase this number.
+1976,1,The false positive rate of 1/1M should come out to less than 1
+1977,1,transaction per day that would be inadvertently ignored (which is the
+1978,1,same probability that we have in the reject filter).
+1979,1,"Stale tip checking and peer eviction are on two different timers, but we"
+1980,1,"don't want them to get out of sync due to drift in the scheduler, so we"
+1981,1,combine them in one function and schedule at the quicker (peer-eviction)
+1982,1,timer.
+1983,1,schedule next run for 10-15 minutes in the future
+1984,1,"Evict orphan txn pool entries based on a newly connected
+ block, remember the recently confirmed transactions, and delete tracked
+ announcements for them. Also save the time of the last tip update."
+1985,1,To avoid relay problems with transactions that were previously
+1986,1,"confirmed, clear our filter of recently confirmed transactions whenever"
+1987,1,there's a reorg.
+1988,1,This means that in a 1-block reorg (where 1 block is disconnected and
+1989,1,"then another block reconnected), our filter will drop to having only one"
+1990,1,"block's worth of transactions in it, but that should be fine, since"
+1991,1,presumably the most common case of relaying a confirmed transaction
+1992,1,should be just after a new block containing it is found.
+1993,1,"All of the following cache a recent block, and are protected by cs_most_recent_block"
+1994,1,"Maintain state about the best-seen block and fast-announce a compact block
+ to compatible peers."
+1995,1,TODO: Avoid the repeated-serialization here
+1996,1,"If the peer has, or we announced to them the previous block already,"
+1997,1,"but we don't think they have this one, go ahead and announce it"
+1998,1,"Update our best height and announce any block hashes which weren't previously
+ in m_chainman.ActiveChain() to our peers."
+1999,1,Don't relay inventory during initial block download.
+2000,1,Find the hashes of all blocks that weren't previously in the best chain.
