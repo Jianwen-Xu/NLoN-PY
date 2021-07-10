@@ -16,7 +16,7 @@ classifiers = [
     SVC(kernel="linear", C=0.025),
     DecisionTreeClassifier(max_depth=5),
     RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
-    MLPClassifier(alpha=1, max_iter=1000),
+    MLPClassifier(alpha=1, max_iter=300),
     GaussianNB()]
 
 dict_name_classifier = dict(zip(names, classifiers))
@@ -26,14 +26,18 @@ def NLoNModel(X, y, nfolds=10, model_name='Nearest Neighbors'):
     X = X[:100]
     y = y[:100]
     if model_name in dict_name_classifier:
-        classifier = dict_name_classifier[model_name]
+        clf = dict_name_classifier[model_name]
     else:
-        classifier = dict_name_classifier['Nearest Neighbors']
-    kf = KFold(n_splits=nfolds)
-    for train_index, test_index in kf.split(X):
-        X_train, X_test = X[train_index], X[test_index]
-        y_train, y_test = y[train_index], y[test_index]
-        classifier.fit(X_train, y_train)
-        score = classifier.score(X_test, y_test)
-        print('%.2f' % score)
-    return classifier
+        clf = dict_name_classifier['Nearest Neighbors']
+    scores = cross_val_score(clf, X, y, cv=nfolds)
+    print(f'{scores.mean():.2f} accuracy with a standard deviation of {scores.std():.2f}')
+    return clf
+
+
+def CompareModels(X, y):
+    X = X[:1000]
+    y = y[:1000]
+    for key, clf in dict_name_classifier.items():
+        scores = cross_val_score(clf, X, y, cv=10)
+        print(
+            f'{key}: {scores.mean():.2f} accuracy with a standard deviation of {scores.std():.2f}')
