@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from nlon_py.data.make_data import loadStopWords
 
 pwd_path = os.path.abspath(os.path.dirname(__file__))
-vecfile = os.path.join(pwd_path, 'data\default_vectorizer.joblib')
+vecfile = os.path.join(pwd_path, 'data/default_vectorizer.joblib')
 
 stop_words_list = loadStopWords()
 
