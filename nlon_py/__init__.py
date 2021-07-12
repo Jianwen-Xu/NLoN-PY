@@ -8,6 +8,6 @@ from nlon_py.data.build_model import buildDefaultModel, loadDefaultModel
 from nlon_py.model import NLoNPredict
 
 # buildDefaultModel()
-model = loadDefaultModel()
-print(NLoNPredict(model, ['This is natural language.',
-      'public void NotNaturalLanguageFunction(int i, String s)']))
+# model = loadDefaultModel()
+# print(NLoNPredict(model, ['This is natural language.',
+#       'public void NotNaturalLanguageFunction(int i, String s)']))
