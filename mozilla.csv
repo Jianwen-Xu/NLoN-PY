@@ -1,0 +1,2001 @@
+,Source,ID,Class,Text
+0,mozilla,1,1,1.0.6 but preferable the newer Deer Park Alpha builds.
+1,mozilla,2,1,I produced something along the lines of a test case for this at
+2,mozilla,3,1,"attribute minimization. XML dictates selected=""selected""."
+3,mozilla,4,2,User Agent: Mozilla/5.0 (Mobile; rv:33.0) Gecko/33.0 Firefox/33.0
+4,mozilla,5,2,"<option value=""manage_addProduct/KnowledgeKit/HOWTO_factory"">HOW-TO</option>"
+5,mozilla,6,2,"Error: uncaught exception: [Exception... ""'[JavaScript Error: ""aTabs[ex - 1] is undefined"" {file: ""file:///home/tim/workspace/mozilla-central/objdir-ff-release/dist/bin/components/nsSessionStore.js"" line: 2459}]' when calling method: [nsISessionStore::undoCloseTab]""  nsresult: ""0x80570021 (NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS)""  location: ""JS frame :: chrome://browser/content/browser.js :: undoCloseTab :: line 11989""  data: yes]"
+6,mozilla,7,1,and there's no plug-in to handle it the value should fallback to some default
+7,mozilla,8,1,bryner:
+8,mozilla,9,1,from it out instead
+9,mozilla,10,2,"topcrash+, zt4newcrash, dataloss."
+10,mozilla,11,1,"I was trying to match the prototype of the existing HTMLCanvasElement::ExtractData method as closely as possible, but I can change this if you'd like. I'd have to change the callers a bit, but this wouldn't be a problem."
+11,mozilla,12,1,"Plenty of free memory and swap, no processor problems."
+12,mozilla,13,1,"display on top of each other""."
+13,mozilla,14,1,"Reporter, do you still see this problem with the latest Firefox 2? If not, can you please close this bug as WORKSFORME. Thanks!"
+14,mozilla,15,2,#2  0x4018a1be in PR_WaitCondVar ()
+15,mozilla,16,1,Most dictionary consumers expect that extra properties would be ignored as WebIDL currently spec'ed. The semantic of MediaStreamOptions contradicts their expectations.
+16,mozilla,17,1,forgot to add mlk to kwords
+17,mozilla,18,1,1) Verified in mfcEmbed.  nsIWebBrowserChrome::CreateBrowserWindow() is no
+18,mozilla,19,1,"or invalid entity), it is very difficult to track down the problem"
+19,mozilla,20,2,"EAX(tm) 2.0 Listen/Src: No, No"
+20,mozilla,21,1,"(It has problems with high CPU usage on display of Speedread page, but that's for their developers to tackle)"
+21,mozilla,22,1,"Hi Patrick,"
+22,mozilla,23,1,Steps to reproduce:
+23,mozilla,24,2,-----------------------------------------------------------------
+24,mozilla,25,1,The style is correct and I'm not an X-head. Reassigned to pollmann.
+25,mozilla,26,1,r+ if event name is changed and unit test for nfcmanager part
+26,mozilla,27,1,"with this, allowing the user to select the unit to be prefixed can result in a"
+27,mozilla,28,2,nsTableOuterFrame::Reflow()
+28,mozilla,29,2,at Server.EventEmitter.emit (events.js:92:17)
+29,mozilla,30,1,"Fwiw, I tested dbaron's patch with various themes on Linux and I couldn't"
+30,mozilla,31,2,09:47:58     INFO -      rax = 0x0000000000000000   rdx = 0x0000000000000000
+31,mozilla,32,1,"^ we could do something stupid here, in which case we'll later violate xpcom"
+32,mozilla,33,1,"You'll need to update Thunderbird or file a bug and notify them of the change as well, of course."
+33,mozilla,34,1,"Typing in wikipedia, placing the cursor in the main editing textbox causes typing to appear in the edit summary textbox, and vice=versa"
+34,mozilla,35,2,Safe Mode: false
+35,mozilla,36,1,Is you point your nightly build (my case: 2000100308) to that page there is some
+36,mozilla,37,2,Gecko Version          45.0a1
+37,mozilla,38,2,"},"
+38,mozilla,39,1,"tree at the start of nsCSSFrameConstructor::ContentRemoved(), the child"
+39,mozilla,40,1,"Ulrich, if this isn't in your current code, I can probably make a tip build available for you more or less soonish. Let me know."
+40,mozilla,41,2,https://hg.mozilla.org/integration/b2g-inbound/rev/cf4a85de7c0e
+41,mozilla,42,1,"about, esp. if you are always talking about Compose window or the display of the"
+42,mozilla,43,2,"/cvsroot/mozilla/xpcom/base/Makefile.in,v  <--  Makefile.in"
+43,mozilla,44,1,"Now, high resolution scrolling was disabled by bug 657865 due to many regressions. This bug tracks the regressions which must be fixed before re-enabling it."
+44,mozilla,45,2,45 	libobjc.A.dylib 	libobjc.A.dylib@0x70ae
+45,mozilla,46,2,21:38:25     INFO -  4189 INFO TEST-PASS | dom/tests/mochitest/general/test_performance_timeline.html | The number of PerformanceMeasure entries should be 1.
+46,mozilla,47,1,"On OS X (10.1.5+), tabbing in forms behaved exactly as expected - and as in IE -"
+47,mozilla,48,1,"- After this do-while loop, replace the ""return true"" with:"
+48,mozilla,49,1,We already have a newer version in the tree
+49,mozilla,50,1,No code change so marking WFM
+50,mozilla,51,1,Either that or Chrome maybe had to find some long drawn out work-around...
+51,mozilla,52,1,Actual:
+52,mozilla,53,1,TODO for me:
+53,mozilla,54,2,User-Agent:       Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0 StumbleUpon/1.999
+54,mozilla,55,1,"Otherwise jsbugmon will report that this bug is unreproducible, as per comment 4 of this bug, assuming that the bug still exists and reproduces manually."
+55,mozilla,56,1,1.Hide the window (apple-h)
+56,mozilla,57,1,2. use FireFox regularly
+57,mozilla,58,1,2. kill the clock application
+58,mozilla,59,2,*
+59,mozilla,60,1,Also had X11Amp loaded.
+60,mozilla,61,1,"This is already fixed on trunk somehow, at least with current steps to reproduce."
+61,mozilla,62,1,"Hey, I'm interested in this bug if no one else is working on it."
+62,mozilla,63,1,no splash appears .
+63,mozilla,64,2,#14 0x2b0339e2 in nsAppShellService::Run (this=0x8101300)
+64,mozilla,65,2,Gaia: ae3a84acaab80a5b35d5542d63e68462273c8a1b
+65,mozilla,66,1,2. Middle click in a Firefox browser area
+66,mozilla,67,2,"@@ +112,4 @@"
+67,mozilla,68,2,+          lastCharArabic = IS_ARABIC_CHAR(ch);
+68,mozilla,69,2,"nsBlockFrame::ReflowBlockFrame(nsBlockReflowState & {...}, nsLineBox *"
+69,mozilla,70,1,But in Internet Explorer:
+70,mozilla,71,1,"2. Use a video sharing site, and go to full screen"
+71,mozilla,72,1,Steps to reproduce:
+72,mozilla,73,1,Risk to taking this patch (and alternatives if risky): Low
+73,mozilla,74,1,No void.
+74,mozilla,75,1,"Julien, can you reproduce this problem in Mozilla's Firefox 41? Or does this problem only affect Cyberfox?"
+75,mozilla,76,2,---------------------------
+76,mozilla,77,2,User Agent: Mozilla/5.0 (Mobile; rv:32.0) Gecko/32.0 Firefox/32.0
+77,mozilla,78,2,AAC audio
+78,mozilla,79,1,2. Hold yellow OFF key (located next to the SIM card slot) for 5 to 10 seconds until the device buzzes
+79,mozilla,80,1,"and hold them out in front of you.  See, now it's fine."""
+80,mozilla,81,1,Thanks!!
+81,mozilla,82,2,USER32! 77e1395f()
+82,mozilla,83,1,the customize page supplied for a sidebar tab.
+83,mozilla,84,1,"activity monitor running continuously.  If I reload, it may stop, or it may"
+84,mozilla,85,1,"Step 2 above should be ""Change options to set tabs on right side of screen."""
+85,mozilla,86,1,Done as requested.  Output of NS_FONT_DEBUG=C ./mozilla http://www.mozilla.org/
+86,mozilla,87,1,*** This bug has been marked as a duplicate of 283478 ***
+87,mozilla,88,1,"If we wait a second to tap the ok button, it works fine. It needs to tap quickly to reproduce this bug."
+88,mozilla,89,2,Direction DominantDirection(gfxPoint aPoint) { ... }
+89,mozilla,90,1,[Steps] 1. Run all PTS test cases
+90,mozilla,91,1,didn't mark it before (just looked over what I think are the new parts)
+91,mozilla,92,1,(This had the wrong bug number in the commit message.)
+92,mozilla,93,1,54d57bd38f51	Matthew Noorenberghe ??? Bug 1007979 - Refactor nsSearchSuggestions into a reusable JSM. r=adw Original JSM by mconnor.
+93,mozilla,94,2,[New LWP 2]
+94,mozilla,95,1,This is not pleasing for her.
+95,mozilla,96,1,"2042   // Now, be sure to keep |this| alive, and the dialog"
+96,mozilla,97,2,"@@ +191,5 @@"
+97,mozilla,98,1,"I'm here, but I'm afraid I don't have much to report. May be it doesn't happen with the new UI? I've seen the ""couple of minutes before painting even the initial Chrome"" problem a couple of times after that, but there's no consistent way to reproduce that. It just happens randomly, and when I try to do that again, it doesn't. I'm not sure what can be done here to this bug. These days when it becomes slow I just go and delete those Local cache folders."
+98,mozilla,99,2,"/build_stage/communications/dialer/index.html: L10nError: Duplicate string ""edit"" found in app://communications.gaiamobile.org"
+99,mozilla,100,1,"Your right, the plain html page is rendered correctly."
+100,mozilla,101,2,Tools | Message Filters
+101,mozilla,102,2,return JS_FALSE;
+102,mozilla,103,1,Reproducible: Always
+103,mozilla,104,1,"3.1. The notification panel should probably explicitly specify that the label (class: ""popup-notification-description"") is the description for the panel (using aria-describedby?). This isn't essential, as screen readers generally use algorithms to work this out, but it's more correct."
+104,mozilla,105,1,A try run with the mochitest
+105,mozilla,106,1,"This is the thumbnail optimization I told you about. Previously my metadata code was creating a thumbnail for every song, even when a bunch of songs were part of the same album and shared the same thumbnail."
+106,mozilla,107,2,hfdxhfdhdfh
+107,mozilla,108,2,User-Agent:       Mozilla/5.0 (X11; Linux x86_64; rv:2.0b6pre) Gecko/20100913 Firefox-4.0/4.0b6pre Ubuntu/10.04
+108,mozilla,109,1,Checking in base/content/browser.js;
+109,mozilla,110,1,Koala
+110,mozilla,111,1,"Or is it only about a small notification, kind of a footnote?"
+111,mozilla,112,1,Review of attachment 582733:
+112,mozilla,113,2,23:06:06     INFO -  gBrowserInit.onLoad@chrome://browser/content/browser.js:990:5
+113,mozilla,114,1,verified fixed using the testcases and Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9pre) Gecko/2008041217 Minefield/3.0pre ID:2008041217 +  Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9pre) Gecko/2008041304 Minefield/3.0pre no crash on testcases.
+114,mozilla,115,1,Steps to Reproduce:
+115,mozilla,116,2,"document.getElementById(""togglePasswords"").label = kSignonBundle.getString(""showPasswords"");"
+116,mozilla,117,1,Updating summary to reflect subject of the bug and changing component. This is probably a dupe of an existing bug.
+117,mozilla,118,1,"I found bugs like bug 144432, but they refer to a slightly different problem."
+118,mozilla,119,1,1. Just visit sites with lots of GIFs and make sure they're rendering ok.
+119,mozilla,120,2,::: accessible/tests/mochitest/states/test_inputs.html
+120,mozilla,121,1,"through or by the JS component's code.  We need to report them somewhere, rather"
+121,mozilla,122,1,"Setting milestone to M11 and setting it to blocker. Vidur, apologies for setting"
+122,mozilla,123,1,"I managed to reproduce this issue on Firefox 44 RC and on Windows 10 x86, using the STR from Comment 15."
+123,mozilla,124,1,"Risk to taking this patch (and alternatives if risky): Low. The interface of |libfdio.so| is changed, but currently the only client that uses it is |bluetoothd|."
+124,mozilla,125,2,Build: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.4b) Gecko/20030521 Mozilla
+125,mozilla,126,2,TestRunner:  Starting test 51:EventTimestamp with timeout 30000
+126,mozilla,127,1,"76162 seems to suggest that the list is small, there are only a few sites added"
+127,mozilla,128,1,"Thanks Gareth. Some of the abstraction style did feel a bit off for me as well, but I guess I was too happy to enable another test :)"
+128,mozilla,129,2,27 	xul.dll 	nsAppShell::Run 	widget/src/windows/nsAppShell.cpp:258
+129,mozilla,130,1,"attinasi, is the sr complete? who's to set the target milestone for this?"
+130,mozilla,131,1,"Actual results: the words ""Export options"" appear in the lower *left*"
+131,mozilla,132,2,02:06:20 INFO - CPU: arm
+132,mozilla,133,2,https://reviewboard.mozilla.org/r/14659/#review13243
+133,mozilla,134,2,16386[81f9b48]: nsHttpConnection::Init [this=83ea548]
+134,mozilla,135,2,TE  --> T/m
+135,mozilla,136,2,libmozjs.so + 0x2e99f (0x4004699f)
+136,mozilla,137,1,"It does run slower, but not as slow as on Linux. I'm just compiling a debug build on Linux and will try with gDumpRepaintRegionForCopy=1 shortly."
+137,mozilla,138,2,nsXULDocument::ContentRemoved
+138,mozilla,139,1,1. In nsOfflineCacheUpdate - the #manifest and #dynamic keys were changed to use asciiSpec base
+139,mozilla,140,2,!= NULL' failed
+140,mozilla,141,2,#NAME?
+141,mozilla,142,1,before the User Agent Components are intialized (via InitUserAgentComponents())
+142,mozilla,143,1,Two additional comments.
+143,mozilla,144,2,e: {
+144,mozilla,145,1,1) Start apprunner.exe
+145,mozilla,146,1,why remove the assertion?
+146,mozilla,147,2,"0x7f12136f3ff8 ""/moz/aboutstartup3/js/src/jscntxtinlines.h"", ln=541)"
+147,mozilla,148,1,To repro: View URL.
+148,mozilla,149,2,"+    gfxFontGroup *CreateFontGroup(const nsAString &aFamilies,"
+149,mozilla,150,2,libIDL-0.8.2-1
+150,mozilla,151,1,(uninteresting screenshot)
+151,mozilla,152,2,************************************************************
+152,mozilla,153,1,5.  See page load.
+153,mozilla,154,1,"""I think this is because the tab code in global/bindings/tabbox.xml isn't"
+154,mozilla,155,2,22:17:18     INFO -  INFO TEST-END: /home/cltbld/talos-slave/test/build/tests/marionette/tests/dom/icc/tests/marionette/test_stk_proactive_command.js Fri Feb 22 2013 19:14:07 GMT-1100 (SST)
+155,mozilla,156,1,*** Bug 114327 has been marked as a duplicate of this bug. ***
+156,mozilla,157,1,"Sure thing, Gijs. I'll make those changes now and continue working on the tests after submitting the patch you need for 52."
+157,mozilla,158,2,"21:41:16     INFO -  nsDocumentOpenInfo::OnStartRequest(nsIRequest*, nsISupports*) [uriloader/base/nsURILoader.cpp:260]"
+158,mozilla,159,1,I agree that this is clearer.
+159,mozilla,160,1,This could be bug 223287
+160,mozilla,161,1,Actual results:
+161,mozilla,162,1,* No tests -yet- until we validate this approach
+162,mozilla,163,1,Is there any chance that this can be fixed on the 1.4 branch
+163,mozilla,164,1,Over to Rick who's going to make the first cut at this.
+164,mozilla,165,2,"0x00000000, const char * 0x0164abb8, const char * 0x02d6c9ac, const char *"
+165,mozilla,166,1,"Looks good to me, can you be sure to fix the unit tests before landing? Thanks!"
+166,mozilla,167,1,"then move the mouse below the textbox, it selects up to the char parallel"
+167,mozilla,168,2,+
+168,mozilla,169,1,Other interesting questions:
+169,mozilla,170,2,"document.write('<a href=""http://ads.web.aol.com/link/64000755/html?"
+170,mozilla,171,1,I'm flagging Wilfred to ensure we can get this into the backlog. This is crazy.
+171,mozilla,172,1,Reproducible: Always
+172,mozilla,173,1,"bug 221593 has a windows patch, maybe this can be used for os/2 as well"
+173,mozilla,174,2,Regression: Mozilla-Inbound-Non-PGO - Talos Page Switch - WINNT 5.1 (ix) - 19.5% increase
+174,mozilla,175,1,"Sorry for not replying here anymore, I was busy with exams and doing stuff for my youth movement :)"
+175,mozilla,176,1,"This is a mass search of unconfirmed bugs that have no activity on them, so if you feel a bug was marked in error, just remove the CLOSEME comment in the whiteboard within the next month."
+176,mozilla,177,1,1. install Firefox 1.0PRE
+177,mozilla,178,1,"- it would seem fairly intuitive to click on the icon to perform search with the associated engine. ""Click on the Google icon to search Google"""
+178,mozilla,179,2,Verified fixed in Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1a1pre) Gecko/2008062603 Minefield/3.1a1pre
+179,mozilla,180,1,Our dialog can explain that [shift]ctrl-tab and [shift]F6 are now being
+180,mozilla,181,2,"nsWindow::ProcessMessage(unsigned int,unsigned int &,long &,long *) (in xul.pdb)"
+181,mozilla,182,1,problem) so I believe in second order this host lookup problem could come
+182,mozilla,183,1,"the official version is the English version.  BTW, that's a paraphrase - the"
+183,mozilla,184,1,"I don't think the awesomebar is affected by this either way, since we explicitly decode URIs there."
+184,mozilla,185,1,verified in 6/5 build.
+185,mozilla,186,1,When i tried to kill the process via command line with taskkill
+186,mozilla,187,1,And pressing the Cancel button (which doesn't close the window):
+187,mozilla,188,1,#NAME?
+188,mozilla,189,1,to the beta may allow you to use the web interface.
+189,mozilla,190,1,"If we do that, shared-permanent properties with native getter-setter, where we use such to avoid an extra property, can't be used to implement ECMA-specified behavior -- not when there's no way to distinguish native-getter-setter-as-optimization from native-getter-setter-as-dynamic-behavior.  For example, the length property of functions is required to be exposed as a data descriptor.  This patch -- as currently written -- would do that.  I guess it lies for the descriptors that have native getters."
+190,mozilla,191,1,Since that event doesn't do batching we should probably implement batching with a WeakMap (e.g. using the document as the key) so we don't show the same error more than once per document.
+191,mozilla,192,1,"The unused enum is harder. I think the issue is that because we don't have external crate support in the build system, we're compiling our byteorder dependency as a module instead of a crate. That means that just declaring items public isn't sufficient to show them as used because they're no longer exported. Therefore anything we don't call ourselves generates an dead_code warning. I'm not sure what do do about that. We could try to strip that section, but that makes updates messy."
+192,mozilla,193,2,Android CPU ABI	armeabi-v7a
+193,mozilla,194,1,Needinfo :wayne to help with comment #3
+194,mozilla,195,2,FAIL: Busted: ts_cold_generated_max
+195,mozilla,196,1,"So, more tests are good."
+196,mozilla,197,1,Another thing is that when you force mozilla to maximize while in fullscreen
+197,mozilla,198,1,"-- 4xp -- (this works in NS 4.x, Helvetica/sans-serif doesn't, but this is only"
+198,mozilla,199,1,Integrated in Mozilla with minor tweaks.
+199,mozilla,200,1,"* In particular, never accept text/* (except maybe text/plain if that is currently common) or other nonsense-for-fonts content types."
+200,mozilla,201,1,If I'm correct the normal format to pass a username and password:
+201,mozilla,202,1,"Hmm, I guess on the one hand I can understand the desire for a consistent behaviour across all of Mozilla's products. On the other hand, I'd like to argue that there's also the consistency across the Android platform to be considered."
+202,mozilla,203,2,"19:43:18     INFO -   1  xul.dll!mozilla::TrackUnionStream::ProcessInput(__int64,__int64,unsigned int) [TrackUnionStream.h:ef40d40dd8c9 : 77 + 0x25]"
+203,mozilla,204,1,Review of attachment 8688627:
+204,mozilla,205,1,3. look at the bootom of pages for overlaping row
+205,mozilla,206,2,pexit:  14
+206,mozilla,207,1,Have to manually use mouse to click... or the Alt key to access the menu bar.
+207,mozilla,208,2,automated report - http://www.mathies.com/mozilla/bug1116884.txt
+208,mozilla,209,2,User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:21.0) Gecko/20130320 Firefox/21.0
+209,mozilla,210,2,"User-Agent:       Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/125.4 (KHTML, like Gecko) Safari/125.9"
+210,mozilla,211,2,rv = uuidgen->GenerateUUIDInPlace(&uuid);
+211,mozilla,212,1,1) Update a Aries to 20151208121557
+212,mozilla,213,1,"No, the HTML editor just has a dummy implementation:"
+213,mozilla,214,2,Firmware Version: L1TC10011800
+214,mozilla,215,1,"I was not able to uplift this bug to v1.2.  If this bug has dependencies which are not marked in this bug, please comment on this bug.  If this bug depends on patches that aren't approved for v1.2, we need to re-evaluate the approval.  Otherwise, if this is just a merge conflict, you might be able to resolve it with:"
+215,mozilla,216,1,blizzard- on the patch
+216,mozilla,217,1,Sorry I didn't answer earlier to your responses as I somehow didn't get any
+217,mozilla,218,1,Jeff et al: some more info.  The DOM itself does not appear to hold this
+218,mozilla,219,1,"after fix for the ""view page source"" crash, a ""view page source"" on a trunkated"
+219,mozilla,220,1,Actual results:
+220,mozilla,221,2,"nsEventListenerManager::HandleEventSubType  [c:/builds/tinderbox/Fx-Mozilla1.8/WINNT_5.2_Depend/mozilla/content/events/src/nsEventListenerManager.cpp, line 1655]"
+221,mozilla,222,2,reflow: 0.24ms
+222,mozilla,223,1,"Might be related: holding middleclick button on a normal webpage makes the autoscroll image jump around the webpage, like it's sending the middleclick button event again."
+223,mozilla,224,1,Checking in regress-341821.js;
+224,mozilla,225,2,xpos -= (screenViewLocX + mRect.width) - screenRightTwips;
+225,mozilla,226,1,See David's review comment in bug 921892. We should test that we treat v1 roots as isCA==true and other v1 certificates as isCA==false.
+226,mozilla,227,2,https://treeherder.mozilla.org/logviewer.html#?job_id=32898128&repo=mozilla-inbound
+227,mozilla,228,2,User-Agent:       Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MSN 6.1; MSNbMSFT; MSNmen-ca; MSNc00; v5m)
+228,mozilla,229,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE; rv:1.7.5) Gecko/20041122 Firefox/1.0
+229,mozilla,230,1,Sucks if you wanted to keep some of those links.
+230,mozilla,231,1,what happens w/ images off? [i suspect htmltables]
+231,mozilla,232,1,"Roland, can you please share what was the number you used and the number with international prefix you got?"
+232,mozilla,233,2,BuildID: 20140514024003
+233,mozilla,234,1,"Does Win10 actually send WM_WINDOWPOSCHANGING to windows even when ""accent color change"" only?"
+234,mozilla,235,2,"int 1, nsCollapsingMargin & {...}, int 1, nsMargin & {...}, unsigned int & 0)"
+235,mozilla,236,2,Java: J2RE v. 1.3.1_01a
+236,mozilla,237,1,"However, I wonder (along the lines of alecf's comments) why these checks aren't"
+237,mozilla,238,1,"Not that I've heard, but I only go back so far... :)"
+238,mozilla,239,1,button? I think it can be categorized as not horrible though quite annoying...
+239,mozilla,240,2,"vec4 temp = texture2D(uSamplerUnused, vec2(vTextureCoord.s, vTextureCoord.t)); // *"
+240,mozilla,241,1,"I do not believe that this is a duplicate of bug 594500. This bug refers to touchpad scrolling, and that one refers to the mouse wheel. The circumstances also appear different, because it seems that the symptoms of the mouse wheel can be resolved at least partially without closing all pdf tabs in the window. The touchpad will not work outside of pdfs until all pdfs are closed."
+241,mozilla,242,1,Environmental Variables:
+242,mozilla,243,2,Gecko: 9b9aad4197d9
+243,mozilla,244,1,const - that might be why you forgot to free it :-) feel free to fix that as
+244,mozilla,245,2,https://hg.mozilla.org/mozilla-central/rev/8294084bb6fa
+245,mozilla,246,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/c6ca2340a718
+246,mozilla,247,1,fails whenever we use any video controls. details as follows:
+247,mozilla,248,1,"2. Load https://www.youtube.com/watch?v=2fFYObYJG1k , seek to near the end, play to end."
+248,mozilla,249,1,I should try with v188 to see if that makes a difference...
+249,mozilla,250,1,Sorry for the typo. Type is privileged.
+250,mozilla,251,1,"As Gabriele mentioned in comment 15, I think our current design is acceptable. PIN/PUK code input screen appears at various places, for example, entering Message will trigger the screen, at this point, making emergency call is not what user intends to do. As a result, emphasizing ""you can still make emergency call when SIM is locked"" would seem unnecessary and further complicates the PIN/PUK screen. Thanks!"
+251,mozilla,252,2,line 3581]
+252,mozilla,253,2,chrome://glob
+253,mozilla,254,1,"The only styles in there is the ""bgcolor=white"", which is displaying correctly. Did you link to the correct page? Resolving this as INVALID since the page is displaying fine, until I hear otherwise."
+254,mozilla,255,1,"But you're right: in general, we need to have the same policy for Android, FX OS, and our desktop browser, and that's something we're trying to figure out right now. This is something we would need to agree on with the privacy team."
+255,mozilla,256,2,Vendor ID: 0x8086
+256,mozilla,257,1,bottom of the query list page.
+257,mozilla,258,1,"Or even more precisely, the sessionstore slowdown is not quite 2x; more like 1.5x, on the slower path.  But still there."
+258,mozilla,259,1,"Type in the ""Get Quote:"" field a stock name, e.g. CSCO and press go"
+259,mozilla,260,2,"Microsoft H.261 Video Codec,0x00200000,1,1,qcap.dll,6.05.3790.3959"
+260,mozilla,261,1,Bisection found Bug 1279503 - part 2 Push Notifications don't work in e10s depending on process configuration
+261,mozilla,262,2,"@@ +1166,5 @@"
+262,mozilla,263,1,where this is being leaked from then a plus is a possibility. putting on minus
+263,mozilla,264,1,Firefox crashes back to my desktop and offers to send an error report.
+264,mozilla,265,2,XREMain::XRE_mainRun() (in xul.pdb)
+265,mozilla,266,1,"Also, page JS execution halts rather than getting a catchable exception."
+266,mozilla,267,1,"Duh, the reason the stack depth is 2 when the error is being reported is super-simple: JSOP_MOREITER does a PUSH_NULL() right away, so any error from its implementation will find the post-op stack depth, not the pre-op that is expected by bytecode analysis up to but not including that op."
+267,mozilla,268,1,It's set to false for testing.
+268,mozilla,269,1,* Fixes bug in nsGlobalWindow::DisableDeviceSensor where we call through to RemoveWindowListener while there are still valid listeners
+269,mozilla,270,2,"#1  0x401a21a0 in pthread_cond_wait (cond=0x80ae354, mutex=0x80ae36c)"
+270,mozilla,271,2,20:38:55 INFO - sp = 0x5c7fa0f8 lr = 0x63a87cf5 pc = 0x63a87cf5
+271,mozilla,272,1,Update URL for test cases created for this user story. Dialer suite will be selected and tested as well.
+272,mozilla,273,2,"Date: Wed, 22 Mar 2006 20:43:34 GMT"
+273,mozilla,274,1,"oh yeah, that seems to be a problem with the progress curtain showed. I've found the same problem also in the Contacts 'Loading Contacts' screen."
+274,mozilla,275,1,the value returned is a framebuffer value it shouldn't be gamma corrected.
+275,mozilla,276,2,http://bugzilla.mozilla.org/show_bug.cgi?id=104663#c0
+276,mozilla,277,1,"Oops, backed out because of silly jsuword/uint64 incompatibility on 64-bit osx64:"
+277,mozilla,278,2,Build Identifier: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7) Gecko/20040510 Firefox/0.8.0+ (Darkstar)
+278,mozilla,279,1,For the current test case the 'changebar' texts should be aligned with the line
+279,mozilla,280,1,"i can still see this problem using 2.0.0.9 , Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9 ! doesn't work for me , Windows XP, please re-open"
+280,mozilla,281,1,It doesn't look like you addressed this.
+281,mozilla,282,1,"If we can't get a handle on the sqlite crash, I can easily disable PGO when building sqlite."
+282,mozilla,283,1,"""Crucial"" is a strong word, however I am of the firm opinion that authors should"
+283,mozilla,284,1,Either this patch or bug 801488's patches caused mochitest browser-chrome crashes on all platforms. Backed out.
+284,mozilla,285,1,"Er, My Lord, they're coming from the hills."
+285,mozilla,286,2,"aCommandName=0xbfea95cc ""cmd_insertHTML"", aParams=0xb1156f18,"
+286,mozilla,287,1,line:
+287,mozilla,288,1,I apologize if you feel that I was arrogant for trying to explain what may be going on with the additional problem you cited. I would like more info on that but that should be in another bug to prevent this bug if anyone decides to.
+288,mozilla,289,2,16:27:17     INFO -  chrome://mochitests/content/browser/toolkit/components/thumbnails/test/browser_thumbnails_bg_destroy_browser.js:runTests:19
+289,mozilla,290,2,12:41:44     INFO -  01-30 15:27:33.206    45    45 I Gecko   : MARIONETTE TEST RESULT:TEST-PASS | test_conference.js | call state - connected should equal connected
+290,mozilla,291,1,"As you can see directly underneath the Submit button, the image was not"
+291,mozilla,292,1,"Peter, do you think you'll be able to take this one? Otherwise we need to find another owner."
+292,mozilla,293,1,"Upon further review, the ARMv6 chips that support Thumb-2 don't support the entire instruction set. Better to restrict to ARMv7 and higher."
+293,mozilla,294,1,after try https://tbpl.mozilla.org/?tree=Try&rev=43962b33583f
+294,mozilla,295,1,"Hi Vicamo,"
+295,mozilla,296,2,return new Promise(resolve => manager.onFinished = resolve);
+296,mozilla,297,1,"Anyway, I think the only place NS_ERROR_DOM_INVALID_STATE_ERR can come from is ScriptExecutorRunnable::ShutdownScriptLoader when aResult is false and mScriptLoader.mRv.Failed() is also false.  And as the comments there say, this can only happen if we totally fail to allocate the global in GetOrCreateGlobalScope() or if ScriptExecutorRunnable::Cancel gets called."
+297,mozilla,298,1,"I went to java and downloaded 1.4.2_03, and both mozilla and 7.1 immediately"
+298,mozilla,299,2,Build Identifier: Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.6b) Gecko/20031213 Firebird/0.7+
+299,mozilla,300,1,Reproducible: Always
+300,mozilla,301,1,"However, I do not see why we should treat differently suggestions picked with"
+301,mozilla,302,1,Reduced case:
+302,mozilla,303,2,13  @media not all and (-moz-physical-home-button) {
+303,mozilla,304,1,Note that these applets load perfectly fine when there are no
+304,mozilla,305,2,Product	Firefox
+305,mozilla,306,1,"I'm OK with omitting it in the case you quoted (and the analogous rtFrame case), though I disagree that it's redundant there.  Technically, the assertion is simply checking that ""either there are no children, or the first child is a ruby base frame"", which is a pretty limited-in-scope thing to claim.  The  assertion-message that I suggested adding (""base container should only have ruby base frames as children"") isn't just a re-stating of the assertion condition (if it were, I'd agree RE redundancy) -- instead, it expresses the higher-level reason that we expect the assertion to hold."
+306,mozilla,307,2,5.0; rv:1.9b2pre) Gecko/2007120703 SeaMonkey/2.0a1pre
+307,mozilla,308,1,I hope these slides can be helpful to illustrate my thoughts:
+308,mozilla,309,1,private:
+309,mozilla,310,2,gklayout.lib(nsComboboxControlFrame.obj) : error LNK2001: unresolved external sy
+310,mozilla,311,1,0 bytes file should not stay.
+311,mozilla,312,1,"opt-out: I don't have a ready rule-of-thumb for making the privacy trade-off here.  In terms of utility, we currently get only a low volume of measurements on the equivalent opt-out metrics, we could certainly use more measurements if you think the cost acceptable.  In terms of privacy cost, this metric is predominantly about sites rather than users."
+312,mozilla,313,1,"Since you need DOM peer review for this patch, consider asking the peer if this could be added to the `OwningArrayBufferViewOrArrayBuffer` class."
+313,mozilla,314,1,Notes:
+314,mozilla,315,1,"Ah, good to know.  So it sounds like whoever implements bug 537782 will want to first check the HttpChannelChild's mCallbacks/mListener to see if they hand out auth prompts.  If they do, we should hand them out in HttpChannelParent as well, otherwise not.  I'll add a comment in the bug."
+315,mozilla,316,2,<script>
+316,mozilla,317,1,Steps to Reproduce:
+317,mozilla,318,1,from /home/simonb/Mozilla/package/components/librdf.so
+318,mozilla,319,1,Review of attachment 691755:
+319,mozilla,320,1,I have tried to import a standard certificate without keys into the Firefox
+320,mozilla,321,2,73c50000 73c71000   t2embed    (pdb symbols)          c:\symbols\t2embed.pdb\E317B5562BDD4146973BB987D4D7B3F31\t2embed.pdb
+321,mozilla,322,1,"one.  If it needs one, please set it upon review."
+322,mozilla,323,2,3 	xul.dll 	nsIconChannel::OnStartRequest 	image/decoders/icon/win/nsIconChannel.cpp:718
+323,mozilla,324,2,Bootloader             L1TC000118D0
+324,mozilla,325,1,f+. I didn't look closely at the profile / env. var stuff as I believe you're going to make the Refresh feature work with non-default profiles.
+325,mozilla,326,2,mozilla::ipc::MessagePump::Run(base::MessagePump::Delegate *) (in xul.dll)
+326,mozilla,327,1,"* Load N tabs at a time (where N is pref controlled, default of 3-5 probably, < 1 indicates no limit)."
+327,mozilla,328,2,OS: Linux 2.4.3
+328,mozilla,329,1,I do not know what more UX can do at this point. What else is needed here?
+329,mozilla,330,2,http://telefonicaid.github.io/wakeup_platform_documentation/doc/html_chunked/ch03.html
+330,mozilla,331,1,For checkin. Carrying over r=MattN
+331,mozilla,332,1,"Thanks Wilfred's information sharing! Then at least it's clear we won't fix it in 2.0 & 2.1, so plan to de-nominate it from 2.0 in coming Triage."
+332,mozilla,333,2,81% (35/43) vs.  72% (1023/1419) profapi.dll
+333,mozilla,334,2,"nsFontMetrics::Init(nsFont const &,nsIAtom *,nsDeviceContext *,gfxUserFontSet *) (in xul.dll)"
+334,mozilla,335,2,nsWidget::RealizeSignal(0x80f34f8)
+335,mozilla,336,1,ICCread.c: http://pastebin.com/4gvpzV6r (I have to quit the find_tag function. It's not used anymore)
+336,mozilla,337,1,why not use NS_ERROR_UNKNOWN_PROTOCOL?
+337,mozilla,338,1,Netscape allows me to use a built in mail client to send a message from a link.
+338,mozilla,339,1,"I think this bug should be Dup'd to 43579, or 43579 should be dup'd to this one."
+339,mozilla,340,1,The above URL works in:
+340,mozilla,341,1,Thanks.
+341,mozilla,342,1,It has not always been like this. I found a 1-November-2004 trunk build which
+342,mozilla,343,1,"So that final guard, even though it's dead, is serving a purpose... it's"
+343,mozilla,344,1,- what happens if you change the running order (first the guest OS gets started
+344,mozilla,345,2,"NS_STYLE_TEXT_DECORATION_OVERLINE,"
+345,mozilla,346,1,"I didn't say it covered all, now did I?  And I explicitly addressed the one exception.  Stop the silly straw-man arguments."
+346,mozilla,347,1,2. Try selecting the text.
+347,mozilla,348,1,"Yes, I'll definately have a go at doing this, although I probably will need to contact you on IRC at some point."
+348,mozilla,349,1,message display in compose window differs from how the message is displayed
+349,mozilla,350,2,.*** WARNING: Unable to verify checksum for D:\Programme\fftest\firefox\xul.dll
+350,mozilla,351,2,r=bbaetz
+351,mozilla,352,1,"Hey Jovan,"
+352,mozilla,353,2,"illa\netwerk\streamconv\converters\nsMultiMixedConv.cpp, line 303"
+353,mozilla,354,1,This is not a blocker.
+354,mozilla,355,1,So it looks like there's definitely a perf regression associated with this change (scroll down to 'damp opt'): https://treeherder.mozilla.org/perf.html#/compare?originalProject=fx-team&originalRevision=288d12e9236b&newProject=try&newRevision=769bce3ee777
+355,mozilla,356,1,"Oh, and apart from the leaks, no visible Memcheck or Ptrcheck"
+356,mozilla,357,1,Scenario2:
+357,mozilla,358,1,"stupid eg: A boy is supposed to be doing his homework on the comp but he decides to do some surfing. Afterwards his parents could easily see what he was doing because his last saved directory was ""/downloads/gametrailers"""
+358,mozilla,359,1,*** This bug has been marked as a duplicate of 41984 ***
+359,mozilla,360,1,Problem happens under e10s and non-e10s.
+360,mozilla,361,1,Please try these and report back with your results.
+361,mozilla,362,1,Bobby: it no longer crashes. Thanks!
+362,mozilla,363,2,"nsHTTPFinalListener::OnStopRequest(nsHTTPFinalListener * const 0x05053c70,"
+363,mozilla,364,1,*** This bug has been marked as a duplicate of 183697 ***
+364,mozilla,365,1,"Hi, Montoya"
+365,mozilla,366,1,attachments intend to show the generalization of what this page demos.
+366,mozilla,367,1,according to bug 1009353 there should be an allowance to change the search provider based on MNC/MCC
+367,mozilla,368,1,Agree with jdm.
+368,mozilla,369,1,"To verify the real URI, click on location bar and push Escape key."
+369,mozilla,370,2,{{
+370,mozilla,371,2,"mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) ="
+371,mozilla,372,2,04:50:50 WARNING - PROCESS-CRASH | dom/indexedDB/test/browser_perwindow_privateBrowsing.js | application crashed [@ mozilla::`anonymous namespace'::RunWatchdog(void *)]
+372,mozilla,373,1,"I'm going to stop here for now. The JM architecture isn't great for fixing this, and given that we're planning a better one, spending any more time getting this queue solid and dealing with perf regressions doesn't seem to have any real benefit."
+373,mozilla,374,1,"Removing adt1.0.0. Pls land this on the trunk, and let it bake for a couple of"
+374,mozilla,375,2,xul!js::NewBuiltinClassInstance<js::PlainObject>+0x18
+375,mozilla,376,1,Reproducing this is probably key to sorting out the problem.
+376,mozilla,377,1,"in mozilla's 'Preferences...',so this is my suggestion, that user can view the"
+377,mozilla,378,1,before that.
+378,mozilla,379,2,https://dxr.mozilla.org/mozilla-central/source/layout/generic/nsImageFrame.cpp?from=nsImageFrame.cpp&case=true#1281
+379,mozilla,380,1,"Smaug says the spec about this is still not stable, and this certainly doesn't need to block alpha1 IMO. Updating blocking status..."
+380,mozilla,381,2,"pref(""hal.processPriorityManager.gonk.FOREGROUND_HIGH.OomScoreAdjust"", 67);"
+381,mozilla,382,1,This was fixed on
+382,mozilla,383,1,pushed some separated patch series to try.
+383,mozilla,384,2,DLS Version: 1.00.0016.0002
+384,mozilla,385,1,#NAME?
+385,mozilla,386,1,"time I've been asked to type in that master password, it never accepts it."
+386,mozilla,387,1,and Michael Krax confirmed today (per e-mail) that the iconURL part is basically
+387,mozilla,388,1,"I don't understand the sequence of events, actually."
+388,mozilla,389,1,"In the other sydneyaudio backends, we added code to sa_stream_drain to check if any audio data is buffered but playback has not started, then force any buffered writes and start playback if necessary.  This works if the short sounds are played via the media decoders, since they're guaranteed to call sa_stream_drain.  Unfortunately, it doesn't help for short sounds played via mozWriteAudio because there's no clear point at which to drain."
+389,mozilla,390,1,"doc state: complete, not initial, showing, visible, active"
+390,mozilla,391,2,#3   0x70015d18 in _pthread_cond_wait ()
+391,mozilla,392,2,landed on v2.0m : https://github.com/mozilla-b2g/gaia/commit/a1b5959728c8bc2a82354e197bb161922d419866
+392,mozilla,393,1,"Here's another try at this, using some of the ideas of the patch I submitted last year and feedback from Mark's review."
+393,mozilla,394,2,Gecko-Rev       https://hg.mozilla.org/mozilla-central/rev/9ee9e193fc48
+394,mozilla,395,1,Built from http://hg.mozilla.org/releases/mozilla-1.9.2/rev/5ba5f965c12b
+395,mozilla,396,2,Product ID	FirefoxTrunk
+396,mozilla,397,1,"As discussed on IRC, we don't want to auto-unwrap scripted proxies when calling non-generic methods. We already don't do this for scripted indirect proxies, and this patch does the same for direct ones."
+397,mozilla,398,1,The Media Storage should be disable
+398,mozilla,399,2,line 981
+399,mozilla,400,2,"if (col.value != -1 && !col.value.cycler && obj.value != ""twisty"")"
+400,mozilla,401,2,pi
+401,mozilla,402,1,"1.8.1, not 1.8...  (and what happened to baking on trunk before landing on the branch?)"
+402,mozilla,403,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.9.1b4) Gecko/20090423 Firefox/3.5b4 (.NET CLR 3.5.30729)
+403,mozilla,404,1,Asynchronous Pan/Zoom: wheel input enabled; touch input enabled
+404,mozilla,405,1,No risk to desktop Aurora because click-to-play is mobile only for now. Approved for Aurora 13.
+405,mozilla,406,2,Fm_90.png to Fm@1.5x
+406,mozilla,407,1,"I searched the bug list many, many times for keywords related to this bug, but nothing came up.  Clearly bug 171255 is identical to this, so I'll resolve it.  Please vote for bug 171255 !"
+407,mozilla,408,2,#include <sys/statvfs.h>
+408,mozilla,409,2,"0x028f9184, int * 0x0012cc98) line 3880 + 56 bytes"
+409,mozilla,410,2,0417ff6c 0032e03d nspr4!_PR_NativeRunThread(void * arg = 0x02db7b80)+0x169 [e:\builds\moz2_slave\release-mozilla-1.9.2-win32_build\build\nsprpub\pr\src\threads\combined\pruthr.c @ 448]
+410,mozilla,411,2,document.urlform.urls.options[x].value
+411,mozilla,412,2,Device Name            hammerhead
+412,mozilla,413,2,https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2014/01/2014-01-15-mozilla-central-debug/firefox-29.0a1.en-US.debug-linux-i686.txt
+413,mozilla,414,1,Reasonable question.  See the profile in the bug this one blocks.  With the
+414,mozilla,415,2,"22:29:15     INFO -   9  xul.dll!js::CrossCompartmentWrapper::call(JSContext *,JS::Handle<JSObject *>,JS::CallArgs const &) [CrossCompartmentWrapper.cpp:30d59f3fb7e8 : 309 + 0xd]"
+415,mozilla,416,1,"(as with Bug 656853, I discovered this while writing tests for bug 308590)"
+416,mozilla,417,1,"Hi reporter,"
+417,mozilla,418,1,It's a bit unfortunate that information that we haven't disclosed (a PoC in a non-public bug
+418,mozilla,419,2,-----------------------------------------------------------------
+419,mozilla,420,1,plussing
+420,mozilla,421,2,Win6.0  0.16
+421,mozilla,422,2,}
+422,mozilla,423,2,http://searchfox.org/mozilla-central/rev/8562d3859b89ac89f46690b9ed2c473e0728d6c0/js/xpconnect/src/XPCJSContext.cpp#1242
+423,mozilla,424,2,doc = fr.contentWindow.document;
+424,mozilla,425,1,"Move this outside ""while (true)"""
+425,mozilla,426,1,I just put an approval-mozilla-b2g30? request in for bug 964537
+426,mozilla,427,1,Documentation added:
+427,mozilla,428,1,Found it. It was in patch 0010-Fix-display-problem.patch
+428,mozilla,429,1,caption (and still eating memory).
+429,mozilla,430,2,https://github.com/mozilla-b2g/gaia/blob/master/customization/browser.json
+430,mozilla,431,2,...
+431,mozilla,432,2,10:06:18 INFO - 1577 INFO TEST-START | dom/media/tests/mochitest/test_peerConnection_close.html
+432,mozilla,433,1,This is the final patch that should be good for first cut. I will file followups for the know limitations etc.
+433,mozilla,434,2,Firmware Date          Sun May  3 19:40:11 EDT 2015
+434,mozilla,435,2,"nsHTMLReflowState const&, int, int, unsigned, unsigned&) + 148"
+435,mozilla,436,1,by instead forcing creating an instance of settingsManager. Measurements
+436,mozilla,437,1,"null isn't an object when it's used in call or apply either, how would the inconsistency be justified?  When you all a function without an explicit this, you get the global object -- for all cases on the web that I know of."
+437,mozilla,438,2,17:34:07     INFO -       r4 = 0xbeb4ee54    r5 = 0x00000000    r6 = 0x431afa80    r7 = 0xbeb4ee1c
+438,mozilla,439,1,"In that attachment you had set layout.css.dpi to 96, right? If you set it to -1, or what you told Gnome (180), does bugzilla look unacceptable?"
+439,mozilla,440,2,p->MaybeResolve(true);
+440,mozilla,441,2,IE:Mac 5     (MacRoman)
+441,mozilla,442,2,"RCS file: /cvsroot/mozilla/widget/src/windows/nsToolkit.cpp,v"
+442,mozilla,443,2,https://hg.mozilla.org/mozilla-central/rev/632404d4d00b
+443,mozilla,444,1,from /home/karl/.mozilla/plugins/libflashplayer.so
+444,mozilla,445,2,#7  0x00007f877e8137c3 in ?? () from /usr/lib/xulrunner-1.9.0.11/libxul.so
+445,mozilla,446,2,MAX_COOKIES_PER_SERVER).
+446,mozilla,447,1,The current HKSCS support in Mozilla is limited to HKSCS-1999.  Now that
+447,mozilla,448,1,"(3/3, 100%, etc)"
+448,mozilla,449,1,gfx/src/xprintutil/xprintutil.c: * Retun error if printer does not support setting an orientation
+449,mozilla,450,2,PEP WARNING    | test_largedoc.js | open_page | unresponsive time: 2435 ms
+450,mozilla,451,1,"here that localized character in any page are rendered as ""diamonds with ?"","
+451,mozilla,452,2,application/x-itool    iTools Commands    itl    Yes
+452,mozilla,453,1,Expect Firefox to restart properly and to load the netcraft toolbar extension.
+453,mozilla,454,1,Always put a space before (
+454,mozilla,455,1,"I understand the approach you're suggesting now, and am willing to go that route. The patch you proposed almost does it, but misses a few other areas where canonicalization is necessary."
+455,mozilla,456,1,is still running. Launching Mozilla again at that point produces no result. Need
+456,mozilla,457,1,Minimal example:
+457,mozilla,458,1,"benc, is this a dup, or d'you know about it already?"
+458,mozilla,459,1,"roc can you review the code, please."
+459,mozilla,460,2,gfx.driver-init.status: 2
+460,mozilla,461,2,User Agent: Mozilla/5.0 (Mobile; rv:40.0) Gecko/40.0 Firefox/40.0
+461,mozilla,462,2,"OS X 10.5.2 mozilla-central debug test mochitests-2/5 [testfailed] Started 10:06, finished 10:44"
+462,mozilla,463,2,v1.2: 3c89aab6777f0ece3b30545b9b9bc7139c70d9b2
+463,mozilla,464,1,In Safe Mode it works fine after restart.
+464,mozilla,465,1,"Looks good, thanks!"
+465,mozilla,466,1,"values, so they don't really mean much and it's probably not"
+466,mozilla,467,2,r+a=ben@mozilla.org
+467,mozilla,468,1,"This -Wimplicit-fallthrough warning has actually been fixed in Blink's upstream Decimal.cpp. I tried updating our Decimal.cpp snapshot and reapplying our in-tree patches, but there were some merge conflicts from upstream changes I didn't understand well enough to resolve confidently."
+468,mozilla,469,1,Steps to Reproduce:
+469,mozilla,470,1,were prefs that used to work for this that we've explicitly removed in the last
+470,mozilla,471,1,"The cross-process mutex stuff should definitely be in another patch. I also think someone else should review this for the IPC stuff and general types usage (:blassey perhaps?), as I'm not that well versed in those areas."
+471,mozilla,472,1,Sound Test Result: Not run
+472,mozilla,473,1,"For some yet unknown reason, this bug behaves slightly different, when editing a"
+473,mozilla,474,2,#8   0x028391d4 in nsCSSFrameConstructor::InitAndRestoreFrame(nsIPresContext *)
+474,mozilla,475,1,2) Select File | Edit Page
+475,mozilla,476,1,"According to [1], Chrome disables DXVA for resolutions > 1080p on Windows due to faulty faulty drivers and expensive texture copying."
+476,mozilla,477,2,</quote>
+477,mozilla,478,2,22:26:14     INFO -  1374 INFO TEST-INFO | MEMORY STAT vsizeMaxContiguous after test: 600571904
+478,mozilla,479,1,rather stumped.  Is it definitely a consequence of this patch?  What happens if
+479,mozilla,480,2,https://travis-ci.org/mozilla-b2g/gaia/builds/29854014
+480,mozilla,481,1,least POST requests (and other non-idempotent methods):
+481,mozilla,482,1,I found this by disabling all add-ons and enabling them one-by-one.
+482,mozilla,483,1,"It isn't immediately obvious where the ""and"" points to. Which parts of the the sentence does it glue together?"
+483,mozilla,484,1,I have only noticed this bug on bugzilla query results pages. It seems to happen
+484,mozilla,485,1,"Select the filter in the list, make sure ""Inbox"" is selected at the bottom, and click ""Run Now"". This should delete all the bugspam. You can then delete the filter."
+485,mozilla,486,2,"align=""JUSTIFY"""
+486,mozilla,487,1,"[Comment 52 is an instance of this on inbound, from the push right *before* this landed, BTW. So all is still well.]"
+487,mozilla,488,2,Thread 10:
+488,mozilla,489,2,https://crash-stats.mozilla.com/report/list?signature=JSC%3A%3AYarr%3A%3AInterpreter%3Cwchar_t%3E%3A%3ApopParenthesesDisjunctionContext%28JSC%3A%3AYarr%3A%3AInterpreter%3Cwchar_t%3E%3A%3ABackTrackInfoParentheses%2A%29&product=Firefox&query_type=contains&range_unit=weeks&process_type=any&hang_type=any&date=2014-05-12+13%3A00%3A00&range_value=2#tab-reports
+489,mozilla,490,1,I don't know if .crossOrigin returns the appropriate value if the attribute is missing or set to an invalid value.
+490,mozilla,491,1,"When the AudioChannelService sends the ""audiochannel-activity"" event, the window ID of the wrapper is the ID of the ""inside app""."
+491,mozilla,492,1,Done!
+492,mozilla,493,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/c7dc1afc3c4c
+493,mozilla,494,2,mmaps   by size class: 8:212979; 9:24573; 10:8190; 11:6141; 12:2048; 13:1024; 14:512; 15:256; 16:192; 17:32; 18:48; 19:8; 20:4;
+494,mozilla,495,1,* FastListWidget.prototype.insertItemAt will now throw an error if you aren't appending
+495,mozilla,496,1,"On Home page, when I run the mouse over the photo, the pointer changes to a hand but the link info does not appear.  If I do the same thing in I.E., it works fine"
+496,mozilla,497,1,"I wonder if this will induce significant delay in the local connection case after stable state has been reached (all shims are patched in). A good benchmark will be the web console, since Mihai has been measuring its performance for quite some time now."
+497,mozilla,498,1,So you use the full URL for the Cache key here to provide separation between different ServiceWorker scripts within the same origin?  It seems this is not covered in the spec.  Can you open an issue on the SW github to clarify?
+498,mozilla,499,1,"As for the wkCursor stuff, though, I suspect those methods are thin wrappers around undocumented system calls.  I've encountered this kind of thing before in WebKit."
+499,mozilla,500,2,#0  0xffffe410 in __kernel_vsyscall ()
+500,mozilla,501,1,"For potential follow-ups, I've identified:"
+501,mozilla,502,1,"I'm still forming an opinion here, but the other side of the coin is that Firefox may prefer to keep some control over this part of the UI, given it is in the Firefox chrome.  Eg, a consistent set of icons would allow FF to treat an icon like any other part of the toolbar (full ""customize"" support, for example), or implement other policies.  If the provider was able to show/hide icons, or create new ones that appear unrelated to ones seen before, we'd lose some control over the UX."
+502,mozilla,503,1,Steps to Reproduce:
+503,mozilla,504,2,<head>
+504,mozilla,505,1,reports on it. Lots of work needs doing here!
+505,mozilla,506,1,give us slightly better behavior.  We could look at putting a hard cap on the
+506,mozilla,507,1,More reports at:
+507,mozilla,508,1,http://www.unicode.org/standard/translations/persian.html (The bug is reproducible)
+508,mozilla,509,1,"isNaN is probably a leftover from former days. Since we have a number box, it's not needed. This code should use .valueNumber instead of .value."
+509,mozilla,510,1,Reproducible: Always
+510,mozilla,511,1,"Now that Beta 5 has came out, I do not see this error any longer."
+511,mozilla,512,2,"E/GeckoConsole(  649): [JavaScript Warning: ""Error in parsing value for 'font-size'.  Declaration dropped."" {file: ""app://communications.gaiamobile.org/dialer/index.html#keyboard-view"" line: 0 column: 0 source: ""40""}]"
+512,mozilla,513,2,+    }
+513,mozilla,514,1,This version is compatible with tip.
+514,mozilla,515,1,Why stringifying then parsring?
+515,mozilla,516,2,19 	ntdll.dll 	_RtlUserThreadStart
+516,mozilla,517,2,0:000> |* ~* kp
+517,mozilla,518,2,new TestCase();
+518,mozilla,519,2,I/Gecko   (18024): *** Search: metadata init: starting
+519,mozilla,520,1,3. Switch to the tab containing the Javascripted page and notice the added delay
+520,mozilla,521,1,"I would limit it to even less. Note that you often find much less in the cache, even after surfing for hours. The memory cache is hardly used these days. Maybe a fixed number of 1MB ?"
+521,mozilla,522,1,"With these patches, the benchmark spends almost all the browser-process time simply doing fills to copy the plugin Image surface to the window's HDC. No double-buffering, no ThebesLayer compositing."
+522,mozilla,523,2,"11:38:52 INFO - [Child 773] WARNING: NS_ENSURE_TRUE(node) failed: file ../../../gecko/layout/base/nsDocumentViewer.cpp, line 3530"
+523,mozilla,524,1,It should leave space for my answer displaying my signature at the botton.
+524,mozilla,525,1,p.s. remember to use |feedback?| flag next time.
+525,mozilla,526,2,=============================================================
+526,mozilla,527,1,"I have no time to work on mozilla at the moment, so dougt is taking over FTP"
+527,mozilla,528,1,*** This bug has been marked as a duplicate of 252147 ***
+528,mozilla,529,1,"The Gadget box with Firefox is the appropriate size, but no gadget is displayed at all, just an infinitely spinning ""loading"" wheel."
+529,mozilla,530,1,"Re-tested this just in case and still cannot reproduce it, closing as WFM."
+530,mozilla,531,1,Thanks
+531,mozilla,532,1,Review of attachment 8750985:
+532,mozilla,533,1,There were some whitespace differences between the two branches. I verified that this patch is the same by doing |diff -w 1.9patch thispatch| and noticing that none of the added or removed lines showed up.
+533,mozilla,534,1,"edge as first edge, so that it works for both ltr and rtl conditions. Its not"
+534,mozilla,535,1,"(I haven't looked at how these particular ones are labeled, fwiw, but just the concept of having a single <toolbaritem> wrapping a <toolbarbutton> is not unheard of. I vaguely recall running into some when we did Australis' styling as well.)"
+535,mozilla,536,2,http://video.tickerforum.org/cgi-bin/feedme?m4v=2008-0911
+536,mozilla,537,1,New lines and indents in the C code sample
+537,mozilla,538,1,For good measure it also Releases the current nsIAppShell object one
+538,mozilla,539,1,"Ikura, AU116, 24/05 vendor build"
+539,mozilla,540,1,I begin to type an address.
+540,mozilla,541,1,radars should now be considered deprecated in favour of keywords.
+541,mozilla,542,1,uninstalling latest-0.8) and removing mozilla and phoenix dirs.  Also added reg
+542,mozilla,543,2,====================================================================================================
+543,mozilla,544,2,"@@ +482,3 @@"
+544,mozilla,545,1,"Further, the too bar declaration does not always appear.   DANGEROUS."
+545,mozilla,546,1,"2.Click on the ""Global"" link underneath the title ""Global"""
+546,mozilla,547,1,We have bug 555728 for this I think.
+547,mozilla,548,2,"<LI><A HREF=""Inside/""><FONT SIZE=""+1"">Inside"
+548,mozilla,549,1,Review of attachment 666328:
+549,mozilla,550,1,"found. I get the old ""Unable to determine IP address from host name for home""."
+550,mozilla,551,2,cl 	14.00.50727.762 	-GR- -GL -wd4624 -wd4952 -TP -nologo -Zc:wchar_t- -W3 -Gy -Fd$(PDBFILE)
+551,mozilla,552,1,"We can reproduce this bug when monkey test. Please see snapshot.jpg in my log, maybe this bug caused by dialer or status bar, and we can find ""AsyncChannel error"" in bugreport."
+552,mozilla,553,1,be changed to always copy?
+553,mozilla,554,2,+0x00000344 [/usr/local/lib/mozilla-1.8a5/components/libgklayout.so +0x0037059E]
+554,mozilla,555,1,There's absolutely no justification for breaking the DNS spec here.  The
+555,mozilla,556,1,Some hacking says:
+556,mozilla,557,2,::: configure.in
+557,mozilla,558,1,"The call's probably not too horrible, but its need to spill ecx and edx for the first two arguments is probably the killer, combined with likely-dumb codegen that starts with the usual function prologue."
+558,mozilla,559,1,happen reliably.)
+559,mozilla,560,1,"If you believe initEvent() is actually doing something in this case in non-Firefox browsers, please say exactly what and show evidence to that effect.  Preferably, please give a test-case that behaves in a different way (in non-Firefox browsers) if initEvent() is deleted entirely."
+560,mozilla,561,1,"Running HERE Maps, allowing geolocation:"
+561,mozilla,562,1,A bit internal but we know this will eventually go away :)
+562,mozilla,563,1,What happens if I have more than 1024 glyphs?  Why is nGlyphs 1020 instead of 1024?
+563,mozilla,564,1,"Turns out this wasn't the cause of the problem for which it was backed out, so relanded:"
+564,mozilla,565,2,02:04:19 INFO - Crash address: 0x0
+565,mozilla,566,1,Batch edit: Bugs still affected on b2g18 after 2/13 merge to v1.0.1 branch are affected on v1.0.1 branch.
+566,mozilla,567,1,please look at this picture!
+567,mozilla,568,1,See other reviews: https://reviewboard.mozilla.org/r/41651/
+568,mozilla,569,1,"The Java applet should appear in the Print Preview on the page that it is actually going to print on paper (under Internet Explorer 6.0 SP2, this does work properly)."
+569,mozilla,570,2,try {
+570,mozilla,571,1,"Marking as new, seeing on Linux 20021027"
+571,mozilla,572,2,User Agent: Mozilla/5.0 (Mobile; rv:37.0) Gecko/37.0 Firefox/37.0
+572,mozilla,573,1,Verified fixed FX 45.2.1 ESR tinderbox-build from 18-Jul-2016.
+573,mozilla,574,2,hg bisect --bad  # probably
+574,mozilla,575,1,"serial number for its identity, instead of the URI spec."
+575,mozilla,576,1,also may occur in Indic scripts in a consonant-conjunct context
+576,mozilla,577,2,Content-Encoding: x-bzip2
+577,mozilla,578,1,http://bugzilla.mozilla.org/attachment.cgi?id=106786&action=view and look at the
+578,mozilla,579,2,I/DEBUG   (  108):     beb0083c  0000000a
+579,mozilla,580,1,Modified configure.in so MOZ_WEBSPEECH undefined implies both MOZ_WEBSPEECH_TEST_BACKEND and MOZ_WEBSPEECH_MODELS are undefined
+580,mozilla,581,1,"Nick, can you follow up on that?"
+581,mozilla,582,2,Adapter RAM (GPU #2): 2048
+582,mozilla,583,1,Java Plug-in for Netscape Navigator should not be used in Microsoft Internet
+583,mozilla,584,1,"aliasing rules, but couldn't find a way to do so without increasing code size"
+584,mozilla,585,1,"Nevermind, RegisterWindowClass does that OR..."
+585,mozilla,586,1,This looks good to me!
+586,mozilla,587,1,"I think the perf concern is somewhat valid, although measuring any small changes will probably be hard. My main concern is that with the currently setup / logging level all of our widget output will end up in tbpl logs, and may break test result parsing. We'll find out soon enough."
+587,mozilla,588,1,Verified on 1999-09-23-09-M11 build.
+588,mozilla,589,1,Steps to reproduce:
+589,mozilla,590,1,"In devtools/shared/css-properties-db.js, should "":placeholder"" really be sorted in with the moz-prefixed things?  I'd guess not."
+590,mozilla,591,1,\n's and the like if the text node has them.
+591,mozilla,592,1,Thanks for an otherwise great product.
+592,mozilla,593,1,This DOES behave as expected in Seamonkey 1.7.2 (Mozilla/5.0 (Macintosh; U; PPC
+593,mozilla,594,1,"pre-default-setting history on the first run, it should be correctly respecting"
+594,mozilla,595,2,- Unknown pseudo-element or pseudo-class :-moz-math-font-style-stretchy
+595,mozilla,596,1,"maybe, heapapi.h is conflict.  We should use js/HeapAPI.h and remove"
+596,mozilla,597,2,[03:03:11.012] vendor::false
+597,mozilla,598,1,Ctrl-Shift-G just makes sense (and is used thusly in other programs).  It
+598,mozilla,599,1,"Hi Michael,"
+599,mozilla,600,1,| @@@  Enter username and password for Test  |
+600,mozilla,601,2,print.printer_LaserJet-4L.print_paper_data
+601,mozilla,602,2,WinMainCRTStartup()
+602,mozilla,603,2,http://www.mozilla.org/quality/help/bugzilla-helper.html
+603,mozilla,604,1,identified using the exception stack trace below.
+604,mozilla,605,1,"But HOMEBREW_OLD_CLANG was never defined, so the script fails. The same problem exists with MACPORTS_OLD_CLANG."
+605,mozilla,606,1,"if the caption is also given the style=""margin:0 auto"""
+606,mozilla,607,2,#6  0x4023f83f in dlerror () from /lib/libdl.so.2
+607,mozilla,608,1,and it's working fine.
+608,mozilla,609,1,3. processor usage will max out
+609,mozilla,610,2,\-------------------------------------------------------------------------/
+610,mozilla,611,2,223
+611,mozilla,612,2,https://hg.mozilla.org/mozilla-central/rev/e7c0ddb5f948
+612,mozilla,613,2,"#7  0xb4cecc68 in nsURILoader::OpenURI (this=0xb28ff550, channel=0xb0e84c50, aFlags=0, aWindowContext=<optimized out>)"
+613,mozilla,614,2,}
+614,mozilla,615,1,#NAME?
+615,mozilla,616,2,REPORT_UNEXPECTED_EOF(PEColorHueEOF);
+616,mozilla,617,1,kiran.s@in.ibm.com: would you please attach your changes as a cvs diff?
+617,mozilla,618,2,"sharpgen = 0, table = 0x0}, argumentFormatMap = 0x8b39e30, lastMessage = 0x0,"
+618,mozilla,619,2,WWW-Authenticate: NTLM TlRMTVNTUAACAAAADAAMAHAAAAAFgooAebV1UHkjepEAAAAAAAAAAEAAQAAwAAAAAQAMAG0AaQBrAGEAZABvAAIAKABtAGkAawBhAGQAbwAuAG8AbABmAGUAbwAtAGwAYQBiAC4AbgBlAHQAAAAAAG0AaQBrAGEAZABvAA==
+619,mozilla,620,2,https://dev.modern.ie/platform/status/timerelatedinputtypes/
+620,mozilla,621,1,Review of attachment 706948:
+621,mozilla,622,2,BuildID: 20151119161153
+622,mozilla,623,2,#8 0x7f7527935b6f in ~AutoNotifyGCActivity /builds/slave/m-cen-l64-asan-ntly-0000000000/build/src/js/src/jsgc.cpp:1422
+623,mozilla,624,1,I always get:
+624,mozilla,625,1,"To buster, not kipp..."
+625,mozilla,626,1,Yup. True statements. When the dialogs pop up with the invalid entry point
+626,mozilla,627,2,#6  0x40b22630 in nsAppShell::Run () from
+627,mozilla,628,1,TestRunner:  New longest test EventTimestamp with timeout 30000 takes 7415
+628,mozilla,629,2,(Gecko:21590): Gdk-CRITICAL **: gdk_window_show_unraised: assertion `GDK_IS_WINDOW (window)' failed
+629,mozilla,630,1,Review of attachment 640206:
+630,mozilla,631,1,Try build for windows 7: http://ftp.mozilla.org/pub/mozilla.org/firefox/try-builds/mwoodrow@mozilla.com-666f7861572f/try-win32/
+631,mozilla,632,1,Rebased. Could this be ready to review and land?
+632,mozilla,633,1,Thanks for the confirmation.
+633,mozilla,634,2,adding: install.rdf (deflated 52%)
+634,mozilla,635,1,Reproducible: Always
+635,mozilla,636,1,Expected: should not be showing the same frames over and over.
+636,mozilla,637,2,[7.TCID]:
+637,mozilla,638,1,2-Pull down notification tray
+638,mozilla,639,1,"Upon closer examination, I realize this is because mozilla kerns text one pixel"
+639,mozilla,640,1,'proxy' to this IP address.
+640,mozilla,641,1,"display in a modal dialog, go to prefs, change it)"
+641,mozilla,642,1,"somewhat.  I clock in at around 12500ms now, which is around half a second"
+642,mozilla,643,1,https://bugzilla.mozilla.org/show_bug.cgi?id=1046336 will have assets ready to check in by tomorrow.
+643,mozilla,644,2,rails/ruby_version_check.rb
+644,mozilla,645,1,Click OK.
+645,mozilla,646,2,"BIN_FILE_VERSION=""7.0.0.0"" BIN_PRODUCT_VERSION=""7.0.0.0"""
+646,mozilla,647,2,02:48:34     INFO -  ############ ErrorPage.js
+647,mozilla,648,1,+  // Arugments to this function should have values scaled to App units
+648,mozilla,649,1,Also tried with firewall off. happens with many other urls too.
+649,mozilla,650,2,User-Agent: Mozilla/5.0 (Windows; U; WinNT4.0; en-US; m18) Gecko/20001123
+650,mozilla,651,2,Build ID: 20150709163506
+651,mozilla,652,2,"<meta http-equiv=""content-type"" content=""text/html; charset=iso-8859-1"" />"
+652,mozilla,653,2,"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN"""
+653,mozilla,654,2,value = String(value);
+654,mozilla,655,2,{
+655,mozilla,656,1,This error comes from the following line:
+656,mozilla,657,2,User Agent: Mozilla/5.0 (X11; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0 (Beta/Release)
+657,mozilla,658,1,"[Blocking Requested - why for this release]: By using same hardware, Youtube app play lower resolution video on fxos compared to android."
+658,mozilla,659,1,1) teach layout operate with 2 thebes layers
+659,mozilla,660,2,"gklayout.dll!nsViewManager::HandleEvent(nsView * aView=0x060002a0, nsPoint aPoint={...}, nsGUIEvent * aEvent=0x0012f164, int aCaptured=0)  Line 1383	C++"
+660,mozilla,661,2,https://hg.mozilla.org/releases/mozilla-aurora/rev/0ca928196a14
+661,mozilla,662,1,Mozilla Application Suite must not be the right product for this bug.
+662,mozilla,663,1,Notes:
+663,mozilla,664,1,"3.If a website has disable File menu, unable to change orientation."
+664,mozilla,665,1,This now WORKSFORME on all feeds that were previously busted for me.
+665,mozilla,666,1,This makes embed show up in DOM Inspector.
+666,mozilla,667,1,Lets look at this code more closely.
+667,mozilla,668,1,I also cannot reproduce this issue by using the release build of 1/14.
+668,mozilla,669,2,Gaia-Rev        0518f4581a0925c0b703d730ef289ab15cbd1216
+669,mozilla,670,2,+      MOZ_COUNT_CTOR(nsTextShadowArray);
+670,mozilla,671,1,the Options' General tab.
+671,mozilla,672,1,"Breaking on click on dev tools and clicking on ""issues""."
+672,mozilla,673,2,User Agent: Mozilla/5.0 (Mobile; rv:34.0) Gecko/34.0 Firefox/34.0
+673,mozilla,674,1,is still someone working on this?
+674,mozilla,675,2,#includes for nsAlgorithm.h in bug 817574)
+675,mozilla,676,2,"""business"": ""Robert@adatum.com"","
+676,mozilla,677,1,!important should no longer be the default value suggested
+677,mozilla,678,2,int frameCount = (s->rate*afFrameCount*4)/afSampleRate;
+678,mozilla,679,2,<colgroup>
+679,mozilla,680,2,else {
+680,mozilla,681,2,/home/heiher/git/mips64/gecko-dev/js/src/jit/mips64/MacroAssembler-mips64.h:501:9: error: ?€?jsval_layout?€? was not declared in this scope
+681,mozilla,682,1,"--> When alarm rings, Setting was killed."
+682,mozilla,683,2,I/IdleService( 1406): Get idle time: time since reset 1021 msec
+683,mozilla,684,1,Sorry but your build is to old (1 year old) and we accept only bugs from the
+684,mozilla,685,1,To confirm previous question: there are no firewalls or anti/virus software
+685,mozilla,686,1,Could it be that that 21GB file actually gets even bigger up to filling my disc producing the quota exceeded error thing?
+686,mozilla,687,1,Yippee!
+687,mozilla,688,1,Sorry for the breakage. Pulling https://github.com/mozilla-b2g/gaia/pull/6906 would have fixed it though.
+688,mozilla,689,1,"I can reproduce bug 1266161 when APZ is disabled, but not the issue described here."
+689,mozilla,690,2,"Load Variables (""week5tx2.txt"", ""/textload/text2"")"
+690,mozilla,691,2,"03cafe6c 02fa360f jackf!CallCreateInstance(char * aContractID = 0x02fa79e8 ""@mozilla.org/jackfjackftemplate;1"", class nsISupports * aDelegate = 0x00000000, struct nsID * aIID = 0x02fa7998, void ** aResult = 0x03cafea0)+0x4e [d:\mozilla\mozilla_source\mozilla\xpcom\glue\nscomponentmanagerutils.cpp @ 120]"
+691,mozilla,692,2,#15 0xfcdd5d88 in nsFrameList::DestroyFrames ()
+692,mozilla,693,2,eax: 0xbfff97d4  ebx: 0x00f667c7  ecx: 0xbfff98cc  edx: 0x1a2b1298
+693,mozilla,694,2,49 	dalvik-LinearAlloc (deleted) 	dalvik-LinearAlloc @0x23dd9b
+694,mozilla,695,2,Device Name            scx15_sp7715ea
+695,mozilla,696,1,Can you reproduce this with Firefox running in the Firefox safemode ?
+696,mozilla,697,1,"Java support in Mozilla. Java 1.3.0-1 on OpenVMS does NOT include OJI, and"
+697,mozilla,698,1,"As far as I've tested, on my Nexus S, no race condition issue between AudioManager and shell.js. It looks like the race condition happens between shell.js' generated mozChromeEvent and Gaia's statusbar observer."
+698,mozilla,699,1,"Indeed it does appear that prepending the string ""file:///"" in front of the"
+699,mozilla,700,1,*** Bug 90673 has been marked as a duplicate of this bug. ***
+700,mozilla,701,1,xpfe and toolkit. I made changes to the toolkit version as that seemed to
+701,mozilla,702,2,"+    NS_ENSURE_TRUE((tablelen - 16) / 12 >= numGroups,"
+702,mozilla,703,1,"Reporter, can you please update to Firefox 3.6.10, create a fresh profile, http://support.mozilla.com/en-US/kb/managing+profiles, and test again. If you still see the bug, please update this bug. If the issue is gone, please set the resolution to RESOLVED > WORKSFORME."
+703,mozilla,704,2,7 	mozjs.dll 	js_SetProperty 	js/src/jsobj.cpp:5407
+704,mozilla,705,1,a file given in the src attribute doesn't exist. Mozilla should reserve 100x100
+705,mozilla,706,1,This was not a problem if I clicked on go|History
+706,mozilla,707,1,flash player.
+707,mozilla,708,1,is using Ctrl-E for something else.
+708,mozilla,709,2,"*,nsID const&,int,nsIXPConnectJSObjectHolder * *)+0x4c3"
+709,mozilla,710,2,?? HP LaserJet 1100 Printer
+710,mozilla,711,1,"to the CC list, because although nsFormControlFrame:HandleEvent set the event"
+711,mozilla,712,2,https://hg.mozilla.org/mozilla-central/rev/acdf76fb15b9
+712,mozilla,713,2,"nsWindow::WindowProc(void * 0x001405b6, unsigned int 7, unsigned int 2033148,"
+713,mozilla,714,1,"3) Type to ""????????????""."
+714,mozilla,715,1,Jesse can probably id the bug georgi is referring to in comment 21.
+715,mozilla,716,1,"This feature is for those who want to quickly open something new, that doesn't overwrite the current tab.  Opening it in the sidebar (currently the only option) is useless for most web pages, since it is too small, and shrinks the effective window space.  Only another tab (or window) will do!"
+716,mozilla,717,1,4. The previous wallpaper shows about 1 sec firstly.
+717,mozilla,718,1,[String/UUID change made/needed]: nope
+718,mozilla,719,1,Merged trunk: https://github.com/mozilla-b2g/gaia/commit/cc47ffdab0e1c4f7341af3f729584a31af6b4e27
+719,mozilla,720,1,Taking..
+720,mozilla,721,1,Review of attachment 8711945:
+721,mozilla,722,2,1 (reserved) = undefined
+722,mozilla,723,1,"set a default Firefox profile for all users then, it wouldn't be unique.  In"
+723,mozilla,724,1,"Interestingly, if you change ""tweak()"" in the test case to append a visible character instead of the empty string, the problem doesn't occur."
+724,mozilla,725,2,ModLoad: 74e80000 74e85000   C:\Windows\system32\MSIMG32.dll
+725,mozilla,726,2,0
+726,mozilla,727,2,"nsServiceManagerImpl::GetService(const nsID&,const"
+727,mozilla,728,2,-----------------------------------------------------------------
+728,mozilla,729,1,"We should add a triangle with a pulldown on the ""pill button"" that indicates the currently selected action, so it's possible to get an overview of available actions."
+729,mozilla,730,1,"couple of empty pages (just background color) after the content, too. So this"
+730,mozilla,731,2,"-include ../../../mozilla-config.h -Wp,-MD,.deps/nsCairoDeviceContext.pp"
+731,mozilla,732,1,"(e.g., 'residual font', 'inline/block', '/form & tables', etc.) but if you"
+732,mozilla,733,1,account to compute the nestin elvel (should it)?
+733,mozilla,734,2,/be
+734,mozilla,735,1,It is not clear to me why this patch would be causing those bc3 permaleaks:
+735,mozilla,736,2,Firmware(Incremental)  eng.cltbld.20151116.203255
+736,mozilla,737,1,"Newline above void (this local ARM style isn't a thing, feel free to use normal spidermonkey style)."
+737,mozilla,738,1,"the code path once the ""Print"" method is called. And whether ""Print"" is called"
+738,mozilla,739,2,ModLoad: 76f20000 76f47000   C:\WINDOWS\system32\DNSAPI.dll
+739,mozilla,740,2,19:22:55     INFO -  Retrying tests that failed when run in parallel.
+740,mozilla,741,2,#99  0x01d12c3c in nsAppShell::Run(void)
+741,mozilla,742,1,[Feature/regressing bug #]: Long standing bug exposed by e10s.
+742,mozilla,743,1,"That sounds like a decision that's being made above necko, in the DOM XHR code."
+743,mozilla,744,1,"dynamic PHP, the HTML page is static, and thusly cached). The Adsense will only"
+744,mozilla,745,1,in a content area is getting put in.  Anything loaded in a chrome area is not.
+745,mozilla,746,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8) Gecko/20051111 Firefox/1.5
+746,mozilla,747,2,--> 0.9.4
+747,mozilla,748,1,"summary:     Register allocate loop-spanning references (513843, r=rreitmai)."
+748,mozilla,749,1,We're just about to put out b2. It will be better but the b2-b1 delta means we will probably need another round before moving into bug fixes only.
+749,mozilla,750,1,Well I think I can confirm that setting nolock on my nfs mount solves this problem; thanks.
+750,mozilla,751,1,"- Failed to log in to amazon.co.uk (""No common encryption algorithms"")"
+751,mozilla,752,2,https://hg.mozilla.org/mozilla-central/rev/e066f112521a
+752,mozilla,753,2,}
+753,mozilla,754,1,Fix checked in.
+754,mozilla,755,1,"The cursor blinks everywhere on the page(only one cursor) except the input box. I had to manually bring the cursor to the input box to type in text. When I type in some text on some part of the page(where the cursor blinks), it went to 'Quick find' enabled at the left bottom of the page. This did not allow me to scroll the page up and down, rather when click down, it moves to the last part of the page."
+755,mozilla,756,1,"Parse a decimal number encoded in |chars|.  The decimal number must be sufficiently small that it will not overflow the integrally-precise range of the double type -- that is, the number will be smaller than DOUBLE_INTEGRAL_PRECISION_LIMIT."
+756,mozilla,757,1,Works for me. (WinXP SP2)
+757,mozilla,758,2,...
+758,mozilla,759,1,Played with this try build:
+759,mozilla,760,1,Fixed typo (added comma)
+760,mozilla,761,1,and volatile int in all other circumstances.
+761,mozilla,762,1,Mass update: Resolve wontfix all issues with legacy homescreens.
+762,mozilla,763,2,./dom/browser-element/Makefile.in
+763,mozilla,764,1,"Yes  I saw that and tried it, using the shift key did not work. I even tried it again it still did not work. I even tried uninstalling the Firefox and reinstalling it. (In reply to comment #3)"
+764,mozilla,765,2,https://hg.mozilla.org/mozilla-central/rev/fed024a1b092
+765,mozilla,766,2,</HTML>
+766,mozilla,767,1,code in netwerk/wifi/osx_corelan.mm.
+767,mozilla,768,1,shouldn't expose that in <html:iframe mozbrowser>.
+768,mozilla,769,1,only actually in charge of making XLinks look like HTML A links once XLinks
+769,mozilla,770,1,(Diff revision 1)
+770,mozilla,771,1,"(and it isn't unless invoke_count_word is inlined), then its"
+771,mozilla,772,1,Steps to Reproduce:
+772,mozilla,773,2,"User-Agent:       Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3"
+773,mozilla,774,2,-----------------------------------------------------------------
+774,mozilla,775,2,"_92f:{_80a:'8',"
+775,mozilla,776,2,bar
+776,mozilla,777,2,"@@ +399,5 @@"
+777,mozilla,778,1,The problem still shows in Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; it; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12
+778,mozilla,779,2,unsafe CPOW usage unity_webapps.js:477:0
+779,mozilla,780,1,"However, that must not be undocumented. If you decide to allow -1, we must document it in the IDL (in all places where -1 is allowed for the port number)."
+780,mozilla,781,2,static_cast<const gfxHarfBuzzShaper::FontCallbackData*>(font_data);
+781,mozilla,782,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/8a385ef6f650
+782,mozilla,783,1,"I haven't looked very much, but I can answer some questions. For example the ""Bold button"" is defined here:"
+783,mozilla,784,1,"1. When in a page with a textbox, open another page in a tab."
+784,mozilla,785,1,We need to wait until bug 1215295 hits m-c but I figured we could get the patches reviewed before. If you want to build just check out latest NSS to security/nss/ in your working copy.
+785,mozilla,786,1,"this is looking excellent now with necko, all the pages load fully, marking"
+786,mozilla,787,1,After upgrading to FF 3.6 the page stopped working.  Then java was updated to 1.6.0_18 and the problem persisted.
+787,mozilla,788,1,more descriptive variable names wouldn't be a bad idea.... characters are cheaper than they were 30 years ago
+788,mozilla,789,1,guess that means a [notxpcom] readonly attribute in addition to the restored
+789,mozilla,790,2,[1] https://github.com/crdlc/gaia/commit/3313801cfee954f4f14e5cf65c0518b004d9a16c
+790,mozilla,791,2,=============================================================
+791,mozilla,792,1,more risky than XSS.
+792,mozilla,793,2,04-07 15:57:23.270 <6>0[ 1271.970682] [   85]  1001    85      205       16   0     -16          -941 rilproxy
+793,mozilla,794,2,::: devtools/shared/event-emitter.js:78
+794,mozilla,795,2,http://hg.mozilla.org/mozilla-central/rev/3e05788f1ab0
+795,mozilla,796,2,#0  0x00007f3dcd439a1c n/a (libxul.so)
+796,mozilla,797,1,"Quick update, as I've been silent thus far. I am currently working on this. It looks similar to https://bugzilla.mozilla.org/show_bug.cgi?id=1265873 and I've confirmed it's a regression from my patch in https://bugzilla.mozilla.org/show_bug.cgi?id=1176011."
+797,mozilla,798,1,"I'm just including the above steps for posterity, 'cause I think billm has a possible fix for this (woot!), from talking to him on IRC."
+798,mozilla,799,1,I'm just going to reset some of the flags you've set.
+799,mozilla,800,1,combination of X libraries on my system (perhaps a conflict in the Red
+800,mozilla,801,2,07FE2C80    PPC  17EA7604  main+00CF0
+801,mozilla,802,1,I know how to reproduce this now.  This has something to do with CRL's
+802,mozilla,803,1,[Approval Request Comment]
+803,mozilla,804,1,"Hasn't landed on m-c since a big improvement removed all this code on m-c. Note that this big improvement does contain this small fix. So if I can count that: half a day on m-i. But this has also landed on ionmonkey branch (that has tbpl builds etc). There it is checked in for multiple days, up to a week."
+804,mozilla,805,1,"This entire block defining rdtsc is only used in TraceLogging.cpp, and it appears it doesn't need to be exposed, so it should stay there (the fact that functions are static confirms that hint)."
+805,mozilla,806,1,5) Select 'free' on an app
+806,mozilla,807,1,cairo's header file.
+807,mozilla,808,1,2. Select to subscribe to this live bookmark for foxnews.com
+808,mozilla,809,1,6.Incoming one call.
+809,mozilla,810,2,"Last-Modified:	Wed, 27 Oct 2010 16:12:20 GMT"
+810,mozilla,811,1,nominating for the 1.0 branch. This is highly visible -- I ran into this several
+811,mozilla,812,1,icon+arrow is a big button that contains another button containing just the icon.
+812,mozilla,813,1,trusted. Ot: we can make an exception such as:
+813,mozilla,814,1,"Sorry, I meant bug 552686."
+814,mozilla,815,2,at /home/mfinkle/Source/mozilla-trunk/mozilla/content/events/src/nsEventListenerManager.cpp:1190
+815,mozilla,816,1,"See attached: screenshot, logcat"
+816,mozilla,817,1,"In case removal is not deemed safe, the following patch will at least actually allow compilation and operate in the spirit of what the old/obsolete code used to do.  However, this would only be necessary if js::RecalculateStackLimit() (via SetNativeStackQuota() or some other call) isn't done early enough after the JSRuntime object is created."
+817,mozilla,818,2,bug 823483 patch 5.
+818,mozilla,819,2,"#24 0x00007ff6c90eb10f in XREMain::XRE_main (this=this@entry=0x7ffced2b79a8, argc=argc@entry=1,"
+819,mozilla,820,1,#NAME?
+820,mozilla,821,1,"1. Have an add-on update available, which gets auto-loaded when Firefox starts up"
+821,mozilla,822,2,"@@ +1010,5 @@"
+822,mozilla,823,2,-----------------------------------------------------------------
+823,mozilla,824,2,#0   0x70059b68 in _semaphore_wait_signal_trap ()
+824,mozilla,825,1,I've tried the following in different combinations. No luck.
+825,mozilla,826,1,"Ok, I'll post another bug report with the very same test case!"
+826,mozilla,827,1,"First of all, an error should be thrown after put() instead of onsuccess (QUOTA_ERR)"
+827,mozilla,828,1,In this I am attaching the try request link which I pulled today.
+828,mozilla,829,1,"Drivers: asking for blocking, as this is an easy and unobtrusive perf win. Anything that reduces query time in moz_places will positively affect perf of autocomplete, bookmarks and history search, etc."
+829,mozilla,830,1,the> UA stylesheet.
+830,mozilla,831,2,http://mxr.mozilla.org/comm-central/source/calendar/base/themes/pinstripe/calendar-views.css#606
+831,mozilla,832,1,I do not get mozilla crash.  WFM in todays 5-18-04 build win98.
+832,mozilla,833,1,"Because we implemented the HTML parsing algorithm from the HTML5 specification.  Other browsers are implementing it too.  Again, at this point the problem is that we and WebKit are using the same parser but your site is sending us _different_ markup.  Just stop doing that!"
+833,mozilla,834,1,"Already send the email to partner to look for help already. Since Wasabi is the old model from 2 years ago and currently not the official project for our partner, partner won't have timely support on this one. Partner said they can help on the issue analysis but won't be able to provide fix even the issue is identified in the vendor's build."
+834,mozilla,835,2,"0x01cd40cc, int * 0x0012e504) line 3838 + 56 bytes"
+835,mozilla,836,1,if you have followed the instructions and are still having problems.
+836,mozilla,837,1,"A simple way to do that is to count how many nsIURIs we create, and how many of them contain the string ""!//"". Then send those two numbers back. A possibly slightly more meaningful thing to measure is how many pages that use ""!//"" URLs, out of the total number of pages we load. That more clearly indicates how much of the web would break if we made this change."
+837,mozilla,838,2,169
+838,mozilla,839,1,Note that this bug is somewhat mutually exclusive with Bug 925874 (though WINDOWS STR B would always be an issue).
+839,mozilla,840,1,assumes that the year is wrong and subtracts 1. The problem is that time
+840,mozilla,841,2,var elements = [];
+841,mozilla,842,1,"to the relevant Makefile.in files, and remove the AC_DEFINE here and above."
+842,mozilla,843,1,"I would take a close look at <input type=""file""> as you will see this one is"
+843,mozilla,844,1,followed by a very large sequence of:
+844,mozilla,845,1,message that truly informs rather than confuses the reader and also tells them
+845,mozilla,846,2,"@@ +1,2 @@"
+846,mozilla,847,1,Actual Results:
+847,mozilla,848,1,like (that is still open) file a new one.
+848,mozilla,849,2,7  libssl3.so!ssl_FreeSocket [sslsock.c : 485 + 0x0]
+849,mozilla,850,1,"(""\\server\share\user\Application Data"") or if you manually enter a UNC path -"
+850,mozilla,851,2,#3  0x00007f3dcd74c576 n/a (libxul.so)
+851,mozilla,852,1,"FYI, we don't do more than just paint the yellow background-color for ""-moz-appearance: tooltip;"""
+852,mozilla,853,2,"<!DOCTYPE test SYSTEM ""notexist.dtd"">"
+853,mozilla,854,2,"RCS file: /m/pub/mozilla/intl/unicharutil/src/nsCaseConversionImp2.cpp,v"
+854,mozilla,855,1,"What I did was selected the whole page, chose 'view selection source' to view"
+855,mozilla,856,2,function UpdatePlugins() {
+856,mozilla,857,2,Linux build 2000052320
+857,mozilla,858,2,<treerow >
+858,mozilla,859,2,"[c:/builds/tinderbox/MozillaTrunk/WINNT_5.0_Clobber/mozilla/docshell/base/nsDocShell.cpp,"
+859,mozilla,860,2,13:11:57 INFO - esi = 0x00000000 edi = 0x00000000
+860,mozilla,861,1,Some tweaks on top of the patches here.
+861,mozilla,862,2,"<div class=""hub"">"
+862,mozilla,863,1,I think that the above patch may be a better fix. When we're doing an
+863,mozilla,864,1,I didn't recycle RTFs since they are created somewhat differently. It should be
+864,mozilla,865,2,javascript:open('http://www.yahoo.com/');void 1
+865,mozilla,866,1,FireFox tabs open: 11 + 1 + 1 + 15 + 9 + 1 + 2 + 20 = 60
+866,mozilla,867,2,DBGHELP: firefox - private symbols & lines
+867,mozilla,868,1,This bug persists in 3.0.4.
+868,mozilla,869,1,"Also, I think maxIonCompilationThreads is shorter and matches what we do elsewhere (maxInlineDepth, maxMallocBytes etc)"
+869,mozilla,870,1,dependent on this one?
+870,mozilla,871,1,authentication scheme (I used .htaccess in Apache).
+871,mozilla,872,1,"I tentatively have ruled out overflow for some uses of CalcBufferSize, but not all. The ones that appear OK are:"
+872,mozilla,873,2,#35 0xb7e6f249 in PR_GetError () from /usr/lib/MozillaFirefox/libnspr4.so
+873,mozilla,874,1,I don't see where it's getting this from though.
+874,mozilla,875,1,"I have seen this and a similar error on other pages as well in the past, though"
+875,mozilla,876,1,"In the other 3 cases, it looks like reject_call didn't work, because the screenshot clearly shows the call is still going on and the failure happens right after reject_call was called:"
+876,mozilla,877,2,Flame 2.0
+877,mozilla,878,2,`.split('\n');
+878,mozilla,879,2,(516787)   URL: http://www.nationalcity.com/onlinebanking/
+879,mozilla,880,1,"No link is set on ""jack Hokanson""/testimonials/home page"
+880,mozilla,881,2,[1] https://hg.mozilla.org/mozilla-central/annotate/955840bfd3c2/dom/plugins/base/nsPluginHost.cpp#l2364
+881,mozilla,882,1,Nit: cuddle
+882,mozilla,883,1,"Ah, I see. Makes sense."
+883,mozilla,884,1,"With the patch of bug 126920, it works fine for mail priting."
+884,mozilla,885,1,You need to provide a page.. or URL.. I have no problems printing...any
+885,mozilla,886,1,Selecting pseudo elements is really just doing something that can't easily be done in the highlighter but it would be cool if they could be selected like any other node.
+886,mozilla,887,1,Reproducible: Sometimes
+887,mozilla,888,1,"Where are we using PAGE_SIZE directly? AFAIK that's heavily frowned upon, we should be using getpagesize() or sysconf(_SC_PAGESIZE) if the former is unavailable. Maybe we should go ahead and fix that instead of defining PAGE_SIZE."
+888,mozilla,889,2,</pre>
+889,mozilla,890,1,"happen at all, unlike in the existing code.  Is this intentional?"
+890,mozilla,891,1,Review of attachment 8494737:
+891,mozilla,892,2,*
+892,mozilla,893,2,025d18f0 025d18e8 00000000 00000000 00000000 00000000 00000000 025d2d20
+893,mozilla,894,2,Europe/Zagreb  Tue May  8 00:59:59 1945 UTC = Tue May  8 01:59:59 1945 CET isdst=0
+894,mozilla,895,2,while (true) {
+895,mozilla,896,2,https://hg.mozilla.org/integration/fx-team/rev/fb2f46c5f6b1
+896,mozilla,897,2,Gecko: d9c755c8055f
+897,mozilla,898,2,print.print_margin_bottom: 0.5
+898,mozilla,899,1,nit: ditto
+899,mozilla,900,1,adding localizers to see if they can find a work around for this
+900,mozilla,901,1,after: https://tbpl.mozilla.org/?tree=Mozilla-Inbound&rev=53aedd08699f
+901,mozilla,902,1,Verified that we are indeed calling InsertHTML with a string which includes the
+902,mozilla,903,2,then@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/core/promise.js:43:43
+903,mozilla,904,1,Text should be vertically centered.
+904,mozilla,905,1,"Make sure the ""Sample Format"" is correct."
+905,mozilla,906,1,I suggest to optionally use the same pre-processing for browsing webpages.
+906,mozilla,907,2,09:42:12     INFO -  ++DOMWINDOW == 94 (0x7fe937bcc400) [pid = 1954] [serial = 3058] [outer = (nil)]
+907,mozilla,908,2,print.tmp.printerfeatures.LaserJet-4L.paper.2.height_mm
+908,mozilla,909,1,using Flash mx 2004. of all the the people I know that has viewed the site...
+909,mozilla,910,1,"a form that doesn't post to an https: URL, please file a new bug."
+910,mozilla,911,2,10:12:32 INFO - 282 INFO [17:12:31.829] 640x360-16 loadstart
+911,mozilla,912,2,::: tools/profiler/JSStreamWriter.h
+912,mozilla,913,1,Why is the mLastNotification-vs-LAST_NOTIFICATION_END comparison here changing from == to !=  ?
+913,mozilla,914,2,"@@ +5,5 @@"
+914,mozilla,915,2,#NAME?
+915,mozilla,916,1,So the rendering is in fact correct.  Just set the top margin on both to 0 if
+916,mozilla,917,1,Actual Results:
+917,mozilla,918,1,"2. Reset ""media.gmp-manager.lastcheck"" (should read '0')."
+918,mozilla,919,1,"Another ""symptom"" that emerged along with this one - the URL won't get updated"
+919,mozilla,920,2,::: layout/mathml/nsMathMLFrame.cpp
+920,mozilla,921,2,./test_upgrade.js
+921,mozilla,922,1,Why? Especially if it's not there by default. It means change and option for additional usability and your break familiarity.
+922,mozilla,923,1,"The fullscreen API is becoming heavily used in games and other web apps; we should remove the prefix and bring it in line with the no-prefixes policy, or the prefix is likely to stick around for a really, really long time."
+923,mozilla,924,1,Preexisting nit: left brace on its own line.
+924,mozilla,925,1,i'm blind. bug 52397 is a crash in nsHTTPServerListener::OnDataAvailable
+925,mozilla,926,1,to synch the changes with the system.  Mozilla still couldn't resolve any
+926,mozilla,927,2,<td>
+927,mozilla,928,2,/home/chuclone/.gems/gems/responders-0.6.5/lib
+928,mozilla,929,2,setInterval(function(){
+929,mozilla,930,1,[Additional notes]:
+930,mozilla,931,1,"r- because of the newChannel: (aURI, aLoadInfo) which I'm 99% sure is not quite right..."
+931,mozilla,932,2,"latest Nightly 41.0a1 (2015-06-10) (Build ID: 20150610030209),"
+932,mozilla,933,1,And there is indeed a bug in bug 604289 that it would return false
+933,mozilla,934,1,Actual Results:
+934,mozilla,935,1,We can create more categories but that would make the subsections
+935,mozilla,936,2,Version: 45.0a1 (2.5)
+936,mozilla,937,1,"Still on the reflow interrupt thing, we could also switch to one of the other interrupt modes (e.g. the one that interrupts deterministically off a counter once 100ms have passed).  But if we can hook up HasPendingInputEvent that would be _way_ better."
+937,mozilla,938,1,Review of attachment 8674188:
+938,mozilla,939,2,nsWindow::DispatchWindowEvent(nsGUIEvent * 0x0012f92c) line 871
+939,mozilla,940,1,There are other bugs on similar things. I tried to define how it all works when
+940,mozilla,941,1,are asking for your help in focussing our efforts. If you can still reproduce
+941,mozilla,942,1,"Unless this is by design, I think it is bug-prone and we should ensure to only show/hide once and when needed, otherwise we may end up in a weird inconsistent state."
+942,mozilla,943,2,print.tmp.printerfeatures.laserjet.paper.6.width_mm: 190
+943,mozilla,944,1,"Its a bit far fetched but lucas and I were also talking about the possibility of a green bar-ish, or blue bar-ish, and/or larry-ish looking persona.   it would be hard to get it looking exactly right but with enough work it might be close enough to fool a few people that they were on a secure connection."
+944,mozilla,945,2,User-Agent:       Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1)
+945,mozilla,946,2,139
+946,mozilla,947,2,"#1  0x00002aaaacfd6e8a in nsRefPtr (aRawPtr=0x2aaad1dab5e0, this=<synthetic pointer>) at ../../dist/include/nsAutoPtr.h:911"
+947,mozilla,948,1,Reproducible: Always
+948,mozilla,949,2,https://bugzilla.mozilla.org/attachment.cgi?id=197660
+949,mozilla,950,1,try run is green: https://tbpl.mozilla.org/?tree=Try&rev=5cfa8f3f1177
+950,mozilla,951,2,8 	libxul.so 	nsXPConnect::GarbageCollect 	js/src/xpconnect/src/nsXPConnect.cpp:413
+951,mozilla,952,1,This should be it. This should finally be it. Oh God I hope this is correct.
+952,mozilla,953,1,"AM REALLY disappointed in you trying to Please everyone, putting everything on.  LESS IS BETTER."
+953,mozilla,954,1,Setting milestone to mozilla0.9.1
+954,mozilla,955,2,<center>
+955,mozilla,956,1,Reproducible: Always
+956,mozilla,957,1,7. Open Settings app and go to Data Settings.
+957,mozilla,958,2,#endif
+958,mozilla,959,1,"Out of curiosity, I would be curious as to what it is about STL containers that can't be measured by passing a suitably instrumented allocator? Do STL containers (in some implementations) allocate things on the heap without using the allocator, or are you concerned about the sizeof(*this) part?"
+959,mozilla,960,2,"* XLIST (\HasNoChildren) ""/"" ""test_saturated_sync"""
+960,mozilla,961,1,The JavaScript console also reports this error (with popup blocking off):
+961,mozilla,962,2,+  PRBool EnforceInvariants(void) { return mEnforceInvariants; }
+962,mozilla,963,1,Correction:
+963,mozilla,964,1,"We likely want to improve this soon, and at least document any restrictions in place and file bugs to relax them."
+964,mozilla,965,1,"Before version 20, firefox worked on hardened linux"
+965,mozilla,966,1,Type without being frozen.  I can click but not type.  (Mac user)
+966,mozilla,967,1,In both case we are not able to enable or disable APM after this.
+967,mozilla,968,1,"In any case, sounds like this is a duplicate of bug 441046 or bug 823483?"
+968,mozilla,969,1,"I had tested with code to disable ""done()"" function call[1]. So, the view activity won't be closed when we get an error. In this case, we only get one error and call alert once. When we long press home button, the view activity window is closed and press the caller app to get caller back. I found there another alert is shown on top of the caller's window."
+969,mozilla,970,1,"Since Bug 24366 was fixed, we can now care of the following problem:"
+970,mozilla,971,1,"Window.enumerateProperties"". And on the 1st window only name ""ObjectWindow"" appears."
+971,mozilla,972,2,composer.dll!nsCOMPtr<nsIEditor>::~nsCOMPtr<nsIEditor>()  Line 584	C++
+972,mozilla,973,2,"0   XUL DebuggerSource_getText(JSContext*, unsigned int, JS::Value*) + 454 (RootingAPI.h:661)"
+973,mozilla,974,2,Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8b2) Gecko/20050614
+974,mozilla,975,2,r24: 0x00000000  r25: 0x00000780  r26: 0x0000027e  r27: 0x00000020
+975,mozilla,976,2,"4501 ERROR TEST-UNEXPECTED-FAIL | /tests/dom/tests/mochitest/dom-level1-core/test_attreffectivevalue.html | [SimpleTest/SimpleTest.js, window.onerror] An error occurred - is is not defined at http://mochi.test:8888/tests/dom/indexedDB/test/test_setVersion.html:70"
+976,mozilla,977,1,Addressed review comments for part 1.
+977,mozilla,978,2,extensions.checkCompatibility.4.2p.previous
+978,mozilla,979,2,BuildID   20130814043202
+979,mozilla,980,2,3
+980,mozilla,981,1,Thanks~
+981,mozilla,982,2,"Register b = getBaseReg(base, d, BaseRegs);"
+982,mozilla,983,1,I'm not entirely happy with the API yet.  The idealistic part of me (http://commandcenter.blogspot.com/2012/04/byte-order-fallacy.html) would like people to just use the Read/Write functions:
+983,mozilla,984,2,"<img src=""menubtn.gif"" border=""0"" alt=""Menu""></a>"
+984,mozilla,985,1,"items under the image appear uncentered, as well as being split apart with the"
+985,mozilla,986,1,I can still reproduce this problem after testing... Please check the attachment image and description:
+986,mozilla,987,1,reassigning qa contact to chrisd
+987,mozilla,988,1,trailing space
+988,mozilla,989,1,I opened the following PDF file using the built-in viewer:
+989,mozilla,990,1,There were missing resources so all the stuff is provided as the zip file now.
+990,mozilla,991,1,I get a result of 4254 ms.. I tried also older builds but it was never fast in Firefox.
+991,mozilla,992,1,"From coment #0 it looks like the click closes the window via self.close(), so"
+992,mozilla,993,2,nsStreamListenerEvent::HandlePLEvent(PLEvent*)
+993,mozilla,994,2,int 3145) line 1369
+994,mozilla,995,1,"Good for me, Steve!  Thanks a lot for this patch.  I though I caught all of the cases :/"
+995,mozilla,996,2,"nsContainerFrame::ReflowChild(nsIFrame *,nsPresContext *,nsHTMLReflowMetrics &,nsHTMLReflowState const &,int,int,unsigned int,unsigned int &,nsOverflowContinuationTracker *) (in xul.dll)"
+996,mozilla,997,2,5 	xul.dll 	gfxImageSurface::gfxImageSurface 	gfx/thebes/gfxImageSurface.cpp:101
+997,mozilla,998,1,"If you no longer see the problem, please set status to resolved and resolution to WORKSFORME."
+998,mozilla,999,2,[1] https://pvtbuilds.mozilla.org/pub/mozilla.org/b2g/nightly/mozilla-central-unagi/latest/
+999,mozilla,1000,1,Expected Results:
+1000,mozilla,1001,1,browser history and the description i was typing on for 1/2 an hour was G O N E
+1001,mozilla,1002,2,78.7%   ZwQuerySystemInformation
+1002,mozilla,1003,1,I can not get a windbg info because keyboard and mouse is not responsive.
+1003,mozilla,1004,1,"NI : Alberto, not sure why this was backed out, if its close to getting done, can we please get this re-landed on master and uplifted on 2.2 as well ? Thanks!"
+1004,mozilla,1005,1,Reproducible: Didn't try
+1005,mozilla,1006,1,Let me know.
+1006,mozilla,1007,1,"x is length,2"
+1007,mozilla,1008,1,"Hmm, yeah, that would be a problem :("
+1008,mozilla,1009,1,This bug can be fixed by replaceing
+1009,mozilla,1010,2,"js_FinishAtomState()  [/builds/tinderbox/Tb-Mozilla1.8.0-Release/Linux_2.4.18-14_Depend/mozilla/js/src/jsatom.c, line 428]"
+1010,mozilla,1011,1,length of full text = 9
+1011,mozilla,1012,1,This patch checks the call stack to see if it's chrome or content calling
+1012,mozilla,1013,1,When was the last windows update you made?
+1013,mozilla,1014,1,"I was sort of expecting you to make one....  Please do take this to the newsgroups?  I have a number of followup questions to your ""short answer"", and don't want to clutter the bug with them.  Not sure which newsgroup you prefer here; let me know once you post."
+1014,mozilla,1015,2,Makefile:183: test_crashing2.html disabled due to random orange; see bug 566049
+1015,mozilla,1016,1,I have a fix for this. Shall checkin when the tree opens.
+1016,mozilla,1017,1,Steps to Reproduce:
+1017,mozilla,1018,1,Is this adding what GitHub needs to use FIDO U2F? I read this when setting up 2-auth.
+1018,mozilla,1019,1,"5- Host receives second tile, removes readlock and reference from first tile, frees shared memory"
+1019,mozilla,1020,1,"No, it's not part of any specification. It's supposed to bring windows to the front, which I think only makes sense when they're also restored from the minimized state. We already expect this when we call w.focus() in your patch's context."
+1020,mozilla,1021,2,-----------------------------------------------------------------
+1021,mozilla,1022,1,"For auto-detect east asian and chinese, it's a regression."
+1022,mozilla,1023,1,3.Browse to site and check the file on disk 200 btyes in size.
+1023,mozilla,1024,1,Repro Steps:
+1024,mozilla,1025,1,"3. Click Australis Menu button (???) -> ""Sign in to Sync"""
+1025,mozilla,1026,1,Firefox should have started normally.
+1026,mozilla,1027,2,7 	libxul.so 	nsScriptLoader::EvaluateScript 	nsCOMPtr.h:655
+1027,mozilla,1028,1,"Ben, could you try to figure out whether cookies work here at all?  Here's a random page which tries to figure out whether cookies are enabled, for instance."
+1028,mozilla,1029,1,on windows and linux a mouseover yeilds:
+1029,mozilla,1030,1,"carrying approvals forward, since dbaron's suggestion is a small change."
+1030,mozilla,1031,1,the URIbar. I go from one page to another faster using a keyboard shortcut.
+1031,mozilla,1032,1,"* Find the file that stores the site thumbnail, e.g. with PageThumbsStorage.getFilePathForURL"
+1032,mozilla,1033,1,Change to leo+ because this bug is derived from from 900848.
+1033,mozilla,1034,2,overlay.inspectStop()
+1034,mozilla,1035,2,"00002e0fe0   mov 744(eax),ebx       eax(state) ebx(add2)"
+1035,mozilla,1036,1,"I'd have appreciated some comments about what the classes here are for, especially nsZipDataStream"
+1036,mozilla,1037,2,"0012f374 0173b198 gklayout!nsGenericElement::HandleDOMEvent(class nsPresContext * aPresContext = 0x020044c0, class nsEvent * aEvent = 0x063bdb70, class nsIDOMEvent ** aDOMEvent = 0x0012f760, unsigned int aFlags = 2, nsEventStatus * aEventStatus = 0x0012f838)+0x429 [h:/mozilla/tree-main/mozilla/content/base/src/nsGenericElement.cpp @ 2053]"
+1037,mozilla,1038,1,1. Video recording
+1038,mozilla,1039,1,"as a note, this fixes both this bug and bug 219192 (not worth writing two"
+1039,mozilla,1040,1,1. create xml/xslt page
+1040,mozilla,1041,1,- Removed a use of 'constexpr' which broke the Windows build.
+1041,mozilla,1042,2,https://hg.mozilla.org/mozilla-central/rev/6d098abf43ad
+1042,mozilla,1043,1,"settings so I can at least know I've lost my custom settings, but sometimes they"
+1043,mozilla,1044,2,https://treeherder.mozilla.org/#/jobs?repo=try&revision=889099cdc2c1
+1044,mozilla,1045,2,3682 21:51:14 INFO - 796 INFO TEST-UNEXPECTED-FAIL | dom/browser-element/mochitest/test_browserElement_oop_CopyPaste.html | cut function works (test: normal div with designMode:on)
+1045,mozilla,1046,2,"@@ +295,4 @@"
+1046,mozilla,1047,1,Is there a suppression we can give clang to tell it this is not an accident?
+1047,mozilla,1048,1,3. Display in FF
+1048,mozilla,1049,1,here too.
+1049,mozilla,1050,1,"When we change a preference in security-prefs.js or firefox.js or elsewhere, we also need to make a change like the one in this patch."
+1050,mozilla,1051,1,page load (the onload handler adds some text to the line).
+1051,mozilla,1052,1,3. Click on the link. A 'Launch Application' dialog appears. (See attachment)
+1052,mozilla,1053,2,"CPU 3           :    ?  --    ? user,    ? nice,    ? system,    ? idle"
+1053,mozilla,1054,2,do
+1054,mozilla,1055,1,"4. The Home screen with apps will overlap with ""Transfer Protocol"" view."
+1055,mozilla,1056,1,"marking mac, adding mac to summary."
+1056,mozilla,1057,2,"16384[8073500]: nsHttpHandler::Observe [topic=""timer-callback""]"
+1057,mozilla,1058,2,"App Notes 	AdapterVendorID: 10de, AdapterDeviceID: 0533, AdapterDriverVersion: 6.14.11.126"
+1058,mozilla,1059,1,3. User can open the the transfered file.
+1059,mozilla,1060,1,I upgraded Firefox moments ago and now and then I get Chinese characters and such in the tabs.
+1060,mozilla,1061,1,r=pavlov (from bryner's machine)
+1061,mozilla,1062,1,the same html code looks different when rendered
+1062,mozilla,1063,1,"Yep, that's right! Thanks for breaking it down, Andrew. Now that you made the mistake of posting in the bug, I'm going to ask you to review the patch. =p"
+1063,mozilla,1064,2,browser/devtools/webconsole/test/browser_webconsole_property_provider.js
+1064,mozilla,1065,1,release. Hard to tell with no version or target milestone.
+1065,mozilla,1066,1,joki.
+1066,mozilla,1067,1,always disabled for me.
+1067,mozilla,1068,1,om type ?€?const void**?€? to type ?€?js::gc::Cell**?€? casts away qualifiers
+1068,mozilla,1069,2,2. patch for 0.9.4 using the 4.x solution (11/17/01 06:48)
+1069,mozilla,1070,1,|<----------------Class--------------->|<-----Bytes------>|<----------------Objects---------------->|<--------------References-------------->|
+1070,mozilla,1071,1,"ditto, won't repeat below. Please U-turn"
+1071,mozilla,1072,2,::: netwerk/test/mochitests/test_from_signed_web_packaged_app.html
+1072,mozilla,1073,1,"We could try throttling these (as in, detect how much time we've spent doing the restyles ""recently"" and post an event instead of doing it sync for the current prescontext.  Or something."
+1073,mozilla,1074,2,Firmware(Incremental)  eng.cltbld.20150215.040742
+1074,mozilla,1075,2,}
+1075,mozilla,1076,1,788		 * go to the trouble of translating the CERTCertificate into
+1076,mozilla,1077,1,"This almost works.  As far as I can tell, the refcounting is all correct; the Chromium code addrefs and releases the runnable in PostRunnableTask."
+1077,mozilla,1078,2,"[d:\builds\seamonkey\mozilla\layout\html\base\src\nsBlockFrame.cpp, line 3151]"
+1078,mozilla,1079,1,The length of appParameters array would be 17.
+1079,mozilla,1080,1,"Updated PR, took the scroll out of the loop so it affects both addContact and editContact."
+1080,mozilla,1081,1,I've verified that the patch from bug 1161793 which is landed on fx-team fixes this problem.
+1081,mozilla,1082,1,Mozilla has a lot of additional list styles not yet
+1082,mozilla,1083,2,"PRODUCT_NAME=""Java(TM) 2 Platform Standard Edition 5.0 Update 1"""
+1083,mozilla,1084,2,http://start.mozilla.org/firefox/?FR-fr&act=2
+1084,mozilla,1085,2,</html>
+1085,mozilla,1086,2,Sat Mar 29 09:21:16 GMT 2008
+1086,mozilla,1087,1,"2: From the lock screen, press the power button and the volume down button at the same time to take a screenshot."
+1087,mozilla,1088,2,ZIPLOCK
+1088,mozilla,1089,1,"I think the best approach would be to listen for the 'resize' event, like you suggested Chris, and mark the cue's that have been calculated up until that point as dirty. Hopefully we can do that in a lazy way."
+1089,mozilla,1090,1,The next issue that stands out from the tp5 regressions when you enabled e10s (bug 1174776) is that we're now spending time in 'imgRequestProxy::StartDecoding()' where we don't really spend any time during non-e10s tp5.
+1090,mozilla,1091,2,at B.start(B.java:8)
+1091,mozilla,1092,1,Are the items appearing in the location bar dropdown bookmarks? We search those too now.
+1092,mozilla,1093,1,still has it: bug 560723 (+ bug 562655) made no difference.
+1093,mozilla,1094,2,=> mAllocCount:          24399
+1094,mozilla,1095,1,Mozilla process should have completely stopped.
+1095,mozilla,1096,1,Uplift to gaia v2.5
+1096,mozilla,1097,1,"This is probably the best looking mockup for it, by far: http://www.cl.ly/image/0s390K1M2w2n"
+1097,mozilla,1098,1,#NAME?
+1098,mozilla,1099,2,"node.parentNode.replaceChild(this, node);"
+1099,mozilla,1100,1,// Remove floatThead when native position:sticky is usable.
+1100,mozilla,1101,2,https://hg.mozilla.org/mozilla-central/rev/00d5331b08db
+1101,mozilla,1102,1,"framed upon clicking on it. With 0.9 the issue has gotten worse, now the entire"
+1102,mozilla,1103,1,"Repro frequency: 3/3, 100%"
+1103,mozilla,1104,2,16386[81f9b48]:   calling PR_Poll [active=0 idle=1]
+1104,mozilla,1105,1,"Updating the ""no matching activity registered"" condition accordingly."
+1105,mozilla,1106,2,aTrack=mp4_demuxer::kAudio)
+1106,mozilla,1107,1,(better content with Android UA) = This site receives mobile content with the Fennec UA but better mobile content with the Android stock UA
+1107,mozilla,1108,1,"I haven't looked closely at the changes, but Skia is one of the biggest remaining sources of static constructors; it wouldn't really surprise me if updating Skia dragged in a bunch of new static constructors.  Skia's static constructors would require some moderately significant changes to eliminate. :("
+1108,mozilla,1109,1,on the line up button. Resizing the window also causes it to appear
+1109,mozilla,1110,2,make[4]: Leaving directory `/usr/src/mozilla/layout/base/src'
+1110,mozilla,1111,1,"Scans for WiFi networks, either on all  WiFi  links,  or"
+1111,mozilla,1112,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9) Gecko/2008052906 Firefox/3.0
+1112,mozilla,1113,2,unsigned int & 0) line 949 + 15 bytes
+1113,mozilla,1114,1,"Yes, please.  For the case attached here, you're just seeing the fact that the image cache does not cache non-image data; there's an existing bug on that."
+1114,mozilla,1115,2,"9148         ac_configure_args=""$ac_configure_args $var='`eval echo \\${${var}}`'"""
+1115,mozilla,1116,1,the forms to use multipart/form-data.
+1116,mozilla,1117,2,06:18:01 INFO - 1 CPU
+1117,mozilla,1118,1,Anyone want to document this in MDN?
+1118,mozilla,1119,1,"Another problem, however, is external links. An external link (passed by another application) is NOT relative to the current tab, but will be opened next to the current tab. I would prefer that external links be opened to the far right. This especially makes sense if the logic is that new blank tabs should be opened on the far right."
+1119,mozilla,1120,1,"Even HTML tidy does not fix the code. So it is impossible to process the file using XSLT because http:="""" causes a namespace error."
+1120,mozilla,1121,2,User-Agent: Mozilla/4.7 [en] (X11; I; Linux 2.2.12-20 i686)
+1121,mozilla,1122,1,I opened 4254 to deal with the issues with the actual script actions.
+1122,mozilla,1123,2,Device: Flame 2.2 (affected)
+1123,mozilla,1124,1,A working workaround is using the side-panel bookmarks.
+1124,mozilla,1125,2,CSSLoaderImpl::ParseSheet
+1125,mozilla,1126,1,present in a recent build (Moz1-RC1 or a new nightly build). If
+1126,mozilla,1127,1,"For static text, as I mentioned above, I can guarantee that the textnode"
+1127,mozilla,1128,2,"<A HREF=""/whichextra/content/main/downloading-pdfs.jsp"">Downloading PDFs</A>"
+1128,mozilla,1129,1,they do not.
+1129,mozilla,1130,1,"After doing so, I launched this apps on Firefox OS on Nightly and got subtitle displayed."
+1130,mozilla,1131,2,blank2.gif
+1131,mozilla,1132,1,EarlyExit:
+1132,mozilla,1133,2,Prog.
+1133,mozilla,1134,1,3) Tap on rocket bar and type at 1-10 characters
+1134,mozilla,1135,1,back to the actual type (from which you casted to void*) when you access a
+1135,mozilla,1136,1,See bug 463153 comment 25.  There are likely holes in at least:
+1136,mozilla,1137,2,"0050303C  shr         edi,8"
+1137,mozilla,1138,1,"Thanks for getting back to us! I'm glad you figured it out - if the addon hasn't been fixed already, you may want to get in touch with the author and let him/her know about the bug."
+1138,mozilla,1139,2,"@@ +557,5 @@"
+1139,mozilla,1140,2,"@@ +1,4 @@"
+1140,mozilla,1141,2,print.tmp.printerfeatures.CUPS/brother.plex.0.name: default
+1141,mozilla,1142,2,[Feature/regressing bug #]: MSE
+1142,mozilla,1143,2,https://hg.mozilla.org/integration/fx-team/rev/3271168dd6bf
+1143,mozilla,1144,2,Name: PCI standard RAM Controller
+1144,mozilla,1145,2,at jsinterp.c:2791
+1145,mozilla,1146,1,"Alive, what patch applies to 2.1 here?"
+1146,mozilla,1147,1,This needs a comment to explain what's going on.  Try this:
+1147,mozilla,1148,1,How short does the audio file need to be for this issue to occur? At what length does the audio file pause as expected?
+1148,mozilla,1149,1,Are there any errors in the Browser Console? Does this work on Nightly? (http://nightly.mozilla.org)
+1149,mozilla,1150,1,Plugins that say don't want to be cached are removed from the list in
+1150,mozilla,1151,1,"Ok, thanks for the tip :)"
+1151,mozilla,1152,1,I've tried Date.now().
+1152,mozilla,1153,1,"want to report"" a bit too hastily. I was not talking about Mozilla for Linux,"
+1153,mozilla,1154,1,It would help if we had xpcshell tests up so we could see if the test for this is passing or not on b2g.
+1154,mozilla,1155,1,"2. Type the word ""feildatabase"" e.g. in mail composer."
+1155,mozilla,1156,1,Nicolas
+1156,mozilla,1157,1,"As for bringing up a viewsource window, I can't see any way of telling the"
+1157,mozilla,1158,2,Build Identifier: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.15) Gecko/2009102815 Ubuntu/9.04 (jaunty) Firefox/3.0.15
+1158,mozilla,1159,2,#ifdef ACCESSIBILITY
+1159,mozilla,1160,2,});
+1160,mozilla,1161,1,"Yeah, this is the same problem as described in bug 304423, and the fix for it"
+1161,mozilla,1162,2,/be
+1162,mozilla,1163,2,(gdb) cont
+1163,mozilla,1164,1,All of this code actually goes away by the final patch/
+1164,mozilla,1165,1,These are because I haven't yet removed the hack that made :hover work for a
+1165,mozilla,1166,1,"It's been very difficult for me to reproduce as I'm on a 64bit debian system with NVIDIA, and this can only be reproduced in 32bit builds. I first had to get the 32bit NVIDIA libraries going. Finally did it today. I can reproduce the assertion failure using the exact same build as you, but I can't using the standard Firefox 7 build (don't get any crash there). It seems that there is something that makes this only easy to reproduce in debug builds (even if asserts are disabled, null pointer derefs still crash release builds...). Investigating."
+1166,mozilla,1167,2,/* aAllowWrapping = */ true))) {
+1167,mozilla,1168,2,Total Blocks    Total of Block Sizes
+1168,mozilla,1169,1,Reiterating my comment 54:
+1169,mozilla,1170,1,"Going to about:support does trigger it, but only because we create a context when they go to about:support."
+1170,mozilla,1171,1,"Thanks, Gareth."
+1171,mozilla,1172,2,"16384[8073500]: nsHttpHandler::Observe [topic=""timer-callback""]"
+1172,mozilla,1173,1,"setting the listener on ""document."" rather than ""window."""
+1173,mozilla,1174,2,Mozilla/5.0 (X11; Linux x86_64; rv:2.0b8pre) Gecko/20101103 Firefox/4.0b8pre
+1174,mozilla,1175,1,"so that it's value is cached correctly (it is not trivial, DOM changes can"
+1175,mozilla,1176,1,with Chase to make sure he's ok with me doing it.
+1176,mozilla,1177,1,by which I mean that we're behind on getting 1.9.1.8 out the door. 1.9.1.18 should be about a year away.
+1177,mozilla,1178,1,// Start with IAccessible *pAccessible;
+1178,mozilla,1179,1,where DOM semantics are de rigeur reveals these differences and
+1179,mozilla,1180,2,"DV Splitter,0x00600000,1,2,qdv.dll,6.05.3790.3959"
+1180,mozilla,1181,2,"<style type=""text/css"">"
+1181,mozilla,1182,1,fields. The result will be a purely grey page.
+1182,mozilla,1183,1,Then NeedToReframeForAddingOrRemovingTransform would be true. Hopefully.
+1183,mozilla,1184,1,"On the other hand, bug 13350 doesn't mention recursion explicitly. But ok..."
+1184,mozilla,1185,1,"simple change, but I really don't know.  If it really has significant impact on"
+1185,mozilla,1186,1,Jan: I think this is fixed with the big NO_PERF checkin of last weekend.
+1186,mozilla,1187,1,7. Insert a movistar sim (in this case is the mcc/mnc configured in variant.json file)
+1187,mozilla,1188,1,"WORKSFORME, please reopen if you see this problem with mozilla0.9.9, or a"
+1188,mozilla,1189,2,https://wiki.mozilla.org/Security/Bug_Approval_Process
+1189,mozilla,1190,2,xul.dll!nsCOMPtr<nsISupports>::nsCOMPtr<nsISupports>(const nsCOMPtr<nsISupports> & aSmartPtr)  Line 882	C++
+1190,mozilla,1191,1,"Not a blocker, and we'll need to figure out if there's a way that we can do this so that it looks good on XP and Vista at the same time."
+1191,mozilla,1192,1,On the page above you can see Talos alert for each affected platform as well as a link to a graph showing the history of scores for this test. There is also a link to a treeherder page showing the Talos jobs in a pushlog format.
+1192,mozilla,1193,2,"#16 0x00007f9088c93e7a in nsViewManager::ProcessPendingUpdatesPaint (this=0x2c263f0, aWidget=0x2b7e7f0) at /home/botond/dev/mozilla/central/view/nsViewManager.cpp:482"
+1193,mozilla,1194,1,updated qa contact.
+1194,mozilla,1195,1,"Wolfgang, can you test this patch with PS level 1 devices if you can access them?"
+1195,mozilla,1196,1,"2.  Skip next_things that are the same as the thing being scanned, which means"
+1196,mozilla,1197,1,[2.Testing Steps]:
+1197,mozilla,1198,1,are font/b/i/em and such that are missing end tags.
+1198,mozilla,1199,1,I'll keep an eye on this bug in order to verify it as soon as it lands in aurora build.
+1199,mozilla,1200,1,Expected:
+1200,mozilla,1201,1,I think we need WM_CONTEXTMENU here as well. I just hit that.
+1201,mozilla,1202,1,"Btw, this is relying on implementer to know that he should unregister all pages when entering pb mode (that is true for Firefox, but what for other implementers?). If we are willing to rely on that assumption maybe a comment in the idl could be worth it. otherwise we could remove all remaining table contents when we get the pb notification."
+1202,mozilla,1203,2,this));
+1203,mozilla,1204,2,<snip>
+1204,mozilla,1205,1,done
+1205,mozilla,1206,2,<content>
+1206,mozilla,1207,2,6    z-index: 0;
+1207,mozilla,1208,1,But I've never seen video frames coming out negative when the input time was 0.
+1208,mozilla,1209,1,"is called, which means when 3rd and 4th arguments are not NULL,"
+1209,mozilla,1210,1,single item is already indirectly documented (and all should be familiar
+1210,mozilla,1211,1,but I have been noticing the problem in nightlies for about a week now.
+1211,mozilla,1212,1,"Unfortunately, I've uninstalled the builds and deleted profiles, so I cannot check about:crashes."
+1212,mozilla,1213,1,if alpha is used.
+1213,mozilla,1214,2,line 252
+1214,mozilla,1215,2,"#51 0x00007f1212dcb03e in js::RunScript (cx=0x7f120400ac00, script=0x7f1200e54a00, fp=0x7f1204ffe050)"
+1215,mozilla,1216,1,"One thing a browser could do is look at dispose_op in the fcTL chunk.  If it is not DISPOSE_OP_NONE then the frame can be skipped without decoding or displaying the fdAT chunk data, if the animation is running behind schedule.  If it is DISPLOSE_OP_NONE, though, subsequent frames depend on it and it has to be decoded."
+1216,mozilla,1217,2,64% (408/642) vs.   2% (934/60686) detoured.dll
+1217,mozilla,1218,1,"I'm not sure it's the same dialog (else I should open a new bug, I can't find one more TB-specific), but in Thunderbird I've got a similar problem with the certificate of my IMAPS connections: moreover the same page used two DIFFERENT FORMATS to tell the certificate expiration date and the current date, which of course doesn't have sense, it's only less easy to confront 'em. ;)"
+1218,mozilla,1219,1,3. Shut down the browser
+1219,mozilla,1220,1,defined test cases
+1220,mozilla,1221,1,"This is still quite ugly -- the output doesn't have lines/functions outside libxul, and many of the stacks look more than a bit fishy.  But many of the stacks also look quite interesting, so maybe we can divine something interesting from this profile."
+1221,mozilla,1222,1,When I investigated the twinopen performance regression of bug 439354 I had some ideas on how to improve it.
+1222,mozilla,1223,1,## Expected :
+1223,mozilla,1224,1,4. Tap [Camera/ Gallery / Music/ Video] to attache file  .
+1224,mozilla,1225,1,Any suggestions who can take this?  It's still alive and well in m-c and
+1225,mozilla,1226,2,16:03:40 INFO - Promise*openNewForegroundTab@resource://testing-common/BrowserTestUtils.jsm:95:12
+1226,mozilla,1227,1,This line is confusing me:
+1227,mozilla,1228,1,"The uninstall hook *is* called if you manually uninstall from the addon manager, and I think also if the clock overflows while Firefox is running."
+1228,mozilla,1229,2,User Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+1229,mozilla,1230,2,::: gfx/layers/d3d11/TextureD3D11.cpp
+1230,mozilla,1231,1,"When the API is invoked with an icon scope, it will try and fetch the icon from storage and if that doesn't work, it returns the thumbnail."
+1231,mozilla,1232,1,I see we already have a call to XInitThreads() at
+1232,mozilla,1233,1,"Ria, do you still see this?"
+1233,mozilla,1234,1,"I'll give this a try, but judging from the fact that the directory got created"
+1234,mozilla,1235,2,". ""$topsrcdir/build/mozconfig.common"""
+1235,mozilla,1236,1,possibility of a potential princeton like exploit.
+1236,mozilla,1237,1,"This part seems to be working ok in the most recent nightly. When the taskbar is set to the side, maximizing the browser, and unlocking the taskbar, adjust its width left and stop, the browser window adjusts, adjust the taskbar back to minimum widget, the browser adjusts to maximum width. In normal mode the browser would not increase in size to compensate for the making the taskbar width smaller, only adjusting to the taskbar getting bigger."
+1237,mozilla,1238,2,"@@ +466,5 @@"
+1238,mozilla,1239,1,"// developers from using AMR, thus we only allow AMR to be played on WebApps."
+1239,mozilla,1240,1,"This is not in the Necko component, which means I didn't find this and submitted"
+1240,mozilla,1241,1,"2. press the down arrow key to select the value 'B"""
+1241,mozilla,1242,2,https://treeherder.mozilla.org/ui/logviewer.html#?job_id=3351892&repo=mozilla-inbound
+1242,mozilla,1243,1,Actual Results:
+1243,mozilla,1244,2,_currentInterval.
+1244,mozilla,1245,1,"Ah, there is one right here."
+1245,mozilla,1246,1,I expected it to change the list to roman numerals...
+1246,mozilla,1247,1,"The song does not play. The play and pause buttons have no functionality and the tile of song is seen as ""Unknown""."
+1247,mozilla,1248,1,This works too!
+1248,mozilla,1249,1,"The patch snippet above ought to make it work again; I'm building right now and will attach it properly for review assuming it does ?€? for now, just consider it a concise way of describing the problem."
+1249,mozilla,1250,2,User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+1250,mozilla,1251,2,464757 INFO TEST-PASS | /tests/dom/indexedDB/test/test_writer_starvation.html | Correct mode - 1 should equal 1
+1251,mozilla,1252,1,This means that GetPrefSize either 1) it isn't called during the first reflow or
+1252,mozilla,1253,1,"few more if necessary (pac files, XUL stuff, XBL service, etc).  Any time a"
+1253,mozilla,1254,1,"Apologise again, just seen this:"
+1254,mozilla,1255,1,"This function shouldn't be named 'receiveMessage', as this object doesn't process IPC at all,"
+1255,mozilla,1256,1,"threading is irrelevant, the site will still take forever to render if the disk is busy."
+1256,mozilla,1257,1,"Marking as worksforme, sadly."
+1257,mozilla,1258,1,Reproducible: Always
+1258,mozilla,1259,1,Marking Future as Hyatt says this is not needed right now.
+1259,mozilla,1260,1,"I also saw some empty lines after some 'rmt_storage_client_thread' dump, but I would not block on this one since empty lines are less problematics."
+1260,mozilla,1261,1,Handing this over to Peter for investigation and update on what we can do here for this tracked regression.
+1261,mozilla,1262,2,remote:   https://hg.mozilla.org/integration/mozilla-inbound/rev/3d0dd2ae7e6c
+1262,mozilla,1263,1,me me
+1263,mozilla,1264,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/20090312 Minefield/3.2a1pre
+1264,mozilla,1265,2,<b>
+1265,mozilla,1266,1,The question isn't applicable on Linux ia64; you can't do anything without the patch.
+1266,mozilla,1267,1,enough for smooth progressive loading.
+1267,mozilla,1268,1,2. open URL given as sample
+1268,mozilla,1269,1,You need to register as a weakobserver (passing PR_TRUE in as the last param to
+1269,mozilla,1270,1,"Yeah, it looks like a similar problem.  This might be a good place to start digging:"
+1270,mozilla,1271,1,"Sam, can we somehow confirm that that's what's going on here, and if so either mark this a non-blocker or move it to some component where we can treat this as a non-code blocker."
+1271,mozilla,1272,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/876a728f389a
+1272,mozilla,1273,2,test prog:
+1273,mozilla,1274,1,* Now my phone automatically keeps joining that network
+1274,mozilla,1275,2,Firmware Date          Mon Aug 10 19:43:05 UTC 2015
+1275,mozilla,1276,1,"You are right, the current design doesn't support dynamic updates in a sane way, but that wasn't in the plan laid out in comment 0. If we want to display a separate list of event listener sources in the debugger, we could either cache in the client and update on events 1 and 2 from comment 15, or keep a cache in the server and send notifications to the client. The low-level API lets us get notified when event listeners are triggered, not when they are added. To be fair, the only case not properly detected with our current hooks is adding an existing function as a listener, which was defined far away from the location of the registration (otherwise updating on the ""newSource"" packet will take care of that). Perhaps that's not too common to worry about in v1?"
+1276,mozilla,1277,2,for TLDs .KZ and .?????? for Kazakh language.
+1277,mozilla,1278,2,"nsIPresContext * 0x05c73998, nsIFrame * 0x072b0ce8, const nsHTMLReflowState &"
+1278,mozilla,1279,2,"@@ +78,5 @@"
+1279,mozilla,1280,1,"In a places build, links open in the background, and in a recent build without places, in the foreground. Both tested with the same profile."
+1280,mozilla,1281,1,"I reviewed this issue with Benjamin and it doesn't seem critical enough to require a fix in 32. As such, I'm dropping tracking. I'll note that we have already shipped a few releases with this issue."
+1281,mozilla,1282,1,"If we want to fix this, I suggest we modify nsImageFrame and possibly libimg so"
+1282,mozilla,1283,2,Gecko-Rev       https://hg.mozilla.org/releases/mozilla-b2g34_v2_1/rev/3572aa3e6766
+1283,mozilla,1284,1,"stack, but there was a text token following the <iframe>. Since text tokens"
+1284,mozilla,1285,1,Thanks!
+1285,mozilla,1286,1,flash player not work example: http://www.affaritaliani.it/coffee/videomedia/toffa-vincere-facile-alle-slot-machine.html
+1286,mozilla,1287,1,"As mentioned on the best place to report your bugs (/msg sspitzer), the patch on bug 359462 is supposed to slow us down a bit esp. once places-based bookmarks is enabled for two reasons:"
+1287,mozilla,1288,1,4. Click 'Restore'.
+1288,mozilla,1289,2,1210 	http://www.facebook.com/
+1289,mozilla,1290,2,WebGL Render 	Google Inc. -- ANGLE (AMD Radeon HD 5700 Series Direct3D9 vs_3_0 ps_3_0)
+1290,mozilla,1291,1,2. clicked the 'gear' that displays the settings for the new tabs page
+1291,mozilla,1292,1,"glibc-2.1.1-6), instead mozilla hanged when I attempted to download"
+1292,mozilla,1293,2,js_Interpret()
+1293,mozilla,1294,1,109554.  Tooltips shouldn't appear on grippies unless minimized.  Patch by Neil
+1294,mozilla,1295,1,got r+ and the patch landed
+1295,mozilla,1296,2,155:    {
+1296,mozilla,1297,2,"eReflowReason_Initial, int 1) line 1775"
+1297,mozilla,1298,1,Tomorrow let's talk about how to avoid this.
+1298,mozilla,1299,2,3 	http://www.profitclicking.com/traffic-exchange/?ViewAdsInit=true
+1299,mozilla,1300,1,2. Click on 'continue'
+1300,mozilla,1301,1,I mentioned the possibility of removing liboggplay in comment 6 along with the pango dependency issue.
+1301,mozilla,1302,1,highly unlikely to be the source of a fix to the code.
+1302,mozilla,1303,2,Gaia: 539a25e1887b902b8b25038c547048e691bd97f6
+1303,mozilla,1304,1,Review of attachment 8427936:
+1304,mozilla,1305,2,var props = Object.getOwnPropertyNames(o);
+1305,mozilla,1306,1,your mozilla directory. You might also want to backup the nsProxyAutoConfig.js
+1306,mozilla,1307,1,Bugzilla is not intended for encouraging people to implement it. Please don't
+1307,mozilla,1308,1,MacType only supports GDI font rendering and no DirectWrite.
+1308,mozilla,1309,1,At least ctrl/alt/del should work.
+1309,mozilla,1310,1,Actual Results:
+1310,mozilla,1311,2,"<div class=""boxbody3"">"
+1311,mozilla,1312,2,ac_add_options --disable-static
+1312,mozilla,1313,1,Third commit (which hasn't hit m-c): https://hg.mozilla.org/integration/fx-team/rev/dc44b9a3b542.
+1313,mozilla,1314,2,ModLoad: 74780000 74789000   C:\Windows\system32\msacm32.drv
+1314,mozilla,1315,1,"for a moment so that your pointer changes from an arrow to the hand. Now, move"
+1315,mozilla,1316,1,The only thing that sounds wrong is that we're not setting an Origin header. I think you need to make sure to call nsCORSListenerProxy::Init. Look at how/when the XHR code does that.
+1316,mozilla,1317,2,---
+1317,mozilla,1318,1,"You must not update streams that have already received WINDOW_UPDATE.  That would break the flow control, right?  Simplest is IMO to just don't update at all on any existing stream."
+1318,mozilla,1319,1,TB610577Z has similar stack as in comment #3
+1319,mozilla,1320,1,Ping - what's the state of this bug folks?
+1320,mozilla,1321,1,"Yeah, at least after bug 1015841 the issue became more noticeable, previously this icon had top cut off if more than 1 line of recipients."
+1321,mozilla,1322,1,"Sorry again, but I don't think keyboard manager need to know the state of lockscreen enabling or not. Why do you need to know that?"
+1322,mozilla,1323,1,Actual Results:
+1323,mozilla,1324,1,nit: s/File/Directory/ ;-)
+1324,mozilla,1325,1,*** This bug has been marked as a duplicate of 284130 ***
+1325,mozilla,1326,1,I think shaver moved this one incorrectly to M11 (even though he meant
+1326,mozilla,1327,2,16386[81f9b48]: nsHttpConnectionMgr::OnMsgPruneDeadConnections
+1327,mozilla,1328,2,Gaia: 346df113f953e8baef04c7cca86cbbd03ae55ab3
+1328,mozilla,1329,1,"1 simple step! Please fix, the hacky work arounds are really awful!"
+1329,mozilla,1330,2,"_md_EventReceiverProc [d:\builds\seamonkey\mozilla\xpcom\threads\plevent.c, line"
+1330,mozilla,1331,1,Option to uninstall the files-or-directory instead of
+1331,mozilla,1332,2,"-DMOZ_DLL_SUFFIX=\"".so\"" -DXP_UNIX=1 -DUNIX_ASYNC_DNS=1 -DJS_THREADSAFE=1"
+1332,mozilla,1333,2,"#2  0x00007ffff4cbf7fb in js::gc::GCRuntime::sweepPhase(js::SliceBudget&) (oom=0x7fffffffbfb0, script=<optimized out>) at /home/hub/source/mozilla/src/js/src/jsgc.cpp:5156"
+1333,mozilla,1334,1,Bug 632156 will fix this.
+1334,mozilla,1335,1,More details about UITour:
+1335,mozilla,1336,2,Build Identifier: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.10) Gecko/20071115 Firefox/2.0.0.10
+1336,mozilla,1337,2,User Agent: Mozilla/5.0 (Mobile; rv:44.0) Gecko/44.0 Firefox/44.0
+1337,mozilla,1338,1,"patch!  hopefully, i'll be able to get it in by 0.9.1."
+1338,mozilla,1339,1,Of course I can provide them.
+1339,mozilla,1340,1,Other than that it looks much better than what we have.  r=me
+1340,mozilla,1341,1,initial revision: 1.1
+1341,mozilla,1342,1,of elements from the same website. I have many pictures in various
+1342,mozilla,1343,1,window in the HTML page.
+1343,mozilla,1344,1,Flicker occurs
+1344,mozilla,1345,1,See other reviews: https://reviewboard.mozilla.org/r/31157/
+1345,mozilla,1346,1,"only moves cursor focus to text type form elements (textarea, text) within the page."
+1346,mozilla,1347,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/4b4f59ac01ac
+1347,mozilla,1348,2,mozilla::dom::TestExternalInterface
+1348,mozilla,1349,1,Tested on Firefox 9.01
+1349,mozilla,1350,1,"When bookmarks are backed up either via PlacesUtils::backupBookmarksToFile or nsIPlacesImportExportService::exportHTMLToFile, and a bookmark record has no corresponding place record (f.e. because of the Fx3b4/5 bug described by dietrich in bug 436696, comment 8), then backing up fails with an exception."
+1350,mozilla,1351,1,Crash trace:
+1351,mozilla,1352,2,nsDocShell::EnsureScriptEnvironment() [nsDocShell.cpp:2484]
+1352,mozilla,1353,1,4) If none of these are set an engineering build with all apps will be created.
+1353,mozilla,1354,1,"However, the ""Try Again"" link is pointing to the chrome: URL instead of the"
+1354,mozilla,1355,1,1. Capture image from device camera
+1355,mozilla,1356,1,breaking and which break automatically?
+1356,mozilla,1357,2,https://hg.mozilla.org/mozilla-central/rev/dc416c09c90a
+1357,mozilla,1358,1,"Hey Fernando,"
+1358,mozilla,1359,1,"The rest looks fine, but we really need to fix the object-creation bits..."
+1359,mozilla,1360,2,1301 return NS_OK;
+1360,mozilla,1361,1,Placeholder bug
+1361,mozilla,1362,2,744 	  T* operator->() const MOZ_NO_ADDREF_RELEASE_ON_RETURN
+1362,mozilla,1363,1,Try push:
+1363,mozilla,1364,2,void *pc = *(bp+1);
+1364,mozilla,1365,1,"Screen goes blank, then recovered, follow by an error message 'Display drivers stopped responding and has recovered?????? ."
+1365,mozilla,1366,1,History mechanisms and caches are different. In particular history
+1366,mozilla,1367,1,TEST PLAN REFERENCE:
+1367,mozilla,1368,2,"@@ -25,1 @@"
+1368,mozilla,1369,1,Still Win2K server etc.
+1369,mozilla,1370,1,"I believe he was saying that on an individual basis, each person could remove"
+1370,mozilla,1371,1,from /usr/local/ns/nightly/mozilla/components/libgkcontent.so
+1371,mozilla,1372,2,"-        if (PL_strncmp(lockFileName, lockVendor, fileNameLen -4) != 0)"
+1372,mozilla,1373,2,875 #endif
+1373,mozilla,1374,1,Isn't removing xrender supposed to fix the issue?
+1374,mozilla,1375,2,FALSE
+1375,mozilla,1376,2,new revision: 3.148; previous revision: 3.147
+1376,mozilla,1377,2,rv:1.9.2.2pre
+1377,mozilla,1378,2,e = Proxy.createFunction((function() {\
+1378,mozilla,1379,1,I've also been wondering whether we should rewrite the existing linebreaking
+1379,mozilla,1380,1,This was found while fuzzing graphite2 revision c1c491ecf937aa744f4803e3d3a24e4f0001025d (>1.3.7)
+1380,mozilla,1381,2,--- SIGSEGV (Segmentation fault) @ 0 (0) ---
+1381,mozilla,1382,1,I feel it is unnecessarily long.
+1382,mozilla,1383,2,---------
+1383,mozilla,1384,2,"@@ +92,5 @@"
+1384,mozilla,1385,1,"Firefox is not, and should not, set out to become a default media player. While I'd probably approve a fix, I don't think we'd hold release for one."
+1385,mozilla,1386,1,anonymous content are not displayed - the value of the image's ALT attribute is
+1386,mozilla,1387,1,Please review patch
+1387,mozilla,1388,1,"message box, and try to choose a smilie from the dropdown menu.  The menupopup"
+1388,mozilla,1389,1,Button not responding
+1389,mozilla,1390,2,"gBrowser.addEventListener(""mouseup"", browserMouseUpHandler, false);"
+1390,mozilla,1391,1,We tried IndexedDB for this caching solution but it took just as long to retrieve data and had the downside of showing a blank list before we got the data back and were able to paint content.
+1391,mozilla,1392,2,"gklayout.dll!PresShell::HandlePositionedEvent(nsIView * aView=0x060002a0, nsIFrame * aTargetFrame=0x0609f328, nsGUIEvent * aEvent=0x0012f164, nsEventStatus * aEventStatus=0x0012ef00)  Line 5755 + 0x14 bytes	C++"
+1392,mozilla,1393,2,Cookie: _ga=GA1.2.1591016506.1457297472; __gfp_64b=k6dqHPpVSQzkaJriw47pN32wC_aUYpu1dffUbHMAsA7.27; _gat=1
+1393,mozilla,1394,1,Backed out changeset d8b62b11c43e (bug 1139460)
+1394,mozilla,1395,1,"(We could also be trickier and not add XPConnect roots until we see another JS object while traversing purple roots, or if we have decided to trace through JS.)"
+1395,mozilla,1396,1,FWIW I installed RealPlayer and couldn't reproduce.  I could not get download links for the other two.
+1396,mozilla,1397,2,https://reviewboard.mozilla.org/r/78180/#review76708
+1397,mozilla,1398,1,New try run for the patch to decouple ProfilerFront from ProfilerActor:
+1398,mozilla,1399,2,https://hg.mozilla.org/mozilla-central/rev/15b3fb3e6f17
+1399,mozilla,1400,2,"js3250.dll!js_Invoke(JSContext * cx=0x038764d0, unsigned int argc=1, long * vp=0x05e8977c, unsigned int flags=2)  Line 1430 + 0x13 bytes	C"
+1400,mozilla,1401,1,"effectively replacing the entire selection, but that would mean you could get"
+1401,mozilla,1402,1,A negative response from a DNS server should be honored and the same server should not queried again. This would mean that each FQDN should be queried once per page.
+1402,mozilla,1403,2,08:06:20     INFO -      eip = 0x65b5d448   esp = 0x0d4df5e0   ebp = 0x0d4df5e4
+1403,mozilla,1404,2,"/cvsroot/mozilla/browser/components/places/content/places.xul,v  <--  places.xul"
+1404,mozilla,1405,1,"This is a sporadic bug, and it seems to happen only slowly. Just watching the"
+1405,mozilla,1406,1,User impact if declined: Bad user experience when user is offline
+1406,mozilla,1407,2,-----------------------------------------------------------------
+1407,mozilla,1408,1,3. And let GC sweep old image and dataurl.
+1408,mozilla,1409,1,Reproducible: Always
+1409,mozilla,1410,2,https://hg.mozilla.org/integration/mozilla-inbound/rev/bc090e21a088
+1410,mozilla,1411,1,"contacts: ""Pour lire et ???crire dans votre carnet d'adresses"""
+1411,mozilla,1412,2,23:28:11     INFO -   1  libc-2.15.so + 0x32f2b
+1412,mozilla,1413,1,this is acceptable! :)
+1413,mozilla,1414,1,"However I could replicate the test case from comment 2, but not replicate your test case from comment #19, point 1."
+1414,mozilla,1415,1,"More fun: we've changed these URLs on desktop over time, so long-term Sync users with multiple profiles might see four or five of these distinct bookmarks in their profiles."
+1415,mozilla,1416,2,https://github.com/mozilla-b2g/gaia/tree/master/apps/keyboard/js/imes/latin/dictionaries
+1416,mozilla,1417,2,[1] https://crrev.com/a34e151bce4bdf56031c13941408e292815241ca
+1417,mozilla,1418,1,r=me
+1418,mozilla,1419,2,https://tbpl.mozilla.org/php/getParsedLog.php?id=29762752&tree=Mozilla-Central
+1419,mozilla,1420,2,https://github.com/mozilla-b2g/gaia/commit/85fff9a2566b3878b7b61cca523bf2da7b31e0ce
+1420,mozilla,1421,1,"in EdDictionary.js, you have a typo ""gSpellCheckcer"" should be gSpellChecker"
+1421,mozilla,1422,1,Expected results:
+1422,mozilla,1423,1,a
+1423,mozilla,1424,1,Note that:
+1424,mozilla,1425,1,"During the review (not yet published) I proposed to have a static function that verifies and if bad, handles the bad cert since you, more or less, duplicate the code of SSLServerCertVerificationJob::Run() in AuthCertificateHook.  Not good since it may introduce bugs like described above."
+1425,mozilla,1426,1,Aim dogfood bug http://bugscape/show_bug.cgi?id=2120 depends on this.
+1426,mozilla,1427,2,http://support.mozilla.com/kb/Managing+profiles
+1427,mozilla,1428,1,"So for the example the ""audio-channel-telephony"" permission grants access to playing audio with the same priority as GSM telephony audio. This enables creating VoIP apps like Loop, by allowing the VoIP app to interfere with GSM calls in responsible ways. But it also, if abused, runs the risk that an app interferes with GSM calls in bad ways!"
+1428,mozilla,1429,2,"<tr> <td valign=""top"" bgcolor=""#FFCC33""><font FACE=""Arial, Helvetica,"
+1429,mozilla,1430,1,*** Bug 128102 has been marked as a duplicate of this bug. ***
+1430,mozilla,1431,1,Actual Results:
+1431,mozilla,1432,2,Build Identifier: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.8.1) Gecko/20061010 Firefox/2.0
+1432,mozilla,1433,2,Device: Flame 2.2
+1433,mozilla,1434,2,**Necko Testing : begin : Get Appcores service
+1434,mozilla,1435,1,"no longer be up.  Could you put this back up, or do you have a copy somewhere I"
+1435,mozilla,1436,1,"(1) Instead of making an InitFlags(), could you just initialize them in the constructor?  (Member-initializer syntax would probably be preferable, but assignment is ok too.)"
+1436,mozilla,1437,1,Paul.
+1437,mozilla,1438,1,"Looks good, just a few nits."
+1438,mozilla,1439,1,"If I set my history ""group by"" to ""Day"" (go|history|view|group by) this"
+1439,mozilla,1440,2,../../dist/include/mozilla/dom/AudioParent.h:80: error: 'nsAudioStream' was not
+1440,mozilla,1441,2,Regression window(fx-team):
+1441,mozilla,1442,1,"I personally prefer an m prefix, but I'm basically the only one who works on SpiderMonkey.  Feel free to take it up with the rest of the team, maybe you'll get farther than I did :-)."
+1442,mozilla,1443,1,Nice ;-)
+1443,mozilla,1444,2,rep movsd
+1444,mozilla,1445,2,os->all
+1445,mozilla,1446,1,"Setting ? for review flag, i have no idea whom to assign it, and https://wiki.mozilla.org/Bugzilla:Review points to a list of reviewers for... bugzilla itself."
+1446,mozilla,1447,1,"Actual result:  After dialing a partial number and tapping a suggestion from a Facebook contact, the call header will only show the phone number.  The contact's name and any associated picture will not be shown."
+1447,mozilla,1448,1,Gecko Revision         https://hg.mozilla.org/releases/mozilla-b2g44_v2_5/rev/5c9fd135d4309239794126f1942d6e7aa8b3579c
+1448,mozilla,1449,1,"Majority of the bug is fixed in this patch. Rather than a hard-coded ""Firefox"", the name of whatever browser is being used (could still be ""Firefox"", could be ""Nightly"", could be whatever else the name is) is displayed where necessary to the user in the GCLI commands - with one exception: introTextOpening in gcli.properties still uses the hard-coded ""Firefox"" since the only other file that references it is gcli.jsm, which is auto-generated and not to be modified. Info on this would be appreciated."
+1449,mozilla,1450,1,r=me apart from that.
+1450,mozilla,1451,1,appropriately as much as possible.
+1451,mozilla,1452,1,"The consequences of this bug are affceting the back camara working, right now it's failing very often although it's still not clear why this issue does not affect the front camera."
+1452,mozilla,1453,1,To abort the file transfer and re-transfer if the transfer does not.
+1453,mozilla,1454,1,Expected Results:
+1454,mozilla,1455,1,The underlying regression that's not showing the application icon by default
+1455,mozilla,1456,2,Driver Date 7-26-2011
+1456,mozilla,1457,2,"@@ +216,5 @@"
+1457,mozilla,1458,1,* safe to use.
+1458,mozilla,1459,1,"I agree with this analysis; things do end-up working for our very relaxed needs, although they end up basically just being function calls in a post-fork NuWa.  My concern was mainly that the design decisions for NuWa seem to be based around wrapping pthreads rather than assuming a specific internal implementation and monkeypatching things.  Since the pthreads implementation is allowed an incredible amount of implementation latitude by the spec, if we care about pthread_cleanup_push/pop, it would make sense to also wrap them."
+1459,mozilla,1460,2,https://bugzilla.mozilla.org/show_bug.cgi?id=938466#c15
+1460,mozilla,1461,1,"Firefox was showing ""FAIL"" while I took this sample."
+1461,mozilla,1462,1,"panel, nothing happens."
+1462,mozilla,1463,2,User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.3) Gecko/20010801
+1463,mozilla,1464,1,bz	bernd: no
+1464,mozilla,1465,2,PresShell::ProcessReflowCommands
+1465,mozilla,1466,1,"That's quite a lot of commands to get to list a directory, but anyway, I would"
+1466,mozilla,1467,1,I get the crash for example with Firefox from:
+1467,mozilla,1468,1,It should be:
+1468,mozilla,1469,2,::: js/src/ion/Lowering.cpp
+1469,mozilla,1470,2,BuildID 20130213070201
+1470,mozilla,1471,1,"I'm not sure the address we have associated to .NG is still valid. Moreover, for sure we need to increase the SLD list."
+1471,mozilla,1472,1,We don't really have any way to fix this. You're better off using the browser or global message manager.
+1472,mozilla,1473,2,var b = 10;
+1473,mozilla,1474,2,Gecko Version          37.0
+1474,mozilla,1475,2,}
+1475,mozilla,1476,2,#1  0x00fcba69 in NS_TableDrivenQI ()
+1476,mozilla,1477,1,#NAME?
+1477,mozilla,1478,2,Firmware Date          Wed May 27 04:30:24 EDT 2015
+1478,mozilla,1479,1,"<p>some <a href=""whatever"" aria-label=""apples"">text</a></p> apparently the wild has forced mvda to read that as ""some apples"" which this proposal would make more tricky."
+1479,mozilla,1480,1,"Can anyone let us know the process to get support from firefox, if we get any issues/coredumps/bugs in ESR version of firefox."
+1480,mozilla,1481,2,From Drew.Saunders@Stanford.edu  Thu Apr  5 14:48:57 2007
+1481,mozilla,1482,1,I will test on Windows/Linux later.
+1482,mozilla,1483,2,05:13:44     INFO -  REFTEST INFO | Saved log: [CONTENT] MakeProgress: STATE_WAITING_TO_FIRE_INVALIDATE_EVENT
+1483,mozilla,1484,2,<HTML>
+1484,mozilla,1485,2,(gdb) bt
+1485,mozilla,1486,1,is completely gone.
+1486,mozilla,1487,2,"maxrows = ""5"""
+1487,mozilla,1488,1,works fine with 2001110610
+1488,mozilla,1489,1,David Hyatt wrote:
+1489,mozilla,1490,1,"For that we'd need a new way to open the Identity popup. If you have a concrete idea, please file a new bug."
+1490,mozilla,1491,1,and
+1491,mozilla,1492,1,"Arhtur, this panel is quite simple enough and only have one select element, why we should use observable in this case ? I think this would be too much for this simple panel ?"
+1492,mozilla,1493,2,""""
+1493,mozilla,1494,2,10  libSystem.B.dylib             	0x00007fff885123a9 thread_start + 13
+1494,mozilla,1495,2,http://support.mozilla.com/kb/Safe+Mode
+1495,mozilla,1496,1,theres a thread on netscape.public.mozilla.seamonkey
+1496,mozilla,1497,1,You get multiple entries for the same site which seems to be extremely redundant thus creating a huge history databas.
+1497,mozilla,1498,2,"ATI Mobility Radeon HD5650 (driver: 8.702.5.0 latest version), Intel HD Graphics (driver: 8.702.5.0 latest version)"
+1498,mozilla,1499,2,https://hg.mozilla.org/mozilla-central/rev/e36239fc97af
+1499,mozilla,1500,1,The caption can be centered if the table is set to 100% width
+1500,mozilla,1501,2,::: dom/media/MediaManager.cpp
+1501,mozilla,1502,1,Reproducible: Always
+1502,mozilla,1503,2,Mozilla build ID:20140422024003
+1503,mozilla,1504,2,0x1fea55c09232: fb
+1504,mozilla,1505,1,No right border line should be displayed.
+1505,mozilla,1506,1,http://eval.hurlant.com/demo/ and try this script:
+1506,mozilla,1507,1,"If an HTML Tag has e.g. an inline style definition like with url(), but the the URL is missing, Firefox requests the URL of the page instead."
+1507,mozilla,1508,1,"The DidReflow() calls are missing though, when errors occur, see for"
+1508,mozilla,1509,2,System JS : ERROR (null):0 - too much recursion
+1509,mozilla,1510,1,It is based on
+1510,mozilla,1511,2,line 144]
+1511,mozilla,1512,2,#NAME?
+1512,mozilla,1513,1,"if this is a real unexpected failure you should throw or use ok(false, ""makeTag Failed..."
+1513,mozilla,1514,2,nsBlockFrame::ReflowLine
+1514,mozilla,1515,1,See other reviews: https://reviewboard.mozilla.org/r/43469/
+1515,mozilla,1516,1,(compiled and confirmed/verified on LinuxMint)
+1516,mozilla,1517,1,"So suppose we watch a property, then delete it, and then use JSOP_INITMETHOD to create it again. Here's what happens:"
+1517,mozilla,1518,1,// Wrong one
+1518,mozilla,1519,1,I am on a laptop using the touchpad for the mouse.
+1519,mozilla,1520,2,+    AutoSwap_PRUint32 numGroups;
+1520,mozilla,1521,2,http://bugzilla.mozilla.org/showattachment.cgi?attach_id=29675
+1521,mozilla,1522,1,I'm not sure what you mean.
+1522,mozilla,1523,1,"Tyler Downer,"
+1523,mozilla,1524,1,"Interesting test, looks handy."
+1524,mozilla,1525,1,can anybody tell me why the behaviour changes from version to version?
+1525,mozilla,1526,1,"upon clicking ""Name"" as mentioned above,"
+1526,mozilla,1527,1,"This is a read access violation in a block data move, and is therefore classified as probably exploitable."
+1527,mozilla,1528,1,"Stas,"
+1528,mozilla,1529,1,(1) Install the test extension.
+1529,mozilla,1530,1,"This seems like a lot of hoop-jumping to fix a non-problem; we don't have the same ""which thread should this release on?"" problem with dispatching to the current thread as we do to the main thread...do we?"
+1530,mozilla,1531,1,Actual Results:
+1531,mozilla,1532,1,Does the spell-check underline reappear as soon as you move the cursor away from the incorrect word?
+1532,mozilla,1533,2,0   libSystem.B.dylib             	0x00007fff884f212a kevent + 10
+1533,mozilla,1534,1,Verified dup
+1534,mozilla,1535,2,print.tmp.printerfeatures.CUPS/Dymo-Label-Printer.paper.0.name: A5
+1535,mozilla,1536,1,"[Describe test coverage new/current, TreeHerder]:"
+1536,mozilla,1537,1,"2) In a state when the cursor is huge try to press <left>, <right> buttons, the"
+1537,mozilla,1538,2,+ 0x74
+1538,mozilla,1539,1,Thanks for doing this!
+1539,mozilla,1540,1,"These occur because in nsSpaceManager::AddRectRegion, the first test, if (nsnull"
+1540,mozilla,1541,1,resolving WFM based on previous comment.  reporter: please confirm.
+1541,mozilla,1542,1,"and not worried about anything else there, or it should have looked at what was"
+1542,mozilla,1543,2,.....
+1543,mozilla,1544,2,"#12 0x0000000103250a4d in nsScriptLoader::EvaluateScript (this=0x13acfd120, aRequest=0x13da28210, aSrcBuf=@0x7fff5fbfc220, aOffThreadToken=0x0) at nsScriptLoader.cpp:1142"
+1544,mozilla,1545,1,"By the way, this point DID come out on the Security Review, it was argued and in the end the agreement was that the developer can choose to not send any data."
+1545,mozilla,1546,2,default
+1546,mozilla,1547,2,./addons/test_theme.xpi
+1547,mozilla,1548,1,"Testing completed: yes, 2 weeks on master no issues found"
+1548,mozilla,1549,1,Maybe connected to the charset? Observe that if you add e.g.
+1549,mozilla,1550,2,+    nsCOMPtr<nsISecureBrowserUI> secureUI;
+1550,mozilla,1551,2,Gaia-Rev        0f76e0baac733cca56d0140e954c5f446ebc061f
+1551,mozilla,1552,2,188 public:
+1552,mozilla,1553,1,"- In the same slide, ""APRIL 2016"" is style:long and all caps."
+1553,mozilla,1554,1,Sadly.  Thanks bz.
+1554,mozilla,1555,1,"previous reporter, but if you open the page with internet explorer, you get a"
+1555,mozilla,1556,1,"world maybe we can fix this ""for real""."
+1556,mozilla,1557,1,"Only the ""Quit Cmd-Q"" item appears"
+1557,mozilla,1558,1,Thanks!
+1558,mozilla,1559,2,27 	xul.dll 	nsComponentManagerImpl::RegisterManifest 	xpcom/components/nsComponentManager.cpp:497
+1559,mozilla,1560,1,"Also, there are probably other properties marked as eStyleAnimType_None which should also exhibit this behavior. We'll fix that in bug 1260572 after checking what makes sense and what Chrome/etc. do."
+1560,mozilla,1561,1,Environmental Variables:
+1561,mozilla,1562,1,thumb would not lead to a proliferation of dialog boxes.
+1562,mozilla,1563,1,"expected: you should be able to move focus to the ""History"" (or ""Accessibility"""
+1563,mozilla,1564,1,"It's getting the ""name"" property from the ""parameterType"" object."
+1564,mozilla,1565,2,wyomingnan@sbcglobal.net
+1565,mozilla,1566,1,"Ting, are you continuing to work on this bug? It seems you have found some potential performance improvements. Would you be able to make the changes?"
+1566,mozilla,1567,2,"#10 0x00007ff6d2806bb1 in g_main_context_check (context=context@entry=0x7ff6bac0f110, max_priority=2147483647,"
+1567,mozilla,1568,2,https://treeherder.mozilla.org/ui/logviewer.html#?job_id=3021964&repo=mozilla-inbound
+1568,mozilla,1569,2,No warning message
+1569,mozilla,1570,2,make raptor
+1570,mozilla,1571,1,"page. So per-window ""latest-page-source"" might be the answer here."
+1571,mozilla,1572,1,My understanding is that the inspector would continue to use the editor.
+1572,mozilla,1573,1,"David, do you know how to manually insert a preference setting for apprunner?"
+1573,mozilla,1574,1,Steps to Reproduce:
+1574,mozilla,1575,1,I try to find a bug for the `outline` problem but no success for now. Maybe we should see what Kaze will say and then we can open a bug
+1575,mozilla,1576,2,content_xsl \
+1576,mozilla,1577,2,User-Agent:       Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.3b) Gecko/20030104
+1577,mozilla,1578,1,"Thanks, confirming as RFE based on comment #4 then. I realize that some people may object against weakening behavior according to the standard, but we are wrapping such encoded-as-one-line paragraphs for display already even without f=f set, and it would be consistent to do so also when quoting when it becomes apparent that this ""line"" was not intended to be preformatted."
+1578,mozilla,1579,2,http://hg.mozilla.org/releases/mozilla-aurora/rev/b471130dc112
+1579,mozilla,1580,2,js_AppendJSString
+1580,mozilla,1581,1,"4) Migrate all the other tests to dom/apps/tests, using SpecialPowers.autoConfirmAppInstall instead of the confirmNextInstall function that fiddles with the browser UI (that is in head.js)"
+1581,mozilla,1582,1,"Updated to use a stack-based locking class, also fixed struct member names and such."
+1582,mozilla,1583,2,86 	mozjs.dll 	js::proxy_GetProperty 	js/src/jsproxy.cpp:853
+1583,mozilla,1584,2,rubygems/package/tar_input.rb
+1584,mozilla,1585,2,User-Agent:       Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9b5) Gecko/2008043010 Fedora/3.0-0.60.beta5.fc9 Firefox/3.0b5
+1585,mozilla,1586,2,3 	nppdf32.dll 	nppdf32.dll@0x422f
+1586,mozilla,1587,1,Gaurav
+1587,mozilla,1588,2,"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01 Transitional//EN"" ""http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd"">"
+1588,mozilla,1589,2,Build Identifier: Mozilla/5.0 (Windows NT 5.1; rv:2.0b8pre) Gecko/20101012 Firefox/4.0b8pre
+1589,mozilla,1590,1,"- ""Customize Firefox"" would either link directly to AMO or a portal site that talks about the different ways to customize the browser (with links to AMO)"
+1590,mozilla,1591,1,"90 days history is the default, so no you should not reduce it"
+1591,mozilla,1592,1,1.enter a textarea
+1592,mozilla,1593,2,${image_name} \
+1593,mozilla,1594,2,*** 28128 ERROR TEST-UNEXPECTED-FAIL | /tests/content/svg/content/test/test_bounds.html | text2.getBoundingClientRect().top is 8 should be approximately 6
+1594,mozilla,1595,1,"If a non-black text colour is selected and one starts typing text into a new e-mail, then goes back to correct something earlier in the same coloured text and then puts the insertion point back where one had previously left off and starts typing again, the text is now in black. Moreover, even if one now selects the new (black) text and changes its colour, further text is still black. One has to go back at least one character into the original, correctly coloured text, delete it and everything after it and retype in order to be able to carry on in the chosen colour."
+1595,mozilla,1596,1,"closing, this'll work when chrome debugging is fixed."
+1596,mozilla,1597,2,10:46:21 INFO - --DOMWINDOW == 103 (0x75cd1c00) [pid = 6297] [serial = 1876] [outer = (nil)] [url = about:blank]
+1597,mozilla,1598,1,nothing happened.
+1598,mozilla,1599,1,Steps to Reproduce:
+1599,mozilla,1600,1,The STR with the patch is:
+1600,mozilla,1601,1,"hg blames this bug for the following code block, although I can't figure out which patch it's from:"
+1601,mozilla,1602,1,Steps to Reproduce:
+1602,mozilla,1603,1,Can someone point me to some info as to how to create and test examples of this?
+1603,mozilla,1604,2,#NAME?
+1604,mozilla,1605,2,-----------------------------------------------------------------
+1605,mozilla,1606,1,What's the MCC & MNC on that SIM card when it's roaming?
+1606,mozilla,1607,1,wide String API change:
+1607,mozilla,1608,1,The issue of links not appearing visited in mail is covered by bug 116213.
+1608,mozilla,1609,1,Jake
+1609,mozilla,1610,1,The dropdown menu is not working. However previous modification to the fonts setting preserved. I just cannot change it by the UI now.
+1610,mozilla,1611,2,...
+1611,mozilla,1612,1,Steps to reproduce:
+1612,mozilla,1613,2,Finished loading: http://invalid  Status Code: 804b001e
+1613,mozilla,1614,2,in opneLocation.js to
+1614,mozilla,1615,1,Fixed by Ben's checkin in Bug 251910 comment #31
+1615,mozilla,1616,2,Gecko-Rev       e1a3c6bb17c7f69fcc08934aa20674f0d421403e
+1616,mozilla,1617,1,2. Watch your terminal.
+1617,mozilla,1618,2,"Microsoft MIDI Mapper [Emulated], Hardware (Not Kernel Mode), Output, No DLS, Internal"
+1618,mozilla,1619,1,"bad, and is just showing a bug in Comm. 4.6, but here goes:"
+1619,mozilla,1620,1,"OK, but where do we go from here?"
+1620,mozilla,1621,1,Flash is not visible
+1621,mozilla,1622,2,Version: 32.0 (2.0)
+1622,mozilla,1623,1,"So, this bug here is to fix a regression caused by bug 415704, and I think Evan's fix is the better one for this bug. That's why I moved that part of the discussion here."
+1623,mozilla,1624,1,Review of attachment 598929:
+1624,mozilla,1625,1,This iteration took 101.029 seconds to run.
+1625,mozilla,1626,2,Top150: 92.68%
+1626,mozilla,1627,1,set the default locale to Hebrew.
+1627,mozilla,1628,1,assuming you only assigned to backup if a backup was required.
+1628,mozilla,1629,2,*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Program Files\Minefield\xul.dll -
+1629,mozilla,1630,2,</window>
+1630,mozilla,1631,2,http://hg.mozilla.org/releases/mozilla-1.9.2/rev/28f2f49b61fe
+1631,mozilla,1632,1,command line here:
+1632,mozilla,1633,1,What is the purpose of firing the trigger without displaying the alert?
+1633,mozilla,1634,2,#3  0x003c4c53 in avmplus::GC::Free (p=0x990a798)
+1634,mozilla,1635,1,and see the problem to occur too. I'm updating the bug categories to windows NT
+1635,mozilla,1636,2,Version         34.0
+1636,mozilla,1637,1,"Select ""Manually Run"" from the dropdown at the top."
+1637,mozilla,1638,1,"So I just tried that, and Safari treats that the same as if the expando were not set on the proto chain."
+1638,mozilla,1639,1,doing a Print without a preceding Page setup. Test when no printer
+1639,mozilla,1640,2,| ----------- | -------- | ------ | ------ | ------ | ------ | --------- |
+1640,mozilla,1641,2,GlobalWindowImpl::GetInnerWidth()
+1641,mozilla,1642,1,Man it's nice to finally hear from someone about this. I have been trying to
+1642,mozilla,1643,1,3
+1643,mozilla,1644,1,steps:
+1644,mozilla,1645,2,"""adapterRAM2"": """","
+1645,mozilla,1646,1,connection if it's v2 with a bad certificate either from a timeout (and perhaps
+1646,mozilla,1647,1,"see no need to ignore it specifically, and it will probably allow us not to have"
+1647,mozilla,1648,2,"if (!_timeEvent.StartTimer(periodic, TIMER_PERIOD_MS))"
+1648,mozilla,1649,2,https://developer.mozilla.org/En/How_to_get_a_stacktrace_for_a_bug_report#How_to_get_a_crash_ID_with_the_Mozilla_Crash_Reporter
+1649,mozilla,1650,2,"test_nsIProcess(exe, non_asc_file); //not working"
+1650,mozilla,1651,1,3) highlight some text
+1651,mozilla,1652,1,Need another confirmation.
+1652,mozilla,1653,2,</tr>
+1653,mozilla,1654,1,Firefox has detected that the server is redirecting the request for this address in a way that will never complete.
+1654,mozilla,1655,1,"I'll revise the patch to do that, although it will be hard to test."
+1655,mozilla,1656,1,Thanks for your info!
+1656,mozilla,1657,2,09:29:12     INFO -  8 INFO TEST-PASS | testAboutPage | Got the URL bar title - org.mozilla.fennec_aurora.FennecNativeElement@4136cbf0 should not equal null
+1657,mozilla,1658,2,"CNavDTD::CloseContainer(const nsIParserNode * 0x0254c7c0, nsHTMLTag"
+1658,mozilla,1659,2,60A929AF C3                   ret
+1659,mozilla,1660,1,Confirmed on NT4. Could this be related to bug 66478 ?
+1660,mozilla,1661,2,"nst "" (?GetDebugStateBits@nsBlockFrame@@UBGIXZ)"
+1661,mozilla,1662,1,"Also, I don't think it's a requirement, but reviewers should generally test patches. For a quick litmus test, if you have to state something like this, then it's probably a good idea to test it yourself."
+1662,mozilla,1663,1,"1. Create an html page with an unclosed <a name=""""> tag."
+1663,mozilla,1664,1,nit: The function name should be InspectorPanel_scrollToSelector to be consistent with the property name scrollToSelector.
+1664,mozilla,1665,1,I think I have a way to fix this: by marking the rootframe dirty and doing a
+1665,mozilla,1666,2,at /work/mozilla/builds/1.9.1/mozilla/js/src/jstracer.cpp:2652
+1666,mozilla,1667,2,GKLAYOUT! 603983cc()
+1667,mozilla,1668,2,"""ARMENIAN CHARACTER SETS IMPLEMENTATION GUIDE"""
+1668,mozilla,1669,1,not critial for 1.0
+1669,mozilla,1670,2,^
+1670,mozilla,1671,2,2
+1671,mozilla,1672,1,"KaiRo - I synthesized a crash with MOZ_CRASH and my patch applied, and I saw the MozCrashReason in the detailed report in the crash reporter - but I can't find it in the actual report. (Maybe you know where to find it better than I do :))"
+1672,mozilla,1673,1,I would have cut the APIs and gone for:
+1673,mozilla,1674,2,js> a.target
+1674,mozilla,1675,2,https://github.com/mozilla-raptor/raptor-cli/blob/master/lib/device/lib/marionette.js#L116
+1675,mozilla,1676,1,"Currently, it only partially works, though it should work well once bug 447580 is fixed."
+1676,mozilla,1677,2,Firmware Version: D5803_23.1.A.1.28_NCB.ftf
+1677,mozilla,1678,1,"effected PC, but that uses up valuable space in the taskbar by the ""Highstream"
+1678,mozilla,1679,2,eip = 0x109e3688   esp = 0x0012d4f4   ebp = 0x0012d4fc   ebx = 0x00000001
+1679,mozilla,1680,1,Looks good!
+1680,mozilla,1681,1,"pretty much useless, and it was removed a while ago - mostly for the sake of"
+1681,mozilla,1682,2,https://hg.mozilla.org/mozilla-central/rev/9238f5ea7bde
+1682,mozilla,1683,2,Build Identifier: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.5) Gecko/20030925
+1683,mozilla,1684,1,this?
+1684,mozilla,1685,1,"I attempted to write 'nsRefPtr<const T>' with our current implementation, and ran into a problem because AddRef() and Release() were not const methods."
+1685,mozilla,1686,1,And why assign to nobody?
+1686,mozilla,1687,2,snapped right edge: 30
+1687,mozilla,1688,1,1. Open SMS -> Open any thread with MMS having subject field
+1688,mozilla,1689,1,This could be a language pack problem.
+1689,mozilla,1690,2,09:47:58     INFO -      rbx = 0x00007fe94976e360   rbp = 0x00007fffb50b64b0
+1690,mozilla,1691,2,"#18 0x00007ff6c7baa112 in mozilla::ipc::MessagePump::Run (this=0x7ff6bacce240, aDelegate=0x7ff6d62930b0)"
+1691,mozilla,1692,1,commented this out:
+1692,mozilla,1693,1,height to prevent the margins from collapsing through.
+1693,mozilla,1694,1,2.see the first table on the document. And there find #4 testcase: Toolbar
+1694,mozilla,1695,2,"nsAppShellService.cpp, line 309]"
+1695,mozilla,1696,1,The first thing you should ask yourself 'Did I update the UUID'?
+1696,mozilla,1697,2,111 (reserved) = undefined
+1697,mozilla,1698,1,Actual Results:
+1698,mozilla,1699,1,"XHTML) from loading.  That is, any *valid* XHTML file won't load."
+1699,mozilla,1700,2,???????????????: 2.6.9
+1700,mozilla,1701,1,It's straightforward to do. Is this what you were thinking of? My naming is kind of lame. I'll fix up the patch if it's roughly right.
+1701,mozilla,1702,1,as for me https://www.twitch.tv/dansgaming doesn't even start if flash isn't installed and using the proper html5 player plays just fine.
+1702,mozilla,1703,1,"*GG* Ok, as you please :)"
+1703,mozilla,1704,1,Builds available at http://ftp.mozilla.org/pub/mozilla.org/firefox/try-builds/Ms2ger@gmail.com-edb5c7975703
+1704,mozilla,1705,2,set.rb
+1705,mozilla,1706,1,"Currently, we dispatch a bunch of resize event before entering fullscreen. We should collapse all of them and only dispatch the last one."
+1706,mozilla,1707,2,"#36 0x7f3cd64f5e6e in js::Execute(JSContext*, JS::Handle<JSScript*>, JSObject&, JS::Value*) src/js/src/jsinterp.cpp:531"
+1707,mozilla,1708,2,+    if (this._ownerWindow.goUpdateCommand) {
+1708,mozilla,1709,1,"The OS/2 port of FontConfig handles TrueType and Type 1 fonts nicely, but it does not handle OS/2 bitmap fonts like WarpSans, Helv, and Tms Rmn.  It would be nice if these were supported, since they were default fonts in pre-1.9 versions."
+1709,mozilla,1710,1,This bug report should be retitled:
+1710,mozilla,1711,2,nsAutoString tagName;
+1711,mozilla,1712,1,Tapping 'Done' returns the user to the Home Screen without adding the icon.
+1712,mozilla,1713,1,Steps to repro:
+1713,mozilla,1714,1,Steps to Reproduce:
+1714,mozilla,1715,2,+            return lResult;
+1715,mozilla,1716,2,13:24:41 INFO - r13 = 0x00000001003089a0 r14 = 0x00007fff5fbfcc10
+1716,mozilla,1717,2,"File ""/var/jenkins/workspace/b2g.flame.mozilla-aurora.ui.non-smoketest/tests/python/gaia-ui-tests/gaiatest/tests/functional/homescreen/test_homescreen_edit_mode.py"", line 20, in test_access_and_leave_edit_mode"
+1717,mozilla,1718,2,"=> 0x7ffff7fe5031:	mov    0x4a768(%r15,%rax,1),%eax"
+1718,mozilla,1719,1,New bug for the real issue: the gc-thing flag byte elimination. I'm all in favor.
+1719,mozilla,1720,2,static SInt32 version = 0;
+1720,mozilla,1721,1,Review of attachment 8505461:
+1721,mozilla,1722,1,Setting QA Contact to claudius since he is the History tester.
+1722,mozilla,1723,2,"rt_sigprocmask(SIG_BLOCK, NULL, [33], 8) = 0"
+1723,mozilla,1724,1,Carry forward r=mwu
+1724,mozilla,1725,1,* Firefox keeps crashing when I'm clicking on arrows in online video presentations.
+1725,mozilla,1726,2,"except (OSError, IOError), e:"
+1726,mozilla,1727,1,(and a review needs time)
+1727,mozilla,1728,1,Load some url:
+1728,mozilla,1729,1,Testing completed: Landed on m-c with a new marionette test case added.
+1729,mozilla,1730,1,"When browsing through http://www.evanescence.com CPU spikes to 99%, Tab bar and Address bar lags really bad! (Almost locks up). This has happened on other pages much worse, but I don't have any other examples right not."
+1730,mozilla,1731,1,"I was not able to uplift this bug to v1-train and v1.0.1.  If this bug has dependencies which are not marked in this bug, please comment on this bug.  If this bug depends on patches that aren't approved for v1-train and v1.0.1, we need to re-evaluate the approval.  Otherwise, if this is just a merge conflict, you might be able to resolve it with:"
+1731,mozilla,1732,1,"This is an automated message, with ID ""auto-resolve01""."
+1732,mozilla,1733,1,"Hi,"
+1733,mozilla,1734,1,This is the first place where AddObserver is called from the main thread.
+1734,mozilla,1735,2,"function setCookie(name, value, expireDateObj, path, domain)"
+1735,mozilla,1736,1,java plugin removed:
+1736,mozilla,1737,1,- opened the poc from bug #1002340 comment #0 in 10 private browser tabs/windows and waited several minutes
+1737,mozilla,1738,1,"Hi smcc,"
+1738,mozilla,1739,1,yeah in the case till mentioned it was i think the mix case of clobber and clear the bad state possible. When i tried to check the slave that failed on backout and original checkin the slave went away (was not reachable and so a new slave finally took over on retrigger - so maybe this was the case with kind of clobber here :)
+1739,mozilla,1740,1,r=wtc.
+1740,mozilla,1741,2,#19 0x00007f14a0c86107 in MessageLoop::Run (this=0x7f145a70e1c0)
+1741,mozilla,1742,1,Dao: why did you mark this as confirmed - do you have STR?
+1742,mozilla,1743,2,"04-14 18:28:43.291 E/GeckoConsole(  698): [JavaScript Error: ""AbortError"" {file: ""app://calendar.gaiamobile.org/gaia_build_defer_index.js"" line: 555}]"
+1743,mozilla,1744,1,workarounds into Mozilla) ...
+1744,mozilla,1745,1,"copy) or, for feature requests, if it's not present in the latest version and"
+1745,mozilla,1746,2,TB2925405Z
+1746,mozilla,1747,2,/**
+1747,mozilla,1748,1,crash is happening in DOM code.
+1748,mozilla,1749,1,This sounds like focus is being stuck into a non-textarea element somehow.  Can
+1749,mozilla,1750,1,verif.
+1750,mozilla,1751,2,#37 0x4046a2d2 in nsTimerExpired (aCallData=0x82c8308) at nsTimer.cpp:189
+1751,mozilla,1752,1,One of dozens reloads left grey cell (Menu) is badly positioned (not on top)!
+1752,mozilla,1753,2,"@@ +1190,5 @@"
+1753,mozilla,1754,1,"only ""save to disk"" when the file is executable (and in fact ""choose"" that for"
+1754,mozilla,1755,1,Could your team help to take a look? thanks
+1755,mozilla,1756,1,2.Enter text for search
+1756,mozilla,1757,1,This is *not* the same burping sound as the type-ahead-find error sound. This is
+1757,mozilla,1758,2,"if ($('thead').css('position') === ""-webkit-sticky"") {"
+1758,mozilla,1759,2,1   libnspr4.dylib           	0x00fda4a0 PR_Lock + 246
+1759,mozilla,1760,1,"I'm not actively working on it, and I don't have any code written.  I do have plans to farm this out to someone at some point this quarter or next.  Is this a priority for you?"
+1760,mozilla,1761,2,23      00
+1761,mozilla,1762,1,Thunderbird: http://www.mozilla.org/products/thunderbird/releases/1.5beta1.html
+1762,mozilla,1763,2,addCAcertsFromFile(cafile);
+1763,mozilla,1764,2,-----------------------------------------------------------------
+1764,mozilla,1765,2,https://hg.mozilla.org/mozilla-central/rev/92770b987b87
+1765,mozilla,1766,1,"This will make things a bit sadfaces where the re-arranging code is concerned. I *think* the practical consequence right now is that wide items will get moved (possibly in multiple steps) to be before ""public browsing only"" widgets, as there will always be a window in which the wide widget is unhappy with the number of items that come before it (as this will be different in different windows)."
+1766,mozilla,1767,1,"r=biesi, obvious fix"
+1767,mozilla,1768,1,"The issue here is that the text-link widget is responsible for opening the link, but it obviously doesn't know anything about the panel. There's also bug 1237942, which reports that the links can't be clicked using other mouse buttons - and while that bug mentions the test-link widget probably can be changed to support other buttons, that still leaves us with the fact the panel would remain open and no obvious way to intercept or detect that."
+1768,mozilla,1769,1,"Safari: 3 on average, 3 at best"
+1769,mozilla,1770,1,please....
+1770,mozilla,1771,1,I don't care about Windows.
+1771,mozilla,1772,1,Steps to Reproduce:
+1772,mozilla,1773,2,ModLoad: 77c00000 77c08000   C:\WINDOWS\system32\VERSION.dll
+1773,mozilla,1774,1,Do you see the problem on <http://www.mozilla.org/projects/mathml/demo/texvsmml.xhtml> too (case 13 and 16) ? Then it might be a dupe of bug 414277 (see bug 517774 comment 1).
+1774,mozilla,1775,1,"g) Firefox begins to allocate memory crazily. It stops in +- 1.7GB. No crash, however;"
+1775,mozilla,1776,2,http://www.w3.org/TR/xml11/#sec-white-space
+1776,mozilla,1777,2,https://hg.mozilla.org/releases/mozilla-aurora/rev/a649b71bf531
+1777,mozilla,1778,1,USER IMPACT:
+1778,mozilla,1779,1,(bug 1089312)
+1779,mozilla,1780,2,"nsWindow::WindowProc(HWND__ * 0x03390240, unsigned int 258, unsigned int 107,"
+1780,mozilla,1781,2,"unsigned char * src = 0x44444444 ""--- memory read error at address 0x44444444 ---"","
+1781,mozilla,1782,2,"@@ +51,1 @@"
+1782,mozilla,1783,1,"Dears,"
+1783,mozilla,1784,1,"This patch is based off the refactoring that Chris and Jacob did for ARM. The goal is to begin moving all of the gross #ifdefs out of the IC code and compiler, and put it behind an interface."
+1784,mozilla,1785,1,the step 3 of procedure at #3 takes only a sec. It's bad for the test.
+1785,mozilla,1786,1,Arthur in your beta build could you check about:support and see if you were part of the e10s experiment? We're shipping e10s to nightly/aurora and a subset of beta.
+1786,mozilla,1787,1,Actual Results: The banner takes the entire width of the screen (The banner also does not time out and disappear / reappear so this MIGHT be considered different functionality and not a true regression - or this might simply be the introduced behavior (time-out function) that broke the width in conjunction with its implementation.
+1787,mozilla,1788,2,1   libnspr4.dylib           	0x00fdd7df PR_Poll + 134
+1788,mozilla,1789,1,"for explaination,"
+1789,mozilla,1790,1,(Devanagari : his font name is the same as the name of the script) makes it easy
+1790,mozilla,1791,1,#NAME?
+1791,mozilla,1792,1,reproducing rate:100%
+1792,mozilla,1793,1,0.256944444
+1793,mozilla,1794,1,You probably want:
+1794,mozilla,1795,1,"Middle mouse button sometimes opens a new link in a tab without switching to that tab(the behavior I have set), other times it will switch to the new tab without any intervention."
+1795,mozilla,1796,1,do you have an opinion about the bridge that is implemented in this patch in order to let Gaia control the x/y possible overscroll ?
+1796,mozilla,1797,1,Hoping I nailed all the MSE intermittents now: https://treeherder.mozilla.org/#/jobs?repo=try&revision=ffb21cfdad5e8bc3499f055e10738631b33c532b
+1797,mozilla,1798,1,*** This bug has been marked as a duplicate of 246078 ***
+1798,mozilla,1799,1,Steps to reproduce:
+1799,mozilla,1800,2,ecma_3/Date/15.9.5.6.js
+1800,mozilla,1801,1,If the async script is executed before the page finished rendering - the page hangs.
+1801,mozilla,1802,1,"3.Click on ""Product Development"""
+1802,mozilla,1803,2,/builds/bstell/mojo2/mozilla/dist/bin/components/libnsappshell.so
+1803,mozilla,1804,2,in nsIURI baseURI);
+1804,mozilla,1805,2,sp = 0x471ff898    pc = 0x4d182531
+1805,mozilla,1806,1,"However, in this bug's testcase, it makes sense for the content pointer to be null (I think), because the iframe's documentElement has been removed."
+1806,mozilla,1807,2,Device: Leo v 1.1.0 Mozilla COM
+1807,mozilla,1808,2,"@@ +29,5 @@"
+1808,mozilla,1809,1,new Iterator(obj) used to not call obj.__iterator__ as a (IMO misguided) fix for bug 354945. The attached patch removes all those extra code paths and now avoids calls to __iterator__ for cached iterators. It also restore sanity with respect to Iterator(obj) and new Iterator(obj) having identical results.
+1809,mozilla,1810,1,to
+1810,mozilla,1811,1,Please don't forget that logging for the NSPR code must be set via NSPR_LOG_MODULES and NSPR_LOG_FILE (different path than MOZ_LOG_FILE!) vars.  Those still apply for NSPR and it won't change!
+1811,mozilla,1812,1,(attachment 281576).
+1812,mozilla,1813,2,Build Identifier: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.8b4) Gecko/20050802 Firefox/1.0+
+1813,mozilla,1814,1,3. when you see a pic you like open it in new windows(I don?€?t know how tab would
+1814,mozilla,1815,2,"#7  0x4027dd75 in nsBlockFrame::ReflowBlockFrame (this=0x82358c0,"
+1815,mozilla,1816,1,This is the used code:
+1816,mozilla,1817,1,"are already a couple of caveats with this patch (libIDL.h), I really want to"
+1817,mozilla,1818,1,"1.try to start firefox using any of the shorcuts, and the actual start icon in"
+1818,mozilla,1819,2,Time timeSinceReference = currentTime - aTime;
+1819,mozilla,1820,1,"(starting to look IC-like now, I guess)."
+1820,mozilla,1821,1,## Repro
+1821,mozilla,1822,2,Gonk: a19052e4389c3ae2d8fc3e7a74a475401baacc56
+1822,mozilla,1823,1,"menubar flashes, but nothing happens.  Closing the window with the close button"
+1823,mozilla,1824,2,PEP WARNING    | test_largedoc.js | open_page | unresponsive time: 109 ms
+1824,mozilla,1825,2,http://www.mozilla.org/quality/browser/standards/xhtml/transitional/meta_http_equiv.xml
+1825,mozilla,1826,2,Gaia: b34e726147f8e671ad8c538b50900ccfbffcb084
+1826,mozilla,1827,1,[3.Expected Result]:
+1827,mozilla,1828,2,http://fantasai.inkedblade.net/style/tests/ad-hoc/parsing/001
+1828,mozilla,1829,1,"Not really. I just didn't know it was the intended behavior because it's not what the 2 first screenshots show. In fact, both of them show the star, the dropdown and the refresh icon, which BTW also disappears when hovering on a link."
+1829,mozilla,1830,2,22:26:23     INFO -   8  xul.dll!nsCycleCollector_doDeferredDeletion() [nsCycleCollector.cpp:55620c684232 : 4108 + 0x8]
+1830,mozilla,1831,1,I'll enclose a Mac PICT file showing what the pop-up menu looks like in example
+1831,mozilla,1832,1,"Reassigning.  This may get duped into bug 93905, which is related."
+1832,mozilla,1833,1,This may unblock if the problem reduces to just showing up on ICS.
+1833,mozilla,1834,1,(not sure where to file this - please move as appropriate.)
+1834,mozilla,1835,1,"For info, in the MarkupView class, you can retrieve:"
+1835,mozilla,1836,1,Nominating as fixing the unit test is crucial to land in a safe way more patches.
+1836,mozilla,1837,2,"@@ +193,5 @@"
+1837,mozilla,1838,1,"With 2002020516 on Mac OS X, the .txt attachment icon is still drawn with a"
+1838,mozilla,1839,1,Active: Yes
+1839,mozilla,1840,2,"xul.dll!nsEventListenerManager::HandleEvent(nsPresContext * aPresContext=0x085958b0, nsEvent * aEvent=0x03ef00b0, nsIDOMEvent * * aDOMEvent=0x0018d0d4, nsPIDOMEventTarget * aCurrentTarget=0x056e36b0, unsigned int aFlags=2, nsEventStatus * aEventStatus=0x0018d0d8, nsCxPusher * aPusher=0x0018d0e4)  Line 1174	C++"
+1840,mozilla,1841,2,"9 	libxul.so 	nsDisplayList::PaintForFrame(nsDisplayListBuilder*, nsRenderingContext*, nsIFrame*, unsigned int) const 	/home/geeksphone/FOS/peak/gecko/layout/base/nsDisplayList.cpp"
+1841,mozilla,1842,2,00000018 00015380
+1842,mozilla,1843,1,Or is there a reason not to?
+1843,mozilla,1844,1,Thanks for the report. It looks like this might be a specific version of bug 800346 (which I've marked this a duplicate of)
+1844,mozilla,1845,2,"13:51:05     INFO -  [Parent 2351] WARNING: NS_ENSURE_TRUE(mMutable) failed: file /builds/slave/m-cen-lx-d-0000000000000000000/build/netwerk/base/src/nsSimpleURI.cpp, line 265"
+1845,mozilla,1846,1,Adam or Verson: would one of you record a video of the case where this bug does not reproduce (based on the regression range in comment #3) please?
+1846,mozilla,1847,1,"Similar to making exceptions for saving passwords, users should be able to disable the saving of forms on websites they specify.  Say, for example, I would like to have form information for every site but eBay saved, I would go into the Form Preferences under Privacy options, click ""Exceptions"" (or whatever), and add ""ebay.com""."
+1847,mozilla,1848,2,Build Identifier: Mozilla/5.0 (Windows NT 5.1; rv:2.0b9pre) Gecko/20110109 Firefox/4.0b9pre
+1848,mozilla,1849,2,"09AB15A0    PPC  3E85BA5C  nsWindow::UpdateWidget(nsRect&,"
+1849,mozilla,1850,2,"MSimdInsertElement(simd, scalar, lane)"
+1850,mozilla,1851,1,3a. Run build 0.8.4 or Firefox - crashes.
+1851,mozilla,1852,2,+    mNotifier->OnTransformStart();
+1852,mozilla,1853,2,10 	js_LookupProperty 	js/src/jsobj.cpp:3728
+1853,mozilla,1854,2,Toggle Mixed Display Content: https://addons.mozilla.org/en-US/firefox/addon/toggle-mixed-display-conten/?src=search
+1854,mozilla,1855,2,"File ""build/venv/local/lib/python2.7/site-packages/marionette_driver/marionette.py"", line 761, in _handle_error"
+1855,mozilla,1856,1,"I have had a conversation with Josh and Rob and in summary there is a general understanding now that, with reference to the excellently raised comment 20, it would not be an optimal idea to move Message Settings out of the Settings app at this point in time."
+1856,mozilla,1857,1,"It allows you to use promises, while avoiding all the nested callbacks.  I won't require you to do it, but you may find it makes things easier to read."
+1857,mozilla,1858,1,"Looking forward, if we do a compartment per global, this problem will become even more prevalent."
+1858,mozilla,1859,1,"Any quota system like we have for interpreter stack and other resources amounts to unwinding from OOM, so there's really no ""out"" here. We have to unwind-protect and recover from such script quota violations."
+1859,mozilla,1860,2,RIL Version: 01.02.00.019.102
+1860,mozilla,1861,1,"Recent-ish GCC and clang do have __attribute__(...) magic to declare things non-null, though I suppose that doesn't work for MSVC, which is a large part of what we care about."
+1861,mozilla,1862,1,* nothing happens
+1862,mozilla,1863,1,I am using Build 2000012415
+1863,mozilla,1864,1,"If it's too hard, we can file cleanup bug for later."
+1864,mozilla,1865,1,Verified duplicate.
+1865,mozilla,1866,2,.---------------------------.
+1866,mozilla,1867,1,But RTSP video streaming was not working.
+1867,mozilla,1868,1,"Oh, sorry, I'm forgetting ""."" is the thousand separator for German. So yes, this is a bug."
+1868,mozilla,1869,2,https://channel9.msdn.com/Events/Build/2015/2-692
+1869,mozilla,1870,1,"I will attach a diff of my changes.  Once applied, we can embed editible plain"
+1870,mozilla,1871,1,simply root the js functions we'll create circular references which will keep
+1871,mozilla,1872,2,"@@ +245,5 @@"
+1872,mozilla,1873,1,"approving for ESR, please land in the next week to ensure this goes out alongside the fix with 15."
+1873,mozilla,1874,1,I'll defer completely to Zach's instincts here.  Caching in memory seems like a sensible compromise in the short term.
+1874,mozilla,1875,1,Thanks
+1875,mozilla,1876,2,at /home/worker/git_checkout/node_modules/marionette-js-runner/node_modules/promise/lib/core.js:33:15
+1876,mozilla,1877,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.2a) Gecko/20020914
+1877,mozilla,1878,1,with language packs on top which is the default setup e.g. on Ubuntu and
+1878,mozilla,1879,1,subsumes is false.  It seems odd to me that the image and the canvas don't have the same security principal.
+1879,mozilla,1880,1,"What kind of headaches? Are there further plans regarding the context menu I'm unaware of? My patch isn't pretty but the result shouldn't be that hard to handle. I'm not sure that a separate context menu is less cumbersome to implement and to maintain, so I don't think I want to dive into that without a clear value proposition."
+1880,mozilla,1881,1,+ * that are too long are truncated to the max length and the last char is
+1881,mozilla,1882,2,http://www.gtalbot.org/BrowserBugsSection/CSS3WritingModes/draft-multi-column-vrl-014.xht
+1882,mozilla,1883,1,"A role may not be appropriate/necessary here. If it is not an actual interaction other than auto-complete or selection via up and down, it should announce itself maybe via an aria-live attribute set. Look on the Yahoo! search feature how they do it. If they have suggestions in that popup, they give an announcement via aria-live that something's there, and when the user arrows, they provide the correct selection either via aria-live or via setting the selection, and if it's a custom widget, using something like aria-activedescendant or such."
+1883,mozilla,1884,1,See http://support.mozilla.com/en-US/kb/Closing+the+only+tab+closes+the+window
+1884,mozilla,1885,2,Host: shared.snapgrid.com
+1885,mozilla,1886,1,"In this test we are supposed to install 'Privileged App Test' app: https://github.com/mozilla-b2g/gaia/blob/master/tests/python/gaia-ui-tests/gaiatest/tests/functional/marketplace/test_marketplace_packaged_app.py#L18, which is a test packaged app that should be the first search result returned when searching for 'test-webapi-permissions :packaged'."
+1886,mozilla,1887,1,Needs rebasing.
+1887,mozilla,1888,1,It's pretty easy in the new media format reader to keep supporting the minimal subset of chaining that we support. The only part that requires effort to support is re-firing loaded metadata when changing links. I'd be happy to lose that.
+1888,mozilla,1889,2,plugin.importedState: true
+1889,mozilla,1890,1,Verified.
+1890,mozilla,1891,1,8. If its FF 3.0.1 while u try to repoen FF it says there is a active process pls close it before you can open another one. And ofcourse only optoin left is either to restart or use IE which i am doing now.. and i hate doing it.
+1891,mozilla,1892,1,cause the browser to crash.
+1892,mozilla,1893,1,Do we need this in the interface?
+1893,mozilla,1894,2,"0x0284d790, nsILayoutHistoryState * 0x02bd3790) line 1127 + 20 bytes"
+1894,mozilla,1895,1,The id attribute is described in Section 7.5.2 of the HTML 4 spec
+1895,mozilla,1896,1,Landed in master:
+1896,mozilla,1897,2,"0F6681D0    PPC  3ED1DA50  main1(int, char**, nsISupports*)+008D0"
+1897,mozilla,1898,1,to the text.
+1898,mozilla,1899,2,http://hg.mozilla.org/mozilla-central/rev/2bd109e6766f
+1899,mozilla,1900,1,Actual Results:
+1900,mozilla,1901,2,"nsTableFrame::IncrementalReflow(nsTableFrame * const 0x01cd4184, nsIPresContext"
+1901,mozilla,1902,1,"Yes, you've mentioned. Is there a bug on supporting this in our toolkit? By all means, let's do that as well."
+1902,mozilla,1903,2,NS_ENSURE_ARG_POINTER(uri);
+1903,mozilla,1904,2,https://tbpl.mozilla.org/?tree=Try&rev=f2720a1add3b
+1904,mozilla,1905,1,Thanks!
+1905,mozilla,1906,1,It's possible to fix it by editting file C:/Program Files (x86)/Aurora/omni.ja
+1906,mozilla,1907,1,in HTML:
+1907,mozilla,1908,1,"Mozilla crashes, TalkBack will be activated if turned on."
+1908,mozilla,1909,1,the system
+1909,mozilla,1910,1,This ultimately doesn't seem to provide value in excess of the friction that learning and using a non-standard API imparts.
+1910,mozilla,1911,1,"Hey Kami, would you mind trying to reproduce this with your add-ons disabled, to see if you can still reproduce it?"
+1911,mozilla,1912,1,THe video didn't play
+1912,mozilla,1913,2,#21  0x019cf490 in _internalDoAction ()
+1913,mozilla,1914,1,Confirming issue based on reporter's steps. Tested with Jan 23rd build
+1914,mozilla,1915,2,"/home/bzbarsky/mozilla/xlib/mozilla/content/xbl/src/nsXBLPrototypeHandler.cpp,"
+1915,mozilla,1916,2,62e81c2b-e032-1775-75fe0242-0220c61a 08/01/2012 14:03
+1916,mozilla,1917,1,Perhaps pushing event info in the presshell should null out the
+1917,mozilla,1918,2,"content.document.querySelector(""body + style"").innerHTML = """";"
+1918,mozilla,1919,1,That's obviously something moz.build could (and should!) generate for you.
+1919,mozilla,1920,1,"If there is, please let me know how to access this functionality."
+1920,mozilla,1921,1,"plain Windows buttons, so they *do* react to themes). The second I enter a page"
+1921,mozilla,1922,2,Gecko Revision         https://hg.mozilla.org/mozilla-central/rev/42afc7ef5ccb
+1922,mozilla,1923,2,Firefox/1.4 ID:2005092603
+1923,mozilla,1924,1,#NAME?
+1924,mozilla,1925,1,"Then 'background-attachment: fixed;', this bug is reproduced too."
+1925,mozilla,1926,1,(oops)
+1926,mozilla,1927,1,"// this frame's coordinate system, which means mContentArea.x =="
+1927,mozilla,1928,1,can you indent it like this:
+1928,mozilla,1929,1,"Even if it did, 'min-width' beats 'max-width' which beats 'width'."
+1929,mozilla,1930,2,"var key = RegExp.$2 ? ""#"" + RegExp.$3 : ""//*[@name='"" + RegExp.$3 + ""']"";"
+1930,mozilla,1931,1,I see the problem in 41 (and 42) but not in a nightly or in a 43 beta.
+1931,mozilla,1932,1,Fix verified on 2.0.0.3
+1932,mozilla,1933,1,3) Tap home button
+1933,mozilla,1934,1,May I know your suggestion on comment 9? Thanks.
+1934,mozilla,1935,1,r=me but it's important to add this information to the readme:
+1935,mozilla,1936,1,Then we can check if there is a blocking problem on the simple playback case and WebRTC case with two patches.
+1936,mozilla,1937,1,Please document the meaning of the return value.
+1937,mozilla,1938,2,- 2136 mfbt/ThreadLocal.h from js/src/jsapi.h
+1938,mozilla,1939,1,This only happens with HTTP pipelining enabled.
+1939,mozilla,1940,1,Done
+1940,mozilla,1941,2,"0x0364c590, nsHTMLReflowMetrics & {...}, const nsHTMLReflowState & {...}, int 0,"
+1941,mozilla,1942,1,Mozilla 1.1 Alpha mis-handles tables when form information is embedded. Neither
+1942,mozilla,1943,2,http://www.google.com/search?ie=UTF-8&oe=UTF-8&sourceid=navclient&gfns=1&q=mike+jones
+1943,mozilla,1944,1,If we're only exposing this to chrome-code then I don't have strong opinions on it.
+1944,mozilla,1945,1,This fixes Arabic text problem.
+1945,mozilla,1946,1,Expected results:
+1946,mozilla,1947,2,return this;
+1947,mozilla,1948,2,})
+1948,mozilla,1949,1,"BTW, I didn't expect to get nine reviews of eight patches (including one quite large one) from seven people in less than 24 hours.  In fact, I didn't expect I would be able to land this before Thanksgiving."
+1949,mozilla,1950,1,@fabrice: Are we ready on the platform side to do call forwarding ?
+1950,mozilla,1951,2,0:43.34     raise bre
+1951,mozilla,1952,1,fixed on Thursday.
+1952,mozilla,1953,1,*** This bug has been marked as a duplicate of 59248 ***
+1953,mozilla,1954,2,12:04:20     INFO -  REFTEST TEST-END | http://10.0.2.2:8854/tests/layout/reftests/svg/image/image-svg-inline-zoom-in-01b.html
+1954,mozilla,1955,1,Actual results:
+1955,mozilla,1956,1,"depressed. however, all events for the button seem to fire."
+1956,mozilla,1957,1,"Please help to check, thanks."
+1957,mozilla,1958,1,"If the thread had blocked the setTimeout calls, it would have returned"
+1958,mozilla,1959,2,"COLOR=""#FF0000""><EM>sbnation@aol.com</EM></FONT></A><FONT SIZE=""-2"""
+1959,mozilla,1960,1,"Thanks, it seems you HW acceleration is working on that machine. WebGL shouln't be relevant here."
+1960,mozilla,1961,2,"},"
+1961,mozilla,1962,2,[d:\builds\seamonkey\mozilla\expat\xmlparse\xmlparse.c  line 921]
+1962,mozilla,1963,2,Frame 	Module 	Signature 	Source
+1963,mozilla,1964,2,5
+1964,mozilla,1965,2,-----------------------------------------------------------------
+1965,mozilla,1966,2,User-Agent:       Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.7.12) Gecko/20050919 Firefox/1.0.7
+1966,mozilla,1967,1,(Please reopen if I'm wrong but don't kill me for that)
+1967,mozilla,1968,1,The error occurred while processing the following file:
+1968,mozilla,1969,2,by localhost (Postfix) with SMTP id 12FE14BE3F
+1969,mozilla,1970,1,Steps to Reproduce:
+1970,mozilla,1971,1,"This is about scrolling DOM nodes into view, and the whole logic relies on passing node references around, not selectors."
+1971,mozilla,1972,1,"Why do these two files exist, and why don't the implementations agree?"
+1972,mozilla,1973,1,"::GetWindowRect(hWnd, &rcRenderWnd); // wnd should have content size"
+1973,mozilla,1974,2,Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7a) Gecko/20040107 Firebird/0.7+
+1974,mozilla,1975,1,2. do print preview and check result
+1975,mozilla,1976,1,3. Covered by US Export Control laws (you don't need to state it to make it true)
+1976,mozilla,1977,1,"We probably also want to wrap the assert, and we'll need to increase the short-term limit since we do see it being exceeded occasionally (we've never seen the long-term limit broken on telemetry). I'm pretty sure 16K would do the trick."
+1977,mozilla,1978,1,"Sigh, I missed Neil's question about framed images. Yeah, this still needs to apply to framed images, so this patch won't do enough."
+1978,mozilla,1979,2,.
+1979,mozilla,1980,2,HUAWEI U9508
+1980,mozilla,1981,2,Version: 28.0a2
+1981,mozilla,1982,2,Build ID: 20140212131424
+1982,mozilla,1983,2,"Graphics: ATI Radeon X1600, ATY,RadeonX1600, PCIe, 256 MB"
+1983,mozilla,1984,2,aStatus=2147549183) at nsLoadGroup.cpp:701
+1984,mozilla,1985,2,public void run() {
+1985,mozilla,1986,1,"This bug has not been touched for nearly 2 years. In most cases, that"
+1986,mozilla,1987,2,<!-- THIS IS THE TAG FOR THE HIGHLIGHT COLOR OF THE NEW MESSAGES -->
+1987,mozilla,1988,1,"There is a problem with a bug in our code that's making the blocklist entry in comment 21 too aggressive.  So, the entry g1208 needs to be removed.  I will put in the replacements."
+1988,mozilla,1989,1,* Some sort of indicator that a tab isn't actually loaded (will likely just be progress icon/bar)
+1989,mozilla,1990,1,=== possible cause ===
+1990,mozilla,1991,2,"[c:/builds/tinderbox/Fx-Trunk/WINNT_5.2_Depend/mozilla/netwerk/base/src/nsInputStreamPump.cpp,"
+1991,mozilla,1992,1,I have confirmed with Adobe that this is a bug in Flash 18 which has been fixed in the upcoming Flash 19.
+1992,mozilla,1993,2,return mInputPortManager.forget();
+1993,mozilla,1994,1,"An input type=""file"" text field within a table renders about 50% taller than a"
+1994,mozilla,1995,1,The reason I am refuting that this dashboard will be used as is described in comment #3 is because that use case does not exist yet. I do not know the whole log into the browser flow. https://bugzilla.mozilla.org/show_bug.cgi?id=749070#c1 asks for a new bug for the discovery of the ID enabled services. It would be helpful to flesh out this discovery flow because it will help inform what needs to be done in this bug. If the bug with this flow is out there would someone put it in here please?
+1995,mozilla,1996,2,16 	xul.dll 	MessageLoop::RunHandler 	ipc/chromium/src/base/message_loop.cc:199
+1996,mozilla,1997,2,https://hg.mozilla.org/mozilla-central/rev/25168278f39a
+1997,mozilla,1998,1,There is a free crossword you can try from the url given in this bug. (Classic Puzzle from the NYT Archive.)
+1998,mozilla,1999,2,MandreelLatency: 35356
+1999,mozilla,2000,2,[task 2016-10-11T18:19:14.767417Z] 18:19:14     INFO -  repeatWait@chrome://mochitests/content/chrome/widget/tests/test_position_on_resize.xul:71:9

@@ -13,20 +13,27 @@ filenames = {
     'bitcoin': 'lines.10k.cfo.sample.2000 - Bitcoin (github.com).csv'
 }
 
+category_dict = {1: 'NL', 2: 'NOT'}
+
+def get_category_dict():
+    return category_dict
 
 def loadDataFromFiles():
     X = []
     y = []
     for source, filename in filenames.items():
         data = pd.read_csv(os.path.join(pwd_path, filename),
-                           header=0, encoding="ISO-8859-1")
+                           header=0, encoding="UTF-8")
+        data.insert(0, 'Source', source, True)
         if source == 'lucene':
             data['Text'] = list(map(lambda text: re.sub(
                 r'^[>\s]+', '', text), data['Text']))
         X.extend(data['Text'])
         y.extend(data['Class'])
-
-    return X, np.array(y)
+        data['Class'] = data['Class'].map(category_dict)
+        data.to_csv(path_or_buf=os.path.join(pwd_path, f'{source}.csv'), columns=[
+                    'Source', 'Text', 'Class'], index=False)
+    return X, np.asarray(y)
 
 
 def loadStopWords():

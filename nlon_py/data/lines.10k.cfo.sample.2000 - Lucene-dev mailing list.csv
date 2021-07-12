@@ -1,4 +1,4 @@
-ID,Class,Text
+﻿ID,Class,Text
 1,1,That would make ant a requirement for solr user
 2,2,at org.tmatesoft.svn.core.wc.SVNUpdateClient.update(SVNUpdateClient.java:449)
 3,1,> On un-optimized inde

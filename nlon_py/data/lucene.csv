@@ -1,0 +1,2001 @@
+Source,Text,Class
+lucene,That would make ant a requirement for solr user,NL
+lucene,at org.tmatesoft.svn.core.wc.SVNUpdateClient.update(SVNUpdateClient.java:449),NOT
+lucene,On un-optimized inde,NL
+lucene,When calling the search URL with no query or an empty query (i.e.  http://localhost:8080/solr/select/ or http://localhost:8080/solr/select/?q=,NL
+lucene,val = null;,NOT
+lucene,private void refineFacets(ResponseBuilder r,NOT
+lucene,I was thinking of Tomcat at first since some people will start with,NL
+lucene,cross-referenced with the java.util.concurrent package. Just amazing.,NL
+lucene,Key: SOLR-1120,NOT
+lucene,<directoryProvider class=\class.name\>,NOT
+lucene,at org.apache.solr.servlet.SolrUpdateServlet.doPost(SolrUpdateServlet.java:58),NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-136,NOT
+lucene,Otis Gospodnetic commented on SOLR-215:,NL
+lucene,List<String> categories,NOT
+lucene,-rsyncStart=`date`,NOT
+lucene,Per-segment single-valued string faceting using the Lucene FieldCache.,NL
+lucene,I need your comments on this although it might be hard without TestUnit.,NL
+lucene,Here is a patch to avoid the exception and use the default sort order if you only specify a field.  I'm not sure the 'null' case was even possible in the current code:,NL
+lucene,[junit] Running org.apache.solr.client.solrj.embedded.SolrExampleEmbeddedTest,NOT
+lucene,@Hoss,NL
+lucene,convert them to document,NL
+lucene,applied with:  /usr/local/bin/patch -u -p 0 < ~/solr-350_409.patch,NL
+lucene,A import org.apache.solr.common.params.MapSolrParams;,NOT
+lucene,DirectUpdateHandler2 threading issue,NOT
+lucene,yoavs@computer.org / www.yoavshapira.com,NOT
+lucene,$svn/java/trunk/core (i'm pretty sure existing checkouts will,NL
+lucene,I've had the idea of a \quiet\ commit in the back of my mind for a,NL
+lucene,solr.war,NOT
+lucene,check,NL
+lucene,https://issues.apache.org/jira/browse/SOLR-139,NOT
+lucene,svn co https://svn.apache.org/repos/asf/lucene/java/trunk@724059 lucene-r724059,NOT
+lucene,What should be done?,NL
+lucene,your instincts were appropraite -- blindly adding to svn:ignore is an easy,NL
+lucene,public void ensureCapacityWords(int numWords) {,NOT
+lucene,After thinking over your comment,NL
+lucene,// 1/4 second seems fast enough for anyone using maxDocs,NL
+lucene,+1,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-773?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12759415#action_12759415 ],NOT
+lucene,tier,NL
+lucene,983__solr\\webapp\\WEB-INF\\lib\\xpp3-1.1.3.4.O.jar,NOT
+lucene,SolrConfig inherits from Config which has been modified; Config is now more strictly a dom document (filled from some resource) and methods to evaluate xpath expressions. Config also continues to be the classloader singleton that allows to easily instantiate classes located in the Solr installation directory.,NL
+lucene,file per instance,NL
+lucene,Upgrade bundled Jetty with latest from vendor,NL
+lucene,mkdir /tmp/apache-solr-nightly/contrib/javascript/dist/doc,NOT
+lucene,at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359),NOT
+lucene,Currectl,NOT
+lucene,How about switching documentCache off?,NL
+lucene,A - Rich document processing (Wor,NL
+lucene,- > > > > > > > > <field column=\full_name\ xpat0Aand can be used as a !DataSource. It must be3A//abc.com/a.txt\ dataSource=\data-source-name\>,NOT
+lucene,{code:title=solrconfig.xml},NOT
+lucene,A [junit] Running org.apache.solr.request.JSONWriterTest,NOT
+lucene,That may be the way to g,NL
+lucene,<field name=\foo\>lat lon</field>,NOT
+lucene,Add Query Spellchecker functionality,NL
+lucene,Spatial feature set for distance searching (restricted by distance) &,NL
+lucene,http://master_host:port/solr/replication?command=backup<,NOT
+lucene,anytime lucene jars are upgrade,NL
+lucene,the SolrCoreAware impl-s again so that the impl-s can assign the new,NL
+lucene,Just need to synch the distibution with the maven repositories,NL
+lucene,lucene in some structure (see other thread),NL
+lucene,Changed the input validation to only do basic input validation. We now only check if the thing looks like an UUID.,NL
+lucene,You're a mind reader ;-),NL
+lucene,long b=A[i+4,NOT
+lucene,[junit] Test org.apache.solr.TestDistributedSearch FAILED,NOT
+lucene,This changes AddUpdateCommand to want 'update' and depricates the other flags,NL
+lucene,Lately I been seeing the following in my solrconfig.xml,NL
+lucene,Here I submit a patch that allows for such subclassing. The change that is done to the code base in the following steps:,NL
+lucene,// generated from pop_array via sed 's/A\\[\\([^]]*\\)\\]/\\(A[\\1] \\& B[\\1]\\)/g',NL
+lucene,Attachments: SOLR-193-SolrDocument.patc,NOT
+lucene,you probably need to get your user-id approved.,NL
+lucene,download external JARs (we replaced all the LGPL code and persuaded,NL
+lucene,at org.apache.solr.handler.dataimport.DocBuilder.deleteAll(DocBuilder.java:275),NOT
+lucene,what???,NL
+lucene,Are you suggesting dropping SolrCoreAware and replace it with IndexSchemaAware ?,NL
+lucene,: Maybe it belongs in solrconfig.xml as an option on the standard,NL
+lucene,This patch extends StatsComponent to multivalued fields by adding a method to the UnInvertedField which populates a StatsValues instance as it iterates across attribute values.,NL
+lucene,Solr must declare crypto usage pending SOLR-282,NL
+lucene,The patch file to grab is solr-215.patch.zip (see MISC session below).,NL
+lucene,Key: SOLR-1532,NOT
+lucene,That will find more matches. See recent threads around fuzzy search.,NL
+lucene,facet count for the non-collapsed value then when I click on that facet,NL
+lucene,If one were using the standard request handle,NL
+lucene,A at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27),NOT
+lucene,<property name='mp0'>a value</property>  <!-- a basic property -->,NOT
+lucene,at org.apache.solr.schema.FieldType.storedToIndexed(FieldType.java:248),NOT
+lucene,method,NL
+lucene,If you think it was sent incorrectly contact one of the administrators: http://issues.apache.org/jira/secure/Administrators.jspa,NL
+lucene,Whenever possible,NL
+lucene,could do the job with either,NL
+lucene,// an interface for objects that support the scheme,NL
+lucene,protocol.java:583),NOT
+lucene,*	*alias*: adds an alias to this SolrCore,NOT
+lucene,On Thu Jack wrote,NL
+lucene,public int unionSize(DocSet other) {,NOT
+lucene,Change Admin components to return XML like the rest of the system,NL
+lucene,For facetA and facetB it is easy to select the correct fq=FACET:value . But to be able to see the document that have missing facets one needs to specifiy a NOT fq= for every value in the facet.,NL
+lucene,Assertion is that the result is And (forceFirstLetter = true),NL
+lucene,an offhand comment I saw recently reminded me of something that really bugged me about the serach solution i used *before* Solr -- it didn't play nicely with HTTP caches that might be sitting in front of it.,NL
+lucene,<fieldtype name=\text_ngram\ class=\solr.TextField\ positionIncrementGap=\100\>,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1322,NOT
+lucene,make SolrDispatchFilter look up another init parameter,NL
+lucene,#NAME?,NL
+lucene,Reporter: Chris Male,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-205,NOT
+lucene,+   // TODO: We have some constants in SolrQueryRequestBas,NL
+lucene,[junit] 2008-08-05 18:08:57.314::INFO:  Shutdown hook complete,NOT
+lucene,Constants in org.apache.solr.schema aren't visible to classes outside that package,NL
+lucene,<property name=\ctlField\ value=\core0\/>,NOT
+lucene,function querie,NOT
+lucene,[junit] Severe_errors_in_solr_configuration__Check_your_log_files_for_more_detailed_information_on_what_may_be_wrong__If_you_want_solr_to_continue_after_configuration_errors_change____abortOnConfigurationErrorfalseabortOnConfigurationError__in_solrconfigxml___orgxmlsaxSAXParseException_Premature_end_of_file__at_orgapachexercesparsersDOMParserparseUnknown_Source__at_orgapachexercesjaxpDocumentBuilderImplparseUnknown_Source__at_javaxxmlparsersDocumentBuilderparseDocumentBuilderjava98__at_orgapachesolrcoreConfiginitConfigjava104__at_orgapachesolrschemaIndexSchemareadSchemaIndexSchemajava395__at_orgapachesolrschemaIndexSchemainitIndexSchemajava95__at_orgapachesolrcoreCoreContainercreateCoreContainerjava340__at_orgapachesolrcoreCoreContainerreloadCoreContainerjava402__at_orgapachesolrhandlerSnapPuller$2runSnapPullerjava378_,NOT
+lucene,Let me again say how impressed I am with Solr!  The documentation has,NL
+lucene,h4. Technical specifications,NL
+lucene,- > > > > > > A tempDir=\${build.dir.backwards}/test\,NOT
+lucene,me:,NL
+lucene,<flags>65535</flags>,NOT
+lucene,If we were to create class loaders not per instance but per 'lib' directory,NL
+lucene,[ http://issues.apache.org/jira/browse/SOLR-58?page=comments#action_12458631 ],NOT
+lucene,traditional single core to usage to multicore usag,NL
+lucene,View this message in context: http://www.nabble.com/synonyms-tf4925232.html#a14096050,NL
+lucene,set since others may be using the same one.,NL
+lucene,I'm using the python response format for several one-off scripts (it's,NL
+lucene,You put in a lower bound of \abc\,NL
+lucene,+ JETTY-258 duplicate log message in ServletHandler,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-896?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,+ JETTY-297 Recreate tmp dir on stop/start,NOT
+lucene,(including the StandardRequestHandler that want to use the basic,NL
+lucene,Primary and Secondary don't quite sound right for the Solr,NL
+lucene,Uwe Schindler commented on SOLR-1677:,NL
+lucene,java:633),NOT
+lucene,: -<a name=\N10095\></a><a name=\Core\></a>,NOT
+lucene,$ ant -Drun.clover=true clean clover test,NOT
+lucene,Components: update,NL
+lucene,* Shard/SolrCore distribution and management,NOT
+lucene,I hope this can make it simpler to implement SOLR-1131,NL
+lucene,committed r899580,NL
+lucene,Attachments: SOLR-1553.patch,NOT
+lucene,A [junit] Running org.apache.solr.highlight.HighlighterTest,NOT
+lucene,throw e;,NOT
+lucene,at javax.servlet.http.HttpServlet.service(HttpServlet.java:689),NOT
+lucene,HashDocSet.andNotSize(other,NOT
+lucene,If mlt.boost=true then you get normalized boost multiplied by specified,NL
+lucene,[junit] 2008-03-25 11:25:21.256::INFO:  Shutdown hook executing,NOT
+lucene,<mkdir dir=\${dist}\ />,NOT
+lucene,#NAME?,NL
+lucene,Kay Kay updated SOLR-914:,NL
+lucene,while an \sint\ field will show,NL
+lucene,Total time: 32 minutes 6 seconds,NOT
+lucene,We can think of supporting this too ...,NL
+lucene,Thanks for this effort.  I'll commit your tests after you make these adjustment,NL
+lucene,http://pyro.holsman.net:9081/top/ -- slightly obfuscated queries (to,NL
+lucene,OK... looks like we'll need to re-spin.,NL
+lucene,// maxDocs-triggered autoCommit,NOT
+lucene,why don't you use fq parameter: fq=permission:yes in your case?,NL
+lucene,core = new SolrCore(\foo,NOT
+lucene,go for it....,NL
+lucene,Personal,NL
+lucene,noble.paul edited comment on SOLR-486 at 7/22/08 9:32 PM:,NL
+lucene,Attachments: SOLR-767.patch,NOT
+lucene,behavior.  The only reason i think we should eventually change this will,NL
+lucene,- Data import handler - if use,NL
+lucene,body data. For example,NL
+lucene,character stream.\ Is there something obvious I'm doing wrong? Does the,NL
+lucene,URL: http://issues.apache.org/jira/browse/SOLR-20,NOT
+lucene,shared,NL
+lucene,Attachment: SOLR-604.patch,NOT
+lucene,Noble Paul updated SOLR-1600:,NL
+lucene,Modified:,NL
+lucene,+ JETTY-175 JDBCUserRealm use getInt instead of getObject,NL
+lucene,checkpoint patch,NL
+lucene,: Cool - just checking that it was appropriate - wasn't sure if that stuff,NL
+lucene,i'm confused ... assuming these facet counts are for field \facetField\ then can't all the docs counted by facet.missing be retrieved using: {{fq=-facetField:[* TO *]}} ?,NL
+lucene,<property name=\java.vm.specification.vendor\ value=\Sun,NOT
+lucene,4. solr-server (war),NOT
+lucene,Ryan McKinley updated SOLR-695:,NL
+lucene,* with stream.BODY - puts the content of the parameter into a stream,NL
+lucene,[junit] 2008-08-25 08:09:17.842::INFO:  Shutdown hook complete,NOT
+lucene,-solr-1.1.0-incubating\\example\\ext\\mx4j.jar,NOT
+lucene,http://www.lucidimagination.com/search/document/79b65c358374d10/jira_convention_resolved_vs_closed,NOT
+lucene,interface and includes a concrete implementation (SimpleSolrDoc),NL
+lucene,C:\\Documents and Settings\\yaponte\\Configuration,NOT
+lucene,I'll take a look at it and see see about getting it working,NL
+lucene,@@ -18,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1353,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-567?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12595580#action_12595580 ],NOT
+lucene,(and leaving src/webapps/src where it is leaves open the possibility of me,NL
+lucene,client/ruby/solr-ruby/test/unit/spellcheck_response_test.rb,NOT
+lucene,- > > > > > > <sysproperty key=\lucene.common.dir\ file=\${common.dir}\ />,NOT
+lucene,might be \foo,NL
+lucene,_acceptorThread[_acceptor]=current;,NOT
+lucene,the lastModifiedSince and expires headers and not Tomcat. Similiarily,NL
+lucene,: +  </form>,NOT
+lucene,is top priority.,NL
+lucene,Environment: My local MacBook pro laptop.,NL
+lucene,On Dec 1,NL
+lucene,Attachments: SOLR-1470.patch,NOT
+lucene,Attachments: rss2.patch,NOT
+lucene,org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterCh,NOT
+lucene,Noble Paul updated SOLR-1164:,NL
+lucene,ok,NL
+lucene,My team has hit the maxDocBytesToAnalyze limitation a while back and decided to add a quick configuration parameter to solr-config.xml. I'll attach a patch momentarily (based on Solr 1.2.0 source code) that includes the implementation.,NL
+lucene,Make XMLWriter write out xml that references the SOLR response XSD/DTD,NL
+lucene,I think this is patch #,NL
+lucene,* Conforms (mostly) to PEP 8 -- the Python Style Guide,NL
+lucene,A possible solution to the windows replication problem would be.,NL
+lucene,zookeeper... prob want that for cluster management anyway),NL
+lucene,Here is one example.  Imagine a field called \IDs\ that can have 1 or more tokens in it and imagine docs with the following \IDs\ get returned:,NL
+lucene,How would you feel about an interface like this:,NL
+lucene,Attachment: SOLR-879.patch,NOT
+lucene,manipulate the data in between those two stages.,NL
+lucene,lookup tables because the tables get either too large or need too many,NL
+lucene,Related: SOLR-575,NOT
+lucene,fine,NL
+lucene,CoreContainer serialization keeps properties as defined; persistence is idem-potent. (ie property expressions are writte,NL
+lucene,contrib/javascript/src/core/QueryItem.js,NOT
+lucene,PrintWriter out = response.getWriter();,NOT
+lucene,added explicit calls to substituteProperties to perform property/include expansion,NL
+lucene,Subject: REMINDER: ***  Board Reports DUE! ***,NL
+lucene,Hoss Man commented on SOLR-689:,NL
+lucene,Javadoc,NL
+lucene,2. The response.setContentType() encoding of the page.,NL
+lucene,public void testInterface(),NOT
+lucene,Affects Versions: 1.3,NOT
+lucene,public int compareTo(CountPair<,NOT
+lucene,As the trunk stands no,NL
+lucene,at javax.xml.parsers.DocumentBuilder.parse(Unknown Source),NOT
+lucene,I believe that the main thing missing is the various functions (which,NL
+lucene,From the comment in solrconfig.xml,NL
+lucene,: + <html>,NOT
+lucene,If the conditions are too tigh,NL
+lucene,Shalin Shekhar Mangar updated SOLR-1604:,NL
+lucene,The field declaration could be as follows,NL
+lucene,: Should Solr have a tab on Lucene's home page?  Other incubating,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-192?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12523042 ],NOT
+lucene,: > > A Assert.assertEquals( item.categories.length,NOT
+lucene,Environment: Java - Lucene - Solr - DataImportHandler,NOT
+lucene,<xs:element type=\xs:int\ name=\flags\ maxOccurs=\1\/>,NOT
+lucene,The side effect is that this also allows different indexes.,NL
+lucene,I guess it hasn't been a high priority since it deals with handling of,NL
+lucene,at hudson.model.Build.run(Build.java:88),NOT
+lucene,At 11:30 PM -0800 2/21/0,NOT
+lucene,cache is not to avoid OOM. Set your cache sizes correctly for that. And,NL
+lucene,Or... ??,NL
+lucene,# SolrResourceLoader keeps a reference to the CoreDescriptor to get access to the core specific properties.,NL
+lucene,This patch clashes with the changes in SOLR-55,NL
+lucene,AU  client/ruby/flare/public/images/pie_76.png,NOT
+lucene,#NAME?,NL
+lucene,java -Durl='http://localhost:8983/solr/core1/update' -jar post.jar mon*.xml,NOT
+lucene,Attachments: SOLR-864.patch,NOT
+lucene,character set conversion facilities (InputStreamReader,NL
+lucene,Solr too.,NL
+lucene,general web,NL
+lucene,Seems to me that solr-255/solr-215 features are mostly orthogonal; solr-255 allows one core to use multiple indexe,NL
+lucene,Grant Ingersoll reassigned SOLR-330:,NOT
+lucene,Reporter: Janne Majaranta,NL
+lucene,some fields/methods are changed from private to public/protected so that this can be used extend the format,NL
+lucene,Context.registerEventListener(listener,NOT
+lucene,int numWords) {,NOT
+lucene,: > -Yonik,NL
+lucene,awesome,NL
+lucene,out,NL
+lucene,* @param name Name of the dataSource as defined in the dataSource tag,NL
+lucene,You should be seeing a log message similar to:,NL
+lucene,[junit] 2008-08-07 08:23:49.035::INFO:  Shutdown hook complete,NOT
+lucene,/solr/admin/stats.js,NOT
+lucene,https://issues.apache.org/jira/browse/SOLR-1527,NOT
+lucene,+    c = d.connect(url,NOT
+lucene,is named after one specific feature of the application.,NL
+lucene,Duplicate of SOLR-940.,NOT
+lucene,And see if that helps. I had the same problem (different language.),NL
+lucene,Currently DIH fails completely on any error. We must have better control on error behavior,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-773?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12757684#action_12757684 ],NOT
+lucene,{code}rsp.setHttpCaching(true/false);{code},NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1590,NOT
+lucene,URL: http://svn.apache.org/viewvc/lucene/solr/trunk/client/java/solrj/src/org/apache/solr/client/solrj/embedded/EmbeddedSolrServer.java?rev=678624&r1=678623&r2=678624&view=diff,NOT
+lucene,[shalin] SOLR-1053 -- IndexOutOfBoundsException in SolrWriter.getResourceAsString when size of data-config.xml is a multiple of 1024 bytes,NOT
+lucene,From solr-user...,NL
+lucene,deleted.Where i have to deleted the searched result.In which class?,NL
+lucene,I wrote a simple SearchComponent on the plane the other day that gives access to Lucene's TermEnum capabilities.  I think this will be useful for doing auto-suggest and other term based operations.  My first draft is not distribute,NL
+lucene,to why the change was made.,NL
+lucene,This passes a new test that adds the same doc multiple times.  BUT it does commit each time.,NL
+lucene,bq.That's a good idea - but do we actually use any iterator or Iterable objects?,NL
+lucene,people should be fine with trunk,NL
+lucene,This version adds a CloseHook to SolrCore.  The test now looks like:,NL
+lucene,Key: SOLR-418,NOT
+lucene,default empty parameter for \sort\,NL
+lucene,that know they need certain options could either not use the factor,NL
+lucene,I've somewhat agressively removed issues that were labeled 1.3 by,NL
+lucene,Should this be changed?,NL
+lucene,Ryan McKinley reassigned SOLR-602:,NL
+lucene,<lst name=\genre\>,NOT
+lucene,--Noble Paul,NL
+lucene,[javac] /tmp/apache-solr-nightly/contrib/dataimporthandler/target/classes,NOT
+lucene,Issue Type: Task,NOT
+lucene,@@ -2,NOT
+lucene,Key: SOLR-716,NOT
+lucene,h4. Technical specifications,NL
+lucene,-Mike,NL
+lucene,// first create the partial reuters index,NL
+lucene,: String name = request.getParameter(\name\);,NOT
+lucene,+ request = Solr::Request::AddDocument.new([{:title => \A...A<<A$?A-APA1/4AY=\,NOT
+lucene,Reporter: bram de jong,NL
+lucene,2010-02-22 22:24:30.722::WARN: org.mortbay.jetty.webapp.WebAppContext@7f5580{/sol,NOT
+lucene,import org.apache.solr.schema.FieldType;,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1591,NOT
+lucene,[junit] request: http://localhost:9999/solr/update?wt=javabin&version=2.2),NOT
+lucene,The problem is: every core re-instance the connectionpool (this seems to,NL
+lucene,I'll seriously vote to call it \Apache Solr Miller Edition\ if you pay for,NL
+lucene,Date: Sat Jun 10 19:18:38 2006,NOT
+lucene,<long name=\id\>35</long>,NOT
+lucene,-Cache Query objects in handlers ??,NL
+lucene,at java.lang.Thread.run(Thread.java:595),NOT
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/test/jsdoc_test.js,NOT
+lucene,On 10/12/0,NL
+lucene,@@ -13,NOT
+lucene,projects have a tendency to create their own words to somewhat,NL
+lucene,cumulativeStats.add(cache.getStats());,NOT
+lucene,+ A private NativeFSLockFactory lockFactory;,NOT
+lucene,: +  out.println(\  <threadDump>\);,NOT
+lucene,Each slave is doing 4 updates to zk per second in this case. You are more reliant on having a stable framework for Z,NL
+lucene,Key: SOLR-1638,NOT
+lucene,the solr-user mailing list,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-532?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,[line 221] A getFieldParam(field,NOT
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/templates/jsdoc/allclasses.tmpl,NOT
+lucene,Suggestion#1...,NL
+lucene,: Date: Tue,NOT
+lucene,What about a new parameter like collapse.facet=[pre|post] ?,NL
+lucene,analysis.jsp messes up token positions,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1044?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12678121#action_12678121 ],NOT
+lucene,public int intersectionSize(DocSet other) {,NOT
+lucene,If you don't see solr.xml,NL
+lucene,i,NOT
+lucene,y__8983__solr/webapp/WEB-INF/lib/xpp3-1.1.3.4.O.jar;C:\\DOCUME~1\\yaponte\\CONF,NOT
+lucene,\If you can't find it,NL
+lucene,Solr is taking.,NL
+lucene,Attachments: SOLR-350-jsp-fixes.patch,NOT
+lucene,* ant dist -> creates a single js file and a jar that holds velocity templates.,NL
+lucene,If this is a feature and not a bug please change the issue type,NL
+lucene,For one of our projects - we need custom admin monitoring hooks that,NL
+lucene,Map<fieldName,NOT
+lucene,regardless of the number of core,NL
+lucene,SomeFactory.future fx = Compatibility.cast(SomeFactory.future.class,NOT
+lucene,Yet another possibility: http://wiki.apache.org/incubator/Cassandra,NL
+lucene,SolrJ does not support binding of dynamic fields to bean fields,NL
+lucene,ConcurrentModificationException,NOT
+lucene,As pointed out in this thread...,NL
+lucene,separate name so it doesn't appear that you're actually installing,NL
+lucene,Sorry for all the question,NL
+lucene,: I'd serve the page,NL
+lucene,q=solr&start=0&rows=10,NOT
+lucene,#NAME?,NL
+lucene,When i search for a word say \international,NL
+lucene,+ > > <test-macro pattern=\T\/>,NOT
+lucene,We had something internally,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1869?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12854983#action_12854983 ],NOT
+lucene,The wiki (http://wiki.apache.org/solr/UpdateXmlMessages) explains that,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1728,NOT
+lucene,A [junit] Running org.apache.solr.OutputWriterTest,NOT
+lucene,We also are not storing the OCRed text.  Since the total size of the index,NL
+lucene,For several areas in this patch,NL
+lucene,[junit] 2008-04-02 08:16:37.542::INFO:  Shutdown hook executing,NOT
+lucene,right place to me.,NL
+lucene,Key: SOLR-350,NOT
+lucene,I guess I'm confused by TokenStream Factories - if you mean,NL
+lucene,Properties contex,NL
+lucene,at org.apache.lucene.search.highlight.Highlighter.getBestTextFragments(Highlighter.java:239),NOT
+lucene,XmlUpdateRequestHandler.log.warn(\unexpected attribute,NOT
+lucene,<!--'text' is an implicit field emited by TikaEntityProcessor . Map it appropriately-->,NOT
+lucene,... much more,NL
+lucene,ache\\solr\\client\\solrj\\beans\\Field.java.tmp:33:38:expecting LPARE,NOT
+lucene,Committed revision 745615.,NL
+lucene,What Bob doesn't realize (and what Carl wasn't aware of) is that elsewhere in his schema.xml file,NL
+lucene,I'm not sure if i agree with that statement .. i would think that figuring,NL
+lucene,number based on how long the entire response took to generate/sen,NL
+lucene,DirectUpdateHandler2:,NOT
+lucene,<HTTP>,NOT
+lucene,Key: SOLR-645,NOT
+lucene,files included in release that shouldn't be,NL
+lucene,: insist that using the core before 'init' has been called would lead to,NL
+lucene,[javac] C:\\workspace\\TTT\\src\\java\\org\\apache\\solr\\util\\CommonParams.java:164:,NOT
+lucene,changes are needed that would be easier to make here.,NL
+lucene,View this message in context: http://www.nabble.com/dynamic-filtering-tp20079841p20080481.html,NL
+lucene,WhitespaceTokenizer... at that point,NL
+lucene,guess what?!?,NL
+lucene,[junit] 2008-08-27 08:17:29.377::INFO:  Shutdown hook complete,NOT
+lucene,Would it make more sense for DIH to farm out it's content acquisition to a,NL
+lucene,http://www.nabble.com/Re%3A-svn-commit%3A-r547495---in--lucene-solr-trunk%3A-example-solr-conf-solrconfig.xml-src-java-org-apache-solr-handler-StaxUpdateRequestHandler.java-src-java-org-apache-solr-handler-UpdateRequestProcessor.jav-tf3950072.html#a11206583,NOT
+lucene,The code can be written against JDBC. But we need to test the DDL and,NL
+lucene,: +<?xml-stylesheet type=\text/xsl\ href=\analysis.xsl\?>,NOT
+lucene,STATUS:,NOT
+lucene,<str>runUpdate</str>,NOT
+lucene,Ryan McKinley commented on SOLR-555:,NL
+lucene,To solve this problem we can simply add two methods to the SolrQueryResponse class (like void setAvoidHTTPCaching(boolean) and boolean isAvoidHTTPCaching() - the default for the value would be false). The update request handlers should set this to true all the time. The partial response stuff can set this to true as well.,NL
+lucene,the new spellcheck.collate feature seems to exhibit some strange behaviors when handed a query with multiple tokens.,NL
+lucene,<add>,NOT
+lucene,SolrConfig inherits from Config which has been modified; Config is now more strictly a dom document (filled from some resource) and methods to evaluate xpath expressions. Config also continues to be the classloader singleton that allows to easily instantiate classes located in the Solr installation directory.,NL
+lucene,Lars Kotthoff updated SOLR-534:,NL
+lucene,I have the following use case:,NL
+lucene,I've got more info on this.,NL
+lucene,public interface SolrCoreAware {,NOT
+lucene,at org.apache.solr.client.solrj.LargeVolumeTestBase.query(LargeVolumeTestBase.java:63),NOT
+lucene,Other issues:,NL
+lucene,schema.xml and solrconfig.xml use CNET-internal class names,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-667?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12650055#action_12650055 ],NOT
+lucene,Remove support for (broken) abortOnConfigurationError,NL
+lucene,Urg... looks like there's no end-to-end (index then search) test for,NL
+lucene,every object the JsonResponseWriter outputs?,NL
+lucene,After some tracing through the solr cod,NL
+lucene,by,NL
+lucene,Project: Solr,NOT
+lucene,I'm not familiar enought with the Sink/Tee stuff to know what we would need -- but we should make sure any SchemaField/FieldType changes open the door to this.,NL
+lucene,The libDir element is extracted from the XML configuration file and parsed in the Config constructor.,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1255?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12729970#action_12729970 ],NOT
+lucene,View this message in context: http://www.nabble.com/Configuration-features%2C-Solr2-Spring---Solr1.x-future-tp19435196p19444338.html,NL
+lucene,XPathEntityProcessor: /feed/entry/link[@type='text/html']/@href,NOT
+lucene,has to be 1.3 compatible. SOLR-469 is a good example where I had to,NL
+lucene,#NAME?,NL
+lucene,pof wrote:,NL
+lucene,Tricia Williams reported problems with Cyrillic charsets when trying to search using the admin applicatio,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-634?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,--------------------,NOT
+lucene,.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:,NOT
+lucene,Key: SOLR-14,NOT
+lucene,* The table,NL
+lucene,My facet test looks as follows:,NL
+lucene,!True,NOT
+lucene,Issue Type: Improvement,NOT
+lucene,Change code to:,NL
+lucene,and,NL
+lucene,at junit.framework.TestSuite.run(TestSuite.java:203),NOT
+lucene,judge.validateData(qq,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1355?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,2) Integer fields should never be empty,NL
+lucene,"yes, sir!",NL
+lucene,Actually the main problem is that what's,NL
+lucene,This is ready to be committed now.,NL
+lucene,The comparison in the class ClobTransforme,NL
+lucene,if (result != null && result.trim().length() > 0) {,NOT
+lucene,Index: RichDocumentRequestHandler.java,NOT
+lucene,<int name=\true\>1</int>,NOT
+lucene,Bob Asks his question (see previous example),NL
+lucene,</lst>,NOT
+lucene,+  },NOT
+lucene,Patch with the changes.,NL
+lucene,[junit] 2008-09-04 08:14:59.756::INFO:  Shutdown hook complete,NOT
+lucene,http://localhost:8983/solr/update/delete?q=foo:1234   (or /update?delete=foo:1234),NOT
+lucene,This leads to a problem stopping the web container (e.g. Tomcat).,NL
+lucene,Just so I'm sure i'm understanding you:  You're saying that any java code,NL
+lucene,INFO: adding requestHandler:,NOT
+lucene,*search?q=foo+bar*,NOT
+lucene,Key: SOLR-383,NOT
+lucene,Ryan McKinley commented on SOLR-139:,NL
+lucene,Project: Solr,NOT
+lucene,A [junit] Running org.apache.solr.schema.NotRequiredUniqueKeyTest,NOT
+lucene,can't load custom signature class from solr.home/li,NL
+lucene,throw new RuntimeException( \Unknown core: \+coreName );,NOT
+lucene,: have been because the unit test don't operate through a regular HTTP,NL
+lucene,If you think it was sent incorrectly contact one of the administrators:,NL
+lucene,Legacy Numeric Field types need to be more consistent in their input/output error checking & documentation,NL
+lucene,function print(),NOT
+lucene,of thing,NL
+lucene,existing.setField(name,NOT
+lucene,1-Dec,NL
+lucene,Filters should return something that implements an interface,NL
+lucene,On your comment about searcherNumDocs() and,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1691?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12795732#action_12795732 ],NOT
+lucene,data will be populated to the parameter set:,NL
+lucene,When I do a normal search,NL
+lucene,Something that takes as long as generating top terms should also be,NL
+lucene,Since the dataImporter is protected by a thread-lock - there is no thred-safe guarantee for the implementations of the full-import close hook.,NL
+lucene,+++ contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/JdbcDataSource.java	(working copy),NOT
+lucene,+ JETTY-305 delayed connection destroy,NOT
+lucene,3. Manhattan (Vector),NL
+lucene,<noble.paul@gmail.com> wrote:,NL
+lucene,: - <!> [[Solr1.4]]>>,NOT
+lucene,field,NL
+lucene,*conectTimeout*: 30000ms,NOT
+lucene,Noble Paul updated SOLR-1126:,NL
+lucene,return n - (y & 1);,NOT
+lucene,First crack at this.  You'll need to download http://people.apache.org/~gsingers/extraction-libs.tar as it is too big to fit in JIRA.,NL
+lucene,</copy>,NOT
+lucene,: +,NOT
+lucene,was (Author: billnbell):,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1589?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12781273#action_12781273 ],NOT
+lucene,Reporter: Walter Underwood,NL
+lucene,SolrServer server;,NOT
+lucene,This exception occurs if I have a field in a document with a null value.,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-734?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12626540,NOT
+lucene,: + === PlainTextEntityProcessor ===,NOT
+lucene,writeTag(EXTERN_STRING,NOT
+lucene,/bin/rm -rf ${data_dir}/index && \\,NOT
+lucene,: -  needRaw=true;,NOT
+lucene,I'm not sure the best way to get the ExtractingRequestHandler into the classpath here.,NL
+lucene,It also builds the \hidden\ list as the inverse of the \gettable\ list.,NL
+lucene,code like this...,NL
+lucene,Just for the record,NL
+lucene,was rewritten during that update.  I have included the information on,NL
+lucene,: layer?,NL
+lucene,DocumentBuilder builder = DocumentBuilderFactory.newInstance,NOT
+lucene,An XML commit only request handler,NL
+lucene,On some TimeZones (such as EDT currently,NL
+lucene,* MultiCoreParams == CoreAdminParams,NOT
+lucene,org.apache.lucene.index.IndexReader.open(IndexReader.java:148) at,NOT
+lucene,standards replace the existing bloated low level config cod,NL
+lucene,On the flip side of my experience is Hadoop.  Y! has assigned a number,NL
+lucene,pass the tests,NL
+lucene,DistribFieldFacet dff = (DistribFieldFacet)fi.facets.get(key);,NOT
+lucene,*	*swap*: swaps 2 aliases,NOT
+lucene,at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675),NOT
+lucene,<!--Master config-->,NOT
+lucene,Query main = query;,NOT
+lucene,StandardServer.java:710) at org.apache.catalina.startup.Catalina.start(,NOT
+lucene,<field column=\datasource\ template=\board\/>,NOT
+lucene,Or,NL
+lucene,----------------------------------,NOT
+lucene,On 22. jan. 201,NL
+lucene,Key: SOLR-264,NOT
+lucene,Fergus McMenemie commented on SOLR-1060:,NL
+lucene,I have attached the revised patch for the same in the jira - SOLR-1106 .,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-725?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12625809#action_12625809 ],NOT
+lucene,http://wiki.apache.org/lucene-java/LuceneFAQ,NOT
+lucene,3. updated the README in the example solr home so that the note about ./lib also mentions the <lib> config option,NL
+lucene,I haven't yet been able to figure out exactly which reference holds the null or wh,NL
+lucene,At this point,NL
+lucene,indexes to new Solr servers.,NL
+lucene,[junit] Running org.apache.solr.handler.dataimport.TestXPathRecordReader,NOT
+lucene,: + > A Assert.assertEquals( item.i,NOT
+lucene,[javac] Compiling 226 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core,NOT
+lucene,will be much larger for CVS/SQL.,NL
+lucene,I was going to start on the auto-warming using IndexWriter's,NL
+lucene,(of you...),NL
+lucene,rather than pulling it out of the request.  Any objections to that?,NL
+lucene,<field name=\home\ type=\LatLonFT\/>,NOT
+lucene,[javac] Compiling 375 source files to /tmp/apache-solr-nightly/build/solr,NOT
+lucene,private final Map<Class,NOT
+lucene,: Log:,NOT
+lucene,On 2/18/09,NL
+lucene,This request handler only permits <commit/> messages.  It is provided as one way to prevent adds and deletes on a Solr slave machine that could potentially be accessed by outside parties where a firewall or other access control is either not possible or not desired.,NL
+lucene,foursA=h; twos=l;,NOT
+lucene,registered with a name that doesn't start with a slash,NL
+lucene,discussion.,NL
+lucene,Mar,NL
+lucene,at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:297),NOT
+lucene,Book1,NL
+lucene,Key: SOLR-1060,NOT
+lucene,role it plays with Solr.  Is it a vendor-specific technology (from,NL
+lucene,java.io,NOT
+lucene,Updating patch to handle faceting statistics.  (with tests),NL
+lucene,Please refer to http://wiki.apache.org/solr/SolrReplication for details,NL
+lucene,from http://mail-archives.apache.org/mod_mbox/lucene-solr-user/200807.mbox/%3cC4AC838E.ADE7%25jonathan_lee@comcast.com%3e:,NOT
+lucene,via shalin),NL
+lucene,This datasource does not need any extra configuration. Make a normal POST request with the data as the body. The params remain same.,NL
+lucene,Source code for the SolrSharp project,NL
+lucene,pint uses a native int[] for the fieldcache entry and the comparator that implements sortMissingFirst asks for the StringIndex.,NL
+lucene,Key: SOLR-340,NOT
+lucene,c:\\Users\\koji\\AppData\\Local\\Temp\\clover60096.tmp\\src60097.tmp\\org\\ap,NOT
+lucene,intention to do the same to the to the Solr analyzers and filters? Is it,NL
+lucene,#action_12600590 ],NOT
+lucene,req.getContext().put( \path,NOT
+lucene,Assignee: Yonik Seeley,NL
+lucene,Is not trivial to change that. I imaging that deep changes in Solr or Lucene would be needed to have an efficient collapsing.,NL
+lucene,: - This can be used like an URL!DataSource but used to fetch content from files on disk. The only difference from URL!DataSource,NL
+lucene,wrote:,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1396?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,: keep in mind that when data a user could enter in an HTTP request is,NL
+lucene,IndexReaderWarmer,NOT
+lucene,final int freq = (ir != null && field != null) ? ir.docFreq(new Term(field,NOT
+lucene,it's responsible for publishing the maven artifacts out.,NL
+lucene,Affects Versions: 1.3,NOT
+lucene,# If you would like to submit a bug report,NL
+lucene,to use a distributed solr architecture,NL
+lucene,<field name=\${ctlField}\   type=\text-${l10n}\   indexed=\true\  stored=\true\  multiValued=\true\ />,NOT
+lucene,SOLR-1586-geohash.patch,NOT
+lucene,I'm also going to include tools to visualize this stuff on a mac,NL
+lucene,Writing the xml may not be an option if I use DIH for indexing (there is no xml). And what if I use CSV. That means multiple storage formats. RDDBMS storage is a problem because of incompatibility of Lecene/RDBMS data structures. Creating a schema will be extremely hard because of dynamic fields,NL
+lucene,</responseHeader>,NOT
+lucene,Shalin has pointed out that we are creating the regex Pattern without first resolving the variable. So we need to call VariableResolver.resolve on the 'regex' attribute's value before creating the Pattern object.,NL
+lucene,Components: spellchecker,NOT
+lucene,Are there any objections to replacing BitSet with OpenBitSet in,NL
+lucene,such that no other fields need to be specified again?,NL
+lucene,-----Original Message-----,NL
+lucene,There appears to be confusion between the two here no matter what the,NL
+lucene,at org.apache.solr.core.SolrCore.execute(SolrCore.java:1299),NOT
+lucene,public void addedDocument() {,NOT
+lucene,where it's at,NL
+lucene,[yonik] SOLR-747: update example solrconfig.xml,NL
+lucene,[junit] 2008-03-28 09:00:40.431::INFO:  Shutdown hook complete,NOT
+lucene,would not call it easy at all. I took the test sources away completely (from,NL
+lucene,dataSource=\myfilereader\,NOT
+lucene,I went down the road of doing the calculations in paralle,NL
+lucene,NamedList (org/apache/solr/common/util/NamedList ) currently has a heterogenous List (even numbered indices are String-s ) and the odd-numbered indices are the specific types.  As per benchmarks ( see SOLR-912 ) - the implementation could be improved in favor of a Map.Entry<String>,NL
+lucene,# Add command to reload dictionaries,NL
+lucene,I'm looking it over now.,NL
+lucene,permissions.  A modular approach to crawling file system,NL
+lucene,: When I perform a search from indexed items..,NL
+lucene,suggest an alternative approach?,NL
+lucene,},NOT
+lucene,patrick o'leary commented on SOLR-773:,NL
+lucene,https://svn.apache.org/repos/asf/lucene/dev/trunk/solr/src/java/org/apache/solr/analysis/LengthFilterFactory.java,NOT
+lucene,org.apache.solr.update.DirectUpdateHandlerTest.testExpungeDeletes(DirectUpdateHandlerTest.java:303),NOT
+lucene,&lt;page top='211' bottom='322' right='833' left='944' word='bar' num='1'&gt;bar&lt;/page&gt;,NOT
+lucene,Can we have anything better? I can't use 4-CPUs :(,NL
+lucene,Thanks in advance,NL
+lucene,existing users; 2) people are probably going to use one URL structure or,NL
+lucene,Ignore changes in the amount of white space.,NL
+lucene,*** the server reads the file stream,NL
+lucene,we modify those APIs to really take advantage of an Attributes-based API.,NL
+lucene,+ // Yet another variation: if docs.size() is small and termvectors,NL
+lucene,Cell: 1-434-466-1467,NOT
+lucene,I came up with this patch because I have a rather elaborate tokenization scheme using ShingleMatrixFilter. The current solution of mine is to pass a base64 encoded serialized object as field value and use a custom Analyzer that assemble and tokenize the entity object passed down in the field value. However the tokenization is rather expensive (especially during initial bulk import of my zillions of documents)  so I'd rather do this on my clients as I've got plenty of those but only one Solr.,NL
+lucene,stats: 	lookups : 15966954582,NOT
+lucene,: +   <td style=\margin-left: 1em;\>,NOT
+lucene,solprovider edited comment on SOLR-84 at 10/7/08 10:21 PM:,NL
+lucene,reopening in most cases - hasn't seen any activit,NL
+lucene,\startOffset\:,NOT
+lucene,score?  Can/should the current framework do that?,NL
+lucene,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:845),NOT
+lucene,http://lucene.apache.org/solr/api/org/apache/solr/response/SolrQueryResponse.html#returnable_data says that a Map \containing any of the items in this list\ may be contained in a SolrQueryResponse and will be handled by QueryResponseWriters.,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1252,NOT
+lucene,- Delete obsolete topgit branches from 1.3,NL
+lucene,community@apache.org if people would like.,NL
+lucene,ugin.system.issuetabpanels:comment-tabpanel#action_12502885 ],NOT
+lucene,Reporter: Nicolas Dessaigne,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-356?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,asm-2.2.1.jar,NOT
+lucene,highlighting,NL
+lucene,Is it somehow possible to grab that and return it from,NL
+lucene,was (Author: gsingers):,NL
+lucene,Bill Au commented on SOLR-53:,NL
+lucene,/file/handler/name:extra/path?param1=val1&file=...&file=...,NOT
+lucene,of the URL (either from the path or from the QueryString) directly without,NL
+lucene,For acts_as_solr I need the ID field to be a Strin,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1439?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12756352#action_12756352 ],NOT
+lucene,Distributed Search over HTTP,NL
+lucene,2. DataImportHandler,NOT
+lucene,- More documentation (on source code),NL
+lucene,solr_start() was using a system call to start sol,NL
+lucene,Since this wasn't exactly a use case we ever advertise,NL
+lucene,It's been discusse,NL
+lucene,if there are single quotes they must be escaped,NL
+lucene,AnalysisRequestHandler,NOT
+lucene,But in all case,NL
+lucene,related to SOLR-470.,NL
+lucene,added an IncludesEvaluator that deals with include/fragment,NL
+lucene,stmt.setFetchSize(Integer.MIN_VALUE);,NOT
+lucene,On 6-Nov-09,NL
+lucene,Original Estimate: 0.08h,NL
+lucene,Noble Paul updated SOLR-1044:,NL
+lucene,5. initialize searcher / updateHandler,NL
+lucene,DIH currently can only be run inside Solr. But the core of DIH is quite independent of Solr. There are only a few points where it requires Solr core classes.They can be isolated out and we have an API in hand. If we limit the dependency down to common util then DIH can be used by,NL
+lucene,-,NOT
+lucene,Andrew.,NL
+lucene,: Some functions could actually use it - say like ms().,NL
+lucene,The current source in CVS doesn't work for me (the example doesn't,NL
+lucene,copy over every time we make changes. That is what I meant when I said,NL
+lucene,RFC 2616 sec13) and will by default respond with \304 Not Modified\,NL
+lucene,in the path then we can guess based on the Content-Type.,NL
+lucene,after optimization. A 1 is the default (and is equivalent to calling,NL
+lucene,clarity in a future release). Then people can mix and match and,NL
+lucene,<long name=\generation\>4447</long>,NOT
+lucene,Parallel execution of multiple queries is just one use case in a family of many other,NL
+lucene,Lucene core,NL
+lucene,Attachments: SpellingQueryConverter.java.diff,NOT
+lucene,add extra parameter to function search:,NL
+lucene,- > > </entity>,NOT
+lucene,+   * declaration.,NOT
+lucene,Noble Paul commented on SOLR-236:,NL
+lucene,name.,NL
+lucene,Once I changed setField to addField,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-474?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,the new create-pacakges target seems fine to me ... but \package\,NL
+lucene,that i,NL
+lucene,It would be better if the syntax can be modified to something like terms.fl=field,NL
+lucene,Reporter: Ning Li,NL
+lucene,that they might be better served by Tomcat since it's the most,NL
+lucene,everything again,NL
+lucene,: be somewhere in Solr that knows about the IndexReader /,NL
+lucene,at java.lang.reflect.Method.invoke(Method.java:597),NOT
+lucene,really allow it to become a viable alternative to things like FAST and,NL
+lucene,[junit] 2007-10-09 08:15:02.342::INFO:  Shutdown hook executing,NOT
+lucene,I still have some thing,NL
+lucene,Sure,NL
+lucene,at org.mortbay.jetty.servlet.Context.startContext(Context.java:139),NOT
+lucene,Reporter: Ruben Jimenez,NL
+lucene,I'm merely trying to understand how much (if any) interest there is in this,NL
+lucene,* and the DocSet for each term in the filter.,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-186,NOT
+lucene,almost worst case scenario as well - the Document text is extremely,NL
+lucene,On Sat,NL
+lucene,Comments? (my main issue is that it woudl be nice to be able to set compressThreshold at the field level.  Since we can't without modifying fields to accept named parameter,NL
+lucene,+   if(jndiName == null){,NOT
+lucene,where the analyzer variable is only set on the build command. Therefor,NL
+lucene,now people will be very confused. And I thought of sticking to Yonik's,NL
+lucene,I did not apply the patch but I was looking at the above code. We are splitting by '.' and going into each map we find. Will this reach upto a '.' character in a float or string value given as a parameter to a function?,NL
+lucene,af06c000-af0ea000 rwxp af06c000 00:00 0,NOT
+lucene,Solr moves to Lucene's trunk:,NL
+lucene,endpoints is large. See the javadoc for NumericRangeQuery for internal,NL
+lucene,convention and happenstance.,NL
+lucene,: + Analyzer analyzer = queryAnalyser ? ft.getQueryAnalyzer() : ft.getAnalyzer();,NOT
+lucene,Mark Miller resolved SOLR-1436.,NL
+lucene,only exception is where you want to extract variables from the URL,NL
+lucene,SOLR-139 needs some way to transport document values independent of the lucene Document.  This is required for the INCREMENT command and useful for modifying documents.  SolrDocument is also generally useful for SOLR-20,NL
+lucene,On Mon,NL
+lucene,** calls a CMD_LATEST_SNAP to the master and get the latest snapshot name,NL
+lucene,enabled I can have defaults for stuff like drive,NL
+lucene,Kay Kay updated SOLR-962:,NL
+lucene,Jetty__8983__solr/webapp/WEB-INF/lib/apache-solr-1.1.0-incubating.jar;/C:/Do,NOT
+lucene,Attachments: log4j-1.2.15.jar,NOT
+lucene,specify the number of top term,NL
+lucene,at java.net.PlainSocketImpl.socketConnect(Native Method),NOT
+lucene,: + </table>,NOT
+lucene,bit longs,NL
+lucene,calculation,NL
+lucene,I was wondering about that,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-751,NOT
+lucene,- > > > > </contrib-settings>,NOT
+lucene,1.1.0-incubating\\example\\ext\\jasper-compiler.jar;C:\\Inetpub\\ftproot\\apache-s,NOT
+lucene,Modified: lucene/dev/trunk/solr/common-build.xml,NOT
+lucene,indexing...,NL
+lucene,SoleDispatchFilter subclass and return the MultiCore directly from:,NOT
+lucene,-- Shalin Shekhar Mangar,NOT
+lucene,trying to index to or search it),NL
+lucene,INFO: [xluo] /select/rows=10&start=0&hl.fl=bookCount&indent=on&q=bookCount:5&hl=true&version=2.2 0 0,NOT
+lucene,INFO: [] webapp=/events_2009_06 path=/replication params={command=indexversion&wt=javabin} status=0 QTime=0,NOT
+lucene,http://localhost:8983/solr/select/?stylesheet=&q=apache&qt=standard&mlt=true&mlt.fl=man,NOT
+lucene,the worst case. Having thousands of small weak references does the,NL
+lucene,The issue is how to make MultiCore a derivable class and avoid static,NL
+lucene,/***  C macro from Hacker's Delight,NL
+lucene,: Binary files - no diff available.,NL
+lucene,Reporter: Kay Kay,NL
+lucene,This way the original index will be small and the users do not have to make all fields stored,NL
+lucene,add a field alias feature,NL
+lucene,of argument let's assume all clients are perfect) what happens when a,NL
+lucene,log.info(\Persisting cores config to \ + (file==null ? configFile : file));,NOT
+lucene,The best analogy is to consider that instead of deploying multiple web-applicatio,NL
+lucene,<field name=\text_*\  type=\text\   ... />,NOT
+lucene,Mike Klaas wrote:,NL
+lucene,Many thanks!,NL
+lucene,<uniqueKey>id</uniqueKey>,NOT
+lucene,Components: search,NOT
+lucene,I do agree about the last minute releases.  Howeve,NL
+lucene,(Oddly,NL
+lucene,+    counts = getFieldCacheCounts(,NOT
+lucene,A user reported an issue,NL
+lucene,java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:9,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-773,NOT
+lucene,### Eclipse Workspace Patch 1.,NOT
+lucene,Attachments: SOLR-1478.patch,NOT
+lucene,Object o = readVal(fis);,NOT
+lucene,<requestDispatcher handleSelect=\true\ >,NOT
+lucene,Discussion at: http://www.nabble.com/Creating-dynamic-fields-with-DataImportHandler-to19226532.html,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-234?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12495202 ],NOT
+lucene,} catch (NumberFormatException e) {,NOT
+lucene,So it would be nice if a user can easily specify that they want to use a french stopword lis,NL
+lucene,Attachments: SOLR-695-no-singlecore.patc,NOT
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/frame/Dumper.js,NOT
+lucene,site/features.html,NOT
+lucene,package junit.framework does not exist,NL
+lucene,2008-02-25 16:54:5,NOT
+lucene,Uses LUCENE-997 to add time out support to Solr.,NOT
+lucene,#NAME?,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-667?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12644889#action_12644889 ],NOT
+lucene,The attached patch will provide this feature.,NL
+lucene,[i++],NOT
+lucene,Key: SOLR-1353,NOT
+lucene,added an asString(node) method for logging purpose,NL
+lucene,\permission\.It contains yes or no.If a user whom have limited permission to,NL
+lucene,major upgrade; developers will *still* know that we're using LUcene-java ,NL
+lucene,: overrated.,NL
+lucene,At which point:,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1622,NOT
+lucene,Attachment: SOLR-896.patch,NOT
+lucene,#NAME?,NL
+lucene,course,NL
+lucene,Convert JDK logging to SLF4J,NL
+lucene,CSV produced by Oracle might seem like,NL
+lucene,Noble Paul updated SOLR-1501:,NL
+lucene,the othe,NL
+lucene,Jason Venner and I hacked all night on SOLR-1477 however didn't,NL
+lucene,path : pathPrefix + path ).forward( request ),NOT
+lucene,better idea.,NL
+lucene,vector,NL
+lucene,</init-param>,NOT
+lucene,at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108),NOT
+lucene,:   <requestHandler name=\/update\ class=\solr.XmlUpdateRequestHandler\ >,NOT
+lucene,+ > > <test-macro pattern=\C\/>,NOT
+lucene,whether a default field even makes sense.  Maybe it should be,NL
+lucene,can be turned off when not necessary.,NL
+lucene,Environment: Centos,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-813,NOT
+lucene,Temp Resolution:,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1650,NOT
+lucene,that error indicates that the version of lucene you are using is incapable,NL
+lucene,q=foo&fq=date:[1 TO 2]&fq=securityfilter:42&fq={!tag=type}type:(pdf OR,NOT
+lucene,+ <entity name=\jc\,NOT
+lucene,-  top=false;,NOT
+lucene,Thanks for the replies.,NL
+lucene,In the master server:,NL
+lucene,at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175),NOT
+lucene,Someone pulling an Al Gore (inventing the internet) on this isn't my,NL
+lucene,at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195),NOT
+lucene,decide when to query the spellchecker,NL
+lucene,<str name=\fsv\>true</str>,NOT
+lucene,\deviceName\:[,NOT
+lucene,Key: SOLR-1163,NOT
+lucene,out?,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1298,NOT
+lucene,Total time: 26 minutes 10 seconds,NOT
+lucene,A [junit] Running org.apache.solr.handler.TestCSVLoader,NOT
+lucene,Checking out http://svn.apache.org/repos/asf/lucene/solr/trunk,NL
+lucene,+ A <property name=\junit.details.formatter\ value=\org.apache.lucene.util.LuceneJUnitResultFormatter\/>,NOT
+lucene,${doc.valueMap['name']]} gets a single value for the field,NOT
+lucene,+ > try {,NOT
+lucene,I think we can do a better job of having explicit Exceptions when there is a problem creating the internal representation of a Fiel,NL
+lucene,See http://hudson.zones.apache.org/hudson/job/Solr-trunk/357/changes,NL
+lucene,To set the encoding to another charse,NL
+lucene,<lst>E:\\sample\\data2</lst>,NOT
+lucene,Shalin Shekhar Mangar updated SOLR-530:,NL
+lucene,I wouldn't mind waiting until the current bug I just submitted is,NL
+lucene,</add>,NOT
+lucene,Ok sure,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-430,NOT
+lucene,An example: 2 servers with the same shard are behind a load balancer. One server fails. The load balancer notices this and directs all traffic to the other server.,NL
+lucene,Here's a config I'm using against a mocked test database:,NL
+lucene,junit.framework.AssertionFailedError: null,NOT
+lucene,Would shutting down the executor cause that?  Are you doing any core reloading?,NL
+lucene,otis_gospodnetic@yahoo.com> wrote:,NL
+lucene,n.system.issuetabpanels:all-tabpanel ],NOT
+lucene,content.  This starts with search as a foundation,NL
+lucene,interfaces should support >2B docs,NL
+lucene,Key: SOLR-586,NOT
+lucene,if( boost != 1.0f ) {,NOT
+lucene,the war. This still needs further lov,NL
+lucene,/* if field size (in characters) is greater than this threshold,NL
+lucene,: - <!> Http!DataSource is being deprecated in favour of URL!DataSource in [[Solr1.4]]. There is no change in functionality between URL!DataSource and !Http!DataSourc,NL
+lucene,A [junit] Running org.apache.solr.handler.component.StatsComponentTest,NOT
+lucene,baseDir=\/Volumes/Techmore/ts/aaa/schema/data\,NOT
+lucene,fl.alias=from_name1:to_name1&fl.alias=from_name2:to_name2,NOT
+lucene,A,NL
+lucene,Re poll interval: I think the HH:MM:ss is enough.  Does that allow pollin,NL
+lucene,I think the high-level approach in SOLR-303 is the right way to go,NL
+lucene,Erik Hatcher schrieb:,NL
+lucene,On 6/6/11,NL
+lucene,The only potentially dangerous function is (4) initHandlersFromConfig.  This is a package private function that defiantly should not be called anywhere else.  Calling this function twice is not norma,NL
+lucene,--------------------------------------------------------------,NOT
+lucene,Sometimes SearchComponents need to modify the DocList.  Often times this requires two loops over the (Solr)DocList: once to convert the DocList to SolrDocList and then once to iterate the SolrDocList for the Search Component.  This can be seen in SOLR-77,NL
+lucene,cp=C:\\Documents%20and%20Settings\\yaponte\\Configuraci?n%20local\\Temp\\Jetty__8,NOT
+lucene,Key: SOLR-1288,NOT
+lucene,patch,NL
+lucene,Yonik Seeley updated SOLR-139:,NL
+lucene,Components: contrib - DataImportHandler,NOT
+lucene,<property name=\maven.dist.dir\ location=\${basedir}/dist/maven\/>,NOT
+lucene,<property name=\sun.boot.library.path\,NOT
+lucene,thing that would probably need to be done to make this work:,NL
+lucene,modify the q param before I pass it further for processing.,NL
+lucene,for hte requestHandler ...,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1396,NOT
+lucene,Committed revision 762180.,NOT
+lucene,Fix Version/s: 1.2,NOT
+lucene,Hi,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-665?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12617529#action_12617529 ],NOT
+lucene,wrt patched,NL
+lucene,stay a constant ratio as you change the density and/or distances?,NL
+lucene,Key: SOLR-976,NOT
+lucene,below).  I hadn't applied my patch yet.,NL
+lucene,Otis,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-288,NOT
+lucene,Configuration can also have behavior.  The important part is that is the separation from XML and allowing others to create configuration objects.,NL
+lucene,Currently the jSON content type is not used. Instead the palin/text content type is used. The reason for this as I understand is to enable viewing the json response as as text in the browser. While this is valid argumen,NL
+lucene,On Fri,NL
+lucene,The only code change is to use org.apache.solr.logging.Logger.getLogger(...),NL
+lucene,------------,NOT
+lucene,-Http connection Keep-Alive ?,NL
+lucene,<fields>,NOT
+lucene,Particularly,NL
+lucene,+import org.apache.solr.util.RefCounted;,NOT
+lucene,solr-cell-example:,NOT
+lucene,implementation the tree is balanced by ordered insertion of keys. So while,NL
+lucene,+ > > > > url=\file:///Volumes/ts/files.lis\,NOT
+lucene,use the TernaryTree found in Lucene contrib.,NL
+lucene,{{<dataSource type=\JdbcDataSource\ driver=\org.postgresql.Driver\ url=\jdbc:postgresql://host/db\ user=\user\ password=\password\ readOnly=\true\ autoCommit=\false\  transactionIsolation=\TRANSACTION_READ_COMMITTED\  holdability=\CLOSE_CURSORS_AT_COMMIT\/>}},NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1424?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12754287#action_12754287 ],NOT
+lucene,* @param loader for resolving filenames,NL
+lucene,: +  Thread Count:,NOT
+lucene,Improve support for the Trie* fields up to the level of Solr's existing numeric types.,NL
+lucene,QParser implementations.,NL
+lucene,: -  if (tids == null) {,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-236?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12791952#action_12791952 ],NOT
+lucene,Attachments: SOLR-1406.patch,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-754,NOT
+lucene,If the schema does not have a uniqueKey,NL
+lucene,and flatten them. A Then I index them into solr. A How could I know if there are any organizations without employees in solr? A In a data base I would,NL
+lucene,cmd.expungeDeletes);,NOT
+lucene,serializer = new XMLSerializer(write,NOT
+lucene,String name = shardCounts.getName(j);,NOT
+lucene,On 2/25/09,NL
+lucene,/Users/ekeller/Documents/workspace/solr/src/java/org/apache/solr/search/SolrIndexSearcher.java,NOT
+lucene,with.,NL
+lucene,It would be really nice to add this improvement soon (This seems to be a trivial addition) as our project really depends on this.,NL
+lucene,...,NOT
+lucene,allowLeadingWildcard (Set to true to allow * and ? as the first character of a PrefixQuery and WildcardQuery),NL
+lucene,-------------------------------------------------------------,NOT
+lucene,number of matches before that day,NL
+lucene,: - public class JdbcDataSource extends DataSource<Iterator<Map<String>>>,NOT
+lucene,: -</td>,NOT
+lucene,+ JETTY-299 handle win32 paths for object naming,NOT
+lucene,Key: SOLR-59,NOT
+lucene,containing that sould have a new major version number,NL
+lucene,Reporter: Karl Wettin,NL
+lucene,#define m1 ((unsigned_64) 0x5555555555555555),NOT
+lucene,SIGUSR1: SIG_DF,NOT
+lucene,<PREFIXTERM> ...,NOT
+lucene,page for /update and /update/cs,NL
+lucene,* <import> seems like it should be named <include>,NL
+lucene,Components: Build,NOT
+lucene,site/skin/images,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1138,NOT
+lucene,[junit] 2008-08-25 08:09:13.804::INFO:  Shutdown hook complete,NOT
+lucene,: +   <th>type</th>,NOT
+lucene,I have a need to perform Solr indexing in MapReduce tas,NL
+lucene,I have a question regarding the removal of documents from the doc list and,NL
+lucene,This PATCH is mildly related to SOLR-1709 (Distributed Date Faceting,NL
+lucene,[javac] Compiling 58 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/tests,NOT
+lucene,OverlappingFileLockException - it *should* work across webapp,NL
+lucene,bit...,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-845,NOT
+lucene,1,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-865,NOT
+lucene,using-SolrHighlighter-with-programmatic-parameters-,NOT
+lucene,Attachment: SOLR-1120.patch,NOT
+lucene,I agree with Yonik that the number of request handler parameters has,NL
+lucene,back to binary....,NL
+lucene,return;,NOT
+lucene,Key: SOLR-1438,NOT
+lucene,Lars Kotthoff updated SOLR-612:,NL
+lucene,machine,NL
+lucene,: IDEA to import or checkout the code in a clean/simple way and I _think_,NL
+lucene,solr?,NL
+lucene,set something globally in the servlet container or use a JVM wide property).,NL
+lucene,Distributed:,NL
+lucene,the indexing information.  Have I got this right?,NL
+lucene,SolrDispatchFilter.java Mon Mar 24 08:53:46 2008,NOT
+lucene,if the changes in Lucene are back compatibl,NL
+lucene,agreed ... i don't even think it's neccessary to make it throw an,NL
+lucene,A [mkdir] Created dir: /tmp/apache-solr-nightly/build/test-results,NOT
+lucene,: +	<link rel=\icon\ href=\/favicon.ico\ type=\image/ico\></link>,NOT
+lucene,------------------------------------------------------------------------------,NOT
+lucene,at hudson.FilePath.access$400(FilePath.java:119),NOT
+lucene,User Dwight is on vacation and never sees Bob's email.,NL
+lucene,-----------------------------------------------------------------------------------------------------,NOT
+lucene,: + (Otis Gospodneti),NL
+lucene,update,NL
+lucene,Alex Baranov commented on SOLR-630:,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1304,NOT
+lucene,: >   flags);,NOT
+lucene,list facet refinement seems pretty different than top facet refinement.,NL
+lucene,In case the baseDir attribute *is* specified but does not point to an existing directory (this results in a FileNotFoundException in FileListEntityProcessor.init(),NL
+lucene,Key: SOLR-450,NOT
+lucene,and am,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-211?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,overwhelming.  They also have fairly well timed out releases w/ well,NL
+lucene,Lance Norskog,NL
+lucene,params.put(MoreLikeThisParams.MIN_DOC_FRE,NOT
+lucene,Trainings,NL
+lucene,'E:\\tomcat\\solrstuff\\solr\\filingcore\\data\\index\\segments_by' does not,NOT
+lucene,with some good test cases here before trying to fix it :-),NL
+lucene,SOLR-1513.patch,NOT
+lucene,#NAME?,NOT
+lucene,C1C2 C2C3 => C4C5 C5C6,NOT
+lucene,mlt.exclude=+type:AUTHOR +type:PUBLISHER,NOT
+lucene,Key: SOLR-1846,NOT
+lucene,: unpredictable results.,NL
+lucene,<field column=\para\ xpath=\/p\ flatten=\true\/>,NOT
+lucene,Muchos gracias.,NL
+lucene,troubles her,NL
+lucene,Key: SOLR-1357,NOT
+lucene,lot of them before sending the query. Can we make the 'setter' methods,NL
+lucene,In SOLR-1,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-848,NOT
+lucene,:  if (ti.isInNative()) {,NOT
+lucene,some things are more confusing: If there is only one parse,NL
+lucene,: but if defaultSearch is an HTTP request paramete,NL
+lucene,+ > > > <mkdir dir=\${junit.output.dir}\/>,NOT
+lucene,| if we modify the XMLLoader to accept multiple <add>,NL
+lucene,Key: SOLR-619,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1381,NOT
+lucene,Solr's current LICENSE has ASL 2.,NL
+lucene,fieldnames = fn != null ? commaSplit.split(f,NOT
+lucene,indexed as two tokens:,NL
+lucene,<requestHandler name=\/admin/system\  class=\org.apache.solr.handler.admin.SystemInfoHandler\ />,NOT
+lucene,list but didn't get a respons,NL
+lucene,we should fix that so it either has a sensible defaul,NL
+lucene,Jason . We do not need to remove the original option. We can,NL
+lucene,Core \core1\ is up to date.,NL
+lucene,filtering iterator which gets each Hit's Document's resource path,NL
+lucene,called just as if it was non-distributed.  It looks like the shards,NL
+lucene,Attachments: SOLR-650.patch,NOT
+lucene,matthias,NL
+lucene,'?core=corename' syntax carries less surprise and may be extended more,NL
+lucene,On Dec,NL
+lucene,I don't see any reason (c) and (d) and perhaps (b) can't be used for Standard-style queries.  Unless I'm mistake,NL
+lucene,[junit] Running org.apache.solr.handler.MoreLikeThisHandlerTest,NOT
+lucene,[junit] 2008-03-28 08:44:56.504::INFO:  Shutdown hook complete,NOT
+lucene,Best Regard,NL
+lucene,at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:146),NOT
+lucene,Attachment: SOLR-865.patch,NOT
+lucene,at org.apache.lucene.index.DocInverterPerField.processFields(DocInverterPerField.java:159),NOT
+lucene,More details about this issue here:,NL
+lucene,another when indexing.,NL
+lucene,public TokenStream reusableTokenStream(String fieldNam,NOT
+lucene,In order to satisfy this scenario,NL
+lucene,@@ -14,NOT
+lucene,Reporter: Ryan McKinley,NL
+lucene,Key: SOLR-729,NOT
+lucene,- Efficient query processing with highlighting and fields getting generated only for merged documents. The query is executed in 2 phases. First phase gets the doc unique keys with sort criteria. Second phase brings all requested fields and highlighting information. This saves lot of CPU in case there are good number of shards and highlighting info is requested.,NL
+lucene,Attachments: SOLR-451.patch,NOT
+lucene,The memory usage of UnInvertedField is shown... just not in the same place as the Lucene field cache.,NL
+lucene,-Yonik,NL
+lucene,: core0 ) then call config.tellAboutCore( core1 );,NOT
+lucene,[javac] Compiling 1 source file to http://hudson.zones.apache.org/hudson/job/Solr-trunk/ws/trunk/contrib/extraction/build/test-classes,NOT
+lucene,There seems to be a number of classes - that implement finalize() method.  Given that it is perfectly ok for a Java VM to not to call it - may be - there has to some other way  { try .. finally - when they are created to destroy them } to destroy them and the presence of finalize() metho,NL
+lucene,being treated as if it were plain text.   am i correct?  if so was this,NL
+lucene,Jianhan,NL
+lucene,http://www.universidad2008.cu,NOT
+lucene,: + out.println(\ <form>\);,NOT
+lucene,<property name=\junit.includes\,NOT
+lucene,The first \solr\ could be the name of the webapp.,NL
+lucene,Writes are not atomic on longs unless they are volatile.   At a minimu,NL
+lucene,Yoo-hoo,NL
+lucene,[ http://issues.apache.org/jira/browse/SOLR-10?page=comments#action_12374938 ],NOT
+lucene,Chris Hostetter suggested this in:,NL
+lucene,\the jndi name : '\+jndiName +\' is not a valid javax.sql.DataSource\);,NOT
+lucene,all (it'd be an error if it di,NL
+lucene,fix in load:,NL
+lucene,Sure the admin pages are (mostly) JSP,NL
+lucene,<int name=\electronics\>2</int>,NOT
+lucene,like Spatial Tile.  The fact they are supported out of box is part of,NL
+lucene,an Evaluator is a DOM visitor that expands property expressions \in place\ using a property map as an evaluation context,NL
+lucene,backward slashes in windows isn't that uncommon.  We should fix it to,NL
+lucene,I made one small changed as follows. I have uploaded the changes.,NL
+lucene,What,NL
+lucene,Disable polling.,NL
+lucene,Key: SOLR-1444,NOT
+lucene,<updateProcessor name=\log\ class=\solr.LogUpdateProcessorFactory\ />,NOT
+lucene,./contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DataImporter.java:134:   StringBuffer sb = new StringBuffer(\There are errors in the Schema\\n\);,NOT
+lucene,Solr now recognizes HTTP Request headers related to HTTP Caching (see,NL
+lucene,Key: SOLR-1519,NOT
+lucene,\Soft references\ then. \Weak pointers\ is an older term. (They're,NL
+lucene,<xs:complexType name=\payloadType\>,NOT
+lucene,: extraction-related jars.,NOT
+lucene,have them. It would crash relentlessly if I didn't force all calls,NL
+lucene,directory in your branch.,NL
+lucene,Servlet container - Jetty,NOT
+lucene,This is an invalid json as each term is associated with a JSON object which holds multiple \suggestion\ attributes. When working with a JSON library only the last \suggestion\ attribute is picked up.,NL
+lucene,+ set_post_return('<result status=\0\></result>'),NOT
+lucene,Walter Underwood commented on SOLR-161:,NL
+lucene,at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:183),NOT
+lucene,valueDocSet.intersectionSize() being essentially equivalen,NL
+lucene,<th>50% full</th> <td>3.36</td> <td>3.96</td> <td>1.44</td>,NOT
+lucene,+  } else {,NOT
+lucene,Add at line 179:,NL
+lucene,The API suggestions grant made gives the FieldTYpe the ability to return a,NL
+lucene,<field name=\${ctlField}\   type=\text-${l10n}\   indexed=\true\  stored=\true\  multiValued=\true\ />,NOT
+lucene,<entity name=\foo\ threads=\4\>,NOT
+lucene,thoughts?,NL
+lucene,I've switched Flare to use the Luke request handler simply to,NL
+lucene,Attachments: SOLR-922.patch,NOT
+lucene,the way to go...,NL
+lucene,While working on SOLR-1586 I noticed that outside of class level access (or package level,NL
+lucene,[javac] location: class org.apache.solr.util.AbstractSolrTestCase,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-134?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12469643 ],NOT
+lucene,@Field(\id\) //name is optional,NOT
+lucene,One further issue... should we commit the changes to the HTMLStripReader?,NL
+lucene,The above schema patch is working nice if you update your index (index,NL
+lucene,bq. The effect is that with a low value for spellcheck.count you might miss good hits. In other word,NL
+lucene,Is this something worth pursuing?  Would we rather stick with ant,NL
+lucene,<property name=\specversion\ value=\1.2.2007.06.16.08.05.45\></property>,NOT
+lucene,setIncludeScore(true);,NOT
+lucene,1,NOT
+lucene,large fields (since they must be stored).,NL
+lucene,(Solr-773) and Spatial Lucene (Lucene-1732) and extends Solr and,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1381?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:553),NOT
+lucene,[junit] Tests run:,NOT
+lucene,~14% for term filters that match a lot of documents,NL
+lucene,* <b>higher</b> vals come before lower vals.,NL
+lucene,AU  site/skin/images/info.png,NOT
+lucene,+ > > > A x++;,NOT
+lucene,# The getter methods in SolrDeletionPolicy should be named more appropriately e.g. isKeepOptimizedOnl,NL
+lucene,Here's the start of a test for the HTMLStripReader.  Not,NL
+lucene,was (Author: fergus):,NL
+lucene,Added @deprecation Javadoc comments,NL
+lucene,A quick look at the code suggests that this is still the case (at least for version 6.1.3 bundled with Solr).,NL
+lucene,java.lang.InterruptedException,NOT
+lucene,difficult.,NL
+lucene,SOLR-1586.Mattmann.112209.geopointonly.patch.txt,NOT
+lucene,be,NL
+lucene,cmd.expungeDeletes); > > > > > > cmd.maxOptimizeSegments =,NOT
+lucene,+ > A <contrib-crawl target=\test\ failonerror=\true\/>,NOT
+lucene,Key: SOLR-1093,NOT
+lucene,The proposed solution (see Yonik answer on solr-dev) :,NL
+lucene,Yonik Seeley commented on SOLR-1860:,NL
+lucene,FIELD: [trim]? ( UNQUOTED | QUOTED ) [trim]?,NOT
+lucene,bits = new long[(int)(((numBits -1)>>>6)+1)];,NOT
+lucene,b7fac000-b7fad000 rwxp 00014000 03:01 4276307 /lib/ld-2.3.6.so,NOT
+lucene,<TERM> ...,NOT
+lucene,Noble Paul commented on SOLR-1357:,NL
+lucene,All I remember is if I didn't have that <arr name=\components\> section arranged exactly like that (even if I rearranged other items without rearranging the \collapse\ part,NL
+lucene,org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128),NOT
+lucene,agree,NL
+lucene,[junit] 2008-08-05 18:09:01.346::INFO:  Shutdown hook complete,NOT
+lucene,This patch relies on the IndexDeletionPolicy to identify files to be replicated. It also supposrts replication of conf files. No need to register any listeners/ QueryResponseWriters,NL
+lucene,* officially deprecated the *PluginLoader classes,NL
+lucene,To pass extra information during indexin,NL
+lucene,- solr cloud branch gets merged in,NL
+lucene,uerystring	  	(science),NOT
+lucene,Soon to follow patch adds a constructor to IndexSchema to allow them to be created directly from InputStreams.  The overall logic for the Core's use of the IndexSchema creation/use does not change however this allows java clients like those in SOLR-20 to be able to parse an IndexSchema.  Once a schema is parse,NL
+lucene,<property name=\fr-cores\>f,NOT
+lucene,CoreDescriptor p = new CoreDescriptor(thi,NOT
+lucene,at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174),NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-341?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12532821 ],NOT
+lucene,:  %>,NOT
+lucene,Anyone have good tips on working w/ java.util.logging (JUL)?  For on,NL
+lucene,: 2. The URL path determins the RequestParser,NL
+lucene,FastInputStream makes 3 DataInputStream/DataOutputStreams that it does not close. Possible file descriptor leaks.,NL
+lucene,class ClosingRequestHandler extends EmptyRequestHandler implements SolrCoreAware {,NOT
+lucene,it seemed to keep slipping.,NL
+lucene,Updating can be done by reading data from this.  Deletion must also be done on both the indices,NL
+lucene,We should be making sure the QEC is properly registered during,NL
+lucene,similar documents.,NL
+lucene,prefetching docs and fields . There is no standard way of other,NL
+lucene,<fieldType name=\random\ class=\solr.RandomSortField\ />,NOT
+lucene,adminHandler=\foo.FooHandler\>,NOT
+lucene,# Tests are missing,NL
+lucene,otherwise,NL
+lucene,it during Hit Collection in SolrIndexSearcher.,NL
+lucene,Key: SOLR-475,NOT
+lucene,it'se behavior).  That way you can have one instance of the,NL
+lucene,b4b10000-b532e000 r-xs 00000000 03:01 9831813 /usr/lib/j2re1.5-sun/lib/charsets.jar,NOT
+lucene,Attachments: evaluatorcleanup.patch,NOT
+lucene,In solrconfig.xml:,NL
+lucene,at hudson.scm.SubversionSCM$CheckOutTask.invoke(SubversionSCM.java:476),NOT
+lucene,0xaf36d308:   08273148 8d118768 08273088 08273088,NOT
+lucene,system proerty should be se,NL
+lucene,packagin,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1823,NOT
+lucene,From: Mark Miller <markrmiller@gmail.com>,NL
+lucene,I'm only seeing some query parsing / multi-threading extension,NL
+lucene,* NumberFormatTransformer is a new transformer which can be used to extract/convert numbers from strings. It uses the java.text.NumberFormat class in Java to provide its features.,NL
+lucene,str = new String(dat,NOT
+lucene,Affects Versions: 1.3,NOT
+lucene,I know this is an invisible/convert JIRA issue right now :),NL
+lucene,<param-name>solrconfig-filename</param-name>,NOT
+lucene,Y'all might be interested in this:,NL
+lucene,: -<%@ page contentType=\text/html; charset=utf-8\ pageEncoding=\UTF-8\%>,NOT
+lucene,: If it believes it is plural.. is it a way to tern this off?,NL
+lucene,Dawid,NL
+lucene,millions of docs.?,NL
+lucene,Field collapsing,NL
+lucene,On Apr 2,NL
+lucene,http://localhost:8983/solr/admin/luke?id=10 (lucene doc + solr doc),NOT
+lucene,Assignee: Jeff Rodenburg,NL
+lucene,Cheers,NL
+lucene,Just curioud,NL
+lucene,<str name=\classname\>org.apache.solr.spelling.suggest.Suggester</str>,NOT
+lucene,at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689),NOT
+lucene,manifestFileName=\/Volumes/ts/man-find.txt\,NOT
+lucene,+public class LuceneJUnitResultFormatter implements JUnitResultFormatter {,NOT
+lucene,Andre,NL
+lucene,Akshay K. Ukey updated SOLR-1018:,NL
+lucene,cases,NL
+lucene,SolrPluginUtils (gsingers),NOT
+lucene,public static final String MAX_OPTIMIZE_SEGMENTS = \maxSegments\;,NOT
+lucene,in the past,NL
+lucene,Results are added to the output like this:,NL
+lucene,<xsl:output media-type=\text/html; charset=UTF-8\ encoding=\UTF-8\/>,NOT
+lucene,QUOTED:   [quote] ( DOUBLE | ESCAPE | [data]* )* [quote],NOT
+lucene,The goal is to give Solr server clusters self-healing attributes,NL
+lucene,interface SolrRequestParser {,NOT
+lucene,Thanks Nobl,NL
+lucene,word1 => word2,NOT
+lucene,: together into buckets (e.g. airlin,NL
+lucene,was taken care of.,NL
+lucene,af97b000-af97e000 ---p af97b000 00:00 0,NOT
+lucene,The easiest way might be to index the field twic,NL
+lucene,- 2 times faster for get(index),NL
+lucene,http://www.creativyst.com/Doc/Articles/CSV/CSV01.htm,NOT
+lucene,Key: SOLR-1167,NOT
+lucene,lrj/impl/CommonsHttpSolrServer.java uses or overrides a deprecated API.,NL
+lucene,This method outputs weird string when Japanese letters are given for example. \J1J2J3J4J5\ => \\\J1\\J2\\J3\\J4\\J5\ We don't want to see it.,NL
+lucene,N-gram,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1432?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12777324#action_12777324 ],NOT
+lucene,<field name=\end3\>uce</field>,NOT
+lucene,AU  client/ruby/flare/public/images/pie_98.png,NOT
+lucene,[line 438] The getCounts() method signature is modified to add the 'facetSortOrder' parameter value to the end of the argument list.,NL
+lucene,right away,NL
+lucene,The current workaround is \symlinks\ but that doesn't really help the situation of the Solr Release artifact,NL
+lucene,- - -,NOT
+lucene,[junit] 2008-01-15 08:11:29.638::INFO:  Shutdown hook complete,NOT
+lucene,: testing its not 100% reliable.,NL
+lucene,'suggestions':['python,NOT
+lucene,at org.apache.catalina.core.StandardContext.start(StandardContext.java:4342),NOT
+lucene,{quote}Yea,NOT
+lucene,+  log.info(\unique key field: \+uniqueKeyFieldName);,NOT
+lucene,[junit] 2008-04-02 08:16:39.555::INFO:  Shutdown hook complete,NOT
+lucene,: 1. The URL path determins the RequestHandler,NL
+lucene,That comes from this patch-,NL
+lucene,Reporter: Jay,NL
+lucene,Attachments: deprecationDocumentation.patch,NOT
+lucene,solr.solr.home from the system property. when you package your war keep,NL
+lucene,PhoneticFilterFactory -- support Metaphone/Soundex filters,NOT
+lucene,Attachments: SolrNGramFilters.patch,NOT
+lucene,know all arguments made.,NL
+lucene,response.setContentType(responseWriter.getContentType(solrRe,NOT
+lucene,I snuck it in to this release since the patch was simple and it's been an issue under heavy threading for some people.,NL
+lucene,ERROR: svn: Invalid argument,NOT
+lucene,(note the lack of quotes around the pipe... your example included quotes),NL
+lucene,http://www.prohadoopbook.com/ a Ning network for Hadoop using Professionals,NL
+lucene,Shalin Shekhar Mangar updated SOLR-742:,NL
+lucene,is not specified in the request.,NL
+lucene,<filter class=\solr.TrimFilterFactory\ />,NOT
+lucene,why would /update and /update/ be treated differently? dispatch filter,NL
+lucene,as organizing components for structured and unstructured data.,NL
+lucene,Access to Lucene's TermEnum capabilities,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1492?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12762341#action_12762341 ],NOT
+lucene,{quote}The public API for the AnalysisRequestHandler will change in the context of the response. {quote},NL
+lucene,goal than possibly integrating the Ocean work that has been done / is,NL
+lucene,: (returns the closest doc ids to the string,NL
+lucene,Closing per comment.,NL
+lucene,- It also takes in a properties file for the data source configuraution,NL
+lucene,Hierarchical Handler Config,NL
+lucene,Key: SOLR-1076,NOT
+lucene,On Sep,NL
+lucene,|| type == SolrWriter.TRANSFORMER_EXCEPTION) {,NOT
+lucene,Shalin Shekhar Mangar reassigned SOLR-622:,NL
+lucene,On my P,NL
+lucene,: - === JdbcdataSource ===,NOT
+lucene,<types>,NOT
+lucene,: requirement is that my Lucene rewriter needs to be instantiated with,NL
+lucene,\foo !@# bar\ will index to \foo (blank) bar\,NOT
+lucene,Use Hadoop RPC for inter Solr communication,NL
+lucene,+ A AtomicLong expungeDeleteCommands = new AtomicLong();,NOT
+lucene,at org.apache.solr.search.DocSlice$1.nextDoc(DocSlice.java:112),NOT
+lucene,one field \title\ and gave the multiple word or say phrase.,NL
+lucene,On Sun,NL
+lucene,or if you have any other names in mind that is fine,NL
+lucene,Ryan McKinley reassigned SOLR-813:,NL
+lucene,I just committed something that changes the default behavior to \[core]\,NL
+lucene,solr.xml;,NOT
+lucene,One thing we might not want to get rid of though is streaming,NL
+lucene,Yonik Seeley reassigned SOLR-1284:,NL
+lucene,http://clk.atdmt.com/UKM/go/195013117/direct/01,NOT
+lucene,the demo and modify it to create their own project,NL
+lucene,: without bringing up a listener?,NL
+lucene,<int name=\hard\>1</int>,NOT
+lucene,AtomicLong optimizeCommands= new AtomicLong();,NOT
+lucene,b2a85000-b2a9e000 rwxp b2a85000 00:00 0,NOT
+lucene,<chain class=\solr.CustomUpdateRequestProcessorFactory\ >,NOT
+lucene,[get] Getting: http://repo1.maven.org/maven2/pcj/pcj/1.2/pcj-1.2.jar,NOT
+lucene,In the future,NL
+lucene,Attachments: solr-solrpy-r5.patch,NOT
+lucene,New Revision: 805774,NOT
+lucene,at org.eclipse.jdt.internal.junit.runner.TestExecution.run,NOT
+lucene,Affects Versions: 1.1.0,NOT
+lucene,follows this tip is going to decide Solr sucks the first time they,NL
+lucene,[junit] Running org.apache.solr.search.TestQueryTypes,NOT
+lucene,where we have a \stable\ and an \experimental\,NL
+lucene,Personall,NL
+lucene,Seems like we should get rid of it.  It's query parser specific,NL
+lucene,Posting file ipod_video.xml to http://localhost:8080/solr/update,NL
+lucene,return(True);,NOT
+lucene,- Jave project) that were triggered by emails Jira had gotten over the,NL
+lucene,+   * created and returned.,NL
+lucene,Here's an update to this patch.  I dropped short/byte support for now because I somehow forgot to add in SortField.BYTE and SortField.SHORT on the related Lucene patch.  I will open a separate issue for those.,NL
+lucene,b7f94000-b7f97000 rwxp b7f94000 00:00 0,NOT
+lucene,On May,NL
+lucene,+ > > > A in fields myloc_0_,NOT
+lucene,23-27 March -- MAPvenpick Hote,NOT
+lucene,The custom cod,NL
+lucene,: Are there going to be any obvious problems with this? The only one I can,NL
+lucene,Attachments: solr.check.patch,NOT
+lucene,org.apache.solr.handler.component.StatsComponent.handleResponses(StatsComponent.java:116) at,NOT
+lucene,View this message in context:,NL
+lucene,do is subscribe to solr-dev and start a dialog there about what issues,NL
+lucene,[junit] Running org.apache.solr.handler.component.StatsComponentTest,NOT
+lucene,client/ruby/solr-ruby/test/unit/add_document_test.rb,NOT
+lucene,Attachments: SOLR-856.patch,NOT
+lucene,</multicore>,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-565,NOT
+lucene,great.  as i,NL
+lucene,[gsingers] SOLR-1314: cleans up Carrot2 implementation and upgrades it to latest release,NL
+lucene,But the odd thing about this will be,NL
+lucene,checking if the lock exists and acquiring the lock - they separately,NL
+lucene,Remaining Estimate: 1680h,NL
+lucene,time-zones should be irrelevant since all calculations are done in UTC ... lack of time-sync is a legitimate concer,NL
+lucene,That also allows you to click the \grant license to ASF\ button to help us with our intellectual property tracking.,NL
+lucene,5. fixed a small bug in the clustering example schema (that example reuses the main example doc,NL
+lucene,if (i<=n-2) {,NOT
+lucene,container implementations.,NL
+lucene,* NUL perhaps?  (can you legally embed null in a string in java?),NL
+lucene,:  <li>Support for dynamic grouping of search results</li>,NL
+lucene,to do,NL
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/t/runner.js,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1676?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12793158#action_12793158 ],NOT
+lucene,super(defaultField == null ? schema.getDefaultSearchFieldName() : defaultFiel,NOT
+lucene,at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2777),NOT
+lucene,<field column=\test\    template=\${dataimporter.request.finstalldir}\ />,NOT
+lucene,No,NL
+lucene,public static int ntz(long val) {,NOT
+lucene,first it's a new term to a new view of the index (logical shard AFAIK,NL
+lucene,syntax...,NL
+lucene,3. LazyFields are incompatible with the sundry Field declarations scattered about Solr.  I believe I've changed all the necessary locations to Fieldable.,NL
+lucene,* machine are skewed/different than that of the date faceting machine.,NL
+lucene,h3. Usage:,NL
+lucene,it must be removed,NL
+lucene,[javac] Compiling 215 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core,NOT
+lucene,interface all on its own.,NL
+lucene,+ public static final String EXPUNGE_DELETES = \expungeDeletes\;,NOT
+lucene,INFO: adding lazy requestHandler: spellchecker=solr.SpellCheckerRequestHandler,NOT
+lucene,this would keep the glob style for \source\ and \dest,NL
+lucene,: - [<a href=action.jsp?log=WARNING>WARNING</a>],NOT
+lucene,Hi Ur,NL
+lucene,Primarily SolrCore and SolrIndexWriter ( specifically for my use-case ).,NL
+lucene,1,NOT
+lucene,Look at http://wiki.apache.org/solr/SimpleFacetParameters#Facet_Fields_with_No_Zeros_And_Missing_Count_For_One_Field,NL
+lucene,+ JETTY-309 force writable status of endpoints.,NOT
+lucene,[jar] Building jar: /tmp/apache-solr-nightly/contrib/clustering/build/apache-solr-clustering-1.4-dev.jar,NOT
+lucene,And since the regex is specified via the \regex\ attribute (as opposed to the value of an XML element) it's perfectly extensible in the future.,NL
+lucene,Key: SOLR-1437,NOT
+lucene,Toda,NL
+lucene,ASs someone with very little knowledge of Solr Cell and/or Tik,NL
+lucene,==============================================================================,NOT
+lucene,Yonik Seeley edited comment on SOLR-1586 at 12/29/09 4:05 PM:,NL
+lucene,root context.,NL
+lucene,classpath option.,NL
+lucene,3) all of the ResponseWriters should start looking at SolrQueryResponse.getException if they aren't alread,NL
+lucene,Shalin Shekhar Mangar reopened SOLR-1300:,NL
+lucene,information -- ie: only allow/commits updates if the,NL
+lucene,relatively expensive.,NL
+lucene,h4. Operations,NL
+lucene,: +  <xsl:template match=\solr/system/threadCount\>,NOT
+lucene,bq.,NL
+lucene,Key: SOLR-195,NOT
+lucene,# The properties defined in solr.xml should also be persisted back as is (without evaluation).,NL
+lucene,to /admin/stats.jsp which is a 404.  _info.jsp can leverage a default,NL
+lucene,sometimes have 100s of thousands of new docs as fast as Solr will,NL
+lucene,Thanks for contributing this Darren!,NL
+lucene,...Solr 1.1 is now available for download!...,NL
+lucene,but when VirtualHost features were adde,NL
+lucene,[junit] Test org.apache.solr.client.solrj.embedded.MergeIndexesEmbeddedTest FAILED,NOT
+lucene,We've been working on integrating the spelt spellchecker from XTF (http://groups.google.com/group/spelt/,NL
+lucene,.ContextHandlerCollection.doStart(ContextHandlerCollection.java:161),NOT
+lucene,//doc.addField(\weight_\ + Integer.toString(i) + \_\ + Integer.toString(j,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-69?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12467399 ],NOT
+lucene,b2a9e000-b2b10000 rwxp b2a9e000 00:00 0,NOT
+lucene,are small fragments in the summary pag,NL
+lucene,[junit] Tests run:,NOT
+lucene,Digital Library Production Service,NL
+lucene,+ > > > A if (x >= n) {,NOT
+lucene,at java.net.ServerSocket.<init>(ServerSocket.java:141),NOT
+lucene,Add support for the new TrieRangeFilter in Lucene contrib-queries for fast range filter/query.,NL
+lucene,: + > A Assert.assertEquals( item.categories.lengt,NOT
+lucene,instead it should be:,NL
+lucene,H,NL
+lucene,ervlet.jar;C:\\Inetpub\\ftproot\\apache-solr-1.1.0-incubating\\example\\lib\\org.m,NOT
+lucene,handler parse xml;,NOT
+lucene,Doesn't sound that way to me.,NL
+lucene,3. Makes sense.,NL
+lucene,the fields,NL
+lucene,Testcase: testReplicateAfterWrite2Slave took 2.656 sec,NOT
+lucene,* find patch in file uploads \rewrite.1.patch\,NL
+lucene,As of 1.,NL
+lucene,<property name=\version\ value=\1.3\/>,NOT
+lucene,Reporter: Hoss Man,NL
+lucene,: +   },NOT
+lucene,You can have anything your heart desires... Solr is open-source :),NL
+lucene,Apache Ant version 1.7.1 compiled on June 27 2008,NOT
+lucene,containing the user I,NL
+lucene,</core>,NOT
+lucene,term buffer char array.  The reason this comes up is that,NL
+lucene,return Integer.valueOf( toExternal(f) );,NOT
+lucene,A [junit] Running org.apache.solr.analysis.TestReversedWildcardFilterFactory,NOT
+lucene,Attachments: SOLR-1492.patch,NOT
+lucene,stringsList.add(s);,NOT
+lucene,Examples of potential highlighter param names:,NL
+lucene,file up into snippets -- which could then be combined again in lots of,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-447?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,using maxDocs;,NOT
+lucene,new logo at ApacheCon -- but it would also be nice to use ApacheCon to,NL
+lucene,@@ -1,NOT
+lucene,Components: contrib - Clustering,NOT
+lucene,* Centralized configuration management (i.e. new solrconfig.xml,NL
+lucene,And two suggestions related to XSLT transformations for presentation:,NL
+lucene,Chris Mattman,NL
+lucene,+ > > > > A return te.term().text();,NOT
+lucene,Date: Wed Mar 26 13:59:40 2008,NOT
+lucene,*blockRegex* is an optional attribute that is applied after any allowRegex and discards any line which matches the regExp,NL
+lucene,followed by ./solr,NL
+lucene,[junit] 2008-08-25 08:13:12.814::INFO:  Shutdown hook complete,NOT
+lucene,J  org.mortbay.jetty.Server.handle(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;I)Z,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-219?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12494623 ],NOT
+lucene,rent:[* TO 1500] AND bedroom:[2 TO *] AND floor:[90 TO *],NOT
+lucene,<!-- for historic reason,NOT
+lucene,[javac] Note: /tmp/apache-solr-nightly/contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DocBuilder.java uses or overrides a deprecated API.,NOT
+lucene,makes it irrelevant what the actual value is -- even if the property,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-491,NOT
+lucene,\endOffset\:,NOT
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/frame/Namespace.js,NOT
+lucene,collation,NL
+lucene,using exec() instead of system() makes this complexity go away fortunately. Also the solr_server.rb was renamed to test_helper.rb as it is likely to contain other methods/classes for clearing the inde,NL
+lucene,Environment: Linux,NOT
+lucene,x = x - ((x >>> 1) & 0x5555555555555555L);,NOT
+lucene,BaseTokenizerFactory does not make a Tokenize,NL
+lucene,sounds good.  I agree.,NL
+lucene,+ JETTY-125 maven plugin: ensure test dependencies on classpath for,NL
+lucene,public Tokenizer create( Reader input ),NOT
+lucene,Can be replicated with the example-setup that comes with Solr (Jetty + example docs):,NL
+lucene,Sorry I'm out of the loop on this.  In the last two week,NL
+lucene,have tested the pre-releases and release candidates.,NL
+lucene,at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98),NOT
+lucene,The ability to update/search/delete among many solr instances,NL
+lucene,Hoss Man commented on SOLR-1817:,NL
+lucene,Attachments: Dup_files1.zip,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-670,NOT
+lucene,: - [<a href=action.jsp?log=FINEST>FINEST</a>],NOT
+lucene,which is what open source and iteration is all about.,NL
+lucene,Jayson Minard commented on SOLR-1155:,NL
+lucene,[junit] Running org.apache.solr.highlight.HighlighterConfigTest,NOT
+lucene,allows for elements to be anotate with a nam,NL
+lucene,Implement highlighted field support,NL
+lucene,- Hide quoted text -,NL
+lucene,noble.paul edited comment on SOLR-561 at 5/25/08 9:48 PM:,NL
+lucene,Seems like we're reaching critical mass again,NL
+lucene,: +   out.println(\ <tokens>\);,NOT
+lucene,of these,NL
+lucene,-   StringWriter out = new StringWriter();,NOT
+lucene,3. As per SOLR-1301 patch,NL
+lucene,Committed revision 757690.,NL
+lucene,\+\ ...,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1525,NOT
+lucene,2. StandardRequestHandler uses CommonParams to store config-time parameter values (new feature),NL
+lucene,<http://hudson.zones.apache.org/hudson/job/Solr-trunk/1078/changes>,NOT
+lucene,: +   out.println(\</error>\);,NOT
+lucene,matthew.woytowitz@mantech.com,NOT
+lucene,[junit] 2008-08-25 08:15:16.794::INFO:  Shutdown hook complete,NOT
+lucene,if (isfrag = \fragment\.equals(walk.getNodeName())),NOT
+lucene,SpellCheckComponent must be able to build/load spell check index on startup and commits. With SOLR-60,NL
+lucene,: A import java.util.List;,NOT
+lucene,I am finally getting back around to this. And I am having trouble implementing SolrCoreAware. As The SolrResourceLoader has a method called assertAwareCompatibility which throws an exception my class does not extend SolrRequestHandle,NL
+lucene,Attachments: dynamicCopy.patch,NOT
+lucene,- support some sort of standard RPC mechanism (Thrif,NL
+lucene,at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380),NOT
+lucene,SEVERE: java.lang.OutOfMemoryError: PermGen space,NOT
+lucene,fq={!tag%3Dt1}SubjectTerms_mfacet:(testvalue)&,NOT
+lucene,Attachments: hoss.spell.patch,NOT
+lucene,http://www.eu.apachecon.com/,NOT
+lucene,Remaining Estimate: 3h,NL
+lucene,[javac] com.sun.tools.javac.code.Symbol$CompletionFailure: file,NOT
+lucene,solr-home/instanceDir2/...,NOT
+lucene,[shalin] Rolling back commit on SOLR-614 pending discussion and consensus.,NL
+lucene,public void setBits(long[] bits) { this.bits = bits; },NOT
+lucene,Can you tell us a little bit more about the why/what of this?  Are you,NL
+lucene,: +  <textarea class=\std\ rows=\3\ cols=\70\ name=\val\><xsl:value-of select=\fieldIndexValue\ /></textarea>,NOT
+lucene,Thanks for creating this ticke,NL
+lucene,AU  site/linkmap.html,NOT
+lucene,./lib:,NOT
+lucene,SIGHUP: [libjvm.so+0x282fb0,NOT
+lucene,SimilarityFactory patch: facilitate parameterizable Similarity implementations,NL
+lucene,</init-param>,NOT
+lucene,Yonik Seeley commented on SOLR-27:,NL
+lucene,: - </td>,NOT
+lucene,Sent from the Solr - Dev mailing list archive at Nabble.com.,NL
+lucene,Hackathon - open to all! | Geeks for Geeks | Lunchtime Sessions,NL
+lucene,Great. Thanks a lot :),NL
+lucene,import org.apache.solr.core.MultiCore;,NOT
+lucene,+++ lucene/solr/trunk/client/java/solrj/src/org/apache/solr/client/,NOT
+lucene,Ryan McKinley updated SOLR-182:,NL
+lucene,:  In my general experience I have seen people deploying applications in,NL
+lucene,at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378),NOT
+lucene,own log & error notification (emails/pages to the operator) so that is not,NL
+lucene,[junit] Running org.apache.solr.BasicFunctionalityTest,NOT
+lucene,[mkdir] Created dir: /tmp/apache-solr-nightly/dist/solr-cell-lib,NOT
+lucene,It's been 3 months since I looked at this.  Sounds fimiliar.  Here are the params I pass with every MLT Query.,NL
+lucene,no objections ...,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-162,NOT
+lucene,: +<xsl:template match=\solr/analysis/results/queryAnalyzer/factory/args\>,NOT
+lucene,: Modified: incubator/solr/trunk/CHANGES.txt,NOT
+lucene,Jayson Minard updated SOLR-1155:,NL
+lucene,<int name=\price:[* TO 500]\>2</int>,NOT
+lucene,Key: SOLR-1461,NOT
+lucene,Enviado el: miA(c)rcole,NL
+lucene,See http://www.apache.org/dev/crypto.html,NOT
+lucene,: + the License.  You may obtain a copy of the License at,NL
+lucene,+ JETTY-296 Close direct content inputstreams,NOT
+lucene,public int commitMaxTime = -1; // make sure these documents are,NL
+lucene,Assignee: Otis Gospodnetic,NL
+lucene,for( SolrDocument doc : docs ){,NOT
+lucene,{,NOT
+lucene,at hudson.model.Executor.run(Executor.java:59),NOT
+lucene,java.lang.String 	getServletContextName(),NOT
+lucene,{code},NOT
+lucene,: + <entity>,NOT
+lucene,* Changed access modifier for the QueryParsing.StrParser inner class and its constructors to public. Again as in abov,NL
+lucene,:    printThreadInfo(t,NOT
+lucene,needed.,NL
+lucene,solr-home/instanceDir2/,NOT
+lucene,Unless you have very large numbers of facet value,NL
+lucene,.mortbay,NL
+lucene,should,NL
+lucene,Ryan McKinley commented on SOLR-867:,NL
+lucene,3. For SOLR-30,NL
+lucene,easier.,NL
+lucene,+++ lucene/dev/trunk/lucene/common-build.xml Fri Mar 26 21:55:57 2010,NOT
+lucene,contrib/javascript/src,NOT
+lucene,// TODO: if field is null,NL
+lucene,The Jetty that is bundled for the example application is version 6.1.,NL
+lucene,Attachments: SOLR-1590.Mattmann.112209.patch.txt,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-539?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,Why invent something when compression is standard in HTTP? --wunder,NL
+lucene,Ideally we don't need to.,NL
+lucene,client/ruby/solr-ruby/test/unit/document_test.rb,NOT
+lucene,: +</meta>,NOT
+lucene,potential optimization of BufferedTokenStream?,NL
+lucene,far as to recommend deprecating the named accessors like getQueryStrin,NL
+lucene,The following patch adds a skin to the Forrest site that enables the Solr site to search Solr only content using Lucene/Solr. When a search is submitte,NL
+lucene,I guess it should containe,NL
+lucene,Another custom similarity may say that only 1) and 6) are similar because they are identical.,NL
+lucene,#NAME?,NOT
+lucene,import java.util.Map;,NOT
+lucene,Posting file hd.xml to http://localhost:8080/solr/update,NL
+lucene,x html(46),NOT
+lucene,at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:178),NOT
+lucene,content (CS);,NOT
+lucene,/<zookeeper_rootdir>,NOT
+lucene,: +  <link rel=\shortcut icon\ href=\/favicon.ico\ type=\image/ico\></link>,NOT
+lucene,One option obviously is to treat a 15 second timeout the same as if the node went down. It seems to depend though - in a lot of case,NL
+lucene,Linux Red Hat ES4  (2.6.9-5.ELsmp from 'uname -a'),NOT
+lucene,[junit] Running org.apache.solr.client.solrj.embedded.MultiCoreEmbeddedTest,NOT
+lucene,2. refactor the addMainQuery() method to use,NL
+lucene,[junit]  <h2>asf - Revision 691915]: /lucene/solr/trunk...> but was:<...asf - Revision 69191[6: /lucene/solr/trunk</title></head>,NOT
+lucene,Reporter: Andrzej Bialecki,NL
+lucene,handled without error.,NL
+lucene,<int name=\lengthNormFactorsMax_supplierDescription_*\>7</int>,NOT
+lucene,diff --git a/example/solr/conf/solrconfig.xml b/example/solr/conf/solrconfig.xml,NOT
+lucene,[jar] Building jar: /tmp/apache-solr-nightly/contrib/dataimporthandler/target/apache-solr-dataimporthandler-extras-nightly.jar,NOT
+lucene,need/drive to impliment anything beyond what's currently supported...,NL
+lucene,sure it couldn't work that way for the reasons you outlined.,NL
+lucene,Compiler\></property>,NOT
+lucene,The problem with XMLWriter is that it combines two functions that,NL
+lucene,they only want one instance per server they could use a system property or,NL
+lucene,Reporter: DoAYacan GA1/4ney,NL
+lucene,2) cd /proc/[java pid/fd,NOT
+lucene,represent the state of the cores of a given set of servers which,NL
+lucene,at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226),NOT
+lucene,Key: SOLR-210,NOT
+lucene,Attachments: analysis-xml-out.txt,NOT
+lucene,Mark Miller updated SOLR-1445:,NL
+lucene,is a more restricted form of the canonical representation of dateTime,NL
+lucene,by other folks.,NL
+lucene,------------------------------------------------------------------------------------------------,NOT
+lucene,probably better-performing) to issue the queries during analysis.,NL
+lucene,thatnks for letting us know about this.  for future refrence: pasting the,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-427?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12551218 ],NOT
+lucene,In QueryComponent (lines 81-82) we have:,NL
+lucene,** property for type name in *both* the fieldtype and field (which,NL
+lucene,Solr moves to Lucene's trunk:,NL
+lucene,Filed[] from a single field value input -- but it doesn't provide any,NL
+lucene,Total time: 63 minutes 42 seconds,NOT
+lucene,-  } catch (SQLException e) {,NOT
+lucene,<field column=\datasource\ template=\board\/>,NOT
+lucene,Hoss Man resolved SOLR-970.,NL
+lucene,Attachments: SOLR-1296.patch,NOT
+lucene,en\\c:\\Downloads\\solr_trunk\\src\\maven\\solr-parent-pom.xml.template due to,NOT
+lucene,multiple <document> were never supported by DIH .,NL
+lucene,A lucene/solr/trunk/src/solrj/org/apache/solr/client/solrj/request/UpdateRequest.java,NOT
+lucene,I vote for #2.  Archeologists can still dig it up through an svn,NL
+lucene,public void write(ResponseWriter writer) {,NOT
+lucene,at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131),NOT
+lucene,Environment: Solr core,NOT
+lucene,int i;,NOT
+lucene,happen,NL
+lucene,must be a somewhat obscure code path since I've certainly used Solr,NL
+lucene,+ > > > > A },NOT
+lucene,Is this an issue with the lucene Sort Comparator interface or with how the solr implementation passes the results around?,NL
+lucene,* limitations under the License.,NL
+lucene,:  <li>Constant scoring range and prefix queries - no id,NL
+lucene,I don't think solrjs should hold up the 1.4 release.,NL
+lucene,[clover] Updating database at 'http://hudson.zones.apache.org/hudson/job/Solr-trunk/ws/trunk/build/tests/clover/db/solr_coverage.db',NOT
+lucene,1-Jun,NOT
+lucene,A collection of rough enhancements to the default highlighter. Mostly to be used as ideas for future development.,NL
+lucene,PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11:/usr/games,NOT
+lucene,[Compiling 2 source files to,NL
+lucene,org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:,NOT
+lucene,: One idea was for me to use a filter with the copy task that e.g.,NL
+lucene,there are other (less clean) ways to handle the INCREMENT command.  My real,NL
+lucene,query facets via the UI. it is also possible to,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1356?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,ResponseWriters (the MoinMoin editing screen gies you a pulldown to assign,NL
+lucene,If you run that query what do your results look like?,NL
+lucene,/a/b/c/d/e...,NOT
+lucene,: -    sb.append(\ on lock=\ + ti.getLockName());,NOT
+lucene,at org.apache.solr.update.DirectUpdateHandler2.overwriteBoth(Unknown Sou rce),NOT
+lucene,The syntax that you are using is not a valid syntax. Solr 1.2 did not do,NL
+lucene,- > > > > > > > <mkdir dir=\@{junit.output.dir}\/>,NOT
+lucene,java.lang.NoClassDefFoundError: org/apache/solr/common/SolrException,NOT
+lucene,looks great.  thanks!,NL
+lucene,* of the number of milliseconds since the epoch (milliseconds since 1 Jan 1970 00:00).,NL
+lucene,the DateField type ... i'll rectify that.,NL
+lucene,knowledge on distributed components and the solr codebase in general.,NL
+lucene,: > After this committee,NL
+lucene,The problem of course is that the counts for \word\ and \excel\ would,NL
+lucene,parser model?,NL
+lucene,What I'd like to do is get Apache moved towards being Ruby savvy.,NL
+lucene,Java Replication does not log actions,NL
+lucene,AU  client/ruby/flare/public/images/pie_5.png,NOT
+lucene,IIUC the agreed way of working is to do all important changes as,NL
+lucene,Noble Paul updated SOLR-667:,NL
+lucene,we're using SolrCore in terms of:,NL
+lucene,return (properties & TOKENIZED) != 0;,NOT
+lucene,Environment: Tomcat 5.5,NOT
+lucene,temp director;,NOT
+lucene,Recently in lucene,NL
+lucene,The MoreLikeThis component should support distributed processing.,NL
+lucene,String[] facetQs = params.getParams(SolrParams.FACET_QUERY);,NOT
+lucene,available based on a request parameter.  Consider core0 with a handler,NL
+lucene,identify the location of the jars yourself) but the jars still have to,NL
+lucene,Be sure to start with empty solr/data/index files on both master and slave.,NL
+lucene,Right?,NL
+lucene,http://localhost:8983/solr/select?q={!payload%20f=payloads%20func=avg}foo&debugQuery=true,NOT
+lucene,: ./solrlogs,NOT
+lucene,http://lucene.apache.org/nutch/apidocs-0.8.x/org/apache/nutch/analysis/CommonGrams.html,NOT
+lucene,process leads you to creating these pages.,NL
+lucene,Key: SOLR-1568,NOT
+lucene,{{version}} : if you update your solr.xml or your cores for various motive,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1778,NOT
+lucene,I tried querying using SolrDirectConnection with a wt=javabin and only get,NL
+lucene,buildDocument(vr,NOT
+lucene,http://www.nabble.com/Custom-fragmenter-tf3681588.html#a10289335,NOT
+lucene,Fix For: 1.3.1,NOT
+lucene,These strategies should be tested before trying to create a lock-free get() versio,NL
+lucene,NASA Jet Propulsion Laboratory Pasaden,NL
+lucene,<lst name=\master\>,NOT
+lucene,use driod to get the meta data on content and store the data in solr for,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-925?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12657785#action_12657785 ],NOT
+lucene,Key: SOLR-313,NOT
+lucene,Attachments: SOLR-1672.patch,NOT
+lucene,: +<?xml-stylesheet type=\text/xsl\ href=\threaddump.xsl\?>,NOT
+lucene,Again,NL
+lucene,which is implimented as a RangeFilter under the covers.,NL
+lucene,client/ruby/solr-ruby/lib/solr/response/standard.rb,NOT
+lucene,contributing this code to Apache so that it can be included in the main,NL
+lucene,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:84,NOT
+lucene,bq. It almost maxed out a machine with 18GB devoted to jetty in about 20 minutes.,NL
+lucene,Imagine that i want to make an index of people i know.  Each person also,NL
+lucene,: +    out.print(\  <line>\);,NOT
+lucene,** View the raw JSON response returning from Solr,NL
+lucene,that the original test used id_i.,NL
+lucene,SOLR-295 mentions boost support for morelikethis and then seems to have,NL
+lucene,Distributed query fails with tag / exclude pattern used for facets that are multi-valued.,NL
+lucene,http://www.nabble.com/Slow-response-tf4394686.html,NOT
+lucene,# Should there be a default update mechanism if none are specified in the solrconfig.xml?,NL
+lucene,sum(linear(,NOT
+lucene,</filter-mapping>,NOT
+lucene,united states of America,NL
+lucene,return params.getParams(param).addAll(defaults.getParams(param));,NOT
+lucene,--Noble Paul,NL
+lucene,This piece of code in SimpleFacets:,NL
+lucene,StatsComponent throws error for single-valued numeric fields.,NL
+lucene,added a while ago KeepWordsFilter,NL
+lucene,if (termInstances == 0) {,NOT
+lucene,According to Wik,NL
+lucene,Fix Version/s: 3.1,NOT
+lucene,I came up with this patch because I have a rather elaborate tokenization scheme using ShingleMatrixFilter. The current solution of mine is to pass a base64 encoded serialized object as field value and use a custom Analyzer that produce the TokenStream. However the tokenization is rather expensive (especially during initial bulk import of my zillions of documents)  so I'd rather do this on my clients as I've got plenty of those but only one Solr.,NL
+lucene,#NAME?,NL
+lucene,All handlers call init() before they could possibly receive any requests.  No requests can hit solr during the limbo period (a-b,NL
+lucene,AU  site/skin/getBlank.js,NOT
+lucene,I noticed in sol,NL
+lucene,dealing with a large data set through better query parsing and,NL
+lucene,fields in the data structure,NL
+lucene,bq. I could,NL
+lucene,...Are there existing practices for giving credit to companies that \sponsor\ development of Solr..,NL
+lucene,lst.add( \thread,NOT
+lucene,--Noble,NL
+lucene,at java.lang.NumberFormatException.forInputString(NumberFormatException.java:61),NOT
+lucene,Ideally,NL
+lucene,The implementation is done such a way to minimize code changes.,NL
+lucene,figured out hte second?,NL
+lucene,http://jakarta.apache.org/httpcomponents/httpclient-3.x/threading.html,NOT
+lucene,Yoni,NL
+lucene,backup,NL
+lucene,Key: SOLR-1514,NOT
+lucene,org.apache.solr.analysis:,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1301?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12828368#action_12828368 ],NOT
+lucene,I'm not sure whether case-sensitiveness(is it a word?) is a bug or not. Anyway,NL
+lucene,<tr>,NOT
+lucene,of the Solr HTTP/XML interface very much.,NL
+lucene,I think the same approach should be taken with XML parsing,NL
+lucene,Patch updated to current trunk. One concrete use case where this is needed is Fieldable implementations that provide different values of tokenStreamValue() and stringValue(,NL
+lucene,anything but the fact that some classes exist in the jar/war (i,NL
+lucene,I have read through the documentation on search components and doc lists and,NL
+lucene,: That's normally fin,NL
+lucene,2009/4/13 Noble Paul a'au<a'!a'?a'3auaEUR a$?aY=<a$?!aY=a$?3aY= <noble.paul@gmail.com>,NOT
+lucene,first given a refrence to \it\,NL
+lucene,the NPE was getting thrown from?,NL
+lucene,But is there any answer when using dismax?,NL
+lucene,current API's.,NL
+lucene,: @@ -30,NOT
+lucene,Ah ... got the beginnings of a diagnosis. The problem appears when the DocSet {{qDocSet}} returned by DocSetHitCollector.getDocSet() -- called at org.apache.solr.search.SolrIndexSearcher:1101 in trun,NL
+lucene,Noble Paul updated SOLR-1153:,NL
+lucene,[junit] Running org.apache.solr.analysis.TestFrenchStemFilterFactory,NOT
+lucene,path after the colon determines the RequestParser?,NL
+lucene,If all fields are store,NL
+lucene,Noble and I have been discussing many of the same things. Prominent topics,NL
+lucene,baked patch and it'd be nice to make it available to users much before six,NL
+lucene,2) Even when /update is mapped to the legacy servle,NL
+lucene,Key: SOLR-1727,NOT
+lucene,\encoding\ dictates the actual character encoding used in the output stream.,NL
+lucene,A [junit] Running org.apache.solr.core.TestJmxIntegration,NOT
+lucene,I should make them all this easy.,NL
+lucene,Issue #2:,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-307?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12513815 ],NOT
+lucene,[javac] Note: /tmp/apache-solr-nightly/src/java/org/apache/solr/common/util/FastInputStream.java uses or overrides a deprecated API.,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-412,NOT
+lucene,probably run int,NL
+lucene,at it.,NL
+lucene,http://host/path?core=core0  [200 OK],NOT
+lucene,users to be able to filter their results based on the calculated distances.\,NL
+lucene,from my \work\ and the lon from my \home\ are actaully a third location.,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1597,NOT
+lucene,public boolean flipAndGet(int index) {,NOT
+lucene,Fields should take in lat/lon points in a single for,NL
+lucene,to be able to be replicate,NL
+lucene,: Another possibility is using init params in the request handler,NL
+lucene,1) The name of the file corresponds with one specific way it can be,NL
+lucene,I'm not convinced there isn't *something* Solr can do to handle this situation better,NL
+lucene,believe that the current javadocs are incorrect on this point.,NL
+lucene,Line: 24,NOT
+lucene,- can be implemented by:,NL
+lucene,http://code.google.com/p/solr-php-client/downloads/list,NOT
+lucene,easier in a weird way),NL
+lucene,: > form  (i assume you tested and verified this isn't happening?),NL
+lucene,(regardless of what order things are loaded in) would be to either...,NL
+lucene,CMS paths in memory.,NL
+lucene,</target>,NOT
+lucene,SOLR-1586.Mattmann.112409.geopointandgeohash.patch.txt,NOT
+lucene,Attachment: SOLR-211-RegexSplitTokenizer.patch,NOT
+lucene,I propose the configuration go into the <mainIndex>  section,NL
+lucene,# Relative paths are supported. They are loaded through SolrResourceLoader.openResource method.,NL
+lucene,example/webapp,NOT
+lucene,general@lucene a while back),NL
+lucene,Highlighter throws null pointer exception when field has termPositions=true,NL
+lucene,Key: SOLR-20,NOT
+lucene,LUCENE-843 adds support for new indexing capabilities using the setRAMBufferSizeMB() method that should significantly speed up indexing for many applications.  To fix thi,NL
+lucene,Add lazy field loading to solr.,NL
+lucene,possible way with this request handler?,NL
+lucene,: + if (resp.getException() == null) {,NOT
+lucene,h5. schema.xml,NOT
+lucene,NOTE: This parameter affects date facet timing only. If there are other areas of a query that rely on 'NOW,NL
+lucene,If used only as a filter,NL
+lucene,AU  site/skin/images/add.jpg,NOT
+lucene,Noble Paul commented on SOLR-1644:,NL
+lucene,the underlying connections are thread safe:,NL
+lucene,XML being involved would be the result of such a refactoring.,NL
+lucene,contrib/javascript/lib/jsdoc/jsdoc-toolkit/templates/solrjs,NOT
+lucene,[junit] Running org.apache.solr.spelling.FileBasedSpellCheckerTest,NOT
+lucene,ScheduledExecutorService: True,NOT
+lucene,-Yonik,NL
+lucene,to use a DIH jar for people who upgrade ... we have to document how to use,NL
+lucene,'ant clean example' is no problem:,NL
+lucene,Integrate code coverage.  Clover / cobertura,NL
+lucene,java.lang.StringCoding$StringDecoder.decode(StringCoding.java:133),NOT
+lucene,We get SOLR updates frequently and since they are large we cannot wait to do a commit at the 15 minute mark using cron. Optimize just takes too long.,NL
+lucene,Lucene index.  I notice the GData protocol supports this:,NL
+lucene,then like to have a goal of putting up an official set of artifacts to,NL
+lucene,A that matched,NL
+lucene,al,NL
+lucene,at org.tmatesoft.svn.core.wc.SVNUpdateClient.doCheckout(SVNUpdateClient.java:325),NOT
+lucene,Priority: Critical,NOT
+lucene,[ https://issues.apache.org/jira/browse/SOLR-84?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12636849#action_12636849 ],NOT
+lucene,return bits.get(doc);,NOT
+lucene,go to upgrade because they are going to have to do it again (that's,NL
+lucene,Reporter: Tomislav Nakic-Alfirevic,NL
+lucene,package junit.framework does not exist,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1614,NOT
+lucene,* ...others ?,NL
+lucene,* TokenizerFactory,NOT
+lucene,[junit] 2008-09-04 08:14:55.726::INFO:  Shutdown hook executing,NOT
+lucene,<str name=\masterUrl\>${master.url}</str>,NOT
+lucene,Incubator to become a Lucene subproject.,NL
+lucene,at all) -- fixed by: Yoniks fix_ruby_output.path applied to the,NL
+lucene,I'm getting:,NL
+lucene,../core/ to find lucene jars,NL
+lucene,http://iharder.sourceforge.net/current/java/base64/api/Base64.html#URL_SAFE,NOT
+lucene,private static final File workDir;,NOT
+lucene,Attachments: SOLR-844.patch,NOT
+lucene,that,NL
+lucene,Attached patch should get us to a good point to tackle some of the related issues.  It updates all code paths (unless i missed one) that put something into SolrConfig.severeErrors so that that code path also explicilty throws the corrisponding exception.,NL
+lucene,On the admin page for replication,NL
+lucene,shouldn't both situations be handled the same way?,NL
+lucene,+ > > > A } finally {,NOT
+lucene,I've included the signatures this time.  If you want to download,NL
+lucene,INFO: ### *** SHARDS len 2,NOT
+lucene,Attachments: fedsearch.patch,NOT
+lucene,at java.io.BufferedInputStream.fill(BufferedInputStream.java:218),NOT
+lucene,<processor class=\com.MyUpdateProcessor\ />,NOT
+lucene,bq.Is there an easy way to get this patched into 1.3.0?,NL
+lucene,<fieldType name=\sint\ class=\solr.SortableIntField\ sortMissingLast=\true\ omitNorms=\true\/>,NOT
+lucene,load core properties from a properties file,NL
+lucene,Priority: Minor,NOT
+lucene,This is related to something I must have only day dreamed,NL
+lucene,+ > A SegmentReader[] sirs2 = getSegmentReaders(core);,NOT
+lucene,larger) set before limiting it by req.getStart() and req.getLimit(,NL
+lucene,<int name=\QTime\>58</int>,NOT
+lucene,0x0805c790 JavaThread \DestroyJavaVM\ [_thread_blocke,NOT
+lucene,int docId = iterator.nextDoc();,NOT
+lucene,For that reason,NL
+lucene,Design by Nicolas Barbay (nicolas@nicolas@sarraux-dessous.ch).,NL
+lucene,dooh -- wrong issue,NL
+lucene,http://localhost:8983/solr/admin/properties?name=java.home,NOT
+lucene,I am working on an SQLUpdatePlugin that needs to set a few fields in,NL
+lucene,chocolate - - cookie,NL
+lucene,Thanks.,NL
+lucene,I could just add the SolrParams parameter to various methods and,NL
+lucene,<field column=\fileWebPath\   regex=\${dataimporter.request.finstalldir}(.*)\ replaceWith=\$1\ sourceColName=\fileAbsolutePath\/>,NOT
+lucene,Key: SOLR-1450,NOT
+lucene,: --- lucene/solr/trunk/src/solrj/org/apache/solr/client/solrj/beans/DocumentObjectBinder.java (original),NOT
+lucene,Oh come on now ... that's not really a fair criticism of the example: there are plenty of legitimate ways to use (some) TokenFilters only at search time and I specifically structured my example to point out potential problems in cases just like that -- Carl was very clear that \if you used FooTokenFilterFactory in an index analyzer you'll need to reindex.\,NL
+lucene,cobertura.jar,NOT
+lucene,+ > > > > > > <formatter classname=\${junit.details.formatter}\ usefile=\false\/>,NOT
+lucene,</similarity>,NOT
+lucene,Still to do:,NL
+lucene,checked in.,NL
+lucene,Determine if prefix,NL
+lucene,modules is compiled. One of the artifacts of the build is a,NL
+lucene,Seems fairly simple for SolrCache to have generics.,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1619?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12786233#action_12786233 ],NOT
+lucene,(but that's to late for config type stuff that needs to happen in,NL
+lucene,noble.paul edited comment on SOLR-561 at 6/2/08 9:23 AM:,NL
+lucene,Key: SOLR-162,NOT
+lucene,have to be refactored to accept param + other stuff that,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1469,NOT
+lucene,i was going to say something like \cleaning up the example should be,NL
+lucene,i+=1,NOT
+lucene,: + <daemon><%=tmbean.getDaemonThreadCount()%></daemon>,NOT
+lucene,it's,NL
+lucene,Facet Index,NL
+lucene,Allow Solr to load index from arbitrary directory in dataDir and Commit point,NL
+lucene,On 2/1/07,NL
+lucene,will pave the way for incorporating Learning Paradigms to SOLR framework.,NL
+lucene,Components: update,NOT
+lucene,<property name='revision'>33</property>  <!-- a basic property -->,NOT
+lucene,* Platform independence,NL
+lucene,replication.,NL
+lucene,Seen the thread as http://www.nabble.com/CoreDescriptor-explanation-and-possible-bug-to19197004.html,NL
+lucene,<!--more stuff goes here-->,NL
+lucene,* CamelCase: timeallowed => timeAllowed?,NOT
+lucene,#NAME?,NL
+lucene,/** An \open\ BitSet implementation that allows direct access to the,NL
+lucene,[javac] Compiling 5 source files to /tmp/apache-solr-nightly/contrib/clustering/build/test-classes,NOT
+lucene,http://localhost:8983/solr/update/add?commitWithin=1234,NOT
+lucene,http://hudson.zones.apache.org/hudson/job/Solr-trunk/ws/trunk/build.xml :443: Tests failed!,NOT
+lucene,Do I have that correct?,NL
+lucene,</target>,NOT
+lucene,\params\:{,NOT
+lucene,Attachments: SOLR-1657.patch,NOT
+lucene,query elevation,NL
+lucene,<commitOnly>true</commitOnly>,NOT
+lucene,Would be nice if single core with the solr.xml also worked,NL
+lucene,http://www.nabble.com/Re%3A-non-committers---branches-in-SVN-p7164568.html,NOT
+lucene,piece - Get the list of highlights from response and then use the,NL
+lucene,Access by name is more important,NL
+lucene,I'll make the modifications in trunk and get back asap.,NL
+lucene,[javac] Note: /tmp/apache-solr-nightly/client/java/solrj/src/org/apache/solr/client/solrj/impl/CommonsHttpSolrServer.java uses or overrides a deprecated API.,NOT
+lucene,org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:,NOT
+lucene,Acctually,NL
+lucene,{code:java},NOT
+lucene,2) Make VariableResolverImpl#TEMPLATE_STRING non-static. Or clear cache on finishing delta-import.,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1768,NOT
+lucene,at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:358),NOT
+lucene,i was thinking the same thing.,NL
+lucene,believe,NL
+lucene,I've enhanced the DisMax QParser plugin to use a pluggable query string re-writer (via subclass extension) instead of hard-coding the logic currently embedded within it (i.e. the escape nearly everything logic). Additionally,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1153?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ],NOT
+lucene,Integer cnt = pset.get( id.toString() );,NOT
+lucene,b2a45000-b2a48000 rwxp b2a45000 00:00 0,NOT
+lucene,different underlying data structures.,NL
+lucene,locallucene and see how far spread it is,NL
+lucene,Attachments: SOLR-81-ngram.patch,NOT
+lucene,confused as to what exactly the imcompatibility is ... could someone open,NL
+lucene,Here is a patch that adds an NGramFilterFactory and EdgeNGramFilterFactory to Solr.,NL
+lucene,Can't we set up the clustering solrconfig to have a different data,NL
+lucene,that calling HttpServletRequest.getInputStream() wasn't safe unless we,NL
+lucene,A user may enter a search such as,NL
+lucene,timesFailed=2,NOT
+lucene,access to multiple cores for a given solr web app (through the,NL
+lucene,<fieldType name=\location\ class=\solr.PointType\ dimension=\2\ subFieldType=\double\/>,NOT
+lucene,public Object clone() {,NOT
+lucene,- increments aren't atomic,NL
+lucene,Name: svn:eol-style,NOT
+lucene,sure how important this is.,NL
+lucene,at hudson.FilePath.writeToTar(FilePath.java:885),NOT
+lucene,SEVERE: An exception or error occurred in the container during the request processing,NL
+lucene,:   logger.debug( \got: \+results.getNumFound() + \ ::,NOT
+lucene,[junit] 2008-02-23 08:13:51.605::INFO:  Shutdown hook complete,NOT
+lucene,: -   rootEntity=\false\,NOT
+lucene,Reporter: Matthew Runo,NL
+lucene,using it?,NL
+lucene,Now I created two request handler,NL
+lucene,Reporter: Joe Calderon,NL
+lucene,[javac] Compiling 1 source file to /tmp/apache-solr-nightly/build/solr,NOT
+lucene,URL: http://issues.apache.org/jira/browse/SOLR-3,NOT
+lucene,-,NOT
+lucene,[jar] Building jar: /tmp/apache-solr-nightly/contrib/dataimporthandler/target/apache-solr-dataimporthandler-1.5-dev.jar,NOT
+lucene,I think we should take a step back here. What is it that you are trying to achieve? There are multiple things that you are trying to address:,NL
+lucene,<tokens>,NOT
+lucene,<field name=\gram3\>let ett ttu tuc uce</field>,NOT
+lucene,SOLR-424,NOT
+lucene,: This works well,NL
+lucene,be greatly appreciated.,NL
+lucene,while user defined classes cannot. Particulary in this case it is pretty bad since this class advertises itself as a collection of utilities,NL
+lucene,"+ assert_equal \<add><doc><field name='title'>A...A<<A$?A-APA1/4AY=</field></doc><doc><field name='title'>A,,A<<A$?A-APA1/4APAY=</field></doc></add>",NOT
+lucene,[clover-report] Loaded results from 142 coverage recordings.,NOT
+lucene,could do map-reduce,NL
+lucene,Tika docs for details.-->,NL
+lucene,[ http://issues.apache.org/jira/browse/SOLR-3?page=comments#action_12375493 ],NOT
+lucene,eliminate resulting indexes so only a subset is considered. This is,NL
+lucene,the array:,NL
+lucene,<int name=\rows\>10</int>,NOT
+lucene,so that range queries work correctly. -->,NL
+lucene,There are numerous calls to deprecated constructors and methods in the code base. This includes deprecations from Solr itsel,NL
+lucene,Committed revision 894301.,NL
+lucene,deployed & integrated,NL
+lucene,The way I understand the javadoc is,NL
+lucene,[ https://issues.apache.org/jira/browse/SOLR-1205?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12722786#action_12722786 ],NOT
+lucene,Reporter: Sachin,NL
+lucene,at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.update(DAVRepository.java:1078),NOT
+lucene,<xs:element type=\xs:int\ name=\startOffset\ maxOccurs=\1\/>,NOT
+lucene,same revision. (so a better chance of a resolution),NL
+lucene,solrconfig.xml}</param-value>,NOT
+lucene,the patch is good,NL
+lucene,** property to override which fieldtype name a field should use (leave the <fieldtype> declaration static),NL
+lucene,deleted chunk.  there's also a large new chunk (which doesn't seem to,NL
+lucene,@@ -20,NOT
+lucene,"INFO: null q=id:1527426&dq=id:\A'ao,\+ 0 2",NOT
+lucene,<searchComponent name=\query\,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-1335,NOT
+lucene,- Console - For development time,NL
+lucene,that it should be fine.,NL
+lucene,A <field column=\plainText\ name=\text\/>,NOT
+lucene,site/skin/menu.js,NOT
+lucene,: +   <td><xsl:apply-templates select=\@end\/></td>,NOT
+lucene,Key: SOLR-687,NOT
+lucene,BitSet secondBitSet = filter.bits(reader);,NOT
+lucene,Ed Summers updated SOLR-101:,NL
+lucene,efficiently implement,NL
+lucene,Reporter: Emmanuel Keller,NL
+lucene,Other similar use cases often requested: multi source federation,NL
+lucene,compile-solrj:,NOT
+lucene,you mean individual values in the field?,NL
+lucene,A [junit] Running org.apache.solr.handler.FieldAnalysisRequestHandlerTest,NOT
+lucene,Attachments: SOLR-672.patch,NOT
+lucene,Facet multi-valued fields via a counting method (like the,NL
+lucene,: I don't think this initial cutover should try to \solve\ how modules,NL
+lucene,features are already in Solr and then maybe consider publishing them first,NL
+lucene,* Looks at various Params to determing if any simple Facet Constraint count,NL
+lucene,This may be a one-of-glitch because of the way SearchComponents get loaded,NL
+lucene,: less important.,NL
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-935,NOT
+lucene,[junit] 2008-03-28 08:14:05.640::INFO:  Shutdown,NOT
+lucene,temporary work directory of a snapshot in progress.  Those temporary,NL
+lucene,Again??,NL
+lucene,[...truncated 2430 lines...],NOT
+lucene,---EMAIL BODY---,NOT
+lucene,geohash and lat/lon fields.,NL
+lucene,are different on different machines).,NL
+lucene,on this particular mini-bus,NL
+lucene,document.add(id=\mydoc,NOT
+lucene,I attached a patch to SOLR-1079 to fix the QueryComponent problem (remove the StringFieldable).,NL
+lucene,attachments. JavaMail is used for mail box related operations like fetching,NL
+lucene,* No need to write fields in data-config if the field name from DB/XML and field-name in schema.xml are the same. This removes a lot of useless verbosity from data-config.xml,NL
+lucene,jre1.6.0_05,NOT
+lucene,joy,NL
+lucene,Kay Kay commented on SOLR-972:,NL
+lucene,Perhaps response and query plugins should be treated as independent case,NL
+lucene,<property name=\java.runtime.version\ value=\1.5.0_06-b05\></property>,NOT
+lucene,Improved Doc on setting env solr/home,NL
+lucene,I don't care if these exist,NL
+lucene,MISC:,NOT
+lucene,URL: https://issues.apache.org/jira/browse/SOLR-66,NOT
+lucene,-When specifying a director,NL
+lucene,On Mar 2,NL
+lucene,if (cmd.optimize) {,NOT
+lucene,Assigned To: Erik Hatcher,NL
+lucene,public static long pop_array(long A[,NOT
+lucene,Key: SOLR-677,NOT
+lucene,----------------------------------------------------------------------------------------------------------,NOT
+lucene,Reporter: Henri Biestro,NL
+lucene,and getting the lock so that it is properly thread safe - but not in,NL
+lucene,perspective,NL
+lucene,[javac] Compiling 388 source files to /tmp/apache-solr-nightly/build/solr,NOT
