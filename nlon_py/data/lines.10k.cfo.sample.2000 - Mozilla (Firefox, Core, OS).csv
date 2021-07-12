@@ -139,7 +139,11 @@
 138,2,nsXULDocument::ContentRemoved
 139,1,1. In nsOfflineCacheUpdate - the #manifest and #dynamic keys were changed to use asciiSpec base
 140,2,!= NULL' failed
+<<<<<<< HEAD
 141,2,#NAME?
+=======
+141,2,=-pretxnchangegroup.renamecase = python:mozhghooks.prevent_case_only_renames.hook
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 142,1,before the User Agent Components are intialized (via InitUserAgentComponents())
 143,1,Two additional comments.
 144,2,e: {
@@ -186,7 +190,11 @@
 185,1,verified in 6/5 build.
 186,1,When i tried to kill the process via command line with taskkill
 187,1,And pressing the Cancel button (which doesn't close the window):
+<<<<<<< HEAD
 188,1,#NAME?
+=======
+188,1,=- Could use some with how this breaks down into engineering bugs beyond those we already have on file
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 189,1,to the beta may allow you to use the web interface.
 190,1,"If we do that, shared-permanent properties with native getter-setter, where we use such to avoid an extra property, can't be used to implement ECMA-specified behavior -- not when there's no way to distinguish native-getter-setter-as-optimization from native-getter-setter-as-dynamic-behavior.  For example, the length property of functions is required to be exposed as a data descriptor.  This patch -- as currently written -- would do that.  I guess it lies for the descriptors that have native getters."
 191,1,Since that event doesn't do batching we should probably implement batching with a WeakMap (e.g. using the document as the key) so we don't show the same error more than once per document.
@@ -383,7 +391,11 @@
 382,1,This was fixed on
 383,1,pushed some separated patch series to try.
 384,2,DLS Version: 1.00.0016.0002
+<<<<<<< HEAD
 385,1,#NAME?
+=======
+385,1,=- works in e10s and non-e10s
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 386,1,"time I've been asked to type in that master password, it never accepts it."
 387,1,and Michael Krax confirmed today (per e-mail) that the iconURL part is basically
 388,1,"I don't understand the sequence of events, actually."
@@ -613,7 +625,11 @@
 612,2,https://hg.mozilla.org/mozilla-central/rev/e7c0ddb5f948
 613,2,"#7  0xb4cecc68 in nsURILoader::OpenURI (this=0xb28ff550, channel=0xb0e84c50, aFlags=0, aWindowContext=<optimized out>)"
 614,2,}
+<<<<<<< HEAD
 615,1,#NAME?
+=======
+615,1,=-    else
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 616,2,REPORT_UNEXPECTED_EOF(PEColorHueEOF);
 617,1,kiran.s@in.ibm.com: would you please attach your changes as a cvs diff?
 618,2,"sharpgen = 0, table = 0x0}, argumentFormatMap = 0x8b39e30, lastMessage = 0x0,"
@@ -679,7 +695,11 @@
 678,2,int frameCount = (s->rate*afFrameCount*4)/afSampleRate;
 679,2,<colgroup>
 680,2,else {
+<<<<<<< HEAD
 681,2,/home/heiher/git/mips64/gecko-dev/js/src/jit/mips64/MacroAssembler-mips64.h:501:9: error: ?€?jsval_layout?€? was not declared in this scope
+=======
+681,2,/home/heiher/git/mips64/gecko-dev/js/src/jit/mips64/MacroAssembler-mips64.h:501:9: error: ?�?jsval_layout?�? was not declared in this scope
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 682,1,"--> When alarm rings, Setting was killed."
 683,2,I/IdleService( 1406): Get idle time: time since reset 1021 msec
 684,1,Sorry but your build is to old (1 year old) and we accept only bugs from the
@@ -818,7 +838,11 @@
 817,1,"In case removal is not deemed safe, the following patch will at least actually allow compilation and operate in the spirit of what the old/obsolete code used to do.  However, this would only be necessary if js::RecalculateStackLimit() (via SetNativeStackQuota() or some other call) isn't done early enough after the JSRuntime object is created."
 818,2,bug 823483 patch 5.
 819,2,"#24 0x00007ff6c90eb10f in XREMain::XRE_main (this=this@entry=0x7ffced2b79a8, argc=argc@entry=1,"
+<<<<<<< HEAD
 820,1,#NAME?
+=======
+820,1,"=- When using non-solid CSD, shadow extents are reported to the window manager."
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 821,1,"1. Have an add-on update available, which gets auto-loaded when Firefox starts up"
 822,2,"@@ +1010,5 @@"
 823,2,-----------------------------------------------------------------
@@ -913,7 +937,11 @@
 912,2,::: tools/profiler/JSStreamWriter.h
 913,1,Why is the mLastNotification-vs-LAST_NOTIFICATION_END comparison here changing from == to !=  ?
 914,2,"@@ +5,5 @@"
+<<<<<<< HEAD
 915,2,#NAME?
+=======
+915,2,=+PRBool
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 916,1,So the rendering is in fact correct.  Just set the top margin on both to 0 if
 917,1,Actual Results:
 918,1,"2. Reset ""media.gmp-manager.lastcheck"" (should read '0')."
@@ -1066,7 +1094,11 @@
 1065,1,release. Hard to tell with no version or target milestone.
 1066,1,joki.
 1067,1,always disabled for me.
+<<<<<<< HEAD
 1068,1,om type ?€?const void**?€? to type ?€?js::gc::Cell**?€? casts away qualifiers
+=======
+1068,1,om type ?�?const void**?�? to type ?�?js::gc::Cell**?�? casts away qualifiers
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1069,2,2. patch for 0.9.4 using the 4.x solution (11/17/01 06:48)
 1070,1,|<----------------Class--------------->|<-----Bytes------>|<----------------Objects---------------->|<--------------References-------------->|
 1071,1,"ditto, won't repeat below. Please U-turn"
@@ -1096,7 +1128,11 @@
 1095,1,Mozilla process should have completely stopped.
 1096,1,Uplift to gaia v2.5
 1097,1,"This is probably the best looking mockup for it, by far: http://www.cl.ly/image/0s390K1M2w2n"
+<<<<<<< HEAD
 1098,1,#NAME?
+=======
+1098,1,=- go menu contains current page and _three_ copies of the homepage.
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1099,2,"node.parentNode.replaceChild(this, node);"
 1100,1,// Remove floatThead when native position:sticky is usable.
 1101,2,https://hg.mozilla.org/mozilla-central/rev/00d5331b08db
@@ -1247,7 +1283,11 @@
 1246,1,I expected it to change the list to roman numerals...
 1247,1,"The song does not play. The play and pause buttons have no functionality and the tile of song is seen as ""Unknown""."
 1248,1,This works too!
+<<<<<<< HEAD
 1249,1,"The patch snippet above ought to make it work again; I'm building right now and will attach it properly for review assuming it does ?€? for now, just consider it a concise way of describing the problem."
+=======
+1249,1,"The patch snippet above ought to make it work again; I'm building right now and will attach it properly for review assuming it does ?�? for now, just consider it a concise way of describing the problem."
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1250,2,User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
 1251,2,464757 INFO TEST-PASS | /tests/dom/indexedDB/test/test_writer_starvation.html | Correct mode - 1 should equal 1
 1252,1,This means that GetPrefSize either 1) it isn't called during the first reflow or
@@ -1475,7 +1515,11 @@
 1474,2,Gecko Version          37.0
 1475,2,}
 1476,2,#1  0x00fcba69 in NS_TableDrivenQI ()
+<<<<<<< HEAD
 1477,1,#NAME?
+=======
+1477,1,=- the sidebar menu button is now displayed if any of the tabs is optional and hidden (even if there is no overflow)
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1478,2,Firmware Date          Wed May 27 04:30:24 EDT 2015
 1479,1,"<p>some <a href=""whatever"" aria-label=""apples"">text</a></p> apparently the wild has forced mvda to read that as ""some apples"" which this proposal would make more tricky."
 1480,1,"Can anyone let us know the process to get support from firefox, if we get any issues/coredumps/bugs in ESR version of firefox."
@@ -1510,7 +1554,11 @@
 1509,2,System JS : ERROR (null):0 - too much recursion
 1510,1,It is based on
 1511,2,line 144]
+<<<<<<< HEAD
 1512,2,#NAME?
+=======
+1512,2,=- (New) Support for ThinkPad T410s Switchable Graphics models.
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1513,1,"if this is a real unexpected failure you should throw or use ok(false, ""makeTag Failed..."
 1514,2,nsBlockFrame::ReflowLine
 1515,1,See other reviews: https://reviewboard.mozilla.org/r/43469/
@@ -1602,7 +1650,11 @@
 1601,1,"hg blames this bug for the following code block, although I can't figure out which patch it's from:"
 1602,1,Steps to Reproduce:
 1603,1,Can someone point me to some info as to how to create and test examples of this?
+<<<<<<< HEAD
 1604,2,#NAME?
+=======
+1604,2,=- Adds NS_MOUSE_PIXEL_SCROLL / DOMMousePixelScroll event type
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1605,2,-----------------------------------------------------------------
 1606,1,What's the MCC & MNC on that SIM card when it's roaming?
 1607,1,wide String API change:
@@ -1789,9 +1841,15 @@
 1788,2,"1   libnspr4.dylib           	0x00fdd7df PR_Poll + 134"
 1789,1,"for explaination,"
 1790,1,(Devanagari : his font name is the same as the name of the script) makes it easy
+<<<<<<< HEAD
 1791,1,#NAME?
 1792,1,reproducing rate:100%
 1793,1,0.256944444
+=======
+1791,1,=- Tested on b2g
+1792,1,reproducing rate:100%
+1793,1,0.256944444444444
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1794,1,You probably want:
 1795,1,"Middle mouse button sometimes opens a new link in a tab without switching to that tab(the behavior I have set), other times it will switch to the new tab without any intervention."
 1796,1,do you have an opinion about the bridge that is implemented in this patch in order to let Gaia control the x/y possible overscroll ?
@@ -1812,7 +1870,11 @@
 1811,1,Please don't forget that logging for the NSPR code must be set via NSPR_LOG_MODULES and NSPR_LOG_FILE (different path than MOZ_LOG_FILE!) vars.  Those still apply for NSPR and it won't change!
 1812,1,(attachment 281576).
 1813,2,Build Identifier: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.8b4) Gecko/20050802 Firefox/1.0+
+<<<<<<< HEAD
 1814,1,3. when you see a pic you like open it in new windows(I don?€?t know how tab would
+=======
+1814,1,3. when you see a pic you like open it in new windows(I don?�?t know how tab would
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1815,2,"#7  0x4027dd75 in nsBlockFrame::ReflowBlockFrame (this=0x82358c0,"
 1816,1,This is the used code:
 1817,1,"are already a couple of caveats with this patch (libIDL.h), I really want to"
@@ -1922,7 +1984,11 @@
 1921,1,"plain Windows buttons, so they *do* react to themes). The second I enter a page"
 1922,2,Gecko Revision         https://hg.mozilla.org/mozilla-central/rev/42afc7ef5ccb
 1923,2,Firefox/1.4 ID:2005092603
+<<<<<<< HEAD
 1924,1,#NAME?
+=======
+1924,1,=- tab opened in background with url
+>>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1925,1,"Then 'background-attachment: fixed;', this bug is reproduced too."
 1926,1,(oops)
 1927,1,"// this frame's coordinate system, which means mContentArea.x =="
