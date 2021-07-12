@@ -1,26 +1,18 @@
 """Machine learning models for nlon-py."""
-<<<<<<< HEAD
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import (RandomizedSearchCV, cross_val_score,
                                      train_test_split)
-=======
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import KFold, cross_val_score
->>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
-<<<<<<< HEAD
 from nlon_py.data.make_data import get_category_dict
 from nlon_py.features import (Character3GramsForTest, ComputeFeatures,
                               ConvertFeatures, TriGramsAndFeatures)
 
-=======
->>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 names = ["Nearest Neighbors", "Linear SVM",
          "Decision Tree", "Random Forest", "Neural Net",
          "Naive Bayes"]

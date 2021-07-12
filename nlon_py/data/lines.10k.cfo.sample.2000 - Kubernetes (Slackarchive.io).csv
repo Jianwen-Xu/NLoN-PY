@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿ID,Class,Text
-=======
-ID,Class,Text
->>>>>>> e89b9f91a8c615791562fd339e67b2e83b5e7837
 1,2,https://kubernetes.io/docs/concepts/services-networking/service/
 2,2,kubectl get pods --all-namespaces -a
 3,1,does kubectl delete pod busybox work?
