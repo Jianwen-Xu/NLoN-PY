@@ -1,5 +1,6 @@
 import os
-
+import string
+from typing import Dict
 import numpy as np
 import pandas as pd
 from joblib import dump, load
@@ -13,8 +14,8 @@ vecfile = os.path.join(pwd_path, 'data/default_vectorizer.joblib')
 stop_words_list = loadStopWords()
 
 
-def preprocess(text):
-    vectorizer = CountVectorizer()
+def preprocess(text, tokenizer=None):
+    vectorizer = CountVectorizer(tokenizer=tokenizer)
     analyze = vectorizer.build_analyzer()
     result = []
     for x in text:
@@ -27,7 +28,8 @@ trigram_vectorizer = CountVectorizer(ngram_range=(
 
 
 def Character3Grams(text):
-    data = pd.DataFrame.sparse.from_spmatrix(trigram_vectorizer.fit_transform(text))
+    data = pd.DataFrame.sparse.from_spmatrix(
+        trigram_vectorizer.fit_transform(text))
     dump(trigram_vectorizer, vecfile)
     return data
 
@@ -37,8 +39,65 @@ def Character3GramsForTest(text):
     return vectorizer.transform(text)
 
 
+class Features:
+    def __init__(self):
+        self.charCount = lambda x: len(x)
+        self.wordCount = lambda x: len(x.split())
+        self.stopWords = lambda x, y: len([word for word in preprocess(
+            x, tokenizer=y) if word in preprocess(stop_words_list)])
+        self.Tokenize1 = lambda x: x.split()
+        self.Tokenize2 = None
+
+    def CapsRatio(self, text):
+        return len([c for c in text if c.isupper()]) / self.charCount(text)
+
+    def SpecialCharsRatio(self, text):
+        return len([c for c in text if c in string.punctuation]) / self.charCount(text)
+
+    def NumbersRatio(self, text):
+        return len([c for c in text if c.isnumeric()]) / self.charCount(text)
+
+    def AverageWordLength(self, text):
+        return self.charCount(text) / self.wordCount(text)
+
+    def StopwordsRatio1(self, text):
+        return self.stopWords(text, self.Tokenize1) / self.wordCount(text)
+
+    def StopwordsRatio2(self, text):
+        return self.stopWords(text, self.Tokenize2) / self.wordCount(text)
+
+    def LastCharCode(self, text):
+        return 1 if (text.endswith((')', '{', ';')) and not(text.endswith((':-)', ';-)', ':)', ';)', ':-(', ':(')))) else 0
+
+    def LastCharNL(self, text):
+        return 1 if text.endswith(('.', '!', '?', ':', ',')) else 0
+
+    def First3CharsLetter(self, text):
+        return len([c for c in text.replace(' ', '')[:3] if c.isalpha()])
+
+    def Emoticons(self, text):
+        return len([c for c in [':-)', ';-)', ':)', ';)', ':-(', ':('] if c in text])
+
+    def StartWithAt(self, text):
+        return 1 if text.lstrip().startswith('@') else 0
+
+
 def FeatureExtraction(text):
-    return pd.DataFrame(text)
+
+    features = Features()
+    features_dict = {'ratio.caps': features.CapsRatio,
+                     'ratio.specials': features.SpecialCharsRatio,
+                     'ratio.numbers': features.NumbersRatio,
+                     'length.words': features.AverageWordLength,
+                     'stopwords': features.StopwordsRatio1,
+                     'stopwords2': features.StopwordsRatio2,
+                     'last.char.code': features.LastCharCode,
+                     'last.char.nl': features.LastCharNL,
+                     'first.3.chars.letters': features.First3CharsLetter,
+                     'emoticons': features.Emoticons,
+                     'first.char.at': features.StartWithAt}
+
+    return ComputeFeatures(text, features_dict)
 
 
 def ConvertFeatures(data):
@@ -52,9 +111,14 @@ def ConvertFeatures(data):
 def ComputeFeatures(text, features):
     if callable(features):
         return features(text)
-    elif isinstance(features, list):
-        return [feature(text) for feature in features if callable(features)]
+    elif isinstance(features, dict):
+        df = pd.DataFrame(text)
+        df_out = pd.DataFrame()
+        for name, feature in features.items():
+            if callable(feature):
+                df_out[name] = df.apply(lambda row: feature(row[0]), axis=1)
+        return df_out
 
 
 def TriGramsAndFeatures(text):
-    return pd.concat([Character3Grams(text), FeatureExtraction(text)])
+    return pd.concat([Character3Grams(text), FeatureExtraction(text)], axis=1)
