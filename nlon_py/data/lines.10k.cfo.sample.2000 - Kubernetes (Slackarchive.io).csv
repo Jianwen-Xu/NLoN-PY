@@ -17,14 +17,14 @@
 16,1,okay strangely that worked
 17,1,An ingress is a resource used by kubernetes to indicate a configuration for inbound traffic. An ingress controller is a thing that runs inside of kubernetes and directs traffic based on the ingress resources that have been created.
 18,2,Max replicas: 15
-19,1,"Right, this exist, but when i put traefik-web-ui.kube-system in browser show DNS_PROBE_FINISHED_NXDOMAIN"
-20,2,"Client Version: version.Info{Major:1, Minor:8, GitVersion:v1.8.1, GitCommit:f38e43b221d08850172a9a4ea785a86a3ffa3b3a, GitTreeState:clean, BuildDate:2017-10-11T23:27:35Z, GoVersion:go1.8.3, Compiler:gc, Platform:linux/amd64} Error from server (Forbidden): unknown"
+19,5,"Right, this exist, but when i put traefik-web-ui.kube-system in browser show DNS_PROBE_FINISHED_NXDOMAIN"
+20,3,"Client Version: version.Info{Major:1, Minor:8, GitVersion:v1.8.1, GitCommit:f38e43b221d08850172a9a4ea785a86a3ffa3b3a, GitTreeState:clean, BuildDate:2017-10-11T23:27:35Z, GoVersion:go1.8.3, Compiler:gc, Platform:linux/amd64} Error from server (Forbidden): unknown"
 21,1,"Any chance I can sneak a look at itI was tryna think about that earlier, but I'm not sure where to begin."
 22,1,Kubernetes
-23,2,8h 12m 3 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 4
+23,5,8h 12m 3 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 4
 24,2,name: my-app
 25,1,"with service is impossible ? because when I use node ip, load balance not work, for example"
-26,1,what is -l for?
+26,5,what is -l for?
 27,1,"Hi. I have pods with multiple containers (app, http proxy, sql proxy). When pod is terminated (for rolling update for example), the http proxy gracefully stops. But after it stops the other containers not always are able to do it and just stuck around for whole grace period (30s). Is it possible to force kill other containers when one of the containers stops?"
 28,1,so it must use encapsulation then?
 29,1,"since the file is being mounted into the container, how should i wait until everything is settle, then run the command?"
@@ -32,7 +32,7 @@
 31,1,@U7MP7D5EV Can you provide the full output of the describe command?
 32,1,it's set to 1.1
 33,1,"hm, manual provisioning is probably a cause of problem... I'll take a closer look, @lukas.dolezal thanks"
-34,1,"Ok, another issue now. The service that I have in my yaml file got created while the deployment was failing. Now when I try to create the whole thing again, kubectl tells me Error from server (AlreadyExists): error when creating kube-test-image.yaml: services foo-test already exists"
+34,6,"Ok, another issue now. The service that I have in my yaml file got created while the deployment was failing. Now when I try to create the whole thing again, kubectl tells me Error from server (AlreadyExists): error when creating kube-test-image.yaml: services foo-test already exists"
 35,1,ok you are exposing nginx to port 80 in the worker node IP address
 36,2,ingress.kubernetes.io/ssl-passthrough: true
 37,1,I have the following deployment:
@@ -42,11 +42,11 @@
 41,2,namespace: default
 42,2,namespace: app
 43,1,"At that point, you'd have to use the external IP/hostname for the desired cluster/service."
-44,2,"ImageGCFailed (combined from similar events): wanted to free 17473497497 bytes, but freed 0 bytes space with errors in image deletion: [rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 1d78bc06c4ab (must be forced) - image is being used by stopped container d1ff473beb37, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete a65a923e4aef (must be forced) - image is being used by stopped container 89e9555087f7, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 3e88bee4496f (must be forced) - image is being used by stopped container df64f142b1bd, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 7daecc4456f7 (must be forced) - image is being used by stopped container c4d65d28d952, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 2d696327ab2e (cannot be forced) - image has dependent child images]"
-45,1,"@roffe, insecure-skip-tls-verify: true , it is just when you use TLS+token, isn't it?"
+44,3,"ImageGCFailed (combined from similar events): wanted to free 17473497497 bytes, but freed 0 bytes space with errors in image deletion: [rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 1d78bc06c4ab (must be forced) - image is being used by stopped container d1ff473beb37, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete a65a923e4aef (must be forced) - image is being used by stopped container 89e9555087f7, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 3e88bee4496f (must be forced) - image is being used by stopped container df64f142b1bd, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 7daecc4456f7 (must be forced) - image is being used by stopped container c4d65d28d952, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 2d696327ab2e (cannot be forced) - image has dependent child images]"
+45,5,"@roffe, insecure-skip-tls-verify: true , it is just when you use TLS+token, isn't it?"
 46,1,sorry
 47,1,you've created a definition for where the traffic should go but nothing is being done with that traffic
-48,1,"Hello guys, Im reading this https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/ , is that repo still valid to fetch the latest kubenetes release 1.8?"
+48,5,"Hello guys, Im reading this https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/ , is that repo still valid to fetch the latest kubenetes release 1.8?"
 49,1,You can just put both hosts in
 50,1,In your kube config file try to base64 decode certificate-authoririty
 51,1,What's up guys. You know how when you do kubectl get pods you get something that looks like:
@@ -58,17 +58,17 @@
 57,1,"the count, if at all"
 58,1,Have you tried rook?
 59,1,not hard
-60,1,"kdockery, https://bpaste.net/show/5ee3626fbba7 here's what I have! The Endpoint still points to 10.254.0.1, which is the svc/kubernetes (I pasted the description of that one as well)"
+60,5,"kdockery, https://bpaste.net/show/5ee3626fbba7 here's what I have! The Endpoint still points to 10.254.0.1, which is the svc/kubernetes (I pasted the description of that one as well)"
 61,1,Interesting.
 62,1,My config file has been updated to my namespace
 63,2,resources:
 64,1,"huh. okay, I'll give that a shot. I'd have thought the online validator would have picked that up. thanks!"
 65,2,~~~ spec: containers: - image: gcr.io/my-project/my-app:latest name: my-app securityContext: privileged: true capabilities: add: - SYS_ADMIN lifecycle: postStart: exec: command: - sh - -c - > su www-root
-66,1,"I see, what makes your dev env so big? is it the amount of services/deployments/pods/containers or data or?"
+66,5,"I see, what makes your dev env so big? is it the amount of services/deployments/pods/containers or data or?"
 67,1,"don't wake me up at 2AM if, by the time I log in, everything has recovered."
 68,2,storage: 20Gi
 69,1,and have the contents of foo as a file from the config maap in a pod ?
-70,2,ERROR: logging before flag.Parse: W1026 21:48:02.659312 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:33876->127.0.0.1:53: read: connection refused
+70,4,ERROR: logging before flag.Parse: W1026 21:48:02.659312 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:33876->127.0.0.1:53: read: connection refused
 71,2,nginx
 72,1,@U7N4JEF9U change it to 'cgroupfs' as docker is using that driver
 73,1,"not sure I can tell you how to debug the binary kube-proxy, but I've seen those responses while the containers in the relevant Pod are still starting up. Double check the state of the pod with kubectl get pods or kubectl describe pod <podname> to make sure the containers are fully operational and in the state Running. Until they're set up, this error could occur simply because kube-proxy can't make the connection over the internal Pod network in your cluster."
@@ -81,22 +81,22 @@
 80,1,@kdockery Should that work with a curl request?
 81,2,#NAME?
 82,2,https://gist.github.com/mikejk8s/97322f4314fe4f89d62fb4f79fffa1aa
-83,2,"error: error validating nginxbuyflow-servicenewnodeport.yml: error validating data: field spec.ports[0].port for v1.ServicePort is required; if you choose to ignore these errors, turn validation off with --validate=false"
+83,7,"error: error validating nginxbuyflow-servicenewnodeport.yml: error validating data: field spec.ports[0].port for v1.ServicePort is required; if you choose to ignore these errors, turn validation off with --validate=false"
 84,1,"ah crud. Thank you, apologies."
-85,1,@mario for namespaces I just use -n <namespace> in my commands
+85,5,@mario for namespaces I just use -n <namespace> in my commands
 86,2,user: client-certificate-data: <base64-encoded-cert> client-key-data: <base64-encoded-key>
 87,1,you're welcome
 88,2,kubectl version --short
 89,1,are you mounting that volume the same way as the emptyDir?
 90,2,readinessProbe:
 91,1,"We've just added a node to our cluster. We've now got 1 Master 2 nodes, (I'm still trying to get around to HA......Asking for additional resources is like trying to bleed a rock.) Master and Node 1 have 2TB RAID 10 Disks, and 32GB Ram. Node 2, which I just added this week has 2TB RAID 10 Disks and 64GB ram."
-92,1,"@U7P7RBJEA hmm that should do the trick$ kubectl get svc --namespace kube-system | grep traefik traefik-ingress-service NodePort 10.233.54.87 <none> 80:32077/TCP,8080:30175/TCP 29d traefik-web-ui ClusterIP 10.233.52.169 <none> 80/TCP 29d $ curl -L 10.233.52.169:80 <!doctype html> <html ng-app=traefik>"
-93,2,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.999680 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54068: remote error: tls: bad certificate
+92,5,"@U7P7RBJEA hmm that should do the trick$ kubectl get svc --namespace kube-system | grep traefik traefik-ingress-service NodePort 10.233.54.87 <none> 80:32077/TCP,8080:30175/TCP 29d traefik-web-ui ClusterIP 10.233.52.169 <none> 80/TCP 29d $ curl -L 10.233.52.169:80 <!doctype html> <html ng-app=traefik>"
+93,4,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.999680 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54068: remote error: tls: bad certificate
 94,1,@masteinhauser You want -> @liggitt
-95,1,@danb https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ may help
+95,5,@danb https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ may help
 96,2,kris-mbp:virtualbox-cluster kris$ cat pv-test.yaml
 97,2,"/usr/sbin/nginx,-s,quit"
-98,1,"thx a lot folks, it workedI read thro the docs and they had mentioned that entrypoint is equivalent to command in kubernetes and since docker run -it --entrypoint /bin/bash worked, I assumes it was correct"
+98,5,"thx a lot folks, it workedI read thro the docs and they had mentioned that entrypoint is equivalent to command in kubernetes and since docker run -it --entrypoint /bin/bash worked, I assumes it was correct"
 99,1,What is the kube-test-image running?
 100,2,gcloud container clusters get-credentials $CLUSTER_NAME_STG
 101,1,"@U7L73A2RE FYI, I just checked the docs on what you stated and it sounds like that shouldn't be allowed, but it definitely seems like it could be based around the ClusterRole scope versus a RoleBinding scope"
@@ -104,40 +104,40 @@
 103,1,@3molo Hi Mate How I can do that?
 104,1,The most filled disk is 83%. still 20G free
 105,2,root 560 0.0 0.2 34424 2796 ? R+ 16:59 0:00 ps aux
-106,1,@carldanley its a bug in the doc. should be /nginx-ingress-controller --version
+106,5,@carldanley its a bug in the doc. should be /nginx-ingress-controller --version
 107,1,"@U7Q9UM449 Hmm I've not tried connecting with Wifi Adapters - not the best way of doing it imo. Hardwired ethernet connectors will give you the best internet speeds, and unless you have a fool in your office, they won't be unplugged."
 108,1,"Yeah not hard, just not super dynamic. I think I can do some bash foo to automate most of it though"
-109,2,ERROR: logging before flag.Parse: W1026 21:48:07.659838 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57985->127.0.0.1:53: read: connection refused
-110,2,E1026 22:03:50.476932 1 reflector.go:199] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.210.0.1:443/api/v1/endpoints?resourceVersion=0: dial tcp 10.210.0.1:443: i/o timeout
+109,4,ERROR: logging before flag.Parse: W1026 21:48:07.659838 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57985->127.0.0.1:53: read: connection refused
+110,4,E1026 22:03:50.476932 1 reflector.go:199] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.210.0.1:443/api/v1/endpoints?resourceVersion=0: dial tcp 10.210.0.1:443: i/o timeout
 111,1,In your kube-apiserver have you setup client-ca-file?
-112,1,So what I did is added /etc/systemd/system/docker.service.d/docker-thinpool.conf --exec-opt native.cgroupdriver=systemd Then Restart Docker Deamon Then reset kubeadm then fire kubeadm init
+112,5,So what I did is added /etc/systemd/system/docker.service.d/docker-thinpool.conf --exec-opt native.cgroupdriver=systemd Then Restart Docker Deamon Then reset kubeadm then fire kubeadm init
 113,1,"heh, newbie here, sorry"
-114,1,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start.To debug that, I thought I'll override the entrypoint thro kubernetes spec by command: [/bin/bash]. But still crashes.....am I doing it the right way?"
+114,5,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start.To debug that, I thought I'll override the entrypoint thro kubernetes spec by command: [/bin/bash]. But still crashes.....am I doing it the right way?"
 115,1,ohhh
-116,2,starting container process caused \\\exec: \\\\\\\/bin/sh\\\\\\\: stat /bin/sh: no such file or directory\\\\\n\
+116,7,starting container process caused \\\exec: \\\\\\\/bin/sh\\\\\\\: stat /bin/sh: no such file or directory\\\\\n\
 117,2,--pod-manifest-path=/etc/kubernetes/manifests \
 118,1,"@likered bash is not in the container,.. try sh"
 119,1,"My cluster have 1 master and 2 nodes, but in local network"
 120,1,"@pl @walteraa uh i expected it wouldn't be so complex (vs simple, not hard)."
 121,2,https://kubernetes.io/docs/concepts/cluster-administration/networking/
-122,1,"I've just added a new namespace, and tried to helm install stuff there, and got the error Error: release jenkins-stg failed: User system:serviceaccount:kube-system:default cannot get namespaces in the namespace jenkins. (get namespaces jenkins). I've looked through the RBAC docs, but don't see anything about needing to add perms to the default role for new namespaces. Has anyone run into this before?"
+122,7,"I've just added a new namespace, and tried to helm install stuff there, and got the error Error: release jenkins-stg failed: User system:serviceaccount:kube-system:default cannot get namespaces in the namespace jenkins. (get namespaces jenkins). I've looked through the RBAC docs, but don't see anything about needing to add perms to the default role for new namespaces. Has anyone run into this before?"
 123,2,limits:
-124,1,"hmm, Error from server: Get https://sugi:10250/containerLogs/default/my-nginx-217742694-7xh18/my-nginx: dial tcp 127.0.1.1:10250: getsockopt: connection refused"
+124,7,"hmm, Error from server: Get https://sugi:10250/containerLogs/default/my-nginx-217742694-7xh18/my-nginx: dial tcp 127.0.1.1:10250: getsockopt: connection refused"
 125,1,Arghhh... not exactly the automated approach I was hoping for
 126,2,lifecycle:
 127,1,this is the sync tool
 128,2,FSType: ext4
-129,1,"with curl on :5000 I get connection refused, and :31974 waits"
-130,1,Try looking at the logs for the pod with kubectl logs my-nginx-217742694-7xh18
-131,1,What are everyones thoughts on https://www.theverge.com/2017/10/25/16538834/amazon-key-in-home-delivery-unlock-door-prime-cloud-cam-smart-lock
-132,1,"Hello everybody, did someone face hanging while k8s starting when you disconnect Ethernet cable on a master Node? If I connect the Ethernet cable and start the machine, everything is ok. I'm running on centos 7.4 and k8s 1.8.1. Looking at logs I found ca-registration failure and etcd container is down. Any suggestion? Tks in adavamce"
+129,5,"with curl on :5000 I get connection refused, and :31974 waits"
+130,5,Try looking at the logs for the pod with kubectl logs my-nginx-217742694-7xh18
+131,5,What are everyones thoughts on https://www.theverge.com/2017/10/25/16538834/amazon-key-in-home-delivery-unlock-door-prime-cloud-cam-smart-lock
+132,7,"Hello everybody, did someone face hanging while k8s starting when you disconnect Ethernet cable on a master Node? If I connect the Ethernet cable and start the machine, everything is ok. I'm running on centos 7.4 and k8s 1.8.1. Looking at logs I found ca-registration failure and etcd container is down. Any suggestion? Tks in adavamce"
 133,1,I seem many file for docker.service
-134,1,"Ty, yeah I noticed that. Was hoping to avoid creating multiple files. This way I could create an empty template file for people who manage secrets and I don't have to show them how to base64 encode the values (I'd like the --from-file option do it for me)"
-135,1,"You can use JDBC like jdbc:postgresql://pgmaster.default.svc.cluster.local:5432/dbname to connect in the postgres pod, but the POD A *will not able* to perform a ICMP request to Pod B if the Pod B through the service."
+134,5,"Ty, yeah I noticed that. Was hoping to avoid creating multiple files. This way I could create an empty template file for people who manage secrets and I don't have to show them how to base64 encode the values (I'd like the --from-file option do it for me)"
+135,5,"You can use JDBC like jdbc:postgresql://pgmaster.default.svc.cluster.local:5432/dbname to connect in the postgres pod, but the POD A *will not able* to perform a ICMP request to Pod B if the Pod B through the service."
 136,1,I see
 137,1,The contrib one. I think it's miles better. (And at least in my experience I haven't had to change any config for WebSockets to work.)
-138,1,"https://kubernetes.io/docs/concepts/cluster-administration/networking/#summary has a good overview - in short, k8s assumes that all pods have an IP and all pod IPs are routable from the whole cluster. The various networking options can make this happen in different ways."
-139,1,"kdockery, maybe you can help with another issue that I pasted earlier then, https://bpaste.net/show/321a1140ae59 :-deg"
+138,5,"https://kubernetes.io/docs/concepts/cluster-administration/networking/#summary has a good overview - in short, k8s assumes that all pods have an IP and all pod IPs are routable from the whole cluster. The various networking options can make this happen in different ways."
+139,5,"kdockery, maybe you can help with another issue that I pasted earlier then, https://bpaste.net/show/321a1140ae59 :-deg"
 140,1,@kwladyka You should use jq lib
 141,1,"btw u were right. k8s' command is docker's entrypoint, but u probably were missing the cmd itself"
 142,1,how do you configure them then? Kubes allows you to attach PD manually in pod
@@ -147,19 +147,19 @@
 146,1,"@liggetm oh yay, happy to chat wherever makes the most sense. Happy to discuss use-case."
 147,1,neither*
 148,2,pid /run/nginx.pid;
-149,2,22h 1s 9 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 15; reason: Current number of replicas above Spec.MaxReplicas
+149,4,22h 1s 9 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 15; reason: Current number of replicas above Spec.MaxReplicas
 150,1,I did what you told me but it seems it didn't work either
 151,1,"hi guys, I'm trying to increase the size of an EBS volume. Anyone have any tips on how I should go about copying over existing data to a new larger EBS volume and then changing the PVC to use the new larger volume?"
 152,1,"@dastan i believe it, or kubelet may try to enable the module"
 153,1,"I need to use prometheus for that so I guess I have to change the port to 9090, right?"
-154,1,you can try simple docker run imagename bash -c /tmp/setup.sh
-155,1,"Guys, I'm at my wits end. I've mounted local storage as (/app/session) and I can mkdir a folder (/app/session/bar), but not change its permission and I don't have permission to the folder I just made, so I can't make another sub-folder (/app/session/bar/foo). *mounted as so:* $ minikube mount /sdl/mount:/mount-9p *container spec:* volumeMounts: - mountPath: /app/session name: session-volume *deployment spec* volumes: - name: session-volume hostPath: path: /mount-9p/session *Dockerfile seems correct for every container* RUN [mkdir, -p, /app/session, /app/common] RUN [chown, -R, daemon:daemon, /app/session, /app/common] VOLUME [/app/session, /app/common] *Permissions are correct*sdl git:(master)ls -l /sdl/mount total 0 drwxrwxrwx 10 rajbains wheel 340 Oct 26 15:25 common drwxrwxrwx 11 rajbains wheel 374 Oct 26 15:06 session drwxrwxrwx 3 rajbains wheel 102 Oct 24 18:04 user-data"
+154,5,you can try simple docker run imagename bash -c /tmp/setup.sh
+155,5,"Guys, I'm at my wits end. I've mounted local storage as (/app/session) and I can mkdir a folder (/app/session/bar), but not change its permission and I don't have permission to the folder I just made, so I can't make another sub-folder (/app/session/bar/foo). *mounted as so:* $ minikube mount /sdl/mount:/mount-9p *container spec:* volumeMounts: - mountPath: /app/session name: session-volume *deployment spec* volumes: - name: session-volume hostPath: path: /mount-9p/session *Dockerfile seems correct for every container* RUN [mkdir, -p, /app/session, /app/common] RUN [chown, -R, daemon:daemon, /app/session, /app/common] VOLUME [/app/session, /app/common] *Permissions are correct*sdl git:(master)ls -l /sdl/mount total 0 drwxrwxrwx 10 rajbains wheel 340 Oct 26 15:25 common drwxrwxrwx 11 rajbains wheel 374 Oct 26 15:06 session drwxrwxrwx 3 rajbains wheel 102 Oct 24 18:04 user-data"
 156,2,config:256
-157,1,I have : kube-system kube-controller-manager-gm2-master1 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master2 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master3 1/1 Running 0 1d
+157,5,I have : kube-system kube-controller-manager-gm2-master1 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master2 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master3 1/1 Running 0 1d
 158,1,"yes, restartPolicy is done at the pod layer, not the deployment or job layer."
 159,1,"wow that is not bad at all, thanks for sharing. Which technologies do these projects rely on and is it ok to assume you are using a pre build reload experience when changing code to have this?"
 160,1,Anyone know if there's a way to contact the steering committee?
-161,1,"if u run /bin/sh I don't think the pod will stay alive, should it?"
+161,5,"if u run /bin/sh I don't think the pod will stay alive, should it?"
 162,1,try launching it via docker without kube
 163,1,"@U7N4JEF9U Either change cgroup driver of docker to systemd, or better change kubelet cgroup driver to cgroupfs"
 164,1,what if node fails on which this bot is running? it sends afterwards?
@@ -170,9 +170,9 @@
 169,1,well crap. I tried
 170,2,kris-mbp:virtualbox-cluster kris$ kubectl --kubeconfig=./config apply -f pv-test.yaml
 171,1,higher than 30000 actualkly
-172,2,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.858324 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54062: remote error: tls: bad certificate
+172,4,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.858324 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54062: remote error: tls: bad certificate
 173,1,I don't think you should have to manually change that. Networking should handle the IP allocation automatically.
-174,2,ERROR: logging before flag.Parse: W1026 21:48:07.659839 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57988->127.0.0.1:53: read: connection refused
+174,4,ERROR: logging before flag.Parse: W1026 21:48:07.659839 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57988->127.0.0.1:53: read: connection refused
 175,1,"yeah, can define role cluster-wide with a ClusterRole, grant it locally with a RoleBinding"
 176,2,tolerations:
 177,1,@walteraa does the firewall need to know about the overlay network used for k8s? or does it encapsulate?
@@ -180,12 +180,12 @@
 179,1,"Hmm, then the port would be fixed, that may be the answer"
 180,1,hello is posible upgrade kubernetes cluster in Centos 7 1.5 baremetal to 1.6???
 181,1,"No, you're totally wrong."
-182,1,"@U7MJLP5CL, you can see full list of supported annotations here: https://github.com/kubernetes/kubernetes/blob/v1.8.0/pkg/cloudprovider/providers/aws/aws.go#L83"
+182,5,"@U7MJLP5CL, you can see full list of supported annotations here: https://github.com/kubernetes/kubernetes/blob/v1.8.0/pkg/cloudprovider/providers/aws/aws.go#L83"
 183,1,does anyone here has implemeted kubernetes federation already ?
 184,1,either i am blind or i dont understand the concept of k8s I wrote a deployment.yaml that should consist two different containers that are not on the same pod. but both are started in the same pod. what am i getting wrong here?
 185,1,fixed it
 186,1,hello. am i able to use kubectl to get/edit ExternalAdmissionHookConfigurations?
-187,2,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: Error: failed to run Kubelet: could not init cloud provider aws: error finding instance i-0d01f6f07e33605e3: error listing AWS instances: \RequestError: send request failed\\ncaused by: Post https://ec2.us-east-1.amazonaws.com/: dial tcp: lookup ec2.us-east-1.amazonaws.com on [::1]:53: read udp [::1]:36716->[::1]:53: read: connection refused\
+187,4,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: Error: failed to run Kubelet: could not init cloud provider aws: error finding instance i-0d01f6f07e33605e3: error listing AWS instances: \RequestError: send request failed\\ncaused by: Post https://ec2.us-east-1.amazonaws.com/: dial tcp: lookup ec2.us-east-1.amazonaws.com on [::1]:53: read udp [::1]:36716->[::1]:53: read: connection refused\
 188,2,http:
 189,1,"but svc will expose internal clusterIP, not ?"
 190,1,"When i google it, the only solution people seem to provide is increasing ELB timeout. Even after increasing it, i see the above error. Any suggestions of how to connect to etcd with flannel? I am able to curl from the worker node without issues"
@@ -194,10 +194,10 @@
 193,1,gimme a sec
 194,2,kind: PersistentVolumeClaim
 195,1,You must install a pod network add-on so that your pods can communicate with each other. could that be a cause?
-196,2,i/o timeout
+196,4,i/o timeout
 197,1,"Ahhh, good question. Let me see what I can find."
 198,1,Self signed in my case
-199,2,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.243788 1194 tags.go:76] AWS cloud filtering on ClusterID: test178
+199,4,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.243788 1194 tags.go:76] AWS cloud filtering on ClusterID: test178
 200,1,Deployment looks at the Pod api object
 201,1,"@U7Q1KJCG0 Does your manifest have the kind: PersistentVolume line uncommented, and without any dashes in front of it?"
 202,1,They don't have the same ip
@@ -206,7 +206,7 @@
 205,1,kubernetes cluster
 206,1,"gotchya, okay thanks for clarifying, that makes sense now."
 207,1,does not list them
-208,1,"Guys, is there any reference about cron jobs schedule time? In the official documentation uses schedule: */1 * * * * and tells that it schedule the job each 1 min"
+208,5,"Guys, is there any reference about cron jobs schedule time? In the official documentation uses schedule: */1 * * * * and tells that it schedule the job each 1 min"
 209,1,I decided to write this post after struggling to find documentation on how to write a Kubernetes operator that went through the code with...
 210,1,but some of the docks on ingress only we can assign hostname for redirection backend paths
 211,1,after 1.12.6 Docker also changed how nat rules are generated so you would guaranteed have trouble
@@ -215,16 +215,16 @@
 214,1,"a python flask app, nothing interesting"
 215,1,"i *do* build the containers, but it doesn't really matter"
 216,2,root 1 0.0 0.6 200856 6480 ? Ssl 16:55 0:00 ./price-project
-217,2,Error from server (AlreadyExists): error when creating cockroachdb1.yaml: statefulsets.apps cockroachdb already exists bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl get statefulset No resources found. bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl de
+217,4,Error from server (AlreadyExists): error when creating cockroachdb1.yaml: statefulsets.apps cockroachdb already exists bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl get statefulset No resources found. bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl de
 218,2,user root
 219,1,@3molo
 220,2,volumeMounts:
 221,1,looks like to Google counterpart of AWS EBS
 222,1,"if you just want to explore the filesystem you can also ssh to the node and dig up the actual mount... it's cumbersome, but possible."
 223,1,PATH may not work unless you have a working shell!
-224,1,Hey @bo0m3r31337! That's right. So Installed kubectl inside the container and i found the secret token at /var/run/secrets/kubernetes.io/serviceaccount/token. But i'm not really sure where to go from there.
+224,5,Hey @bo0m3r31337! That's right. So Installed kubectl inside the container and i found the secret token at /var/run/secrets/kubernetes.io/serviceaccount/token. But i'm not really sure where to go from there.
 225,1,"unfortunately that doesn't seem to be the issue. Tried it with one, two and four extra spaces and got the same result"
-226,2,bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl delete statefulset cockroachdb error: timed out waiting for cockroachdb to be synced
+226,7,bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl delete statefulset cockroachdb error: timed out waiting for cockroachdb to be synced
 227,1,secrets
 228,1,@mettjus yes I wanted to happen this automatically. I don't want to delete nor drain.
 229,1,"hmm, shouldnt I delete this pod first? and try all over again?"
@@ -239,9 +239,9 @@
 238,2,rajbains wheel 340 Oct 26 15:25 common drwxrwxrwx 11 rajbains whe
 239,1,"Absolutely, that's entirely what we will be using Roles and RoleBindings for, however, we still need some sort of cluster-admin type role that's limited to create/update/delete at the namespace level and setup those per-namespace Bindings. That's what I'm mainly interested in limiting, everything else makes sense."
 240,1,thanks a lot for help!
-241,2,22h 4m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 16; reason: cpu resource utilization (percentage of request) above target
+241,4,22h 4m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 16; reason: cpu resource utilization (percentage of request) above target
 242,1,"That is a big question.. look at the loadbalancer in services, but you need an ELB for that.."
-243,1,anyone seen this before? (kubelets have --max-pods=X and --pod-cidr=)
+243,5,anyone seen this before? (kubelets have --max-pods=X and --pod-cidr=)
 244,1,@stephenenelson ok thankyou
 245,2,app: pricelabel-app
 246,1,"Yeah, so maybe DNS isn't exactly the issue, but your pod and the kubernetes service shouldn't have the same IP so there's something weird with your networking."
@@ -255,10 +255,10 @@
 254,1,aww.
 255,1,"from my understanding defaul ttl for events is 1h (should be configurable on apiserver). that could be the reason for Events: <none>. maybe u could delete the statefulset and recreate it, then describe. not sure at all if that will help"
 256,1,"@U7L73A2RE I set up a bare metal machine with Ubuntu 17, and put docker on it. Now I am going through the Udacity tutorial on Kubernetes. It's pretty good"
-257,2,"7s 5s 2 kubelet, spec.containers{ares} Normal Created Created container 6s 4s 2 kubelet, spec.containers{ares} Normal Started Started container 2s 1s 2 kubelet, spec.containers{ares} Warning BackOff Back-off restarting failed container 2s 1s 2 kubelet, Warning FailedSync Error syncing pod"
+257,4,"7s 5s 2 kubelet, spec.containers{ares} Normal Created Created container 6s 4s 2 kubelet, spec.containers{ares} Normal Started Started container 2s 1s 2 kubelet, spec.containers{ares} Warning BackOff Back-off restarting failed container 2s 1s 2 kubelet, Warning FailedSync Error syncing pod"
 258,2,kind: Deployment
 259,2,current-context: default
-260,1,"Hi, I am trying to run a command inside a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command -- bash -c /tmp/setup.sh but my pod goes continously in crashloopbaack state. However if I start a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command and then do kubectl exec -ti podname-597fdb98d9-z5xvx -- bash -c /tmp/setup.sh the specified command works. Does anyone know how to fix this issue?"
+260,5,"Hi, I am trying to run a command inside a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command -- bash -c /tmp/setup.sh but my pod goes continously in crashloopbaack state. However if I start a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command and then do kubectl exec -ti podname-597fdb98d9-z5xvx -- bash -c /tmp/setup.sh the specified command works. Does anyone know how to fix this issue?"
 261,1,and ? just check yaml syntax ?
 262,1,@lukas.dolezal but then it will cause more issues in my case ...
 263,1,I removed the volume part and added the volumeClaimTemplates
@@ -273,7 +273,7 @@
 272,1,"nice, thanks!"
 273,2,SIGTERM
 274,1,what does the volume in the pod look like?
-275,1,https://github.com/roffe/kube-login is a extended example-app based on the one DEX has made to let one template the token page
+275,5,https://github.com/roffe/kube-login is a extended example-app based on the one DEX has made to let one template the token page
 276,1,ingress has to be placed in the namespace where it's service is afaik
 277,1,awesome @smerrill
 278,2,replicas: 1
@@ -284,14 +284,14 @@
 283,1,Strange.
 284,1,"The above error should come, when the api server is presenting a certificate which is NOT signed by the entity specified in certificate-authority"
 285,1,running.
-286,1,"kdockery, https://bpaste.net/show/548efe3325bb this is what I get now"
+286,5,"kdockery, https://bpaste.net/show/548efe3325bb this is what I get now"
 287,1,"nope it cant, but I would helm install honestbee / drone or any DEIS product with it"
 288,1,the simplest thing ever
 289,1,do you controller examples
 290,1,Are they on the same L2 network?
 291,1,"this is in dev in minikube, so no SSL"
-292,2,"error: unable to recognize cron-job.yaml: no matches for batch/, Kind=CronJob"
-293,2,dial tcp 10.210.0.1:443: i/o timeout
+292,4,"error: unable to recognize cron-job.yaml: no matches for batch/, Kind=CronJob"
+293,4,dial tcp 10.210.0.1:443: i/o timeout
 294,1,"Sure Avinogradov , thank you"
 295,1,"Moving here, minikube is quiet"
 296,1,i use shell aliases and separate kubeconfig files
@@ -317,35 +317,35 @@
 316,1,"Hello. How can I authenticate user of my various services deployed on kubernetes? I would like to avoid letting each service having to handle oauth2. Is there a kind of proxy (sidecar model?) that can do it transparently, or a solution integrated in the frontend reverse proxy (so far for us: traefik)"
 317,1,Does containerd require additional setup compared to docker?
 318,1,"just run the server in a sidecar, client on your laptop"
-319,2,Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.043824 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.045860 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.070883 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: I1027 00:28:01.070916 11351 docker_service.go:207] Docker cri networking man Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kube
+319,4,Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.043824 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.045860 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.070883 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: I1027 00:28:01.070916 11351 docker_service.go:207] Docker cri networking man Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kube
 320,2,#NAME?
 321,2,effect: NoSchedule
-322,2,"Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:47: Failed to list *v1.Pod: Get https://10.127.38.18:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dkuber-poc-app1&resourceVersion=0: dial tcp 10.127.38.18:6443: getsockopt: connection refused Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568347 11681 kubelet_network.go:69] Hairpin mode set to promiscuous-bridge but kubenet is not enabled, falling back to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.568382 11681 kubelet.go:517] Hairpin mode set to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568509 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.569892 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.600793 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.600822 11681 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:29:35 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs"
+322,4,"Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:47: Failed to list *v1.Pod: Get https://10.127.38.18:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dkuber-poc-app1&resourceVersion=0: dial tcp 10.127.38.18:6443: getsockopt: connection refused Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568347 11681 kubelet_network.go:69] Hairpin mode set to promiscuous-bridge but kubenet is not enabled, falling back to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.568382 11681 kubelet.go:517] Hairpin mode set to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568509 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.569892 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.600793 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.600822 11681 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:29:35 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs"
 323,1,"What is the best way to get automatically notified on new releases of kubernetes, flannel, CNI, and so, event having to do it manually?"
 324,1,"@roffe @bradley.hession Thanks a lot! In case you know kubernetes guys, we should add SSL+TLSv2/3 setup to official docs, I think this is an often use case in any modern environment"
 325,1,so the node cna't get filled to the point where operational stability is at risk
 326,1,Is there some way to migrate all my deployments and services from one cluster to another?
 327,1,"@kubevick that sounds right, we did this many times to fix similar issues"
 328,1,@roffe ok
-329,1,looks like it might be this: --dns-zone
+329,5,looks like it might be this: --dns-zone
 330,1,you can use any one of the node or master ips.
-331,1,simply followed this https://kubernetes.io/docs/user-guide/configmap/redis/redis-config
+331,5,simply followed this https://kubernetes.io/docs/user-guide/configmap/redis/redis-config
 332,2,paths:
-333,1,@mdornfe1 you can see an example here; https://gist.github.com/mikejk8s/97322f4314fe4f89d62fb4f79fffa1aa
+333,5,@mdornfe1 you can see an example here; https://gist.github.com/mikejk8s/97322f4314fe4f89d62fb4f79fffa1aa
 334,1,is there a way to take a file defined in a config map?
 335,1,I don't know what is the problem for production environment and are there plan to improve for production env.
-336,1,"if you look inside ~/.kube/config each context has a name, cluster,user, and optionally a namespace. to use it in kubectl --context, you just specify the name"
+336,5,"if you look inside ~/.kube/config each context has a name, cluster,user, and optionally a namespace. to use it in kubectl --context, you just specify the name"
 337,1,"grampelberg, is that required in 1.8 and not before?"
 338,1,oh ok
 339,1,Yeah
 340,1,@U7KH6TF28 noone stops you from having multiple yaml documents in a single file
-341,2,Trying to reach: 'https://10.200.3.2:8443/'
+341,5,Trying to reach: 'https://10.200.3.2:8443/'
 342,1,okay that makes sense then.
 343,2,Description=Docker Application Container Engine Documentation=https://docs.docker.com
 344,1,thanks though! I think maybe it has to do with deleted nodes? or something?
 345,2,serviceName: https-svc-ingress
 346,1,y
-347,2,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243365 5596 aws.go:847] Building AWS cloudprovider
+347,4,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243365 5596 aws.go:847] Building AWS cloudprovider
 348,1,"yeah, Helm is my go-to installer"
 349,2,config:
 350,1,"from what i know lets encrypt allows 20 free certs/week, don't know much more"
@@ -358,10 +358,10 @@
 357,2,scheme: HTTP
 358,1,@nitinmidha looks like I'd expect
 359,1,you mean adding new relic?
-360,2,https://kubernetes.io/docs/setup/independent/install-kubeadm/ should get you there
-361,1,"You are able to perform a Ping to 172.17.41.3 through other pod, right?"
+360,5,https://kubernetes.io/docs/setup/independent/install-kubeadm/ should get you there
+361,5,"You are able to perform a Ping to 172.17.41.3 through other pod, right?"
 362,2,root 725 0.0 0.2 34424 2776 ? R+ 17:00 0:00 ps aux
-363,1,@mdavidsen https://gist.github.com/anonymous/19b5570993d0c63e0721dac65e05ff49
+363,5,@mdavidsen https://gist.github.com/anonymous/19b5570993d0c63e0721dac65e05ff49
 364,1,no
 365,2,status: {}
 366,1,@foxie tks!
@@ -376,38 +376,38 @@
 375,2,requests:
 376,1,"My K8 setup is in AWS. I am using etcd3 as backend to flannel. From the worker node, flannel connects to etcd using ELB. I see the following error"
 377,2,foo: |
-378,1,I got a service that is just hanging in pending state. I've tried kubectl describe service xxx but it doesn't really give any insight. Is there something else I can do to try and get some info on why it's just stuck in pending?
-379,1,"classic ELBs support PROXY protocol, which preserves the source IP. What's behind the ELB needs to work with PROXY protocol, though. http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-proxy-protocol.html"
+378,5,I got a service that is just hanging in pending state. I've tried kubectl describe service xxx but it doesn't really give any insight. Is there something else I can do to try and get some info on why it's just stuck in pending?
+379,5,"classic ELBs support PROXY protocol, which preserves the source IP. What's behind the ELB needs to work with PROXY protocol, though. http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-proxy-protocol.html"
 380,2,readinessProbe: httpGet
 381,1,"I made a set of scripts. So each repo gets a deploy folder that the developrs copy a generic template into. Then they fill out $container_name, $app_name variables in Gitlab GUI. I have Gitlab Environment variables configured so the script points to the right k8s cluster (staging or prod) when deploying. A base image that includes kubectl, and then the deploy stage depending on branches, so prod can only be deployed manually by a few users."
 382,1,@3molo Still Same Sir
-383,1,what might be the possible causes of kubectl get componentstatuses --> Unable to connect to the server: x509: certificate signed by unknown authority
+383,7,what might be the possible causes of kubectl get componentstatuses --> Unable to connect to the server: x509: certificate signed by unknown authority
 384,1,"@msubramm > If the command returns a non-zero value, the kubelet kills the Container and restarts it. restart in the sense provisions a new container or sends kill signal to container and then starts the same one again? I was looking at this doc earlier but couldn't tell if this is starting a new container or rebooting a stale one."
 385,1,cordoning a node won't evict existing pods right?
-386,1,"kdockery, so hmm, kubelet[7261]: ERROR: logging before flag.Parse: W1026 17:17:09.856546 7261 kubelet_node_status.go:951] Failed to set some node status fields: failed to validate nodeIP: Node IP: 10.254.0.1 not found in the host's network interfaces when I changed --node-ip to this value"
-387,1,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start."
+386,7,"kdockery, so hmm, kubelet[7261]: ERROR: logging before flag.Parse: W1026 17:17:09.856546 7261 kubelet_node_status.go:951] Failed to set some node status fields: failed to validate nodeIP: Node IP: 10.254.0.1 not found in the host's network interfaces when I changed --node-ip to this value"
+387,5,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start."
 388,1,"@liggitt apologies, I tagged the wrong handle. (so many users in here!)"
 389,1,but I would advise you to take a closer look at helm ... creating deployments by hand is ... well unless you have very specialised needs
 390,1,"spunon, I'm curious about the motive behind this"
 391,1,"Pretty sure. and I could be wrong, but that is a session sticky. If not, then perhaps you're using an overlay networking?"
 392,1,try running waves... k8s page has some example...
 393,2,#NAME?
-394,2,kuberuntime_manager.go:840] PodSandboxStatus of sandbox f2b7e698489b137af28011147276ab5dedd736eb299c4c56360734201e772f81 for pod frameloss-empty-59549d5d8-8mvjf_default(7c4790f8-b9a7-11e7-acba-005056aa3222) error: rpc error: code = Unknown desc = Error response from daemon: open /var/lib/docker/overlay/7871d8b75de341fbfcdea6f04f7950164259026420b1b8d454a02fabb991f26a/lower-id: no such file or directory
-395,2,ERROR: logging before flag.Parse: I1026 21:33:17.409869 1 main.go:48] Version v1.14.3-4-gee838f6
+394,4,kuberuntime_manager.go:840] PodSandboxStatus of sandbox f2b7e698489b137af28011147276ab5dedd736eb299c4c56360734201e772f81 for pod frameloss-empty-59549d5d8-8mvjf_default(7c4790f8-b9a7-11e7-acba-005056aa3222) error: rpc error: code = Unknown desc = Error response from daemon: open /var/lib/docker/overlay/7871d8b75de341fbfcdea6f04f7950164259026420b1b8d454a02fabb991f26a/lower-id: no such file or directory
+395,4,ERROR: logging before flag.Parse: I1026 21:33:17.409869 1 main.go:48] Version v1.14.3-4-gee838f6
 396,2,servicePort: 8443
 397,1,"haha@roffe I'm so frustrated, I've been tryna disable it for ages."
 398,1,@roffe I see! when you're using TLS+token and you want to configure any user by kubeconfig to use kubectl and you don't have the ca.pem
-399,1,Hey can you 'get pods' based on age? i.e kubectl get pods --age=<5d
+399,5,Hey can you 'get pods' based on age? i.e kubectl get pods --age=<5d
 400,1,Hi Guys I created kubeadm CLuster then trying to add Worker Node Output Says its Successful But on Master Showing one Node Any Idea
 401,1,What if you get disconnected from a server ?
-402,1,but for anything over 1.12.6 please read: https://github.com/kubernetes/kubernetes/issues/40182
+402,5,but for anything over 1.12.6 please read: https://github.com/kubernetes/kubernetes/issues/40182
 403,1,thanks @mauilion and @hmdelnegro
 404,1,how it is resolving the cluster IP address?
 405,1,I want to use latest version(1.8). I see... kubeadm says
-406,1,"In my cert I have -----BEGIN CERTIFICATE----- ZHA... and in my key I have: -----BEGIN RSA PRIVATE KEY----- MII. I am getting this on kubectl create secret, not associated with any ingress yet."
+406,5,"In my cert I have -----BEGIN CERTIFICATE----- ZHA... and in my key I have: -----BEGIN RSA PRIVATE KEY----- MII. I am getting this on kubectl create secret, not associated with any ingress yet."
 407,2,accessModes:
 408,1,good to know u solved it. was looking into istio myself... as soon as i got some time to investigate gonna give it a try
-409,1,"kdockery, apparently the iptables rules are gone after that change, and now curl waits on http://nodedns:31974"
+409,5,"kdockery, apparently the iptables rules are gone after that change, and now curl waits on http://nodedns:31974"
 410,1,Sorry if that's obvious - just sort of clicked for me
 411,2,rewrite /.*\.(jpg|js$|css|html|png|bmp|gif) / break
 412,1,but will deployment start new images despite the other ones being the stopped state?
@@ -415,12 +415,12 @@
 414,2,root@pricelabel-app-249837175-mvjw6:/~# ps aux
 415,1,oh
 416,1,"Yeah, you're doing things the hard way. That can be fun, but it's unnecessary with things like kubeadm that have matured quite a bit."
-417,1,I'm newbie for k8s and I want to create sample cluster within my centos servers. But setup documents are very old... (https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/) Is there any other online documents or blogs which guide step by step? (I don't want to use kubeadm because it's difficult to understand kubenetes components and it's not production ready)
+417,5,I'm newbie for k8s and I want to create sample cluster within my centos servers. But setup documents are very old... (https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/) Is there any other online documents or blogs which guide step by step? (I don't want to use kubeadm because it's difficult to understand kubenetes components and it's not production ready)
 418,1,I am using sh
 419,1,"@roffe, woow! that sounds amazing, good job there! I definitely will take a look at this! As you said it is out of scope, So in a nutshell what I understood is :"
 420,2,servicePort: 443
-421,2,Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205]
-422,2,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243413 5596 aws.go:810] Zone not specified in configuration file; querying AWS metadata service
+421,4,Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205]
+422,4,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243413 5596 aws.go:810] Zone not specified in configuration file; querying AWS metadata service
 423,2,[1] 612
 424,1,Do you write Go?
 425,1,namespace
@@ -435,20 +435,20 @@
 434,2,HTTP/1.1 404 0.97 secs: 19 bytes ==> GET /
 435,1,@janst kubectl delete configmap name?
 436,1,"Hi All, I am getting problem in authorization while using kops version 1.6.3. I am not able to set authorization at kubernetes dashboard level.please let me know if anyone has any idea."
-437,1,"this for rabbitmq: Name: rabbitmq Namespace: default Node: / Labels: name=rabbitmq Status: Pending IP: Controllers: <none> Containers: rabbitmq: Image: rabbitmq Ports: 5672/TCP, 15672/TCP Limits: cpu: 100m Requests: cpu: 100m Volume Mounts: /var/lib/rabbitmq from rabbitmq-persistent-storage (rw) /var/run/secrets/kubernetes.io/serviceaccount from default-token-5fdds (ro) Environment Variables: <none> Conditions: Type Status PodScheduled False Volumes: rabbitmq-persistent-storage: Type: HostPath (bare host directory volume) Path: /srv/docker/nfs/rabbitmq/data default-token-5fdds: Type: Secret (a volume populated by a Secret) SecretName: default-token-5fdds QoS Class: Burstable Tolerations: <none> Events: FirstSeen LastSeen Count From SubObjectPath Type Reason Message --------- -------- ----- ---- ------------- -------- ------ ------- 21h 2m 4321 {default-scheduler } Warning FailedScheduling No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
+437,4,"this for rabbitmq: Name: rabbitmq Namespace: default Node: / Labels: name=rabbitmq Status: Pending IP: Controllers: <none> Containers: rabbitmq: Image: rabbitmq Ports: 5672/TCP, 15672/TCP Limits: cpu: 100m Requests: cpu: 100m Volume Mounts: /var/lib/rabbitmq from rabbitmq-persistent-storage (rw) /var/run/secrets/kubernetes.io/serviceaccount from default-token-5fdds (ro) Environment Variables: <none> Conditions: Type Status PodScheduled False Volumes: rabbitmq-persistent-storage: Type: HostPath (bare host directory volume) Path: /srv/docker/nfs/rabbitmq/data default-token-5fdds: Type: Secret (a volume populated by a Secret) SecretName: default-token-5fdds QoS Class: Burstable Tolerations: <none> Events: FirstSeen LastSeen Count From SubObjectPath Type Reason Message --------- -------- ----- ---- ------------- -------- ------ ------- 21h 2m 4321 {default-scheduler } Warning FailedScheduling No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
 438,1,"under cluster, do you have certificate-authority?"
 439,1,so what should I do to fix it ? )
 440,1,"hi everyone, i started using the 1.8 release of kubernetes today and when ever I try to delete a statefulset, i get a panic with the following trace:"
 441,1,does somebody know how I can get the fluentd-elasticsearch in debug mode?
 442,1,my deployment?
-443,2,watch.go:41] Watch subnets: client: etcd cluster is unavailable or misconfigured
+443,4,watch.go:41] Watch subnets: client: etcd cluster is unavailable or misconfigured
 444,2,password: *****
 445,1,it was some configuration thing
 446,1,"from what i can recall, i spinned up like 2 or 3 clusters and started getting frustrated... on the 3rd i went for a coffee and when i came back it was ok... d'oh"
-447,1,Not Sure I always see these while running kubeadm init [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz/syncloop' failed with error: Get http://localhost:10255/healthz/syncloop: dial tcp [::1]:10255: getsockopt: connection refused. [kubelet-check] It seems like the kubelet isn't running or healthy. [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz' failed with error: Get http://localhost:10255/healthz: dial tcp [::1]:10255: getsockopt: connection refused. In Some blog I seen that we can ignore
+447,7,Not Sure I always see these while running kubeadm init [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz/syncloop' failed with error: Get http://localhost:10255/healthz/syncloop: dial tcp [::1]:10255: getsockopt: connection refused. [kubelet-check] It seems like the kubelet isn't running or healthy. [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz' failed with error: Get http://localhost:10255/healthz: dial tcp [::1]:10255: getsockopt: connection refused. In Some blog I seen that we can ignore
 448,1,"yeah, sorry that I don't have an actual link to walk you through. But part of the reason for using kubeadm is it makes a large part of the process easy"
 449,1,"@spotter can you check your service config to make sure, you are proxying the correct ports"
-450,2,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.831889 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54060: remote error: tls: bad certificate
+450,4,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.831889 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54060: remote error: tls: bad certificate
 451,1,@bharat not easily. Probably best to use @grampelberg 's link
 452,1,"I would say, check in kube-proxy log while initiating a request"
 453,2,name: pricelabel
@@ -467,14 +467,14 @@
 466,1,@mauilion any idea on this by any change? (see the previous comment as well)
 467,1,Does anyone know if a k8s object auditing tool exists?
 468,1,kubectl describe pod shows Error syncing pod
-469,1,no logs whatsoever - kubectl logs ares --namespace=dev
+469,5,no logs whatsoever - kubectl logs ares --namespace=dev
 470,1,That should work. The overlay will take care of adding routes for your pods and kube-proxy will add iptables rules on all nodes to let them reach Service IPs
-471,1,ok. Just change https://github.com/kubernetes/client-go/blob/master/examples/workqueue/main.go slightly
+471,5,ok. Just change https://github.com/kubernetes/client-go/blob/master/examples/workqueue/main.go slightly
 472,1,"@masteinhauser yes, and CRUD on RoleBinding, as well as bind permission on the clusterroles you'd want it to be able to bind to, right?"
 473,2,#NAME?
 474,1,Classic ELB?
 475,1,"dns works, we can reoslve the service ip"
-476,2,"Error: found in requirements.yaml, but missing in charts/ directory: alertmanager, prometheus"
+476,7,"Error: found in requirements.yaml, but missing in charts/ directory: alertmanager, prometheus"
 477,1,exit
 478,1,dns issues are usually related to networking....
 479,1,"oh, maybe I know"
@@ -488,17 +488,17 @@
 487,1,"I have functional tests that I want to run a s part of a Jenkins build pipeline. I'm currently running them in a bare pod, rather than in a job, because I don't want the tests rerun in case of failure. Is it reasonable to use a bare pod?"
 488,1,"hmm, the script does exit cleanly when user logs off SSH. Maybe Jobs will work... Let me give it a shot."
 489,1,"Yes, use minikube"
-490,2,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077658 1194 aws.go:769] Zone not specified in configuration file; querying AWS metadata service
-491,1,"Sorry if I missed this one in the documentation.. cant seem to find this in the google, I am trying to add an instance group, I do the kops create ig <name> I edit the file.. save it, then run kops update -y (shortened), it gives some output, but nothing is created it seems, I also tried rolling-update.. nothing seems to be coming up in AWS.. is there somewhere to debug this so I can see what the problem might be?"
+490,4,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077658 1194 aws.go:769] Zone not specified in configuration file; querying AWS metadata service
+491,5,"Sorry if I missed this one in the documentation.. cant seem to find this in the google, I am trying to add an instance group, I do the kops create ig <name> I edit the file.. save it, then run kops update -y (shortened), it gives some output, but nothing is created it seems, I also tried rolling-update.. nothing seems to be coming up in AWS.. is there somewhere to debug this so I can see what the problem might be?"
 492,2,path: /var/log
 493,2,#NAME?
 494,1,@U7LULHTJL Look at Drone and Honestbee
-495,1,You are forgetting the k8s overlay network. And is better use pods in 10.4.0.0/16 and services in 10.5.0.0/16
+495,5,You are forgetting the k8s overlay network. And is better use pods in 10.4.0.0/16 and services in 10.5.0.0/16
 496,1,any of you know how to get a ingress in kubernetes with traefik for Websockets ?
 497,1,you should be able to chown that directory to the user you're using for that docker image
 498,2,image: ajmulholland/fluentd-kube:v0.3
 499,1,"That should run as service not pod, right?"
-500,1,"Ah, something tells me you may not have configured cluster dns correctly. You should try kubeadm. It trivializes all of that stuff. https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/"
+500,5,"Ah, something tells me you may not have configured cluster dns correctly. You should try kubeadm. It trivializes all of that stuff. https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/"
 501,1,"Hi! I'm migrating applications from an old cluster to a new one. Question: as I would like to move my StatefulSets (with their volumes) is there a way to do it? I'm not interested in uptime, as these are just test clusters, but I would like to know how to migrate the PVs and how to rebind them, if possible. (on AWS)"
 502,1,disabled
 503,1,@nottinhill yeah a context is a logical definition of a cluster with kubectl
@@ -510,10 +510,10 @@
 509,1,the dev env is to big
 510,2,$ kubectl get pod busybox
 511,1,"@mattnworb No, the ConfigMap and Pod have to be in the same namespace"
-512,2,ERROR: logging before flag.Parse: I1026 21:33:17.410003 1 dnsprobe.go:75] Starting dnsProbe {Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
+512,4,ERROR: logging before flag.Parse: I1026 21:33:17.410003 1 dnsprobe.go:75] Starting dnsProbe {Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
 513,1,"If you are trying connect in your postgres server from another pod, using the DNS name should work."
 514,1,i prefer to run everything remotely
-515,2,E1026 22:03:50.476883 1 reflector.go:199] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.210.0.1:443/api/v1/services?resourceVersion=0: dial tcp 10.210.0.1:443: i/o timeout
+515,4,E1026 22:03:50.476883 1 reflector.go:199] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.210.0.1:443/api/v1/services?resourceVersion=0: dial tcp 10.210.0.1:443: i/o timeout
 516,2,- path: /.*\.(jpg|js$|css|html|png|bmp|gif)
 517,1,you need to add some scripting
 518,1,@U7JTRT5QS in certificate-authority can you ensure you have the public key of the ca
@@ -523,7 +523,7 @@
 522,1,Let me know if that works
 523,1,Ubuntu
 524,1,Any of you running PHP code in containers and in k8s?
-525,1,"When I run root@pricelabel-app-249837175-mvjw6:/~# ./price-project & exit and I leave the bash, my script works"
+525,5,"When I run root@pricelabel-app-249837175-mvjw6:/~# ./price-project & exit and I leave the bash, my script works"
 526,1,you don't have the ca.pem
 527,1,Does it matter if my SHA-2 is full Root SHA-2 or if Root CA is SHA-1 encrypted?
 528,1,where hostname is the svc name?
@@ -538,7 +538,7 @@
 537,1,don't know. not even sure it's in kubectl yet
 538,1,"Hi guys!! How to access endpoints like traefik-web-ui.kube-system in local network, from my laptop for example ?"
 539,1,So conjure-up is like kubeadm but does the provider stuff for you ?
-540,1,"i don't know specific to kubernetes, but on that host if you can do docker ps -a and see the container that exited before the new one started, then you can do docker logs <containerid>"
+540,5,"i don't know specific to kubernetes, but on that host if you can do docker ps -a and see the container that exited before the new one started, then you can do docker logs <containerid>"
 541,2,rewrite /.*\.(jpg|js$|css|html|png|bmp|gif)/(.*) /$1 break
 542,1,sharing it
 543,2,exec: \\\\\\\sh\\\\\\\: executable file not found in $PATH\\\\\n\
@@ -549,7 +549,7 @@
 548,1,"for the ingress object, is it possible to have a host rule that will cover the url with and without www?"
 549,1,So I need two services if I want to expose it on a NodePort
 550,1,"Sensible, yes. lol"
-551,2,Failed to create client: ERROR communicating with apiserver: the server has asked for the client to provide credentials
+551,4,Failed to create client: ERROR communicating with apiserver: the server has asked for the client to provide credentials
 552,1,Can you paste the output of kubectl get nodes?
 553,1,what are you guy using for StorageClass?
 554,1,i'mean. are u sure u are looking in the right namespace?
@@ -574,7 +574,7 @@
 573,1,ctually i use OIDC and refresh tokens but that is out of the scope of what ur asking so i removed those parts from the config i pasted
 574,1,No
 575,1,which command?
-576,1,"It's not ideal, but is doing the job. My next step would be to create a CLI tool that the devs can whip up those templates and scripts quickly. k8sdeploy create staging --app-name= --container-name= etc"
+576,5,"It's not ideal, but is doing the job. My next step would be to create a CLI tool that the devs can whip up those templates and scripts quickly. k8sdeploy create staging --app-name= --container-name= etc"
 577,2,--register-node=true \
 578,1,"we have an old k8s 1.3 cluster in production, where one of the nodes lost the ability to have containers on it connectable via service IPs (both on node and from other nodes). how does on debug this?"
 579,1,@ghop02 Try rsync
@@ -587,7 +587,7 @@
 586,1,ah
 587,1,hm ... how to get persistentvolumes asttached for pods per namespace ?
 588,1,I think that's done so that it won't overlap with any other RFC 1918 ranges currently in use with your network
-589,1,there are examples of nfs in the kubernetes repo. https://github.com/kubernetes/examples/tree/master/staging/volumes/nfs
+589,5,there are examples of nfs in the kubernetes repo. https://github.com/kubernetes/examples/tree/master/staging/volumes/nfs
 590,1,@U7FCJNU58 are you trying to update a deployment? you can't update labels after the first creation
 591,1,it's the same as before. Same thing is in my kubeconfig under client-certificate-data. I did the base64 decode. and it looks the same
 592,2,PDName: postgres-blah-data-disk
@@ -604,17 +604,17 @@
 603,1,"Hello. Where can I find someone who knows how to monitor pods probes states - ie ready vs unready? We are having some issues, but I can't find the way how to check at which times the pods were unready or not, does anyone has some idea?"
 604,1,for kubeconfigs authentications
 605,1,yup I know but it seems dead for today
-606,1,also see https://github.com/docker-library/php/issues/186
+606,5,also see https://github.com/docker-library/php/issues/186
 607,1,@U7N4JEF9U Downgrade to Docker 1.12.6 to start with. 17.09 is not validated with kubernetes
 608,1,If you need containers in separated pods -> created separated deployments
-609,1,Does pod cidr + service cidr need to be a real subnet? meaning if all of my hosts are on 192.168.13.0/24 could I just pick 10.32.1.0/24 for pod subnet?
+609,5,Does pod cidr + service cidr need to be a real subnet? meaning if all of my hosts are on 192.168.13.0/24 could I just pick 10.32.1.0/24 for pod subnet?
 610,1,In what sense?
 611,1,"I've already tried thatNone of the solutions worked for me, elasticsearch is crashing because it says that it has no access to the folder"
 612,1,it will only prevent new ones from being scheduled
 613,1,"got, it! Thanks a lot!"
-614,1,@U7N4JEF9U https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.8.md#external-dependencies is my source for this information
+614,5,@U7N4JEF9U https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.8.md#external-dependencies is my source for this information
 615,1,you know the magic ? hehe
-616,1,this for mongo: Name: mongo-controller-qm4wn
+616,5,this for mongo: Name: mongo-controller-qm4wn
 617,2,- http:
 618,1,just proxying is messing up
 619,1,Doc says restartPolicy applies to all Containers in the Pod. restartPolicy only refers to restarts of the Containers by the kubelet on the same node.
@@ -622,7 +622,7 @@
 621,1,this is perfect.
 622,1,"Are you terminating SSL at your ELB in HTTP mode or at your nginx Ingress controller with your ELB in TCP mode? It must be the latter, because ELBs don't supporting proxying WebSocket connections."
 623,2,matchLabels:
-624,1,"I have a zombie stateful set. It was installed (along with other resources) using helm and the helm delete --purge failed (not sure helm's involvement matters). But now of course when I try to install that same helm chart it fails because the zombie stateful set still exists. kubectl get statefulsets does _not_ show the zombie, but kubectl get statefulset myzombie does. kubectl delete --force statefulset myzombie seems to just hang. Any advice on how to clear out that zombie definition?"
+624,5,"I have a zombie stateful set. It was installed (along with other resources) using helm and the helm delete --purge failed (not sure helm's involvement matters). But now of course when I try to install that same helm chart it fails because the zombie stateful set still exists. kubectl get statefulsets does _not_ show the zombie, but kubectl get statefulset myzombie does. kubectl delete --force statefulset myzombie seems to just hang. Any advice on how to clear out that zombie definition?"
 625,1,@3molo I can say that it looks interestingNo idea how/why that would occur. kubectl describe pod busybox?
 626,2,# multi_accept on;
 627,2,imagePullPolicy: Always
@@ -632,12 +632,12 @@
 631,2,TLS
 632,1,@kdockery doesnt that override a whole directory ?
 633,1,"@amulholland You understood right! Moreover, I can say that if I use the Wifi adapter to connect to internet k8s hangs as well"
-634,1,How to satisfy Ingress Certificate and Key requirements? Do I need to chain? I am getting error: failed to load key pair tls: private key does not match public key when doing: kubectl create secret tls savvisave-com-tls-secret --key domain.com.key --cert digicert-sha2.pem
+634,5,How to satisfy Ingress Certificate and Key requirements? Do I need to chain? I am getting error: failed to load key pair tls: private key does not match public key when doing: kubectl create secret tls savvisave-com-tls-secret --key domain.com.key --cert digicert-sha2.pem
 635,2,kube hpa wtf
 636,1,"Hi guysWhen I get the memory/usage of a pod from Heapster, in which unit of measurement is it?"
 637,1,"hey all, ive been seeing some oddness with 1.7.8 re: scheduling pods on kubelets that have no more pod IPs left in their pod CIDR"
 638,1,How would I check this?
-639,2,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.998081 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54066: remote error: tls: bad certificate
+639,4,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.998081 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54066: remote error: tls: bad certificate
 640,1,"i mean alert if node fails, what do you prefer?"
 641,1,"okay,"
 642,1,np
@@ -646,7 +646,7 @@
 645,1,"but i was also messing around with --network, --image and instance size"
 646,1,"@U7P7RBJEA i'm afraid i'm probably not the best person to help, i'm fairly new to k8s so my knowledge is limited"
 647,1,"it is, we've restarted it too"
-648,1,On step 8 (https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/08-bootstrapping-kubernetes-controllers.md) I tried running the command kubectl get componentstatuses but it fails. with error Unable to connect to the server: x509: certificate signed by unknown authority I tried running it with --insecure-skip-tls-verify and then I get Error from server (Forbidden): componentstatuses is forbidden: User admin cannot list componentstatuses at the cluster scope
+648,7,On step 8 (https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/08-bootstrapping-kubernetes-controllers.md) I tried running the command kubectl get componentstatuses but it fails. with error Unable to connect to the server: x509: certificate signed by unknown authority I tried running it with --insecure-skip-tls-verify and then I get Error from server (Forbidden): componentstatuses is forbidden: User admin cannot list componentstatuses at the cluster scope
 649,1,maybe it's something above that's throwing off the interpreter
 650,2,- backend:
 651,1,"Ok, I will give it some time longer."
@@ -665,7 +665,7 @@
 664,1,it's still really WIP
 665,1,"> it sounds like limiting user access per-namespace isn't really possible? per-namespace access requires role bindings within that namespace, not globbing"
 666,1,I've seen Error pods in normal output anyways so
-667,1,(at least based on that output it should be /dev/dm-0)
+667,5,(at least based on that output it should be /dev/dm-0)
 668,1,"Hi, I'm using HPA and CA (autoscalers), it looks like I have enough nodes (16 cores each) but the pods are not being scheduled and those that are scheduled are not divided evenly between the nodes. It looks like this:"
 669,1,did you deployed the networking addon ?
 670,1,@pl does tge preStop occur after sending SIGTERM ?
@@ -676,21 +676,21 @@
 675,1,@lukas.dolezal
 676,1,Okies thanks
 677,2,nodeSelector:
-678,1,"I would like to know this too, as Im a gitlab user as well. I currently just load a kubectl image and apply -f deloyment.yml lol"
-679,1,Found these 2 alternatives. 1) run new relic as a daemonset: https://github.com/kubernetes/examples/blob/master/staging/newrelic/README.md 2) run newrelic in the php pod: https://discuss.newrelic.com/t/can-i-using-apm-php-in-kubernetes/42031
+678,5,"I would like to know this too, as Im a gitlab user as well. I currently just load a kubectl image and apply -f deloyment.yml lol"
+679,5,Found these 2 alternatives. 1) run new relic as a daemonset: https://github.com/kubernetes/examples/blob/master/staging/newrelic/README.md 2) run newrelic in the php pod: https://discuss.newrelic.com/t/can-i-using-apm-php-in-kubernetes/42031
 680,1,do you have control over the cluster or are u a user? (i don't even know how this is done in k8s...)
 681,2,USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
 682,1,aww yea
 683,1,"Hi, a question regarding service communication: in a cluster, I have serviceA and serviceB, serviceA can reach out serviceB using serviceB's clusterip:port, now the question is, can serviceA reach serviceB using serviceB's external ip address?"
 684,2,Starting dnsProbe
 685,1,if you do an exec into the pod and do a whoami what user does it give you?
-686,2,31s 31s 1 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 30; reason: cpu resource utilization (percentage of request) above target
+686,4,31s 31s 1 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 30; reason: cpu resource utilization (percentage of request) above target
 687,1,I've got php-fpm & nginx deployments yeh
-688,2,rpc error: code = 13 desc = invalid header field value oci runtime error: exec failed: container_linux.go:247: starting container process caused \exec: \\\/bin/ls /ingress-controller/ssl\\\: stat /bin/ls /ingress-controller/ssl: no such file or directory\\n
+688,4,rpc error: code = 13 desc = invalid header field value oci runtime error: exec failed: container_linux.go:247: starting container process caused \exec: \\\/bin/ls /ingress-controller/ssl\\\: stat /bin/ls /ingress-controller/ssl: no such file or directory\\n
 689,1,"We do this as well. Not great. But I would like to use helm instead to deploy app continuously. But the base is the same: build (make the artefact), bake (inject all app configuration), deploy (helm with kube only configuration, and of course secrets, but no configmap, no env variable,...). The no env part is tricky, at least we keep env vars and stuff for some services deployed along side the main app(s), to reuse for instance rabbitmq container and so on"
 690,2,kubectl delete --cascade=false --force=true --now=true statefulset myzombie
 691,2,gcloud --quiet config set compute/zone ${CLOUDSDK_COMPUTE_ZONE}
-692,2,Error: 'dial tcp 10.200.3.2:8443: getsockopt: no route to host'
+692,4,Error: 'dial tcp 10.200.3.2:8443: getsockopt: no route to host'
 693,1,is there any way to get pre-restart logs from a container that has restarted?
 694,2,- /bin/sh
 695,1,Anyone????
@@ -698,7 +698,7 @@
 697,2,strategy: {}
 698,1,hmm i could also use helm it still it looks like too complex
 699,2,client-go - Go client for Kubernetes.
-700,1,"Ok, I'm getting frustrated with ELK now. To the point that I want to throw it out of the window. What system requirements are needed to make it happy, and keep it running for longer than 24 hours? I'm now getting Out of Java Heap Space errors. Currently set to value: -Xms2000m -Xmx2000m"
+700,5,"Ok, I'm getting frustrated with ELK now. To the point that I want to throw it out of the window. What system requirements are needed to make it happy, and keep it running for longer than 24 hours? I'm now getting Out of Java Heap Space errors. Currently set to value: -Xms2000m -Xmx2000m"
 701,1,How can you read those labels normally?
 702,2,/etc/systemd/system/multi-user.target.wants/docker.service
 703,1,http or https ???
@@ -706,37 +706,37 @@
 705,1,ok
 706,2,rewrite /.*\.(jpg|js$|css|html|png|bmp|gif)/(.*) /$1 break;
 707,1,"hmm, now I'm not sure how to proceed with this tutorial now that I can only make it work in default"
-708,1,@ekarlso https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-specific-path-in-the-volume
+708,5,@ekarlso https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-specific-path-in-the-volume
 709,2,- |
-710,1,"I'm trying to setup kubernetes, running 1.7.x with docker. When I do kubectl run my-nginx --image=nginx, and then try kubectl exec my-nginx-217742694-7xh18 -- printenv, I get Error from server: error dialing backend: dial tcp 127.0.1.1:10250: getsockopt: connection refused"
+710,7,"I'm trying to setup kubernetes, running 1.7.x with docker. When I do kubectl run my-nginx --image=nginx, and then try kubectl exec my-nginx-217742694-7xh18 -- printenv, I get Error from server: error dialing backend: dial tcp 127.0.1.1:10250: getsockopt: connection refused"
 711,1,should I create a new PVC with a larger size to mount to the existing node -> do rsync -> restart node to mount to new PVC
 712,1,and some udp connectiions
 713,1,"nice, do you know if there is a open source repo with your set up that I could have a look at? I have never made/used any bidirectional sync config"
 714,1,"ideally you're only paged if there's a business impact, or something needs to be addressed _RIGHTNOW_. A pod dying should resolve itself. A node dying should resolve itself. But you want to make sure you're monitoring business metrics and alerting if customers/users are ever impacted."
 715,1,of *a* pod
 716,2,kubernetes-labs git:(master)kubectl create -f cron-job.yaml
-717,1,"what might be some of the reasons why a pod fails to start with command passed as /bin/sh or /bin/bash, when it works properly with standalone docker run docker run -it --entrypoint /bin/bash localhost:2000/app.batch.adapter?"
+717,5,"what might be some of the reasons why a pod fails to start with command passed as /bin/sh or /bin/bash, when it works properly with standalone docker run docker run -it --entrypoint /bin/bash localhost:2000/app.batch.adapter?"
 718,1,"rather than creating a loadbalancer service, you could have a single ingress controller (there's an nginx one that we used for a short time, we've since moved to istio). Then when you create a new service you want to expose, you just create an ingress resource, Then all your ingress traffic to the cluster goes through a single loadbalancer connected to the ingress controller inside the cluster."
-719,2,Current attempt: ~~~ spec: containers: - image: gcr.io/my-project/my-app:latest name: my-app securityContext: privileged: true capabilities: add: - SYS_ADMIN lifecycle: postStart: exec: command: - sh - -c - > su www-root
+719,5,Current attempt: ~~~ spec: containers: - image: gcr.io/my-project/my-app:latest name: my-app securityContext: privileged: true capabilities: add: - SYS_ADMIN lifecycle: postStart: exec: command: - sh - -c - > su www-root
 720,1,this is a great place to start. Thank you so much!
 721,2,Current attempt:
 722,2,user:
 723,1,Where can I take them so my developer team will have access? Do you know any example which I can refer?
-724,1,"@high_on_bananas sorry, it's not working. Even $ curl -l 10.10.10.222:5432 is not working."
+724,5,"@high_on_bananas sorry, it's not working. Even $ curl -l 10.10.10.222:5432 is not working."
 725,1,"@amulholland sorry, changed company since. that image is on the internal net"
 726,1,"yeah, I'd heard the claim that Helm could do full CI/CD"
 727,1,Is the 0.1 address the IP of the pod?
 728,1,"Yeah thats the problem @foxie You can stick a camera down all you like, but really how many checks are amazon actually doing on their delivery drivers"
-729,1,"@3molo seems wired, but try to specify the full path to sh e.g. /bin/sh"
+729,5,"@3molo seems wired, but try to specify the full path to sh e.g. /bin/sh"
 730,1,Lol
 731,1,@jpweber no at all
 732,1,"@hubt thanks, let me give a try!"
 733,1,I did and it looks ok imo
 734,1,"Right, but what hostnames is the cert valid for, and is the Ingress's host one of those valid hosts?"
-735,2,healths check failed [[kube-probe/1.8] 127.0.0.1:53240
+735,4,healths check failed [[kube-probe/1.8] 127.0.0.1:53240
 736,1,which file do i need to base63-encode to connect from gitlab to k8s?
 737,1,?
-738,1,"No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
+738,5,"No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
 739,1,"btw tested out cri-o project today instead of docker, it's still really WIP"
 740,1,that link is always for current version
 741,1,I copied the same pod yaml as given on that page
@@ -745,15 +745,15 @@
 744,1,Hi @walteraa did you configure DNS server to resolve these entries ?
 745,1,Limiting a ES node to 500m CPU?
 746,1,that helps a lot
-747,2,22h 1s 9 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 15
+747,4,22h 1s 9 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 15
 748,2,revisionHistoryLimit: 5
 749,1,"Hi, everyone"
 750,1,a Persistent Disk resource in Google Compute Engine
 751,1,you need an ingress controller
-752,2,22h 4m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 16
+752,4,22h 4m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 16
 753,1,very little info to tell what's going on. one possible scenario is the svc selector is to broad and hits different pods/deployments in a round-robin fashion
 754,2,^--
-755,2,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243413 5596 aws.go:810] Zone not specified in configuration file
+755,4,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243413 5596 aws.go:810] Zone not specified in configuration file
 756,1,"@tamal look at the objects in a collection of files (e.g., in a directory) and validate them"
 757,1,"Hello, is there any GitHub with a beginner's tutorial that you indicate?"
 758,1,"I have an intermediary container that receives uploads and then uploads to S3 (We are working on uploading to s3 directly, but the legacy is this way now). Sometimes there is an issue with the upload and the file gets stuck on the container. Is there an easy way to clean out these files every 90 minutes?"
@@ -761,11 +761,11 @@
 760,1,@U7FCJNU58 can you show the output of kubectl describe svc/foot-test-svc?
 761,1,you will need to use a NodePort service then
 762,1,my app port 8099 i am provding nodeport for service 30080
-763,1,https://kb.wisc.edu/middleware/page.php?id=4064 might help you check if the key actually matches the cert
+763,5,https://kb.wisc.edu/middleware/page.php?id=4064 might help you check if the key actually matches the cert
 764,1,anyone run into
 765,2,kubectl get persistentvolumeclaims -n blah
-766,2,8h 12m 3 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 4; reason: cpu resource utilization (percentage of request) above target
-767,1,"Hi Can someone please advise How I can setup kubernates cluster on VM running on OS CentOS Linux release 7.3.1611 (Core) With Docker Version 17.09.0-ce I Tried Following Instruction from https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/ But Running into issues and now after installing flanneld.service Even Docker is not starting Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service: main process exited, code=exited, status=2/INVALIDARGUMENT Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service changed final-sigterm -> failed Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job flanneld.service/start finished, result=failed Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Failed to start Flanneld overlay address etcd agent. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job docker.service/start finished, result=dependency Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Dependency failed for Docker Application Container Engine. Oct 26 07:13:19 kuber-poc-app1 systemd-logind[735]: Got message type=signal sender=:1.0 destination=n/a object=/org/freedeskt Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job docker.service/start failed with result 'dependency'. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Unit flanneld.service entered failed state. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service failed. Please help me to clean this mess and get started from scracth again"
+766,4,8h 12m 3 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 4; reason: cpu resource utilization (percentage of request) above target
+767,7,"Hi Can someone please advise How I can setup kubernates cluster on VM running on OS CentOS Linux release 7.3.1611 (Core) With Docker Version 17.09.0-ce I Tried Following Instruction from https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/ But Running into issues and now after installing flanneld.service Even Docker is not starting Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service: main process exited, code=exited, status=2/INVALIDARGUMENT Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service changed final-sigterm -> failed Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job flanneld.service/start finished, result=failed Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Failed to start Flanneld overlay address etcd agent. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job docker.service/start finished, result=dependency Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Dependency failed for Docker Application Container Engine. Oct 26 07:13:19 kuber-poc-app1 systemd-logind[735]: Got message type=signal sender=:1.0 destination=n/a object=/org/freedeskt Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/system Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Job docker.service/start failed with result 'dependency'. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: Unit flanneld.service entered failed state. Oct 26 07:13:19 kuber-poc-app1 systemd[1]: flanneld.service failed. Please help me to clean this mess and get started from scracth again"
 768,2,etc/systemd/system/docker.service.d/docker-external.conf
 769,1,Can you explain a bit further @U7Q9UM449
 770,1,"I'm thinking passing kubectl configs via secret to a reaper container with only the kubectl binary that scrapes stopped containers in particular deployment (as input of environment variable)? or do you think there is a better, cleaner way of doing it?"
@@ -773,7 +773,7 @@
 772,2,https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
 773,1,is there a way to get a configmap as a file vs a volume ?
 774,1,@nux - Should be in bytes
-775,1,"following https://kubernetes.io/docs/tutorials/stateless-application/guestbook/, got Error from server (BadRequest): error when creating redis-master-deployment.yaml: Deployment in version v1beta2 cannot be handled as a Deployment: no kind Deployment is registered for version apps/v1beta2 when applied master deployment file"
+775,7,"following https://kubernetes.io/docs/tutorials/stateless-application/guestbook/, got Error from server (BadRequest): error when creating redis-master-deployment.yaml: Deployment in version v1beta2 cannot be handled as a Deployment: no kind Deployment is registered for version apps/v1beta2 when applied master deployment file"
 776,1,it is just helm/kube/mirror and a large pile of bash right now
 777,2,https://rook.io/
 778,1,as in
@@ -784,7 +784,7 @@
 783,2,kubernetes enable PROXY protocol loadbalancer
 784,2,kubectl get svc --all-namespaces
 785,1,No resources found.
-786,1,"Gah, I can't type this well. will take a few attempts. So the idea is to get a test case going without revealing what roles have privileges. So I have my restricted and permissive clusterroles, I want the local user to be able to essentially try this: https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/README.md but with the assumption they are namespace-locked and the only options they have are rolebindings to clusterroles."
+786,5,"Gah, I can't type this well. will take a few attempts. So the idea is to get a test case going without revealing what roles have privileges. So I have my restricted and permissive clusterroles, I want the local user to be able to essentially try this: https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/README.md but with the assumption they are namespace-locked and the only options they have are rolebindings to clusterroles."
 787,1,"@liggitt Btw, can't a user with 'admin' elevate his permissions to 'cluster-admin' (for that namespace) since they can update rolebindings?"
 788,1,Does anybody have experience connecting to JMX on AWS/Kuberntes pod?
 789,2,name: jenkins-home-pvc
@@ -800,7 +800,7 @@
 799,1,Man @hubt you sure help a lot
 800,1,checked the Namespace and I'm in the right one and it's deployed in the right one
 801,1,"I think it'd still be a pod. It would presumably need a service for you to connect to. I've launched the helm chart for it before now, but personally didn't find much use for it at the time."
-802,1,we tried doing this - http://backreference.org/2010/06/11/iptables-debugging/ but its not working for us to try and show the rewriting
+802,5,we tried doing this - http://backreference.org/2010/06/11/iptables-debugging/ but its not working for us to try and show the rewriting
 803,1,"I'm setting up Heapster on a cluster, and it seems that Heapster can only monitor the node on which the pod is currently running. I keep getting the following errors"
 804,1,"@roffe, woow! that sounds amazing, good job there! I definitely will take a look at this! As you said it is out of scope, So in a nutshell what I understood is"
 805,2,NAME READY STATUS RESTARTS AGE
@@ -809,15 +809,15 @@
 808,2,Min replicas: 2
 809,2,https://github.com/microwavecausesaids/kubernetes_the_hard_way_ansible_version/blob/master/roles/master/tasks/main.yml
 810,1,@amulholland it would be too easy to predict things getting stolen wouldn't it
-811,2,[+]ping ok\n[+]etcd ok\n[+]poststarthook/generic-apiserver-start-informers ok\n[+]poststarthook/start-apiextensions-informers ok\n[+]poststarthook/start-apiextensions-controllers ok\n[-]poststarthook/bootstrap-controller failed: reason withheld\n[-]poststarthook/ca-registration failed: reason withheld\n[+]poststarthook/start-kube-apiserver-informers ok\n[+]poststarthook/start-kube-aggregator-informers ok\n[+]poststarthook/apiservice-registration-controller ok\n[+]poststarthook/apiservice-status-available-controller ok\n[+]poststarthook/apiservice-openapi-controller ok\n[+]poststarthook/kube-apiserver-autoregistration ok\n[-]autoregister-completion failed: reason withheld\nhealthz check failed\n [[kube-probe/1.8] 127.0.0.1:53240]
+811,4,[+]ping ok\n[+]etcd ok\n[+]poststarthook/generic-apiserver-start-informers ok\n[+]poststarthook/start-apiextensions-informers ok\n[+]poststarthook/start-apiextensions-controllers ok\n[-]poststarthook/bootstrap-controller failed: reason withheld\n[-]poststarthook/ca-registration failed: reason withheld\n[+]poststarthook/start-kube-apiserver-informers ok\n[+]poststarthook/start-kube-aggregator-informers ok\n[+]poststarthook/apiservice-registration-controller ok\n[+]poststarthook/apiservice-status-available-controller ok\n[+]poststarthook/apiservice-openapi-controller ok\n[+]poststarthook/kube-apiserver-autoregistration ok\n[-]autoregister-completion failed: reason withheld\nhealthz check failed\n [[kube-probe/1.8] 127.0.0.1:53240]
 812,1,where is your ES cluster running?
 813,1,Both are not for application level monitoring i think. Seems i need to include it on dockerfile
 814,2,https://github.com/kubernetes/kubernetes/tree/master/pkg/proxy/ipvs
 815,2,kubectl create secret tls savvisave-com-tls-secret --key domain.com.key --cert digicert-sha2.pem
 816,1,dose anyone know how to use IPVS in k8s 1.8?
 817,2,annotations:
-818,2,"@3molo Still Same Sir Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.548619 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.550079 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.568281 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: I1027 00:51:20.568306 16317 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:51:20 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service: main process exited, code=exited, status=1/FAILURE Oct 27 00:51:20 kuber-poc-app1 systemd[1]: Unit kubelet.service entered failed state. Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service failed."
-819,1,@smerrill I'm trying to choose a proper overlay for bare metal - all of my vms are on 192.168.13.0/24
+818,7,"@3molo Still Same Sir Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.548619 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.550079 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.568281 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: I1027 00:51:20.568306 16317 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:51:20 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service: main process exited, code=exited, status=1/FAILURE Oct 27 00:51:20 kuber-poc-app1 systemd[1]: Unit kubelet.service entered failed state. Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service failed."
+819,5,@smerrill I'm trying to choose a proper overlay for bare metal - all of my vms are on 192.168.13.0/24
 820,1,you can't update them
 821,1,right force pull the base image.
 822,1,Anyone
@@ -829,7 +829,7 @@
 828,1,or export the yaml file.. and then delete it..
 829,1,and sh is not in the container..
 830,2,ingress.kubernetes.io/secure-backends: true
-831,1,still getting this: https://goo.gl/Mc1tg4
+831,5,still getting this: https://goo.gl/Mc1tg4
 832,1,Could someone explain why this command is failing?
 833,1,You'll need to edit net-conf.json to read Type: host-gw
 834,1,there's no magic. it isn't designed for that
@@ -840,7 +840,7 @@
 839,1,Good luck on your journey! and looks like you're on the right track
 840,1,LOL
 841,2,#NAME?
-842,2,PLEG: pod frameloss-empty-59549d5d8-8mvjf/default failed reinspection: rpc error: code = Unknown desc = Error response from daemon: open /var/lib/docker/overlay/7871d8b75de341fbfcdea6f04f7950164259026420b1b8d454a02fabb991f26a/lower-id: no such file or directory
+842,4,PLEG: pod frameloss-empty-59549d5d8-8mvjf/default failed reinspection: rpc error: code = Unknown desc = Error response from daemon: open /var/lib/docker/overlay/7871d8b75de341fbfcdea6f04f7950164259026420b1b8d454a02fabb991f26a/lower-id: no such file or directory
 843,1,if u're not interest in the at most part use the nodeselector strategy with a normal deployment
 844,2,daemonset
 845,1,kubectl describe svc shows the container ip endpoint that w can use by itself just fine
@@ -848,29 +848,29 @@
 847,1,good to know. thanks for the info.
 848,1,you can try both.. but first fix the mountvolume..
 849,1,"@spotter check endpoints, id vips are corresponding to correct endpoints"
-850,1,I'm using the following: volumeClaimTemplates: - metadata: name: storage spec: storageClassName: gp2 accessModes: [ReadWriteOnce] resources: requests: storage: 5Gi
+850,5,I'm using the following: volumeClaimTemplates: - metadata: name: storage spec: storageClassName: gp2 accessModes: [ReadWriteOnce] resources: requests: storage: 5Gi
 851,1,Hi! Any clue on why the second rule gets translated with this two rewrites:
 852,2,ReadOnly: false
-853,2,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.741924 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54058: remote error: tls: bad certificate
+853,4,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.741924 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54058: remote error: tls: bad certificate
 854,1,Sweet! Jenkins has been my archnemesis too long not to look at some alternatives when I'm migrating our entire infrastructure
 855,2,$ kubectl logs kube-dns-7797cb8758-cx2rs -n kube-system sidecar
 856,1,I'm the only DevOps guy and only Kubernetes person at the company sadly.
 857,1,In case the clusters cant see to each other
-858,1,https://kubernetes.io/docs/admin/authorization/rbac/#service-account-permissions discusses adding permissions to service accounts
+858,5,https://kubernetes.io/docs/admin/authorization/rbac/#service-account-permissions discusses adding permissions to service accounts
 859,1,"Hi, i want to set up kubernetes in windows environment, can anyone suggest how to do it , or any docs.."
 860,1,"don't care if node fails really, another node takes over"
 861,2,helm install --name kube-prometheus --namespace=monitoring helm/kube-prometheus
 862,1,"To perform what I want, I need to have a modified volume with the folder I want. Also with admin permission, not root"
 863,2,kubectl config set-cluster
 864,1,@U7LULHTJL I think it's expecting another space before the -
-865,2,ERROR: logging before flag.Parse: W1026 21:48:02.659314 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:33879->127.0.0.1:53: read: connection refused
+865,4,ERROR: logging before flag.Parse: W1026 21:48:02.659314 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:33879->127.0.0.1:53: read: connection refused
 866,1,before
 867,1,you will be able to forward thru the port to an internal pod exposed in 8086
 868,1,I was following some various howtos on the net and in the documentation and I had this around phantom from previous attempts.. it appears when I reintroduce this variable it fails to make the update to the correct ip addresses
 869,1,hei peeps. I'm trying to understand kubernetes by following the kubernetes the hard way guide.
 870,1,ahaha weird
 871,1,for get the Corporate Cloud
-872,1,"Hi, can anyone please confirm if this documentation is still current for k8s v1.8.x https://kubernetes.io/docs/getting-started-guides/scratch/ Thanks"
+872,5,"Hi, can anyone please confirm if this documentation is still current for k8s v1.8.x https://kubernetes.io/docs/getting-started-guides/scratch/ Thanks"
 873,1,any service specific?....i am making deployment from same way...bot on pod
 874,1,"Have asked in other channels but just incase people arn't in them, I'm not sure if possible, but whats the process of setting a key pair on AWS as the --ssh-public-key. I'm using kops."
 875,1,"Hi! We have an issue that a container stops responding on network (mostly http) requests with an connection reset by peer, show on traefik logs. If I try that request inside container it works perfect, but not from another container or from any node. I've reviewed base node image with up-to-date network/provider drivers (aws with ixgbevf and ena), updated cluster (up to 1.7.5, same stable version from kops) and traefik up-to-date (as loadb level7). The metrics shows a flat chart on cpu and mem while they do not respond. Killing the unresponsive pod obviously makes it work again. Any thoughts? Thanks."
@@ -894,24 +894,24 @@
 893,1,this channel is a great place to ask questions too
 894,1,Is there a way to my PersistentVolumeClaim points to a specific aws volume id?
 895,1,"Friends , how do I stop Kubernetes from looking for orphaned pods?"
-896,1,"Here's the use case: I have a fleet of temp dev [backdoor](https://github.com/MayankTahil/backdoor) workstations that users can SSH into. There is a script that runs to check if a user logged in via SSH or not, and if they did, when they log off the container stops, the script ends. Now I don't want the same container to start becuase the dev may have done apt-get update or something like that to the container that made it deviate from the baseline, which is fine, but I want a new fresh container for a clean environment for the next user to logon when they do."
+896,5,"Here's the use case: I have a fleet of temp dev [backdoor](https://github.com/MayankTahil/backdoor) workstations that users can SSH into. There is a script that runs to check if a user logged in via SSH or not, and if they did, when they log off the container stops, the script ends. Now I don't want the same container to start becuase the dev may have done apt-get update or something like that to the container that made it deviate from the baseline, which is fine, but I want a new fresh container for a clean environment for the next user to logon when they do."
 897,1,"Hello, can anyone direct me to resource that explains a difference of launching kubernetes services as pods vs. host processes?"
 898,1,Hey guys
-899,1,basically 192.168.81.11 works fine
+899,5,basically 192.168.81.11 works fine
 900,1,@amulholland depends on how much data it has/keeps. 2g for a jvm is not spectacularly high
 901,1,"@nfirvine, how would you normally interact with such labels?"
 902,1,"Is there a way to trace a transaction (or request) from within kubernetes. E.g. browser requests a URL, it goes to ingress, then to a pod, pod calls another micro service, then calls an external service (external service gets node ip but no way to tell which pod made the call), then call DB and return"
 903,1,How to deal with orphaned pods or volumes. I have millions of these messages
 904,1,so i did a FROM elastic:blabla and ran the uninstall parts to remove it
 905,1,"So, if you use imagePullPolicy: always and restartPolicy: Always"
-906,2,docker run imagename bash -c /tmp/setup.sh returns docker: Error response from daemon: oci runtime error: container_linux.go:262: starting container process caused exec: \--\: executable file not found in $PATH but docker run imagename /bin/sh -c /tmp/setup.sh works without errors
-907,1,maybe my question is a little easier when asked this way: the kubelet logs show Failed to admit pod calico-node-79fwv_kube-system(1a755150-ba85-11e7-a698-0cc47aeb364e) - node has conditions: [DiskPressure]. how do I debug what's causing disk pressure?
+906,7,docker run imagename bash -c /tmp/setup.sh returns docker: Error response from daemon: oci runtime error: container_linux.go:262: starting container process caused exec: \--\: executable file not found in $PATH but docker run imagename /bin/sh -c /tmp/setup.sh works without errors
+907,7,maybe my question is a little easier when asked this way: the kubelet logs show Failed to admit pod calico-node-79fwv_kube-system(1a755150-ba85-11e7-a698-0cc47aeb364e) - node has conditions: [DiskPressure]. how do I debug what's causing disk pressure?
 908,1,"Does kube have any way to query the labels of a given *image*? Not a container, or pod, or anything, but the Docker image's labels, the ones you create with LABELS in the Dockerfile."
 909,2,worker_processes 15;
 910,1,ha! it's not!!!
 911,2,- env:
 912,1,"some stuff handles namespaces, some doesn't"
-913,1,@acosta.dimitri Run kubectl describe node/<node_name> | grep IP and see what returns
+913,5,@acosta.dimitri Run kubectl describe node/<node_name> | grep IP and see what returns
 914,1,"Could not find reliable source to do APM on kubernetes. I am on nginx, php7...any help?"
 915,2,ingress.kubernetes.io/session-cookie-name: xxx
 916,1,what labels do you have on your master?
@@ -929,7 +929,7 @@
 928,1,"is there a way to submit a new manifest for an app, and then handle the pod restarting manually rather than it happening automatically?"
 929,2,Volumes:
 930,1,just a guess. could be anything
-931,1,"Talking about NodePort, I'm having an issue reaching a service I declared with it. https://bpaste.net/show/321a1140ae59"
+931,5,"Talking about NodePort, I'm having an issue reaching a service I declared with it. https://bpaste.net/show/321a1140ae59"
 932,2,- path: /
 933,1,has anyone tries giving AWS IAM roles to pods during their deployment
 934,1,"interesting, thanks for the answer. Any specific reason as to why you are not using minikube with your cluster(s) for dev?"
@@ -948,14 +948,14 @@
 947,2,https://github.com/stephenh/mirror
 948,1,Would everyone recommend SHA-2 or Full Chain (inc. Root) SHA-2 Certificates nowadays?
 949,1,aww yea - just got my kubecon ticket
-950,1,pull and start - pull image?
+950,5,pull and start - pull image?
 951,1,Probably beind the scenes becuase load balancer service is instant on it while not on aws or gcloud.
 952,1,"Hi, do you know what may be the reason for load balancer service to take few minutes before it actually starts ELB on aws ?"
 953,2,Defaulting container name to nginx-ingress-controller.
 954,2,https://hackernoon.com/graceful-shutdown-in-kubernetes-435b98794461 ?
-955,2,22h 41m 33 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 200
+955,4,22h 41m 33 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 200
 956,1,"i think events are limited by time (like last hour)... there should be something like --since, which I was looking for today but didn't find documentation about"
-957,1,@U7MJLP5CL looks like there's an annotation that can configure the ELB to enable proxy protocol. https://github.com/kubernetes/kubernetes/issues/49682
+957,5,@U7MJLP5CL looks like there's an annotation that can configure the ELB to enable proxy protocol. https://github.com/kubernetes/kubernetes/issues/49682
 958,1,You should use the external IP
 959,2,command terminated with exit code 126
 960,2,purpose: jenkins-home
@@ -1026,7 +1026,7 @@
 1025,1,"kdockery, debian/sid has a 1.7.7 package, (we might see to continue to package it later, or not), I'm mostly trying to get things running for now, figure out how it works"
 1026,2,faas-netesd-85895cbddc-qschn 1/1 Running 0 48m
 1027,1,"being specific, if i am running few pods with simple just index.html on nginx with medium traffic....around 1core, 2-3gb is fine- each node...two node cluster lets say."
-1028,1,"so ideally, it shudnt run /apps/mst/deployments/scripts/app_deploy.sh, but I dont even know if it is because of that..."
+1028,5,"so ideally, it shudnt run /apps/mst/deployments/scripts/app_deploy.sh, but I dont even know if it is because of that..."
 1029,1,just get rid of it!
 1030,1,our own VMs
 1031,2,HTTP/1.1 200 0.97 secs: 49945 bytes ==> GET /
@@ -1041,12 +1041,12 @@
 1040,2,preferences: {}
 1041,2,gcloud auth activate-service-account --key-file ${PWD}/client-secret.json || die unable to authenticate service account for gcloud
 1042,1,"kdockery, let me see"
-1043,2,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:20.045128 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54072: remote error: tls: bad certificate
+1043,4,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:20.045128 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54072: remote error: tls: bad certificate
 1044,1,and you don't have the CA.PEM
 1045,1,What cloud platform do you want to use @U7KQ9SBPF
 1046,2,--volume-plugin-dir=/etc/kubernetes/volumeplugins \
 1047,1,I use a Slack bot deployed as a pod. This will report when the pod changes state from Ready to X
-1048,1,btw great job on this article @U7KM8RVMG https://www.linkedin.com/pulse/automating-docker-container-deployment-github-travis-ci-mike-sparr/
+1048,5,btw great job on this article @U7KM8RVMG https://www.linkedin.com/pulse/automating-docker-container-deployment-github-travis-ci-mike-sparr/
 1049,2,~/dev/brickblock.io $kubectl -n prod exec -t reverse-proxy-prod-nginx-ingress-controller-2327356158-k8srn '/bin/ls /ingress-controller/ssl'
 1050,1,I need them to pull and start a fresh new one each time one container exits - Do you mean pull new image?
 1051,1,@tamal thanks. this might be what i was looking for
@@ -1056,7 +1056,7 @@
 1055,2,kubectl logs -p <pod>?
 1056,1,is it possible to mount a container image as a read only volume?
 1057,1,actually i use OIDC and refresh tokens but that is out of the scope of what ur asking so i removed those parts from the config i pasted
-1058,1,then kubectl delete configmap example-redis-config
+1058,5,then kubectl delete configmap example-redis-config
 1059,1,cluster dns is for? I'm sure I'll need that at some point but is it really the issue here?
 1060,1,Yes you can do with changing PVC
 1061,1,ahaha this stuff always takes its time
@@ -1069,13 +1069,13 @@
 1068,2,kind: Service apiVersion: v1 metadata: name: influxdb spec: type: NodePort ports: - port: 8086 nodePort: 30000 selector: name: influxdb
 1069,1,do you really have nodes with 120m of memory?
 1070,1,isn't it easier just to change the script so that the container is killed instead of being stopped (maybe by killing the entrypoint process) so that k8s will automatically spawn a fresh container? sorry if I've misunderstood your requirement
-1071,1,"@liggitt Any suggestion/workaround on this? https://kubernetes.slack.com/archives/C09NXKJKA/p1509028224000370 So, it seems like defining a new ClusterRole that limits to CRUD on namespaces only should be able to achieve what I need in the existing model, right?"
+1071,5,"@liggitt Any suggestion/workaround on this? https://kubernetes.slack.com/archives/C09NXKJKA/p1509028224000370 So, it seems like defining a new ClusterRole that limits to CRUD on namespaces only should be able to achieve what I need in the existing model, right?"
 1072,1,"one more thing, its been 15 minutes since the status of the pod is ContainerCreating"
 1073,2,root 612 0.0 0.8 199800 8204 ? Sl 16:59 0:00 ./price-project
 1074,1,disable swap
 1075,2,httpGet:
 1076,1,"that was my first thought, too!"
-1077,1,The endpoint for the service should be <pod_ip>:5000. The pod being the one that starts with foo-test-dpl-.
+1077,5,The endpoint for the service should be <pod_ip>:5000. The pod being the one that starts with foo-test-dpl-.
 1078,1,unfortunately I'm in AWS
 1079,1,happy to be of service..
 1080,1,"@liggetm so, with that in mind, it sounds like limiting user access per-namespace isn't really possible? Within-namespace makes sense with RoleBinding, but we're also trying to limit our internal service account to only CRUD Roles and RoleBindings for a specific subset of namespaces. Will gladly contribute docs/examples for this once we get it working."
@@ -1087,7 +1087,7 @@
 1086,2,preStop:
 1087,1,"no, they are cluster-scoped objects"
 1088,1,"@U7PGUCT7E: v1beta2 is a kubernetes v1.8 thing, which version of kubernetes are you using?"
-1089,1,"but using the above one, elasticsearch gives me the following error: java.nio.file.AccessDeniedException: /data/nodes"
+1089,7,"but using the above one, elasticsearch gives me the following error: java.nio.file.AccessDeniedException: /data/nodes"
 1090,2,creationTimestamp: null
 1091,1,"kdockery, I'll try with nginx"
 1092,1,yea quotas are a step above me too from what my work entails...that's what I mean though I can't even see the pod to find out what namespace it's in because the pod doesn't even come to life and the statefulset is apparently already created but no where to be found
@@ -1098,7 +1098,7 @@
 1097,1,Help pls with k8s 1.8.0 failed to start api server as below:
 1098,2,$PATH
 1099,1,I cant rule out rate limit. Do you happen to know if Lets Encrypt is rate limit increase willing?
-1100,1,@ekarlso a subPath may work for you. Check out this thread: https://stackoverflow.com/questions/33415913/whats-the-best-way-to-share-mount-one-file-into-a-pod
+1100,5,@ekarlso a subPath may work for you. Check out this thread: https://stackoverflow.com/questions/33415913/whats-the-best-way-to-share-mount-one-file-into-a-pod
 1101,1,swapoff won't output anything if it succeeds IIRC
 1102,1,yea stick with apply
 1103,1,"Hm, so I discovered the problem. ES can only write to folders that has admin permission. When I changed from root to admin, I could create the logs in the folder"
@@ -1110,7 +1110,7 @@
 1109,1,"Yes, I could mount the docker socket. That's super overkill"
 1110,1,wait nevermind.. my clusterrolebinding I have works... I was running into an issue before it was set
 1111,1,yep. is there anykubernetes way or I should run new relic daemon on all pods i.e. configure on docker image?
-1112,1,tl;dr an easier way to handle them besides --namespace=blah or --all-namespaces
+1112,5,tl;dr an easier way to handle them besides --namespace=blah or --all-namespaces
 1113,1,@smerrill do I need to do anything special when installing flannel or do I just roll with:
 1114,2,https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
 1115,1,"i mean, 'm no expert, but /bin/sh is asking a shell for no apparent purpose"
@@ -1124,10 +1124,10 @@
 1123,1,"Oh so, how can I get my node ip?"
 1124,1,That moment you wake up at 4.55AM to see a Slack alert on your phone of pods crashing left right and centre. What a great Friday Morning.
 1125,2,$ kubectl get pods --all-namespaces |grep busybox
-1126,1,@kyrias Are you around? I am trying to understand this issue https://github.com/kubernetes/kubernetes/issues/52266 and looking to fix it
+1126,5,@kyrias Are you around? I am trying to understand this issue https://github.com/kubernetes/kubernetes/issues/52266 and looking to fix it
 1127,2,ingress.kubernetes.io/session-cookie-name: blah
 1128,1,"i do everything on the cluster, helm sets up environments and i've got bi-directional sync to all the containers i'm working on"
-1129,1,take a look at this too: https://www.telepresence.io/
+1129,5,take a look at this too: https://www.telepresence.io/
 1130,1,then I don't see how not to lose traffic ...
 1131,1,"That can sometimes happen if binary data gets sent to your terminal. Every once in awhile if you get disconnected from a server or pod it will happen, too."
 1132,1,I seem to be having trouble getting my route53 domain configuration to update after using kops to create a new cluster. Due to this I get timeout issues
@@ -1144,7 +1144,7 @@
 1143,1,Did it work ?
 1144,2,start=$(date +%s)
 1145,1,Can a pod access a configmap (mount a field as an environment variable for instance) if the configmap lives in a different namespace?
-1146,2,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.570503 1194 client.go:72] Connecting to docker on unix:///var/run/docker.sock
+1146,4,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.570503 1194 client.go:72] Connecting to docker on unix:///var/run/docker.sock
 1147,1,As a note on this; I just rebuilt it for the hell of it; and it does seem to be related to one of the configuration variables I was using. Not sure which one yet.. I essentially stripped out many variables just to see if that would fix it; and it did.. going to figure out which variable it was..
 1148,1,"np, thanks!"
 1149,1,depend on namespace i want use different host (domain). How can i achieve it? 1) Create separate YAML file for each namespace. 2) ConfigMaps? Is it possible? 3) Another method?
@@ -1165,10 +1165,10 @@
 1164,1,"but thanks all, information k8s doesn't have ready solution for that helps a lot"
 1165,1,do u use ingress?
 1166,1,I'm not sure where to begin.
-1167,2,8h 8m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 8
+1167,4,8h 8m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 8
 1168,1,still they will be different deployments
 1169,1,oh that worked (annotating route). My desktop still had cookie cached. Tried it on my mobile and every refresh alternates pods.
-1170,1,simplest bit would be a makefile with sed s|@@DOMAIN@@|your_domain.here|g <ingress.yaml | kubectl apply -f /dev/stdin
+1170,5,simplest bit would be a makefile with sed s|@@DOMAIN@@|your_domain.here|g <ingress.yaml | kubectl apply -f /dev/stdin
 1171,1,"@tamal because deployment restarts the containers when they exit or fail, I need them to pull and start a fresh new one each time one container exits."
 1172,1,What is best approach for logging & monitoring in Kubernetes?
 1173,1,don't know. if nodes are deleted you should see pods pending. looks more like a bug... or maybe api not talking to etcd and so unable to respond in time.... really no idea
@@ -1190,13 +1190,13 @@
 1189,2,as-user-extra: {}
 1190,1,all of the above
 1191,1,@parry I've downloaded the coreos ova for that platform
-1192,1,or is there no way to do something like docker run -v $PWD/foo:/foo bash 'cat /foo' ?
+1192,5,or is there no way to do something like docker run -v $PWD/foo:/foo bash 'cat /foo' ?
 1193,1,yha working for now
 1194,1,Its installation probably includes these plugins...
 1195,1,"yeah exactly, they're just disks you see in the UI that are hard coded to your deployment"
 1196,1,i've never used pvcs (i dont do any stateful in k8s anymore) so ymmv there
 1197,1,"Perfect, thanks for confirming. Yes, those are where I got the idea to do this for our internal use too. Thank you so very much!"
-1198,2,error: error validating nginxbuyflow-servicenewnodeport.yml: error validating data: field spec.ports[0].port for v1.ServicePort is required
+1198,4,error: error validating nginxbuyflow-servicenewnodeport.yml: error validating data: field spec.ports[0].port for v1.ServicePort is required
 1199,1,rules:
 1200,1,"grampelberg, oh, no I was trying to create one"
 1201,2,"Body: [{Kind:gke,Price:2.35},{Kind:on-prem,Price:1.25}]"
@@ -1207,9 +1207,9 @@
 1206,2,$
 1207,1,"@kwladyka I generally use multiple yaml files, looking forward to generating then with ksonnet"
 1208,1,Can podsecuritypolicy be declared by a localuser to only work in local namespaces? I doubt it but wondering for certain use cases.
-1209,1,"does anyone know why kubectl describe queries the events like /api/v1/namespaces/default/events?fieldSelector=involvedObject.uid=bc91cffd-b9d0-11e7-8525-2e6a5c70d9f0,involvedObject.name=nginx-1423793266-qvrqj,nvolvedObject.namespace=default and not just with the involvedObject.uid ?"
+1209,5,"does anyone know why kubectl describe queries the events like /api/v1/namespaces/default/events?fieldSelector=involvedObject.uid=bc91cffd-b9d0-11e7-8525-2e6a5c70d9f0,involvedObject.name=nginx-1423793266-qvrqj,nvolvedObject.namespace=default and not just with the involvedObject.uid ?"
 1210,1,The cert is a wild card cert. The hostnames are setup dynamically by helm and are subdomains within that domain.
-1211,1,kubectl calls the api server defined in ~/.kube/config cluster -> server. You just need to force web traffic for that host through your VPN connection.
+1211,5,kubectl calls the api server defined in ~/.kube/config cluster -> server. You just need to force web traffic for that host through your VPN connection.
 1212,1,@foxie kubectl get events just show scaled down podname and scaled up pdname repeatedly without specifying a reason
 1213,1,Deployment = template for a pod. It cannot create two different pods
 1214,1,context is a concept that is client side kubectl only. it's a combination of user+cluster+namespace. it's useful if you are working switching around environments regularly.
@@ -1241,7 +1241,7 @@
 1240,2,template:
 1241,1,thank you guys
 1242,2,kubectl get pod <name> -o yaml
-1243,1,@ekarlso This guide should contain what you need to do that: https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/ See the section titled Add ConfigMap data to a specific path in the Volume
+1243,5,@ekarlso This guide should contain what you need to do that: https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/ See the section titled Add ConfigMap data to a specific path in the Volume
 1244,2,Version v1.14.3-4-gee838f6
 1245,1,how is inter-node network setup? Flannel?
 1246,2,serviceAccountName:
@@ -1252,31 +1252,31 @@
 1251,1,"My understanding is your cluster still requires an internet connection to function, but I could be wrong. Although I lost a node the other day when a fool in my office removed an ethernet cable from a staging node."
 1252,1,Is it possible to get multiple LoadBalancer type services to all configure and use a single loadbalancer in AWS?
 1253,1,NodePort will expose your port on every node within your cluster and it's limited with specific port range (default: 30000-32767) which makes it not the best solution.
-1254,2,"@mdavidsen exited 34 minutes ago, https://gist.github.com/anonymous/9a776baace59b2b11f5eb97010a8a2b4"
+1254,5,"@mdavidsen exited 34 minutes ago, https://gist.github.com/anonymous/9a776baace59b2b11f5eb97010a8a2b4"
 1255,1,represent the data as bytes
 1256,1,in the events should be more details IMHO
 1257,1,I use ingress too.
 1258,1,aka unsecure self signed certs mess
 1259,1,ah thanks Mate
 1260,2,worker_connections 768;
-1261,1,"Hi, moving forward on the same issue, is it possible to use ingress.kubernetes.io/server-snippet: annotation on the Ingress to add a custom location to nginx controller??"
+1261,5,"Hi, moving forward on the same issue, is it possible to use ingress.kubernetes.io/server-snippet: annotation on the Ingress to add a custom location to nginx controller??"
 1262,1,should work.
 1263,1,Weird. I think you have a DNS issue. That would explain the MissingClusterDNS Warning.
 1264,1,Thank you!
-1265,1,Has anyone had any luck bypassing istio for egress traffic? Its described here https://istio.io/docs/tasks/traffic-management/egress.html But I cannot get this to work. I understand you can create rules for http but I need TCP traffic and have been having trouble calling external services directly
+1265,5,Has anyone had any luck bypassing istio for egress traffic? Its described here https://istio.io/docs/tasks/traffic-management/egress.html But I cannot get this to work. I understand you can create rules for http but I need TCP traffic and have been having trouble calling external services directly
 1266,2,kind: Ingress
 1267,1,Slack bot launched as a pod.
 1268,1,and it's probably 'systemd' not 'system'
 1269,1,@3molo What about sudo docker ps on the 'xxyy'?
-1270,1,@U7P7RBJEA are you quoting the port when you curl that? $ curl -l 10.10.10.222:5432
+1270,5,@U7P7RBJEA are you quoting the port when you curl that? $ curl -l 10.10.10.222:5432
 1271,1,my previous question is for everyone if you know the answer
-1272,2,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:20.017921 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54070: remote error: tls: bad certificate
+1272,4,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:20.017921 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54070: remote error: tls: bad certificate
 1273,2,kubectl get persistentvolumes -n blah
 1274,1,Hi all. How does everyone track who created objects in Kubernetes from an audit perspective? Is there an admission controller that can tack on createdByUser/modifiedByUser?
 1275,1,"@U7MP7D5EV, also what labels do you have on your master?"
 1276,2,HTTP/1.1 404 0.23 secs: 19 bytes ==> GET /
 1277,1,how do I do that?
-1278,1,"Working on upgrading a kube cluster on 1.7.5 to 1.8.1, nodes are hanging on certificate_manager.go:361] Requesting new certificate. Did the cert rotation get enabled by default in 1.8 and how do I get it to receive a cert?"
+1278,7,"Working on upgrading a kube cluster on 1.7.5 to 1.8.1, nodes are hanging on certificate_manager.go:361] Requesting new certificate. Did the cert rotation get enabled by default in 1.8 and how do I get it to receive a cert?"
 1279,1,right
 1280,1,the namespace of a context is the namespace within the cluster you want to use.
 1281,2,selector:
@@ -1285,11 +1285,11 @@
 1284,1,how to check this ?
 1285,2,mountPath: /var/log
 1286,1,"sorry, it's 1.11.2, 1.12.6, 1.13.1, and 17.03.2 for kubernetes 1.8"
-1287,1,gotcha. have to dig into it a bit more. Found this on SO -- https://stackoverflow.com/questions/44663089/how-to-disable-sticky-sessions-in-openshift3 -- so set sticky off but still doing it. Will continue to dig in. thx!
+1287,5,gotcha. have to dig into it a bit more. Found this on SO -- https://stackoverflow.com/questions/44663089/how-to-disable-sticky-sessions-in-openshift3 -- so set sticky off but still doing it. Will continue to dig in. thx!
 1288,2,#NAME?
 1289,1,"For CICD we use gitlab it is really enterprise friendly, even in community edition. We replaced our buildbot and Jenkins."
 1290,1,great!
-1291,1,Hi @Channel I am trying to create a persistent Volume from a none default storageclass that can be shared between agents. I tried to modify kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume-test labels: type: local spec: storageClassName: slow capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: /tmp/data
+1291,5,Hi @Channel I am trying to create a persistent Volume from a none default storageclass that can be shared between agents. I tried to modify kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume-test labels: type: local spec: storageClassName: slow capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: /tmp/data
 1292,2,--cluster-dns=10.3.0.10 \
 1293,1,@mdornfe1 you can see an example here
 1294,1,"if I choose the overlay network, the firewall (pfsense) doesn't need to do anything right?"
@@ -1299,7 +1299,7 @@
 1298,2,metadata:
 1299,1,i guess that could be a very good reason
 1300,1,"oh... interesting. thanks, I'll check it out."
-1301,1,@U7K7RV0M9 Use probes https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+1301,5,@U7K7RV0M9 Use probes https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
 1302,2,:party_parrot:
 1303,2,users:
 1304,2,cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf|grep -i cgroup Environment=KUBELET_CGROUP_ARGS=--cgroup-driver=systemd
@@ -1307,12 +1307,12 @@
 1306,1,"Notice that the main difference is that, for some reason, with v1.8 it fails to contact the ec2 api. I'm puzzled. These are the flags i'm using to run kubelet"
 1307,1,yeah 2nd optionit needs to be installed as a php extension
 1308,1,etc/systemd/... is the one that overrides the usr/lib one
-1309,2,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077539 1194 aws.go:806] Building AWS cloudprovider
+1309,4,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077539 1194 aws.go:806] Building AWS cloudprovider
 1310,1,Hi @amulholland
 1311,1,"@liggitt Thinking, that seems reasonable. It's different from what I was approaching but makes more sense. Thank you!"
 1312,2,- context:
-1313,2,ERROR: logging before flag.Parse: I1026 21:33:17.409967 1 server.go:45] Starting server (options {DnsMasqPort:53 DnsMasqAddr:127.0.0.1 DnsMasqPollIntervalMs:5000 Probes:[{Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1} {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}] PrometheusAddr:0.0.0.0 PrometheusPort:10054 PrometheusPath:/metrics PrometheusNamespace:kubedns})
-1314,1,"@mdavidsen it worked, I could exec -ti it. I then quit it and well here it is in limbo. It's in the /api/v1/pods output if the api"
+1313,4,ERROR: logging before flag.Parse: I1026 21:33:17.409967 1 server.go:45] Starting server (options {DnsMasqPort:53 DnsMasqAddr:127.0.0.1 DnsMasqPollIntervalMs:5000 Probes:[{Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1} {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}] PrometheusAddr:0.0.0.0 PrometheusPort:10054 PrometheusPath:/metrics PrometheusNamespace:kubedns})
+1314,5,"@mdavidsen it worked, I could exec -ti it. I then quit it and well here it is in limbo. It's in the /api/v1/pods output if the api"
 1315,1,Have anyone idea why I do have connection refused on new pods created by a deployment?
 1316,1,@U7LULHTJL Look at helm and ask in that room too.
 1317,2,backend:
@@ -1337,7 +1337,7 @@
 1336,1,"Flannel in host-gw mode is probably the easiest then, since it will add route table entries to each host. You may need to also whitelist your pod IP range in your firewall for it to work."
 1337,1,the goals to delete those deployments first so the disks detach and are able to move to the new cluster when the new pods spin up
 1338,1,"Oh, try lining up the - with the a in accessModes"
-1339,1,"@U7L73A2RE FYI, I just checked the docs on what you stated and it sounds like that shouldn't be allowed, but it definitely seems like it could be based around the ClusterRole scope versus a RoleBinding scope: https://kubernetes.io/docs/admin/authorization/rbac/#privilege-escalation-prevention-and-bootstrapping > A user can only create/update a role if they already have all the permissions contained in the role, *at the same scope as the role* (cluster-wide for a ClusterRole, within the same namespace or cluster-wide for a Role)"
+1339,5,"@U7L73A2RE FYI, I just checked the docs on what you stated and it sounds like that shouldn't be allowed, but it definitely seems like it could be based around the ClusterRole scope versus a RoleBinding scope: https://kubernetes.io/docs/admin/authorization/rbac/#privilege-escalation-prevention-and-bootstrapping > A user can only create/update a role if they already have all the permissions contained in the role, *at the same scope as the role* (cluster-wide for a ClusterRole, within the same namespace or cluster-wide for a Role)"
 1340,1,I'm using your exact manifest (I just changed the namespace to default)
 1341,1,"Morning all, can anyone chime in with options for deploying k8s on bare metal/vms? I've a cluster of a few nodes which I've been playing around with which I deployed with Kubespray, but I'm wondering what people's thoughts are regarding using Kubespray for a production cluster"
 1342,1,"Weird, it worked on my cluster"
@@ -1347,13 +1347,13 @@
 1346,1,@jeffhub didn't work on my computer either
 1347,1,no logs
 1348,2,#NAME?
-1349,1,"Hi Guys while starting kubeadm cluster getting error Kubernetes version: v1.8.2 Running with swap on is not supported. Please disable swap or set kubelet's --fail-swap-on flag to false. error: failed to run Kubelet: Running with swap on is not supported, please disable swap! or set --fail-swap-on flag to false. /proc/swaps contained: [Filename Type Size Used Priority /dev/dm-0 partition 1953788 0 -1] I see some blogs to Disable Adding KUBELET_FLAGS=${KUBELET_FLAGS:---fail-swap-on=false} to hack/local-up-cluster.sh But I dont see this script anywhere in my system Please advise"
+1349,5,"Hi Guys while starting kubeadm cluster getting error Kubernetes version: v1.8.2 Running with swap on is not supported. Please disable swap or set kubelet's --fail-swap-on flag to false. error: failed to run Kubelet: Running with swap on is not supported, please disable swap! or set --fail-swap-on flag to false. /proc/swaps contained: [Filename Type Size Used Priority /dev/dm-0 partition 1953788 0 -1] I see some blogs to Disable Adding KUBELET_FLAGS=${KUBELET_FLAGS:---fail-swap-on=false} to hack/local-up-cluster.sh But I dont see this script anywhere in my system Please advise"
 1350,1,volume id?
 1351,1,Only to expose my kubernetes network to external world
 1352,1,You might have to mount module paths
 1353,1,ya. that's seems to be an option
 1354,1,CI/CD isn't cutting it because that only triggers on code change in git for base image.
-1355,2,8h 8m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 8; reason: cpu resource utilization (percentage of request) above target
+1355,4,8h 8m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 8; reason: cpu resource utilization (percentage of request) above target
 1356,1,localuser == user limited to a namespace?
 1357,1,thats the thing
 1358,2,Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}] PrometheusAddr:0.0.0.0 PrometheusPort:10054 PrometheusPath:/metrics PrometheusNamespace:kubedns})
@@ -1362,8 +1362,8 @@
 1361,2,Type: ConfigMap (a volume populated by a ConfigMap)
 1362,1,"Ok, good luck"
 1363,2,name: ingress-with-session-persistence
-1364,1,@mario https://github.com/cloudnativelabs/kube-shell (making use of kubeconfig with contexts is the key thing though).
-1365,1,"Hi, I have created a pod and exposed with a service. $kubectl get svc NAME CLUSTER-IP EXTERNAL-IP PORT(S) AGE kubernetes 10.10.10.1 <none> 443/TCP 28d pmaster 10.10.10.222 <none> 5432/TCP 24m pmaster service name or service-cluster-ip (10.10.10.222) is not reachable within the pod. Even $Curl -L pmaster is not working. How to make this service-cluster-ip (10.10.10.222) reachable ?. Please help !!"
+1364,5,@mario https://github.com/cloudnativelabs/kube-shell (making use of kubeconfig with contexts is the key thing though).
+1365,5,"Hi, I have created a pod and exposed with a service. $kubectl get svc NAME CLUSTER-IP EXTERNAL-IP PORT(S) AGE kubernetes 10.10.10.1 <none> 443/TCP 28d pmaster 10.10.10.222 <none> 5432/TCP 24m pmaster service name or service-cluster-ip (10.10.10.222) is not reachable within the pod. Even $Curl -L pmaster is not working. How to make this service-cluster-ip (10.10.10.222) reachable ?. Please help !!"
 1366,1,sure carldanley
 1367,1,"take the other cluster out of the picture for now. can you curl, from your computer, <external_ip>:3000?"
 1368,1,Does anyone know an example showing how to authenticate kubectl to access the api from inside a pod
@@ -1377,7 +1377,7 @@
 1376,1,"Hi! We have an issue that a container stops responding on network (mostly http) requests with a connection reset by peer, shown on traefik logs. If I try that request inside container it works perfect, but not from another container or from any node. I've reviewed base node image with up-to-date network/provider drivers (aws with ixgbevf and ena), updated cluster (up to 1.7.5, same stable version from kops) and traefik up-to-date (as loadb level7). The metrics shows a flat chart on cpu and mem while they do not respond. Killing the unresponsive pod obviously makes it work again. Usually it responds again after some minutes. It seems to happens to most of hpa or frontend containers. Any thoughts? Thanks."
 1377,1,I seem to be having trouble getting my route53 domain configuration to update after using kops to create a new cluster. Due to this I get timeout issues; my version is 1.7.0.. it does update two of the 4 dns records correctly but the api and api.internal are forgotten it seems.
 1378,1,"oh, no, I was already using this. via helm install stable/nginx-ingress"
-1379,2,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077658 1194 aws.go:769] Zone not specified in configuration file
+1379,4,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077658 1194 aws.go:769] Zone not specified in configuration file
 1380,1,"also, what is the significance of apiVersion?"
 1381,2,ingress.kubernetes.io/session-cookie-hash: sha1
 1382,1,"sweet, two good approaches, cheers"
@@ -1396,7 +1396,7 @@
 1395,1,okie
 1396,1,hello is posible upgrade kubernetes cluster 1.5 baremetal to 1.6?
 1397,1,No idea how/why?
-1398,1,@high_on_bananas I'm currently going through https://github.com/cytechmobile/Kubernetes-HA-BareMetal - possible it is what you're looking for.
+1398,5,@high_on_bananas I'm currently going through https://github.com/cytechmobile/Kubernetes-HA-BareMetal - possible it is what you're looking for.
 1399,1,"Guys, I need some recommendations on how to get HA in multiple AZ.... I am about to choose Federation, but I need someone with more experience on this..."
 1400,1,so maybe bash
 1401,1,Running
@@ -1409,7 +1409,7 @@
 1408,1,yea that makes sense just unclear on the order of operations..
 1409,2,tcp-socket: TRUE
 1410,1,"@ezekiel OK, will do. Tks"
-1411,1,"Hi, reading https://github.com/kubernetes/kubernetes-anywhere/blob/master/phase1/vsphere/README.md, I see that DHCP is a prerequisite... is that basically true of running k8s in general? Or just of installing it via these scripts?"
+1411,5,"Hi, reading https://github.com/kubernetes/kubernetes-anywhere/blob/master/phase1/vsphere/README.md, I see that DHCP is a prerequisite... is that basically true of running k8s in general? Or just of installing it via these scripts?"
 1412,1,@pep no prob. @mikej u mean defining the pv directly on the template (specifying the volume id)?
 1413,1,@boblafleur pod anti-affinity
 1414,1,I have created a statefulset and some other k8s objects with a yaml file. The pods that are supposed to be created from the replica within the statefulset never come to life. Neither does the statefulset as you can see it already exists but apparently it doesn't exist either as it can't be found.
@@ -1422,19 +1422,19 @@
 1421,1,expose this with a service using NodePort / LoadBalancer.... or Ingress otherwise
 1422,1,The kubenet plugin ran out of IPs on one of my nodes. It seems IPs are not being GCed when there's a restart or a container dies. Does anyone else have this problem?
 1423,1,odd
-1424,2,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.981443 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54064: remote error: tls: bad certificate
+1424,4,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.981443 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54064: remote error: tls: bad certificate
 1425,1,what's the significance of apiVersion in these yaml files?
-1426,1,Using the following spec you? awsElasticBlockStore: volumeID: XXXX fsType: ext4
+1426,5,Using the following spec you? awsElasticBlockStore: volumeID: XXXX fsType: ext4
 1427,1,@ezekiel
-1428,1,Use 'kubectl describe pod/reverse-proxy-prod-nginx-ingress-controller-2327356158-k8srn' to see all of the containers in this pod.
+1428,5,Use 'kubectl describe pod/reverse-proxy-prod-nginx-ingress-controller-2327356158-k8srn' to see all of the containers in this pod.
 1429,1,yes. you have to use a node ip.
 1430,1,you should probably be using a Job instead of a Deployment then
 1431,1,"How would I create a PSP that is referenced by default? I'm essentially trying to get my customers on their own namespaces. But the PSPs would span the cluster. I don't want them to have any cluster admin stuff, just within their namespace. Do I create a ClusterRole and a namespaced-RoleBinding? Does the customer need to create their own RoleBindings? Is there a way that a specific PSP is applied without being called as a default?"
 1432,1,Not Sure I always see these while running kubeadm init [kubelet-check]
-1433,1,is this a feasible approach towards networking on lab: https://goo.gl/YjHgg9
-1434,1,"If you are trying connect in your postgres server from another pod, using the DNS name should work. I mean, considering this environment sample: Pod A: Application POD Pod B: Postgres pod Service: Postgres service which has pgmaster.default.svc.cluster.local as DNS name If you Pod A uses I don't know, Java, for example; You can use JDBC like jdbc:postgresql://pgmaster.default.svc.cluster.local:5432/dbname to connect in the postgres pod, but the POD A *will not able* to perform a ICMP request to Pod B if the Pod B through the service."
+1433,5,is this a feasible approach towards networking on lab: https://goo.gl/YjHgg9
+1434,5,"If you are trying connect in your postgres server from another pod, using the DNS name should work. I mean, considering this environment sample: Pod A: Application POD Pod B: Postgres pod Service: Postgres service which has pgmaster.default.svc.cluster.local as DNS name If you Pod A uses I don't know, Java, for example; You can use JDBC like jdbc:postgresql://pgmaster.default.svc.cluster.local:5432/dbname to connect in the postgres pod, but the POD A *will not able* to perform a ICMP request to Pod B if the Pod B through the service."
 1435,1,LoadBalancer is for cloud environments.
-1436,1,"no kubeadm no, I was following https://kubernetes.io/docs/getting-started-guides/scratch/ , it's been a painful adventure to get to here"
+1436,5,"no kubeadm no, I was following https://kubernetes.io/docs/getting-started-guides/scratch/ , it's been a painful adventure to get to here"
 1437,2,kubectl create configmap example-redis-config --from-file=$PWD
 1438,1,Hi... where in the cluster would I store a certificate and key for nginx-ingress to comsume?
 1439,2,name: pricelabel-app
@@ -1471,12 +1471,12 @@
 1470,2,elasticsearch
 1471,1,"I don't see any node selector defined, though"
 1472,1,we can specify TCP right janst
-1473,1,@U7N4JEF9U: that's probably one search away. And it differs depending on how you fix it. I would change it for kubelet. http://bfy.tw/Ehui
+1473,5,@U7N4JEF9U: that's probably one search away. And it differs depending on how you fix it. I would change it for kubelet. http://bfy.tw/Ehui
 1474,1,ah I see
 1475,1,so devs can start components they are working on and use the services from the dev cluster
 1476,1,never heard of it
 1477,2,labels: beta.kubernetes.io/arch: amd64 beta.kubernetes.io/os: linux kubernetes.io/hostname: gm2-master1
-1478,1,@U7QUTMCKY this is how i learned k8s https://github.com/kelseyhightower/kubernetes-the-hard-way
+1478,5,@U7QUTMCKY this is how i learned k8s https://github.com/kelseyhightower/kubernetes-the-hard-way
 1479,1,@amulholland I am interested too
 1480,1,I need to point several services to a cluster
 1481,1,so I've been trying to learn k8s using kubernetes the hard way - used the original docs with GCP and that worked fine - now I'm trying with Ubuntu 16 LTS on Azure using Docker
@@ -1504,13 +1504,13 @@
 1503,1,@mettjus thank you
 1504,1,"no, sorry that was for the kops config"
 1505,1,Yea so I set it up to automatically inject sidecars and something with my containers init container was mis configured
-1506,1,more like GET https://thisservice/?q=testquery&monitoring=1 .. expect at least 1kB of data back
+1506,5,more like GET https://thisservice/?q=testquery&monitoring=1 .. expect at least 1kB of data back
 1507,1,have to dig into it a bit more.
 1508,1,@hmdelnegro what do you mean?
 1509,1,If your worker nodes can
 1510,2,gcloud --quiet config set project $PROJECT_NAME_STG
-1511,1,maybe you could use a volume mount? http://kubernetes.io/docs/user-guide/volumes/#hostpath
-1512,1,"Hey guys, I'm trying to create a CronJob following the documentation https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/ When I try create Cronjob using apiVersion: batch/v1beta1 I'm getting the following error:"
+1511,5,maybe you could use a volume mount? http://kubernetes.io/docs/user-guide/volumes/#hostpath
+1512,5,"Hey guys, I'm trying to create a CronJob following the documentation https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/ When I try create Cronjob using apiVersion: batch/v1beta1 I'm getting the following error:"
 1513,1,"you can set up your own load balancer, typically with HAProxy or nginx. but it's outside of kubernetes"
 1514,1,"oh, hmm"
 1515,1,what type of workload are you working for?
@@ -1521,10 +1521,10 @@
 1520,1,If i remember i can't use Persistent Volumes with hostPath? I want to achieve to have Deployment without specified paths for volumes. Otherwise i will end with a few almost the same files. So i wanted declare volumes in different YAML.
 1521,1,that didn't seem to work.
 1522,1,Ingress is for HTTP
-1523,1,@msubramm very interested in the answer. i would also love to know if there is a way to manually migrate a pod to another node in a rolling-update fashion (eg: not by kubectl delete <pod-on-current-node>). and similarly drain a node
-1524,1,run kubectl cluter-info and see if the api is enabled
+1523,5,@msubramm very interested in the answer. i would also love to know if there is a way to manually migrate a pod to another node in a rolling-update fashion (eg: not by kubectl delete <pod-on-current-node>). and similarly drain a node
+1524,5,run kubectl cluter-info and see if the api is enabled
 1525,2,subPath: config.yml
-1526,1,The default 'deny all Egress and Ingress' network policy from https://kubernetes.io/docs/concepts/services-networking/network-policies/#default-deny-all-egress-traffic gives an validation error. Kubernetes 1.7.5
+1526,5,The default 'deny all Egress and Ingress' network policy from https://kubernetes.io/docs/concepts/services-networking/network-policies/#default-deny-all-egress-traffic gives an validation error. Kubernetes 1.7.5
 1527,1,@jeffhub thanks for the help. Seems like it either that or using GKE which does that for me.
 1528,1,Did you provision the cluster with something like kubeadm or another installer?
 1529,2,[PodA: Application]
@@ -1542,10 +1542,10 @@
 1541,1,How did you install?
 1542,2,"RUN [chown, -R, daemon:daemon, /app/session, /app/common]"
 1543,1,easiest to just kubectl drain <node>
-1544,1,https://engineering.bitnami.com/articles/a-deep-dive-into-kubernetes-controllers.html is also a good post on this.
+1544,5,https://engineering.bitnami.com/articles/a-deep-dive-into-kubernetes-controllers.html is also a good post on this.
 1545,2,- image:
 1546,2,serviceName: nginx-service-ingress-https
-1547,2,"Warning FailedScheduling No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
+1547,4,"Warning FailedScheduling No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3)."
 1548,1,ahaha good to know
 1549,1,as @erasmus74 said it looks like a sticky session. don't think overlay plays here. incognito has sessions as well
 1550,1,This is your another problem
@@ -1562,9 +1562,9 @@
 1561,2,#NAME?
 1562,1,"@heckj , sorry I don't know. Haven't really tried that."
 1563,2,events {
-1564,2,ERROR: logging before flag.Parse: I1026 21:33:17.410080 1 dnsprobe.go:75] Starting dnsProbe {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
+1564,4,ERROR: logging before flag.Parse: I1026 21:33:17.410080 1 dnsprobe.go:75] Starting dnsProbe {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:1}
 1565,1,which os your using ?
-1566,1,I mean what you have to do is point your k8s CLI to your cluster...I only know the way on my cloud which is bluemix and I do that with a command bx cx cluster-config <clusterID once I do that it gives me an export path
+1566,5,I mean what you have to do is point your k8s CLI to your cluster...I only know the way on my cloud which is bluemix and I do that with a command bx cx cluster-config <clusterID once I do that it gives me an export path
 1567,1,"thanks, sounds like a neat solution"
 1568,1,Ha weird
 1569,1,"The cluster IP is attributed by kubernetes, Maybe Calico configure it"
@@ -1572,13 +1572,13 @@
 1571,2,service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: '*'
 1572,2,"args: [-c,./price-project, &]"
 1573,1,"I see your cluster ip is 10.101.7.104, from where it took it from, did you configure any DHCP server or assigned to any virtual adapter"
-1574,1,@nux The github-provided heapster/influxdb/grafana manifests result in grafana representing the data as bytes
+1574,5,@nux The github-provided heapster/influxdb/grafana manifests result in grafana representing the data as bytes
 1575,1,can you describe the pod?..
 1576,1,Waves or Flannel for example
 1577,1,"Morning all, can anyone chime in with options for deploying k8s on bare metal/vms? I've a cluster of a few nodes which I've been playing around with which I deployed with Kubespray, but I'm wondering what people's thoughts are regarding using Kubespray for a p"
 1578,1,when using prometheus-operator?
 1579,2,cpu: 250m
-1580,2,31s 31s 1 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 30
+1580,4,31s 31s 1 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 30
 1581,1,use kubeadm..
 1582,1,just delete the pod!
 1583,1,I can access from cluster-1
@@ -1591,7 +1591,7 @@
 1590,1,i think i had to build my own image
 1591,1,do you have an ingress-controller deployed?
 1592,1,"I need it to be part of the lifecycle, not manual delete. I have a container that stores some data temp. does process and when the script ends, the container stops. When the container stops, I want it to die not restart so I have a fresh container that can start clean. for this use case I don't want to use persistent storage because the temp data that's written doesn't need to be kept."
-1593,2,"Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.548619 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.550079 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.568281 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: I1027 00:51:20.568306 16317 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:51:20 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service: main process exited, code=exited, status=1/FAILURE Oct 27 00:51:20 kuber-poc-app1 systemd[1]: Unit kubelet.service entered failed state. Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service failed."
+1593,4,"Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.548619 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.550079 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: W1027 00:51:20.568281 16317 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:51:20 kuber-poc-app1 kubelet: I1027 00:51:20.568306 16317 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:51:20 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service: main process exited, code=exited, status=1/FAILURE Oct 27 00:51:20 kuber-poc-app1 systemd[1]: Unit kubelet.service entered failed state. Oct 27 00:51:20 kuber-poc-app1 systemd[1]: kubelet.service failed."
 1594,1,@roffe great!
 1595,1,I use Ingress like this:
 1596,1,Ok newest theory is that because I cheaped out and used nano machine sizes somehow the installation process causes the machine to not have enough resources to complete successfully. I wont know for sure for another few moments here.. when it works it usually works within about 10 minutes... its been that now.. I am going to leave it overnight as I am off for the day now... and see if its resolved I'm the AM.. I will update that ticket then for those who end up using doctor google.
@@ -1613,13 +1613,13 @@
 1612,1,you two using google cloud ever? have some specific.
 1613,1,"Anyone around to talk detailed RBAC permissions? Specifically, trying to limit admin access to specific namespace prefixes only. This doesn't really seem to be discussed/supported, but I think I can get close using nonResourceURLs and splats (*). Just looking to chat, as I seem to be missing something."
 1614,2,#NAME?
-1615,1,relevant discussion at https://kubernetes.slack.com/archives/C09NXKJKA/p1508266415000573
+1615,5,relevant discussion at https://kubernetes.slack.com/archives/C09NXKJKA/p1508266415000573
 1616,2,Partition: 0
 1617,2,http://slack.k8s.io/
 1618,1,@jpweber yes
 1619,1,"Oh, it worked in default for you, but it won't work in jenkins?"
 1620,1,"if I had to guess, I'd say an rbac issue?"
-1621,1,"Hi there, I'm having trouble setting up a deployment (on 1.7.x), https://bpaste.net/show/78f4e69bcce5 I get The Deployment foo-test-dpl is invalid: spec.template.metadata.labels: Invalid value: map[string]string{name:foo-test}: selector does not match template labels"
+1621,5,"Hi there, I'm having trouble setting up a deployment (on 1.7.x), https://bpaste.net/show/78f4e69bcce5 I get The Deployment foo-test-dpl is invalid: spec.template.metadata.labels: Invalid value: map[string]string{name:foo-test}: selector does not match template labels"
 1622,1,Hi there I need some help
 1623,1,I'm not telling you how to live your life. lol
 1624,1,just delete the pod.
@@ -1631,7 +1631,7 @@
 1630,1,if we use minikube can we add more nodes
 1631,2,Production-Grade Container Orchestration
 1632,2,https://github.com/xcarpentier/ex-react-native-i18n
-1633,1,"Guys can I pass a function as a param in react navigation? Like, this.props.navigation.navigate('settings', { someFunction: this.someFunction.bind(this) } and use that function in the settings screen ? like, this.props.navigation.state.params.someFunction() ?"
+1633,5,"Guys can I pass a function as a param in react navigation? Like, this.props.navigation.navigate('settings', { someFunction: this.someFunction.bind(this) } and use that function in the settings screen ? like, this.props.navigation.state.params.someFunction() ?"
 1634,1,Please fix this
 1635,1,"pure JS tends to be an inferior experience for users, despite the developer convenience"
 1636,1,"@ryshonza, @814465104 I've only been in this slack for a week or two, abut the amount of people having ios build failed issues with no further info does worry me. Hopefully the Expo people are working on getting more information out of the build process that we can use."
@@ -1646,11 +1646,11 @@
 1645,1,my use case would be a react-native camera library that enable some processing of video frames using native code
 1646,1,can you dm me your actual manifest?
 1647,1,Can't do that with the current offerings sadly
-1648,1,"man, was about to test a snippet using the RN method RCTDeleteStorageDirectory() but it's not easy cause all the dependencies."
+1648,5,"man, was about to test a snippet using the RN method RCTDeleteStorageDirectory() but it's not easy cause all the dependencies."
 1649,1,And that's it
 1650,1,"Hello everyone, I'm experiencing a really odd bug on a project I'm working on. The react native app (expo sdk version 21.0.0) is a simple webview wrapper that redirects to our web app. When the user is filling out their form, as soon as they click on an input field, the screen scrolls to the top and then gets stuck up there. I'll post a video below that illustrates the bug in detail. The bug is only present through the react native app. If the user visits the url through a web browser the form is fine. The bug is also only present on some devices (works on iphone/blackberry but, broken on Samsung). Any suggestions? Thanks in advance!!!"
 1651,1,How do I resolve this error
-1652,1,@keith uploaded a file: Anybody know how to keep a Modal from changing the StatusBar color on Android? and commented: Snack is here: https://snack.expo.io/SyOHfcaxG My goal is to have a modal that shows a menu overlaying the Navbar - I want it to look like the menu is just on top of the view without otherwise changing the appearance.
+1652,5,@keith uploaded a file: Anybody know how to keep a Modal from changing the StatusBar color on Android? and commented: Snack is here: https://snack.expo.io/SyOHfcaxG My goal is to have a modal that shows a menu overlaying the Navbar - I want it to look like the menu is just on top of the view without otherwise changing the appearance.
 1653,1,hi guys.. good morning
 1654,1,"That's where I get confused, because right now i've got my device off of Wifi, have an unpublished app, and yet can still access it if I have the packager running."
 1655,1,@haveneersrobin hmm do you know what the usual flow is for facebook login and key hashes separate from Expo? like if you were making your own native app?
@@ -1719,7 +1719,7 @@
 1718,1,@danielneal uploaded a file: Screen Shot 2017-10-24 at 15.57.31.png
 1719,1,ok those are right
 1720,1,@satya164 I got it with yarn global exp  Thanks!
-1721,1,I've always done it one SDK version at a time using the blog instructions (e.g. https://blog.expo.io/expo-sdk-v18-0-0-is-now-available-38e62305283). That way I can test after each upgrade and attribute any regressions to a particular SDK version upgrade.
+1721,5,I've always done it one SDK version at a time using the blog instructions (e.g. https://blog.expo.io/expo-sdk-v18-0-0-is-now-available-38e62305283). That way I can test after each upgrade and attribute any regressions to a particular SDK version upgrade.
 1722,1,what is the issue? did you create an issue on github or forum post where you describe it in detail?
 1723,1,"I have the same issue, @bradryan7."
 1724,1,Is Expo FileSystem somehow includes converting video file captured using Camera.recordAsync to Base64?
@@ -1739,7 +1739,7 @@
 1738,1,"@jesse dunno what you mean by later, but it was a week ago I think"
 1739,1,"Hey everyone, I'm not able to build a standalone iOS version of our app since I added usesNonExemptEncryption to the config."
 1740,1,Is it detached?
-1741,1,@ben I have changed my apple team id and rebuilt it but it is still building after 20 mins. The build ID is is f17a35cd-df27-4ecb-9919-c5de400308a0. Is it supposed to take that long? https://forums.expo.io/t/build-standalone-ios-app-error/5043/2
+1741,5,@ben I have changed my apple team id and rebuilt it but it is still building after 20 mins. The build ID is is f17a35cd-df27-4ecb-9919-c5de400308a0. Is it supposed to take that long? https://forums.expo.io/t/build-standalone-ios-app-error/5043/2
 1742,1,"Hey guys, does any of you have been experience that the expo google sign in works well in the simulator but crashed after I deploy it to the app store"
 1743,2,https://docs.expo.io/versions/v15.0.0/guides/up-and-running.html
 1744,1,bcostabatista shared a file: Untitled
@@ -1775,21 +1775,21 @@
 1774,1,"can't remember exact place where this is and not at work computer but if you search your ios and android directories for your app url, change it where you find that"
 1775,1,"@brent it seems you can nest .babelrc deeper in your folders and it inherits parent .babelrc, so I can optimize local app only"
 1776,1,@h-marvin by build which part of the pipeline do you mean?
-1777,1,"I just started getting this error and I cannot see my App anymore. It started happening when I enabled Hot Reloading with React Native Debugger. Now I can't go back to turn it off. I have tried every protocol and host. It now opens up 2 debugger tabs in Chrome (one working) but I can't see the app at all in the simulator. Everything is latest version. Connection to ...../debugger-proxy?role=client timed out. Are you running node proxy? If you are running on the device, check if you have the right IP address in ABI21_0_0RCTWebSocketExecutor.m"
+1777,7,"I just started getting this error and I cannot see my App anymore. It started happening when I enabled Hot Reloading with React Native Debugger. Now I can't go back to turn it off. I have tried every protocol and host. It now opens up 2 debugger tabs in Chrome (one working) but I can't see the app at all in the simulator. Everything is latest version. Connection to ...../debugger-proxy?role=client timed out. Are you running node proxy? If you are running on the device, check if you have the right IP address in ABI21_0_0RCTWebSocketExecutor.m"
 1778,1,Okay. I'll give it a shot. Thanks.
 1779,1,> Can we update our app and rebuild of iOS or Android? can you elaborate? i don't understand the question
-1780,1,seems like create-react-app has similar issues https://github.com/facebookincubator/create-react-app/issues/2537
+1780,5,seems like create-react-app has similar issues https://github.com/facebookincubator/create-react-app/issues/2537
 1781,1,greweb uploaded a file: the code
 1782,1,@fozzarelo i think you need the expo package after the rename
 1783,1,Hello expo team! I am new to react native. Is it possible to develop offline apps with expo? (noob question)
-1784,1,"I can't seem to figure how to go about importing @expo/vector-icons, I have it npm installed using npm install --save-dev @expo/vector-icons, reset all caches and finally have the following code in one of my .cljs files:"
+1784,5,"I can't seem to figure how to go about importing @expo/vector-icons, I have it npm installed using npm install --save-dev @expo/vector-icons, reset all caches and finally have the following code in one of my .cljs files:"
 1785,1,Clever
-1786,1,I ended up using https://github.com/joonhocho/react-native-linkedin-sdk and it works like magic!
+1786,5,I ended up using https://github.com/joonhocho/react-native-linkedin-sdk and it works like magic!
 1787,1,we use ace editor for snack
 1788,1,"ok, the warning has gone away"
 1789,1,"I am yes, so a little bit more info, this is a basic version of my component;"
 1790,1,"yup, they will work and will say your app name / icon and not expo"
-1791,1,my app works on simulator but crashing on phone / prod: https://exp.host/@elie/draft-fantasy-exponent-react-native-staging
+1791,5,my app works on simulator but crashing on phone / prod: https://exp.host/@elie/draft-fantasy-exponent-react-native-staging
 1792,1,Yeah its easier to just revoke them haha
 1793,1,@nikki did you make that ball shooting thing?
 1794,1,hey!
@@ -1813,11 +1813,11 @@
 1812,1,Start messing with snack @phuochoit
 1813,1,seems like a bug? wanna send a pr to expo-sdk to not run any custom resolving logic for local uri?
 1814,1,what do you mean by dev build?
-1815,1,I'm getting this error Cannot find module '/Users/corybuckley/Documents/Expo/mdl/expo/tools/LogReporter' Halp! plz
+1815,7,I'm getting this error Cannot find module '/Users/corybuckley/Documents/Expo/mdl/expo/tools/LogReporter' Halp! plz
 1816,1,as far as i know that's not possible
 1817,1,what's AR here
 1818,1,react navigation is the facto navigation solution now
-1819,1,"Hey all! Has anyone successfully disabled the default Android permission asks (there are 4 of them). My app doesn't use any of them, and asking would deter usage. I've tried: android: { permissions: [], }, - but that gives me an Unfortunately, [appname] has stopped after loading my standalone app."
+1819,7,"Hey all! Has anyone successfully disabled the default Android permission asks (there are 4 of them). My app doesn't use any of them, and asking would deter usage. I've tried: android: { permissions: [], }, - but that gives me an Unfortunately, [appname] has stopped after loading my standalone app."
 1820,1,Cool thanks @satya164
 1821,1,animations Documentation is cool!
 1822,1,or do i..
@@ -1829,29 +1829,29 @@
 1828,1,it's questionable on ios even in native code
 1829,1,"yea, i'm doing that for now"
 1830,1,No way!! Will do it now. (My first android app -> silly question) Thanks @brent
-1831,1,@jesse set the channel topic: Limited support on 12/25 and 12/31 to 1/1! Please post in the forums first if you have a question or a problem! Include an example with https://snack.expo.io Forums: https://forums.expo.io Feature Requests: https://expo-pls.xyz
+1831,5,@jesse set the channel topic: Limited support on 12/25 and 12/31 to 1/1! Please post in the forums first if you have a question or a problem! Include an example with https://snack.expo.io Forums: https://forums.expo.io Feature Requests: https://expo-pls.xyz
 1832,1,"Hi group , i come with another RN Expo question, i have a detached expo app, currently working on Android side, my question is: is there anyway to generate an APK that can work offline, like standalone app, i want to generate a potable APK, but it seems it depends on Expo."
-1833,1,"When the app loads, I just want to display our icon. This looks like it'll do https://docs.expo.io/versions/latest/guides/configuration.html#loading How is this different to the splash screen?"
+1833,5,"When the app loads, I just want to display our icon. This looks like it'll do https://docs.expo.io/versions/latest/guides/configuration.html#loading How is this different to the splash screen?"
 1834,1,Again I'm getting the same issue. This time build id - f9221051-6a01-4942-b1d4-818da20af5d1
 1835,1,i resolved this by unpublishing the other app and republishing with the new APK
 1836,1,Hi guys i have a question with props. if I send a object to child by props. I send a memory path or a clone of my object?
-1837,1,hi expo folks! I cannot seem to get react-native-camera working in Expo. I get the following error: undefined is not an object (evaluating 'CameraManager.Aspect') The error originates on line 62 of react-native-camera index.js which is calling NativeModules.CameraManager. Does this have something to do with expo not having access to some native apis?
+1837,7,hi expo folks! I cannot seem to get react-native-camera working in Expo. I get the following error: undefined is not an object (evaluating 'CameraManager.Aspect') The error originates on line 62 of react-native-camera index.js which is calling NativeModules.CameraManager. Does this have something to do with expo not having access to some native apis?
 1838,1,I thought that only worked for apps within expo's platform
 1839,1,"you can't update yet, it's not released"
 1840,1,"sure thing, I just love the coffee here"
 1841,1,hi guys.. do you know tell me if i need send apk again for playstore if i change my google apikey in app.json ?
 1842,1,@drewbie I think that's good! cc @brent
-1843,1,"How do I debug a broken tunnel? I can only use the LAN url after the most recent update. I've tried to logout and login again, also tried running exp start -c but it doesn't help."
+1843,5,"How do I debug a broken tunnel? I can only use the LAN url after the most recent update. I've tried to logout and login again, also tried running exp start -c but it doesn't help."
 1844,1,"@bbrostoff you're right, thanks! It actually just flew through review!"
 1845,1,@nikki We use Boot as our build system for our web app and really want to use it for ReactNative app but haven't gotten it to work yet. I'll try your new template again soon and report back.
-1846,1,"Heads up regarding the exponent-cljs-template. - Renamed all references from Exponent -> Expo (template is now expo-cljs-template) - Upgraded Expo to 17.0.0 - Upgraded all Reagent dependencies to their latest versions (including Clojure/Clojurescript/Figwheel/Re-Frame/etc.) It seems like some stuff broke in the process (especially regarding boot, references to @tiensonqin's cljs-exponent library (as React Native deprecated Navigator references), but I'm going to slowly try to work through all of the problems. Please file issues and if you can help out I'd really appreciate it. I've only worked with Reagent and Leiningen, so I'm guessing I've got a steep learning curve ahead of me.  https://github.com/seantempesta/expo-cljs-template/ PS. If you aren't happy and want to use the older version, the old lein template is still around. Just use lein new exponent <project-name> to get it."
+1846,5,"Heads up regarding the exponent-cljs-template. - Renamed all references from Exponent -> Expo (template is now expo-cljs-template) - Upgraded Expo to 17.0.0 - Upgraded all Reagent dependencies to their latest versions (including Clojure/Clojurescript/Figwheel/Re-Frame/etc.) It seems like some stuff broke in the process (especially regarding boot, references to @tiensonqin's cljs-exponent library (as React Native deprecated Navigator references), but I'm going to slowly try to work through all of the problems. Please file issues and if you can help out I'd really appreciate it. I've only worked with Reagent and Leiningen, so I'm guessing I've got a steep learning curve ahead of me.  https://github.com/seantempesta/expo-cljs-template/ PS. If you aren't happy and want to use the older version, the old lein template is still around. Just use lein new exponent <project-name> to get it."
 1847,1,"@mo.rajbi - strange, would be nice if you could have given us more info"
 1848,1,what happens when you run adb devices?
 1849,1,"hi guys, I'm a little bit worried, how expo is making money? I'm worried of using a [great] tool that could cease to exist at any day"
 1850,2,https://reactnavigation.org/docs/guides/linking#URI-Prefix
 1851,1,do you really need to use absolute?
 1852,1,Thanks @peter. Is there a reference to version of React to use for each version of expo sdk?
-1853,1,"@adamjnav Not at all man.. I am probably coming out as the annoying person who asks too much and you guys have to deal with my issues, and I highly appreciate that.. hopefully I will be able to help back as well in the future.. I'm trying to implement the exponent push notification server using node.. so the first thing I have to do is yarn add exponent-server-sdk... and when I do that I get No lockfile found.. TypeError: Cannot read property 'name' of null."
+1853,7,"@adamjnav Not at all man.. I am probably coming out as the annoying person who asks too much and you guys have to deal with my issues, and I highly appreciate that.. hopefully I will be able to help back as well in the future.. I'm trying to implement the exponent push notification server using node.. so the first thing I have to do is yarn add exponent-server-sdk... and when I do that I get No lockfile found.. TypeError: Cannot read property 'name' of null."
 1854,1,"hey @info so from the logs i can see with your request id, when fetching push certs, it fails with 'Could not find app with bundle id'. Can you check that the bundle id on your push certificate (you can verify this on the apple developer website) matches the bundle id that you have in app.json?"
 1855,2, $(SRCROOT)/../../../ios/Pods/Headers/Public/
 1856,1,Hey @ccheever one last query Can I use back-end only as node server or php serve will serve good as well?
@@ -1861,7 +1861,7 @@
 1860,1,dunno
 1861,1,@singhalok641 uploaded a file: index.jpeg
 1862,1,It appears there's some kind of issue with your launch image
-1863,1,Pretty cool: https://gl-react-cookbook.surge.sh/ just saying
+1863,5,Pretty cool: https://gl-react-cookbook.surge.sh/ just saying
 1864,1,do you have both devices open?
 1865,1,"I'm testing out facebookAds and expo client crashes whenever the bannerView is clicked. Also based on the documentation, what is the function to be used when the call to action is pressed for native ads?"
 1866,1,literally the normal way of using MapKit at this point is to apply a bunch of hacks to reduce memory usage
@@ -1884,7 +1884,7 @@
 1883,1,hello! looking at that
 1884,1,Hmm. It seems my app doesn't get new OTA updates. I didn't changed sdk version or any of those restricted properties. How I can debug it?
 1885,1,I actually just had a user uninstall and re-install expo and he's still getting an old version of my code...so strange
-1886,2,"ngrok - install failed { Error: EACCES: permission denied, open '/usr/lib/node_modules/ngrok/bin/ngrok'"
+1886,4,"ngrok - install failed { Error: EACCES: permission denied, open '/usr/lib/node_modules/ngrok/bin/ngrok'"
 1887,1,Is there any alternative to expo that can use to serve reactnative in easy way
 1888,1,Getting the following on macOS using the IDE
 1889,1,"Hey, I am having some problem with exp"
@@ -1952,8 +1952,8 @@
 1951,1,"@trungtrungkang you can never rollback once you've upgraded, this is not so great on our end and we're working to fix that. so thats why you see the exception."
 1952,1,"Hi there!  just wondering - as I was developing with RN, I have a function (let's call it foo) that returns an Image (fetches from some uri) in the render() function. When I was console.logging, I accidentally found out that the method foo is being called several times. I'm also using Expo.Audio that has onPlaybackStatusUpdate to update the state of the audio object. foo uses one of the audio's states. What is the best way to handle this? I'm worried it'll use up a lot of unnecessary data/will cause performance issue."
 1953,1,"oh, splendid, thanks again !"
-1954,1,"okay, I'll try that. I got the installation code from https://github.com/expo/React-Native-Elements"
-1955,2,equimper uploaded a file: Screen Shot 2017-02-27 at 11.51.25 AM.png
+1954,5,"okay, I'll try that. I got the installation code from https://github.com/expo/React-Native-Elements"
+1955,1,equimper uploaded a file: Screen Shot 2017-02-27 at 11.51.25 AM.png
 1956,1,"streams i dont think, but multi glview that share same image is more frquent. but image it's fine to dup i think, no huge issue"
 1957,1,add it as a query param to the url
 1958,1,but sharing GLuint obj isn't part of GL spec is it?
@@ -1961,7 +1961,7 @@
 1960,1,@ekulabuhov I just checks for permission that we have given access to app to use it or not
 1961,1,"Thank you, I guess we would just need to change the slug to appName-beta or something when we are testing the app in beta."
 1962,1,"Alright, will do. Thank you!"
-1963,1,"bwillis98 [8:59 PM] I'm getting an error when running my app on my Android device undefined is not an object (evaluating 'nativeVersion.major'). Has this been addressed before, because I can't find it on Github? I went off of this to make sure I have the correct versions: https://github.com/react-community/create-react-native-app/blob/master/VERSIONS.md My versions react-native: ^0.49.5 react: 16.0.0-beta.5 sdkVersion: 22.0.0 GitHub react-community/create-react-native-app create-react-native-app - Create a React Native app on any OS with no build config."
+1963,7,"bwillis98 [8:59 PM] I'm getting an error when running my app on my Android device undefined is not an object (evaluating 'nativeVersion.major'). Has this been addressed before, because I can't find it on Github? I went off of this to make sure I have the correct versions: https://github.com/react-community/create-react-native-app/blob/master/VERSIONS.md My versions react-native: ^0.49.5 react: 16.0.0-beta.5 sdkVersion: 22.0.0 GitHub react-community/create-react-native-app create-react-native-app - Create a React Native app on any OS with no build config."
 1964,1,may be some configuration required ?
 1965,1,"yeah, slack icon was rebranded too. How about this? > :exponent:"
 1966,1,Guys is it possible to customize the Expo camera?
@@ -1971,10 +1971,10 @@
 1970,2,http://url.brentvatne.ca/1JIS
 1971,1,We have this resource called https://native.directory that can let you know about the libraries that work with Expo
 1972,1,oh no i was just saying random french expressions
-1973,2,Error starting tunnel: XDLError: failed to start tunnel
+1973,4,Error starting tunnel: XDLError: failed to start tunnel
 1974,1,"@brent thanks for the response, sorry for the lack of clarity. my objective is to have different styling depending on the device, as i ran into some rendering issues with older devices/smaller screens (iphone 7/6s/6 looks fine, whereas SE/5s/5 would have text render incorrectly)"
 1975,1,"lol. ya, they are a pain."
-1976,1,use something like this https://stackoverflow.com/questions/21645071/using-gradle-to-find-dependency-tree
+1976,5,use something like this https://stackoverflow.com/questions/21645071/using-gradle-to-find-dependency-tree
 1977,1,Why the change? @nikki
 1978,1,"@peter uploaded a file: error messages from components and commented: am I doing something wrong? I could have sworn I used to be able to see the component the error is coming from, now I'm just guessing"
 1979,1,"maybe try a different username or email, not sure why error msg is so useless"
@@ -1995,7 +1995,7 @@
 1994,1,@ahanriat uploaded a file: AndroidErrror.png
 1995,1,Any reason my resubmission would all the sudden say that I'm using the Advertising Identifier (IDFA)?
 1996,1,"thankyou, right now i'm detaching to expokit so i can use tipsi-stripe. would i need to publish before I build with xcode? Tried building without it and I keep getting errors."
-1997,1,"Hey all - If I wanted to submit a pr for a feature for exp, would a GH PR be the best way? I noticed there aren't a lot of PRs visible on the exp project repo. Anways, I made this PR: https://github.com/expo/exp/pull/83"
+1997,5,"Hey all - If I wanted to submit a pr for a feature for exp, would a GH PR be the best way? I noticed there aren't a lot of PRs visible on the exp project repo. Anways, I made this PR: https://github.com/expo/exp/pull/83"
 1998,1,of the error
 1999,1,@amweiss I've found mine at ~/.expo/state.json. You should be able to find it there too
-2000,1,@akiroz: Thanks. Fixed. https://github.com/seantempesta/expo-cljs-template/commit/4058a55cab5f8d45138095b32cd7c8c08654c445
+2000,5,@akiroz: Thanks. Fixed. https://github.com/seantempesta/expo-cljs-template/commit/4058a55cab5f8d45138095b32cd7c8c08654c445

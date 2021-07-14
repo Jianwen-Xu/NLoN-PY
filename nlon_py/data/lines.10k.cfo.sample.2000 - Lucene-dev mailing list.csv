@@ -1,15 +1,15 @@
 ﻿ID,Class,Text
 1,1,That would make ant a requirement for solr user
-2,2,at org.tmatesoft.svn.core.wc.SVNUpdateClient.update(SVNUpdateClient.java:449)
+2,3,at org.tmatesoft.svn.core.wc.SVNUpdateClient.update(SVNUpdateClient.java:449)
 3,1,> On un-optimized inde
-4,1,When calling the search URL with no query or an empty query (i.e.  http://localhost:8080/solr/select/ or http://localhost:8080/solr/select/?q=
+4,5,When calling the search URL with no query or an empty query (i.e.  http://localhost:8080/solr/select/ or http://localhost:8080/solr/select/?q=
 5,2,val = null;
 6,2,>  private void refineFacets(ResponseBuilder r
 7,1,I was thinking of Tomcat at first since some people will start with
-8,1,> cross-referenced with the java.util.concurrent package. Just amazing.
+8,5,> cross-referenced with the java.util.concurrent package. Just amazing.
 9,2,> Key: SOLR-1120
 10,2,> <directoryProvider class=\class.name\>
-11,2,at org.apache.solr.servlet.SolrUpdateServlet.doPost(SolrUpdateServlet.java:58)
+11,3,at org.apache.solr.servlet.SolrUpdateServlet.doPost(SolrUpdateServlet.java:58)
 12,2,> URL: https://issues.apache.org/jira/browse/SOLR-136
 13,1,Otis Gospodnetic commented on SOLR-215:
 14,2,> List<String> categories
@@ -17,14 +17,14 @@
 16,1,> Per-segment single-valued string faceting using the Lucene FieldCache.
 17,1,> I need your comments on this although it might be hard without TestUnit.
 18,1,Here is a patch to avoid the exception and use the default sort order if you only specify a field.  I'm not sure the 'null' case was even possible in the current code:
-19,2,[junit] Running org.apache.solr.client.solrj.embedded.SolrExampleEmbeddedTest
+19,3,[junit] Running org.apache.solr.client.solrj.embedded.SolrExampleEmbeddedTest
 20,1,@Hoss
 21,1,convert them to document
-123,1,applied with:  /usr/local/bin/patch -u -p 0 < ~/solr-350_409.patch
+123,5,applied with:  /usr/local/bin/patch -u -p 0 < ~/solr-350_409.patch
 145,2,>> A import org.apache.solr.common.params.MapSolrParams;
 147,2,> DirectUpdateHandler2 threading issue
 25,2,yoavs@computer.org / www.yoavshapira.com
-26,1,>> $svn/java/trunk/core (i'm pretty sure existing checkouts will
+26,5,>> $svn/java/trunk/core (i'm pretty sure existing checkouts will
 27,1,I've had the idea of a \quiet\ commit in the back of my mind for a
 28,2,solr.war
 29,1,check
@@ -43,13 +43,13 @@
 42,1,file per instance
 43,1,> Upgrade bundled Jetty with latest from vendor
 44,2,mkdir /tmp/apache-solr-nightly/contrib/javascript/dist/doc
-45,2,"> 	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)"
+45,3,"> 	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)"
 46,2,> Currectl
 47,1,How about switching documentCache off?
 48,1,> A - Rich document processing (Wor
 49,2,> - > > > > > > > > <field column=\full_name\ xpat0Aand can be used as a !DataSource. It must be3A//abc.com/a.txt\ dataSource=\data-source-name\>
 50,2,{code:title=solrconfig.xml}
-320,2,> > A [junit] Running org.apache.solr.request.JSONWriterTest
+320,3,> > A [junit] Running org.apache.solr.request.JSONWriterTest
 52,1,That may be the way to g
 53,2,> <field name=\foo\>lat lon</field>
 54,1,> Add Query Spellchecker functionality
@@ -62,15 +62,15 @@
 61,1,Changed the input validation to only do basic input validation. We now only check if the thing looks like an UUID.
 62,1,You're a mind reader ;-)
 63,2,long b=A[i+4
-449,2,[junit] Test org.apache.solr.TestDistributedSearch FAILED
+449,3,[junit] Test org.apache.solr.TestDistributedSearch FAILED
 65,1,This changes AddUpdateCommand to want 'update' and depricates the other flags
 472,1,> Lately I been seeing the following in my solrconfig.xml
 67,1,> Here I submit a patch that allows for such subclassing. The change that is done to the code base in the following steps:
-563,1,// generated from pop_array via sed 's/A\\[\\([^]]*\\)\\]/\\(A[\\1] \\& B[\\1]\\)/g'
+563,5,// generated from pop_array via sed 's/A\\[\\([^]]*\\)\\]/\\(A[\\1] \\& B[\\1]\\)/g'
 22,2,>   Attachments: SOLR-193-SolrDocument.patc
 70,1,you probably need to get your user-id approved.
 71,1,download external JARs (we replaced all the LGPL code and persuaded
-72,2,>  at org.apache.solr.handler.dataimport.DocBuilder.deleteAll(DocBuilder.java:275)
+72,3,>  at org.apache.solr.handler.dataimport.DocBuilder.deleteAll(DocBuilder.java:275)
 73,1,what???
 74,1,> Are you suggesting dropping SolrCoreAware and replace it with IndexSchemaAware ?
 75,1,>> : Maybe it belongs in solrconfig.xml as an option on the standard
@@ -81,15 +81,15 @@
 80,1,> That will find more matches. See recent threads around fuzzy search.
 81,1,facet count for the non-collapsed value then when I click on that facet
 82,1,If one were using the standard request handle
-83,2,> > > > A at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+83,3,> > > > A at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
 84,2,>   <property name='mp0'>a value</property>  <!-- a basic property -->
-85,2,>   at org.apache.solr.schema.FieldType.storedToIndexed(FieldType.java:248)
+85,3,>   at org.apache.solr.schema.FieldType.storedToIndexed(FieldType.java:248)
 86,1,method
-87,1,If you think it was sent incorrectly contact one of the administrators: http://issues.apache.org/jira/secure/Administrators.jspa
+87,5,If you think it was sent incorrectly contact one of the administrators: http://issues.apache.org/jira/secure/Administrators.jspa
 88,1,> Whenever possible
 89,1,could do the job with either
 90,1,> // an interface for objects that support the scheme
-91,2,protocol.java:583)
+91,3,protocol.java:583)
 24,2,"> *	*alias*: adds an alias to this SolrCore"
 93,1,>>> On Thu Jack wrote
 94,2,> public int unionSize(DocSet other) {
@@ -100,15 +100,15 @@
 99,2,>  <fieldtype name=\text_ngram\ class=\solr.TextField\ positionIncrementGap=\100\>
 100,2,> URL: https://issues.apache.org/jira/browse/SOLR-1322
 101,1,> >> > make SolrDispatchFilter look up another init parameter
-102,1,#NAME?
+102,2,#NAME?
 37,1,>   Reporter: Chris Male
 104,2,> URL: https://issues.apache.org/jira/browse/SOLR-205
 105,1,> +   // TODO: We have some constants in SolrQueryRequestBas
-106,2,[junit] 2008-08-05 18:08:57.314::INFO:  Shutdown hook complete
-107,1,> Constants in org.apache.solr.schema aren't visible to classes outside that package
+106,3,[junit] 2008-08-05 18:08:57.314::INFO:  Shutdown hook complete
+107,5,> Constants in org.apache.solr.schema aren't visible to classes outside that package
 108,2,"> 	  <property name=\ctlField\ value=\core0\/>"
 109,2,function querie
-110,2,[junit] Severe_errors_in_solr_configuration__Check_your_log_files_for_more_detailed_information_on_what_may_be_wrong__If_you_want_solr_to_continue_after_configuration_errors_change____abortOnConfigurationErrorfalseabortOnConfigurationError__in_solrconfigxml___orgxmlsaxSAXParseException_Premature_end_of_file__at_orgapachexercesparsersDOMParserparseUnknown_Source__at_orgapachexercesjaxpDocumentBuilderImplparseUnknown_Source__at_javaxxmlparsersDocumentBuilderparseDocumentBuilderjava98__at_orgapachesolrcoreConfiginitConfigjava104__at_orgapachesolrschemaIndexSchemareadSchemaIndexSchemajava395__at_orgapachesolrschemaIndexSchemainitIndexSchemajava95__at_orgapachesolrcoreCoreContainercreateCoreContainerjava340__at_orgapachesolrcoreCoreContainerreloadCoreContainerjava402__at_orgapachesolrhandlerSnapPuller$2runSnapPullerjava378_
+110,3,[junit] Severe_errors_in_solr_configuration__Check_your_log_files_for_more_detailed_information_on_what_may_be_wrong__If_you_want_solr_to_continue_after_configuration_errors_change____abortOnConfigurationErrorfalseabortOnConfigurationError__in_solrconfigxml___orgxmlsaxSAXParseException_Premature_end_of_file__at_orgapachexercesparsersDOMParserparseUnknown_Source__at_orgapachexercesjaxpDocumentBuilderImplparseUnknown_Source__at_javaxxmlparsersDocumentBuilderparseDocumentBuilderjava98__at_orgapachesolrcoreConfiginitConfigjava104__at_orgapachesolrschemaIndexSchemareadSchemaIndexSchemajava395__at_orgapachesolrschemaIndexSchemainitIndexSchemajava95__at_orgapachesolrcoreCoreContainercreateCoreContainerjava340__at_orgapachesolrcoreCoreContainerreloadCoreContainerjava402__at_orgapachesolrhandlerSnapPuller$2runSnapPullerjava378_
 111,1,Let me again say how impressed I am with Solr!  The documentation has
 112,1,h4. Technical specifications
 113,2,> - > > > > > > A tempDir=\${build.dir.backwards}/test\
@@ -117,7 +117,7 @@
 116,1,> If we were to create class loaders not per instance but per 'lib' directory
 117,2,[ http://issues.apache.org/jira/browse/SOLR-58?page=comments#action_12458631 ]
 118,1,>> traditional single core to usage to multicore usag
-119,1,View this message in context: http://www.nabble.com/synonyms-tf4925232.html#a14096050
+119,5,View this message in context: http://www.nabble.com/synonyms-tf4925232.html#a14096050
 120,1,set since others may be using the same one.
 121,1,I'm using the python response format for several one-off scripts (it's
 122,1,You put in a lower bound of \abc\
@@ -127,7 +127,7 @@
 126,1,>> (including the StandardRequestHandler that want to use the basic
 127,1,Primary and Secondary don't quite sound right for the Solr
 64,1,Uwe Schindler commented on SOLR-1677:
-129,2,> java:633)
+129,3,> java:633)
 130,2,: -<a name=\N10095\></a><a name=\Core\></a>
 131,2,$ ant -Drun.clover=true clean clover test
 66,1,Components: update
@@ -135,23 +135,23 @@
 134,1,> I hope this can make it simpler to implement SOLR-1131
 135,1,committed r899580
 69,2,>   Attachments: SOLR-1553.patch
-137,2,> > A [junit] Running org.apache.solr.highlight.HighlighterTest
+137,3,> > A [junit] Running org.apache.solr.highlight.HighlighterTest
 138,2,>    throw e;
-139,2,at javax.servlet.http.HttpServlet.service(HttpServlet.java:689)
+139,3,at javax.servlet.http.HttpServlet.service(HttpServlet.java:689)
 140,2,HashDocSet.andNotSize(other
 141,1,>> If mlt.boost=true then you get normalized boost multiplied by specified
-142,2,[junit] 2008-03-25 11:25:21.256::INFO:  Shutdown hook executing
+142,3,[junit] 2008-03-25 11:25:21.256::INFO:  Shutdown hook executing
 143,2,>>>>>>   <mkdir dir=\${dist}\ />
-144,1,#NAME?
+144,2,#NAME?
 79,1,Kay Kay updated SOLR-914:
 146,1,while an \sint\ field will show
 92,2,Total time: 32 minutes 6 seconds
 148,1,> We can think of supporting this too ...
 149,1,Thanks for this effort.  I'll commit your tests after you make these adjustment
-150,1,http://pyro.holsman.net:9081/top/ -- slightly obfuscated queries (to
+150,5,http://pyro.holsman.net:9081/top/ -- slightly obfuscated queries (to
 151,1,>> OK... looks like we'll need to re-spin.
 152,2,// maxDocs-triggered autoCommit
-153,1,why don't you use fq parameter: fq=permission:yes in your case?
+153,5,why don't you use fq parameter: fq=permission:yes in your case?
 154,2,core = new SolrCore(\foo
 155,1,go for it....
 156,1,>>>> Personal
@@ -166,15 +166,15 @@
 165,2,Attachment: SOLR-604.patch
 166,1,Noble Paul updated SOLR-1600:
 167,1,>>>>>> Modified:
-133,1,+ JETTY-175 JDBCUserRealm use getInt instead of getObject
+133,5,+ JETTY-175 JDBCUserRealm use getInt instead of getObject
 169,1,checkpoint patch
 170,1,: Cool - just checking that it was appropriate - wasn't sure if that stuff
-171,1,i'm confused ... assuming these facet counts are for field \facetField\ then can't all the docs counted by facet.missing be retrieved using: {{fq=-facetField:[* TO *]}} ?
+171,5,i'm confused ... assuming these facet counts are for field \facetField\ then can't all the docs counted by facet.missing be retrieved using: {{fq=-facetField:[* TO *]}} ?
 172,2,<property name=\java.vm.specification.vendor\ value=\Sun
 173,2,> 4. solr-server (war)
 136,1,Ryan McKinley updated SOLR-695:
 175,1,* with stream.BODY - puts the content of the parameter into a stream
-176,2,[junit] 2008-08-25 08:09:17.842::INFO:  Shutdown hook complete
+176,3,[junit] 2008-08-25 08:09:17.842::INFO:  Shutdown hook complete
 177,2,> -solr-1.1.0-incubating\\example\\ext\\mx4j.jar
 178,2,http://www.lucidimagination.com/search/document/79b65c358374d10/jira_convention_resolved_vs_closed
 179,1,> interface and includes a concrete implementation (SimpleSolrDoc)
@@ -218,12 +218,12 @@
 217,1,> Subject: REMINDER: ***  Board Reports DUE! ***
 168,1,Hoss Man commented on SOLR-689:
 219,1,> Javadoc
-220,1,2. The response.setContentType() encoding of the page.
+220,5,2. The response.setContentType() encoding of the page.
 221,2,public void testInterface()
 174,2,> > Affects Versions: 1.3
 223,2,public int compareTo(CountPair<
 224,1,>> As the trunk stands no
-225,2,>   at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+225,3,>   at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
 226,1,I believe that the main thing missing is the various functions (which
 227,1,>From the comment in solrconfig.xml
 228,2,: + <html>
@@ -237,7 +237,7 @@
 236,2,>    <xs:element type=\xs:int\ name=\flags\ maxOccurs=\1\/>
 237,1,> The side effect is that this also allows different indexes.
 238,1,I guess it hasn't been a high priority since it deals with handling of
-239,2,at hudson.model.Build.run(Build.java:88)
+239,3,at hudson.model.Build.run(Build.java:88)
 196,2,At 11:30 PM -0800 2/21/0
 241,1,> cache is not to avoid OOM. Set your cache sizes correctly for that. And
 242,1,> Or... ??
@@ -261,14 +261,14 @@
 260,1,>>>>>>>>> out
 261,1,> * @param name Name of the dataSource as defined in the dataSource tag
 262,1,You should be seeing a log message similar to:
-263,2,[junit] 2008-08-07 08:23:49.035::INFO:  Shutdown hook complete
+263,3,[junit] 2008-08-07 08:23:49.035::INFO:  Shutdown hook complete
 264,2,/solr/admin/stats.js
 265,2,>> https://issues.apache.org/jira/browse/SOLR-1527
 266,2,+    c = d.connect(url
 267,1,>> is named after one specific feature of the application.
 248,2,Duplicate of SOLR-940.
 269,1,> And see if that helps. I had the same problem (different language.)
-270,1,Currently DIH fails completely on any error. We must have better control on error behavior
+270,4,Currently DIH fails completely on any error. We must have better control on error behavior
 271,2,[ https://issues.apache.org/jira/browse/SOLR-773?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12757684#action_12757684 ]
 272,2,{code}rsp.setHttpCaching(true/false);{code}
 273,2,URL: https://issues.apache.org/jira/browse/SOLR-1590
@@ -300,16 +300,16 @@
 299,2,: String name = request.getParameter(\name\);
 300,2,+ request = Solr::Request::AddDocument.new([{:title => \A...A<<A$?A-APA1/4AY=\
 284,1,>   Reporter: bram de jong
-302,2,2010-02-22 22:24:30.722::WARN: org.mortbay.jetty.webapp.WebAppContext@7f5580{/sol
+302,4,2010-02-22 22:24:30.722::WARN: org.mortbay.jetty.webapp.WebAppContext@7f5580{/sol
 303,2,import org.apache.solr.schema.FieldType;
 304,2,> URL: https://issues.apache.org/jira/browse/SOLR-1591
-305,2,[junit] request: http://localhost:9999/solr/update?wt=javabin&version=2.2)
+305,3,[junit] request: http://localhost:9999/solr/update?wt=javabin&version=2.2)
 306,1,> The problem is: every core re-instance the connectionpool (this seems to
 307,1,I'll seriously vote to call it \Apache Solr Miller Edition\ if you pay for
 308,2,> Date: Sat Jun 10 19:18:38 2006
 309,2,<long name=\id\>35</long>
 310,1,-Cache Query objects in handlers ??
-311,2,at java.lang.Thread.run(Thread.java:595)
+311,3,at java.lang.Thread.run(Thread.java:595)
 312,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/test/jsdoc_test.js
 289,1,On 10/12/0
 314,2,@@ -13
@@ -325,7 +325,7 @@
 324,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/templates/jsdoc/allclasses.tmpl
 325,1,>> Suggestion#1...
 295,2,: Date: Tue
-327,1,What about a new parameter like collapse.facet=[pre|post] ?
+327,5,What about a new parameter like collapse.facet=[pre|post] ?
 328,1,> analysis.jsp messes up token positions
 329,2,[ https://issues.apache.org/jira/browse/SOLR-1044?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12678121#action_12678121 ]
 330,2,> public int intersectionSize(DocSet other) {
@@ -341,7 +341,7 @@
 340,2,> >> Map<fieldName
 341,1,regardless of the number of core
 342,2,SomeFactory.future fx = Compatibility.cast(SomeFactory.future.class
-343,1,>>>> Yet another possibility: http://wiki.apache.org/incubator/Cassandra
+343,5,>>>> Yet another possibility: http://wiki.apache.org/incubator/Cassandra
 344,1,> SolrJ does not support binding of dynamic fields to bean fields
 345,2,ConcurrentModificationException
 346,1,> As pointed out in this thread...
@@ -349,23 +349,23 @@
 348,1,> Sorry for all the question
 349,1,: I'd serve the page
 350,2,q=solr&start=0&rows=10
-351,1,#NAME?
+351,2,#NAME?
 352,1,When i search for a word say \international
 353,2,> + > > <test-macro pattern=\T\/>
 354,1,We had something internally
 355,2,[ https://issues.apache.org/jira/browse/SOLR-1869?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12854983#action_12854983 ]
-356,1,The wiki (http://wiki.apache.org/solr/UpdateXmlMessages) explains that
+356,5,The wiki (http://wiki.apache.org/solr/UpdateXmlMessages) explains that
 357,2,URL: https://issues.apache.org/jira/browse/SOLR-1728
-358,2,> > A [junit] Running org.apache.solr.OutputWriterTest
+358,3,> > A [junit] Running org.apache.solr.OutputWriterTest
 359,1,> We also are not storing the OCRed text.  Since the total size of the index
 360,1,For several areas in this patch
-361,2,[junit] 2008-04-02 08:16:37.542::INFO:  Shutdown hook executing
+361,3,[junit] 2008-04-02 08:16:37.542::INFO:  Shutdown hook executing
 362,1,> right place to me.
 313,2,> Key: SOLR-350
 364,1,I guess I'm confused by TokenStream Factories - if you mean
 365,1,Properties contex
-366,2,"> 	at org.apache.lucene.search.highlight.Highlighter.getBestTextFragments(Highlighter.java:239)"
-367,2,>> > > > > > > > > XmlUpdateRequestHandler.log.warn(\unexpected attribute
+366,3,"> 	at org.apache.lucene.search.highlight.Highlighter.getBestTextFragments(Highlighter.java:239)"
+367,4,>> > > > > > > > > XmlUpdateRequestHandler.log.warn(\unexpected attribute
 368,2,<!--'text' is an implicit field emited by TikaEntityProcessor . Map it appropriately-->
 369,1,>   ... much more
 370,2,ache\\solr\\client\\solrj\\beans\\Field.java.tmp:33:38:expecting LPARE
@@ -378,12 +378,12 @@
 326,2,> Key: SOLR-645
 378,1,> files included in release that shouldn't be
 379,1,: insist that using the core before 'init' has been called would lead to
-380,2,[javac] C:\\workspace\\TTT\\src\\java\\org\\apache\\solr\\util\\CommonParams.java:164:
+380,3,[javac] C:\\workspace\\TTT\\src\\java\\org\\apache\\solr\\util\\CommonParams.java:164:
 381,1,> changes are needed that would be easier to make here.
-382,1,View this message in context: http://www.nabble.com/dynamic-filtering-tp20079841p20080481.html
+382,5,View this message in context: http://www.nabble.com/dynamic-filtering-tp20079841p20080481.html
 383,1,> WhitespaceTokenizer... at that point
 384,1,> guess what?!?
-385,2,[junit] 2008-08-27 08:17:29.377::INFO:  Shutdown hook complete
+385,3,[junit] 2008-08-27 08:17:29.377::INFO:  Shutdown hook complete
 386,1,>> Would it make more sense for DIH to farm out it's content acquisition to a
 387,2,> http://www.nabble.com/Re%3A-svn-commit%3A-r547495---in--lucene-solr-trunk%3A-example-solr-conf-solrconfig.xml-src-java-org-apache-solr-handler-StaxUpdateRequestHandler.java-src-java-org-apache-solr-handler-UpdateRequestProcessor.jav-tf3950072.html#a11206583
 388,1,>>>>>>>> The code can be written against JDBC. But we need to test the DDL and
@@ -391,7 +391,7 @@
 336,2,>> STATUS:
 391,2,>    <str>runUpdate</str>
 363,1,Ryan McKinley commented on SOLR-555:
-393,1,To solve this problem we can simply add two methods to the SolrQueryResponse class (like void setAvoidHTTPCaching(boolean) and boolean isAvoidHTTPCaching() - the default for the value would be false). The update request handlers should set this to true all the time. The partial response stuff can set this to true as well.
+393,5,To solve this problem we can simply add two methods to the SolrQueryResponse class (like void setAvoidHTTPCaching(boolean) and boolean isAvoidHTTPCaching() - the default for the value would be false). The update request handlers should set this to true all the time. The partial response stuff can set this to true as well.
 394,1,> the new spellcheck.collate feature seems to exhibit some strange behaviors when handed a query with multiple tokens.
 395,2,> <add>
 396,1,> SolrConfig inherits from Config which has been modified; Config is now more strictly a dom document (filled from some resource) and methods to evaluate xpath expressions. Config also continues to be the classloader singleton that allows to easily instantiate classes located in the Solr installation directory.
@@ -399,7 +399,7 @@
 398,1,> I have the following use case:
 399,1,> I've got more info on this.
 400,2,public interface SolrCoreAware {
-401,2,at org.apache.solr.client.solrj.LargeVolumeTestBase.query(LargeVolumeTestBase.java:63)
+401,3,at org.apache.solr.client.solrj.LargeVolumeTestBase.query(LargeVolumeTestBase.java:63)
 402,1,> Other issues:
 403,1,> schema.xml and solrconfig.xml use CNET-internal class names
 404,2,[ https://issues.apache.org/jira/browse/SOLR-667?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12650055#action_12650055 ]
@@ -412,15 +412,15 @@
 411,1,I'm not familiar enought with the Sink/Tee stuff to know what we would need -- but we should make sure any SchemaField/FieldType changes open the door to this.
 412,1,>> The libDir element is extracted from the XML configuration file and parsed in the Config constructor.
 413,2,[ https://issues.apache.org/jira/browse/SOLR-1255?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12729970#action_12729970 ]
-414,1,View this message in context: http://www.nabble.com/Configuration-features%2C-Solr2-Spring---Solr1.x-future-tp19435196p19444338.html
+414,5,View this message in context: http://www.nabble.com/Configuration-features%2C-Solr2-Spring---Solr1.x-future-tp19435196p19444338.html
 415,2,> XPathEntityProcessor: /feed/entry/link[@type='text/html']/@href
 416,1,has to be 1.3 compatible. SOLR-469 is a good example where I had to
-417,1,#NAME?
+417,2,#NAME?
 392,1,pof wrote:
 419,1,> Tricia Williams reported problems with Cyrillic charsets when trying to search using the admin applicatio
 420,2,[ https://issues.apache.org/jira/browse/SOLR-634?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ]
 421,2,--------------------
-422,2,> .mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:
+422,3,> .mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:
 397,2,Key: SOLR-14
 424,1,* The table
 425,1,My facet test looks as follows:
@@ -428,7 +428,7 @@
 410,2,> >>>>>>>>>    Issue Type: Improvement
 428,1,Change code to:
 429,1,> and
-430,2,>>>   at junit.framework.TestSuite.run(TestSuite.java:203)
+430,3,>>>   at junit.framework.TestSuite.run(TestSuite.java:203)
 431,2,> > > judge.validateData(qq
 432,2,[ https://issues.apache.org/jira/browse/SOLR-1355?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ]
 433,1,> 2) Integer fields should never be empty
@@ -443,7 +443,7 @@
 442,2,>   </lst>
 443,2,+  }
 444,1,Patch with the changes.
-445,2,[junit] 2008-09-04 08:14:59.756::INFO:  Shutdown hook complete
+445,3,[junit] 2008-09-04 08:14:59.756::INFO:  Shutdown hook complete
 446,2,http://localhost:8983/solr/update/delete?q=foo:1234   (or /update?delete=foo:1234)
 447,1,> This leads to a problem stopping the web container (e.g. Tomcat).
 448,1,Just so I'm sure i'm understanding you:  You're saying that any java code
@@ -452,8 +452,8 @@
 423,2,> Key: SOLR-383
 427,1,Ryan McKinley commented on SOLR-139:
 451,2,> >> >    Project: Solr
-454,2,> > A [junit] Running org.apache.solr.schema.NotRequiredUniqueKeyTest
-455,1,can't load custom signature class from solr.home/li
+454,3,> > A [junit] Running org.apache.solr.schema.NotRequiredUniqueKeyTest
+455,5,can't load custom signature class from solr.home/li
 456,2,>>   throw new RuntimeException( \Unknown core: \+coreName );
 457,1,: have been because the unit test don't operate through a regular HTTP
 458,1,> > > If you think it was sent incorrectly contact one of the administrators:
@@ -478,7 +478,7 @@
 477,2,>>> *conectTimeout*: 30000ms
 474,1,Noble Paul updated SOLR-1126:
 479,2,return n - (y & 1);
-480,1,First crack at this.  You'll need to download http://people.apache.org/~gsingers/extraction-libs.tar as it is too big to fit in JIRA.
+480,5,First crack at this.  You'll need to download http://people.apache.org/~gsingers/extraction-libs.tar as it is too big to fit in JIRA.
 481,2,</copy>
 482,2,> : +
 483,1,was (Author: billnbell):
@@ -501,16 +501,16 @@
 500,1,> An XML commit only request handler
 501,1,> On some TimeZones (such as EDT currently
 502,2,* MultiCoreParams == CoreAdminParams
-503,2,org.apache.lucene.index.IndexReader.open(IndexReader.java:148) at
+503,3,org.apache.lucene.index.IndexReader.open(IndexReader.java:148) at
 504,1,standards replace the existing bloated low level config cod
 505,1,On the flip side of my experience is Hadoop.  Y! has assigned a number
 506,1,> pass the tests
 507,2,>   DistribFieldFacet dff = (DistribFieldFacet)fi.facets.get(key);
 485,2,"> *	*swap*: swaps 2 aliases"
-509,2,at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+509,3,at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
 510,2,<!--Master config-->
 511,2,Query main = query;
-512,2,StandardServer.java:710) at org.apache.catalina.startup.Catalina.start(
+512,3,StandardServer.java:710) at org.apache.catalina.startup.Catalina.start(
 513,2,<field column=\datasource\ template=\board\/>
 514,1,>> Or
 515,2,> ----------------------------------
@@ -524,15 +524,15 @@
 523,1,> I haven't yet been able to figure out exactly which reference holds the null or wh
 524,1,At this point
 525,1,> indexes to new Solr servers.
-526,2,[junit] Running org.apache.solr.handler.dataimport.TestXPathRecordReader
+526,3,[junit] Running org.apache.solr.handler.dataimport.TestXPathRecordReader
 527,2,> : + > A Assert.assertEquals( item.i
-528,2,[javac] Compiling 226 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core
+528,4,[javac] Compiling 226 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core
 529,1,will be much larger for CVS/SQL.
 530,1,I was going to start on the auto-warming using IndexWriter's
 531,1,> (of you...)
 532,1,>>> rather than pulling it out of the request.  Any objections to that?
 533,2,<field name=\home\ type=\LatLonFT\/>
-534,2,[javac] Compiling 375 source files to /tmp/apache-solr-nightly/build/solr
+534,4,[javac] Compiling 375 source files to /tmp/apache-solr-nightly/build/solr
 535,2,private final Map<Class
 518,2,> : Log:
 536,1,On 2/18/09
@@ -541,13 +541,13 @@
 540,1,registered with a name that doesn't start with a slash
 541,1,>> discussion.
 542,1,Mar
-543,2,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:297)
+543,3,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:297)
 544,1,Book1
 537,2,> Key: SOLR-1060
 546,1,> role it plays with Solr.  Is it a vendor-specific technology (from
 547,2,> java.io
 548,1,Updating patch to handle faceting statistics.  (with tests)
-549,1,Please refer to http://wiki.apache.org/solr/SolrReplication for details
+549,5,Please refer to http://wiki.apache.org/solr/SolrReplication for details
 550,2,from http://mail-archives.apache.org/mod_mbox/lucene-solr-user/200807.mbox/%3cC4AC838E.ADE7%25jonathan_lee@comcast.com%3e:
 551,1,via shalin)
 552,1,This datasource does not need any extra configuration. Make a normal POST request with the data as the body. The params remain same.
@@ -575,21 +575,21 @@
 574,1,> > I'm also going to include tools to visualize this stuff on a mac
 575,1,Writing the xml may not be an option if I use DIH for indexing (there is no xml). And what if I use CSV. That means multiple storage formats. RDDBMS storage is a problem because of incompatibility of Lecene/RDBMS data structures. Creating a schema will be extremely hard because of dynamic fields
 576,2,> </responseHeader>
-577,1,> Shalin has pointed out that we are creating the regex Pattern without first resolving the variable. So we need to call VariableResolver.resolve on the 'regex' attribute's value before creating the Pattern object.
+577,5,> Shalin has pointed out that we are creating the regex Pattern without first resolving the variable. So we need to call VariableResolver.resolve on the 'regex' attribute's value before creating the Pattern object.
 578,2,>    Components: spellchecker
 579,1,> Are there any objections to replacing BitSet with OpenBitSet in
 580,1,such that no other fields need to be specified again?
 581,1,>> -----Original Message-----
 582,1,> >> There appears to be confusion between the two here no matter what the
-583,2,"> 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1299)"
+583,3,"> 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1299)"
 584,2,public void addedDocument() {
 585,1,> where it's at
 586,1,[yonik] SOLR-747: update example solrconfig.xml
-587,2,[junit] 2008-03-28 09:00:40.431::INFO:  Shutdown hook complete
+587,3,[junit] 2008-03-28 09:00:40.431::INFO:  Shutdown hook complete
 588,1,would not call it easy at all. I took the test sources away completely (from
 589,2,"> 	    dataSource=\myfilereader\"
 590,1,I went down the road of doing the calculations in paralle
-591,1,> NamedList (org/apache/solr/common/util/NamedList ) currently has a heterogenous List (even numbered indices are String-s ) and the odd-numbered indices are the specific types.  As per benchmarks ( see SOLR-912 ) - the implementation could be improved in favor of a Map.Entry<String>
+591,5,> NamedList (org/apache/solr/common/util/NamedList ) currently has a heterogenous List (even numbered indices are String-s ) and the odd-numbered indices are the specific types.  As per benchmarks ( see SOLR-912 ) - the implementation could be improved in favor of a Map.Entry<String>
 592,1,# Add command to reload dictionaries
 593,1,> > I'm looking it over now.
 594,1,>permissions.  A modular approach to crawling file system
@@ -598,7 +598,7 @@
 597,2,"> 	}"
 598,1,> patrick o'leary commented on SOLR-773:
 599,2,>> https://svn.apache.org/repos/asf/lucene/dev/trunk/solr/src/java/org/apache/solr/analysis/LengthFilterFactory.java
-600,2,> org.apache.solr.update.DirectUpdateHandlerTest.testExpungeDeletes(DirectUpdateHandlerTest.java:303)
+600,3,> org.apache.solr.update.DirectUpdateHandlerTest.testExpungeDeletes(DirectUpdateHandlerTest.java:303)
 601,2,&lt;page top='211' bottom='322' right='833' left='944' word='bar' num='1'&gt;bar&lt;/page&gt;
 602,1,> > Can we have anything better? I can't use 4-CPUs :(
 603,1,Thanks in advance
@@ -606,7 +606,7 @@
 605,1,Ignore changes in the amount of white space.
 606,1,*** the server reads the file stream
 607,1,we modify those APIs to really take advantage of an Attributes-based API.
-608,1,+ // Yet another variation: if docs.size() is small and termvectors
+608,5,+ // Yet another variation: if docs.size() is small and termvectors
 609,2,> Cell: 1-434-466-1467
 610,1,I came up with this patch because I have a rather elaborate tokenization scheme using ShingleMatrixFilter. The current solution of mine is to pass a base64 encoded serialized object as field value and use a custom Analyzer that assemble and tokenize the entity object passed down in the field value. However the tokenization is rather expensive (especially during initial bulk import of my zillions of documents)  so I'd rather do this on my clients as I've got plenty of those but only one Solr.
 611,2,"> stats: 	lookups : 15966954582"
@@ -615,8 +615,8 @@
 614,1,> reopening in most cases - hasn't seen any activit
 615,2,\startOffset\:
 616,1,>>> score?  Can/should the current framework do that?
-617,2,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:845)
-618,1,http://lucene.apache.org/solr/api/org/apache/solr/response/SolrQueryResponse.html#returnable_data says that a Map \containing any of the items in this list\ may be contained in a SolrQueryResponse and will be handled by QueryResponseWriters.
+617,3,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:845)
+618,5,http://lucene.apache.org/solr/api/org/apache/solr/response/SolrQueryResponse.html#returnable_data says that a Map \containing any of the items in this list\ may be contained in a SolrQueryResponse and will be handled by QueryResponseWriters.
 619,2,URL: https://issues.apache.org/jira/browse/SOLR-1252
 620,1,- Delete obsolete topgit branches from 1.3
 621,1,> community@apache.org if people would like.
@@ -651,10 +651,10 @@
 650,1,> DIH currently can only be run inside Solr. But the core of DIH is quite independent of Solr. There are only a few points where it requires Solr core classes.They can be isolated out and we have an API in hand. If we limit the dependency down to common util then DIH can be used by
 651,2,>>>>>>> -
 652,1,> Andrew.
-653,1,: Some functions could actually use it - say like ms().
+653,5,: Some functions could actually use it - say like ms().
 654,1,The current source in CVS doesn't work for me (the example doesn't
 655,1,copy over every time we make changes. That is what I meant when I said
-656,1,>   RFC 2616 sec13) and will by default respond with \304 Not Modified\
+656,7,>   RFC 2616 sec13) and will by default respond with \304 Not Modified\
 657,1,in the path then we can guess based on the Content-Type.
 658,1,>> after optimization. A 1 is the default (and is equivalent to calling
 659,1,>>>> clarity in a future release). Then people can mix and match and
@@ -676,12 +676,12 @@
 675,1,that they might be better served by Tomcat since it's the most
 676,1,> everything again
 677,1,: be somewhere in Solr that knows about the IndexReader /
-678,2,at java.lang.reflect.Method.invoke(Method.java:597)
+678,3,at java.lang.reflect.Method.invoke(Method.java:597)
 679,1,>really allow it to become a viable alternative to things like FAST and
-680,2,[junit] 2007-10-09 08:15:02.342::INFO:  Shutdown hook executing
+680,3,[junit] 2007-10-09 08:15:02.342::INFO:  Shutdown hook executing
 681,1,I still have some thing
 682,1,> Sure
-683,2,>   at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
+683,3,>   at org.mortbay.jetty.servlet.Context.startContext(Context.java:139)
 684,1,>   Reporter: Ruben Jimenez
 685,1,I'm merely trying to understand how much (if any) interest there is in this
 686,1,* and the DocSet for each term in the filter.
@@ -743,22 +743,22 @@
 742,1,> (Oddly
 743,2,+    counts = getFieldCacheCounts(
 744,1,A user reported an issue
-745,2,java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:9
+745,3,java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:9
 746,2,>> URL: https://issues.apache.org/jira/browse/SOLR-773
 747,2,### Eclipse Workspace Patch 1.
 748,2,>   Attachments: SOLR-1478.patch
 749,2,Object o = readVal(fis);
 750,2,<requestDispatcher handleSelect=\true\ >
-751,1,Discussion at: http://www.nabble.com/Creating-dynamic-fields-with-DataImportHandler-to19226532.html
+751,5,Discussion at: http://www.nabble.com/Creating-dynamic-fields-with-DataImportHandler-to19226532.html
 752,2,[ https://issues.apache.org/jira/browse/SOLR-234?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12495202 ]
 753,2,} catch (NumberFormatException e) {
 754,1,> So it would be nice if a user can easily specify that they want to use a french stopword lis
 755,2,>   Attachments: SOLR-695-no-singlecore.patc
 756,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/frame/Dumper.js
 757,2,site/features.html
-758,1,package junit.framework does not exist
-759,2,> 2008-02-25 16:54:5
-760,2,> Uses LUCENE-997 to add time out support to Solr.
+758,4,package junit.framework does not exist
+759,4,> 2008-02-25 16:54:5
+760,5,> Uses LUCENE-997 to add time out support to Solr.
 761,1,#NAME?
 762,2,[ https://issues.apache.org/jira/browse/SOLR-667?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12644889#action_12644889 ]
 763,1,The attached patch will provide this feature.
@@ -782,7 +782,7 @@
 781,1,better idea.
 782,1,> vector
 783,2,> >> >  </init-param>
-784,2,at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+784,3,at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
 785,2,:   <requestHandler name=\/update\ class=\solr.XmlUpdateRequestHandler\ >
 786,2,> + > > <test-macro pattern=\C\/>
 787,1,whether a default field even makes sense.  Maybe it should be
@@ -797,23 +797,23 @@
 796,2,> -  top=false;
 797,1,Thanks for the replies.
 798,1,> In the master server:
-799,2,at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+799,3,at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
 800,1,Someone pulling an Al Gore (inventing the internet) on this isn't my
-801,2,at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+801,3,at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
 802,1,> decide when to query the spellchecker
 803,2,<str name=\fsv\>true</str>
 804,2,>  \deviceName\:[
 805,2,> Key: SOLR-1163
 806,1,> out?
 807,2,> URL: https://issues.apache.org/jira/browse/SOLR-1298
-808,2,Total time: 26 minutes 10 seconds
-809,2,> > A [junit] Running org.apache.solr.handler.TestCSVLoader
-810,1,Checking out http://svn.apache.org/repos/asf/lucene/solr/trunk
+808,4,Total time: 26 minutes 10 seconds
+809,3,> > A [junit] Running org.apache.solr.handler.TestCSVLoader
+810,5,Checking out http://svn.apache.org/repos/asf/lucene/solr/trunk
 811,2,> + A <property name=\junit.details.formatter\ value=\org.apache.lucene.util.LuceneJUnitResultFormatter\/>
 812,2,>  ${doc.valueMap['name']]} gets a single value for the field
 813,2,>> + > try {
 814,1,> I think we can do a better job of having explicit Exceptions when there is a problem creating the internal representation of a Fiel
-815,1,See http://hudson.zones.apache.org/hudson/job/Solr-trunk/357/changes
+815,5,See http://hudson.zones.apache.org/hudson/job/Solr-trunk/357/changes
 816,1,To set the encoding to another charse
 817,2,>  <lst>E:\\sample\\data2</lst>
 818,1,Shalin Shekhar Mangar updated SOLR-530:
@@ -823,7 +823,7 @@
 822,2,URL: https://issues.apache.org/jira/browse/SOLR-430
 823,1,An example: 2 servers with the same shard are behind a load balancer. One server fails. The load balancer notices this and directs all traffic to the other server.
 824,1,> Here's a config I'm using against a mocked test database:
-825,2,> junit.framework.AssertionFailedError: null
+825,4,> junit.framework.AssertionFailedError: null
 826,1,Would shutting down the executor cause that?  Are you doing any core reloading?
 827,1,otis_gospodnetic@yahoo.com> wrote:
 828,2,> n.system.issuetabpanels:all-tabpanel ]
@@ -834,7 +834,7 @@
 833,1,the war. This still needs further lov
 834,1,> >   /* if field size (in characters) is greater than this threshold
 835,1,: - <!> Http!DataSource is being deprecated in favour of URL!DataSource in [[Solr1.4]]. There is no change in functionality between URL!DataSource and !Http!DataSourc
-836,2,> > A [junit] Running org.apache.solr.handler.component.StatsComponentTest
+836,3,> > A [junit] Running org.apache.solr.handler.component.StatsComponentTest
 837,2,>baseDir=\/Volumes/Techmore/ts/aaa/schema/data\
 838,2,> fl.alias=from_name1:to_name1&fl.alias=from_name2:to_name2
 839,1,A
@@ -842,7 +842,7 @@
 841,1,> I think the high-level approach in SOLR-303 is the right way to go
 842,1,Erik Hatcher schrieb:
 843,1,> > On 6/6/11
-844,1,The only potentially dangerous function is (4) initHandlersFromConfig.  This is a package private function that defiantly should not be called anywhere else.  Calling this function twice is not norma
+844,5,The only potentially dangerous function is (4) initHandlersFromConfig.  This is a package private function that defiantly should not be called anywhere else.  Calling this function twice is not norma
 845,2,> --------------------------------------------------------------
 846,1,Sometimes SearchComponents need to modify the DocList.  Often times this requires two loops over the (Solr)DocList: once to convert the DocList to SolrDocList and then once to iterate the SolrDocList for the Search Component.  This can be seen in SOLR-77
 847,2,> cp=C:\\Documents%20and%20Settings\\yaponte\\Configuraci?n%20local\\Temp\\Jetty__8
@@ -856,7 +856,7 @@
 855,1,modify the q param before I pass it further for processing.
 856,1,for hte requestHandler ...
 857,2,> URL: https://issues.apache.org/jira/browse/SOLR-1396
-858,2,Committed revision 762180.
+858,4,Committed revision 762180.
 859,2,Fix Version/s: 1.2
 860,1,Hi
 861,2,[ https://issues.apache.org/jira/browse/SOLR-665?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12617529#action_12617529 ]
@@ -869,7 +869,7 @@
 868,1,Configuration can also have behavior.  The important part is that is the separation from XML and allowing others to create configuration objects.
 869,1,> Currently the jSON content type is not used. Instead the palin/text content type is used. The reason for this as I understand is to enable viewing the json response as as text in the browser. While this is valid argumen
 870,1,>>>>> On Fri
-871,1,The only code change is to use org.apache.solr.logging.Logger.getLogger(...)
+871,5,The only code change is to use org.apache.solr.logging.Logger.getLogger(...)
 872,2,> ------------
 873,1,-Http connection Keep-Alive ?
 874,2,<fields>
@@ -912,16 +912,16 @@
 911,2,> SIGUSR1: SIG_DF
 912,2,>  <PREFIXTERM> ...
 913,1,page for /update and /update/cs
-914,1,* <import> seems like it should be named <include>
+914,5,* <import> seems like it should be named <include>
 915,2,Components: Build
 916,2,>  site/skin/images
 917,2,> URL: https://issues.apache.org/jira/browse/SOLR-1138
-918,2,[junit] 2008-08-25 08:09:13.804::INFO:  Shutdown hook complete
+918,3,[junit] 2008-08-25 08:09:13.804::INFO:  Shutdown hook complete
 919,2,: +   <th>type</th>
 920,1,I have a need to perform Solr indexing in MapReduce tas
 921,1,I have a question regarding the removal of documents from the doc list and
 922,1,> This PATCH is mildly related to SOLR-1709 (Distributed Date Faceting
-923,2,[javac] Compiling 58 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/tests
+923,4,[javac] Compiling 58 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/tests
 924,1,> OverlappingFileLockException - it *should* work across webapp
 925,1,bit...
 926,2,> > URL: https://issues.apache.org/jira/browse/SOLR-845
@@ -946,7 +946,7 @@
 945,2,> > A [mkdir] Created dir: /tmp/apache-solr-nightly/build/test-results
 946,2,": +	<link rel=\icon\ href=\/favicon.ico\ type=\image/ico\></link>"
 947,2,> ------------------------------------------------------------------------------
-948,2,at hudson.FilePath.access$400(FilePath.java:119)
+948,3,at hudson.FilePath.access$400(FilePath.java:119)
 949,1,User Dwight is on vacation and never sees Bob's email.
 950,2,> -----------------------------------------------------------------------------------------------------
 951,1,: + (Otis Gospodneti)
@@ -955,7 +955,7 @@
 954,2,> URL: https://issues.apache.org/jira/browse/SOLR-1304
 955,2,: >   flags);
 956,1,list facet refinement seems pretty different than top facet refinement.
-957,1,> In case the baseDir attribute *is* specified but does not point to an existing directory (this results in a FileNotFoundException in FileListEntityProcessor.init()
+957,7,> In case the baseDir attribute *is* specified but does not point to an existing directory (this results in a FileNotFoundException in FileListEntityProcessor.init()
 958,2,> Key: SOLR-450
 959,2,>>> and am
 960,2,[ https://issues.apache.org/jira/browse/SOLR-211?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ]
@@ -1000,12 +1000,12 @@
 999,1,>>> '?core=corename' syntax carries less surprise and may be extended more
 1000,1,On Dec
 1001,1,I don't see any reason (c) and (d) and perhaps (b) can't be used for Standard-style queries.  Unless I'm mistake
-1002,2,[junit] Running org.apache.solr.handler.MoreLikeThisHandlerTest
-1003,2,[junit] 2008-03-28 08:44:56.504::INFO:  Shutdown hook complete
+1002,3,[junit] Running org.apache.solr.handler.MoreLikeThisHandlerTest
+1003,3,[junit] 2008-03-28 08:44:56.504::INFO:  Shutdown hook complete
 1004,1,Best Regard
-1005,2,at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:146)
+1005,3,at org.apache.lucene.queryParser.QueryParser.parse(QueryParser.java:146)
 1006,2,Attachment: SOLR-865.patch
-1007,2,>   at org.apache.lucene.index.DocInverterPerField.processFields(DocInverterPerField.java:159)
+1007,3,>   at org.apache.lucene.index.DocInverterPerField.processFields(DocInverterPerField.java:159)
 1008,1,> More details about this issue here:
 1009,1,another when indexing.
 1010,2,public TokenStream reusableTokenStream(String fieldNam
@@ -1018,8 +1018,8 @@
 1017,1,The memory usage of UnInvertedField is shown... just not in the same place as the Lucene field cache.
 1018,1,> >>> -Yonik
 1019,2,: core0 ) then call config.tellAboutCore( core1 );
-1020,2,[javac] Compiling 1 source file to http://hudson.zones.apache.org/hudson/job/Solr-trunk/ws/trunk/contrib/extraction/build/test-classes
-1021,1,> There seems to be a number of classes - that implement finalize() method.  Given that it is perfectly ok for a Java VM to not to call it - may be - there has to some other way  { try .. finally - when they are created to destroy them } to destroy them and the presence of finalize() metho
+1020,4,[javac] Compiling 1 source file to http://hudson.zones.apache.org/hudson/job/Solr-trunk/ws/trunk/contrib/extraction/build/test-classes
+1021,5,> There seems to be a number of classes - that implement finalize() method.  Given that it is perfectly ok for a Java VM to not to call it - may be - there has to some other way  { try .. finally - when they are created to destroy them } to destroy them and the presence of finalize() metho
 1022,1,being treated as if it were plain text.   am i correct?  if so was this
 1023,1,> >> > Jianhan
 1024,2,http://www.universidad2008.cu
@@ -1043,7 +1043,7 @@
 1042,1,> Disable polling.
 1043,2,> Key: SOLR-1444
 1044,2,> <updateProcessor name=\log\ class=\solr.LogUpdateProcessorFactory\ />
-1045,2,./contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DataImporter.java:134:   StringBuffer sb = new StringBuffer(\There are errors in the Schema\\n\);
+1045,3,./contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DataImporter.java:134:   StringBuffer sb = new StringBuffer(\There are errors in the Schema\\n\);
 1046,1,>   Solr now recognizes HTTP Request headers related to HTTP Caching (see
 1047,2,> Key: SOLR-1519
 1048,1,>>> \Soft references\ then. \Weak pointers\ is an older term. (They're
@@ -1055,8 +1055,8 @@
 1054,1,This is an invalid json as each term is associated with a JSON object which holds multiple \suggestion\ attributes. When working with a JSON library only the last \suggestion\ attribute is picked up.
 1055,2,+ set_post_return('<result status=\0\></result>')
 1056,1,Walter Underwood commented on SOLR-161:
-1057,2,>  at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:183)
-1058,1,valueDocSet.intersectionSize() being essentially equivalen
+1057,3,>  at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:183)
+1058,5,valueDocSet.intersectionSize() being essentially equivalen
 1059,2,<th>50% full</th> <td>3.36</td> <td>3.96</td> <td>1.44</td>
 1060,2,+  } else {
 1061,1,Add at line 179:
@@ -1071,7 +1071,7 @@
 1070,2,>  [javac] location: class org.apache.solr.util.AbstractSolrTestCase
 1071,2,[ https://issues.apache.org/jira/browse/SOLR-134?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12469643 ]
 1072,2,> @Field(\id\) //name is optional
-1073,1,One further issue... should we commit the changes to the HTMLStripReader?
+1073,5,One further issue... should we commit the changes to the HTMLStripReader?
 1074,1,> The above schema patch is working nice if you update your index (index
 1075,1,bq. The effect is that with a low value for spellcheck.count you might miss good hits. In other word
 1076,1,>Is this something worth pursuing?  Would we rather stick with ant
@@ -1081,13 +1081,13 @@
 1080,1,> > large fields (since they must be stored).
 1081,1,> >>> (Solr-773) and Spatial Lucene (Lucene-1732) and extends Solr and
 1082,2,[ https://issues.apache.org/jira/browse/SOLR-1381?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel ]
-1083,2,at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:553)
-1084,2,[junit] Tests run:
+1083,3,at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:553)
+1084,3,[junit] Tests run:
 1085,1,~14% for term filters that match a lot of documents
 1086,1,* <b>higher</b> vals come before lower vals.
 1087,2,AU  site/skin/images/info.png
 1088,2,>> + > > > A x++;
-1089,1,# The getter methods in SolrDeletionPolicy should be named more appropriately e.g. isKeepOptimizedOnl
+1089,5,# The getter methods in SolrDeletionPolicy should be named more appropriately e.g. isKeepOptimizedOnl
 1090,1,Here's the start of a test for the HTMLStripReader.  Not
 1091,1,was (Author: fergus):
 1092,1,> Added @deprecation Javadoc comments
@@ -1107,9 +1107,9 @@
 1106,2,<TERM> ...
 1107,1,Noble Paul commented on SOLR-1357:
 1108,1,All I remember is if I didn't have that <arr name=\components\> section arranged exactly like that (even if I rearranged other items without rearranging the \collapse\ part
-1109,2,org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+1109,3,org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
 1110,1,agree
-1111,2,[junit] 2008-08-05 18:09:01.346::INFO:  Shutdown hook complete
+1111,3,[junit] 2008-08-05 18:09:01.346::INFO:  Shutdown hook complete
 1112,1,This patch relies on the IndexDeletionPolicy to identify files to be replicated. It also supposrts replication of conf files. No need to register any listeners/ QueryResponseWriters
 1113,1,* officially deprecated the *PluginLoader classes
 1114,1,To pass extra information during indexin
@@ -1118,10 +1118,10 @@
 1117,1,> Soon to follow patch adds a constructor to IndexSchema to allow them to be created directly from InputStreams.  The overall logic for the Core's use of the IndexSchema creation/use does not change however this allows java clients like those in SOLR-20 to be able to parse an IndexSchema.  Once a schema is parse
 1118,2,>   <property name=\fr-cores\>f
 1119,2,> CoreDescriptor p = new CoreDescriptor(thi
-1120,2,>   at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
+1120,3,>   at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:174)
 1121,2,[ https://issues.apache.org/jira/browse/SOLR-341?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12532821 ]
 1122,2,:  %>
-1123,1,Anyone have good tips on working w/ java.util.logging (JUL)?  For on
+1123,5,Anyone have good tips on working w/ java.util.logging (JUL)?  For on
 1124,1,> : 2. The URL path determins the RequestParser
 1125,1,> FastInputStream makes 3 DataInputStream/DataOutputStreams that it does not close. Possible file descriptor leaks.
 1126,2,class ClosingRequestHandler extends EmptyRequestHandler implements SolrCoreAware {
@@ -1140,7 +1140,7 @@
 1139,2,> b4b10000-b532e000 r-xs 00000000 03:01 9831813 /usr/lib/j2re1.5-sun/lib/charsets.jar
 1140,2,>   Attachments: evaluatorcleanup.patch
 1141,1,> In solrconfig.xml:
-1142,2,at hudson.scm.SubversionSCM$CheckOutTask.invoke(SubversionSCM.java:476)
+1142,3,at hudson.scm.SubversionSCM$CheckOutTask.invoke(SubversionSCM.java:476)
 1143,2,> 0xaf36d308:   08273148 8d118768 08273088 08273088
 1144,1,system proerty should be se
 1145,2,> > packagin
@@ -1164,7 +1164,7 @@
 1163,1,Cheers
 1164,1,Just curioud
 1165,2,<str name=\classname\>org.apache.solr.spelling.suggest.Suggester</str>
-1166,2,at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+1166,3,at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
 1167,2,>manifestFileName=\/Volumes/ts/man-find.txt\
 1168,2,> +public class LuceneJUnitResultFormatter implements JUnitResultFormatter {
 1169,1,Andre
@@ -1187,23 +1187,23 @@
 1186,1,- 2 times faster for get(index)
 1187,2,http://www.creativyst.com/Doc/Articles/CSV/CSV01.htm
 1188,2,> Key: SOLR-1167
-1189,1,lrj/impl/CommonsHttpSolrServer.java uses or overrides a deprecated API.
+1189,5,lrj/impl/CommonsHttpSolrServer.java uses or overrides a deprecated API.
 1190,1,> This method outputs weird string when Japanese letters are given for example. \J1J2J3J4J5\ => \\\J1\\J2\\J3\\J4\\J5\ We don't want to see it.
 1191,1,> N-gram
 1192,2,[ https://issues.apache.org/jira/browse/SOLR-1432?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12777324#action_12777324 ]
 1193,2,> <field name=\end3\>uce</field>
 1194,2,AU  client/ruby/flare/public/images/pie_98.png
-1195,1,>  [line 438] The getCounts() method signature is modified to add the 'facetSortOrder' parameter value to the end of the argument list.
+1195,5,>  [line 438] The getCounts() method signature is modified to add the 'facetSortOrder' parameter value to the end of the argument list.
 1196,1,right away
 1197,1,> The current workaround is \symlinks\ but that doesn't really help the situation of the Solr Release artifact
 1198,2,- - -
-1199,2,[junit] 2008-01-15 08:11:29.638::INFO:  Shutdown hook complete
+1199,3,[junit] 2008-01-15 08:11:29.638::INFO:  Shutdown hook complete
 1200,1,> : testing its not 100% reliable.
 1201,2,'suggestions':['python
-1202,2,at org.apache.catalina.core.StandardContext.start(StandardContext.java:4342)
+1202,3,at org.apache.catalina.core.StandardContext.start(StandardContext.java:4342)
 1203,2,{quote}Yea
 1204,2,+  log.info(\unique key field: \+uniqueKeyFieldName);
-1205,2,[junit] 2008-04-02 08:16:39.555::INFO:  Shutdown hook complete
+1205,3,[junit] 2008-04-02 08:16:39.555::INFO:  Shutdown hook complete
 1206,1,> : 1. The URL path determins the RequestHandler
 1207,1,That comes from this patch-
 1208,1,>   Reporter: Jay
@@ -1214,9 +1214,9 @@
 1213,1,know all arguments made.
 1214,2,response.setContentType(responseWriter.getContentType(solrRe
 1215,1,I snuck it in to this release since the patch was simple and it's been an issue under heavy threading for some people.
-1216,2,ERROR: svn: Invalid argument
+1216,4,ERROR: svn: Invalid argument
 1217,1,(note the lack of quotes around the pipe... your example included quotes)
-1218,1,http://www.prohadoopbook.com/ a Ning network for Hadoop using Professionals
+1218,5,http://www.prohadoopbook.com/ a Ning network for Hadoop using Professionals
 1219,1,Shalin Shekhar Mangar updated SOLR-742:
 1220,1,>    is not specified in the request.
 1221,2,>   <filter class=\solr.TrimFilterFactory\ />
@@ -1241,7 +1241,7 @@
 1240,2,\foo !@# bar\ will index to \foo (blank) bar\
 1241,1,> Use Hadoop RPC for inter Solr communication
 1242,2,>> + A AtomicLong expungeDeleteCommands = new AtomicLong();
-1243,2,"> 	at org.apache.solr.search.DocSlice$1.nextDoc(DocSlice.java:112)"
+1243,3,"> 	at org.apache.solr.search.DocSlice$1.nextDoc(DocSlice.java:112)"
 1244,1,one field \title\ and gave the multiple word or say phrase.
 1245,1,>>>> On Sun
 1246,1,or if you have any other names in mind that is fine
@@ -1261,18 +1261,18 @@
 1260,1,In the future
 1261,2,>   Attachments: solr-solrpy-r5.patch
 1262,2,>> New Revision: 805774
-1263,2,>>>   at org.eclipse.jdt.internal.junit.runner.TestExecution.run
+1263,3,>>>   at org.eclipse.jdt.internal.junit.runner.TestExecution.run
 1264,2,> Affects Versions: 1.1.0
 1265,1,follows this tip is going to decide Solr sucks the first time they
-1266,2,[junit] Running org.apache.solr.search.TestQueryTypes
+1266,3,[junit] Running org.apache.solr.search.TestQueryTypes
 1267,1,>> where we have a \stable\ and an \experimental\
 1268,1,> >>> Personall
 1269,1,Seems like we should get rid of it.  It's query parser specific
-1270,1,Posting file ipod_video.xml to http://localhost:8080/solr/update
+1270,5,Posting file ipod_video.xml to http://localhost:8080/solr/update
 1271,2,return(True);
 1272,1,- Jave project) that were triggered by emails Jira had gotten over the
 1273,1,> +   * created and returned.
-1274,1,Here's an update to this patch.  I dropped short/byte support for now because I somehow forgot to add in SortField.BYTE and SortField.SHORT on the related Lucene patch.  I will open a separate issue for those.
+1274,5,Here's an update to this patch.  I dropped short/byte support for now because I somehow forgot to add in SortField.BYTE and SortField.SHORT on the related Lucene patch.  I will open a separate issue for those.
 1275,2,> b7f94000-b7f97000 rwxp b7f94000 00:00 0
 1276,1,On May
 1277,2,> + > > > A in fields myloc_0_
@@ -1280,10 +1280,10 @@
 1279,1,> > The custom cod
 1280,1,: Are there going to be any obvious problems with this? The only one I can
 1281,2,>   Attachments: solr.check.patch
-1282,2,> org.apache.solr.handler.component.StatsComponent.handleResponses(StatsComponent.java:116) at
+1282,3,> org.apache.solr.handler.component.StatsComponent.handleResponses(StatsComponent.java:116) at
 1283,1,>>>> View this message in context:
 1284,1,>> do is subscribe to solr-dev and start a dialog there about what issues
-1285,2,[junit] Running org.apache.solr.handler.component.StatsComponentTest
+1285,3,[junit] Running org.apache.solr.handler.component.StatsComponentTest
 1286,2,>  client/ruby/solr-ruby/test/unit/add_document_test.rb
 1287,2,>   Attachments: SOLR-856.patch
 1288,2,> </multicore>
@@ -1304,7 +1304,7 @@
 1303,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/t/runner.js
 1304,2,[ https://issues.apache.org/jira/browse/SOLR-1676?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12793158#action_12793158 ]
 1305,2,>  super(defaultField == null ? schema.getDefaultSearchFieldName() : defaultFiel
-1306,2,at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2777)
+1306,3,at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2777)
 1307,2,> <field column=\test\    template=\${dataimporter.request.finstalldir}\ />
 1308,1,No
 1309,2,public static int ntz(long val) {
@@ -1314,7 +1314,7 @@
 1313,1,* machine are skewed/different than that of the date faceting machine.
 1314,1,> h3. Usage:
 1315,1,> it must be removed
-1316,2,[javac] Compiling 215 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core
+1316,4,[javac] Compiling 215 source files to http://lucene.zones.apache.org:8080/hudson/job/Solr-Nightly/ws/trunk/build/core
 1317,1,>>>> interface all on its own.
 1318,2,>> + public static final String EXPUNGE_DELETES = \expungeDeletes\;
 1319,2,INFO: adding lazy requestHandler: spellchecker=solr.SpellCheckerRequestHandler
@@ -1323,7 +1323,7 @@
 1322,1,Hi Ur
 1323,1,Primarily SolrCore and SolrIndexWriter ( specifically for my use-case ).
 1324,2,1
-1325,1,Look at http://wiki.apache.org/solr/SimpleFacetParameters#Facet_Fields_with_No_Zeros_And_Missing_Count_For_One_Field
+1325,5,Look at http://wiki.apache.org/solr/SimpleFacetParameters#Facet_Fields_with_No_Zeros_And_Missing_Count_For_One_Field
 1326,2,+ JETTY-309 force writable status of endpoints.
 1327,2,[jar] Building jar: /tmp/apache-solr-nightly/contrib/clustering/build/apache-solr-clustering-1.4-dev.jar
 1328,1,And since the regex is specified via the \regex\ attribute (as opposed to the value of an XML element) it's perfectly extensible in the future.
@@ -1334,7 +1334,7 @@
 1333,1,Yonik Seeley edited comment on SOLR-1586 at 12/29/09 4:05 PM:
 1334,1,root context.
 1335,1,classpath option.
-1336,1,> 3) all of the ResponseWriters should start looking at SolrQueryResponse.getException if they aren't alread
+1336,5,> 3) all of the ResponseWriters should start looking at SolrQueryResponse.getException if they aren't alread
 1337,1,Shalin Shekhar Mangar reopened SOLR-1300:
 1338,1,>  information -- ie: only allow/commits updates if the
 1339,1,>> relatively expensive.
@@ -1343,22 +1343,22 @@
 1342,1,bq.
 1343,2,Key: SOLR-195
 1344,1,> # The properties defined in solr.xml should also be persisted back as is (without evaluation).
-1345,1,to /admin/stats.jsp which is a 404.  _info.jsp can leverage a default
+1345,5,to /admin/stats.jsp which is a 404.  _info.jsp can leverage a default
 1346,1,> sometimes have 100s of thousands of new docs as fast as Solr will
 1347,1,Thanks for contributing this Darren!
 1348,1,> >> ...Solr 1.1 is now available for download!...
 1349,1,>> but when VirtualHost features were adde
-1350,2,[junit] Test org.apache.solr.client.solrj.embedded.MergeIndexesEmbeddedTest FAILED
-1351,1,"> 	We've been working on integrating the spelt spellchecker from XTF (http://groups.google.com/group/spelt/"
-1352,2,> .ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
+1350,3,[junit] Test org.apache.solr.client.solrj.embedded.MergeIndexesEmbeddedTest FAILED
+1351,5,"> 	We've been working on integrating the spelt spellchecker from XTF (http://groups.google.com/group/spelt/"
+1352,3,> .ContextHandlerCollection.doStart(ContextHandlerCollection.java:161)
 1353,2,> //doc.addField(\weight_\ + Integer.toString(i) + \_\ + Integer.toString(j
 1354,2,[ https://issues.apache.org/jira/browse/SOLR-69?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12467399 ]
 1355,2,> b2a9e000-b2b10000 rwxp b2a9e000 00:00 0
 1356,1,are small fragments in the summary pag
-1357,2,[junit] Tests run:
+1357,3,[junit] Tests run:
 1358,1,> Digital Library Production Service
 1359,2,>> + > > > A if (x >= n) {
-1360,2,"> 	at java.net.ServerSocket.<init>(ServerSocket.java:141)"
+1360,3,"> 	at java.net.ServerSocket.<init>(ServerSocket.java:141)"
 1361,1,> Add support for the new TrieRangeFilter in Lucene contrib-queries for fast range filter/query.
 1362,2,> : + > A Assert.assertEquals( item.categories.lengt
 1363,1,> instead it should be:
@@ -1380,7 +1380,7 @@
 1379,2,>   </core>
 1380,1,> term buffer char array.  The reason this comes up is that
 1381,2,> > return Integer.valueOf( toExternal(f) );
-1382,2,> > A [junit] Running org.apache.solr.analysis.TestReversedWildcardFilterFactory
+1382,3,> > A [junit] Running org.apache.solr.analysis.TestReversedWildcardFilterFactory
 1383,2,>   Attachments: SOLR-1492.patch
 1384,2,stringsList.add(s);
 1385,1,> Examples of potential highlighter param names:
@@ -1397,18 +1397,18 @@
 1396,2,>  Date: Wed Mar 26 13:59:40 2008
 1397,1,> *blockRegex* is an optional attribute that is applied after any allowRegex and discards any line which matches the regExp
 1398,1,>> followed by ./solr
-1399,2,[junit] 2008-08-25 08:13:12.814::INFO:  Shutdown hook complete
-1400,2,> J  org.mortbay.jetty.Server.handle(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;I)Z
+1399,3,[junit] 2008-08-25 08:13:12.814::INFO:  Shutdown hook complete
+1400,3,> J  org.mortbay.jetty.Server.handle(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;I)Z
 1401,2,[ https://issues.apache.org/jira/browse/SOLR-219?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12494623 ]
 1402,2,rent:[* TO 1500] AND bedroom:[2 TO *] AND floor:[90 TO *]
 1403,2,>    <!-- for historic reason
-1404,2,[javac] Note: /tmp/apache-solr-nightly/contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DocBuilder.java uses or overrides a deprecated API.
+1404,4,[javac] Note: /tmp/apache-solr-nightly/contrib/dataimporthandler/src/main/java/org/apache/solr/handler/dataimport/DocBuilder.java uses or overrides a deprecated API.
 1405,1,makes it irrelevant what the actual value is -- even if the property
 1406,2,> URL: https://issues.apache.org/jira/browse/SOLR-491
 1407,2,\endOffset\:
 1408,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/app/frame/Namespace.js
 1409,1,>  collation
-1410,1,> using exec() instead of system() makes this complexity go away fortunately. Also the solr_server.rb was renamed to test_helper.rb as it is likely to contain other methods/classes for clearing the inde
+1410,5,> using exec() instead of system() makes this complexity go away fortunately. Also the solr_server.rb was renamed to test_helper.rb as it is likely to contain other methods/classes for clearing the inde
 1411,2,Environment: Linux
 1412,2,x = x - ((x >>> 1) & 0x5555555555555555L);
 1413,1,>> BaseTokenizerFactory does not make a Tokenize
@@ -1418,7 +1418,7 @@
 1417,1,Can be replicated with the example-setup that comes with Solr (Jetty + example docs):
 1418,1,Sorry I'm out of the loop on this.  In the last two week
 1419,1,have tested the pre-releases and release candidates.
-1420,2,>   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
+1420,3,>   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
 1421,1,The ability to update/search/delete among many solr instances
 1422,1,Hoss Man commented on SOLR-1817:
 1423,2,>   Attachments: Dup_files1.zip
@@ -1426,7 +1426,7 @@
 1425,2,: - [<a href=action.jsp?log=FINEST>FINEST</a>]
 1426,1,which is what open source and iteration is all about.
 1427,1,Jayson Minard commented on SOLR-1155:
-1428,2,[junit] Running org.apache.solr.highlight.HighlighterConfigTest
+1428,3,[junit] Running org.apache.solr.highlight.HighlighterConfigTest
 1429,1,> allows for elements to be anotate with a nam
 1430,1,> Implement highlighted field support
 1431,1,> - Hide quoted text -
@@ -1443,15 +1443,15 @@
 1442,2,<http://hudson.zones.apache.org/hudson/job/Solr-trunk/1078/changes>
 1443,2,: +   out.println(\</error>\);
 1444,2,matthew.woytowitz@mantech.com
-1445,2,[junit] 2008-08-25 08:15:16.794::INFO:  Shutdown hook complete
+1445,3,[junit] 2008-08-25 08:15:16.794::INFO:  Shutdown hook complete
 1446,2,if (isfrag = \fragment\.equals(walk.getNodeName()))
 1447,1,> SpellCheckComponent must be able to build/load spell check index on startup and commits. With SOLR-60
 1448,2,> : A import java.util.List;
-1449,1,I am finally getting back around to this. And I am having trouble implementing SolrCoreAware. As The SolrResourceLoader has a method called assertAwareCompatibility which throws an exception my class does not extend SolrRequestHandle
+1449,5,I am finally getting back around to this. And I am having trouble implementing SolrCoreAware. As The SolrResourceLoader has a method called assertAwareCompatibility which throws an exception my class does not extend SolrRequestHandle
 1450,2,> > >  Attachments: dynamicCopy.patch
 1451,1,>  - support some sort of standard RPC mechanism (Thrif
-1452,2,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
-1453,2,> SEVERE: java.lang.OutOfMemoryError: PermGen space
+1452,3,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+1453,4,> SEVERE: java.lang.OutOfMemoryError: PermGen space
 1454,2,> fq={!tag%3Dt1}SubjectTerms_mfacet:(testvalue)&
 1455,2,>   Attachments: hoss.spell.patch
 1456,2,http://www.eu.apachecon.com/
@@ -1477,9 +1477,9 @@
 1476,2,>> +++ lucene/solr/trunk/client/java/solrj/src/org/apache/solr/client/
 1477,1,Ryan McKinley updated SOLR-182:
 1478,1,:  In my general experience I have seen people deploying applications in
-1479,2,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
+1479,3,>   at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
 1480,1,> own log & error notification (emails/pages to the operator) so that is not
-1481,2,[junit] Running org.apache.solr.BasicFunctionalityTest
+1481,3,[junit] Running org.apache.solr.BasicFunctionalityTest
 1482,2,[mkdir] Created dir: /tmp/apache-solr-nightly/dist/solr-cell-lib
 1483,1,It's been 3 months since I looked at this.  Sounds fimiliar.  Here are the params I pass with every MLT Query.
 1484,1,> no objections ...
@@ -1490,14 +1490,14 @@
 1489,2,<int name=\price:[* TO 500]\>2</int>
 1490,2,> Key: SOLR-1461
 1491,1,> Enviado el: miA(c)rcole
-1492,2,> See http://www.apache.org/dev/crypto.html
+1492,5,> See http://www.apache.org/dev/crypto.html
 1493,1,: + the License.  You may obtain a copy of the License at
 1494,2,+ JETTY-296 Close direct content inputstreams
-1495,1,>   public int commitMaxTime = -1; // make sure these documents are
+1495,5,>   public int commitMaxTime = -1; // make sure these documents are
 1496,1,>   Assignee: Otis Gospodnetic
 1497,2,>  for( SolrDocument doc : docs ){
 1498,2,>   {
-1499,2,at hudson.model.Executor.run(Executor.java:59)
+1499,3,at hudson.model.Executor.run(Executor.java:59)
 1500,2,"java.lang.String 	getServletContextName()"
 1501,2,> {code}
 1502,2,: + <entity>
@@ -1528,16 +1528,16 @@
 1527,1,Another custom similarity may say that only 1) and 6) are similar because they are identical.
 1528,2,#NAME?
 1529,2,import java.util.Map;
-1530,1,Posting file hd.xml to http://localhost:8080/solr/update
+1530,5,Posting file hd.xml to http://localhost:8080/solr/update
 1531,2,x html(46)
-1532,2,at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:178)
+1532,3,at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:178)
 1533,2,content (CS);
 1534,2,/<zookeeper_rootdir>
 1535,2,: +  <link rel=\shortcut icon\ href=\/favicon.ico\ type=\image/ico\></link>
 1536,1,One option obviously is to treat a 15 second timeout the same as if the node went down. It seems to depend though - in a lot of case
 1537,2,> Linux Red Hat ES4  (2.6.9-5.ELsmp from 'uname -a')
-1538,2,[junit] Running org.apache.solr.client.solrj.embedded.MultiCoreEmbeddedTest
-1539,1,> 2. refactor the addMainQuery() method to use
+1538,3,[junit] Running org.apache.solr.client.solrj.embedded.MultiCoreEmbeddedTest
+1539,5,> 2. refactor the addMainQuery() method to use
 1540,2,[junit]  <h2>asf - Revision 691915]: /lucene/solr/trunk...> but was:<...asf - Revision 69191[6: /lucene/solr/trunk</title></head>
 1541,1,>   Reporter: Andrzej Bialecki
 1542,1,handled without error.
@@ -1552,7 +1552,7 @@
 1551,1,>   Reporter: DoAYacan GA1/4ney
 1552,2,2) cd /proc/[java pid/fd
 1553,1,> represent the state of the cores of a given set of servers which
-1554,2,"> 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)"
+1554,3,"> 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)"
 1555,2,> Key: SOLR-210
 1556,2,>   Attachments: analysis-xml-out.txt
 1557,1,Mark Miller updated SOLR-1445:
@@ -1565,7 +1565,7 @@
 1564,1,> In QueryComponent (lines 81-82) we have:
 1565,1,** property for type name in *both* the fieldtype and field (which
 1566,1,Solr moves to Lucene's trunk:
-1567,1,> Filed[] from a single field value input -- but it doesn't provide any
+1567,5,> Filed[] from a single field value input -- but it doesn't provide any
 1568,2,Total time: 63 minutes 42 seconds
 1569,2,-  } catch (SQLException e) {
 1570,2,>   <field column=\datasource\ template=\board\/>
@@ -1576,7 +1576,7 @@
 1575,2,>> A lucene/solr/trunk/src/solrj/org/apache/solr/client/solrj/request/UpdateRequest.java
 1576,1,> I vote for #2.  Archeologists can still dig it up through an svn
 1577,2,> public void write(ResponseWriter writer) {
-1578,2,>   at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
+1578,3,>   at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
 1579,2,>   Environment: Solr core
 1580,2,int i;
 1581,1,> > happen
@@ -1591,7 +1591,7 @@
 1590,1,A collection of rough enhancements to the default highlighter. Mostly to be used as ideas for future development.
 1591,2,> PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11:/usr/games
 1592,1,[Compiling 2 source files to
-1593,2,> org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:
+1593,3,> org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:
 1594,1,: One idea was for me to use a filter with the copy task that e.g.
 1595,1,> there are other (less clean) ways to handle the INCREMENT command.  My real
 1596,1,> query facets via the UI. it is also possible to
@@ -1603,7 +1603,7 @@
 1602,2,>   at org.apache.solr.update.DirectUpdateHandler2.overwriteBoth(Unknown Sou rce)
 1603,1,> The syntax that you are using is not a valid syntax. Solr 1.2 did not do
 1604,2,> - > > > > > > > <mkdir dir=\@{junit.output.dir}\/>
-1605,2,> java.lang.NoClassDefFoundError: org/apache/solr/common/SolrException
+1605,4,> java.lang.NoClassDefFoundError: org/apache/solr/common/SolrException
 1606,1,looks great.  thanks!
 1607,1,* of the number of milliseconds since the epoch (milliseconds since 1 Jan 1970 00:00).
 1608,1,the DateField type ... i'll rectify that.
@@ -1634,11 +1634,11 @@
 1633,2,> Key: SOLR-1568
 1634,1,> {{version}} : if you update your solr.xml or your cores for various motive
 1635,2,URL: https://issues.apache.org/jira/browse/SOLR-1778
-1636,1,> I tried querying using SolrDirectConnection with a wt=javabin and only get
+1636,5,> I tried querying using SolrDirectConnection with a wt=javabin and only get
 1637,2,buildDocument(vr
 1638,2,> http://www.nabble.com/Custom-fragmenter-tf3681588.html#a10289335
 1639,2,Fix For: 1.3.1
-1640,1,These strategies should be tested before trying to create a lock-free get() versio
+1640,5,These strategies should be tested before trying to create a lock-free get() versio
 1641,1,> NASA Jet Propulsion Laboratory Pasaden
 1642,2,<lst name=\master\>
 1643,1,use driod to get the meta data on content and store the data in solr for
@@ -1650,7 +1650,7 @@
 1649,1,which is implimented as a RangeFilter under the covers.
 1650,2,>  client/ruby/solr-ruby/lib/solr/response/standard.rb
 1651,1,contributing this code to Apache so that it can be included in the main
-1652,2,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:84
+1652,3,org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:84
 1653,1,bq. It almost maxed out a machine with 18GB devoted to jetty in about 20 minutes.
 1654,1,> Imagine that i want to make an index of people i know.  Each person also
 1655,2,: +    out.print(\  <line>\);
@@ -1670,10 +1670,10 @@
 1669,1,added a while ago KeepWordsFilter
 1670,2,>    if (termInstances == 0) {
 1671,1,>> According to Wik
-1672,2,Fix Version/s: 3.1
+1672,4,Fix Version/s: 3.1
 1673,1,I came up with this patch because I have a rather elaborate tokenization scheme using ShingleMatrixFilter. The current solution of mine is to pass a base64 encoded serialized object as field value and use a custom Analyzer that produce the TokenStream. However the tokenization is rather expensive (especially during initial bulk import of my zillions of documents)  so I'd rather do this on my clients as I've got plenty of those but only one Solr.
 1674,1,#NAME?
-1675,1,All handlers call init() before they could possibly receive any requests.  No requests can hit solr during the limbo period (a-b
+1675,5,All handlers call init() before they could possibly receive any requests.  No requests can hit solr during the limbo period (a-b
 1676,2,AU  site/skin/getBlank.js
 1677,1,> I noticed in sol
 1678,1,> >>> dealing with a large data set through better query parsing and
@@ -1682,7 +1682,7 @@
 1681,1,> ...Are there existing practices for giving credit to companies that \sponsor\ development of Solr..
 1682,2,lst.add( \thread
 1683,1,>>>>>>>>>>> --Noble
-1684,2,"> 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:61)"
+1684,3,"> 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:61)"
 1685,1,Ideally
 1686,1,> The implementation is done such a way to minimize code changes.
 1687,1,figured out hte second?
@@ -1696,7 +1696,7 @@
 1695,2,<tr>
 1696,1,of the Solr HTTP/XML interface very much.
 1697,1,I think the same approach should be taken with XML parsing
-1698,1,Patch updated to current trunk. One concrete use case where this is needed is Fieldable implementations that provide different values of tokenStreamValue() and stringValue(
+1698,5,Patch updated to current trunk. One concrete use case where this is needed is Fieldable implementations that provide different values of tokenStreamValue() and stringValue(
 1699,1,anything but the fact that some classes exist in the jar/war (i
 1700,1,I have read through the documentation on search components and doc lists and
 1701,1,> : That's normally fin
@@ -1706,9 +1706,9 @@
 1705,1,But is there any answer when using dismax?
 1706,1,>> current API's.
 1707,2,: @@ -30
-1708,1,Ah ... got the beginnings of a diagnosis. The problem appears when the DocSet {{qDocSet}} returned by DocSetHitCollector.getDocSet() -- called at org.apache.solr.search.SolrIndexSearcher:1101 in trun
+1708,6,Ah ... got the beginnings of a diagnosis. The problem appears when the DocSet {{qDocSet}} returned by DocSetHitCollector.getDocSet() -- called at org.apache.solr.search.SolrIndexSearcher:1101 in trun
 1709,1,Noble Paul updated SOLR-1153:
-1710,2,[junit] Running org.apache.solr.analysis.TestFrenchStemFilterFactory
+1710,3,[junit] Running org.apache.solr.analysis.TestFrenchStemFilterFactory
 1711,1,> path after the colon determines the RequestParser?
 1712,1,If all fields are store
 1713,1,Noble and I have been discussing many of the same things. Prominent topics
@@ -1716,7 +1716,7 @@
 1715,1,2) Even when /update is mapped to the legacy servle
 1716,2,Key: SOLR-1727
 1717,1,\encoding\ dictates the actual character encoding used in the output stream.
-1718,2,> > A [junit] Running org.apache.solr.core.TestJmxIntegration
+1718,3,> > A [junit] Running org.apache.solr.core.TestJmxIntegration
 1719,1,I should make them all this easy.
 1720,1,Issue #2:
 1721,2,[ https://issues.apache.org/jira/browse/SOLR-307?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#action_12513815 ]
@@ -1751,7 +1751,7 @@
 1750,1,> general@lucene a while back)
 1751,1,> Highlighter throws null pointer exception when field has termPositions=true
 1752,2,>    Key: SOLR-20
-1753,1,> LUCENE-843 adds support for new indexing capabilities using the setRAMBufferSizeMB() method that should significantly speed up indexing for many applications.  To fix thi
+1753,5,> LUCENE-843 adds support for new indexing capabilities using the setRAMBufferSizeMB() method that should significantly speed up indexing for many applications.  To fix thi
 1754,1,> Add lazy field loading to solr.
 1755,1,possible way with this request handler?
 1756,2,: + if (resp.getException() == null) {
@@ -1763,29 +1763,29 @@
 1762,1,the underlying connections are thread safe:
 1763,1,> XML being involved would be the result of such a refactoring.
 1764,2,>  contrib/javascript/lib/jsdoc/jsdoc-toolkit/templates/solrjs
-1765,2,[junit] Running org.apache.solr.spelling.FileBasedSpellCheckerTest
+1765,3,[junit] Running org.apache.solr.spelling.FileBasedSpellCheckerTest
 1766,2,ScheduledExecutorService: True
 1767,1,> -Yonik
 1768,1,to use a DIH jar for people who upgrade ... we have to document how to use
 1769,1,> 'ant clean example' is no problem:
 1770,1,> Integrate code coverage.  Clover / cobertura
-1771,2,java.lang.StringCoding$StringDecoder.decode(StringCoding.java:133)
+1771,3,java.lang.StringCoding$StringDecoder.decode(StringCoding.java:133)
 1772,1,> We get SOLR updates frequently and since they are large we cannot wait to do a commit at the 15 minute mark using cron. Optimize just takes too long.
 1773,1,Lucene index.  I notice the GData protocol supports this:
 1774,1,> then like to have a goal of putting up an official set of artifacts to
 1775,1,> > > > A that matched
 1776,1,>> al
-1777,2,at org.tmatesoft.svn.core.wc.SVNUpdateClient.doCheckout(SVNUpdateClient.java:325)
+1777,3,at org.tmatesoft.svn.core.wc.SVNUpdateClient.doCheckout(SVNUpdateClient.java:325)
 1778,2,Priority: Critical
 1779,2,[ https://issues.apache.org/jira/browse/SOLR-84?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12636849#action_12636849 ]
 1780,2,>   return bits.get(doc);
 1781,1,go to upgrade because they are going to have to do it again (that's
 1782,1,>   Reporter: Tomislav Nakic-Alfirevic
-1783,2,> package junit.framework does not exist
+1783,4,> package junit.framework does not exist
 1784,2,> URL: https://issues.apache.org/jira/browse/SOLR-1614
 1785,1,* ...others ?
 1786,2,* TokenizerFactory
-1787,2,[junit] 2008-09-04 08:14:55.726::INFO:  Shutdown hook executing
+1787,3,[junit] 2008-09-04 08:14:55.726::INFO:  Shutdown hook executing
 1788,2,>   <str name=\masterUrl\>${master.url}</str>
 1789,1,> Incubator to become a Lucene subproject.
 1790,1,> at all) -- fixed by: Yoniks fix_ruby_output.path applied to the
@@ -1795,14 +1795,14 @@
 1794,2,> > private static final File workDir;
 1795,2,>   Attachments: SOLR-844.patch
 1796,1,>>>>>>>>> that
-1797,1,Attached patch should get us to a good point to tackle some of the related issues.  It updates all code paths (unless i missed one) that put something into SolrConfig.severeErrors so that that code path also explicilty throws the corrisponding exception.
+1797,5,Attached patch should get us to a good point to tackle some of the related issues.  It updates all code paths (unless i missed one) that put something into SolrConfig.severeErrors so that that code path also explicilty throws the corrisponding exception.
 1798,1,On the admin page for replication
 1799,1,shouldn't both situations be handled the same way?
 1800,2,> + > > > A } finally {
 1801,1,>> I've included the signatures this time.  If you want to download
 1802,2,INFO: ### *** SHARDS len 2
 1803,2,>   Attachments: fedsearch.patch
-1804,2,at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+1804,3,at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
 1805,2,<processor class=\com.MyUpdateProcessor\ />
 1806,1,bq.Is there an easy way to get this patched into 1.3.0?
 1807,2,>  <fieldType name=\sint\ class=\solr.SortableIntField\ sortMissingLast=\true\ omitNorms=\true\/>
@@ -1810,7 +1810,7 @@
 1809,2,>>>>>>>>   Priority: Minor
 1810,1,>>>>>> This is related to something I must have only day dreamed
 1811,2,>> + > A SegmentReader[] sirs2 = getSegmentReaders(core);
-1812,1,larger) set before limiting it by req.getStart() and req.getLimit(
+1812,5,larger) set before limiting it by req.getStart() and req.getLimit(
 1813,2,>  <int name=\QTime\>58</int>
 1814,2,>   0x0805c790 JavaThread \DestroyJavaVM\ [_thread_blocke
 1815,2,int docId = iterator.nextDoc();
@@ -1825,7 +1825,7 @@
 1824,2,> <field column=\fileWebPath\   regex=\${dataimporter.request.finstalldir}(.*)\ replaceWith=\$1\ sourceColName=\fileAbsolutePath\/>
 1825,2,> Key: SOLR-1450
 1826,2,> : --- lucene/solr/trunk/src/solrj/org/apache/solr/client/solrj/beans/DocumentObjectBinder.java (original)
-1827,1,Oh come on now ... that's not really a fair criticism of the example: there are plenty of legitimate ways to use (some) TokenFilters only at search time and I specifically structured my example to point out potential problems in cases just like that -- Carl was very clear that \if you used FooTokenFilterFactory in an index analyzer you'll need to reindex.\
+1827,5,Oh come on now ... that's not really a fair criticism of the example: there are plenty of legitimate ways to use (some) TokenFilters only at search time and I specifically structured my example to point out potential problems in cases just like that -- Carl was very clear that \if you used FooTokenFilterFactory in an index analyzer you'll need to reindex.\
 1828,2,cobertura.jar
 1829,2,> + > > > > > > <formatter classname=\${junit.details.formatter}\ usefile=\false\/>
 1830,2,>  </similarity>
@@ -1852,10 +1852,10 @@
 1851,2,>   <property name='revision'>33</property>  <!-- a basic property -->
 1852,1,>  * Platform independence
 1853,1,> replication.
-1854,1,> Seen the thread as http://www.nabble.com/CoreDescriptor-explanation-and-possible-bug-to19197004.html
+1854,5,> Seen the thread as http://www.nabble.com/CoreDescriptor-explanation-and-possible-bug-to19197004.html
 1855,1,> <!--more stuff goes here-->
 1856,2,* CamelCase: timeallowed => timeAllowed?
-1857,1,#NAME?
+1857,2,#NAME?
 1858,1,/** An \open\ BitSet implementation that allows direct access to the
 1859,2,[javac] Compiling 5 source files to /tmp/apache-solr-nightly/contrib/clustering/build/test-classes
 1860,2,http://localhost:8983/solr/update/add?commitWithin=1234
@@ -1872,12 +1872,12 @@
 1871,1,> Access by name is more important
 1872,1,I'll make the modifications in trunk and get back asap.
 1873,2,[javac] Note: /tmp/apache-solr-nightly/client/java/solrj/src/org/apache/solr/client/solrj/impl/CommonsHttpSolrServer.java uses or overrides a deprecated API.
-1874,2,org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:
+1874,3,org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:
 1875,1,Acctually
 1876,2,{code:java}
-1877,1,>  2) Make VariableResolverImpl#TEMPLATE_STRING non-static. Or clear cache on finishing delta-import.
+1877,5,>  2) Make VariableResolverImpl#TEMPLATE_STRING non-static. Or clear cache on finishing delta-import.
 1878,2,URL: https://issues.apache.org/jira/browse/SOLR-1768
-1879,2,at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:358)
+1879,3,at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:358)
 1880,1,i was thinking the same thing.
 1881,1,>>> believe
 1882,1,I've enhanced the DisMax QParser plugin to use a pluggable query string re-writer (via subclass extension) instead of hard-coding the logic currently embedded within it (i.e. the escape nearly everything logic). Additionally
@@ -1888,7 +1888,7 @@
 1887,1,locallucene and see how far spread it is
 1888,2,>   Attachments: SOLR-81-ngram.patch
 1889,1,> confused as to what exactly the imcompatibility is ... could someone open
-1890,1,> Here is a patch that adds an NGramFilterFactory and EdgeNGramFilterFactory to Solr.
+1890,5,> Here is a patch that adds an NGramFilterFactory and EdgeNGramFilterFactory to Solr.
 1891,1,Can't we set up the clustering solrconfig to have a different data
 1892,1,that calling HttpServletRequest.getInputStream() wasn't safe unless we
 1893,1,A user may enter a search such as
@@ -1899,16 +1899,16 @@
 1898,1,- increments aren't atomic
 1899,2,Name: svn:eol-style
 1900,1,>> sure how important this is.
-1901,2,at hudson.FilePath.writeToTar(FilePath.java:885)
-1902,1,> SEVERE: An exception or error occurred in the container during the request processing
+1901,3,at hudson.FilePath.writeToTar(FilePath.java:885)
+1902,4,> SEVERE: An exception or error occurred in the container during the request processing
 1903,2,:   logger.debug( \got: \+results.getNumFound() + \ ::
-1904,2,[junit] 2008-02-23 08:13:51.605::INFO:  Shutdown hook complete
+1904,3,[junit] 2008-02-23 08:13:51.605::INFO:  Shutdown hook complete
 1905,2,: -   rootEntity=\false\
 1906,1,Reporter: Matthew Runo
 1907,1,> > using it?
 1908,1,> Now I created two request handler
 1909,1,>   Reporter: Joe Calderon
-1910,2,[javac] Compiling 1 source file to /tmp/apache-solr-nightly/build/solr
+1910,4,[javac] Compiling 1 source file to /tmp/apache-solr-nightly/build/solr
 1911,2,>    URL: http://issues.apache.org/jira/browse/SOLR-3
 1912,2,-
 1913,2,[jar] Building jar: /tmp/apache-solr-nightly/contrib/dataimporthandler/target/apache-solr-dataimporthandler-1.5-dev.jar
@@ -1934,12 +1934,12 @@
 1933,1,The way I understand the javadoc is
 1934,2,[ https://issues.apache.org/jira/browse/SOLR-1205?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=12722786#action_12722786 ]
 1935,1,>   Reporter: Sachin
-1936,2,at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.update(DAVRepository.java:1078)
+1936,3,at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.update(DAVRepository.java:1078)
 1937,2,>    <xs:element type=\xs:int\ name=\startOffset\ maxOccurs=\1\/>
 1938,1,same revision. (so a better chance of a resolution)
 1939,2,> solrconfig.xml}</param-value>
 1940,1,> the patch is good
-1941,1,** property to override which fieldtype name a field should use (leave the <fieldtype> declaration static)
+1941,5,** property to override which fieldtype name a field should use (leave the <fieldtype> declaration static)
 1942,1,deleted chunk.  there's also a large new chunk (which doesn't seem to
 1943,2,@@ -20
 1944,2,"INFO: null q=id:1527426&dq=id:\A'ao,\+ 0 2"
@@ -1958,7 +1958,7 @@
 1957,1,Other similar use cases often requested: multi source federation
 1958,2,compile-solrj:
 1959,1,> you mean individual values in the field?
-1960,2,> > A [junit] Running org.apache.solr.handler.FieldAnalysisRequestHandlerTest
+1960,3,> > A [junit] Running org.apache.solr.handler.FieldAnalysisRequestHandlerTest
 1961,2,Attachments: SOLR-672.patch
 1962,1,>>>> Facet multi-valued fields via a counting method (like the
 1963,1,>> : I don't think this initial cutover should try to \solve\ how modules
@@ -1967,7 +1967,7 @@
 1966,1,> This may be a one-of-glitch because of the way SearchComponents get loaded
 1967,1,> : less important.
 1968,2,> URL: https://issues.apache.org/jira/browse/SOLR-935
-1969,2,[junit] 2008-03-28 08:14:05.640::INFO:  Shutdown
+1969,3,[junit] 2008-03-28 08:14:05.640::INFO:  Shutdown
 1970,1,> temporary work directory of a snapshot in progress.  Those temporary
 1971,1,> Again??
 1972,2,[...truncated 2430 lines...]
@@ -1998,4 +1998,4 @@
 1997,1,>   Reporter: Henri Biestro
 1998,1,> and getting the lock so that it is properly thread safe - but not in
 1999,1,perspective
-2000,2,[javac] Compiling 388 source files to /tmp/apache-solr-nightly/build/solr
+2000,4,[javac] Compiling 388 source files to /tmp/apache-solr-nightly/build/solr

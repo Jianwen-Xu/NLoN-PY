@@ -13,7 +13,7 @@ filenames = {
     'bitcoin': 'lines.10k.cfo.sample.2000 - Bitcoin (github.com).csv'
 }
 
-category_dict = {1: 'NL', 2: 'NOT'}
+category_dict = {1: 'NL', 2: 'CODE',3:'TRACE',4:'LOG',5:'NL_CODE',6:'NL_TRACE',7:'NL_LOG'}
 
 def get_category_dict():
     return category_dict

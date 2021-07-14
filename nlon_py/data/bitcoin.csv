@@ -2,7 +2,7 @@ Source,Text,Class
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Write and commit header, data",NL
 bitcoin,Generate random temporary filename,NL
 bitcoin,"open temp output file, and associate with CAutoFile",NL
@@ -18,7 +18,7 @@ bitcoin,Ensure addrman is left in a clean state,NL
 bitcoin,Copyright (c) 2012 Pieter Wuille,NL
 bitcoin,Copyright (c) 2012-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,never remove things tried in the last minute,NL
 bitcoin,came in a flying DeLorean,NL
 bitcoin,not seen in recent history,NL
@@ -53,10 +53,10 @@ bitcoin,add services,NL
 bitcoin,do not update if no new information is present,NL
 bitcoin,"do not update if the entry was already in the ""tried"" table",NL
 bitcoin,do not update if the max reference count is reached,NL
-bitcoin,stochastic test: previous nRefCount == N: 2^N times harder to increase it,NL
+bitcoin,stochastic test: previous nRefCount == N: 2^N times harder to increase it,NL_CODE
 bitcoin,Overwrite the existing new table entry.,NL
 bitcoin,"if not found, bail out",NL
-bitcoin,check whether we are talking about the exact same CService (including same port),NL
+bitcoin,check whether we are talking about the exact same CService (including same port),NL_CODE
 bitcoin,update info,NL
 bitcoin,Use a 50% chance for choosing between tried and new table entries.,NL
 bitcoin,use a tried node,NL
@@ -65,12 +65,12 @@ bitcoin,"gather a list of random nodes, skipping those of low quality",NL
 bitcoin,Filter by network (optional),NL
 bitcoin,Filter for quality,NL
 bitcoin,"if not found, bail out",NL
-bitcoin,check whether we are talking about the exact same CService (including same port),NL
+bitcoin,check whether we are talking about the exact same CService (including same port),NL_CODE
 bitcoin,update info,NL
 bitcoin,"if not found, bail out",NL
-bitcoin,check whether we are talking about the exact same CService (including same port),NL
+bitcoin,check whether we are talking about the exact same CService (including same port),NL_CODE
 bitcoin,update info,NL
-bitcoin,If id_new not found in mapInfo remove it from m_tried_collisions,NL
+bitcoin,If id_new not found in mapInfo remove it from m_tried_collisions,NL_CODE
 bitcoin,Which tried bucket to move the entry to.,NL
 bitcoin,id_new may no longer map to a valid address,NL
 bitcoin,The position in the tried bucket is not empty,NL
@@ -89,7 +89,7 @@ bitcoin,which tried bucket to move the entry to,NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"make a copy, so we can shift.",NL
 bitcoin,"make a copy, so we can subtract.",NL
 bitcoin,the quotient.,NL
@@ -98,15 +98,15 @@ bitcoin,shift so that div and num align.,NL
 bitcoin,set a bit of the result.,NL
 bitcoin,shift back.,NL
 bitcoin,num now contains the remainder of the division.,NL
-bitcoin,Explicit instantiations for base_uint<256>,NL
+bitcoin,Explicit instantiations for base_uint<256>,NL_CODE
 bitcoin,This implementation directly uses shifts instead of going,NL
 bitcoin,through an intermediate MPI representation.,NL
-bitcoin,The 0x00800000 bit denotes the sign.,NL
+bitcoin,The 0x00800000 bit denotes the sign.,NL_CODE
 bitcoin,"Thus, if it is already set, divide the mantissa by 256 and increase the exponent.",NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,thread save setter,NL
 bitcoin,"no need to write down, just read data",NL
 bitcoin,sweep out unused entries,NL
@@ -118,15 +118,15 @@ bitcoin,store banlist to disk immediately,NL
 bitcoin,Sweep the banlist so expired bans are not returned,NL
 bitcoin,create a thread safe copy,NL
 bitcoin,update UI,NL
-bitcoin,reuse m_banned lock for the m_is_dirty flag,NL
+bitcoin,reuse m_banned lock for the m_is_dirty flag,NL_CODE
 bitcoin,Copyright (c) 2014-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"All alphanumeric characters except for ""0"", ""I"", ""O"", and ""l""",NL
 bitcoin,Skip leading spaces.,NL
 bitcoin,Skip and count leading '1's.,NL
 bitcoin,Allocate enough space in big-endian base256 representation.,NL
-bitcoin,"log(58) / log(256), rounded up.",NOT
+bitcoin,"log(58) / log(256), rounded up.",NL_CODE
 bitcoin,Process the characters.,NL
 bitcoin,guarantee not out of range,NL
 bitcoin,Decode base58 character,NL
@@ -136,65 +136,65 @@ bitcoin,Skip leading zeroes in b256.,NL
 bitcoin,Copy result into output vector.,NL
 bitcoin,Skip & count leading zeroes.,NL
 bitcoin,Allocate enough space in big-endian base58 representation.,NL
-bitcoin,"log(256) / log(58), rounded up.",NOT
+bitcoin,"log(256) / log(58), rounded up.",NL_CODE
 bitcoin,Process the bytes.,NL
-bitcoin,"Apply ""b58 = b58256 + ch"".",NOT
+bitcoin,"Apply ""b58 = b58256 + ch"".",NL_CODE
 bitcoin,Skip leading zeroes in base58 result.,NL
 bitcoin,Translate the result into a string.,NL
 bitcoin,add 4-byte hash check to the end,NL
 bitcoin,"re-calculate the checksum, ensure it matches the included 4-byte checksum",NL
 bitcoin,"Copyright (c) 2017, 2021 Pieter Wuille",NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,The Bech32 and Bech32m character set for encoding.,NL
 bitcoin,The Bech32 and Bech32m character set for decoding.,NL
 bitcoin,Determine the final constant to use for the specified encoding.,NL
 bitcoin,"This function will compute what 6 5-bit values to XOR into the last 6 input values, in order to
   make the checksum 0. These 6 values are packed together in a single 30-bit integer. The higher
   bits correspond to earlier values.",NL
-bitcoin,"The input is interpreted as a list of coefficients of a polynomial over F = GF(32), with an",NL
-bitcoin,"implicit 1 in front. If the input is [v0,v1,v2,v3,v4], that polynomial is v(x) =",NOT
-bitcoin,1*x^5 + v0*x^4 + v1*x^3 + v2*x^2 + v3*x + v4. The implicit 1 guarantees that,NOT
-bitcoin,"[v0,v1,v2,...] has a distinct checksum from [0,v0,v1,v2,...].",NOT
+bitcoin,"The input is interpreted as a list of coefficients of a polynomial over F = GF(32), with an",NL_CODE
+bitcoin,"implicit 1 in front. If the input is [v0,v1,v2,v3,v4], that polynomial is v(x) =",NL_CODE
+bitcoin,1*x^5 + v0*x^4 + v1*x^3 + v2*x^2 + v3*x + v4. The implicit 1 guarantees that,NL_CODE
+bitcoin,"[v0,v1,v2,...] has a distinct checksum from [0,v0,v1,v2,...].",NL_CODE
 bitcoin,The output is a 30-bit integer whose 5-bit groups are the coefficients of the remainder of,NL
-bitcoin,"v(x) mod g(x), where g(x) is the Bech32 generator,",NOT
-bitcoin,x^6 + {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18}. g(x) is chosen in such a way,NOT
+bitcoin,"v(x) mod g(x), where g(x) is the Bech32 generator,",NL_CODE
+bitcoin,x^6 + {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18}. g(x) is chosen in such a way,NL_CODE
 bitcoin,"that the resulting code is a BCH code, guaranteeing detection of up to 3 errors within a",NL
 bitcoin,"window of 1023 characters. Among the various possible BCH codes, one was selected to in",NL
 bitcoin,fact guarantee detection of up to 4 errors within a window of 89 characters.,NL
-bitcoin,"Note that the coefficients are elements of GF(32), here represented as decimal numbers",NL
+bitcoin,"Note that the coefficients are elements of GF(32), here represented as decimal numbers",NL_CODE
 bitcoin,"between {}. In this finite field, addition is just XOR of the corresponding numbers. For",NL
-bitcoin,"example, {27} + {13} = {27 ^ 13} = {22}. Multiplication is more complicated, and requires",NL
+bitcoin,"example, {27} + {13} = {27 ^ 13} = {22}. Multiplication is more complicated, and requires",NL_CODE
 bitcoin,"treating the bits of values themselves as coefficients of a polynomial over a smaller field,",NL
-bitcoin,"GF(2), and multiplying those polynomials mod a^5 + a^3 + 1. For example, {5}{26} =",NL
-bitcoin,(a^2 + 1)(a^4 + a^3 + a) = (a^4 + a^3 + a)a^2 + (a^4 + a^3 + a) = a^6 + a^5 + a^4 + a,NOT
-bitcoin,= a^3 + 1 (mod a^5 + a^3 + 1) = {9}.,NOT
+bitcoin,"GF(2), and multiplying those polynomials mod a^5 + a^3 + 1. For example, {5}{26} =",NL_CODE
+bitcoin,(a^2 + 1)(a^4 + a^3 + a) = (a^4 + a^3 + a)a^2 + (a^4 + a^3 + a) = a^6 + a^5 + a^4 + a,CODE
+bitcoin,= a^3 + 1 (mod a^5 + a^3 + 1) = {9}.,CODE
 bitcoin,"During the course of the loop below, `c` contains the bitpacked coefficients of the",NL
 bitcoin,"polynomial constructed from just the values of v that were processed so far, mod g(x). In",NL
 bitcoin,"the above example, `c` initially corresponds to 1 mod g(x), and after processing 2 inputs of",NL
-bitcoin,"v, it corresponds to x^2 + v0*x + v1 mod g(x). As 1 mod g(x) = 1, that is the starting value",NL
+bitcoin,"v, it corresponds to x^2 + v0*x + v1 mod g(x). As 1 mod g(x) = 1, that is the starting value",NL_CODE
 bitcoin,for `c`.,NL
 bitcoin,We want to update `c` to correspond to a polynomial with one extra term. If the initial,NL
-bitcoin,"value of `c` consists of the coefficients of c(x) = f(x) mod g(x), we modify it to",NL
-bitcoin,"correspond to c'(x) = (f(x)x + v_i) mod g(x), where v_i is the next input to",NL
+bitcoin,"value of `c` consists of the coefficients of c(x) = f(x) mod g(x), we modify it to",NL_CODE
+bitcoin,"correspond to c'(x) = (f(x)x + v_i) mod g(x), where v_i is the next input to",NL_CODE
 bitcoin,process. Simplifying:,NL
-bitcoin,c'(x) = (f(x)x + v_i) mod g(x),NOT
-bitcoin,((f(x) mod g(x))x + v_i) mod g(x),NOT
-bitcoin,(c(x)x + v_i) mod g(x),NOT
-bitcoin,"If c(x) = c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5, we want to compute",NOT
-bitcoin,c'(x) = (c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5)x + v_i mod g(x),NOT
-bitcoin,#NAME?,NL
-bitcoin,= c0*(x^6 mod g(x)) + c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i,NOT
-bitcoin,"If we call (x^6 mod g(x)) = k(x), this can be written as",NL
-bitcoin,c'(x) = (c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i) + c0*k(x),NOT
+bitcoin,c'(x) = (f(x)x + v_i) mod g(x),CODE
+bitcoin,((f(x) mod g(x))x + v_i) mod g(x),CODE
+bitcoin,(c(x)x + v_i) mod g(x),CODE
+bitcoin,"If c(x) = c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5, we want to compute",NL_CODE
+bitcoin,c'(x) = (c0*x^5 + c1*x^4 + c2*x^3 + c3*x^2 + c4*x + c5)x + v_i mod g(x),CODE
+bitcoin,#NAME?,CODE
+bitcoin,= c0*(x^6 mod g(x)) + c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i,CODE
+bitcoin,"If we call (x^6 mod g(x)) = k(x), this can be written as",NL_CODE
+bitcoin,c'(x) = (c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i) + c0*k(x),CODE
 bitcoin,"First, determine the value of c0:",NL
-bitcoin,Then compute c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i:,NOT
-bitcoin,"Finally, for each set bit n in c0, conditionally add {2^n}k(x):",NL
-bitcoin,k(x) = {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18},NOT
-bitcoin,{2}k(x) = {19}x^5 +  {5}x^4 +     x^3 +  {3}x^2 + {19}x + {13},NOT
-bitcoin,{4}k(x) = {15}x^5 + {10}x^4 +  {2}x^3 +  {6}x^2 + {15}x + {26},NOT
-bitcoin,{8}k(x) = {30}x^5 + {20}x^4 +  {4}x^3 + {12}x^2 + {30}x + {29},NOT
-bitcoin,{16}k(x) = {21}x^5 +     x^4 +  {8}x^3 + {24}x^2 + {21}x + {19},NOT
+bitcoin,Then compute c1*x^5 + c2*x^4 + c3*x^3 + c4*x^2 + c5*x + v_i:,NL_CODE
+bitcoin,"Finally, for each set bit n in c0, conditionally add {2^n}k(x):",NL_CODE
+bitcoin,k(x) = {29}x^5 + {22}x^4 + {20}x^3 + {21}x^2 + {29}x + {18},CODE
+bitcoin,{2}k(x) = {19}x^5 +  {5}x^4 +     x^3 +  {3}x^2 + {19}x + {13},CODE
+bitcoin,{4}k(x) = {15}x^5 + {10}x^4 +  {2}x^3 +  {6}x^2 + {15}x + {26},CODE
+bitcoin,{8}k(x) = {30}x^5 + {20}x^4 +  {4}x^3 + {12}x^2 + {30}x + {29},CODE
+bitcoin,{16}k(x) = {21}x^5 +     x^4 +  {8}x^3 + {24}x^2 + {21}x + {19},CODE
 bitcoin,Convert to lower case.,NL
 bitcoin,Expand a HRP for use in checksum computation.,NL
 bitcoin,Verify a checksum.,NL
@@ -216,19 +216,19 @@ bitcoin,namespace bech32,NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,Default number of blocks to generate for RPC generatetoaddress.,NL
 bitcoin,libevent event log callback,NL
-bitcoin,EVENT_LOG_ERR was added in 2.0.19; but before then _EVENT_LOG_ERR existed.,NL
+bitcoin,EVENT_LOG_ERR was added in 2.0.19; but before then _EVENT_LOG_ERR existed.,NL_CODE
 bitcoin,Ignore everything other than errors,NL
 bitcoin,Exception thrown on connection error.  This error is used to determine,NL
 bitcoin,when to wait if -rpcwait is given.,NL
-bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL
-bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL
-bitcoin,Check for chain settings (BaseParams() calls are only valid after this clause),NL
+bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL_CODE
+bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL_CODE
+bitcoin,Check for chain settings (BaseParams() calls are only valid after this clause),NL_CODE
 bitcoin,Reply structure for request_done to fill in,NL
 bitcoin,"If req is nullptr, it means an error occurred while connecting: the
-        error code will have been passed to http_error_cb.",NL
+        error code will have been passed to http_error_cb.",NL_CODE
 bitcoin,"Class that handles the conversion from a command-line to a JSON-RPC request,
  as well as converting back to a JSON object that can be shown as result.",NL
 bitcoin,Process addrinfo requests,NL
@@ -238,14 +238,14 @@ bitcoin,Total address count,NL
 bitcoin,Process getinfo requests,NL
 bitcoin,Create a simulated `getinfo` request.,NL
 bitcoin,Collect values from the batch and form a simulated `getinfo` reply.,NL
-bitcoin,"Errors in getnetworkinfo() and getblockchaininfo() are fatal, pass them on;",NOT
-bitcoin,getwalletinfo() and getbalances() are allowed to fail if there is no wallet.,NOT
+bitcoin,"Errors in getnetworkinfo() and getblockchaininfo() are fatal, pass them on;",NL_CODE
+bitcoin,getwalletinfo() and getbalances() are allowed to fail if there is no wallet.,NL_CODE
 bitcoin,Process netinfo requests,NL
-bitcoin,"!< Peer counts by (in/out/total, networks/total)",NOT
+bitcoin,"!< Peer counts by (in/out/total, networks/total)",NL
 bitcoin,!< Optional user-supplied arg to set dashboard details level,NL
 bitcoin,"Count peer connection totals, and if DetailsRequested(), store peer data in a vector of structs.",NL
-bitcoin,in/out by network,NOT
-bitcoin,in/out overall,NOT
+bitcoin,in/out by network,NL
+bitcoin,in/out overall,NL
 bitcoin,total by network,NL
 bitcoin,total overall,NL
 bitcoin,Push data for this peer to the peers vector.,NL
@@ -265,7 +265,7 @@ bitcoin,"Report local addresses, ports, and scores.",NL
 bitcoin,Process RPC generatetoaddress request.,NL
 bitcoin,Process default single requests,NL
 bitcoin,"In preference order, we choose the following for the port:",NL
-bitcoin,1. -rpcport,NOT
+bitcoin,1. -rpcport,CODE
 bitcoin,2. port in -rpcconnect (ie following : in ipv4 or ]: in ipv6),NL
 bitcoin,3. default port for chain,NL
 bitcoin,Obtain event base,NL
@@ -286,64 +286,64 @@ bitcoin,"ConnectAndCallRPC wraps CallRPC with -rpcwait and an exception handler.
  @param[in] strMethod  Reference to const string method to forward to CallRPC.
  @param[in] rpcwallet  Reference to const optional string wallet name to forward to CallRPC.
  @returns the RPC response as a UniValue object.
- @throws a CConnectionFailed std::runtime_error if connection failed or RPC server still in warmup.",NL
+ @throws a CConnectionFailed std::runtime_error if connection failed or RPC server still in warmup.",NL_CODE
 bitcoin,Execute and handle connection failures with -rpcwait.,NL
 bitcoin,"Connection succeeded, no need to retry.",NL
 bitcoin,Parse UniValue result to update the message to print to std::cout.,NL
-bitcoin,Parse UniValue error to update the message to print to std::cerr and the code to return.,NL
+bitcoin,Parse UniValue error to update the message to print to std::cerr and the code to return.,NL_CODE
 bitcoin,"GetWalletBalances calls listwallets; if more than one wallet is loaded, it then
  fetches mine.trusted balances for each loaded wallet and pushes them to `result`.
 
- @param result  Reference to UniValue object the wallet names and balances are pushed to.",NOT
-bitcoin,args=,NOT
-bitcoin,args=,NOT
+ @param result  Reference to UniValue object the wallet names and balances are pushed to.",NL_CODE
+bitcoin,args=,CODE
+bitcoin,args=,CODE
 bitcoin,"Call RPC getnewaddress.
- @returns getnewaddress response as a UniValue object.",NOT
-bitcoin,args=,NOT
+ @returns getnewaddress response as a UniValue object.",NL_CODE
+bitcoin,args=,CODE
 bitcoin,"Check bounds and set up args for RPC generatetoaddress params: nblocks, address, maxtries.
  @param[in] address  Reference to const string address to insert into the args.
- @param     args     Reference to vector of string args to modify.",NL
+ @param     args     Reference to vector of string args to modify.",NL_CODE
 bitcoin,Skip switches,NL
 bitcoin,Read one arg per line from stdin and append,NL
 bitcoin,Remove trailing method name from arguments vector,NL
 bitcoin,Perform RPC call,NL
 bitcoin,Parse reply,NL
 bitcoin,fetch multiwallet balances and append to result,NL
-bitcoin,Export main() and ensure working ASLR on Windows.,NL
+bitcoin,Export main() and ensure working ASLR on Windows.,NL_CODE
 bitcoin,Exporting a symbol will prevent the linker from stripping,NL
 bitcoin,"the .reloc section from the binary, which is a requirement",NL
 bitcoin,for ASLR. This is a temporary workaround until a fixed,NL
 bitcoin,version of binutils is used for releases.,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
-bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL
-bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL
-bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL_CODE
+bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL_CODE
+bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL_CODE
 bitcoin,First part of help message is specific to this utility,NL
-bitcoin,separate NAME:VALUE in string,NOT
-bitcoin,separate NAME:FILENAME in string,NOT
+bitcoin,separate NAME:VALUE in string,NL_CODE
+bitcoin,separate NAME:FILENAME in string,NL_CODE
 bitcoin,load file chunks into one big buffer,NL
 bitcoin,evaluate as JSON buffer register,NL
 bitcoin,parse requested index,NL
-bitcoin,set the nSequence to MAX_INT - 2 (= RBF opt in flag),NOT
-bitcoin,separate TXID:VOUT in string,NOT
+bitcoin,set the nSequence to MAX_INT - 2 (= RBF opt in flag),NL_CODE
+bitcoin,separate TXID:VOUT in string,NL_CODE
 bitcoin,extract and validate TXID,NL
 bitcoin,extract and validate vout,NL
 bitcoin,extract the optional sequence number,NL
 bitcoin,append to transaction input list,NL
-bitcoin,Separate into VALUE:ADDRESS,NL
+bitcoin,Separate into VALUE:ADDRESS,NL_CODE
 bitcoin,Extract and validate VALUE,NL
 bitcoin,extract and validate ADDRESS,NL
 bitcoin,"construct TxOut, append to transaction output list",NL
-bitcoin,Separate into VALUE:PUBKEY[:FLAGS],NL
+bitcoin,Separate into VALUE:PUBKEY[:FLAGS],NL_CODE
 bitcoin,Extract and validate VALUE,NL
 bitcoin,Extract and validate PUBKEY,NL
 bitcoin,Extract and validate FLAGS,NL
 bitcoin,Build a P2WPKH script,NL
 bitcoin,"Get the ID for the script, and then construct a P2SH destination for it.",NL
 bitcoin,"construct TxOut, append to transaction output list",NL
-bitcoin,Separate into VALUE:REQUIRED:NUMKEYS:PUBKEY1:PUBKEY2:....[:FLAGS],NL
+bitcoin,Separate into VALUE:REQUIRED:NUMKEYS:PUBKEY1:PUBKEY2:....[:FLAGS],NL_CODE
 bitcoin,Check that there are enough parameters,NL
 bitcoin,Extract and validate VALUE,NL
 bitcoin,Extract REQUIRED,NL
@@ -355,10 +355,10 @@ bitcoin,Validate that there were no more parameters passed,NL
 bitcoin,Build a P2WSH with the multisig script,NL
 bitcoin,"Get the ID for the script, and then construct a P2SH destination for it.",NL
 bitcoin,"construct TxOut, append to transaction output list",NL
-bitcoin,separate [VALUE:]DATA in string,NL
+bitcoin,separate [VALUE:]DATA in string,NL_CODE
 bitcoin,Extract and validate VALUE,NL
 bitcoin,extract and validate DATA,NL
-bitcoin,separate VALUE:SCRIPT[:FLAGS],NL
+bitcoin,separate VALUE:SCRIPT[:FLAGS],NL_CODE
 bitcoin,Extract and validate VALUE,NL
 bitcoin,extract and validate script,NL
 bitcoin,Extract FLAGS,NL
@@ -373,7 +373,7 @@ bitcoin,Add previous txouts given in the RPC call:,NL
 bitcoin,"if redeemScript given and private keys given,",NL
 bitcoin,add redeemScript to the tempKeystore so it can be signed:,NL
 bitcoin,Sign what we can:,NL
-bitcoin,Only sign SIGHASH_SINGLE if there's a corresponding output:,NL
+bitcoin,Only sign SIGHASH_SINGLE if there's a corresponding output:,NL_CODE
 bitcoin,include_addresses,NL
 bitcoin,the hex-encoded transaction hash (aka the transaction id),NL
 bitcoin,"Skip switches; Permit common stdin convention ""-""",NL
@@ -382,26 +382,26 @@ bitcoin,param: hex-encoded bitcoin transaction,NL
 bitcoin,"""-"" implies standard input",NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
-bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL
-bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL
-bitcoin,Check for chain settings (Params() calls are only valid after this clause),NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,This function returns either one of EXIT_ codes when it's expected to stop the process or,NL_CODE
+bitcoin,CONTINUE_EXECUTION when it's expected to continue further.,NL_CODE
+bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL_CODE
 bitcoin,First part of help message is specific to this utility,NL
 bitcoin,working copy,NL
-bitcoin,Export main() and ensure working ASLR on Windows.,NOT
+bitcoin,Export main() and ensure working ASLR on Windows.,NL_CODE
 bitcoin,Exporting a symbol will prevent the linker from stripping,NL
 bitcoin,"the .reloc section from the binary, which is a requirement",NL
 bitcoin,for ASLR. This is a temporary workaround until a fixed,NL
 bitcoin,version of binutils is used for releases.,NL
 bitcoin,Copyright (c) 2016-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"check for printtoconsole, allow -debug",NL
-bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL
+bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL_CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Custom implementation of daemon(). This implements the same order of operations as glibc.
  Opens a pipe to the child process to be able to wait for an event to occur.
 
@@ -410,7 +410,7 @@ bitcoin,"Custom implementation of daemon(). This implements the same order of op
           -1 in case of error (in parent process).
 
           In case of success, endpoint will be one end of a pipe from the child to parent process,
-          which can be used with TokenWrite (in the child) or TokenRead (in the parent).",NL
+          which can be used with TokenWrite (in the child) or TokenRead (in the parent).",NL_CODE
 bitcoin,communication pipe with child process,NL
 bitcoin,pipe or pipe2 failed.,NL
 bitcoin,fork failed.,NL
@@ -421,18 +421,18 @@ bitcoin,setsid failed.,NL
 bitcoin,chdir failed.,NL
 bitcoin,"Open /dev/null, and clone it into STDIN, STDOUT and STDERR to detach",NL
 bitcoin,from terminal.,NL
-bitcoin,Don't close if fd<=2 to try to handle the case where the program was invoked without any file descriptors open.,NOT
+bitcoin,Don't close if fd<=2 to try to handle the case where the program was invoked without any file descriptors open.,NL_CODE
 bitcoin,dup2 failed.,NL
-bitcoin,open /dev/null failed.,NOT
+bitcoin,open /dev/null failed.,NL_CODE
 bitcoin,Success,NL
-bitcoin,"If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()",NOT
+bitcoin,"If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()",NL_CODE
 bitcoin,Process help and version before taking care about datadir,NL
 bitcoin,Communication with parent after daemonizing. This is used for signalling in the following ways:,NL
-bitcoin,- a boolean token is sent when the initialization process (all the Init* functions) have finished to indicate,NOT
+bitcoin,- a boolean token is sent when the initialization process (all the Init* functions) have finished to indicate,NL_CODE
 bitcoin,"that the parent process can quit, and whether it was successful/unsuccessful.",NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
 bitcoin,"end, which is interpreted as failure to start.",NL
-bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL
+bitcoin,Check for chain settings (Params() calls are only valid after this clause),NL_CODE
 bitcoin,Error out when loose non-argument tokens are encountered on command line,NL
 bitcoin,-server defaults to true for bitcoind but not for the GUI so do this here,NL
 bitcoin,Set this early so that parameter interactions go to console,NL
@@ -440,21 +440,21 @@ bitcoin,"InitError will have been called with detailed error, which ends up on c
 bitcoin,"InitError will have been called with detailed error, which ends up on console",NL
 bitcoin,"InitError will have been called with detailed error, which ends up on console",NL
 bitcoin,Daemonize,NL
-bitcoin,"don't chdir (1), do close FDs (0)",NOT
-bitcoin,Child: continue.,NOT
+bitcoin,"don't chdir (1), do close FDs (0)",NL_CODE
+bitcoin,Child: continue.,NL_CODE
 bitcoin,"If -daemonwait is not enabled, immediately send a success token the parent.",NL
 bitcoin,Error happened.,NL
-bitcoin,Parent: wait and exit.,NOT
+bitcoin,Parent: wait and exit.,NL_CODE
 bitcoin,Success,NL
-bitcoin,fRet = false or token read error (premature exit).,NOT
-bitcoin,HAVE_DECL_FORK,NOT
+bitcoin,fRet = false or token read error (premature exit).,NL_CODE
+bitcoin,HAVE_DECL_FORK,CODE
 bitcoin,Lock data directory after daemonization,NL
 bitcoin,"If locking the data directory failed, exit immediately",NL
 bitcoin,"Signal initialization status to parent, then close pipe.",NL
 bitcoin,Connect bitcoind signal handlers,NL
 bitcoin,Copyright (c) 2016-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,TODO: Use our mempool prior to block acceptance to predictively fill more than just the coinbase,NL
 bitcoin,"index is a uint16_t, so can't overflow here",NL
 bitcoin,If we are inserting a tx at an index greater than our full list of shorttxids,NL
@@ -463,15 +463,15 @@ bitcoin,have neither a prefilled txn or a shorttxid!,NL
 bitcoin,Calculate map of txids -> positions and check mempool to see what we have (or don't),NL
 bitcoin,Because well-formed cmpctblock messages will have a (relatively) uniform distribution,NL
 bitcoin,"of short IDs, any highly-uneven distribution of elements can be safely treated as a",NL
-bitcoin,READ_STATUS_FAILED.,NOT
+bitcoin,READ_STATUS_FAILED.,CODE
 bitcoin,"To determine the chance that the number of entries in a bucket exceeds N,",NL
 bitcoin,we use the fact that the number of elements in a single bucket is,NL
 bitcoin,"binomially distributed (with n = the number of shorttxids S, and p =",NL
 bitcoin,"1 / the number of buckets), that in the worst case the number of buckets is",NL
-bitcoin,"equal to S (due to std::unordered_map having a default load factor of 1.0),",NOT
+bitcoin,"equal to S (due to std::unordered_map having a default load factor of 1.0),",NL_CODE
 bitcoin,and that the chance for any bucket to exceed N elements is at most,NL
 bitcoin,buckets(the chance that any given bucket is above N elements).,NL
-bitcoin,"Thus: P(max_elements_per_bucket > N) <= S(1 - cdf(binomial(n=S,p=1/S), N)).",NOT
+bitcoin,"Thus: P(max_elements_per_bucket > N) <= S(1 - cdf(binomial(n=S,p=1/S), N)).",NL_CODE
 bitcoin,"If we assume blocks of up to 16000, allowing 12 elements per bucket should",NL
 bitcoin,only fail once per ~1 million block transfers (per peer and connection).,NL
 bitcoin,"TODO: in the shortid-collision case, we should instead request both transactions",NL
@@ -492,45 +492,45 @@ bitcoin,"trigger this case, so we compare witness hashes first",NL
 bitcoin,"Though ideally we'd continue scanning for the two-txn-match-shortid case,",NL
 bitcoin,the performance win of an early exit here is too good to pass up and worth,NL
 bitcoin,the extra risk.,NL
-bitcoin,Make sure we can't call FillBlock again.,NL
+bitcoin,Make sure we can't call FillBlock again.,NL_CODE
 bitcoin,"TODO: We really want to just check merkle tree manually here,",NL
-bitcoin,"but that is expensive, and CheckBlock caches a block's",NL
-bitcoin,"""checked-status"" (in the CBlock?). CBlock should be able to",NL
+bitcoin,"but that is expensive, and CheckBlock caches a block's",NL_CODE
+bitcoin,"""checked-status"" (in the CBlock?). CBlock should be able to",NL_CODE
 bitcoin,check its own merkle root and cache that check.,NL
 bitcoin,Possible Short ID collision,NL
 bitcoin,Copyright (c) 2018-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,/ SerType used to serialize parameters in GCS filter encoding.,NL
 bitcoin,/ Protocol version used to serialize parameters in GCS filter encoding.,NL
 bitcoin,"Map a value x that is uniformly distributed in the range [0, 2^64) to a",NL
 bitcoin,"value uniformly distributed in [0, n) by returning the upper 64 bits of",NL
 bitcoin,xn.,NL
-bitcoin,See: https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/,NOT
+bitcoin,See: https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/,NL_CODE
 bitcoin,To perform the calculation on 64-bit numbers without losing the,NL
 bitcoin,"result to overflow, split the numbers into the most significant and",NL
 bitcoin,least significant 32 bits and perform multiplication piece-wise.,NL
-bitcoin,See: https://stackoverflow.com/a/26855440,NOT
+bitcoin,See: https://stackoverflow.com/a/26855440,NL_CODE
 bitcoin,Verify that the encoded filter contains exactly N elements. If it has too much or too little,NL
-bitcoin,"data, a std::ios_base::failure exception will be raised.",NOT
+bitcoin,"data, a std::ios_base::failure exception will be raised.",NL_CODE
 bitcoin,Seek forward by size of N,NL
 bitcoin,Copyright (c) 2012-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"The ideal size for a bloom filter with a given number of elements and false positive rate is:
      - nElements log(fp rate) / ln(2)^2
-     We ignore filter parameters which will create a bloom filter larger than the protocol limits",NL
+     We ignore filter parameters which will create a bloom filter larger than the protocol limits",NL_CODE
 bitcoin,"The ideal number of hash functions is filter size ln(2) / number of elements
      Again, we ignore filter parameters which will create a bloom filter with more hash functions than the protocol limits
-     See https://en.wikipedia.org/wiki/Bloom_filter for an explanation of these formulas",NL
-bitcoin,0xFBA4C795 chosen as it guarantees a reasonable bit difference between nHashNum values.,NL
+     See https://en.wikipedia.org/wiki/Bloom_filter for an explanation of these formulas",NL_CODE
+bitcoin,0xFBA4C795 chosen as it guarantees a reasonable bit difference between nHashNum values.,NL_CODE
 bitcoin,Avoid divide-by-zero (CVE-2013-5700),NL
 bitcoin,Sets bit nIndex of vData,NL
 bitcoin,Avoid divide-by-zero (CVE-2013-5700),NL
 bitcoin,Checks bit nIndex of vData,NL
 bitcoin,Match if the filter contains the hash of tx,NL
 bitcoin,for finding tx when they appear in a block,NL
-bitcoin,"zero-size = ""match-all"" filter",NOT
+bitcoin,"zero-size = ""match-all"" filter",CODE
 bitcoin,Match if the filter contains any arbitrary script data element in any scriptPubKey in tx,NL
 bitcoin,"If this matches, also add the specific output that was matched.",NL
 bitcoin,This means clients don't have to update the filter themselves when a new relevant tx,NL
@@ -538,53 +538,53 @@ bitcoin,"is discovered in order to find spending transactions, which avoids roun
 bitcoin,Match if the filter contains an outpoint tx spends,NL
 bitcoin,Match if the filter contains any arbitrary script data element in any scriptSig in tx,NL
 bitcoin,"The optimal number of hash functions is log(fpRate) / log(0.5), but
-    restrict it to the range 1-50.",NL
+    restrict it to the range 1-50.",NL_CODE
 bitcoin,"In this rolling bloom filter, we'll store between 2 and 3 generations of nElements / 2 entries.",NL
 bitcoin,"The maximum fpRate = pow(1.0 - exp(-nHashFuncsnMaxElements / nFilterBits), nHashFuncs)
     =>          pow(fpRate, 1.0 / nHashFuncs) = 1.0 - exp(-nHashFuncsnMaxElements / nFilterBits)
     =>          1.0 - pow(fpRate, 1.0 / nHashFuncs) = exp(-nHashFuncsnMaxElements / nFilterBits)
     =>          log(1.0 - pow(fpRate, 1.0 / nHashFuncs)) = -nHashFuncsnMaxElements / nFilterBits
     =>          nFilterBits = -nHashFuncsnMaxElements / log(1.0 - pow(fpRate, 1.0 / nHashFuncs))
-    =>          nFilterBits = -nHashFuncsnMaxElements / log(1.0 - exp(logFpRate / nHashFuncs))",NL
+    =>          nFilterBits = -nHashFuncsnMaxElements / log(1.0 - exp(logFpRate / nHashFuncs))",NL_CODE
 bitcoin,"For each data element we need to store 2 bits. If both bits are 0, the
     bit is treated as unset. If the bits are (01), (10), or (11), the bit is
     treated as set in generation 1, 2, or 3 respectively.
     These bits are stored in separate integers: position P corresponds to bit
-    (P & 63) of the integers data[(P >> 6)2] and data[(P >> 6)2 + 1].",NL
-bitcoin,Similar to CBloomFilter::Hash,NL
+    (P & 63) of the integers data[(P >> 6)2] and data[(P >> 6)2 + 1].",NL_CODE
+bitcoin,Similar to CBloomFilter::Hash,NL_CODE
 bitcoin,"A replacement for x % n. This assumes that x and n are 32bit integers, and x is a uniformly random distributed 32bit value",NL
 bitcoin,which should be the case for a good hash.,NL
-bitcoin,See https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/,NOT
+bitcoin,See https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/,NL_CODE
 bitcoin,Wipe old entries that used this generation number.,NL
 bitcoin,"FastMod works with the upper bits of h, so it is safe to ignore that the lower bits of h are already used for bit.",NL
 bitcoin,"The lowest bit of pos is ignored, and set to zero for the first bit, and to one for the second.",NL
-bitcoin,"If the relevant bit is not set in either data[pos & ~1] or data[pos | 1], the filter does not contain vKey",NL
+bitcoin,"If the relevant bit is not set in either data[pos & ~1] or data[pos | 1], the filter does not contain vKey",NL_CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,CChain implementation,NL
 bitcoin,Stop when we have added the genesis block.,NL
 bitcoin,"Exponentially larger steps back, plus the genesis block.",NL
-bitcoin,Use O(1) CChain index if possible.,NL
-bitcoin,"Otherwise, use O(log n) skiplist.",NOT
+bitcoin,Use O(1) CChain index if possible.,NL_CODE
+bitcoin,"Otherwise, use O(log n) skiplist.",NL_CODE
 bitcoin,Turn the lowest '1' bit in the binary representation of a number into a '0'.,NL
 bitcoin,Compute what height to jump back to with the CBlockIndex::pskip pointer.,NL
 bitcoin,"Determine which height to jump back to. Any number strictly lower than height is acceptable,",NL
 bitcoin,but the following expression seems to perform well in simulations (max 110 steps to go back,NL
-bitcoin,up to 2**18 blocks).,NOT
-bitcoin,Only follow pskip if pprev->pskip isn't better than pskip->pprev.,NL
-bitcoin,"We need to compute 2**256 / (bnTarget+1), but we can't represent 2**256",NL
+bitcoin,up to 2**18 blocks).,CODE
+bitcoin,Only follow pskip if pprev->pskip isn't better than pskip->pprev.,NL_CODE
+bitcoin,"We need to compute 2**256 / (bnTarget+1), but we can't represent 2**256",NL_CODE
 bitcoin,"as it's too large for an arith_uint256. However, as 2**256 is at least as large",NL
-bitcoin,"as bnTarget+1, it is equal to ((2**256 - bnTarget - 1) / (bnTarget+1)) + 1,",NOT
-bitcoin,or ~bnTarget / (bnTarget+1) + 1.,NOT
+bitcoin,"as bnTarget+1, it is equal to ((2**256 - bnTarget - 1) / (bnTarget+1)) + 1,",NL_CODE
+bitcoin,or ~bnTarget / (bnTarget+1) + 1.,CODE
 bitcoin,"Find the last common ancestor two blocks have.
   Both pa and pb must be non-nullptr.",NL
 bitcoin,Eventually all chain branches meet at the genesis block.,NL
 bitcoin,Copyright (c) 2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,for signet block challenge hash,NL
 bitcoin,"Build the genesis block. Note that the output of its generation
  transaction cannot be spent since it did not originally exist in the
@@ -594,16 +594,16 @@ bitcoin,"Build the genesis block. Note that the output of its generation
    CTransaction(hash=4a5e1e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
      CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
      CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
-   vMerkleTree: 4a5e1e",NL
+   vMerkleTree: 4a5e1e",NL_CODE
 bitcoin,Main network on which people trade goods and services.,NL
-bitcoin,000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0,NOT
-bitcoin,00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931,NOT
-bitcoin,000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5,NOT
-bitcoin,0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893,NOT
-bitcoin,segwit activation height + miner confirmation window,NOT
+bitcoin,000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0,CODE
+bitcoin,00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931,CODE
+bitcoin,000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5,CODE
+bitcoin,0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893,CODE
+bitcoin,segwit activation height + miner confirmation window,NL_CODE
 bitcoin,two weeks,NL
 bitcoin,90% of 2016,NL
-bitcoin,nPowTargetTimespan / nPowTargetSpacing,NOT
+bitcoin,nPowTargetTimespan / nPowTargetSpacing,CODE
 bitcoin,No activation delay,NL
 bitcoin,Deployment of Taproot (BIPs 340-342),NL
 bitcoin,"April 24th, 2021",NL
@@ -628,19 +628,19 @@ bitcoin,Sjors Provoost,NL
 bitcoin,Stephan Oeste,NL
 bitcoin,Jason Maurice,NL
 bitcoin,TODO to be specified in a future patch.,NL
-bitcoin,Data from RPC: getchaintxstats 4096 0000000000000000000b9d2ec5a352ecba0592946514a92f14319dc2b367fc72,NOT
-bitcoin,nTime,NOT
-bitcoin,nTxCount,NOT
-bitcoin,dTxRate,NOT
-bitcoin,Testnet (v3): public test network which is reset from time to time.,NOT
-bitcoin,00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6,NOT
-bitcoin,000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182,NOT
-bitcoin,00000000025e930139bac5c6c31a403776da130831ab85be56578f3fa75369bb,NOT
-bitcoin,00000000002b980fcd729daaa248fd9316a5200e9b367f4ff2c42453e84201ca,NOT
+bitcoin,Data from RPC: getchaintxstats 4096 0000000000000000000b9d2ec5a352ecba0592946514a92f14319dc2b367fc72,NL_CODE
+bitcoin,nTime,CODE
+bitcoin,nTxCount,CODE
+bitcoin,dTxRate,CODE
+bitcoin,Testnet (v3): public test network which is reset from time to time.,NL_CODE
+bitcoin,00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6,CODE
+bitcoin,000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182,CODE
+bitcoin,00000000025e930139bac5c6c31a403776da130831ab85be56578f3fa75369bb,CODE
+bitcoin,00000000002b980fcd729daaa248fd9316a5200e9b367f4ff2c42453e84201ca,CODE
 bitcoin,segwit activation height + miner confirmation window,NL
 bitcoin,two weeks,NL
 bitcoin,75% for testchains,NL
-bitcoin,nPowTargetTimespan / nPowTargetSpacing,NOT
+bitcoin,nPowTargetTimespan / nPowTargetSpacing,CODE
 bitcoin,No activation delay,NL
 bitcoin,Deployment of Taproot (BIPs 340-342),NL
 bitcoin,"April 24th, 2021",NL
@@ -650,19 +650,19 @@ bitcoin,1864000,NL
 bitcoin,nodes with support for servicebits filtering should be at the top,NL
 bitcoin,"Just a static list of stable node(s), only supports x9",NL
 bitcoin,TODO to be specified in a future patch.,NL
-bitcoin,Data from RPC: getchaintxstats 4096 000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0,NL
-bitcoin,nTime,NOT
-bitcoin,nTxCount,NOT
-bitcoin,dTxRate,NOT
-bitcoin,Signet: test network with an additional consensus parameter (see BIP325).,NOT
+bitcoin,Data from RPC: getchaintxstats 4096 000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0,NL_CODE
+bitcoin,nTime,CODE
+bitcoin,nTxCount,CODE
+bitcoin,dTxRate,CODE
+bitcoin,Signet: test network with an additional consensus parameter (see BIP325).,NL_CODE
 bitcoin,9434,NL
-bitcoin,Data from RPC: getchaintxstats 4096 0000002a1de0f46379358c1fd09906f7ac59adf3712323ed90eb59e4c183c020,NOT
-bitcoin,nTime,NOT
-bitcoin,nTxCount,NOT
-bitcoin,dTxRate,NOT
+bitcoin,Data from RPC: getchaintxstats 4096 0000002a1de0f46379358c1fd09906f7ac59adf3712323ed90eb59e4c183c020,NL_CODE
+bitcoin,nTime,CODE
+bitcoin,nTxCount,CODE
+bitcoin,dTxRate,CODE
 bitcoin,two weeks,NL
 bitcoin,90% of 2016,NL
-bitcoin,nPowTargetTimespan / nPowTargetSpacing,NOT
+bitcoin,nPowTargetTimespan / nPowTargetSpacing,CODE
 bitcoin,No activation delay,NL
 bitcoin,Activation of Taproot (BIPs 340-342),NL
 bitcoin,No activation delay,NL
@@ -685,25 +685,25 @@ bitcoin,Allows modifying the Version Bits regtest parameters.,NL
 bitcoin,Copyright (c) 2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Port numbers for incoming Tor connections (8334, 18334, 38334, 18445) have
  been chosen arbitrarily to keep ranges of used ports tight.",NL
 bitcoin,Copyright (c) 2012-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Name of client reported in the 'version' message. Report the same name
  for both bitcoind and bitcoin-qt, to make it harder for attackers to
  target servers or GUI users specifically.",NL
-bitcoin,"The <obj/build.h>, which is generated by the build environment (share/genbuild.sh),",NL
+bitcoin,"The <obj/build.h>, which is generated by the build environment (share/genbuild.sh),",NL_CODE
 bitcoin,could contain only one line of the following:,NL
-bitcoin,"- ""#define BUILD_GIT_TAG ..."", if the top commit is tagged",NOT
-bitcoin,"- ""#define BUILD_GIT_COMMIT ..."", if the top commit is not tagged",NOT
-bitcoin,"- ""// No build information available"", if proper git information is not available",NOT
-bitcoin,"! git will put ""#define GIT_COMMIT_ID ..."" on the next line inside archives.",NL
-bitcoin,Format the subversion field according to BIP 14 spec (https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki),NOT
+bitcoin,"- ""#define BUILD_GIT_TAG ..."", if the top commit is tagged",NL_CODE
+bitcoin,"- ""#define BUILD_GIT_COMMIT ..."", if the top commit is not tagged",NL_CODE
+bitcoin,"- ""// No build information available"", if proper git information is not available",NL
+bitcoin,"! git will put ""#define GIT_COMMIT_ID ..."" on the next line inside archives.",NL_CODE
+bitcoin,Format the subversion field according to BIP 14 spec (https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki),NL_CODE
 bitcoin,Copyright (c) 2012-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,The parent only has an empty entry for this outpoint; we can consider our,NL
 bitcoin,version as fresh.,NL
 bitcoin,"If the coin exists in this cache as a spent coin and is DIRTY, then",NL
@@ -747,7 +747,7 @@ bitcoin,"continue anyway, and all writes should be atomic.",NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"These check for scripts for which a special case with a shorter encoding is defined.
 They are implemented separately from the CScript test, as these test for exact byte
 sequence correspondences, and are more strict. For example, IsToPubKey also verifies
@@ -759,28 +759,28 @@ bitcoin,"If the amount is 0, output 0",NL
 bitcoin,"first, divide the amount (in base units) by the largest power of 10 possible; call the exponent e (e is max 9)",NL
 bitcoin,"if e<9, the last digit of the resulting number cannot be 0; store it as d, and drop it (divide by 10)",NL
 bitcoin,call the result n,NL
-bitcoin,output 1 + 10*(9*n + d - 1) + e,NOT
-bitcoin,"if e==9, we only know the resulting number is not zero, so output 1 + 10*(n - 1) + 9",NOT
-bitcoin,"(this is decodable, as d is in [1-9] and e is in [0-9])",NOT
-bitcoin,x = 0  OR  x = 1+10*(9*n + d - 1) + e  OR  x = 1+10*(n - 1) + 9,NOT
-bitcoin,x = 10*(9*n + d - 1) + e,NOT
-bitcoin,x = 9*n + d - 1,NOT
-bitcoin,x = n,NOT
+bitcoin,output 1 + 10*(9*n + d - 1) + e,NL_CODE
+bitcoin,"if e==9, we only know the resulting number is not zero, so output 1 + 10*(n - 1) + 9",NL_CODE
+bitcoin,"(this is decodable, as d is in [1-9] and e is in [0-9])",NL_CODE
+bitcoin,x = 0  OR  x = 1+10*(9*n + d - 1) + e  OR  x = 1+10*(n - 1) + 9,NL_CODE
+bitcoin,x = 10*(9*n + d - 1) + e,CODE
+bitcoin,x = 9*n + d - 1,CODE
+bitcoin,x = n,CODE
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,Allow OP_RESERVED to get into mapOpNames,NL
-bitcoin,Convenience: OP_ADD and just ADD are both recognized:,NL
-bitcoin,"strName starts with ""OP_""",NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,Allow OP_RESERVED to get into mapOpNames,NL_CODE
+bitcoin,Convenience: OP_ADD and just ADD are both recognized:,NL_CODE
+bitcoin,"strName starts with ""OP_""",NL_CODE
 bitcoin,namespace,NL
-bitcoin,"Empty string, ignore. (boost::split given '' will return one word)",NOT
+bitcoin,"Empty string, ignore. (boost::split given '' will return one word)",NL_CODE
 bitcoin,Number,NL
 bitcoin,limit the range of numbers ParseScript accepts in decimal,NL
-bitcoin,since numbers outside -0xFFFFFFFF...0xFFFFFFFF are illegal in scripts,NOT
+bitcoin,since numbers outside -0xFFFFFFFF...0xFFFFFFFF are illegal in scripts,NL_CODE
 bitcoin,"Raw hex data, inserted NOT pushed onto stack:",NL
 bitcoin,"Single-quoted string, pushed as data. NOTE: this is poor-man's",NL
 bitcoin,"parsing, spaces/tabs/newlines in single-quoted strings won't work.",NL
-bitcoin,"opcode, e.g. OP_ADD or ADD:",NL
+bitcoin,"opcode, e.g. OP_ADD or ADD:",NL_CODE
 bitcoin,Check that all of the input and output scripts of a transaction contains valid opcodes,NL
 bitcoin,Check input scripts for non-coinbase txs,NL
 bitcoin,Check output scripts,NL
@@ -790,49 +790,49 @@ bitcoin,the presence of witnesses) and with legacy serialization (which interpre
 bitcoin,0-input 1-output incomplete transaction).,NL
 bitcoin,- Restricted by try_no_witness (which disables legacy if false) and try_witness (which,NL
 bitcoin,disables extended if false).,NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
 bitcoin,- If both decode attempts succeed:,NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
 bitcoin,"Try decoding with extended serialization support, and remember if the result successfully",NL
 bitcoin,consumes the entire input.,NL
 bitcoin,Fall through.,NL
-bitcoin,"Optimization: if extended decoding succeeded and the result passes CheckTxScriptsSanity,",NL
+bitcoin,"Optimization: if extended decoding succeeded and the result passes CheckTxScriptsSanity,",NL_CODE
 bitcoin,don't bother decoding the other way.,NL
 bitcoin,"Try decoding with legacy serialization, and remember if the result successfully consumes the entire input.",NL
 bitcoin,Fall through.,NL
-bitcoin,"If legacy decoding succeeded and passes CheckTxScriptsSanity, that's our answer, as we know",NL
+bitcoin,"If legacy decoding succeeded and passes CheckTxScriptsSanity, that's our answer, as we know",NL_CODE
 bitcoin,at this point that extended decoding either failed or doesn't pass the sanity check.,NL
 bitcoin,"If extended decoding succeeded, and neither decoding passes sanity, return the extended one.",NL
 bitcoin,"If legacy decoding succeeded and extended didn't, return the legacy one.",NL
 bitcoin,"If none succeeded, we failed.",NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Create the assembly string representation of a CScript object.
  @param[in] script    CScript object to convert into the asm string representation.
  @param[in] fAttemptSighashDecode    Whether to attempt to decode sighash types on data within the script that matches the format
                                      of a signature. Only pass true for scripts you believe could contain signatures. For example,
-                                     pass false, or omit the this argument (defaults to false), for scriptPubKeys.",NL
-bitcoin,the IsUnspendable check makes sure not to try to decode OP_RETURN data that may match the format of a signature,NL
+                                     pass false, or omit the this argument (defaults to false), for scriptPubKeys.",NL_CODE
+bitcoin,the IsUnspendable check makes sure not to try to decode OP_RETURN data that may match the format of a signature,NL_CODE
 bitcoin,goal: only attempt to decode a defined sighash type from data that looks like a signature within a scriptSig.,NL
 bitcoin,this won't decode correctly formatted public keys in Pubkey or Multisig scripts due to,NL
-bitcoin,the restrictions on the pubkey formats (see IsCompressedOrUncompressedPubKey) being incongruous with the,NL
-bitcoin,checks in CheckSignatureEncoding.,NL
+bitcoin,the restrictions on the pubkey formats (see IsCompressedOrUncompressedPubKey) being incongruous with the,NL_CODE
+bitcoin,checks in CheckSignatureEncoding.,NL_CODE
 bitcoin,remove the sighash type byte. it will be replaced by the decode.,NL
-bitcoin,"TODO: from v23 (""addresses"" and ""reqSigs"" deprecated) this method should be refactored to remove the `include_addresses` option",NL
+bitcoin,"TODO: from v23 (""addresses"" and ""reqSigs"" deprecated) this method should be refactored to remove the `include_addresses` option",NL_CODE
 bitcoin,this method can also be combined with `ScriptToUniv` as they will overlap,NL
 bitcoin,"Transaction version is actually unsigned in consensus checks, just signed in memory,",NL
 bitcoin,so cast to unsigned before giving it to the user.,NL
-bitcoin,"If available, use Undo data to calculate the fee. Note that txundo == nullptr",NL
+bitcoin,"If available, use Undo data to calculate the fee. Note that txundo == nullptr",NL_CODE
 bitcoin,for coinbase transactions and for transactions where undo data is unavailable.,NL
-bitcoin,"The hex-encoded transaction. Used the name ""hex"" to be consistent with the verbose output of ""getrawtransaction"".",NL
+bitcoin,"The hex-encoded transaction. Used the name ""hex"" to be consistent with the verbose output of ""getrawtransaction"".",NL_CODE
 bitcoin,Copyright (c) 2012-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,"This code is adapted from posix_logger.h, which is why it is using vsprintf.",NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,"This code is adapted from posix_logger.h, which is why it is using vsprintf.",NL_CODE
 bitcoin,Please do not do this in normal code,NL
 bitcoin,Print the message,NL
 bitcoin,"Do not use vsnprintf elsewhere in bitcoin source code, see above.",NL
@@ -840,9 +840,9 @@ bitcoin,Truncate to available space if necessary,NL
 bitcoin,Try again with larger buffer,NL
 bitcoin,Add newline if necessary,NL
 bitcoin,Continued,NL
-bitcoin,On most platforms the default setting of max_open_files (which is 1000),NL
+bitcoin,On most platforms the default setting of max_open_files (which is 1000),NL_CODE
 bitcoin,is optimal. On Windows using a large file count is OK because the handles,NL
-bitcoin,do not interfere with select() loops. On 64-bit Unix hosts this value is,NOT
+bitcoin,do not interfere with select() loops. On 64-bit Unix hosts this value is,NL_CODE
 bitcoin,"also OK, because up to that amount LevelDB will use an mmap",NL
 bitcoin,implementation that does not use extra file descriptors (the fds are,NL
 bitcoin,closed after being mmap'ed).,NL
@@ -857,58 +857,58 @@ bitcoin,on corruption in later versions.,NL
 bitcoin,"The base-case obfuscation key, which is a noop.",NL
 bitcoin,Initialize non-degenerate obfuscation if it won't upset,NL
 bitcoin,"existing, non-obfuscated data.",NL
-bitcoin,Write `new_key` so we don't obfuscate the key with itself,NL
+bitcoin,Write `new_key` so we don't obfuscate the key with itself,NL_CODE
 bitcoin,Prefixed with null character to avoid collisions with other keys,NL
 bitcoin,We must use a string constructor which specifies length so that we copy,NL
 bitcoin,past the null-terminator.,NL
 bitcoin,"Returns a string (consisting of 8 random bytes) suitable for use as an
  obfuscating XOR key.",NL
-bitcoin,namespace dbwrapper_private,NL
+bitcoin,namespace dbwrapper_private,NL_CODE
 bitcoin,Copyright (c) 2018-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,namespace interfaces,NL
 bitcoin,Copyright (c) 2018-2021 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,Call <command> enumerate,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,Call <command> enumerate,NL_CODE
 bitcoin,Check for error,NL
 bitcoin,Check if fingerprint is present,NL
 bitcoin,Skip duplicate signer,NL
 bitcoin,Serialize the PSBT,NL
 bitcoin,Check if signer fingerprint matches any input master key fingerprint,NL
-bitcoin,ENABLE_EXTERNAL_SIGNER,NOT
+bitcoin,ENABLE_EXTERNAL_SIGNER,CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,Avoid fseek to nPos,NL
 bitcoin,Copyright (c) 2017-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,Exclusive file locking is broken on WSL using fcntl (issue #18622),NL
 bitcoin,This workaround can be removed once the bug on WSL is fixed,NL
 bitcoin,Convert from Multi Byte to utf-16,NL
 bitcoin,Convert from utf-16 to utf-8,NL
-bitcoin,reference: https://github.com/gcc-mirror/gcc/blob/gcc-7_3_0-release/libstdc%2B%2B-v3/include/std/fstream#L270,NOT
-bitcoin,__GLIBCXX__,NOT
-bitcoin,__GLIBCXX__,NOT
+bitcoin,reference: https://github.com/gcc-mirror/gcc/blob/gcc-7_3_0-release/libstdc%2B%2B-v3/include/std/fstream#L270,NL_CODE
+bitcoin,__GLIBCXX__,CODE
+bitcoin,__GLIBCXX__,CODE
 bitcoin,WIN32,NL
 bitcoin,fsbridge,NL
 bitcoin,Copyright (c) 2013-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,"The following is MurmurHash3 (x86_32), see https://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp",NOT
-bitcoin,----------,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,"The following is MurmurHash3 (x86_32), see https://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp",NL_CODE
+bitcoin,----------,CODE
 bitcoin,body,NL
-bitcoin,----------,NOT
+bitcoin,----------,CODE
 bitcoin,tail,NL
-bitcoin,----------,NOT
+bitcoin,----------,CODE
 bitcoin,finalization,NL
 bitcoin,Copyright (c) 2015-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,boost::trim,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,boost::trim,CODE
 bitcoin,WWW-Authenticate to present with 401 Unauthorized response,NL
 bitcoin,"Simple one-shot callback timer to be used by the RPC mechanism to e.g.
  re-lock the wallet.",NL
@@ -919,7 +919,7 @@ bitcoin,RPC Auth Whitelist,NL
 bitcoin,Send error reply from json-rpc error object,NL
 bitcoin,This function checks username and password against -rpcauth,NL
 bitcoin,entries from config file.,NL
-bitcoin,Belt-and-suspenders measure if InitRPCAuthentication was not called,NL
+bitcoin,Belt-and-suspenders measure if InitRPCAuthentication was not called,NL_CODE
 bitcoin,Check if authorized under single-user field,NL
 bitcoin,JSONRPC handles only POST,NL
 bitcoin,Check authorization,NL
@@ -934,7 +934,7 @@ bitcoin,array of requests,NL
 bitcoin,Parse method,NL
 bitcoin,Copyright (c) 2015-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,For HTTP status codes,NL
 bitcoin,Maximum size of http request (request line + headers),NL
 bitcoin,HTTP request work item,NL
@@ -965,7 +965,7 @@ bitcoin,Dispatch to worker thread,NL
 bitcoin,"if true, queue took ownership",NL
 bitcoin,Callback to reject HTTP requests after shutdown.,NL
 bitcoin,Event dispatcher thread,NL
-bitcoin,Event loop will be interrupted by InterruptHTTPServer(),NL
+bitcoin,Event loop will be interrupted by InterruptHTTPServer(),NL_CODE
 bitcoin,Bind HTTP server to specified addresses,NL
 bitcoin,Determine what addresses to bind to,NL
 bitcoin,Default to loopback if not allowing external IPs,NL
@@ -973,15 +973,15 @@ bitcoin,Specific bind address,NL
 bitcoin,Bind addresses,NL
 bitcoin,Simple wrapper to set thread name and run work queue,NL
 bitcoin,libevent event log callback,NL
-bitcoin,EVENT_LOG_WARN was added in 2.0.19; but before then _EVENT_LOG_WARN existed.,NOT
+bitcoin,EVENT_LOG_WARN was added in 2.0.19; but before then _EVENT_LOG_WARN existed.,NL_CODE
 bitcoin,Log warn messages and higher without debug category,NL
 bitcoin,Redirect libevent's logging to our own log,NL
 bitcoin,Update libevent's log handling. Returns false if our version of,NL
 bitcoin,"libevent doesn't support debug logging, in which case we should",NL
-bitcoin,clear the BCLog::LIBEVENT flag.,NOT
+bitcoin,clear the BCLog::LIBEVENT flag.,NL_CODE
 bitcoin,Create a new evhttp object to handle requests.,NL
-bitcoin,transfer ownership to eventBase/HTTP via .release(),NOT
-bitcoin,Can't update libevent logging if version < 02010100,NL
+bitcoin,transfer ownership to eventBase/HTTP via .release(),NL_CODE
+bitcoin,Can't update libevent logging if version < 02010100,NL_CODE
 bitcoin,Reject requests on current connections,NL
 bitcoin,"Unlisten sockets, these are what make the event loop running, which means",NL
 bitcoin,that after this and all connections are closed the event loop will quit.,NL
@@ -1007,79 +1007,79 @@ bitcoin,transferred back to main thread,NL
 bitcoin,evhttp retains ownership over returned address string,NL
 bitcoin,Copyright (c) 2020-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Swap Standard Base64 <-> I2P Base64.
  Standard Base64 uses `+` and `/` as last two characters of its alphabet.
  I2P Base64 uses `-` and `~` respectively.
  So it is easy to detect in which one is the input and convert to the other.
  @param[in] from Input to convert.
- @return converted `from`",NL
+ @return converted `from`",NL_CODE
 bitcoin,"Decode an I2P-style Base64 string.
  @param[in] i2p_b64 I2P-style Base64 string.
  @return decoded `i2p_b64`
- @throw std::runtime_error if decoding fails",NL
+ @throw std::runtime_error if decoding fails",NL_CODE
 bitcoin,"Derive the .b32.i2p address of an I2P destination (binary).
  @param[in] dest I2P destination.
  @return the address that corresponds to `dest`
- @throw std::runtime_error if conversion fails",NL
+ @throw std::runtime_error if conversion fails",NL_CODE
 bitcoin,"Derive the .b32.i2p address of an I2P destination (I2P-style Base64).
  @param[in] dest I2P destination.
  @return the address that corresponds to `dest`
- @throw std::runtime_error if conversion fails",NL
-bitcoin,"Timeout, no incoming connections within MAX_WAIT_FOR_IO.",NL
+ @throw std::runtime_error if conversion fails",NL_CODE
+bitcoin,"Timeout, no incoming connections within MAX_WAIT_FOR_IO.",NL_CODE
 bitcoin,Private methods,NL
-bitcoin,"Don't log the full ""SESSION CREATE ..."" because it contains our private key.",NOT
+bitcoin,"Don't log the full ""SESSION CREATE ..."" because it contains our private key.",NL_CODE
 bitcoin,It could take a few minutes for the I2P router to reply as it is querying the I2P network,NL
-bitcoin,"(when doing name lookup, for example). Notice: `RecvUntilTerminator()` is checking",NOT
-bitcoin,"`m_interrupt` more often, so we would not be stuck here for long if `m_interrupt` is",NOT
+bitcoin,"(when doing name lookup, for example). Notice: `RecvUntilTerminator()` is checking",NL_CODE
+bitcoin,"`m_interrupt` more often, so we would not be stuck here for long if `m_interrupt` is",NL_CODE
 bitcoin,signaled.,NL
-bitcoin,https://geti2p.net/spec/common-structures#key-certificates,NOT
-bitcoin,"""7"" or ""EdDSA_SHA512_Ed25519"" - ""Recent Router Identities and Destinations"".",NOT
+bitcoin,https://geti2p.net/spec/common-structures#key-certificates,CODE
+bitcoin,"""7"" or ""EdDSA_SHA512_Ed25519"" - ""Recent Router Identities and Destinations"".",NL_CODE
 bitcoin,"Use ""7"" because i2pd <2.24.0 does not recognize the textual form.",NL
-bitcoin,"umask is set to 077 in init.cpp, which is ok (unless -sysperms is given)",NOT
-bitcoin,From https://geti2p.net/spec/common-structures#destination:,NOT
+bitcoin,"umask is set to 077 in init.cpp, which is ok (unless -sysperms is given)",NL_CODE
+bitcoin,From https://geti2p.net/spec/common-structures#destination:,NL_CODE
 bitcoin,"""They are 387 bytes plus the certificate length specified at bytes 385-386, which may be",NL
 bitcoin,"non-zero""",NL
 bitcoin,"full is an overkill, too verbose in the logs",NL
 bitcoin,"If our session id is invalid, then force session re-creation on next usage.",NL
-bitcoin,namespace sam,NOT
-bitcoin,namespace i2p,NOT
+bitcoin,namespace sam,CODE
+bitcoin,namespace i2p,CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Win32 LevelDB doesn't use filedescriptors, and the ones used for",NL
 bitcoin,accessing block files don't count towards the fd_set size limit,NL
 bitcoin,anyway.,NL
 bitcoin,The PID file facilities.,NL
-bitcoin,////////////////////////////////////////////////////////////////////////////,NL
+bitcoin,////////////////////////////////////////////////////////////////////////////,CODE
 bitcoin,Shutdown,NL
 bitcoin,Thread management and startup/shutdown:,NL
 bitcoin,The network-processing threads are all part of a thread group,NL
-bitcoin,created by AppInit() or the Qt main() function.,NOT
-bitcoin,A clean exit happens when StartShutdown() or the SIGTERM,NOT
-bitcoin,"signal handler sets ShutdownRequested(), which makes main thread's",NOT
-bitcoin,WaitForShutdown() interrupts the thread group.,NOT
-bitcoin,"And then, WaitForShutdown() makes all other on-going threads",NOT
+bitcoin,created by AppInit() or the Qt main() function.,NL_CODE
+bitcoin,A clean exit happens when StartShutdown() or the SIGTERM,NL_CODE
+bitcoin,"signal handler sets ShutdownRequested(), which makes main thread's",NL_CODE
+bitcoin,WaitForShutdown() interrupts the thread group.,NL_CODE
+bitcoin,"And then, WaitForShutdown() makes all other on-going threads",NL_CODE
 bitcoin,in the thread group join the main thread.,NL
-bitcoin,"Shutdown() is then called to clean up database connections, and stop other",NOT
+bitcoin,"Shutdown() is then called to clean up database connections, and stop other",NL_CODE
 bitcoin,threads that should only be stopped after the main network-processing,NL
 bitcoin,threads have exited.,NL
 bitcoin,"Shutdown for Qt is very similar, only it uses a QTimer to detect",NL
-bitcoin,"ShutdownRequested() getting set, and then does the normal Qt",NOT
+bitcoin,"ShutdownRequested() getting set, and then does the normal Qt",NL_CODE
 bitcoin,shutdown thing.,NL
-bitcoin,"/ Note: Shutdown() must be able to handle cases in which initialization failed part of the way,",NOT
+bitcoin,"/ Note: Shutdown() must be able to handle cases in which initialization failed part of the way,",NL_CODE
 bitcoin,/ for example if the data directory was found to be locked.,NL
 bitcoin,/ Be sure that anything that writes files or flushes caches only does this if the respective,NL
 bitcoin,/ module was initialized.,NL
 bitcoin,"Because these depend on each-other, we make sure that neither can be",NL
 bitcoin,using the other before destroying them.,NL
 bitcoin,"After everything has been shut down, but before things get flushed, stop the",NL
-bitcoin,"CScheduler/checkqueue, scheduler and load block thread.",NL
+bitcoin,"CScheduler/checkqueue, scheduler and load block thread.",NL_CODE
 bitcoin,"After the threads that potentially access these pointers have been stopped,",NL
 bitcoin,destruct and reset all to nullptr.,NL
 bitcoin,"Drop transactions we were still watching, and record fee estimations.",NL
-bitcoin,"FlushStateToDisk generates a ChainStateFlushed callback, which we should avoid missing",NL
+bitcoin,"FlushStateToDisk generates a ChainStateFlushed callback, which we should avoid missing",NL_CODE
 bitcoin,After there are no more peers/RPC left to give us new data which may generate,NL
 bitcoin,"CValidationInterface callbacks, flush them...",NL
 bitcoin,Stop and delete all indexes only after flushing background callbacks.,NL
@@ -1093,8 +1093,8 @@ bitcoin,"Signal handlers are very limited in what they are allowed to do.
  so we restrict handler operations to just touching variables:",NL
 bitcoin,server-only for now,NL
 bitcoin,Hidden Options,NL
-bitcoin,GUI args. These will be overwritten by SetupUIArgs for the GUI,NL
-bitcoin,USE_NATPMP,NOT
+bitcoin,GUI args. These will be overwritten by SetupUIArgs for the GUI,NL_CODE
+bitcoin,USE_NATPMP,CODE
 bitcoin,Add the hidden options,NL
 bitcoin,thread runs free,NL
 bitcoin,Parameter interaction based on rules,NL
@@ -1102,7 +1102,7 @@ bitcoin,"when specifying an explicit binding address, you want to listen on it",
 bitcoin,even when -connect or -proxy is specified,NL
 bitcoin,"when only connecting to trusted nodes, do not seed via DNS, or listen by default",NL
 bitcoin,"to protect privacy, do not listen by default if a default proxy server is specified",NL
-bitcoin,"to protect privacy, do not map ports when a proxy is set. The user may still specify -listen=1",NL
+bitcoin,"to protect privacy, do not map ports when a proxy is set. The user may still specify -listen=1",NL_CODE
 bitcoin,"to listen locally, so don't rely on this happening through -listen below.",NL
 bitcoin,"to protect privacy, do not discover addresses by default",NL
 bitcoin,do not map ports or try to retrieve public IP when not listening (pointless),NL
@@ -1115,9 +1115,9 @@ bitcoin,"Initialize global loggers.
  careful about what global state you rely on here.",NL
 bitcoin,Variables internal to initialization process only,NL
 bitcoin,namespace,NL
-bitcoin,"Rather than throwing std::bad-alloc if allocation fails, terminate",NL
+bitcoin,"Rather than throwing std::bad-alloc if allocation fails, terminate",NL_CODE
 bitcoin,immediately to (try to) avoid chain corruption.,NL
-bitcoin,"Since LogPrintf may itself allocate memory, set the handler directly",NL
+bitcoin,"Since LogPrintf may itself allocate memory, set the handler directly",NL_CODE
 bitcoin,to terminate first.,NL
 bitcoin,"The log was successful, terminate now.",NL
 bitcoin,********************************************************* Step 1: setup,NL
@@ -1128,54 +1128,54 @@ bitcoin,Clean shutdown on SIGTERM,NL
 bitcoin,Reopen debug.log on SIGHUP,NL
 bitcoin,"Ignore SIGPIPE, otherwise it will bring the daemon down if the client closes unexpectedly",NL
 bitcoin,********************************************************* Step 2: parameter interactions,NL
-bitcoin,also see: InitParameterInteraction(),NOT
-bitcoin,"Error if network-specific options (-addnode, -connect, etc) are",NOT
+bitcoin,also see: InitParameterInteraction(),NL_CODE
+bitcoin,"Error if network-specific options (-addnode, -connect, etc) are",NL_CODE
 bitcoin,"specified in default section of config file, but not overridden",NL
 bitcoin,on the command line or in this network's section of the config file.,NL
 bitcoin,Warn if unrecognized section name are present in the config file.,NL
 bitcoin,parse and validate enabled filter types,NL
-bitcoin,Signal NODE_COMPACT_FILTERS if peerblockfilters and basic filters index are both enabled.,NOT
+bitcoin,Signal NODE_COMPACT_FILTERS if peerblockfilters and basic filters index are both enabled.,NL_CODE
 bitcoin,"if using block pruning, then disallow txindex and coinstatsindex",NL
 bitcoin,-bind and -whitebind can't be set when not listening,NL
 bitcoin,Make sure enough file descriptors are available,NL
 bitcoin,"Trim requested connection counts, to fit into system limitations",NL
-bitcoin,<int> in std::min<int>(...) to work around FreeBSD compilation issue described in #2695,NOT
+bitcoin,<int> in std::min<int>(...) to work around FreeBSD compilation issue described in #2695,NL_CODE
 bitcoin,********************************************************* Step 3: parameter-to-internal-flags,NL
 bitcoin,mempool limits,NL
 bitcoin,incremental relay fee sets the minimum feerate increase necessary for BIP 125 replacement in the mempool,NL
 bitcoin,and the amount the mempool min fee increases above the feerate of txs evicted due to mempool limiting.,NL
 bitcoin,block pruning; get the amount of disk space (in MiB) to allot for block & undo files,NL
-bitcoin,manual pruning: -prune=1,NOT
-bitcoin,High fee check is done afterward in CWallet::Create(),NL
+bitcoin,manual pruning: -prune=1,CODE
+bitcoin,High fee check is done afterward in CWallet::Create(),NL_CODE
 bitcoin,Allow only setting incrementalRelayFee to control both,NL
 bitcoin,Sanity check argument for min fee for including tx in block,NL
 bitcoin,TODO: Harmonize which arguments need sanity checking and where that happens,NL
 bitcoin,Feerate used to define dust.  Shouldn't be changed lightly as old,NL
 bitcoin,implementations may inadvertently create non-standard transactions,NL
 bitcoin,Option to startup with mocktime set (used for regression testing):,NL
-bitcoin,SetMockTime(0) is a no-op,NOT
+bitcoin,SetMockTime(0) is a no-op,NL_CODE
 bitcoin,Make sure only a single Bitcoin process is using the data directory.,NL
 bitcoin,********************************************************* Step 4: sanity checks,NL
 bitcoin,"Probe the data directory lock to give an early error message, if possible",NL
-bitcoin,"We cannot hold the data directory lock here, as the forking for daemon() hasn't yet happened,",NOT
+bitcoin,"We cannot hold the data directory lock here, as the forking for daemon() hasn't yet happened,",NL_CODE
 bitcoin,and a fork will cause weird behavior to it.,NL
 bitcoin,After daemonization get the data directory lock again and hold on to it until exit,NL
 bitcoin,"This creates a slight window for a race condition to happen, however this condition is harmless: it",NL
 bitcoin,will at most make us exit without printing a message to console.,NL
-bitcoin,Detailed error printed inside LockDataDirectory,NL
+bitcoin,Detailed error printed inside LockDataDirectory,NL_CODE
 bitcoin,Create client interfaces for wallets that are supposed to be loaded,NL
 bitcoin,according to -wallet and -disablewallet options. This only constructs,NL
 bitcoin,"the interfaces, it doesn't load wallet data. Wallets actually get loaded",NL
-bitcoin,when load() and start() interface methods are called below.,NOT
+bitcoin,when load() and start() interface methods are called below.,NL_CODE
 bitcoin,********************************************************* Step 4a: application initialization,NL
-bitcoin,Detailed error printed inside CreatePidFile().,NOT
-bitcoin,Detailed error printed inside StartLogging().,NOT
+bitcoin,Detailed error printed inside CreatePidFile().,NL_CODE
+bitcoin,Detailed error printed inside StartLogging().,NL_CODE
 bitcoin,Warn about relative -datadir path.,NL
-bitcoin,Continued,NOT
-bitcoin,-par=0 means autodetect (number of cores - 1 script threads),NOT
-bitcoin,"-par=-n means ""leave n cores free"" (number of cores - n - 1 script threads)",NOT
+bitcoin,Continued,CODE
+bitcoin,-par=0 means autodetect (number of cores - 1 script threads),NL_CODE
+bitcoin,"-par=-n means ""leave n cores free"" (number of cores - n - 1 script threads)",NL_CODE
 bitcoin,Subtract 1 because the main thread counts towards the par threads,NL
-bitcoin,Number of script-checking threads <= MAX_SCRIPTCHECK_THREADS,NOT
+bitcoin,Number of script-checking threads <= MAX_SCRIPTCHECK_THREADS,NL_CODE
 bitcoin,Start the lightweight task scheduler thread,NL
 bitcoin,Gather some entropy once per minute.,NL
 bitcoin,"Register RPC commands regardless of -server setting so they will be
@@ -1194,13 +1194,13 @@ bitcoin,"Don't initialize fee estimation with old data if we don't relay transac
 bitcoin,as they would never get updated.,NL
 bitcoin,"sanitize comments per BIP-0014, format user agent and check total size",NL
 bitcoin,Check for host lookup allowed before parsing any network related parameters,NL
-bitcoin,#NAME?,NL
-bitcoin,"-noproxy (or -proxy=0) as well as the empty string can be used to not set a proxy, this is the default",NOT
+bitcoin,#NAME?,CODE
+bitcoin,"-noproxy (or -proxy=0) as well as the empty string can be used to not set a proxy, this is the default",NL_CODE
 bitcoin,"by default, -proxy sets onion as reachable, unless -noonion later",NL
 bitcoin,"-onion can be used to set only a proxy for .onion, or override normal proxy for .onion addresses",NL
-bitcoin,-noonion (or -onion=0) disables connecting to .onion entirely,NOT
+bitcoin,-noonion (or -onion=0) disables connecting to .onion entirely,NL_CODE
 bitcoin,"An empty string is used to not override the onion proxy (in which case it defaults to -proxy set above, or none)",NL
-bitcoin,Handle -noonion/-onion=0,NOT
+bitcoin,Handle -noonion/-onion=0,CODE
 bitcoin,Read asmap file if configured,NL
 bitcoin,********************************************************* Step 7: load block chain,NL
 bitcoin,cache size calculations,NL
@@ -1225,21 +1225,21 @@ bitcoin,"If we're not mid-reindex (based on disk + args), add a genesis block on
 bitcoin,(otherwise we use the one already on disk).,NL
 bitcoin,This is called again in ThreadImport after the reindex completes.,NL
 bitcoin,At this point we're either in reindex or we've loaded a useful,NL
-bitcoin,block tree into BlockIndex()!,NL
-bitcoin,cache_size_bytes,NL
-bitcoin,in_memory,NL
-bitcoin,should_wipe,NL
+bitcoin,block tree into BlockIndex()!,NL_CODE
+bitcoin,cache_size_bytes,CODE
+bitcoin,in_memory,CODE
+bitcoin,should_wipe,CODE
 bitcoin,"If necessary, upgrade from older database format.",NL
 bitcoin,This is a no-op if we cleared the coinsviewdb with -reindex or -reindex-chainstate,NL
-bitcoin,ReplayBlocks is a no-op if we cleared the coinsviewdb with -reindex or -reindex-chainstate,NL
+bitcoin,ReplayBlocks is a no-op if we cleared the coinsviewdb with -reindex or -reindex-chainstate,NL_CODE
 bitcoin,"The on-disk coinsdb is now in a good state, create the cache",NL
-bitcoin,LoadChainTip initializes the chain based on CoinsTip()'s best block,NOT
+bitcoin,LoadChainTip initializes the chain based on CoinsTip()'s best block,NL_CODE
 bitcoin,out of the per-chainstate loop,NL
 bitcoin,out of the chainstate activation do-while,NL
 bitcoin,first suggest a reindex,NL
-bitcoin,"As LoadBlockIndex can take several minutes, it's possible the user",NL
+bitcoin,"As LoadBlockIndex can take several minutes, it's possible the user",NL_CODE
 bitcoin,"requested to kill the GUI during the last operation. If so, exit.",NL
-bitcoin,"As the program has not fully started yet, Shutdown() is possibly overkill.",NOT
+bitcoin,"As the program has not fully started yet, Shutdown() is possibly overkill.",NL_CODE
 bitcoin,********************************************************* Step 8: start indexers,NL
 bitcoin,cache size,NL
 bitcoin,********************************************************* Step 9: load wallet,NL
@@ -1247,24 +1247,24 @@ bitcoin,********************************************************* Step 10: data 
 bitcoin,"if pruning, unset the service bit and perform the initial blockstore prune",NL
 bitcoin,after any wallet rescanning has taken place.,NL
 bitcoin,Advertise witness capabilities.,NL
-bitcoin,The option to not set NODE_WITNESS is only used in the tests and should be removed.,NOT
+bitcoin,The option to not set NODE_WITNESS is only used in the tests and should be removed.,NL_CODE
 bitcoin,********************************************************* Step 11: import blocks,NL
 bitcoin,"Either install a handler to notify us when genesis activates, or set fHaveGenesis directly.",NL
 bitcoin,"No locking, as this happens before any background thread is started.",NL
 bitcoin,thread runs free,NL
 bitcoin,Wait for genesis block to be processed,NL
-bitcoin,We previously could hang here if StartShutdown() is called prior to,NOT
+bitcoin,We previously could hang here if StartShutdown() is called prior to,NL_CODE
 bitcoin,"ThreadImport getting started, so instead we just wait on a timer to",NL
-bitcoin,check ShutdownRequested() regularly.,NOT
+bitcoin,check ShutdownRequested() regularly.,NL_CODE
 bitcoin,********************************************************* Step 12: start node,NL
 bitcoin,// debug print,NL
 bitcoin,Map ports with UPnP or NAT-PMP.,NL
-bitcoin,Initiate outbound connections unless connect=0,NL
+bitcoin,Initiate outbound connections unless connect=0,NL_CODE
 bitcoin,********************************************************* Step 13: finished,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,Copyright (c) 2017 The Zcash developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,These functions are taken from the libsecp256k1 distribution and are very ugly.,NL
 bitcoin,"This parses a format loosely based on a DER encoding of the ECPrivateKey type from
  section C.4 of SEC 1 <https://www.secg.org/sec1-v2.pdf>, with the following caveats:
@@ -1278,12 +1278,12 @@ bitcoin,"This parses a format loosely based on a DER encoding of the ECPrivateKe
  Anything after the encoding of the privateKey OCTET STRING is ignored, whether
    or not it is validly encoded DER.
 
- out32 must point to an output buffer of length at least 32 bytes.",NL
+ out32 must point to an output buffer of length at least 32 bytes.",NL_CODE
 bitcoin,sequence header,NL
 bitcoin,sequence length constructor,NL
 bitcoin,sequence length,NL
-bitcoin,sequence element 0: version number (=1),NOT
-bitcoin,"sequence element 1: octet string, up to 32 bytes",NOT
+bitcoin,sequence element 0: version number (=1),NL_CODE
+bitcoin,"sequence element 1: octet string, up to 32 bytes",NL_CODE
 bitcoin,"This serializes to a DER encoding of the ECPrivateKey type from section C.4 of SEC 1
  <https://www.secg.org/sec1-v2.pdf>. The optional parameters and publicKey fields are
  included.
@@ -1291,7 +1291,7 @@ bitcoin,"This serializes to a DER encoding of the ECPrivateKey type from section
  seckey must point to an output buffer of length at least CKey::SIZE bytes.
  seckeylen must initially be set to the size of the seckey buffer. Upon return it
  will be set to the number of bytes used in the buffer.
- key32 must point to a 32-byte raw private key.",NL
+ key32 must point to a 32-byte raw private key.",NL_CODE
 bitcoin,Check that the sig has a low R value and will be less than 71 bytes,NL
 bitcoin,"In DER serialization, all values are interpreted as big-endian, signed integers. The highest bit in the integer indicates",NL
 bitcoin,"its signed-ness; 0 is positive, 1 is negative. When the value is interpreted as a negative integer, it must be converted",NL
@@ -1301,13 +1301,13 @@ bitcoin,Grind for low R,NL
 bitcoin,Pass in a random blinding seed to the secp256k1 context.,NL
 bitcoin,Copyright (c) 2014-2019 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,/ Maximum witness length for Bech32 addresses.,NL
 bitcoin,base58-encoded Bitcoin addresses.,NL
 bitcoin,Public-key-hash-addresses have version 0 (or 111 testnet).,NL
-bitcoin,"The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.",NOT
+bitcoin,"The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.",NL_CODE
 bitcoin,Script-hash-addresses have version 5 (or 196 testnet).,NL
-bitcoin,"The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.",NOT
+bitcoin,"The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.",NL_CODE
 bitcoin,Set potential error message.,NL
 bitcoin,This message may be changed if the address can also be interpreted as a Bech32 address.,NL
 bitcoin,Bech32 decoding,NL
@@ -1318,7 +1318,7 @@ bitcoin,namespace,NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"NOTE: the logger instances is leaked on exit. This is ugly, but will be
  cleaned up by the OS/libc. Defining a logger as a global object doesn't work
  since the order of destruction of static/global objects is undefined.
@@ -1331,7 +1331,7 @@ bitcoin,"NOTE: the logger instances is leaked on exit. This is ugly, but will be
  its subclasses must have implicitly-defined destructors.
 
  This method of initialization was originally introduced in
- ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c.",NL
+ ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c.",NL_CODE
 bitcoin,unbuffered,NL
 bitcoin,Add newlines to the logfile to distinguish this execution from the,NL
 bitcoin,last one.,NL
@@ -1342,7 +1342,7 @@ bitcoin,"Belts and suspenders: make sure outgoing log messages don't contain
     
      This escapes control characters except newline ('\n') in C syntax.
      It escapes instead of removes them to still allow for troubleshooting
-     issues where they accidentally end up in strings.",NL
+     issues where they accidentally end up in strings.",NL_CODE
 bitcoin,buffer if we haven't started logging yet,NL
 bitcoin,print to console,NL
 bitcoin,"reopen the log file, if requested",NL
@@ -1350,41 +1350,41 @@ bitcoin,unbuffered,NL
 bitcoin,Amount of debug.log to save at end when shrinking (must fit in memory),NL
 bitcoin,Scroll debug.log if it's getting too big,NL
 bitcoin,Special files (e.g. device nodes) may not have a size.,NL
-bitcoin,If debug.log file is more than 10% bigger the RECENT_DEBUG_HISTORY_SIZE,NL
+bitcoin,If debug.log file is more than 10% bigger the RECENT_DEBUG_HISTORY_SIZE,NL_CODE
 bitcoin,trim it down by saving only the last RECENT_DEBUG_HISTORY_SIZE bytes,NL
 bitcoin,Restart the file with some of the end,NL
 bitcoin,Copyright (c) 2011-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,USE_NATPMP,NL
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,USE_NATPMP,CODE
 bitcoin,The minimum supported miniUPnPc API version is set to 10. This keeps compatibility,NL
 bitcoin,with Ubuntu 16.04 LTS and Debian 8 libminiupnpc-dev packages.,NL
-bitcoin,USE_UPNP,NL
+bitcoin,USE_UPNP,CODE
 bitcoin,detect gateway automatically,NL
-bitcoin,forced gateway - NOT APPLIED,NL
+bitcoin,forced gateway - NOT APPLIED,NL_CODE
 bitcoin,OK,NL
 bitcoin,seconds,NL
 bitcoin,OK,NL
 bitcoin,remove a port mapping,NL
 bitcoin,OK,NL
-bitcoin,USE_NATPMP,NL
-bitcoin,USE_UPNP,NL
+bitcoin,USE_NATPMP,CODE
+bitcoin,USE_UPNP,CODE
 bitcoin,High priority protocol.,NL
-bitcoin,USE_UPNP,NL
+bitcoin,USE_UPNP,CODE
 bitcoin,Low priority protocol.,NL
-bitcoin,USE_NATPMP,NL
+bitcoin,USE_NATPMP,CODE
 bitcoin,Enabling another protocol does not cause switching from the currently used one.,NL
-bitcoin,Interrupt a protocol-specific loop in the ThreadUpnp() or in the ThreadNatpmp(),NL
-bitcoin,to force trying the next protocol in the ThreadMapPort() loop.,NL
-bitcoin,#if defined(USE_NATPMP) || defined(USE_UPNP),NOT
+bitcoin,Interrupt a protocol-specific loop in the ThreadUpnp() or in the ThreadNatpmp(),NL_CODE
+bitcoin,to force trying the next protocol in the ThreadMapPort() loop.,NL_CODE
+bitcoin,#if defined(USE_NATPMP) || defined(USE_UPNP),CODE
 bitcoin,Intentionally left blank.,NL
 bitcoin,Intentionally left blank.,NL
 bitcoin,Intentionally left blank.,NL
-bitcoin,#if defined(USE_NATPMP) || defined(USE_UPNP),NOT
+bitcoin,#if defined(USE_NATPMP) || defined(USE_UPNP),CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"we can never have zero txs in a merkle block, we always need the coinbase tx",NL
 bitcoin,"if we do not have this assert, we can hit a memory access violation when indexing into vTxid",NL
 bitcoin,hash at height 0 is the txids themselves,NL
@@ -1418,24 +1418,24 @@ bitcoin,verify that all hashes were consumed,NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,Updating time can change work required on testnet:,NL
-bitcoin,Limit weight to between 4K and MAX_BLOCK_WEIGHT-4K for sanity:,NL
+bitcoin,Limit weight to between 4K and MAX_BLOCK_WEIGHT-4K for sanity:,NL_CODE
 bitcoin,Block resource limits,NL
-bitcoin,"If -blockmaxweight is not given, limit to DEFAULT_BLOCK_MAX_WEIGHT",NOT
+bitcoin,"If -blockmaxweight is not given, limit to DEFAULT_BLOCK_MAX_WEIGHT",NL_CODE
 bitcoin,Reserve space for coinbase tx,NL
 bitcoin,These counters do not include coinbase tx,NL
 bitcoin,pointer for convenience,NL
 bitcoin,Add dummy coinbase tx as first transaction,NL
 bitcoin,updated at end,NL
 bitcoin,updated at end,NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
 bitcoin,Decide whether to include witness transactions,NL
 bitcoin,This is only needed in case the witness softfork activation is reverted,NL
 bitcoin,(which would require a very deep reorganization).,NL
 bitcoin,Note that the mempool would accept transactions with witness data before,NL
-bitcoin,"IsWitnessEnabled, but we would only ever mine blocks after IsWitnessEnabled",NL
+bitcoin,"IsWitnessEnabled, but we would only ever mine blocks after IsWitnessEnabled",NL_CODE
 bitcoin,unless there is a massive block reorganization with the witness softfork,NL
 bitcoin,not activated.,NL
 bitcoin,TODO: replace this with a call to main to assess validity of a mempool,NL
@@ -1445,12 +1445,12 @@ bitcoin,Fill in header,NL
 bitcoin,Only test txs not already in the block,NL
 bitcoin,TODO: switch to weight-based accounting for packages instead of vsize-based accounting.,NL
 bitcoin,Perform transaction-level checks before adding to block:,NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
 bitcoin,- premature witness (in case segwit transactions are added to mempool before,NL
 bitcoin,segwit activation),NL
 bitcoin,Insert all descendants (not yet in block) into the modified set,NL
 bitcoin,Skip entries in mapTx that are already in a block or are present,NL
-bitcoin,in mapModifiedTx (which implies that the mapTx ancestor state is,NL
+bitcoin,in mapModifiedTx (which implies that the mapTx ancestor state is,NL_CODE
 bitcoin,stale due to ancestor inclusion in the block),NL
 bitcoin,Also skip transactions that we've already failed to add. This can happen if,NL
 bitcoin,we consider a transaction in mapModifiedTx and it fails: we can then,NL
@@ -1468,32 +1468,32 @@ bitcoin,Since we don't remove transactions from the mempool as we select them,NL
 bitcoin,"for block inclusion, we need an alternate method of updating the feerate",NL
 bitcoin,of a transaction with its not-yet-selected ancestors as we go.,NL
 bitcoin,This is accomplished by walking the in-mempool descendants of selected,NL
-bitcoin,transactions and storing a temporary modified state in mapModifiedTxs.,NL
+bitcoin,transactions and storing a temporary modified state in mapModifiedTxs.,NL_CODE
 bitcoin,"Each time through the loop, we compare the best transaction in",NL
-bitcoin,mapModifiedTxs with the next transaction in the mempool to decide what,NL
+bitcoin,mapModifiedTxs with the next transaction in the mempool to decide what,NL_CODE
 bitcoin,transaction package to work on next.,NL
-bitcoin,mapModifiedTx will store sorted packages after they are modified,NL
+bitcoin,mapModifiedTx will store sorted packages after they are modified,NL_CODE
 bitcoin,because some of their txs are already in the block,NL
 bitcoin,"Keep track of entries that failed inclusion, to avoid duplicate work",NL
-bitcoin,Start by adding all descendants of previously added txs to mapModifiedTx,NL
+bitcoin,Start by adding all descendants of previously added txs to mapModifiedTx,NL_CODE
 bitcoin,and modifying them for their already included ancestors,NL
 bitcoin,Limit the number of attempts to add transactions to the block when it is,NL
 bitcoin,close to full; this is just a simple heuristic to finish quickly if the,NL
 bitcoin,mempool has a lot of entries.,NL
-bitcoin,First try to find a new transaction in mapTx to evaluate.,NL
+bitcoin,First try to find a new transaction in mapTx to evaluate.,NL_CODE
 bitcoin,"Now that mi is not stale, determine which transaction to evaluate:",NL
-bitcoin,"the next entry from mapTx, or the best from mapModifiedTx?",NL
-bitcoin,We're out of entries in mapTx; use the entry from mapModifiedTx,NL
-bitcoin,Try to compare the mapTx entry to the mapModifiedTx entry,NL
-bitcoin,The best entry in mapModifiedTx has higher score,NL
-bitcoin,than the one from mapTx.,NL
+bitcoin,"the next entry from mapTx, or the best from mapModifiedTx?",NL_CODE
+bitcoin,We're out of entries in mapTx; use the entry from mapModifiedTx,NL_CODE
+bitcoin,Try to compare the mapTx entry to the mapModifiedTx entry,NL_CODE
+bitcoin,The best entry in mapModifiedTx has higher score,NL_CODE
+bitcoin,than the one from mapTx.,NL_CODE
 bitcoin,Switch which transaction (package) to consider,NL
-bitcoin,"Either no entry in mapModifiedTx, or it's worse than mapTx.",NL
+bitcoin,"Either no entry in mapModifiedTx, or it's worse than mapTx.",NL_CODE
 bitcoin,Increment mi for the next loop iteration.,NL
-bitcoin,"We skip mapTx entries that are inBlock, and mapModifiedTx shouldn't",NL
+bitcoin,"We skip mapTx entries that are inBlock, and mapModifiedTx shouldn't",NL_CODE
 bitcoin,contain anything that is inBlock.,NL
 bitcoin,Everything else we might consider has a lower fee rate,NL
-bitcoin,"Since we always look at the best entry in mapModifiedTx,",NL
+bitcoin,"Since we always look at the best entry in mapModifiedTx,",NL_CODE
 bitcoin,we must erase failed entries so that we can consider the,NL
 bitcoin,next best entry on the next loop iteration,NL
 bitcoin,Give up if we're close to full and haven't succeeded in a while,NL
@@ -1502,12 +1502,12 @@ bitcoin,This transaction will make it in; reset the failed counter.,NL
 bitcoin,Package can be added. Sort the entries in a valid order.,NL
 bitcoin,"Erase from the modified set, if present",NL
 bitcoin,Update transactions that depend on each of these,NL
-bitcoin,Update nExtraNonce,NL
-bitcoin,Height first in coinbase required for block.version=2,NOT
+bitcoin,Update nExtraNonce,NL_CODE
+bitcoin,Height first in coinbase required for block.version=2,NL_CODE
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,Maximum number of block-relay-only anchor connections,NL
 bitcoin,Anchor IP address database file name,NL
 bitcoin,How often to dump addresses to peers.dat,NL
@@ -1523,14 +1523,14 @@ bitcoin,"How long to delay before querying DNS seeds
 bitcoin,"""many"" vs ""few"" peers",NL
 bitcoin,The default timeframe for -maxuploadtarget. 1 day.,NL
 bitcoin,We add a random period time (0 to 1 seconds) to feeler connections to prevent synchronization.,NL
-bitcoin,Used to pass flags to the Bind() function,NOT
+bitcoin,Used to pass flags to the Bind() function,NL_CODE
 bitcoin,"Do not call AddLocal() for our special addresses, e.g., for incoming
-     Tor connections, to prevent gossiping them over the network.",NL
+     Tor connections, to prevent gossiping them over the network.",NL_CODE
 bitcoin,The set of sockets cannot be modified while waiting,NL
 bitcoin,The sleep time needs to be small to avoid new sockets stalling,NL
-bitcoin,"SHA256(""netgroup"")[0:8]",NOT
-bitcoin,"SHA256(""localhostnonce"")[0:8]",NOT
-bitcoin,"SHA256(""addrcache"")[0:8]",NOT
+bitcoin,"SHA256(""netgroup"")[0:8]",CODE
+bitcoin,"SHA256(""localhostnonce"")[0:8]",CODE
+bitcoin,"SHA256(""addrcache"")[0:8]",CODE
 bitcoin,Global state variables,NL
 bitcoin,find 'best' local address for a particular peer,NL
 bitcoin,! Convert the serialized seeds into usable address objects.,NL
@@ -1553,11 +1553,11 @@ bitcoin,vote for a local address,NL
 bitcoin,check whether a given address is potentially local,NL
 bitcoin,Get the bind address for a socket as CAddress,NL
 bitcoin,Look for an existing connection,NL
-bitcoin,/ debug print,NOT
+bitcoin,/ debug print,CODE
 bitcoin,Resolve,NL
 bitcoin,It is possible that we already have a connection to the IP/port pszDest resolved to.,NL
 bitcoin,"In that case, drop the connection that was just created, and return the existing CNode instead.",NL
-bitcoin,"Also store the name we used to connect in that CNode, so that future FindNode() calls to that",NL
+bitcoin,"Also store the name we used to connect in that CNode, so that future FindNode() calls to that",NL_CODE
 bitcoin,name catch this early.,NL
 bitcoin,Connect,NL
 bitcoin,no proxy needed (none set for target network),NL
@@ -1570,7 +1570,7 @@ bitcoin,"no default case, so the compiler can warn about missing cases",NL
 bitcoin,Leave string empty if addrLocal invalid (not filled in yet),NL
 bitcoin,absorb network data,NL
 bitcoin,"Serious header problem, disconnect from the peer.",NL
-bitcoin,decompose a transport agnostic CNetMessage from the deserializer,NL
+bitcoin,decompose a transport agnostic CNetMessage from the deserializer,NL_CODE
 bitcoin,Message deserialization failed.  Drop the message but don't disconnect the peer.,NL
 bitcoin,store the size of the corrupt message,NL
 bitcoin,store received bytes per message command,NL
@@ -1578,12 +1578,12 @@ bitcoin,"to prevent a memory DOS, only allow valid commands",NL
 bitcoin,"push the message to the process queue,",NL
 bitcoin,copy data to temporary parsing buffer,NL
 bitcoin,"if header incomplete, exit",NL
-bitcoin,deserialize to CMessageHeader,NL
+bitcoin,deserialize to CMessageHeader,NL_CODE
 bitcoin,"Check start string, network magic",NL
-bitcoin,reject messages larger than MAX_SIZE or MAX_PROTOCOL_MESSAGE_LENGTH,NOT
+bitcoin,reject messages larger than MAX_SIZE or MAX_PROTOCOL_MESSAGE_LENGTH,NL_CODE
 bitcoin,switch state to reading message data,NL
 bitcoin,"Allocate up to 256 KiB ahead, but never more than the total message size.",NL
-bitcoin,decompose a single CNetMessage from the TransportDeserializer,NL
+bitcoin,decompose a single CNetMessage from the TransportDeserializer,NL_CODE
 bitcoin,"store command string, time, and sizes",NL
 bitcoin,"We just received a message off the wire, harvest entropy from the time (and the message checksum)",NL
 bitcoin,Check checksum and header command string,NL
@@ -1600,14 +1600,14 @@ bitcoin,"Pick out the potential block-relay only peers, and sort them by last bl
 bitcoin,"! Sort an array by the specified comparator, then erase the last K elements where predicate is true.",NL
 bitcoin,Protect the half of the remaining nodes which have been connected the longest.,NL
 bitcoin,"This replicates the non-eviction implicit behavior, and precludes attacks that start later.",NL
-bitcoin,"To favorise the diversity of our peer connections, reserve up to (half + 2) of",NL
+bitcoin,"To favorise the diversity of our peer connections, reserve up to (half + 2) of",NL_CODE
 bitcoin,"these protected spots for onion and localhost peers, if any, even if they're not",NL
 bitcoin,"longest uptime overall. This helps protect tor peers, which tend to be otherwise",NL
 bitcoin,disadvantaged under our eviction criteria.,NL
 bitcoin,"Pick out up to 1/4 peers connected via our onion service, sorted by longest uptime.",NL
 bitcoin,"Allocate any remaining slots of the 1/4, or minimum 2 additional slots,",NL
 bitcoin,"to localhost peers, sorted by longest uptime, as manually configured",NL
-bitcoin,hidden services not using `-bind=addr[:port]=onion` will not be detected,NL
+bitcoin,hidden services not using `-bind=addr[:port]=onion` will not be detected,NL_CODE
 bitcoin,as inbound onion connections.,NL
 bitcoin,"Calculate how many we removed, and update our total number of peers that",NL
 bitcoin,we want to protect based on uptime accordingly.,NL
@@ -1627,7 +1627,7 @@ bitcoin,If any remaining peers are preferred for eviction consider only them.,NL
 bitcoin,This happens after the other preferences since if a peer is really the best by other criteria (esp relaying blocks),NL
 bitcoin,then we probably don't want to evict it no matter what.,NL
 bitcoin,Identify the network group with the most connections and youngest member.,NL
-bitcoin,(vEvictionCandidates is already sorted by reverse connect time),NL
+bitcoin,(vEvictionCandidates is already sorted by reverse connect time),NL_CODE
 bitcoin,Reduce to the network group with the most connections,NL
 bitcoin,Disconnect from the network group with the most connections,NL
 bitcoin,"Try to find a connection to evict when the node is full.
@@ -1637,7 +1637,7 @@ bitcoin,"Try to find a connection to evict when the node is full.
    for each of several distinct characteristics which are difficult
    to forge.  In order to partition a node the attacker must be
    simultaneously better at all of them than honest peers.",NL
-bitcoin,According to the internet TCP_NODELAY is not carried into accepted sockets,NOT
+bitcoin,According to the internet TCP_NODELAY is not carried into accepted sockets,NL_CODE
 bitcoin,on all platforms.  Set it again here just to be sure.,NL
 bitcoin,Don't accept connections from banned peers.,NL
 bitcoin,Only accept connections from discouraged peers if our inbound slots aren't (almost) full.,NL
@@ -1657,12 +1657,12 @@ bitcoin,Destroy the object only after other threads have stopped using it.,NL
 bitcoin,Use non-mockable system time (otherwise these timers will pop when we,NL
 bitcoin,use setmocktime in the tests).,NL
 bitcoin,Implement the following logic:,NL
-bitcoin,"If there is data to send, select() for sending data. As this only",NL
+bitcoin,"If there is data to send, select() for sending data. As this only",NL_CODE
 bitcoin,"happens when optimistic write failed, we choose to first drain the",NL
 bitcoin,write buffer in this case before receiving more. This avoids,NL
 bitcoin,"needlessly queueing received data, if the remote peer is not themselves",NL
 bitcoin,receiving data. This means properly utilizing TCP flow control signalling.,NL
-bitcoin,"Otherwise, if there is space left in the receive buffer, select() for",NL
+bitcoin,"Otherwise, if there is space left in the receive buffer, select() for",NL_CODE
 bitcoin,receiving data.,NL
 bitcoin,"Hand off all complete messages to the processor, to be handled without",NL
 bitcoin,blocking here.,NL
@@ -1673,13 +1673,13 @@ bitcoin,Accept new connections,NL
 bitcoin,Service each socket,NL
 bitcoin,Receive,NL
 bitcoin,typical socket buffer is 8K-64K,NL
-bitcoin,vRecvMsg contains only completed CNetMessage,NL
-bitcoin,the single possible partially deserialized message are held by TransportDeserializer,NL
+bitcoin,vRecvMsg contains only completed CNetMessage,NL_CODE
+bitcoin,the single possible partially deserialized message are held by TransportDeserializer,NL_CODE
 bitcoin,socket closed gracefully,NL
 bitcoin,error,NL
 bitcoin,Send data,NL
 bitcoin,Number of seeds left before testing if we have enough connections,NL
-bitcoin,"When -forcednsseed is provided, query all.",NL
+bitcoin,"When -forcednsseed is provided, query all.",NL_CODE
 bitcoin,"If we have no known peers, query all.",NL
 bitcoin,"This will occur on the first run, or if peers.dat has been",NL
 bitcoin,deleted.,NL
@@ -1695,7 +1695,7 @@ bitcoin,that query them.,NL
 bitcoin,"If we continue having problems, eventually query all the",NL
 bitcoin,"DNS seeds, and if that fails too, also try the fixed seeds.",NL
 bitcoin,(done in ThreadOpenConnections),NL
-bitcoin,"if sleeping for the MANY_PEERS interval, wake up",NL
+bitcoin,"if sleeping for the MANY_PEERS interval, wake up",NL_CODE
 bitcoin,early to see if we have enough peers and can stop,NL
 bitcoin,this thread entirely freeing up its resources,NL
 bitcoin,hold off on querying seeds if P2P network deactivated,NL
@@ -1705,7 +1705,7 @@ bitcoin,"We now avoid directly using results from DNS Seeds which do not support
 bitcoin,instead using them as a addrfetch to get nodes with our desired service bits.,NL
 bitcoin,Return the number of peers we have over our outbound connection limit,NL
 bitcoin,"Exclude peers that are marked for disconnect, or are going to be",NL
-bitcoin,disconnected soon (eg ADDR_FETCH and FEELER),NOT
+bitcoin,disconnected soon (eg ADDR_FETCH and FEELER),NL_CODE
 bitcoin,Also exclude peers that haven't finished initial connection handshake yet,NL
 bitcoin,"(so that we don't decide we're over our desired connection limit, and then",NL
 bitcoin,evict some peer that has finished the handshake),NL
@@ -1713,7 +1713,7 @@ bitcoin,Connect to specific addresses,NL
 bitcoin,Initiate network connections,NL
 bitcoin,Minimum time before next feeler connection (in microseconds).,NL
 bitcoin,"When the node starts with an empty peers.dat, there are a few other sources of peers before",NL
-bitcoin,"we fallback on to fixed seeds: -dnsseed, -seednode, -addnode",NL
+bitcoin,"we fallback on to fixed seeds: -dnsseed, -seednode, -addnode",NL_CODE
 bitcoin,"If none of those are available, we fallback on to fixed seeds immediately, else we allow",NL
 bitcoin,60 seconds for any of those sources to populate addrman.,NL
 bitcoin,It is cheapest to check if enough time has passed first.,NL
@@ -1727,17 +1727,17 @@ bitcoin,also have the added issue that they could be attacker controlled and use
 bitcoin,to prevent us from connecting to particular hosts if we used them here.,NL
 bitcoin,"no default case, so the compiler can warn about missing cases",NL
 bitcoin,Determine what type of connection to open. Opening,NL
-bitcoin,BLOCK_RELAY connections to addresses from anchors.dat gets the highest,NOT
-bitcoin,priority. Then we open OUTBOUND_FULL_RELAY priority until we,NOT
-bitcoin,meet our full-relay capacity. Then we open BLOCK_RELAY connection,NOT
+bitcoin,BLOCK_RELAY connections to addresses from anchors.dat gets the highest,NL_CODE
+bitcoin,priority. Then we open OUTBOUND_FULL_RELAY priority until we,NL_CODE
+bitcoin,meet our full-relay capacity. Then we open BLOCK_RELAY connection,NL_CODE
 bitcoin,until we hit our block-relay-only peer limit.,NL
-bitcoin,"GetTryNewOutboundPeer() gets set when a stale tip is detected, so we",NOT
-bitcoin,try opening an additional OUTBOUND_FULL_RELAY connection. If none of,NOT
+bitcoin,"GetTryNewOutboundPeer() gets set when a stale tip is detected, so we",NL_CODE
+bitcoin,try opening an additional OUTBOUND_FULL_RELAY connection. If none of,NL_CODE
 bitcoin,"these conditions are met, check to see if it's time to try an extra",NL
 bitcoin,"block-relay-only peer (to confirm our tip is current, see below) or the next_feeler",NL
-bitcoin,timer to decide if we should open a FEELER.,NOT
-bitcoin,OUTBOUND_FULL_RELAY,NOT
-bitcoin,OUTBOUND_FULL_RELAY,NOT
+bitcoin,timer to decide if we should open a FEELER.,NL_CODE
+bitcoin,OUTBOUND_FULL_RELAY,CODE
+bitcoin,OUTBOUND_FULL_RELAY,CODE
 bitcoin,Periodically connect to a peer (using regular outbound selection,NL
 bitcoin,methodology from addrman) and stay connected long enough to sync,NL
 bitcoin,"headers, but not much else.",NL
@@ -1747,11 +1747,11 @@ bitcoin,because every few minutes we're finding a new peer to learn headers,NL
 bitcoin,from.,NL
 bitcoin,This is similar to the logic for trying extra outbound (full-relay),NL
 bitcoin,"peers, except:",NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
 bitcoin,our tip is stale,NL
-bitcoin,#NAME?,NL
+bitcoin,#NAME?,CODE
 bitcoin,newest block-relay-only peer delivers a block more recently.,NL
-bitcoin,See the eviction logic in net_processing.cpp.,NOT
+bitcoin,See the eviction logic in net_processing.cpp.,NL_CODE
 bitcoin,Because we can promote these connections to block-relay-only,NL
 bitcoin,"connections, they do not get their own ConnectionType enum",NL
 bitcoin,(similar to how we deal with extra outbound peers).,NL
@@ -1765,7 +1765,7 @@ bitcoin,No tried table collisions. Select a new table address,NL
 bitcoin,for our feeler.,NL
 bitcoin,If test-before-evict logic would have us connect to a,NL
 bitcoin,"peer that we're already connected to, just mark that",NL
-bitcoin,address as Good(). We won't be able to initiate the,NOT
+bitcoin,address as Good(). We won't be able to initiate the,NL_CODE
 bitcoin,"connection anyway, so this avoids inadvertently evicting",NL
 bitcoin,a currently-connected peer.,NL
 bitcoin,Select a new table address for our feeler instead.,NL
@@ -1782,9 +1782,9 @@ bitcoin,from advertising themselves as a service on another host and,NL
 bitcoin,"port, causing a DoS attack as nodes around the network attempt",NL
 bitcoin,to connect to it fruitlessly.,NL
 bitcoin,Add small amount of random noise before connection to avoid synchronization.,NL
-bitcoin,Build a map of all already connected addresses (by IP:port and by name) to inbound/outbound and resolved CService,NOT
-bitcoin,strAddNode is an IP:port,NL
-bitcoin,strAddNode is a name,NL
+bitcoin,Build a map of all already connected addresses (by IP:port and by name) to inbound/outbound and resolved CService,NL_CODE
+bitcoin,strAddNode is an IP:port,NL_CODE
+bitcoin,strAddNode is a name,NL_CODE
 bitcoin,"If we've used up our semaphore and need a new one, let's not wait here since while we are waiting",NL
 bitcoin,the addednodeinfo state might change.,NL
 bitcoin,"Retry every 60 seconds if a connection was attempted, otherwise two seconds",NL
@@ -1793,7 +1793,7 @@ bitcoin,Initiate outbound network connection,NL
 bitcoin,Receive messages,NL
 bitcoin,Send messages,NL
 bitcoin,Create socket for listening for incoming connections,NL
-bitcoin,Allow binding if the port is still in TIME_WAIT state after,NL
+bitcoin,Allow binding if the port is still in TIME_WAIT state after,NL_CODE
 bitcoin,the program was closed and restarted.,NL
 bitcoin,some systems don't have IPV6_V6ONLY but are always v6only; others do have the option,NL
 bitcoin,"and enable it by default or not. Try to enable it, if possible.",NL
@@ -1814,7 +1814,7 @@ bitcoin,Shutdown Windows Sockets,NL
 bitcoin,Anchor connections are only dumped during clean shutdown.,NL
 bitcoin,Delete peer connections.,NL
 bitcoin,Close listening sockets.,NL
-bitcoin,If emplace() added new one it has expiration 0.,NL
+bitcoin,If emplace() added new one it has expiration 0.,NL_CODE
 bitcoin,network,NL
 bitcoin,Choosing a proper cache lifetime is a trade-off between the privacy leak minimization,NL
 bitcoin,and the usefulness of ADDR responses to honest users.,NL
@@ -1833,7 +1833,7 @@ bitcoin,"On the other hand, longer cache lifetime makes ADDR responses",NL
 bitcoin,"outdated and less useful for an honest requestor, e.g. if most nodes",NL
 bitcoin,in the ADDR response are no longer active.,NL
 bitcoin,"However, the churn in the network is known to be rather low. Since we consider",NL
-bitcoin,"nodes to be ""terrible"" (see IsTerrible()) if the timestamps are older than 30 days,",NL
+bitcoin,"nodes to be ""terrible"" (see IsTerrible()) if the timestamps are older than 30 days,",NL_CODE
 bitcoin,"max. 24 hours of ""penalty"" due to cache shouldn't make any meaningful difference",NL
 bitcoin,in terms of the freshness of the response.,NL
 bitcoin,Shortcut if we want total,NL
@@ -1855,24 +1855,24 @@ bitcoin,layer (processing) perspective.,NL
 bitcoin,Windows folder names can not include a colon,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
 bitcoin,"Parse the following format: ""perm1,perm2@xxxxxx""",NL
-bitcoin,"if '@' is not found (ie, ""xxxxx""), the caller should apply implicit permissions",NOT
-bitcoin,"else (ie, ""perm1,perm2@xxxxx""), let's enumerate the permissions by splitting by ',' and calculate the flags",NOT
-bitcoin,"permissions == perm1,perm2",NOT
-bitcoin,permission == perm1,NOT
+bitcoin,"if '@' is not found (ie, ""xxxxx""), the caller should apply implicit permissions",NL_CODE
+bitcoin,"else (ie, ""perm1,perm2@xxxxx""), let's enumerate the permissions by splitting by ',' and calculate the flags",NL_CODE
+bitcoin,"permissions == perm1,perm2",CODE
+bitcoin,permission == perm1,CODE
 bitcoin,"We read ""perm1""",NL
 bitcoin,"We read "",""",NL
 bitcoin,Allow empty entries,NL
 bitcoin,Copyright (c) 2009-2010 Satoshi Nakamoto,NL
 bitcoin,Copyright (c) 2009-2020 The Bitcoin Core developers,NL
 bitcoin,"Distributed under the MIT software license, see the accompanying",NL
-bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NOT
-bitcoin,For NDEBUG compile time check,NOT
+bitcoin,file COPYING or http://www.opensource.org/licenses/mit-license.php.,NL_CODE
+bitcoin,For NDEBUG compile time check,NL_CODE
 bitcoin,How long to cache transactions in mapRelay for normal relay,NL
 bitcoin,How long a transaction has to be in the mempool before it can unconditionally be relayed (even when not in mapRelay).,NL
 bitcoin,"Headers download timeout.
-  Timeout = base + per_header (expected number of headers)",NL
+  Timeout = base + per_header (expected number of headers)",NL_CODE
 bitcoin,"Protect at least this many outbound peers from disconnection due to slow/
  behind headers chain.",NL
 bitcoin,"Timeout for (unprotected) outbound peers to sync to our chainwork, in seconds",NL
@@ -1881,7 +1881,7 @@ bitcoin,"How frequently to check for stale tips, in seconds",NL
 bitcoin,10 minutes,NL
 bitcoin,"How frequently to check for extra outbound peers and disconnect, in seconds",NL
 bitcoin,"Minimum time an outbound-peer-eviction candidate must be connected for, in order to evict, in seconds",NL
-bitcoin,"SHA256(""main address relay"")[0:8]",NOT
+bitcoin,"SHA256(""main address relay"")[0:8]",CODE
 bitcoin,/ Age after which a stale block will no longer be served if requested as,NL
 bitcoin,"/ protection against fingerprinting. Set to one month, denominated in seconds.",NL
 bitcoin,/ Age after which a block is considered historical for purposes of rate,NL
@@ -1890,23 +1890,23 @@ bitcoin,Time between pings automatically sent out for latency probing and keepal
 bitcoin,The maximum number of entries in a locator,NL
 bitcoin,The maximum number of entries in an 'inv' protocol message,NL
 bitcoin,"Maximum number of in-flight transaction requests from a peer. It is not a hard limit, but the threshold at which
-  point the OVERLOADED_PEER_TX_DELAY kicks in.",NL
+  point the OVERLOADED_PEER_TX_DELAY kicks in.",NL_CODE
 bitcoin,"Maximum number of transactions to consider for requesting, per peer. It provides a reasonable DoS limit to
   per-peer memory usage spent on announcements, while covering peers continuously sending INVs at the maximum
   rate (by our own policy, see INVENTORY_BROADCAST_PER_SECOND) for several minutes, while not receiving
-  the actual transaction (from any peer) in response to requests for them.",NL
+  the actual transaction (from any peer) in response to requests for them.",NL_CODE
 bitcoin,"How long to delay requesting transactions via txids, if we have wtxid-relaying peers",NL
 bitcoin,How long to delay requesting transactions from non-preferred peers,NL
-bitcoin,How long to delay requesting transactions from overloaded peers (see MAX_PEER_TX_REQUEST_IN_FLIGHT).,NOT
+bitcoin,How long to delay requesting transactions from overloaded peers (see MAX_PEER_TX_REQUEST_IN_FLIGHT).,NL_CODE
 bitcoin,How long to wait (in microseconds) before downloading a transaction from an additional peer,NL
-bitcoin,Limit to avoid sending big packets. Not used in processing incoming GETDATA for compatibility,NOT
+bitcoin,Limit to avoid sending big packets. Not used in processing incoming GETDATA for compatibility,NL_CODE
 bitcoin,Number of blocks that can be requested at any given time from a single peer.,NL
 bitcoin,Time during which a peer must stall block download progress before being disconnected.,NL
 bitcoin,"Number of headers sent in one getheaders result. We rely on the assumption that if a peer sends
   less than this number, we reached its tip. Changing this value is a protocol upgrade.",NL
 bitcoin,"Maximum depth of blocks we're willing to serve as compact blocks to peers
   when requested. For older blocks, a regular BLOCK response will be sent.",NL
-bitcoin,Maximum depth of blocks we're willing to respond to GETBLOCKTXN requests for.,NOT
+bitcoin,Maximum depth of blocks we're willing to respond to GETBLOCKTXN requests for.,NL_CODE
 bitcoin,"Size of the ""block download window"": how far ahead of our current height do we fetch?
   Larger windows tolerate larger download speed differences between peer, but increase the potential
   degree of disordering of blocks on disk (which make reindexing and pruning harder). We'll probably
@@ -1915,14 +1915,14 @@ bitcoin,"Block download timeout base, expressed in multiples of the block interv
 bitcoin,Additional block download timeout per parallel downloading peer (i.e. 5 min),NL
 bitcoin,Maximum number of headers to announce when relaying blocks with headers message.*/,NL
 bitcoin,Maximum number of unconnecting headers announcements before DoS score,NL
-bitcoin,Minimum blocks required to signal NODE_NETWORK_LIMITED,NL
+bitcoin,Minimum blocks required to signal NODE_NETWORK_LIMITED,NL_CODE
 bitcoin,Average delay between local address broadcasts,NL
 bitcoin,Average delay between peer address broadcasts,NL
 bitcoin,"Average delay between trickled inventory transmissions for inbound peers.
-  Blocks and peers with NetPermissionFlags::NoBan permission bypass this.",NL
+  Blocks and peers with NetPermissionFlags::NoBan permission bypass this.",NL_CODE
 bitcoin,"Average delay between trickled inventory transmissions for outbound peers.
   Use a smaller delay as there is less privacy concern for them.
-  Blocks and peers with NetPermissionFlags::NoBan permission bypass this.",NL
+  Blocks and peers with NetPermissionFlags::NoBan permission bypass this.",NL_CODE
 bitcoin,"Maximum rate of inventory items to send per second.
   Limits the impact of low-fee transaction floods.",NL
 bitcoin,Maximum number of inventory items to send per transmission.,NL
@@ -1930,7 +1930,7 @@ bitcoin,The number of most recently announced transactions a peer can request.,N
 bitcoin,"Verify that INVENTORY_MAX_RECENT_RELAY is enough to cache everything typically
   relayed before unconditional relay from the mempool kicks in. This is only a
   lower bound, and it should be larger to account for higher inv rate to outbound
-  peers, and random variations in the broadcast mechanism.",NL
+  peers, and random variations in the broadcast mechanism.",NL_CODE
 bitcoin,Average delay between feefilter broadcasts in seconds.,NL
 bitcoin,Maximum feefilter broadcast delay after significant change.,NL
 bitcoin,Maximum number of compact filters that may be requested with one getcfilters. See BIP 157.,NL
@@ -1941,7 +1941,7 @@ bitcoin,Internal stuff,NL
 bitcoin,"Blocks that are in flight, and that are in the queue to be downloaded.",NL
 bitcoin,!< Optional.,NL
 bitcoin,!< Whether this block has validated headers at the time of request.,NL
-bitcoin,"!< Optional, used for CMPCTBLOCK downloads",NOT
+bitcoin,"!< Optional, used for CMPCTBLOCK downloads",NL_CODE
 bitcoin,"Data structure for an individual peer. This struct is not protected by
  cs_main since it does not contain validation-critical data.
 
@@ -1951,11 +1951,11 @@ bitcoin,"Data structure for an individual peer. This struct is not protected by
  Mutexes inside this struct must not be held when locking m_peer_mutex.
 
  TODO: move most members from CNodeState to this structure.
- TODO: move remaining application-layer data members from CNode to this structure.",NL
-bitcoin,Same id as the CNode object for this peer,NL
+ TODO: move remaining application-layer data members from CNode to this structure.",NL_CODE
+bitcoin,Same id as the CNode object for this peer,NL_CODE
 bitcoin,Protects misbehavior data members,NL
 bitcoin,Accumulated misbehavior score for this peer,NL
-bitcoin,Whether this peer should be disconnected and marked as discouraged (unless it has NetPermissionFlags::NoBan permission).,NL
+bitcoin,Whether this peer should be disconnected and marked as discouraged (unless it has NetPermissionFlags::NoBan permission).,NL_CODE
 bitcoin,Protects block inventory data members,NL
 bitcoin,"List of blocks that we'll announce via an `inv` message.
      There is no final sorting before sending, as they are always sent
@@ -1971,7 +1971,7 @@ bitcoin,This peer's reported block height when we connected,NL
 bitcoin,"The pong reply we're expecting, or 0 if no pong expected.",NL
 bitcoin,"When the last ping was sent, or 0 if no ping was ever sent",NL
 bitcoin,Whether a ping has been requested by the user,NL
-bitcoin,"A vector of addresses to send to the peer, limited to MAX_ADDR_TO_SEND.",NOT
+bitcoin,"A vector of addresses to send to the peer, limited to MAX_ADDR_TO_SEND.",NL_CODE
 bitcoin,"Probabilistic filter of addresses that this peer already knows.
       Used to avoid relaying addresses to this peer more than once.",NL
 bitcoin,Whether a getaddr request to this peer is outstanding.,NL
@@ -2001,31 +2001,31 @@ bitcoin,"Potentially mark a node discouraged based on the contents of a BlockVal
      block message or not. If the compact block had a valid header, but contained invalid
      txs, the peer should not be punished. See BIP 152.
     
-     @return Returns true if the peer was punished (probably disconnected)",NL
+     @return Returns true if the peer was punished (probably disconnected)",NL_CODE
 bitcoin,"Potentially disconnect and discourage a node based on the contents of a TxValidationState object
     
-     @return Returns true if the peer was punished (probably disconnected)",NL
+     @return Returns true if the peer was punished (probably disconnected)",NL_CODE
 bitcoin,"Maybe disconnect a peer and discourage future connections from its address.
     
      @param[in]   pnode     The node to check.
      @param[in]   peer      The peer object to check.
-     @return                True if the peer was marked for disconnection in this function",NL
+     @return                True if the peer was marked for disconnection in this function",NL_CODE
 bitcoin,Process a single headers message from a peer.,NL
 bitcoin,"Register with TxRequestTracker that an INV has been received from a
       peer. The announcement parameters are decided in PeerManager and then
-      passed to TxRequestTracker.",NL
+      passed to TxRequestTracker.",NL_CODE
 bitcoin,Send a version message to a peer,NL
 bitcoin,"Send a ping message every PING_INTERVAL or if requested via RPC. May
       mark the peer to be disconnected if a ping has timed out.
       We use mockable time for ping timeouts, so setmocktime may cause pings
-      to time out.",NL
+      to time out.",NL_CODE
 bitcoin,Send `addr` messages on a regular schedule.,NL
 bitcoin,"Relay (gossip) an address to a few randomly chosen nodes.
     
      @param[in] originator   The id of the peer that sent us the address. We don't want to relay it back.
      @param[in] addr         Address to relay.
      @param[in] fReachable   Whether the address' network is reachable. We relay unreachable
-                             addresses less.",NL
+                             addresses less.",NL_CODE
 bitcoin,Send `feefilter` message.,NL
 bitcoin,Pointer to this node's banman. May be nullptr - check existence before dereferencing.,NL
 bitcoin,The height of the best chain,NL
@@ -2034,18 +2034,18 @@ bitcoin,Whether this node is running in blocks only mode,NL
 bitcoin,"Whether we've completed initial sync yet, for determining when to turn
       on extra block-relay-only peers.",NL
 bitcoin,"Protects m_peer_map. This mutex must not be locked while holding a lock
-      on any of the mutexes inside a Peer object.",NL
+      on any of the mutexes inside a Peer object.",NL_CODE
 bitcoin,"Map of all Peer objects, keyed by peer id. This map is protected
      by the m_peer_mutex. Once a shared pointer reference is
      taken, the lock may be released. Individual fields are protected by
-     their own locks.",NL
-bitcoin,Number of nodes with fSyncStarted.,NOT
+     their own locks.",NL_CODE
+bitcoin,Number of nodes with fSyncStarted.,NL_CODE
 bitcoin,"Sources of received blocks, saved to be able punish them when processing
      happens afterwards.
      Set mapBlockSource[hash].second to false if the node should not be
-     punished if the block is invalid.",NL
+     punished if the block is invalid.",NL_CODE
 bitcoin,Number of peers with wtxid relay.,NL
-bitcoin,Number of outbound peers with m_chain_sync.m_protect.,NOT
+bitcoin,Number of outbound peers with m_chain_sync.m_protect.,NL_CODE
 bitcoin,"Filter for transactions that were recently rejected by
      AcceptToMemoryPool. These are not rerequested until the chain tip
      changes, at which point the entire filter is reset.
@@ -2087,22 +2087,22 @@ bitcoin,"Mark a block as in flight
     Returns false, still setting pit, if the block was already in flight from the same peer
     pit will only be valid as long as the same cs_main lock is being held",NL
 bitcoin,"Update pindexLastCommonBlock and add not-in-flight missing successors to vBlocks, until it has
-      at most count entries.",NL
+      at most count entries.",NL_CODE
 bitcoin,When our tip was last updated.,NL
 bitcoin,"Determine whether or not a peer can request a transaction, and return it (or nullptr if not found or not allowed).",NL
-bitcoin,Relay map (txid or wtxid -> CTransactionRef),NOT
+bitcoin,Relay map (txid or wtxid -> CTransactionRef),NL_CODE
 bitcoin,"Expiration-time ordered list of (expire time, relay map entry) pairs.",NL
 bitcoin,"When a peer sends us a valid block, instruct it to announce blocks to us
      using CMPCTBLOCK if possible by adding its nodeid to the end of
      lNodesAnnouncingHeaderAndIDs, and keeping that list under a certain size by
-     removing the first element if necessary.",NL
+     removing the first element if necessary.",NL_CODE
 bitcoin,Stack of nodes which we have set to announce using compact blocks,NL
 bitcoin,Number of peers from which we're downloading blocks.,NL
 bitcoin,Storage for orphan information,NL
 bitcoin,"Orphan/conflicted/etc transactions that are kept for compact block reconstruction.
       The last -blockreconstructionextratxn/DEFAULT_BLOCK_RECONSTRUCTION_EXTRA_TXN of
-      these are kept in a ring buffer",NL
-bitcoin,Offset into vExtraTxnForCompact to insert the next tx,NL
+      these are kept in a ring buffer",NL_CODE
+bitcoin,Offset into vExtraTxnForCompact to insert the next tx,NL_CODE
 bitcoin,Check whether the last unknown block a peer advertised is not yet known.,NL
 bitcoin,Update tracking information about which blocks a peer is assumed to have.,NL
 bitcoin,"To prevent fingerprinting attacks, only send blocks/headers outside of
@@ -2120,32 +2120,32 @@ bitcoin,"Validation logic for compact filters request handling.
      @param[in]   max_height_diff The maximum number of items permitted to request, as specified in BIP 157
      @param[out]  stop_index      The CBlockIndex for the stop_hash block, if the request can be serviced.
      @param[out]  filter_index    The filter index, if the request can be serviced.
-     @return                      True if the request can be serviced.",NL
+     @return                      True if the request can be serviced.",NL_CODE
 bitcoin,"Handle a cfilters request.
     
      May disconnect from the peer in the case of a bad request.
     
      @param[in]   peer            The peer that we received the request from
-     @param[in]   vRecv           The raw message received",NL
+     @param[in]   vRecv           The raw message received",NL_CODE
 bitcoin,"Handle a cfheaders request.
     
      May disconnect from the peer in the case of a bad request.
     
      @param[in]   peer            The peer that we received the request from
-     @param[in]   vRecv           The raw message received",NL
+     @param[in]   vRecv           The raw message received",NL_CODE
 bitcoin,"Handle a getcfcheckpt request.
     
      May disconnect from the peer in the case of a bad request.
     
      @param[in]   peer            The peer that we received the request from
-     @param[in]   vRecv           The raw message received",NL
+     @param[in]   vRecv           The raw message received",NL_CODE
 bitcoin,namespace,NL
 bitcoin,Number of preferable block download peers.,NL
 bitcoin,namespace,NL
 bitcoin,"Maintain validation-specific state about nodes, protected by cs_main, instead
  by CNode's own locks. This simplifies asynchronous operation, where
  processing of incoming data is done after the ProcessMessage call returns,
- and we're no longer holding the node's locks.",NL
+ and we're no longer holding the node's locks.",NL_CODE
 bitcoin,! The best known block we know this peer has announced.,NL
 bitcoin,! The hash of the last unknown block this peer has announced.,NL
 bitcoin,! The last full block we both have.,NL
@@ -2160,11 +2160,11 @@ bitcoin,! Whether this peer wants invs or headers (when possible) for block anno
 bitcoin,! Whether this peer wants invs or cmpctblocks (when possible) for block announcements.,NL
 bitcoin,"Whether this peer will send us cmpctblocks if we request them.
       This is not used to gate request logic, as we really only care about fSupportsDesiredCmpctVersion,
-      but is used as a flag to ""lock in"" the version of compact blocks (fWantsCmpctWitness) we send.",NL
+      but is used as a flag to ""lock in"" the version of compact blocks (fWantsCmpctWitness) we send.",NL_CODE
 bitcoin,! Whether this peer can give us witnesses,NL
 bitcoin,! Whether this peer wants witnesses in cmpctblocks/blocktxns,NL
 bitcoin,"If we've announced NODE_WITNESS to this peer: whether the peer sends witnesses in cmpctblocks/blocktxns,
-     otherwise: whether this peer sends non-witnesses in cmpctblocks/blocktxns.",NL
+     otherwise: whether this peer sends non-witnesses in cmpctblocks/blocktxns.",NL_CODE
 bitcoin,"State used to enforce CHAIN_SYNC_TIMEOUT and EXTRA_PEER_CHECK_INTERVAL logic.
      
       Both are only in effect for outbound, non-manual, non-protected connections.
@@ -2187,7 +2187,7 @@ bitcoin,"State used to enforce CHAIN_SYNC_TIMEOUT and EXTRA_PEER_CHECK_INTERVAL 
           reached, disconnect.
      
       EXTRA_PEER_CHECK_INTERVAL: after each interval, if we have too many outbound peers,
-      drop the outbound one that least recently announced us a new block.",NL
+      drop the outbound one that least recently announced us a new block.",NL_CODE
 bitcoin,! A timeout used for checking whether our peer has sufficiently synced,NL
 bitcoin,! A header with the work we require on our peer's chain,NL
 bitcoin,"! After timeout is reached, set to true after sending getheaders",NL
@@ -2212,9 +2212,9 @@ bitcoin,We're starting a block download (batch) from this peer.,NL
 bitcoin,Never ask from peers who can't provide witnesses.,NL
 bitcoin,"As per BIP152, we only get 3 of our peers to announce",NL
 bitcoin,blocks using compact encodings.,NL
-bitcoin,fAnnounceUsingCMPCTBLOCK=,NL
+bitcoin,fAnnounceUsingCMPCTBLOCK=,CODE
 bitcoin,save BIP152 bandwidth state: we select peer to be low-bandwidth,NL
-bitcoin,fAnnounceUsingCMPCTBLOCK=,NL
+bitcoin,fAnnounceUsingCMPCTBLOCK=,CODE
 bitcoin,save BIP152 bandwidth state: we select peer to be high-bandwidth,NL
 bitcoin,An actually better block was announced.,NL
 bitcoin,An unknown block was announced; just assume that the latest one is the best one.,NL
@@ -2224,11 +2224,11 @@ bitcoin,Bootstrap quickly by guessing a parent of our best tip is the forking po
 bitcoin,Guessing wrong in either direction is not a problem.,NL
 bitcoin,"If the peer reorganized, our previous pindexLastCommonBlock may not be an ancestor",NL
 bitcoin,of its current tip anymore. Go back enough to fix that.,NL
-bitcoin,"Never fetch further than the best block we know the peer has, or more than BLOCK_DOWNLOAD_WINDOW + 1 beyond the last",NOT
+bitcoin,"Never fetch further than the best block we know the peer has, or more than BLOCK_DOWNLOAD_WINDOW + 1 beyond the last",NL_CODE
 bitcoin,"linked block we have in common with this peer. The +1 is so we can detect stalling, namely if we would be able to",NL
 bitcoin,download that next block if the window were 1 larger.,NL
 bitcoin,"Read up to 128 (or more, if more blocks than that are needed) successors of pindexWalk (towards",NL
-bitcoin,"pindexBestKnownBlock) into vToFetch. We fetch 128, because CBlockIndex::GetAncestor may be as expensive",NOT
+bitcoin,"pindexBestKnownBlock) into vToFetch. We fetch 128, because CBlockIndex::GetAncestor may be as expensive",NL_CODE
 bitcoin,as iterating over ~100 CBlockIndex* entries anyway.,NL
 bitcoin,"Iterate over those blocks in vToFetch (in forward direction), adding the ones that",NL
 bitcoin,"are not yet downloaded and not in flight to vBlocks. In the meantime, update",NL
@@ -2241,35 +2241,35 @@ bitcoin,We reached the end of the window.,NL
 bitcoin,"We aren't able to fetch anything, but we would be if the download window was one larger.",NL
 bitcoin,This is the first already-in-flight block.,NL
 bitcoin,namespace,NL
-bitcoin,Note that pnode->GetLocalServices() is a reflection of the local,NOT
+bitcoin,Note that pnode->GetLocalServices() is a reflection of the local,NL_CODE
 bitcoin,services we were offering when the CNode object was created for this,NL
 bitcoin,peer.,NL
 bitcoin,For m_txrequest,NL
 bitcoin,Too many queued announcements from this peer,NL
 bitcoin,Decide the TxRequestTracker parameters for this announcement:,NL
-bitcoin,"- ""preferred"": if fPreferredDownload is set (= outbound, or NetPermissionFlags::NoBan permission)",NOT
+bitcoin,"- ""preferred"": if fPreferredDownload is set (= outbound, or NetPermissionFlags::NoBan permission)",NL_CODE
 bitcoin,"- ""reqtime"": current time plus delays for:",NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
-bitcoin,#NAME?,NL
-bitcoin,MAX_PEER_TX_REQUEST_IN_FLIGHT requests in flight (and don't have NetPermissionFlags::Relay).,NOT
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
+bitcoin,#NAME?,CODE
+bitcoin,MAX_PEER_TX_REQUEST_IN_FLIGHT requests in flight (and don't have NetPermissionFlags::Relay).,NL_CODE
 bitcoin,"This function is used for testing the stale tip eviction logic, see",NL
-bitcoin,denialofservice_tests.cpp,NOT
+bitcoin,denialofservice_tests.cpp,CODE
 bitcoin,Addr relay is disabled for outbound block-relay-only peers to,NL
 bitcoin,prevent adversaries from inferring these links from addr traffic.,NL
-bitcoin,addr_relay =,NOT
+bitcoin,addr_relay =,CODE
 bitcoin,Schedule next run for 10-15 minutes in the future.,NL
 bitcoin,We add randomness on every cycle to avoid the possibility of P2P fingerprinting.,NL
 bitcoin,"We remove the PeerRef from g_peer_map here, but we don't always",NL
 bitcoin,destruct the Peer. Sometimes another thread is still holding a,NL
-bitcoin,"PeerRef, so the refcount is >= 1. Be careful not to do any",NOT
+bitcoin,"PeerRef, so the refcount is >= 1. Be careful not to do any",NL_CODE
 bitcoin,processing here that assumes Peer won't be changed before it's,NL
 bitcoin,destructed.,NL
 bitcoin,Do a consistency check after the last peer is removed.,NL
-bitcoin,cs_main,NL
+bitcoin,cs_main,CODE
 bitcoin,Only change visible addrman state for full outbound peers.  We don't,NL
-bitcoin,call Connected() for feeler connections since they don't have,NOT
-bitcoin,fSuccessfullyConnected set.,NL
+bitcoin,call Connected() for feeler connections since they don't have,NL_CODE
+bitcoin,fSuccessfullyConnected set.,NL_CODE
 bitcoin,"It is common for nodes with good ping times to suddenly become lagged,",NL
 bitcoin,due to a new block arriving or other large transfer.,NL
 bitcoin,"Merely reporting pingtime might fool the caller into thinking the node was still responsive,",NL
@@ -2309,13 +2309,13 @@ bitcoin,"then another block reconnected), our filter will drop to having only on
 bitcoin,"block's worth of transactions in it, but that should be fine, since",NL
 bitcoin,presumably the most common case of relaying a confirmed transaction,NL
 bitcoin,should be just after a new block containing it is found.,NL
-bitcoin,"All of the following cache a recent block, and are protected by cs_most_recent_block",NL
+bitcoin,"All of the following cache a recent block, and are protected by cs_most_recent_block",NL_CODE
 bitcoin,"Maintain state about the best-seen block and fast-announce a compact block
  to compatible peers.",NL
 bitcoin,TODO: Avoid the repeated-serialization here,NL
 bitcoin,"If the peer has, or we announced to them the previous block already,",NL
 bitcoin,"but we don't think they have this one, go ahead and announce it",NL
 bitcoin,"Update our best height and announce any block hashes which weren't previously
- in m_chainman.ActiveChain() to our peers.",NL
+ in m_chainman.ActiveChain() to our peers.",NL_CODE
 bitcoin,Don't relay inventory during initial block download.,NL
 bitcoin,Find the hashes of all blocks that weren't previously in the best chain.,NL
