@@ -10,7 +10,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 from nlon_py.data.make_data import get_category_dict
-from nlon_py.features import (Character3GramsForTest, ComputeFeatures,
+from nlon_py.features import (TriGramsAndFeaturesForTest, ComputeFeatures,
                               ConvertFeatures, TriGramsAndFeatures)
 
 names = ["Nearest Neighbors", "Linear SVM",
@@ -51,6 +51,10 @@ def CompareModels(X, y):
             f'{key}: {scores.mean():.2f} accuracy with a standard deviation of {scores.std():.2f}')
 
 
+def ValidateModel(model, X, y):
+    score = cross_val_score(model, X, y, cv=10)
+    print(f'10-Fold Cross Validation: {score.mean():.2f} average accuracy with a standard deviation of {score.std():.2f}')
+
 def SearchParameters_KNN(X, y):
     knn = KNeighborsClassifier(n_neighbors=5)
     k_range = range(1, 31)
@@ -66,7 +70,8 @@ def SearchParameters_KNN(X, y):
 
 
 def NLoNPredict(clf, X):
-    array_data = ConvertFeatures(ComputeFeatures(X, Character3GramsForTest))
+    array_data = ConvertFeatures(
+        ComputeFeatures(X, TriGramsAndFeaturesForTest))
     result = clf.predict(array_data)
     category_dict = get_category_dict()
     result = np.vectorize(category_dict.get)(result)

@@ -36,7 +36,7 @@ def Character3Grams(text):
 
 def Character3GramsForTest(text):
     vectorizer = load(vecfile)
-    return vectorizer.transform(text)
+    return pd.DataFrame.sparse.from_spmatrix(vectorizer.transform(text))
 
 
 class Features:
@@ -122,3 +122,7 @@ def ComputeFeatures(text, features):
 
 def TriGramsAndFeatures(text):
     return pd.concat([Character3Grams(text), FeatureExtraction(text)], axis=1)
+
+
+def TriGramsAndFeaturesForTest(text):
+    return pd.concat([Character3GramsForTest(text), FeatureExtraction(text)], axis=1)
