@@ -1,6 +1,8 @@
 import os
+import re
 import string
 from typing import Dict
+
 import numpy as np
 import pandas as pd
 from joblib import dump, load
@@ -25,6 +27,14 @@ def preprocess(text, tokenizer=None):
 
 trigram_vectorizer = CountVectorizer(ngram_range=(
     3, 3), stop_words=preprocess(stop_words_list))
+default_preproc = trigram_vectorizer.build_preprocessor()
+
+
+def preproc(s):
+    return re.sub(r'[0-9]', '0', re.sub(r'\\032', '', default_preproc(s)))
+
+
+trigram_vectorizer.preprocessor = preproc
 
 
 def Character3Grams(text):
