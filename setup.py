@@ -11,7 +11,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 with open('requirements.txt') as requirements_file:
-    requirements = requirements_file.read()
+    requirements = requirements_file.read().splitlines()
 
 # requirements = ['Click>=7.0', 'scikit-learn>=0.24.2', 'pandas>=0.25.0', 'numpy>=1.13.3', 'cython>=0.28.5', 'scipy>=0.19.1']
 
