@@ -12,7 +12,7 @@ To install nlon-py, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install nlon-py
+    $ pip install nlon_py
 
 This is the preferred method to install nlon-py, as it will always install the most recent stable release.
 
