@@ -4,7 +4,6 @@ from time import time
 import matplotlib.pyplot as plt
 import numpy as np
 from joblib import dump, load
-from sklearn.preprocessing import Normalizer, StandardScaler
 
 from nlon_py.data.make_data import get_category_dict, loadDataFromFiles
 from nlon_py.features import (Character3Grams, ComputeFeatures,
@@ -40,7 +39,7 @@ def buildDefaultModel():
     print("[buildDefaultModel] building...")
     t0 = time()
     clf = NLoNModel(X, y, model_name='SVM')
-    dump(clf, modelfile)
+    dump(clf, modelfile, compress='zlib')
     print(f"[buildDefaultModel] done in {(time() - t0):0.3f}s")
 
 
@@ -68,7 +67,6 @@ def searchParams():
     print("[searchParams] start...")
     t0 = time()
     X, y = loadDefaultData()
-    X = Normalizer().fit_transform(X)
     X = X[::2]
     y = y[::2]
     # print(np.where(y == 6))
@@ -93,16 +91,19 @@ def plotDistribution():
     plt.savefig('Distribution.png')
 
 
-def transform_data(X):
-    return ConvertFeatures(ComputeFeatures(X, TriGramsAndFeaturesForTest))
+def transform_data(X, features=None):
+    if features is None:
+        features = TriGramsAndFeaturesForTest
+    X = ConvertFeatures(ComputeFeatures(X, features))
+    return X
 
 
 def buildDefaultData():
     print("[buildDefaultData] building...")
     t0 = time()
     X, y = loadDataFromFiles()
-    X = transform_data(X)
-    dump(dict(data=X, target=y), datafile)
+    X = transform_data(X, features=TriGramsAndFeatures)
+    dump(dict(data=X, target=y), datafile, compress='zlib')
     print(f"[buildDefaultData] done in {(time() - t0):0.3f}s")
 
 

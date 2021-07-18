@@ -40,7 +40,7 @@ trigram_vectorizer.preprocessor = preproc
 def Character3Grams(text):
     data = pd.DataFrame.sparse.from_spmatrix(
         trigram_vectorizer.fit_transform(text))
-    dump(trigram_vectorizer, vecfile)
+    dump(trigram_vectorizer, vecfile, compress='zlib')
     return data
 
 

@@ -103,4 +103,3 @@ ENV/
 
 # IDE settings
 .vscode/
-nlon_py/data/*.joblib
