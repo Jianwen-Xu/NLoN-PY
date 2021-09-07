@@ -5,10 +5,8 @@ nlon-py
 
 .. image:: https://img.shields.io/pypi/v/nlon-py.svg
         :target: https://pypi.python.org/pypi/nlon-py
-
-.. image:: https://travis-ci.com/Jianwen-Xu/NLoN-PY.svg
-        :target: https://travis-ci.com/Jianwen-Xu/nlon-py
-
+.. image:: https://app.travis-ci.com/Jianwen-Xu/NLoN-PY.svg?branch=master
+        :target: https://app.travis-ci.com/Jianwen-Xu/NLoN-PY
 .. image:: https://readthedocs.org/projects/nlon-py/badge/?version=latest
         :target: https://nlon-py.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
