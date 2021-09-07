@@ -2,7 +2,7 @@
 
 __author__ = """Jianwen Xu"""
 __email__ = 'xujianwen37@gmail.com'
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 from nlon_py.data.build_model import (buildDefaultData, buildDefaultModel,
                                       compareDifModels, loadDefaultData,
