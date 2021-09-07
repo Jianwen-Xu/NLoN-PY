@@ -136,3 +136,23 @@ def TriGramsAndFeatures(text):
 
 def TriGramsAndFeaturesForTest(text):
     return pd.concat([Character3GramsForTest(text), FeatureExtraction(text)], axis=1)
+
+
+class NLoNFeatures:
+    def fit_transform(X, feature_type='C3_FE'):
+        if feature_type == 'C3':
+            features = Character3Grams
+        elif feature_type == 'FE':
+            features = FeatureExtraction
+        elif feature_type == 'C3_FE':
+            features = TriGramsAndFeatures
+        return ConvertFeatures(ComputeFeatures(X, features))
+
+    def transform(X, feature_type='C3_FE'):
+        if feature_type == 'C3':
+            features = Character3GramsForTest
+        elif feature_type == 'FE':
+            features = FeatureExtraction
+        elif feature_type == 'C3_FE':
+            features = TriGramsAndFeaturesForTest
+        return ConvertFeatures(ComputeFeatures(X, features))
