@@ -9,6 +9,7 @@ from pandas.core import groupby
 from sklearn.model_selection import train_test_split
 
 from nlon_py.data.make_data import get_category_dict, loadDataFromFiles
+from nlon_py.data.original_data.make_ori_data import loadOriDataFromFiles
 from nlon_py.features import NLoNFeatures
 from nlon_py.model import (CompareModels, NLoNModel, NLoNPredict,
                            SearchParams_SVM, ValidateModel,
@@ -17,6 +18,8 @@ from nlon_py.model import (CompareModels, NLoNModel, NLoNPredict,
 pwd_path = os.path.abspath(os.path.dirname(__file__))
 modelfile = os.path.join(pwd_path, 'default_model.joblib')
 datafile = os.path.join(pwd_path, 'default_data.joblib')
+ori_datafile = os.path.join(pwd_path, 'original_data.joblib')
+ori_modelfile = os.path.join(pwd_path, 'original_model.joblib')
 test_corpus = ['This is natural language.',
                'public void NotNaturalLanguageFunction(int i, String s)',
                '''Exception in thread "main" java.lang.NullPointerException
@@ -128,6 +131,49 @@ def loadDefaultData(n_classes=7):
     print(f"[loadDefaultData] done in {(time() - t0):0.3f}s")
     return X, np.array(y)
 
+def buildOriginalData():
+    print("[buildOriginalData] building...")
+    t0 = time()
+    X,y = loadOriDataFromFiles()
+    dump(dict(data=X, target=y), ori_datafile, compress='zlib')
+    print(f"[buildOriginalData] done in {(time() - t0):0.3f}s")
+
+def loadOriginalData():
+    print("[loadOriginalData] loading...")
+    t0 = time()
+    data_dict = load(ori_datafile)
+    X = data_dict['data']
+    y = data_dict['target']
+    print(f"[loadOriginalData] done in {(time() - t0):0.3f}s")
+    return X, np.array(y)
+
+def buildOriginalModel(features='C3_FE', stand=True, kbest=True):
+    X, y = loadOriginalData()
+    print("[buildOriginalModel] building...")
+    t0 = time()
+    clf = NLoNModel(X, y, features, model_name='SVM', stand=stand, kbest=kbest, n_classes=2)
+    dump(clf, ori_modelfile, compress='zlib')
+    print(f"[buildOriginalModel] done in {(time() - t0):0.3f}s")
+
+
+def loadOriginalModel():
+    return load(ori_modelfile)
+
+
+def testOriginalModel():
+    model = loadOriginalModel()
+    print(NLoNPredict(model, test_corpus))
+
+
+def validOriginalModel():
+    print("[validOriginalModel] start...")
+    t0 = time()
+    X, y = loadOriginalData()
+    print(f"[validOriginalModel] load data in {(time() - t0):0.3f}s")
+    model = loadOriginalModel()
+    print(f"[validOriginalModel] load model in {(time() - t0):0.3f}s")
+    ValidateModel(model, X, y)
+    print(f"[validOriginalModel] done in {(time() - t0):0.3f}s")
 
 def plot_model_roc(n_classes=2):
     model = loadDefaultModel()
@@ -153,3 +199,9 @@ def plot_cm(n_classes=5):
     print(f"[plot_cm] predict done in {(time() - t0):0.3f}s")
     plot_confusion_matrix(y_test, y_pred, n_classes)
     print(f"[plot_cm] done in {(time() - t0):0.3f}s")
+
+def plot_ori_model_roc():
+    model = loadOriginalModel()
+    X, y = loadOriginalData()
+    X = NLoNFeatures.transform(X)
+    plot_twoclass_roc(model, X, y, cv=10)
