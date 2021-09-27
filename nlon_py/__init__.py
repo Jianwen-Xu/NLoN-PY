@@ -25,7 +25,7 @@ from nlon_py.data.build_model import (buildDefaultData,buildOriginalData, buildD
 # buildOriginalData()
 # loadOriginalData()
 # buildOriginalModel()
-plot_ori_model_roc()
+# plot_ori_model_roc()
 # plotDistribution(n_classes=5)
 # searchParams(n_classes=5)
 # plot_model_roc(n_classes=5)

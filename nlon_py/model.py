@@ -66,11 +66,11 @@ def NLoNModel(X, y, features='C3_FE', model_name='SVM', stand=True, kbest=True, 
         auc = roc_auc_score(y_test,y_score[:,1])
     print(f'{model_name}: {score:.2f} accuracy')
     print(f'F1: {f1:.3f}, AUC: {auc:.3f}')
-    # if n_classes > 2:
-    #     plot_multiclass_roc(nlon_clf, X_test, y_test, n_classes)
-    # else:
-    #     plot_twoclass_roc(nlon_clf, X, y, cv=10)
-    # plot_confusion_matrix(y_test, y_pred, n_classes)
+    if n_classes > 2:
+        plot_multiclass_roc(nlon_clf, X_test, y_test, n_classes)
+    else:
+        plot_twoclass_roc(nlon_clf, X, y, cv=10)
+    plot_confusion_matrix(y_test, y_pred, n_classes)
     return nlon_clf
 
 
