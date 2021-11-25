@@ -131,27 +131,27 @@ def loadDefaultData(n_classes=7):
     print(f"[loadDefaultData] done in {(time() - t0):0.3f}s")
     return X, np.array(y)
 
-def buildOriginalData():
-    print("[buildOriginalData] building...")
+def buildOriginalData(source=''):
+    # print("[buildOriginalData] building...")
     t0 = time()
-    X,y = loadOriDataFromFiles()
+    X,y = loadOriDataFromFiles(source)
     dump(dict(data=X, target=y), ori_datafile, compress='zlib')
-    print(f"[buildOriginalData] done in {(time() - t0):0.3f}s")
+    # print(f"[buildOriginalData] done in {(time() - t0):0.3f}s")
 
 def loadOriginalData():
-    print("[loadOriginalData] loading...")
+    # print("[loadOriginalData] loading...")
     t0 = time()
     data_dict = load(ori_datafile)
     X = data_dict['data']
     y = data_dict['target']
-    print(f"[loadOriginalData] done in {(time() - t0):0.3f}s")
+    # print(f"[loadOriginalData] done in {(time() - t0):0.3f}s")
     return X, np.array(y)
 
-def buildOriginalModel(features='C3_FE', stand=True, kbest=True):
+def buildOriginalModel(model_name='SVM',features='C3_FE', stand=True, kbest=True):
     X, y = loadOriginalData()
-    print("[buildOriginalModel] building...")
+    # print("[buildOriginalModel] building...")
     t0 = time()
-    clf = NLoNModel(X, y, features, model_name='SVM', stand=stand, kbest=kbest, n_classes=2)
+    clf = NLoNModel(X, y, features, model_name, stand=stand, kbest=kbest, n_classes=2)
     dump(clf, ori_modelfile, compress='zlib')
     print(f"[buildOriginalModel] done in {(time() - t0):0.3f}s")
 
@@ -165,14 +165,14 @@ def testOriginalModel():
     print(NLoNPredict(model, test_corpus))
 
 
-def validOriginalModel():
-    print("[validOriginalModel] start...")
+def validOriginalModel(features='C3_FE'):
+    # print("[validOriginalModel] start...")
     t0 = time()
     X, y = loadOriginalData()
-    print(f"[validOriginalModel] load data in {(time() - t0):0.3f}s")
+    # print(f"[validOriginalModel] load data in {(time() - t0):0.3f}s")
     model = loadOriginalModel()
-    print(f"[validOriginalModel] load model in {(time() - t0):0.3f}s")
-    ValidateModel(model, X, y)
+    # print(f"[validOriginalModel] load model in {(time() - t0):0.3f}s")
+    ValidateModel(model, X, y,isOri=True, feature_type=features)
     print(f"[validOriginalModel] done in {(time() - t0):0.3f}s")
 
 def plot_model_roc(n_classes=2):

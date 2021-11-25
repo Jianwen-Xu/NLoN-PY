@@ -20,10 +20,15 @@ def get_category_dict():
     return category_dict
 
 
-def loadOriDataFromFiles():
+def loadOriDataFromFiles(source):
     X = []
     y = []
-    for source, filename in filenames.items():
+    files = {}
+    if source != '':
+        files = {source:filenames[source]}
+    else:
+        files = filenames
+    for source, filename in files.items():
         data = pd.read_csv(os.path.join(pwd_path, filename),
                            header=0, encoding="UTF-8", nrows=2000)
         data.insert(0, 'Source', source, True)

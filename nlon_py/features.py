@@ -1,3 +1,4 @@
+from functools import total_ordering
 import os
 import re
 import string
@@ -26,7 +27,7 @@ def preprocess(text, tokenizer=None):
 
 
 trigram_vectorizer = CountVectorizer(ngram_range=(
-    3, 3), stop_words=preprocess(stop_words_list))
+    3, 3), stop_words=preprocess(stop_words_list), analyzer='char')
 default_preproc = trigram_vectorizer.build_preprocessor()
 
 
@@ -38,8 +39,8 @@ trigram_vectorizer.preprocessor = preproc
 
 
 def Character3Grams(text):
-    data = pd.DataFrame.sparse.from_spmatrix(
-        trigram_vectorizer.fit_transform(text))
+    tmp = trigram_vectorizer.fit_transform(text)
+    data = pd.DataFrame.sparse.from_spmatrix(tmp)
     dump(trigram_vectorizer, vecfile, compress='zlib')
     return data
 
@@ -91,10 +92,53 @@ class Features:
     def StartWithAt(self, text):
         return 1 if text.lstrip().startswith('@') else 0
 
+class FeaturesOri:
+    def __init__(self):
+        self.CountRegexMatches = lambda text, regex: len(re.findall(regex, text))
+        self.Tokenize1 = lambda text: re.split("\\s+", text.lower())
+        self.Tokenize2 = lambda text: text.lower().split()
+        self.Stopwords = lambda text: sum(el in preprocess(stop_words_list) for el in text)
+        self.Caps = lambda text: self.CountRegexMatches(text, "[A-Z]")
+        self.SpecialChars = lambda text: self.CountRegexMatches(text, "[^a-zA-Z\\d\\s]")
+        self.Numbers = lambda text: self.CountRegexMatches(text, "[\\d]") 
+        self.Words = lambda text: self.CountRegexMatches(text, "[\\s+]") + 1
+
+    def CapsRatio(self, text):
+        return self.Caps(text) / len(text)
+
+    def SpecialCharsRatio(self, text):
+        return self.SpecialChars(text) / len(text)
+
+    def NumbersRatio(self, text):
+        return self.Numbers(text) / len(text)
+
+    def AverageWordLength(self, text):
+        return len(text) / self.Words(text)
+
+    def StopwordsRatio1(self, text):
+        return self.Stopwords(self.Tokenize1(text)) / self.Words(text)
+
+    def StopwordsRatio2(self, text):
+        return self.Stopwords(self.Tokenize2(text)) / self.Words(text)
+
+    def LastCharCode(self, text):
+        return 1 if (text.endswith((')', '{', ';')) and not(text.endswith((':-)', ';-)', ':)', ';)', ':-(', ':(')))) else 0
+
+    def LastCharNL(self, text):
+        return 1 if text.endswith(('.', '!', '?', ':', ',')) else 0
+
+    def First3CharsLetter(self, text):
+        return len([c for c in text.replace(' ', '')[:3] if c.isalpha()])
+
+    def Emoticons(self, text):
+        return len([c for c in [':-)', ';-)', ':)', ';)', ':-(', ':('] if c in text])
+
+    def StartWithAt(self, text):
+        return 1 if text.lstrip().startswith('@') else 0
 
 def FeatureExtraction(text):
 
-    features = Features()
+    features = FeaturesOri()
     features_dict = {'ratio.caps': features.CapsRatio,
                      'ratio.specials': features.SpecialCharsRatio,
                      'ratio.numbers': features.NumbersRatio,

@@ -22,15 +22,17 @@ from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from glmnet import LogitNet
+from xgboost import XGBClassifier
 from nlon_py.data.make_data import get_category_dict
 from nlon_py.features import NLoNFeatures
 
-names = ["Naive Bayes", "Nearest Neighbors", "SVM", "glmnet"]
+names = ["Naive Bayes", "Nearest Neighbors", "SVM", "glmnet", "XGB"]
 
 classifiers = [GaussianNB(),
                KNeighborsClassifier(),
                SVC(kernel='rbf', gamma=0.01, C=10, probability=True, random_state=0),
-               LogitNet()]
+               LogitNet(),
+               XGBClassifier()]
 
 dict_name_classifier = dict(zip(names, classifiers))
 
@@ -52,25 +54,26 @@ def NLoNModel(X, y, features='C3_FE', model_name='SVM', stand=True, kbest=True, 
         pipeline_steps.append(('selectkbest', anova_filter))
     pipeline_steps.append(('clf', clf))
     nlon_clf = Pipeline(steps=pipeline_steps)
-
-    X_train = NLoNFeatures.fit_transform(X_train, feature_type=features)
-    nlon_clf.fit(X_train, y_train)
-    X_test = NLoNFeatures.transform(X_test, feature_type=features)
-    score = nlon_clf.score(X_test, y_test)
-    y_pred = nlon_clf.predict(X_test)
-    y_score = nlon_clf.predict_proba(X_test)
-    f1 = f1_score(y_test, y_pred, average='weighted')
-    if n_classes > 2:
-        auc = roc_auc_score(y_test, y_score, multi_class='ovr')
-    else:
-        auc = roc_auc_score(y_test,y_score[:,1])
-    print(f'{model_name}: {score:.2f} accuracy')
-    print(f'F1: {f1:.3f}, AUC: {auc:.3f}')
-    if n_classes > 2:
-        plot_multiclass_roc(nlon_clf, X_test, y_test, n_classes)
-    else:
-        plot_twoclass_roc(nlon_clf, X, y, cv=10)
-    plot_confusion_matrix(y_test, y_pred, n_classes)
+    # print(nlon_clf)
+    # X_train = NLoNFeatures.fit_transform(X_train, feature_type=features)
+    # nlon_clf.fit(X_train, y_train)
+    # X_test = NLoNFeatures.transform(X_test, feature_type=features)
+    # score = nlon_clf.score(X_test, y_test)
+    # y_pred = nlon_clf.predict(X_test)
+    # y_score = nlon_clf.predict_proba(X_test)
+    # f1 = f1_score(y_test, y_pred, average='macro')
+    # if n_classes > 2:
+    #     auc = roc_auc_score(y_test, y_score, multi_class='ovr')
+    # else:
+    #     auc = roc_auc_score(y_test,y_score[:,1])
+    # print(f'{model_name}: {score:.2f} accuracy')
+    # print(f'F1: {f1:.3f}, AUC: {auc:.3f}')
+    # if n_classes > 2:
+    #     plot_multiclass_roc(nlon_clf, X_test, y_test, n_classes)
+    # else:
+    #     X = NLoNFeatures.transform(X, feature_type=features)
+    #     plot_twoclass_roc(nlon_clf, X, y, cv=10)
+    # plot_confusion_matrix(y_test, y_pred, n_classes)
     return nlon_clf
 
 
@@ -147,15 +150,28 @@ def CompareModels(X, y, cv=None):
             print()
 
 
-def ValidateModel(model, X, y):
-    X = NLoNFeatures.transform(X)
-    scores = cross_validate(
-        model, X, y, cv=10, scoring=('roc_auc_ovr', 'f1_micro'))
-    auc = scores['test_roc_auc_ovr']
-    f1 = scores['test_f1_micro']
-    print('10-fold cross-validation')
+def ValidateModel(model, X, y, isOri=False, feature_type='C3_FE'):
+    X = NLoNFeatures.transform(X, feature_type)
+    if isOri:
+        scores = cross_validate(
+            model, X, y, cv=10, scoring=('roc_auc','precision','recall','f1_macro'))
+        auc = scores['test_roc_auc']
+        prc=scores['test_precision']
+        rec=scores['test_recall']
+        f1 = scores['test_f1_macro']
+
+    else:    
+        scores = cross_validate(
+            model, X, y, cv=10, scoring=('roc_auc_ovr','precision','recall','f1_macro'))
+        auc = scores['test_roc_auc_ovr']
+        prc=scores['test_precision']
+        rec=scores['test_recall']
+        f1 = scores['test_f1_macro']
+    # print('10-fold cross-validation')
     print(f'AUC: mean {auc.mean():.3f}, std {auc.std():.3f}')
     print(f'F1: mean {f1.mean():.3f}, std {f1.std():.3f}')
+    print(f'precision: mean {prc.mean():.3f}, std {prc.std():.3f}')
+    print(f'recall: mean {rec.mean():.3f}, std {rec.std():.3f}')
 
 
 def NLoNPredict(clf, X, features='C3_FE'):

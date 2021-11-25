@@ -24,3 +24,4 @@ six==1.16.0
 threadpoolctl==2.1.0
 toml==0.10.2
 glmnet==2.2.1
+xgboost==1.4.2
