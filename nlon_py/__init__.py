@@ -9,7 +9,8 @@ from nlon_py.data.build_model import (buildDefaultData,buildOriginalData, buildD
                                       compareDifModels, loadDefaultData,loadOriginalData,
                                       plot_cm, plot_model_roc,plot_ori_model_roc,
                                       plotDistribution, searchParams,validOriginalModel,
-                                      testDefaultModel, validDefaultModel,buildOriginalModel)
+                                      testDefaultModel, validDefaultModel,buildOriginalModel,
+                                      buildExtendData, validExtendModel,buildExtendModel)
 from nlon_py.features import NLoNFeatures,FeaturesOri
 # from nlon_py.data.make_data import plotDistribution
 # buildDefaultModel(n_classes=5)
@@ -54,3 +55,11 @@ from nlon_py.features import NLoNFeatures,FeaturesOri
 # print('FE-----------------------')
 # X_FE = NLoNFeatures.fit_transform(X,feature_type='FE')
 # print(X_FE)
+for model in ['glmnet']:  
+    for source in ['mozilla','kubernetes','lucene']:
+        print('-- build source: '+ source)
+        buildExtendData(source)
+        for feature in ['FE', 'C3', 'C3_FE']:
+            print('--- build features: '+ feature)
+            buildExtendModel(model_name=model, features=feature, stand=False, kbest=False)
+            validExtendModel(features=feature)

@@ -1,0 +1,501 @@
+Source,Text,Class
+kubernetes,https://kubernetes.io/docs/concepts/services-networking/service/,URL
+kubernetes,kubectl get pods --all-namespaces -a,Code
+kubernetes,does kubectl delete pod busybox work?,NL
+kubernetes,busybox 0/1 Error 0 9m,Other
+kubernetes,inside as a service?,NL
+kubernetes,nice! thank you for the link!,NL
+kubernetes,@kdockery thanks!,NL
+kubernetes,"So, when I exec the px aux again, a new instance of my script is running over other PID and it looks working fine(The behavior is ok)",NL
+kubernetes,adapt the script,NL
+kubernetes,The answers is depends which overlay you're using,NL
+kubernetes,Check out kubectl drain,NL
+kubernetes,shoulod I not be able to use a existing public ip in azure when creatin a traefik ingress ?,NL
+kubernetes,Do you have a guide? Upgrade kubernetes 1.5 to 1.6,NL
+kubernetes,# kubectl get nodes | wc -l,Code
+kubernetes,@U7FCJNU58 Are you certain you are targeting the right port? (5000),NL
+kubernetes,okay strangely that worked,NL
+kubernetes,An ingress is a resource used by kubernetes to indicate a configuration for inbound traffic. An ingress controller is a thing that runs inside of kubernetes and directs traffic based on the ingress resources that have been created.,NL
+kubernetes,Max replicas: 15,NL
+kubernetes,"Right, this exist, but when i put traefik-web-ui.kube-system in browser show DNS_PROBE_FINISHED_NXDOMAIN",Mixed
+kubernetes,"Client Version: version.Info{Major:1, Minor:8, GitVersion:v1.8.1, GitCommit:f38e43b221d08850172a9a4ea785a86a3ffa3b3a, GitTreeState:clean, BuildDate:2017-10-11T23:27:35Z, GoVersion:go1.8.3, Compiler:gc, Platform:linux/amd64} Error from server (Forbidden): unknown",Other
+kubernetes,"Any chance I can sneak a look at itI was tryna think about that earlier, but I'm not sure where to begin.",NL
+kubernetes,Kubernetes,NL
+kubernetes,8h 12m 3 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 4,Other
+kubernetes,name: my-app,Code
+kubernetes,"with service is impossible ? because when I use node ip, load balance not work, for example",NL
+kubernetes,what is -l for?,NL
+kubernetes,"Hi. I have pods with multiple containers (app, http proxy, sql proxy). When pod is terminated (for rolling update for example), the http proxy gracefully stops. But after it stops the other containers not always are able to do it and just stuck around for whole grace period (30s). Is it possible to force kill other containers when one of the containers stops?",NL
+kubernetes,so it must use encapsulation then?,NL
+kubernetes,"since the file is being mounted into the container, how should i wait until everything is settle, then run the command?",NL
+kubernetes,not so hard though,NL
+kubernetes,@U7MP7D5EV Can you provide the full output of the describe command?,NL
+kubernetes,it's set to 1.1,NL
+kubernetes,"hm, manual provisioning is probably a cause of problem... I'll take a closer look, @lukas.dolezal thanks",NL
+kubernetes,"Ok, another issue now. The service that I have in my yaml file got created while the deployment was failing. Now when I try to create the whole thing again, kubectl tells me Error from server (AlreadyExists): error when creating kube-test-image.yaml: services foo-test already exists",Mixed
+kubernetes,ok you are exposing nginx to port 80 in the worker node IP address,NL
+kubernetes,ingress.kubernetes.io/ssl-passthrough: true,Code
+kubernetes,I have the following deployment:,NL
+kubernetes,as flag in,NL
+kubernetes,ha,NL
+kubernetes,"Its ok, thank you for consideration, glad i could help",NL
+kubernetes,namespace: default,Code
+kubernetes,namespace: app,Code
+kubernetes,"At that point, you'd have to use the external IP/hostname for the desired cluster/service.",NL
+kubernetes,"ImageGCFailed (combined from similar events): wanted to free 17473497497 bytes, but freed 0 bytes space with errors in image deletion: [rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 1d78bc06c4ab (must be forced) - image is being used by stopped container d1ff473beb37, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete a65a923e4aef (must be forced) - image is being used by stopped container 89e9555087f7, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 3e88bee4496f (must be forced) - image is being used by stopped container df64f142b1bd, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 7daecc4456f7 (must be forced) - image is being used by stopped container c4d65d28d952, rpc error: code = Unknown desc = Error response from daemon: conflict: unable to delete 2d696327ab2e (cannot be forced) - image has dependent child images]",Mixed
+kubernetes,"@roffe, insecure-skip-tls-verify: true , it is just when you use TLS+token, isn't it?",Mixed
+kubernetes,sorry,NL
+kubernetes,you've created a definition for where the traffic should go but nothing is being done with that traffic,NL
+kubernetes,"Hello guys, Im reading this https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/ , is that repo still valid to fetch the latest kubenetes release 1.8?",Mixed
+kubernetes,You can just put both hosts in,NL
+kubernetes,In your kube config file try to base64 decode certificate-authoririty,NL
+kubernetes,What's up guys. You know how when you do kubectl get pods you get something that looks like:,NL
+kubernetes,progress indeed. I get deployement/service configured now. But I still don't see anything with kubectl get all,NL
+kubernetes,ya. I am using preemtible vms on gc and need to monitor node level,NL
+kubernetes,think I have to try it first,NL
+kubernetes,I should add it in the manifest?,NL
+kubernetes,how I can do that,NL
+kubernetes,"the count, if at all",NL
+kubernetes,Have you tried rook?,NL
+kubernetes,not hard,NL
+kubernetes,"kdockery, https://bpaste.net/show/5ee3626fbba7 here's what I have! The Endpoint still points to 10.254.0.1, which is the svc/kubernetes (I pasted the description of that one as well)",Mixed
+kubernetes,Interesting.,NL
+kubernetes,My config file has been updated to my namespace,NL
+kubernetes,resources:,NL
+kubernetes,"huh. okay, I'll give that a shot. I'd have thought the online validator would have picked that up. thanks!",NL
+kubernetes,~~~ spec: containers: - image: gcr.io/my-project/my-app:latest name: my-app securityContext: privileged: true capabilities: add: - SYS_ADMIN lifecycle: postStart: exec: command: - sh - -c - > su www-root,Other
+kubernetes,"I see, what makes your dev env so big? is it the amount of services/deployments/pods/containers or data or?",NL
+kubernetes,"don't wake me up at 2AM if, by the time I log in, everything has recovered.",NL
+kubernetes,storage: 20Gi,NL
+kubernetes,and have the contents of foo as a file from the config maap in a pod ?,NL
+kubernetes,ERROR: logging before flag.Parse: W1026 21:48:02.659312 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:33876->127.0.0.1:53: read: connection refused,Error
+kubernetes,nginx,NL
+kubernetes,@U7N4JEF9U change it to 'cgroupfs' as docker is using that driver,NL
+kubernetes,"not sure I can tell you how to debug the binary kube-proxy, but I've seen those responses while the containers in the relevant Pod are still starting up. Double check the state of the pod with kubectl get pods or kubectl describe pod <podname> to make sure the containers are fully operational and in the state Running. Until they're set up, this error could occur simply because kube-proxy can't make the connection over the internal Pod network in your cluster.",Mixed
+kubernetes,google it!,
+kubernetes,"okay, will do",NL
+kubernetes,docker inspect,Code
+kubernetes,I have 3 masters and all of them have effect: NoSchedule,NL
+kubernetes,interesting. I didn't know GKE utilized an ingress controller.,NL
+kubernetes,(I don't have an answer to your question fwiw),NL
+kubernetes,@kdockery Should that work with a curl request?,NL
+kubernetes,- host: labels.foo.eu,Code
+kubernetes,https://gist.github.com/mikejk8s/97322f4314fe4f89d62fb4f79fffa1aa,URL
+kubernetes,"error: error validating nginxbuyflow-servicenewnodeport.yml: error validating data: field spec.ports[0].port for v1.ServicePort is required; if you choose to ignore these errors, turn validation off with --validate=false",Mixed
+kubernetes,"ah crud. Thank you, apologies.",NL
+kubernetes,@mario for namespaces I just use -n <namespace> in my commands,Mixed
+kubernetes,user: client-certificate-data: <base64-encoded-cert> client-key-data: <base64-encoded-key>,Other
+kubernetes,you're welcome,NL
+kubernetes,kubectl version --short,Code
+kubernetes,are you mounting that volume the same way as the emptyDir?,NL
+kubernetes,readinessProbe:,NL
+kubernetes,"We've just added a node to our cluster. We've now got 1 Master 2 nodes, (I'm still trying to get around to HA......Asking for additional resources is like trying to bleed a rock.) Master and Node 1 have 2TB RAID 10 Disks, and 32GB Ram. Node 2, which I just added this week has 2TB RAID 10 Disks and 64GB ram.",NL
+kubernetes,"@U7P7RBJEA hmm that should do the trick$ kubectl get svc --namespace kube-system | grep traefik traefik-ingress-service NodePort 10.233.54.87 <none> 80:32077/TCP,8080:30175/TCP 29d traefik-web-ui ClusterIP 10.233.52.169 <none> 80/TCP 29d $ curl -L 10.233.52.169:80 <!doctype html> <html ng-app=traefik>",Mixed
+kubernetes,Oct 26 16:42:20 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.999680 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54068: remote error: tls: bad certificate,Error
+kubernetes,@masteinhauser You want -> @liggitt,NL
+kubernetes,@danb https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ may help,Mixed
+kubernetes,kris-mbp:virtualbox-cluster kris$ cat pv-test.yaml,Code
+kubernetes,"/usr/sbin/nginx,-s,quit",Code
+kubernetes,"thx a lot folks, it workedI read thro the docs and they had mentioned that entrypoint is equivalent to command in kubernetes and since docker run -it --entrypoint /bin/bash worked, I assumes it was correct",Mixed
+kubernetes,What is the kube-test-image running?,NL
+kubernetes,gcloud container clusters get-credentials $CLUSTER_NAME_STG,Code
+kubernetes,"@U7L73A2RE FYI, I just checked the docs on what you stated and it sounds like that shouldn't be allowed, but it definitely seems like it could be based around the ClusterRole scope versus a RoleBinding scope",NL
+kubernetes,Can I instruct deployment to deploy pods on all nodes matching label=X rather than specifying replication factor?,NL
+kubernetes,@3molo Hi Mate How I can do that?,NL
+kubernetes,The most filled disk is 83%. still 20G free,NL
+kubernetes,root 560 0.0 0.2 34424 2796 ? R+ 16:59 0:00 ps aux,Other
+kubernetes,@carldanley its a bug in the doc. should be /nginx-ingress-controller --version,Mixed
+kubernetes,"@U7Q9UM449 Hmm I've not tried connecting with Wifi Adapters - not the best way of doing it imo. Hardwired ethernet connectors will give you the best internet speeds, and unless you have a fool in your office, they won't be unplugged.",NL
+kubernetes,"Yeah not hard, just not super dynamic. I think I can do some bash foo to automate most of it though",NL
+kubernetes,ERROR: logging before flag.Parse: W1026 21:48:07.659838 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57985->127.0.0.1:53: read: connection refused,Error
+kubernetes,E1026 22:03:50.476932 1 reflector.go:199] k8s.io/dns/vendor/k8s.io/client-go/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.210.0.1:443/api/v1/endpoints?resourceVersion=0: dial tcp 10.210.0.1:443: i/o timeout,Error
+kubernetes,In your kube-apiserver have you setup client-ca-file?,NL
+kubernetes,So what I did is added /etc/systemd/system/docker.service.d/docker-thinpool.conf --exec-opt native.cgroupdriver=systemd Then Restart Docker Deamon Then reset kubeadm then fire kubeadm init,Mixed
+kubernetes,"heh, newbie here, sorry",NL
+kubernetes,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start.To debug that, I thought I'll override the entrypoint thro kubernetes spec by command: [/bin/bash]. But still crashes.....am I doing it the right way?",Mixed
+kubernetes,ohhh,NL
+kubernetes,starting container process caused \\\exec: \\\\\\\/bin/sh\\\\\\\: stat /bin/sh: no such file or directory\\\\\n\,Mixed
+kubernetes,--pod-manifest-path=/etc/kubernetes/manifests \,Code
+kubernetes,"@likered bash is not in the container,.. try sh",NL
+kubernetes,"My cluster have 1 master and 2 nodes, but in local network",NL
+kubernetes,"@pl @walteraa uh i expected it wouldn't be so complex (vs simple, not hard).",NL
+kubernetes,https://kubernetes.io/docs/concepts/cluster-administration/networking/,URL
+kubernetes,"I've just added a new namespace, and tried to helm install stuff there, and got the error Error: release jenkins-stg failed: User system:serviceaccount:kube-system:default cannot get namespaces in the namespace jenkins. (get namespaces jenkins). I've looked through the RBAC docs, but don't see anything about needing to add perms to the default role for new namespaces. Has anyone run into this before?",Mixed
+kubernetes,limits:,NL
+kubernetes,"hmm, Error from server: Get https://sugi:10250/containerLogs/default/my-nginx-217742694-7xh18/my-nginx: dial tcp 127.0.1.1:10250: getsockopt: connection refused",Mixed
+kubernetes,Arghhh... not exactly the automated approach I was hoping for,NL
+kubernetes,lifecycle:,NL
+kubernetes,this is the sync tool,NL
+kubernetes,FSType: ext4,Other
+kubernetes,"with curl on :5000 I get connection refused, and :31974 waits",Mixed
+kubernetes,Try looking at the logs for the pod with kubectl logs my-nginx-217742694-7xh18,Mixed
+kubernetes,What are everyones thoughts on https://www.theverge.com/2017/10/25/16538834/amazon-key-in-home-delivery-unlock-door-prime-cloud-cam-smart-lock,Mixed
+kubernetes,"Hello everybody, did someone face hanging while k8s starting when you disconnect Ethernet cable on a master Node? If I connect the Ethernet cable and start the machine, everything is ok. I'm running on centos 7.4 and k8s 1.8.1. Looking at logs I found ca-registration failure and etcd container is down. Any suggestion? Tks in adavamce",NL
+kubernetes,I seem many file for docker.service,NL
+kubernetes,"Ty, yeah I noticed that. Was hoping to avoid creating multiple files. This way I could create an empty template file for people who manage secrets and I don't have to show them how to base64 encode the values (I'd like the --from-file option do it for me)",NL
+kubernetes,"You can use JDBC like jdbc:postgresql://pgmaster.default.svc.cluster.local:5432/dbname to connect in the postgres pod, but the POD A *will not able* to perform a ICMP request to Pod B if the Pod B through the service.",Mixed
+kubernetes,I see,NL
+kubernetes,The contrib one. I think it's miles better. (And at least in my experience I haven't had to change any config for WebSockets to work.),NL
+kubernetes,"https://kubernetes.io/docs/concepts/cluster-administration/networking/#summary has a good overview - in short, k8s assumes that all pods have an IP and all pod IPs are routable from the whole cluster. The various networking options can make this happen in different ways.",Mixed
+kubernetes,"kdockery, maybe you can help with another issue that I pasted earlier then, https://bpaste.net/show/321a1140ae59 :-deg",Mixed
+kubernetes,@kwladyka You should use jq lib,NL
+kubernetes,"btw u were right. k8s' command is docker's entrypoint, but u probably were missing the cmd itself",NL
+kubernetes,how do you configure them then? Kubes allows you to attach PD manually in pod,NL
+kubernetes,"Hey, @foxie. Is there a specific issue you had with it? We're considering testing soon.",NL
+kubernetes,Does anyone know why I would keep getting NodeUnderDiskPressure as the reason a pod can't be deployed? that particular node doesn't have any disk activity,NL
+kubernetes,command: $x,Code
+kubernetes,"@liggetm oh yay, happy to chat wherever makes the most sense. Happy to discuss use-case.",NL
+kubernetes,neither*,NL
+kubernetes,pid /run/nginx.pid;,Code
+kubernetes,22h 1s 9 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 15; reason: Current number of replicas above Spec.MaxReplicas,Mixed
+kubernetes,I did what you told me but it seems it didn't work either,NL
+kubernetes,"hi guys, I'm trying to increase the size of an EBS volume. Anyone have any tips on how I should go about copying over existing data to a new larger EBS volume and then changing the PVC to use the new larger volume?",NL
+kubernetes,"@dastan i believe it, or kubelet may try to enable the module",NL
+kubernetes,"I need to use prometheus for that so I guess I have to change the port to 9090, right?",NL
+kubernetes,you can try simple docker run imagename bash -c /tmp/setup.sh,Mixed
+kubernetes,"Guys, I'm at my wits end. I've mounted local storage as (/app/session) and I can mkdir a folder (/app/session/bar), but not change its permission and I don't have permission to the folder I just made, so I can't make another sub-folder (/app/session/bar/foo). *mounted as so:* $ minikube mount /sdl/mount:/mount-9p *container spec:* volumeMounts: - mountPath: /app/session name: session-volume *deployment spec* volumes: - name: session-volume hostPath: path: /mount-9p/session *Dockerfile seems correct for every container* RUN [mkdir, -p, /app/session, /app/common] RUN [chown, -R, daemon:daemon, /app/session, /app/common] VOLUME [/app/session, /app/common] *Permissions are correct*sdl git:(master)ls -l /sdl/mount total 0 drwxrwxrwx 10 rajbains wheel 340 Oct 26 15:25 common drwxrwxrwx 11 rajbains wheel 374 Oct 26 15:06 session drwxrwxrwx 3 rajbains wheel 102 Oct 24 18:04 user-data",Mixed
+kubernetes,config:256,NL
+kubernetes,I have : kube-system kube-controller-manager-gm2-master1 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master2 1/1 Running 0 1d kube-system kube-controller-manager-gm2-master3 1/1 Running 0 1d,Mixed
+kubernetes,"yes, restartPolicy is done at the pod layer, not the deployment or job layer.",NL
+kubernetes,"wow that is not bad at all, thanks for sharing. Which technologies do these projects rely on and is it ok to assume you are using a pre build reload experience when changing code to have this?",NL
+kubernetes,Anyone know if there's a way to contact the steering committee?,NL
+kubernetes,"if u run /bin/sh I don't think the pod will stay alive, should it?",NL
+kubernetes,try launching it via docker without kube,NL
+kubernetes,"@U7N4JEF9U Either change cgroup driver of docker to systemd, or better change kubelet cgroup driver to cgroupfs",NL
+kubernetes,what if node fails on which this bot is running? it sends afterwards?,NL
+kubernetes,We need to see what node selector you are using.,NL
+kubernetes,@U7N4JEF9U The docker driver. perhaps in docker.service,NL
+kubernetes,yupp,NL
+kubernetes,"I restarted the master just to eliminate that something in it was wrong, and then I did some serious pod-o-cide and killed many of them so they would get rescheduled",NL
+kubernetes,well crap. I tried,NL
+kubernetes,kris-mbp:virtualbox-cluster kris$ kubectl --kubeconfig=./config apply -f pv-test.yaml,Code
+kubernetes,higher than 30000 actualkly,NL
+kubernetes,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.858324 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54062: remote error: tls: bad certificate,Error
+kubernetes,I don't think you should have to manually change that. Networking should handle the IP allocation automatically.,NL
+kubernetes,ERROR: logging before flag.Parse: W1026 21:48:07.659839 1 server.go:64] Error getting metrics from dnsmasq: read udp 127.0.0.1:57988->127.0.0.1:53: read: connection refused,Error
+kubernetes,"yeah, can define role cluster-wide with a ClusterRole, grant it locally with a RoleBinding",NL
+kubernetes,tolerations:,NL
+kubernetes,@walteraa does the firewall need to know about the overlay network used for k8s? or does it encapsulate?,NL
+kubernetes,"@high_on_bananas okay, np",NL
+kubernetes,"Hmm, then the port would be fixed, that may be the answer",NL
+kubernetes,hello is posible upgrade kubernetes cluster in Centos 7 1.5 baremetal to 1.6???,NL
+kubernetes,"No, you're totally wrong.",NL
+kubernetes,"@U7MJLP5CL, you can see full list of supported annotations here: https://github.com/kubernetes/kubernetes/blob/v1.8.0/pkg/cloudprovider/providers/aws/aws.go#L83",Mixed
+kubernetes,does anyone here has implemeted kubernetes federation already ?,NL
+kubernetes,either i am blind or i dont understand the concept of k8s I wrote a deployment.yaml that should consist two different containers that are not on the same pod. but both are started in the same pod. what am i getting wrong here?,NL
+kubernetes,fixed it,NL
+kubernetes,hello. am i able to use kubectl to get/edit ExternalAdmissionHookConfigurations?,Mixed
+kubernetes,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: Error: failed to run Kubelet: could not init cloud provider aws: error finding instance i-0d01f6f07e33605e3: error listing AWS instances: \RequestError: send request failed\\ncaused by: Post https://ec2.us-east-1.amazonaws.com/: dial tcp: lookup ec2.us-east-1.amazonaws.com on [::1]:53: read udp [::1]:36716->[::1]:53: read: connection refused\,Error
+kubernetes,http:,URL
+kubernetes,"but svc will expose internal clusterIP, not ?",NL
+kubernetes,"When i google it, the only solution people seem to provide is increasing ELB timeout. Even after increasing it, i see the above error. Any suggestions of how to connect to etcd with flannel? I am able to curl from the worker node without issues",NL
+kubernetes,kind: Config,Code
+kubernetes,Do anyone know is there a way to access cluster with token ( and a way to generate it ) instead of whole kubeconfig ?,NL
+kubernetes,gimme a sec,NL
+kubernetes,kind: PersistentVolumeClaim,Code
+kubernetes,You must install a pod network add-on so that your pods can communicate with each other. could that be a cause?,NL
+kubernetes,i/o timeout,NL
+kubernetes,"Ahhh, good question. Let me see what I can find.",NL
+kubernetes,Self signed in my case,NL
+kubernetes,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.243788 1194 tags.go:76] AWS cloud filtering on ClusterID: test178,Log
+kubernetes,Deployment looks at the Pod api object,NL
+kubernetes,"@U7Q1KJCG0 Does your manifest have the kind: PersistentVolume line uncommented, and without any dashes in front of it?",Mixed
+kubernetes,They don't have the same ip,NL
+kubernetes,@U7LULHTJL you should take a look at GitlabCI as well. My experience has been very good so far.,NL
+kubernetes,let me restart all deamon and,NL
+kubernetes,kubernetes cluster,NL
+kubernetes,"gotchya, okay thanks for clarifying, that makes sense now.",NL
+kubernetes,does not list them,NL
+kubernetes,"Guys, is there any reference about cron jobs schedule time? In the official documentation uses schedule: */1 * * * * and tells that it schedule the job each 1 min",Mixed
+kubernetes,I decided to write this post after struggling to find documentation on how to write a Kubernetes operator that went through the code with...,NL
+kubernetes,but some of the docks on ingress only we can assign hostname for redirection backend paths,NL
+kubernetes,after 1.12.6 Docker also changed how nat rules are generated so you would guaranteed have trouble,NL
+kubernetes,name: wiki-config,Code
+kubernetes,yep!!,NL
+kubernetes,"a python flask app, nothing interesting",NL
+kubernetes,"i *do* build the containers, but it doesn't really matter",NL
+kubernetes,root 1 0.0 0.6 200856 6480 ? Ssl 16:55 0:00 ./price-project,Other
+kubernetes,Error from server (AlreadyExists): error when creating cockroachdb1.yaml: statefulsets.apps cockroachdb already exists bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl get statefulset No resources found. bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl de,Error
+kubernetes,user root,Code
+kubernetes,@3molo,NL
+kubernetes,volumeMounts:,Code
+kubernetes,looks like to Google counterpart of AWS EBS,NL
+kubernetes,"if you just want to explore the filesystem you can also ssh to the node and dig up the actual mount... it's cumbersome, but possible.",NL
+kubernetes,PATH may not work unless you have a working shell!,NL
+kubernetes,Hey @bo0m3r31337! That's right. So Installed kubectl inside the container and i found the secret token at /var/run/secrets/kubernetes.io/serviceaccount/token. But i'm not really sure where to go from there.,Mixed
+kubernetes,"unfortunately that doesn't seem to be the issue. Tried it with one, two and four extra spaces and got the same result",NL
+kubernetes,bo0m3r31337smbp:cockroachDbKubes bo0m3r31337$ kubectl delete statefulset cockroachdb error: timed out waiting for cockroachdb to be synced,Mixed
+kubernetes,secrets,NL
+kubernetes,@mettjus yes I wanted to happen this automatically. I don't want to delete nor drain.,NL
+kubernetes,"hmm, shouldnt I delete this pod first? and try all over again?",NL
+kubernetes,kibana must also have xpack if your ES cluster has that,NL
+kubernetes,well kpod ps said exactly no output for one,NL
+kubernetes,"well, i have a google app that i need to deploy and my environment is mixed with gce and gke structure, i have two php nodes that i use on the gce that needs to comunicate with couple of apps that i want to store on gke... in another words, i have php app on gce that want to acces reddis nodejs and elasticsearch on gke cluster. i need to expose local ip from the service that i use for the apps in kubernetes i can comunicate with the pods in kubernetes but that wil not solve my problem because what if i need to add another pod, so it means i want to comunicate with the service(loadBalancer) that comunicates with the pods of the exact app... some help please or some solution about that,",NL
+kubernetes,command: [bash],Code
+kubernetes,Type: GCEPersistentDisk,Code
+kubernetes,Your service doesn't have to be any different,NL
+kubernetes,thanks!,NL
+kubernetes,i was also wondering what that is,NL
+kubernetes,rajbains wheel 340 Oct 26 15:25 common drwxrwxrwx 11 rajbains whe,Other
+kubernetes,"Absolutely, that's entirely what we will be using Roles and RoleBindings for, however, we still need some sort of cluster-admin type role that's limited to create/update/delete at the namespace level and setup those per-namespace Bindings. That's what I'm mainly interested in limiting, everything else makes sense.",NL
+kubernetes,thanks a lot for help!,NL
+kubernetes,22h 4m 2 horizontal-pod-autoscaler Normal SuccessfulRescale New size: 16; reason: cpu resource utilization (percentage of request) above target,Mixed
+kubernetes,"That is a big question.. look at the loadbalancer in services, but you need an ELB for that..",NL
+kubernetes,anyone seen this before? (kubelets have --max-pods=X and --pod-cidr=),Mixed
+kubernetes,@stephenenelson ok thankyou,NL
+kubernetes,app: pricelabel-app,Code
+kubernetes,"Yeah, so maybe DNS isn't exactly the issue, but your pod and the kubernetes service shouldn't have the same IP so there's something weird with your networking.",NL
+kubernetes,How to satisfy Ingress Certificate and Key requirements? Do I need to chain? I am getting error: failed to load key pair tls: private key does not match public key when doing:,Mixed
+kubernetes,"I still have kube-proxy stuck in Init, anyone an idea how to fix that?",NL
+kubernetes,"this init my script in PID 1, but it doesn't work.",NL
+kubernetes,"that's a fine entrypoint if you're using kubectl run -it and want an interactive pod for a short bit, but it won't stay running (as you saw) and will immediately exit. You might be better doing the old classic sleep/wait thing to hold it there (what @mettjus suggests)",Mixed
+kubernetes,- -c,Code
+kubernetes,http://bfy.tw/Ehui,URL
+kubernetes,yeah,NL
+kubernetes,aww.,NL
+kubernetes,"from my understanding defaul ttl for events is 1h (should be configurable on apiserver). that could be the reason for Events: <none>. maybe u could delete the statefulset and recreate it, then describe. not sure at all if that will help",
+kubernetes,"@U7L73A2RE I set up a bare metal machine with Ubuntu 17, and put docker on it. Now I am going through the Udacity tutorial on Kubernetes. It's pretty good",NL
+kubernetes,"7s 5s 2 kubelet, spec.containers{ares} Normal Created Created container 6s 4s 2 kubelet, spec.containers{ares} Normal Started Started container 2s 1s 2 kubelet, spec.containers{ares} Warning BackOff Back-off restarting failed container 2s 1s 2 kubelet, Warning FailedSync Error syncing pod",Mixed
+kubernetes,kind: Deployment,Code
+kubernetes,current-context: default,Code
+kubernetes,"Hi, I am trying to run a command inside a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command -- bash -c /tmp/setup.sh but my pod goes continously in crashloopbaack state. However if I start a pod by kubectl run podname --image=imagename --port=80 --image-pull-policy=IfNotPresent --command and then do kubectl exec -ti podname-597fdb98d9-z5xvx -- bash -c /tmp/setup.sh the specified command works. Does anyone know how to fix this issue?",Mixed
+kubernetes,and ? just check yaml syntax ?,NL
+kubernetes,@lukas.dolezal but then it will cause more issues in my case ...,NL
+kubernetes,I removed the volume part and added the volumeClaimTemplates,NL
+kubernetes,remember to use the NODEIPADDDRESS,NL
+kubernetes,Is it possible to specify multiple secrets in an file and use the kubectl create secret --from-file option?,Mixed
+kubernetes,This is in the namespace prometheus in cluster-1,NL
+kubernetes,"Actually it is the template stuff that is really cool. You write generic chart and then one or more config.yaml more specialized to your env (prod, staging,...). We actually written once when we were on marathon but here helm is cooler, with a linter, handle rolling updates, and stuff I don't know about yet",NL
+kubernetes,tolerations????,NL
+kubernetes,I don't want that. I want a new container/pod provisioned.,NL
+kubernetes,@U7LULHTJL lots of stuff could be done with GCE cloudbuild,NL
+kubernetes,do you have dns addon?,NL
+kubernetes,"nice, thanks!",NL
+kubernetes,SIGTERM,Code
+kubernetes,what does the volume in the pod look like?,NL
+kubernetes,https://github.com/roffe/kube-login is a extended example-app based on the one DEX has made to let one template the token page,Mixed
+kubernetes,ingress has to be placed in the namespace where it's service is afaik,NL
+kubernetes,awesome @smerrill,NL
+kubernetes,replicas: 1,Code
+kubernetes,that authority certificate should be referred into kube config file,NL
+kubernetes,documetation wasn't clear enough to me tbh and in many blogs i saw Certs and TLS being used at the same time,NL
+kubernetes,"so, until reaper deletes the pod api object, deployment will not restart",NL
+kubernetes,^,NL
+kubernetes,Strange.,NL
+kubernetes,"The above error should come, when the api server is presenting a certificate which is NOT signed by the entity specified in certificate-authority",NL
+kubernetes,running.,NL
+kubernetes,"kdockery, https://bpaste.net/show/548efe3325bb this is what I get now",Mixed
+kubernetes,"nope it cant, but I would helm install honestbee / drone or any DEIS product with it",NL
+kubernetes,the simplest thing ever,NL
+kubernetes,do you controller examples,NL
+kubernetes,Are they on the same L2 network?,NL
+kubernetes,"this is in dev in minikube, so no SSL",NL
+kubernetes,"error: unable to recognize cron-job.yaml: no matches for batch/, Kind=CronJob",Error
+kubernetes,dial tcp 10.210.0.1:443: i/o timeout,Mixed
+kubernetes,"Sure Avinogradov , thank you",NL
+kubernetes,"Moving here, minikube is quiet",NL
+kubernetes,i use shell aliases and separate kubeconfig files,NL
+kubernetes,I have given it a existing public ip in a different resource group then my current one but it's not creating a lb,NL
+kubernetes,a volume populated by a ConfigMap,NL
+kubernetes,As a note on this,NL
+kubernetes,you have to expose a Service of type NodePort or LoadBalancer then connect to that.,NL
+kubernetes,Then your master node has tokeration NoSchedule,NL
+kubernetes,Ah is it like a health check you're doing foxie?,NL
+kubernetes,it's 3,NL
+kubernetes,"guys, may be somebody can help me (it make me crazy)",NL
+kubernetes,the later,NL
+kubernetes,I can ping,NL
+kubernetes,"@kwladyka the YAML files are plain data dumps, so you need to add some scripting",NL
+kubernetes,Okies thanks to @3molo I have started the clusted successfully,NL
+kubernetes,@spotter check if kube-proxy on node is up and running,NL
+kubernetes,you need a headless one,NL
+kubernetes,through what?,NL
+kubernetes,@U7FCJNU58 Are your nodes in a Ready state? kubectl get nodes,NL
+kubernetes,"yep, missed it ....",NL
+kubernetes,"either way, doesn't do what I want it to. don't want the same container restarted. I'd like a new container form the same image.",NL
+kubernetes,jobs won't even do it due to pod level restart policy. I need a run policy or something,NL
+kubernetes,"Hello. How can I authenticate user of my various services deployed on kubernetes? I would like to avoid letting each service having to handle oauth2. Is there a kind of proxy (sidecar model?) that can do it transparently, or a solution integrated in the frontend reverse proxy (so far for us: traefik)",NL
+kubernetes,Does containerd require additional setup compared to docker?,NL
+kubernetes,"just run the server in a sidecar, client on your laptop",NL
+kubernetes,Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.043824 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.045860 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: W1027 00:28:01.070883 11351 cni.go:196] Unable to update cni config: No netw Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: I1027 00:28:01.070916 11351 docker_service.go:207] Docker cri networking man Oct 27 00:28:01 kuber-poc-app1 kubelet[11351]: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kube,Log
+kubernetes,- name: root,Code
+kubernetes,effect: NoSchedule,Code
+kubernetes,"Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:47: Failed to list *v1.Pod: Get https://10.127.38.18:6443/api/v1/pods?fieldSelector=spec.nodeName%3Dkuber-poc-app1&resourceVersion=0: dial tcp 10.127.38.18:6443: getsockopt: connection refused Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568347 11681 kubelet_network.go:69] Hairpin mode set to promiscuous-bridge but kubenet is not enabled, falling back to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.568382 11681 kubelet.go:517] Hairpin mode set to hairpin-veth Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.568509 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.569892 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: W1027 00:29:35.600793 11681 cni.go:196] Unable to update cni config: No networks found in /etc/cni/net.d Oct 27 00:29:35 kuber-poc-app1 kubelet: I1027 00:29:35.600822 11681 docker_service.go:207] Docker cri networking managed by cni Oct 27 00:29:35 kuber-poc-app1 kubelet: error: failed to run Kubelet: failed to create kubelet: misconfiguration: kubelet cgroup driver: systemd is different from docker cgroup driver: cgroupfs",Log
+kubernetes,"What is the best way to get automatically notified on new releases of kubernetes, flannel, CNI, and so, event having to do it manually?",NL
+kubernetes,"@roffe @bradley.hession Thanks a lot! In case you know kubernetes guys, we should add SSL+TLSv2/3 setup to official docs, I think this is an often use case in any modern environment",NL
+kubernetes,so the node cna't get filled to the point where operational stability is at risk,NL
+kubernetes,Is there some way to migrate all my deployments and services from one cluster to another?,NL
+kubernetes,"@kubevick that sounds right, we did this many times to fix similar issues",NL
+kubernetes,@roffe ok,NL
+kubernetes,looks like it might be this: --dns-zone,Mixed
+kubernetes,you can use any one of the node or master ips.,NL
+kubernetes,simply followed this https://kubernetes.io/docs/user-guide/configmap/redis/redis-config,Mixed
+kubernetes,paths:,NL
+kubernetes,@mdornfe1 you can see an example here; https://gist.github.com/mikejk8s/97322f4314fe4f89d62fb4f79fffa1aa,Mixed
+kubernetes,is there a way to take a file defined in a config map?,NL
+kubernetes,I don't know what is the problem for production environment and are there plan to improve for production env.,NL
+kubernetes,"if you look inside ~/.kube/config each context has a name, cluster,user, and optionally a namespace. to use it in kubectl --context, you just specify the name",Mixed
+kubernetes,"grampelberg, is that required in 1.8 and not before?",NL
+kubernetes,oh ok,NL
+kubernetes,Yeah,NL
+kubernetes,@U7KH6TF28 noone stops you from having multiple yaml documents in a single file,NL
+kubernetes,Trying to reach: 'https://10.200.3.2:8443/',Mixed
+kubernetes,okay that makes sense then.,NL
+kubernetes,Description=Docker Application Container Engine Documentation=https://docs.docker.com,Code
+kubernetes,thanks though! I think maybe it has to do with deleted nodes? or something?,NL
+kubernetes,serviceName: https-svc-ingress,Code
+kubernetes,y,NL
+kubernetes,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243365 5596 aws.go:847] Building AWS cloudprovider,Log
+kubernetes,"yeah, Helm is my go-to installer",NL
+kubernetes,config:,NL
+kubernetes,"from what i know lets encrypt allows 20 free certs/week, don't know much more",NL
+kubernetes,"Hey guys, this issue has been killing me for days: I'm trying to create a kubernetes 1.8 cluster with hyperkube on AWS (CoreOS instances) but I keep getting this error in the worker node:",NL
+kubernetes,@mattymo can you elaborate?,NL
+kubernetes,"I'm struggling to understand why fluentd seems to suck every bit of memory up from the node, even though it's got limitations in the resources of the yaml.",NL
+kubernetes,Hi Guys while starting kubeadm cluster getting error Kubernetes version: v1.8.2,NL
+kubernetes,"I think on an overlay network, You'd only see the pod you're stickied to.",NL
+kubernetes,the other scheduler/controller eat next to nothing,NL
+kubernetes,scheme: HTTP,Code
+kubernetes,@nitinmidha looks like I'd expect,NL
+kubernetes,you mean adding new relic?,NL
+kubernetes,https://kubernetes.io/docs/setup/independent/install-kubeadm/ should get you there,Mixed
+kubernetes,"You are able to perform a Ping to 172.17.41.3 through other pod, right?",Mixed
+kubernetes,root 725 0.0 0.2 34424 2776 ? R+ 17:00 0:00 ps aux,Other
+kubernetes,@mdavidsen https://gist.github.com/anonymous/19b5570993d0c63e0721dac65e05ff49,Mixed
+kubernetes,no,NL
+kubernetes,status: {},Code
+kubernetes,@foxie tks!,NL
+kubernetes,- name: varlibdockercontainers,Code
+kubernetes,what I'm doing is trying to get familiar with kubernetes so I can host it on premise in a staging and production environment,NL
+kubernetes,It's okay,NL
+kubernetes,serviceName: bugsystem,Code
+kubernetes,@U7P7RBJEA glad to hear it! i always try to start debugging with the simplest things,NL
+kubernetes,@slavin.zach thanks man!,NL
+kubernetes,name: default,Code
+kubernetes,"depends on your security restrictions. Do you want your service -> service calls leaving the cluster and coming back in? If you adopt a service mesh like Linkerd or Istio, you will lose some visibility by leaving and re-entering the cluster. There's also consideration of traffic costs, if for example you're in AWS. VPC traffic is free within an AZ. The minute you hit the external IP, you incur bandwidth costs.",NL
+kubernetes,requests:,NL
+kubernetes,"My K8 setup is in AWS. I am using etcd3 as backend to flannel. From the worker node, flannel connects to etcd using ELB. I see the following error",NL
+kubernetes,foo: |,Code
+kubernetes,I got a service that is just hanging in pending state. I've tried kubectl describe service xxx but it doesn't really give any insight. Is there something else I can do to try and get some info on why it's just stuck in pending?,NL
+kubernetes,"classic ELBs support PROXY protocol, which preserves the source IP. What's behind the ELB needs to work with PROXY protocol, though. http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-proxy-protocol.html",Mixed
+kubernetes,readinessProbe: httpGet,Code
+kubernetes,"I made a set of scripts. So each repo gets a deploy folder that the developrs copy a generic template into. Then they fill out $container_name, $app_name variables in Gitlab GUI. I have Gitlab Environment variables configured so the script points to the right k8s cluster (staging or prod) when deploying. A base image that includes kubectl, and then the deploy stage depending on branches, so prod can only be deployed manually by a few users.",Mixed
+kubernetes,@3molo Still Same Sir,NL
+kubernetes,what might be the possible causes of kubectl get componentstatuses --> Unable to connect to the server: x509: certificate signed by unknown authority,Mixed
+kubernetes,"@msubramm > If the command returns a non-zero value, the kubelet kills the Container and restarts it. restart in the sense provisions a new container or sends kill signal to container and then starts the same one again? I was looking at this doc earlier but couldn't tell if this is starting a new container or rebooting a stale one.",NL
+kubernetes,cordoning a node won't evict existing pods right?,NL
+kubernetes,"kdockery, so hmm, kubelet[7261]: ERROR: logging before flag.Parse: W1026 17:17:09.856546 7261 kubelet_node_status.go:951] Failed to set some node status fields: failed to validate nodeIP: Node IP: 10.254.0.1 not found in the host's network interfaces when I changed --node-ip to this value",Mixed
+kubernetes,"Hi, I have a container that runs as a pod with the entrypoint , /apps/mst/deployments/scripts/app_deploy.sh, but it crashes on start.",Mixed
+kubernetes,"@liggitt apologies, I tagged the wrong handle. (so many users in here!)",NL
+kubernetes,but I would advise you to take a closer look at helm ... creating deployments by hand is ... well unless you have very specialised needs,NL
+kubernetes,"spunon, I'm curious about the motive behind this",NL
+kubernetes,"Pretty sure. and I could be wrong, but that is a session sticky. If not, then perhaps you're using an overlay networking?",NL
+kubernetes,try running waves... k8s page has some example...,NL
+kubernetes,--all-namespaces,Code
+kubernetes,kuberuntime_manager.go:840] PodSandboxStatus of sandbox f2b7e698489b137af28011147276ab5dedd736eb299c4c56360734201e772f81 for pod frameloss-empty-59549d5d8-8mvjf_default(7c4790f8-b9a7-11e7-acba-005056aa3222) error: rpc error: code = Unknown desc = Error response from daemon: open /var/lib/docker/overlay/7871d8b75de341fbfcdea6f04f7950164259026420b1b8d454a02fabb991f26a/lower-id: no such file or directory,Error
+kubernetes,ERROR: logging before flag.Parse: I1026 21:33:17.409869 1 main.go:48] Version v1.14.3-4-gee838f6,Error
+kubernetes,servicePort: 8443,Code
+kubernetes,"haha@roffe I'm so frustrated, I've been tryna disable it for ages.",NL
+kubernetes,@roffe I see! when you're using TLS+token and you want to configure any user by kubeconfig to use kubectl and you don't have the ca.pem,NL
+kubernetes,Hey can you 'get pods' based on age? i.e kubectl get pods --age=<5d,Mixed
+kubernetes,Hi Guys I created kubeadm CLuster then trying to add Worker Node Output Says its Successful But on Master Showing one Node Any Idea,NL
+kubernetes,What if you get disconnected from a server ?,NL
+kubernetes,but for anything over 1.12.6 please read: https://github.com/kubernetes/kubernetes/issues/40182,Mixed
+kubernetes,thanks @mauilion and @hmdelnegro,NL
+kubernetes,how it is resolving the cluster IP address?,NL
+kubernetes,I want to use latest version(1.8). I see... kubeadm says,NL
+kubernetes,"In my cert I have -----BEGIN CERTIFICATE----- ZHA... and in my key I have: -----BEGIN RSA PRIVATE KEY----- MII. I am getting this on kubectl create secret, not associated with any ingress yet.",NL
+kubernetes,accessModes:,Code
+kubernetes,good to know u solved it. was looking into istio myself... as soon as i got some time to investigate gonna give it a try,NL
+kubernetes,"kdockery, apparently the iptables rules are gone after that change, and now curl waits on http://nodedns:31974",Mixed
+kubernetes,Sorry if that's obvious - just sort of clicked for me,NL
+kubernetes,rewrite /.*\.(jpg|js$|css|html|png|bmp|gif) / break,Mixed
+kubernetes,but will deployment start new images despite the other ones being the stopped state?,NL
+kubernetes,- image: docker.io/walteraa/price-project:v0.0.6,Code
+kubernetes,root@pricelabel-app-249837175-mvjw6:/~# ps aux,Code
+kubernetes,oh,NL
+kubernetes,"Yeah, you're doing things the hard way. That can be fun, but it's unnecessary with things like kubeadm that have matured quite a bit.",NL
+kubernetes,I'm newbie for k8s and I want to create sample cluster within my centos servers. But setup documents are very old... (https://kubernetes.io/docs/getting-started-guides/centos/centos_manual_config/) Is there any other online documents or blogs which guide step by step? (I don't want to use kubeadm because it's difficult to understand kubenetes components and it's not production ready),Mixed
+kubernetes,I am using sh,NL
+kubernetes,"@roffe, woow! that sounds amazing, good job there! I definitely will take a look at this! As you said it is out of scope, So in a nutshell what I understood is :",NL
+kubernetes,servicePort: 443,Code
+kubernetes,Oct 27 00:29:35 kuber-poc-app1 kubelet: E1027 00:29:35.565184 11681 reflector.go:205],Log
+kubernetes,Oct 26 20:19:43 test2-minion-8IcjE kubelet-wrapper[5596]: I1026 20:19:43.243413 5596 aws.go:810] Zone not specified in configuration file; querying AWS metadata service,Log
+kubernetes,[1] 612,NL
+kubernetes,Do you write Go?,NL
+kubernetes,namespace,NL
+kubernetes,kinda,NL
+kubernetes,yes correct ... I can ping,NL
+kubernetes,path: /tmp/extra-hosts,Code
+kubernetes,"services on alert rather than kubernetes itself can you share which option you are using for monitoring with service , not pod. @foxie",NL
+kubernetes,ok that service should be served on the agent_ip:30000,NL
+kubernetes,- name: extra-hosts,Code
+kubernetes,"@hartfordfive looks like new bug, i would post that to github",NL
+kubernetes,"question, I've been looking into container probes (health and readiness probes) as well as reading up on Pod lifecycle management with Kubernetes. I can't seem to find any particular way to have a new, fresh container run (not same container simply restart) upon failed state. When the container/pod goes into poor state, what key/value do I specify in the deployment to force-pull a new image and re-run the deployment for the failing pod ?",NL
+kubernetes,HTTP/1.1 404 0.97 secs: 19 bytes ==> GET /,Other
+kubernetes,@janst kubectl delete configmap name?,NL
+kubernetes,"Hi All, I am getting problem in authorization while using kops version 1.6.3. I am not able to set authorization at kubernetes dashboard level.please let me know if anyone has any idea.",NL
+kubernetes,"this for rabbitmq: Name: rabbitmq Namespace: default Node: / Labels: name=rabbitmq Status: Pending IP: Controllers: <none> Containers: rabbitmq: Image: rabbitmq Ports: 5672/TCP, 15672/TCP Limits: cpu: 100m Requests: cpu: 100m Volume Mounts: /var/lib/rabbitmq from rabbitmq-persistent-storage (rw) /var/run/secrets/kubernetes.io/serviceaccount from default-token-5fdds (ro) Environment Variables: <none> Conditions: Type Status PodScheduled False Volumes: rabbitmq-persistent-storage: Type: HostPath (bare host directory volume) Path: /srv/docker/nfs/rabbitmq/data default-token-5fdds: Type: Secret (a volume populated by a Secret) SecretName: default-token-5fdds QoS Class: Burstable Tolerations: <none> Events: FirstSeen LastSeen Count From SubObjectPath Type Reason Message --------- -------- ----- ---- ------------- -------- ------ ------- 21h 2m 4321 {default-scheduler } Warning FailedScheduling No nodes are available that match all of the predicates: MatchNodeSelector (4), PodToleratesNodeTaints (3).",Mixed
+kubernetes,"under cluster, do you have certificate-authority?",NL
+kubernetes,so what should I do to fix it ? ),NL
+kubernetes,"hi everyone, i started using the 1.8 release of kubernetes today and when ever I try to delete a statefulset, i get a panic with the following trace:",NL
+kubernetes,does somebody know how I can get the fluentd-elasticsearch in debug mode?,NL
+kubernetes,my deployment?,NL
+kubernetes,watch.go:41] Watch subnets: client: etcd cluster is unavailable or misconfigured,Mixed
+kubernetes,password: *****,Code
+kubernetes,it was some configuration thing,NL
+kubernetes,"from what i can recall, i spinned up like 2 or 3 clusters and started getting frustrated... on the 3rd i went for a coffee and when i came back it was ok... d'oh",NL
+kubernetes,Not Sure I always see these while running kubeadm init [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz/syncloop' failed with error: Get http://localhost:10255/healthz/syncloop: dial tcp [::1]:10255: getsockopt: connection refused. [kubelet-check] It seems like the kubelet isn't running or healthy. [kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10255/healthz' failed with error: Get http://localhost:10255/healthz: dial tcp [::1]:10255: getsockopt: connection refused. In Some blog I seen that we can ignore,Mixed
+kubernetes,"yeah, sorry that I don't have an actual link to walk you through. But part of the reason for using kubeadm is it makes a large part of the process easy",NL
+kubernetes,"@spotter can you check your service config to make sure, you are proxying the correct ports",NL
+kubernetes,Oct 26 16:42:19 wnoc-kube-1.novalocal kube-apiserver[29523]: I1026 16:42:19.831889 29523 logs.go:41] http: TLS handshake error from 127.0.0.1:54060: remote error: tls: bad certificate,Log
+kubernetes,@bharat not easily. Probably best to use @grampelberg 's link,NL
+kubernetes,"I would say, check in kube-proxy log while initiating a request",NL
+kubernetes,name: pricelabel,Code
+kubernetes,What do you mean ?,NL
+kubernetes,And you're sure it's serving on port 5000 in the container?,NL
+kubernetes,"@tamal based on my experience, maybe I'm wrong, when I set imagePullPolicy: always that only triggers image pull when I execute the deployment explicitly. restartPolicy: Always simply sends the docker start command to a stopped container to make sure the container is always up.",Mixed
+kubernetes,The nginx Ingress controller supports upgrading to a WebSocket connection,NL
+kubernetes,what do the logs from the crashing pod say?,NL
+kubernetes,root 719 0.0 0.3 18196 3132 ? Ss 17:00 0:00 /bin/bash,Other
+kubernetes,maybe u can use NodePort and manually bind AWS ELBs' ports,NL
+kubernetes,I use the exact same configuration to create a cluster for 1.7.8 and the worker node is successfully registered:,NL
+kubernetes,Check your uer credentials in kube config,NL
+kubernetes,you don't need it,NL
+kubernetes,@U7JU2PH2N at my work we usually run stuff locally in docker and then when it's time to start testing add it to the CI/CD pipeline for development,NL
+kubernetes,tr,NL
+kubernetes,@mauilion any idea on this by any change? (see the previous comment as well),NL
+kubernetes,Does anyone know if a k8s object auditing tool exists?,NL
+kubernetes,kubectl describe pod shows Error syncing pod,NL
+kubernetes,no logs whatsoever - kubectl logs ares --namespace=dev,Mixed
+kubernetes,That should work. The overlay will take care of adding routes for your pods and kube-proxy will add iptables rules on all nodes to let them reach Service IPs,NL
+kubernetes,ok. Just change https://github.com/kubernetes/client-go/blob/master/examples/workqueue/main.go slightly,Mixed
+kubernetes,"@masteinhauser yes, and CRUD on RoleBinding, as well as bind permission on the clusterroles you'd want it to be able to bind to, right?",NL
+kubernetes,--register-node=true,Code
+kubernetes,Classic ELB?,NL
+kubernetes,"dns works, we can reoslve the service ip",NL
+kubernetes,"Error: found in requirements.yaml, but missing in charts/ directory: alertmanager, prometheus",Mixed
+kubernetes,exit,NL
+kubernetes,dns issues are usually related to networking....,NL
+kubernetes,"oh, maybe I know",NL
+kubernetes,@jeffhub how the hell did you find this article? your google foo is clearly superior.,NL
+kubernetes,@pl I want to do somthing like that to have a real graceful stop with niginx :,NL
+kubernetes,configMap:,Code
+kubernetes,through ingress?,NL
+kubernetes,--cluster_domain=cluster.local \,Code
+kubernetes,"Hi guys when setting up TLS I see secret is there in ingress, yet it takes the cluster certificate when browsing to the endpoint/domain.",NL
+kubernetes,@heckj tks!,NL
+kubernetes,"I have functional tests that I want to run a s part of a Jenkins build pipeline. I'm currently running them in a bare pod, rather than in a job, because I don't want the tests rerun in case of failure. Is it reasonable to use a bare pod?",NL
+kubernetes,"hmm, the script does exit cleanly when user logs off SSH. Maybe Jobs will work... Let me give it a shot.",NL
+kubernetes,"Yes, use minikube",NL
+kubernetes,Oct 26 17:37:29 test178-minion-MTvrc kubelet-wrapper[1194]: I1026 17:37:29.077658 1194 aws.go:769] Zone not specified in configuration file; querying AWS metadata service,Log
+kubernetes,"Sorry if I missed this one in the documentation.. cant seem to find this in the google, I am trying to add an instance group, I do the kops create ig <name> I edit the file.. save it, then run kops update -y (shortened), it gives some output, but nothing is created it seems, I also tried rolling-update.. nothing seems to be coming up in AWS.. is there somewhere to debug this so I can see what the problem might be?",NL
+kubernetes,path: /var/log,Code
+kubernetes,--token,Code
+kubernetes,@U7LULHTJL Look at Drone and Honestbee,NL
+kubernetes,You are forgetting the k8s overlay network. And is better use pods in 10.4.0.0/16 and services in 10.5.0.0/16,Mixed
+kubernetes,any of you know how to get a ingress in kubernetes with traefik for Websockets ?,NL
+kubernetes,you should be able to chown that directory to the user you're using for that docker image,NL
+kubernetes,image: ajmulholland/fluentd-kube:v0.3,Code
+kubernetes,"That should run as service not pod, right?",NL
+kubernetes,"Ah, something tells me you may not have configured cluster dns correctly. You should try kubeadm. It trivializes all of that stuff. https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/",Mixed

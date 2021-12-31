@@ -10,6 +10,7 @@ from sklearn.model_selection import train_test_split
 
 from nlon_py.data.make_data import get_category_dict, loadDataFromFiles
 from nlon_py.data.original_data.make_ori_data import loadOriDataFromFiles
+from nlon_py.data.extend_data.make_ext_data import loadExtDataFromFiles
 from nlon_py.features import NLoNFeatures
 from nlon_py.model import (CompareModels, NLoNModel, NLoNPredict,
                            SearchParams_SVM, ValidateModel,
@@ -20,6 +21,8 @@ modelfile = os.path.join(pwd_path, 'default_model.joblib')
 datafile = os.path.join(pwd_path, 'default_data.joblib')
 ori_datafile = os.path.join(pwd_path, 'original_data.joblib')
 ori_modelfile = os.path.join(pwd_path, 'original_model.joblib')
+ext_datafile = os.path.join(pwd_path, 'extend_data.joblib')
+ext_modelfile = os.path.join(pwd_path, 'extend_model.joblib')
 test_corpus = ['This is natural language.',
                'public void NotNaturalLanguageFunction(int i, String s)',
                '''Exception in thread "main" java.lang.NullPointerException
@@ -205,3 +208,48 @@ def plot_ori_model_roc():
     X, y = loadOriginalData()
     X = NLoNFeatures.transform(X)
     plot_twoclass_roc(model, X, y, cv=10)
+
+
+def buildExtendData(source=''):
+    # print("[buildExtendData] building...")
+    t0 = time()
+    X,y = loadExtDataFromFiles(source)
+    dump(dict(data=X, target=y), ext_datafile, compress='zlib')
+    # print(f"[buildExtendData] done in {(time() - t0):0.3f}s")
+
+def loadExtendData():
+    # print("[loadExtendData] loading...")
+    t0 = time()
+    data_dict = load(ext_datafile)
+    X = data_dict['data']
+    y = data_dict['target']
+    # print(f"[loadExtendData] done in {(time() - t0):0.3f}s")
+    return X, np.array(y)
+
+def buildExtendModel(model_name='SVM',features='C3_FE', stand=True, kbest=True):
+    X, y = loadExtendData()
+    # print("[buildExtendModel] building...")
+    t0 = time()
+    clf = NLoNModel(X, y, features, model_name, stand=stand, kbest=kbest, n_classes=12)
+    dump(clf, ext_modelfile, compress='zlib')
+    print(f"[buildExtendModel] done in {(time() - t0):0.3f}s")
+
+
+def loadExtendModel():
+    return load(ext_modelfile)
+
+
+def testExtendModel():
+    model = loadExtendModel()
+    print(NLoNPredict(model, test_corpus))
+
+
+def validExtendModel(features='C3_FE'):
+    # print("[validExtendModel] start...")
+    t0 = time()
+    X, y = loadExtendData()
+    print(f"[validExtendModel] load data in {(time() - t0):0.3f}s")
+    model = loadExtendModel()
+    print(f"[validExtendModel] load model in {(time() - t0):0.3f}s")
+    ValidateModel(model, X, y,isOri=False, feature_type=features, cv=2)
+    print(f"[validExtendModel] done in {(time() - t0):0.3f}s")

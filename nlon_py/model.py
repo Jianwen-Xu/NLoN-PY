@@ -42,8 +42,8 @@ def NLoNModel(X, y, features='C3_FE', model_name='SVM', stand=True, kbest=True, 
         clf = dict_name_classifier[model_name]
     else:
         raise RuntimeError('Param model_name should be in ' + names.__str__())
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.4, random_state=0, stratify=y)
+    # X_train, X_test, y_train, y_test = train_test_split(
+    #     X, y, test_size=0.4, random_state=0, stratify=y)
 
     pipeline_steps = []
     if stand:
@@ -150,11 +150,11 @@ def CompareModels(X, y, cv=None):
             print()
 
 
-def ValidateModel(model, X, y, isOri=False, feature_type='C3_FE'):
+def ValidateModel(model, X, y, isOri=False, feature_type='C3_FE', cv=10):
     X = NLoNFeatures.transform(X, feature_type)
     if isOri:
         scores = cross_validate(
-            model, X, y, cv=10, scoring=('roc_auc','precision','recall','f1_macro'))
+            model, X, y, cv=cv, scoring=('roc_auc','precision','recall','f1_macro'))
         auc = scores['test_roc_auc']
         prc=scores['test_precision']
         rec=scores['test_recall']
@@ -162,16 +162,16 @@ def ValidateModel(model, X, y, isOri=False, feature_type='C3_FE'):
 
     else:    
         scores = cross_validate(
-            model, X, y, cv=10, scoring=('roc_auc_ovr','precision','recall','f1_macro'))
+            model, X, y, cv=cv, scoring=('roc_auc_ovr','precision_macro','recall_macro','f1_macro'))
         auc = scores['test_roc_auc_ovr']
-        prc=scores['test_precision']
-        rec=scores['test_recall']
+        prc=scores['test_precision_macro']
+        rec=scores['test_recall_macro']
         f1 = scores['test_f1_macro']
     # print('10-fold cross-validation')
     print(f'AUC: mean {auc.mean():.3f}, std {auc.std():.3f}')
     print(f'F1: mean {f1.mean():.3f}, std {f1.std():.3f}')
-    print(f'precision: mean {prc.mean():.3f}, std {prc.std():.3f}')
-    print(f'recall: mean {rec.mean():.3f}, std {rec.std():.3f}')
+    # print(f'precision: mean {prc.mean():.3f}, std {prc.std():.3f}')
+    # print(f'recall: mean {rec.mean():.3f}, std {rec.std():.3f}')
 
 
 def NLoNPredict(clf, X, features='C3_FE'):
