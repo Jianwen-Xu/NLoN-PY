@@ -12,7 +12,7 @@ from sklearn.experimental import enable_halving_search_cv
 from sklearn.feature_selection import SelectKBest, chi2, f_classif
 from sklearn.metrics import (ConfusionMatrixDisplay, auc,
                              classification_report, confusion_matrix, f1_score,
-                             plot_roc_curve, roc_auc_score, roc_curve)
+                             RocCurveDisplay, roc_auc_score, roc_curve)
 from sklearn.model_selection import (HalvingGridSearchCV,
                                      StratifiedShuffleSplit, cross_val_score,
                                      cross_validate, train_test_split)
@@ -215,7 +215,7 @@ def plot_multiclass_roc(clf, X_test, y_test, n_classes, figsize=(11, 7)):
 
 def plot_twoclass_roc(clf, X, y, cv=None):
     if cv is None:
-        plot_roc_curve(clf, X, y, name='NLoN for two class')
+        RocCurveDisplay.from_estimator(clf, X, y, name='NLoN for two class')
         plt.show()
         plt.savefig('roc_curve.png')
     else:
@@ -228,7 +228,7 @@ def plot_twoclass_roc(clf, X, y, cv=None):
             X_train, X_test = X[train_index], X[test_index]
             y_train, y_test = y[train_index], y[test_index]
             clf.fit(X_train, y_train)
-            viz = plot_roc_curve(
+            viz = RocCurveDisplay.from_estimator(
                 clf, X_test, y_test, name='ROC fold {}'.format(i), alpha=0.3, lw=1, ax=ax)
             interp_tpr = np.interp(mean_fpr, viz.fpr, viz.tpr)
             interp_tpr[0] = 0.0
