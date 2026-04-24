@@ -50,48 +50,6 @@ def Character3GramsForTest(text):
     return pd.DataFrame.sparse.from_spmatrix(vectorizer.transform(text))
 
 
-class Features:
-    def __init__(self):
-        self.charCount = lambda x: len(x)
-        self.wordCount = lambda x: len(x.split())
-        self.stopWords = lambda x, y: len([word for word in preprocess(
-            x, tokenizer=y) if word in preprocess(stop_words_list)])
-        self.Tokenize1 = lambda x: x.split()
-        self.Tokenize2 = None
-
-    def CapsRatio(self, text):
-        return len([c for c in text if c.isupper()]) / self.charCount(text)
-
-    def SpecialCharsRatio(self, text):
-        return len([c for c in text if c in string.punctuation]) / self.charCount(text)
-
-    def NumbersRatio(self, text):
-        return len([c for c in text if c.isnumeric()]) / self.charCount(text)
-
-    def AverageWordLength(self, text):
-        return self.charCount(text) / self.wordCount(text)
-
-    def StopwordsRatio1(self, text):
-        return self.stopWords(text, self.Tokenize1) / self.wordCount(text)
-
-    def StopwordsRatio2(self, text):
-        return self.stopWords(text, self.Tokenize2) / self.wordCount(text)
-
-    def LastCharCode(self, text):
-        return 1 if (text.endswith((')', '{', ';')) and not(text.endswith((':-)', ';-)', ':)', ';)', ':-(', ':(')))) else 0
-
-    def LastCharNL(self, text):
-        return 1 if text.endswith(('.', '!', '?', ':', ',')) else 0
-
-    def First3CharsLetter(self, text):
-        return len([c for c in text.replace(' ', '')[:3] if c.isalpha()])
-
-    def Emoticons(self, text):
-        return len([c for c in [':-)', ';-)', ':)', ';)', ':-(', ':('] if c in text])
-
-    def StartWithAt(self, text):
-        return 1 if text.lstrip().startswith('@') else 0
-
 class FeaturesOri:
     def __init__(self):
         self.CountRegexMatches = lambda text, regex: len(re.findall(regex, text))
