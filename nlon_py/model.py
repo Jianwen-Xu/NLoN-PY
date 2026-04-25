@@ -4,7 +4,6 @@ from joblib.logger import PrintTime
 
 import matplotlib.pyplot as plt
 import numpy as np
-from numpy.core.fromnumeric import shape
 import pandas as pd
 import seaborn as sns
 # explicitly require this experimental feature
