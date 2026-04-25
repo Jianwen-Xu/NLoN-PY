@@ -4,14 +4,27 @@ __author__ = """Jianwen Xu"""
 __email__ = 'xujianwen37@gmail.com'
 __version__ = '0.1.5'
 
-from types import new_class
-from nlon_py.data.build_model import (buildDefaultData,buildOriginalData, buildDefaultModel,
-                                      compareDifModels, loadDefaultData,loadOriginalData,
-                                      plot_cm, plot_model_roc,plot_ori_model_roc,
-                                      plotDistribution, searchParams,validOriginalModel,
-                                      testDefaultModel, validDefaultModel,buildOriginalModel,
-                                      buildExtendData, validExtendModel,buildExtendModel)
-from nlon_py.features import NLoNFeatures,FeaturesOri
+# Lazy imports to avoid triggering heavy ML deps when only using config/loader
+def __getattr__(name):
+    if name in ('buildDefaultData', 'buildOriginalData', 'buildDefaultModel',
+                'compareDifModels', 'loadDefaultData', 'loadOriginalData',
+                'plot_cm', 'plot_model_roc', 'plot_ori_model_roc',
+                'plotDistribution', 'searchParams', 'validOriginalModel',
+                'testDefaultModel', 'validDefaultModel', 'buildOriginalModel',
+                'buildExtendData', 'validExtendModel', 'buildExtendModel'):
+        from nlon_py.data.build_model import (
+            buildDefaultData, buildOriginalData, buildDefaultModel,
+            compareDifModels, loadDefaultData, loadOriginalData,
+            plot_cm, plot_model_roc, plot_ori_model_roc,
+            plotDistribution, searchParams, validOriginalModel,
+            testDefaultModel, validDefaultModel, buildOriginalModel,
+            buildExtendData, validExtendModel, buildExtendModel,
+        )
+        return locals()[name]
+    elif name in ('NLoNFeatures', 'FeaturesOri'):
+        from nlon_py.features import NLoNFeatures, FeaturesOri
+        return locals()[name]
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
 # from nlon_py.data.make_data import plotDistribution
 # buildDefaultModel(n_classes=5)
 # buildDefaultModel(n_classes=5, features='C3', stand=False)
@@ -55,11 +68,11 @@ from nlon_py.features import NLoNFeatures,FeaturesOri
 # print('FE-----------------------')
 # X_FE = NLoNFeatures.fit_transform(X,feature_type='FE')
 # print(X_FE)
-for model in ['glmnet']:  
-    for source in ['mozilla','kubernetes','lucene']:
-        print('-- build source: '+ source)
-        buildExtendData(source)
-        for feature in ['FE', 'C3', 'C3_FE']:
-            print('--- build features: '+ feature)
-            buildExtendModel(model_name=model, features=feature, stand=False, kbest=False)
-            validExtendModel(features=feature)
+# for model in ['glmnet']:
+#     for source in ['mozilla','kubernetes','lucene']:
+#         print('-- build source: '+ source)
+#         buildExtendData(source)
+#         for feature in ['FE', 'C3', 'C3_FE']:
+#             print('--- build features: '+ feature)
+#             buildExtendModel(model_name=model, features=feature, stand=False, kbest=False)
+#             validExtendModel(features=feature)

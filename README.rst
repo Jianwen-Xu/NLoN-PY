@@ -24,7 +24,11 @@ Python package for identifying text containing natural language (or not) using m
 Features
 --------
 
-* TODO
+* Three model variants: **default** (7-class), **original** (binary NL/Not), **extend** (12-class)
+* Single unified data loader and model lifecycle — new variants require only a config definition
+* Pre-built ``.joblib`` models included; retrain from source CSVs with one function call
+* ``NLoNFeatures`` supports three feature sets: ``FE`` (feature engineering), ``C3`` (character 3-gram), ``C3_FE`` (combined)
+* Compatible with SVM, glmnet, Naive Bayes, Nearest Neighbors, and XGBoost classifiers
 
 Credits
 -------

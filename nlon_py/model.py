@@ -4,7 +4,6 @@ from joblib.logger import PrintTime
 
 import matplotlib.pyplot as plt
 import numpy as np
-from numpy.core.fromnumeric import shape
 import pandas as pd
 import seaborn as sns
 # explicitly require this experimental feature
@@ -12,7 +11,7 @@ from sklearn.experimental import enable_halving_search_cv
 from sklearn.feature_selection import SelectKBest, chi2, f_classif
 from sklearn.metrics import (ConfusionMatrixDisplay, auc,
                              classification_report, confusion_matrix, f1_score,
-                             plot_roc_curve, roc_auc_score, roc_curve)
+                             RocCurveDisplay, roc_auc_score, roc_curve)
 from sklearn.model_selection import (HalvingGridSearchCV,
                                      StratifiedShuffleSplit, cross_val_score,
                                      cross_validate, train_test_split)
@@ -21,7 +20,12 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from glmnet import LogitNet
+try:
+    from glmnet import LogitNet
+    _glmnet_available = True
+except ImportError:
+    LogitNet = None
+    _glmnet_available = False
 from xgboost import XGBClassifier
 from nlon_py.data.make_data import get_category_dict
 from nlon_py.features import NLoNFeatures
@@ -31,7 +35,7 @@ names = ["Naive Bayes", "Nearest Neighbors", "SVM", "glmnet", "XGB"]
 classifiers = [GaussianNB(),
                KNeighborsClassifier(),
                SVC(kernel='rbf', gamma=0.01, C=10, probability=True, random_state=0),
-               LogitNet(),
+               LogitNet() if _glmnet_available else None,
                XGBClassifier()]
 
 dict_name_classifier = dict(zip(names, classifiers))
@@ -215,7 +219,7 @@ def plot_multiclass_roc(clf, X_test, y_test, n_classes, figsize=(11, 7)):
 
 def plot_twoclass_roc(clf, X, y, cv=None):
     if cv is None:
-        plot_roc_curve(clf, X, y, name='NLoN for two class')
+        RocCurveDisplay.from_estimator(clf, X, y, name='NLoN for two class')
         plt.show()
         plt.savefig('roc_curve.png')
     else:
@@ -228,7 +232,7 @@ def plot_twoclass_roc(clf, X, y, cv=None):
             X_train, X_test = X[train_index], X[test_index]
             y_train, y_test = y[train_index], y[test_index]
             clf.fit(X_train, y_train)
-            viz = plot_roc_curve(
+            viz = RocCurveDisplay.from_estimator(
                 clf, X_test, y_test, name='ROC fold {}'.format(i), alpha=0.3, lw=1, ax=ax)
             interp_tpr = np.interp(mean_fpr, viz.fpr, viz.tpr)
             interp_tpr[0] = 0.0
