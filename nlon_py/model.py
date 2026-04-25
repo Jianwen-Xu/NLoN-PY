@@ -21,7 +21,12 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from glmnet import LogitNet
+try:
+    from glmnet import LogitNet
+    _glmnet_available = True
+except ImportError:
+    LogitNet = None
+    _glmnet_available = False
 from xgboost import XGBClassifier
 from nlon_py.data.make_data import get_category_dict
 from nlon_py.features import NLoNFeatures
@@ -31,7 +36,7 @@ names = ["Naive Bayes", "Nearest Neighbors", "SVM", "glmnet", "XGB"]
 classifiers = [GaussianNB(),
                KNeighborsClassifier(),
                SVC(kernel='rbf', gamma=0.01, C=10, probability=True, random_state=0),
-               LogitNet(),
+               LogitNet() if _glmnet_available else None,
                XGBClassifier()]
 
 dict_name_classifier = dict(zip(names, classifiers))

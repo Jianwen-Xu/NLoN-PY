@@ -98,5 +98,28 @@ class TestLoader(unittest.TestCase):
         self.assertEqual(X[1], 'nested')
 
 
+class TestBuildModelWrappers(unittest.TestCase):
+    def test_wrapper_functions_importable(self):
+        from nlon_py.data.build_model import (
+            buildDefaultData, loadDefaultData, buildDefaultModel, loadDefaultModel,
+            testDefaultModel, validDefaultModel,
+            buildOriginalData, loadOriginalData, buildOriginalModel, loadOriginalModel,
+            testOriginalModel, validOriginalModel,
+            buildExtendData, loadExtendData, buildExtendModel, loadExtendModel,
+            testExtendModel, validExtendModel,
+        )
+        for fn in [buildDefaultData, loadDefaultData, buildDefaultModel, loadDefaultModel,
+                   testDefaultModel, validDefaultModel, buildOriginalData, loadOriginalData,
+                   buildOriginalModel, loadOriginalModel, testOriginalModel, validOriginalModel,
+                   buildExtendData, loadExtendData, buildExtendModel, loadExtendModel,
+                   testExtendModel, validExtendModel]:
+            self.assertTrue(callable(fn))
+
+    def test_unified_functions_importable(self):
+        from nlon_py.data.build_model import build_data, load_data, build_model, load_model, test_model, valid_model
+        for fn in [build_data, load_data, build_model, load_model, test_model, valid_model]:
+            self.assertTrue(callable(fn))
+
+
 if __name__ == '__main__':
     unittest.main()
