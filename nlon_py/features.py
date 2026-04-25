@@ -59,13 +59,13 @@ class FeaturesOri:
         self.Words = lambda text: self.CountRegexMatches(text, "[\\s+]") + 1
 
     def CapsRatio(self, text):
-        return self.Caps(text) / len(text)
+        return self.Caps(text) / len(text) if text else 0.0
 
     def SpecialCharsRatio(self, text):
-        return self.SpecialChars(text) / len(text)
+        return self.SpecialChars(text) / len(text) if text else 0.0
 
     def NumbersRatio(self, text):
-        return self.Numbers(text) / len(text)
+        return self.Numbers(text) / len(text) if text else 0.0
 
     def AverageWordLength(self, text):
         return len(text) / self.Words(text)
