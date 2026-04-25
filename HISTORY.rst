@@ -2,7 +2,7 @@
 History
 =======
 
-0.1.5 (2026-04-25)
+0.2 (2026-04-25)
 ------------------
 
 * Refactor: consolidate three near-identical data loaders into a single

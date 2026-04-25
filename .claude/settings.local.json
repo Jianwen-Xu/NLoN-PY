@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv venv *)",
+      "Bash(uv pip *)",
+      "Bash(uv run *)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from nlon_py.features import FeaturesOri, NLoNFeatures, FeatureExtraction; print\\('OK'\\)\")",
+      "Bash(python3 -c \"from nlon_py.features import FeaturesOri, NLoNFeatures, FeatureExtraction; print\\('OK'\\)\")",
+      "Bash(python -m py_compile nlon_py/features.py)",
+      "Bash(python3)",
+      "Bash(python -c \"from nlon_py.data.config import DEFAULT_CONFIG; print\\('SUCCESS: config import works'\\); print\\('n_classes:', DEFAULT_CONFIG.n_classes\\)\")",
+      "Bash(python -c \"import nlon_py; print\\('SUCCESS: nlon_py module loads'\\); print\\('Has NLoNFeatures:', hasattr\\(nlon_py, 'NLoNFeatures'\\)\\)\")",
+      "Bash(python -m py_compile nlon_py/__init__.py nlon_py/data/config.py tests/test_refactor.py)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(python3 -m py_compile nlon_py/data/loader.py)"
+    ]
+  }
+}
