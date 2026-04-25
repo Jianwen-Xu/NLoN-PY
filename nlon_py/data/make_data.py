@@ -22,24 +22,6 @@ def get_category_dict():
     return category_dict
 
 
-def loadDataFromFiles():
-    X = []
-    y = []
-    for source, filename in filenames.items():
-        data = pd.read_csv(os.path.join(pwd_path, filename),
-                           header=0, encoding="UTF-8")
-        data.insert(0, 'Source', source, True)
-        if source == 'lucene':
-            data['Text'] = list(map(lambda text: re.sub(
-                r'^[>\s]+', '', text), data['Text']))
-        X.extend(data['Text'])
-        y.extend(data['Class'])
-        data['Class'] = data['Class'].map(category_dict)
-        data.to_csv(path_or_buf=os.path.join(pwd_path, f'{source}.csv'), columns=[
-                    'Source', 'Text', 'Class'], index=False)
-    return X, np.asarray(y)
-
-
 def loadStopWords():
     stop_words_file = os.path.join(pwd_path, 'mysql_sw_wo_code_words.txt')
     stop_words = pd.read_csv(stop_words_file, header=None)
