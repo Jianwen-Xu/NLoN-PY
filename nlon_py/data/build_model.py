@@ -76,6 +76,8 @@ def build_model(cfg: ModelConfig, model_name: str = 'SVM', features: str = 'C3_F
     t0 = time()
     clf = NLoNModel(X, y, features, model_name=model_name, stand=stand,
                     kbest=kbest, n_classes=actual_n)
+    X_feat = NLoNFeatures.fit_transform(X, feature_type=features)
+    clf.fit(X_feat, y)
     dump(clf, cfg.model_file, compress='zlib')
     print(f"[build_model:{cfg.name}] done in {(time() - t0):0.3f}s")
 
@@ -106,9 +108,9 @@ def buildDefaultData():
 def loadDefaultData(n_classes=7):
     return load_data(DEFAULT_CONFIG, n_classes=n_classes)
 
-def buildDefaultModel(n_classes=7, features='C3_FE', stand=True, kbest=True):
-    build_model(DEFAULT_CONFIG, features=features, stand=stand, kbest=kbest,
-                n_classes=n_classes)
+def buildDefaultModel(n_classes=7, features='C3_FE', stand=True, kbest=True, model_name='SVM'):
+    build_model(DEFAULT_CONFIG, model_name=model_name, features=features, stand=stand,
+                kbest=kbest, n_classes=n_classes)
 
 def loadDefaultModel():
     return load_model(DEFAULT_CONFIG)
