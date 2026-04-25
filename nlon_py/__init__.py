@@ -4,23 +4,22 @@ __author__ = """Jianwen Xu"""
 __email__ = 'xujianwen37@gmail.com'
 __version__ = '0.1.5'
 
-from types import new_class
-
-# Lazy imports to avoid import errors when only using config module
+# Lazy imports to avoid triggering heavy ML deps when only using config/loader
 def __getattr__(name):
-    """Lazy load module-level attributes."""
     if name in ('buildDefaultData', 'buildOriginalData', 'buildDefaultModel',
                 'compareDifModels', 'loadDefaultData', 'loadOriginalData',
                 'plot_cm', 'plot_model_roc', 'plot_ori_model_roc',
                 'plotDistribution', 'searchParams', 'validOriginalModel',
                 'testDefaultModel', 'validDefaultModel', 'buildOriginalModel',
                 'buildExtendData', 'validExtendModel', 'buildExtendModel'):
-        from nlon_py.data.build_model import (buildDefaultData,buildOriginalData, buildDefaultModel,
-                                              compareDifModels, loadDefaultData,loadOriginalData,
-                                              plot_cm, plot_model_roc,plot_ori_model_roc,
-                                              plotDistribution, searchParams,validOriginalModel,
-                                              testDefaultModel, validDefaultModel,buildOriginalModel,
-                                              buildExtendData, validExtendModel,buildExtendModel)
+        from nlon_py.data.build_model import (
+            buildDefaultData, buildOriginalData, buildDefaultModel,
+            compareDifModels, loadDefaultData, loadOriginalData,
+            plot_cm, plot_model_roc, plot_ori_model_roc,
+            plotDistribution, searchParams, validOriginalModel,
+            testDefaultModel, validDefaultModel, buildOriginalModel,
+            buildExtendData, validExtendModel, buildExtendModel,
+        )
         return locals()[name]
     elif name in ('NLoNFeatures', 'FeaturesOri'):
         from nlon_py.features import NLoNFeatures, FeaturesOri
